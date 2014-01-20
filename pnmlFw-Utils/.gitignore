@@ -1,0 +1,7 @@
+bin*
+target
+RngFiles
+lib
+.DS_Store
+test
+.settings

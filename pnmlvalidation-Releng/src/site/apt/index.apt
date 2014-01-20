@@ -1,0 +1,80 @@
+~~
+~~  Copyright 2009-2014 University Pierre & Marie Curie - UMR CNRS 7606 (LIP6/MoVe)
+~~  All rights reserved.   This program and the accompanying materials
+~~  are made available under the terms of the Eclipse Public License v1.0
+~~  which accompanies this distribution, and is available at
+~~  http://www.eclipse.org/legal/epl-v10.html
+~~
+~~  Initial contributor:
+~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+~~
+~~  Mailing list:
+~~    lom-messan.hillah@lip6.fr
+~~
+
+ ------
+Validates PNML Documents against the Petri Net Standard specifications
+ ------
+ ------
+2014-01
+ ------
+
+PNML Document Checker (PNML DoC)
+
+  This application validates {{{http://www.pnml.org}PNML}} Documents against the {{{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43538}Petri Net Standard}} specifications. 
+You can use it as a dependency in your application, or run it on the command line, or launch it as a server to which you may connect to.
+
+ PNML DoC relies on {{{http://pnml.lip6.fr}PNML Framework}} to perform the validation of PNML Documents.
+
+Execution modes
+
+* Standalone
+
+  PNML Check can be simply run on the command line and returns as soon as it finishes checking the provided documents.
+This is the recommended way. Simply provide a list of PNML Documents to check. Of course you can also provide just a single document. 
+
+* Server 
+
+  This application can also be run in a server mode, by default on port 10002.
+
+  As a server, it provides a one-shot (synchronous) service, meaning: 
+
+  * open a connection to the server;
+
+  * send your PNML document;
+
+  * get the result of the service;
+
+  * close the connection. That's it.
+
+  The result is composed of:
+
+   * a HTTP status code; the list of the codes used is provided on the {{{./usage.html}usage page}};
+
+   * a message explaining the result of the service;
+
+   * and some basic stats about the PNML Document (how many nets, nodes, and arcs).
+
+Standard support
+
+  All Petri Net types defined in the Standard are supported:
+  
+   * Core Model,
+   
+   * P/T Nets,
+   
+   * Symmetric Nets,
+   
+   * High-Level Petri Nets.
+   
+   * P/T Nets in High-level notation (known as PT-HLPN)
+   
+Alternative way to check  PNML Documents for conformance against the Standard specifications
+ 
+ To check PNML Documents, you may also use the method explained on the {{{http://www.pnml.org/validation.php}PNML reference site}}.
+ We have encoded and contributed as Schematron rules all OCL constraints in the PNML Standard meta-models.
+ 
+ However, remember to start the check with a regular one first against the PNML grammar (e.g using XML Lint) before proceeding
+with the schematron rules. 
+  
+  

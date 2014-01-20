@@ -1,0 +1,57 @@
+~~
+~~  Copyright 2009-2014 University Pierre & Marie Curie - UMR CNRS 7606 (LIP6/MoVe)
+~~  All rights reserved.   This program and the accompanying materials
+~~  are made available under the terms of the Eclipse Public License v1.0
+~~  which accompanies this distribution, and is available at
+~~  http://www.eclipse.org/legal/epl-v10.html
+~~
+~~  Initial contributor:
+~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+~~
+~~  Mailing list:
+~~    lom-messan.hillah@lip6.fr
+~~
+
+ ------
+Changelog of PNML Document Checker ${project.version}
+ ------
+ ------
+2014-01
+ ------
+
+Changelog
+
+* What's new in version ${project.version}?
+  
+  * Relies on the stable release 2.2.0 of {{{http://pnml.lip6.fr/}PNML Framework}}.
+
+* What's new in version 1.0.0?
+
+  * Support of P/T Nets in high-level notation.
+  
+  * Explicit message for unrecognised Petri Net type.
+  
+  * Various improvements for this maintenance release.
+  
+  * Upgrade of some dependencies
+
+* What's new in version 0.2.14?
+
+  * Updated Maven dependencies and some metadata information.
+
+* What's new in version 0.2.13?
+
+  * All dependencies are declared with their current version. Otherwise, since EMF and OCL
+jars have the same artifactid, there is an irresolvable conflict.
+
+* What's new in version 0.2.12?
+
+  * Updated dependency to net.sourceforge.lpg.lpgjavaruntime, version 1.1.0-v200803061910.
+
+* What's new in version 0.2.11?
+
+  * Creation of a <download> folder in update site directory, to distribute the complete zip archive
+of this application and its dependencies.
+  
+  []
+

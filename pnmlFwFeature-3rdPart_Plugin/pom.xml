@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>fr.lip6.move.pnml</groupId>
+		<artifactId>framework.releng</artifactId>
+		<version>2.2.0</version>
+		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
+	</parent>
+
+
+	<artifactId>fr.lip6.move.pnml.framework.3rdPart.feature</artifactId>
+	<version>${thirdparty.version}</version>
+	<packaging>eclipse-feature</packaging>
+
+	<name>PNML Framework - 3rd Party Libraries Feature</name>
+	<description>
+		Feature of 3rd party Library
+	</description>
+
+ 	<!-- See http://wiki.eclipse.org/Tycho/Target_Platform why the following declaration is necessary for successfully building 
+ 	the feature (The plugin jar was deployed in thirdparty on Nexus for external reference).-->
+	<dependencies>
+		<dependency>
+			<groupId>fr.lip6.move.pnml</groupId>
+			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
+			<version>${thirdparty.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

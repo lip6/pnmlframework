@@ -1,0 +1,52 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="net0"
+		type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id="toppage">
+			<name>
+				<text>myname</text>
+			</name>
+			<page id="subpage">
+				<name>
+					<text>toto</text>
+				</name>
+				<arc id="a3" source="place3" target="transistion2">
+					<name>
+						<text>test</text>
+						<graphics>
+							<offset x="3" y="-22" />
+							<line shape="curve" color="aqua" width="2"
+								style="dash" />
+							<font family="arial" style="normal"
+								weight="bold" size="small" decoration="underline" align="center"
+								rotation="0" />
+						</graphics>
+					</name>
+					<graphics>
+						<position x="3" y="-22" />
+					</graphics>
+					<toolspecific tool="mytool" version="1.0.0">
+						<mydata>TXt</mydata>
+					</toolspecific>
+				</arc>
+				<arc id="a4" source="transistion2" target="place2"></arc>
+				<place id="place3">
+					<graphics>
+						<position x="10" y="20" />
+						<dimension x="1" y="2" />
+						<fill color="blue"
+							image="http://fake.uri.tld/image.truc" gradient-color="red"
+							gradient-rotation="horizontal" />
+					</graphics>
+				</place>
+				<place id="place2"></place>
+				<transition id="transistion2"></transition>
+			</page>
+			<arc id="a1" source="place1" target="transistion1"></arc>
+			<arc id="a2" source="transistion1" target="reftop3"></arc>
+			<place id="place1"></place>
+			<transition id="transistion1"></transition>
+			<referencePlace id="reftop3" ref="place3"></referencePlace>
+			<referenceTransition id="reftran3" ref="transistion2"></referenceTransition>
+		</page>
+	</net>
+</pnml>

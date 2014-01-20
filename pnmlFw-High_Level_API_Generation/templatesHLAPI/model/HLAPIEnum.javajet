@@ -1,0 +1,43 @@
+<%@ jet package="org.eclipse.emf.pnml.codegen.templates.model" imports="java.util.* org.eclipse.emf.codegen.ecore.genmodel.*" class="HLAPIEnum" version="$Id$" %>
+<%final GenEnum genEnum = (GenEnum)argument;%>
+<%final GenPackage genPackage = genEnum.getGenPackage();%>
+
+<%@include file="../Header.javajetinc"%>
+package <%=genPackage.getInterfacePackageName()%>.hlapi;
+import  <%=genEnum.getGenPackage().getInterfacePackageName()%>.*;
+public enum <%=genEnum.getName()%>HLAPI{
+<%	//This will generate all aviable enums couple NAME("literalvalue").
+	List<GenEnumLiteral> lgel = genEnum.getGenEnumLiterals();
+	for (Iterator<GenEnumLiteral> iterator = lgel.iterator(); iterator.hasNext();) {
+        GenEnumLiteral genEnumLiteral = (GenEnumLiteral) iterator.next();%>
+	<%=genEnumLiteral.getEnumLiteralInstanceConstantName()%>("<%=genEnumLiteral.getLiteral()%>")<% if(iterator.hasNext()){%>,<%}else{%>;<%} %>
+<%}%>
+
+	private final <%=genEnum.getName()%> item;
+
+	private <%=genEnum.getName()%>HLAPI(String name) {
+		this.item = <%=genEnum.getName()%>.get(name);
+	}
+	
+	/**
+	 * Return one HLAPI enum (used for tests).
+	 * @return one of the enum, null if the int is "out of bounds"
+	 */
+	public static <%=genEnum.getName()%>HLAPI get(int num) {
+	<%int i =0;
+	for (Iterator<GenEnumLiteral> iterator = lgel.iterator(); iterator.hasNext();) {
+        GenEnumLiteral genEnumLiteral = (GenEnumLiteral) iterator.next();%>
+      if(num == <%=i%>){
+         return <%=genEnumLiteral.getEnumLiteralInstanceConstantName()%>;
+      }
+	<%i++;
+	}%>
+		return null;
+	}
+
+	public <%=genEnum.getName()%> getContainedItem() {
+		return item;
+	}
+
+	
+}

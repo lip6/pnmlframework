@@ -1,0 +1,30 @@
+<%final String sortMethodNsURI = "http://www.pnml.org/models/methods/SORT";%>
+<%EAnnotation eqean = classifier.getEAnnotation(sortMethodNsURI);
+if (eqean!=null) {
+	String className = sortMethodNsURI.substring(sortMethodNsURI.lastIndexOf("/")+1).toLowerCase();
+	String formattedClassName = className.replaceFirst(String.valueOf(className.charAt(0)), 
+					String.valueOf(className.charAt(0)).toUpperCase());
+	// this is very dependent on the SORT annotation which
+	// refers to class Sort belonging to terms package.
+	genModel.getImportManager().addImport(genPackage.getBasePackage()
+	+ ".terms." + formattedClassName);
+	EMap<String, String> eqcontent = eqean.getDetails();
+	if (isInterface && genClass.getInterfaceName()
+	.equalsIgnoreCase(className)) {
+		String documentation = eqcontent.get("documentation");%>
+		<%=documentation%> <%String signature = eqcontent.get("signature");%>
+		<%=signature%>;
+	<%}
+	if ((!isInterface) && (!genClass.isAbstract()
+	     || "HLPNNumber".equalsIgnoreCase(genClass.getInterfaceName()))) {
+		String signature = eqcontent.get("signature");%>
+		public <%=signature%> { <%String body = eqcontent.get("body");
+		if (body != null && body.length() != 0) {%>
+		<%=body%>
+		<%} else {%>
+		  //TODO: implement this method. 
+		  throw new UnsupportedOperationException("Implementation unvailable."); 
+		<%}%>
+		}
+	<%}
+}%>

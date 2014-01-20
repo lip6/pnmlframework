@@ -1,0 +1,7 @@
+<!ELEMENT pnmlcustomtypes (pnmlcustomtype+)>
+<!ELEMENT pnmlcustomtype (rootclass,fallbackclass?)>
+<!ELEMENT rootclass (#PCDATA)>
+<!ELEMENT fallbackclass (#PCDATA)>
+
+<!ATTLIST pnmlcustomtype namespace CDATA #REQUIRED>
+<!ATTLIST pnmlcustomtype rngurl CDATA #REQUIRED>

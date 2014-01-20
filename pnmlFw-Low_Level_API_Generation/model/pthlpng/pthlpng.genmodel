@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="(C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)&#xD;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA; Contributors: &#xA;   Lom HILLAH (LIP6) - Initial models and implementation&#xD;   Rachid Alahyane (UPMC) - Infrastructure and continuous integration&#xD;   Bastien Bouzerau (UPMC) - Architecture &#xD;   Guillaume Giffo (UPMC) - Code generation refactoring, High-level API"
+    modelDirectory="/pnmlFw-PT-HLPNG/src" editDirectory="/pnmlFw-PT-HLPNG.edit/src"
+    editorDirectory="/pnmlFw-PT-HLPNG.editor/src" modelPluginID="fr.lip6.move.pnml.framework.pthlpng"
+    templateDirectory="/pnmlFw-Low_Level_API_Generation/templates-2.2.0" dynamicTemplates="true"
+    redirection="" forceOverwrite="true" modelName="PNML Framework PT Net in High-level Notation"
+    editPluginClass="fr.lip6.move.pnml.framework.pthlpng.provider.PthlpngEditPlugin"
+    editorPluginClass="fr.lip6.move.pnml.framework.pthlpng.presentation.PthlpngEditorPlugin"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl" suppressEMFTypes="true"
+    codeFormatting="true" testSuiteClass="fr.lip6.move.pnml.framework.pthlpng.tests.PthlpngAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>booleans.ecore</foreignModel>
+  <foreignModel>dots.ecore</foreignModel>
+  <foreignModel>hlcorestructure.ecore</foreignModel>
+  <foreignModel>multisets.ecore</foreignModel>
+  <foreignModel>partitions.ecore</foreignModel>
+  <foreignModel>terms.ecore</foreignModel>
+  <modelPluginVariables>OCL_ECORE=org.eclipse.ocl.ecore</modelPluginVariables>
+  <genPackages prefix="Booleans" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="booleans.ecore#/">
+    <genClasses ecoreClass="booleans.ecore#//Equality"/>
+    <genClasses ecoreClass="booleans.ecore#//Inequality"/>
+    <genClasses ecoreClass="booleans.ecore#//BooleanConstant">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute booleans.ecore#//BooleanConstant/value"/>
+    </genClasses>
+    <genClasses ecoreClass="booleans.ecore#//Or"/>
+    <genClasses image="false" ecoreClass="booleans.ecore#//BooleanOperator"/>
+    <genClasses ecoreClass="booleans.ecore#//And"/>
+    <genClasses ecoreClass="booleans.ecore#//Imply"/>
+    <genClasses ecoreClass="booleans.ecore#//Not"/>
+    <genClasses ecoreClass="booleans.ecore#//Bool"/>
+  </genPackages>
+  <genPackages prefix="Dots" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="dots.ecore#/">
+    <genClasses ecoreClass="dots.ecore#//Dot"/>
+    <genClasses ecoreClass="dots.ecore#//DotConstant"/>
+  </genPackages>
+  <genPackages prefix="Hlcorestructure" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="hlcorestructure.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//PNType">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//PNType/SYMNET"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//PNType/COREMODEL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//PNType/PTNET"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//PNType/HLPN"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//PNType/PTHLPN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//CSS2Color">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/AQUA"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/BLACK"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/BLUE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/FUCHSIA"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/GRAY"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/GREEN"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/LIME"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/MAROON"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/NAVY"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/OLIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/ORANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/PURPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/RED"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/SILVER"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/TEAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/WHITE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2Color/YELLOW"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//Gradient">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//Gradient/HORIZONTAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//Gradient/VERTICAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//Gradient/DIAGONAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//LineShape">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//LineShape/LINE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//LineShape/CURVE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//FontAlign">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontAlign/LEFT"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontAlign/CENTER"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontAlign/RIGHT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//FontDecoration">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontDecoration/UNDERLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontDecoration/OVERLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//FontDecoration/LINETHROUGH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//CSS2FontFamily">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontFamily/VERDANA"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontFamily/ARIAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontFamily/TIMES"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontFamily/GEORGIA"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontFamily/TREBUCHET"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//CSS2FontSize">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/XXSMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/XSMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/SMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/MEDIUM"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/LARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/XLARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontSize/XXLARGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//CSS2FontStyle">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontStyle/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontStyle/ITALIC"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontStyle/OBLIQUE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//CSS2FontWeight">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontWeight/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontWeight/BOLD"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontWeight/BOLDER"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//CSS2FontWeight/LIGHTER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="hlcorestructure.ecore#//LineStyle">
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//LineStyle/SOLID"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//LineStyle/DASH"/>
+      <genEnumLiterals ecoreEnumLiteral="hlcorestructure.ecore#//LineStyle/DOT"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="hlcorestructure.ecore#//URI"/>
+    <genDataTypes ecoreDataType="hlcorestructure.ecore#//LongString"/>
+    <genClasses ecoreClass="hlcorestructure.ecore#//PetriNetDoc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNetDoc/nets"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//PetriNetDoc/xmlns"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//PetriNet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//PetriNet/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//PetriNet/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNet/pages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNet/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNet/toolspecifics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNet/containerPetriNetDoc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PetriNet/declaration"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Page/objects"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Page/containerPetriNet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Page/nodegraphics"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Page/declaration"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//PnObject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//PnObject/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PnObject/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PnObject/toolspecifics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PnObject/containerPage"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Name">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Name/text"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Name/containerNamePetriNet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Name/containerNamePnObject"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//ToolInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//ToolInfo/tool"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//ToolInfo/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//ToolInfo/formattedXMLBuffer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//ToolInfo/toolInfoGrammarURI"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ToolInfo/containerPetriNet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ToolInfo/containerPnObject"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ToolInfo/containerLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ToolInfo/toolInfoModel"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Label">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Label/toolspecifics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//NodeGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/position"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/fill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/line"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/containerNode"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//NodeGraphics/containerPage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Graphics"/>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Coordinate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Coordinate/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Coordinate/y"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Position">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Position/containerArcGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Position/containerPNodeGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Offset">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Offset/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Dimension">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Dimension/containerDNodeGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//AnnotationGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnnotationGraphics/offset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnnotationGraphics/fill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnnotationGraphics/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnnotationGraphics/font"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnnotationGraphics/containerAnnotation"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Fill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Fill/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Fill/gradientcolor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Fill/gradientrotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Fill/image"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Fill/containerNodeGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Fill/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Line">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Line/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Line/shape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Line/width"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Line/containerNodeGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Line/containerArcGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Line/containerAnnotationGraphics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Line/style"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//ArcGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ArcGraphics/positions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ArcGraphics/line"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//ArcGraphics/containerArc"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Arc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Arc/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Arc/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Arc/arcgraphics"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Arc/hlinscription"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Node">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Node/InArcs"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Node/OutArcs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Node/nodegraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Font">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/align"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/decoration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/rotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/style"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//Font/weight"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Font/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//PlaceNode">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//PlaceNode/referencingPlaces"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//TransitionNode">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//TransitionNode/referencingTransitions"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Place/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Place/hlinitialMarking"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//RefTransition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//RefTransition/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Transition/condition"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//RefPlace">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//RefPlace/ref"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Attribute"/>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//Annotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Annotation/annotationgraphics"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//AnyObject">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//AnyObject/containerToolInfo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="hlcorestructure.ecore#//HLCoreAnnotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute hlcorestructure.ecore#//HLCoreAnnotation/text"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Type">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Type/structure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Type/containerPlace"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//HLMarking">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//HLMarking/structure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//HLMarking/containerPlace"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Condition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Condition/structure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Condition/containerTransition"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//HLAnnotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//HLAnnotation/structure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//HLAnnotation/containerArc"/>
+    </genClasses>
+    <genClasses ecoreClass="hlcorestructure.ecore#//Declaration">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Declaration/structure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Declaration/containerDeclarationPetriNet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Declaration/containerDeclarationPage"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Multisets" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="multisets.ecore#/">
+    <genClasses ecoreClass="multisets.ecore#//Cardinality"/>
+    <genClasses ecoreClass="multisets.ecore#//Contains"/>
+    <genClasses ecoreClass="multisets.ecore#//CardinalityOf"/>
+    <genClasses ecoreClass="multisets.ecore#//Add"/>
+    <genClasses ecoreClass="multisets.ecore#//All">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference multisets.ecore#//All/refsort"/>
+    </genClasses>
+    <genClasses ecoreClass="multisets.ecore#//Empty">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference multisets.ecore#//Empty/refsort"/>
+    </genClasses>
+    <genClasses ecoreClass="multisets.ecore#//NumberOf"/>
+    <genClasses ecoreClass="multisets.ecore#//Subtract"/>
+    <genClasses ecoreClass="multisets.ecore#//ScalarProduct"/>
+  </genPackages>
+  <genPackages prefix="Partitions" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="partitions.ecore#/">
+    <genClasses ecoreClass="partitions.ecore#//Partition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference partitions.ecore#//Partition/def"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference partitions.ecore#//Partition/partitionelements"/>
+    </genClasses>
+    <genClasses ecoreClass="partitions.ecore#//PartitionElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference partitions.ecore#//PartitionElement/refpartition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference partitions.ecore#//PartitionElement/partitionelementconstants"/>
+    </genClasses>
+    <genClasses ecoreClass="partitions.ecore#//GreaterThan"/>
+    <genClasses ecoreClass="partitions.ecore#//PartitionElementOf">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference partitions.ecore#//PartitionElementOf/refpartition"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="partitions.ecore#//PartitionOperator"/>
+    <genClasses ecoreClass="partitions.ecore#//LessThan"/>
+  </genPackages>
+  <genPackages prefix="Terms" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="terms.ecore#/">
+    <genClasses ecoreClass="terms.ecore#//Declarations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//Declarations/declaration"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Declarations/containerDeclaration"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//TermsDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//TermsDeclaration/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute terms.ecore#//TermsDeclaration/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//TermsDeclaration/containerDeclarations"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//Sort">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/multi"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerNamedSort"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerVariableDecl"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerProductSort"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerType"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerAll"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Sort/containerPartition"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//MultisetSort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//MultisetSort/basis"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//Term">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//Term/sort"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerOperator"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerNamedOperator"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerHLMarking"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerCondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerHLAnnotation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//Term/containerPartitionElement"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//Operator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//Operator/subterm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//Operator/output"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//Operator/input"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//VariableDecl">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//VariableDecl/sort"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference terms.ecore#//VariableDecl/containerNamedOperator"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//Variable">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//Variable/variableDecl"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//BuiltInSort"/>
+    <genClasses ecoreClass="terms.ecore#//ProductSort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//ProductSort/elementSort"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//BuiltInConstant"/>
+    <genClasses image="false" ecoreClass="terms.ecore#//MultisetOperator"/>
+    <genClasses ecoreClass="terms.ecore#//Tuple"/>
+    <genClasses image="false" ecoreClass="terms.ecore#//SortDecl"/>
+    <genClasses image="false" ecoreClass="terms.ecore#//BuiltInOperator"/>
+    <genClasses ecoreClass="terms.ecore#//NamedSort">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//NamedSort/sortdef"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//UserSort">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//UserSort/declaration"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="terms.ecore#//OperatorDecl"/>
+    <genClasses ecoreClass="terms.ecore#//NamedOperator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//NamedOperator/def"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference terms.ecore#//NamedOperator/parameters"/>
+    </genClasses>
+    <genClasses ecoreClass="terms.ecore#//UserOperator">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference terms.ecore#//UserOperator/declaration"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

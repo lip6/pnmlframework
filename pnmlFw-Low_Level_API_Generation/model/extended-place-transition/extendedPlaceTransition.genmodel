@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="(C) University Pierre &amp; Marie Curie - UMR CNRS 7606 (LIP6/MoVe)&#xD;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA; Contributors: &#xA;   Lom HILLAH (LIP6) - Initial models and implementation&#xD;   Rachid Alahyane (UPMC) - Infrastructure and continuous integration&#xD;   Bastien Bouzerau (UPMC) - Architecture&#xD;   Guillaume Giffo (UPMC)  - Code generation refactoring, high-level API"
+    modelDirectory="/[pnmlFw]ExtendedPTNet/src" editDirectory="/[pnmlFw]ExtendedPTNet.edit/src"
+    editorDirectory="/[pnmlFw]ExtendedPTNet.editor/src" modelPluginID="fr.lip6.move.pnml.framework.extendedptnet"
+    templateDirectory="/[pnmlFw]Low_Level_API_Generation/templates" dynamicTemplates="true"
+    redirection="" modelName="ExtendedPlaceTransition" editPluginClass="fr.lip6.move.pnml.framework.extendedptnet.provider.ExtendedPlaceTransitionEditPlugin"
+    editorPluginClass="fr.lip6.move.pnml.framework.extendedptnet.presentation.ExtendedPlaceTransitionEditorPlugin"
+    codeFormatting="true" testSuiteClass="fr.lip6.move.pnml.framework.extendedptnet.tests.ExtendedPlaceTransitionAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    language="">
+  <foreignModel>extendedPlaceTransition.ecore</foreignModel>
+  <modelPluginVariables>OCL_ECORE=org.eclipse.ocl.ecore</modelPluginVariables>
+  <genPackages prefix="Ptnet" basePackage="fr.lip6.move.pnml.extendedptnet" disposableProviderFactory="true"
+      ecorePackage="extendedPlaceTransition.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//PNType">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//PNType/PTNET"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//PNType/COREMODEL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//PNType/SYMNET"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//PNType/HLPN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//CSS2Color">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/AQUA"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/BLACK"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/BLUE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/FUCHSIA"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/GRAY"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/GREEN"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/LIME"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/MAROON"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/NAVY"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/OLIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/ORANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/PURPLE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/RED"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/SILVER"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/TEAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/WHITE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2Color/YELLOW"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//Gradient">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//Gradient/HORIZONTAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//Gradient/VERTICAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//Gradient/DIAGONAL"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//LineShape">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//LineShape/LINE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//LineShape/CURVE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//FontAlign">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontAlign/LEFT"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontAlign/CENTER"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontAlign/RIGHT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//FontDecoration">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontDecoration/UNDERLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontDecoration/OVERLINE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//FontDecoration/LINETHROUGH"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//CSS2FontFamily">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontFamily/VERDANA"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontFamily/ARIAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontFamily/TIMES"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontFamily/GEORGIA"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontFamily/TREBUCHET"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//CSS2FontSize">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/XXSMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/XSMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/SMALL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/MEDIUM"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/LARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/XLARGE"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontSize/XXLARGE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//CSS2FontStyle">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontStyle/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontStyle/ITALIC"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontStyle/OBLIQUE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//CSS2FontWeight">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontWeight/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontWeight/BOLD"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontWeight/BOLDER"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//CSS2FontWeight/LIGHTER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="extendedPlaceTransition.ecore#//LineStyle">
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//LineStyle/SOLID"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//LineStyle/DASH"/>
+      <genEnumLiterals ecoreEnumLiteral="extendedPlaceTransition.ecore#//LineStyle/DOT"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="extendedPlaceTransition.ecore#//PositiveInteger"/>
+    <genDataTypes ecoreDataType="extendedPlaceTransition.ecore#//Natural"/>
+    <genDataTypes ecoreDataType="extendedPlaceTransition.ecore#//URI"/>
+    <genDataTypes ecoreDataType="extendedPlaceTransition.ecore#//LongString"/>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//PTMarking">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PTMarking/text"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PTMarking/containerPlace"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//PTArcAnnotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PTArcAnnotation/text"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PTArcAnnotation/containerArc"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//PetriNetDoc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PetriNetDoc/nets"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PetriNetDoc/xmlns"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//PetriNet">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PetriNet/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PetriNet/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PetriNet/pages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PetriNet/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PetriNet/toolspecifics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PetriNet/containerPetriNetDoc"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Page/objects"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Page/containerPetriNet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Page/nodegraphics"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//PnObject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//PnObject/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PnObject/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PnObject/toolspecifics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PnObject/containerPage"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Name">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Name/text"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Name/containerNamePetriNet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Name/containerNamePnObject"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//ToolInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//ToolInfo/tool"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//ToolInfo/version"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//ToolInfo/formattedXMLBuffer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//ToolInfo/toolInfoGrammarURI"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ToolInfo/containerPetriNet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ToolInfo/containerPnObject"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ToolInfo/containerLabel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ToolInfo/toolInfoModel"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Label">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Label/toolspecifics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//NodeGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/position"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/dimension"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/fill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/line"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/containerNode"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//NodeGraphics/containerPage"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Graphics"/>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Coordinate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Coordinate/x"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Coordinate/y"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Position">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Position/containerArcGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Position/containerPNodeGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Offset">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Offset/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Dimension">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Dimension/containerDNodeGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//AnnotationGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnnotationGraphics/offset"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnnotationGraphics/fill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnnotationGraphics/line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnnotationGraphics/font"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnnotationGraphics/containerAnnotation"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Fill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Fill/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Fill/gradientcolor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Fill/gradientrotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Fill/image"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Fill/containerNodeGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Fill/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Line">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Line/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Line/shape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Line/width"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Line/containerNodeGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Line/containerArcGraphics"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Line/containerAnnotationGraphics"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Line/style"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//ArcGraphics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ArcGraphics/positions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ArcGraphics/line"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//ArcGraphics/containerArc"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Arc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Arc/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Arc/target"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Arc/arcgraphics"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Arc/inscription"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Arc/nature"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Node">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Node/InArcs"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Node/OutArcs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Node/nodegraphics"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Font">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/align"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/decoration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/family"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/rotation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/size"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/style"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute extendedPlaceTransition.ecore#//Font/weight"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Font/containerAnnotationGraphics"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//PlaceNode">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//PlaceNode/referencingPlaces"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//TransitionNode">
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//TransitionNode/referencingTransitions"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Place/initialMarking"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Place/capacity"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//RefTransition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//RefTransition/ref"/>
+    </genClasses>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//Transition"/>
+    <genClasses ecoreClass="extendedPlaceTransition.ecore#//RefPlace">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//RefPlace/ref"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Attribute"/>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//Annotation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//Annotation/annotationgraphics"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="extendedPlaceTransition.ecore#//AnyObject">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference extendedPlaceTransition.ecore#//AnyObject/containerToolInfo"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="AttributeExtensions" basePackage="fr.lip6.move.pnml.extendedptnet"
+      disposableProviderFactory="true" ecorePackage="attributeExtensions.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="attributeExtensions.ecore#//ArcNatures">
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//ArcNatures/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//ArcNatures/INHIBITOR"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//ArcNatures/READ"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//ArcNatures/RESET"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//ArcNatures/TRANSFER"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="attributeExtensions.ecore#//TransitionNatures">
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//TransitionNatures/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//TransitionNatures/IMMEDIATE"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//TransitionNatures/FIXEDELAY"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="attributeExtensions.ecore#//PlaceNatures">
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//PlaceNatures/NORMAL"/>
+      <genEnumLiterals ecoreEnumLiteral="attributeExtensions.ecore#//PlaceNatures/QUEUE"/>
+    </genEnums>
+    <genClasses ecoreClass="attributeExtensions.ecore#//ArcNature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute attributeExtensions.ecore#//ArcNature/value"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference attributeExtensions.ecore#//ArcNature/cointainerArc"/>
+    </genClasses>
+    <genClasses ecoreClass="attributeExtensions.ecore#//TransitionNature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute attributeExtensions.ecore#//TransitionNature/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference attributeExtensions.ecore#//TransitionNature/containerTransition"/>
+    </genClasses>
+    <genClasses ecoreClass="attributeExtensions.ecore#//PlaceNature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute attributeExtensions.ecore#//PlaceNature/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference attributeExtensions.ecore#//PlaceNature/containerPlace"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="attributeExtensions.ecore#//ObjectNature"/>
+  </genPackages>
+  <genPackages prefix="AnnotationExtensions" basePackage="fr.lip6.move.pnml.extendedptnet"
+      disposableProviderFactory="true" ecorePackage="annotationExtensions.ecore#/">
+    <genClasses image="false" ecoreClass="annotationExtensions.ecore#//AnnotationExtension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute annotationExtensions.ecore#//AnnotationExtension/text"/>
+    </genClasses>
+    <genClasses ecoreClass="annotationExtensions.ecore#//Action">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference annotationExtensions.ecore#//Action/containerTransition"/>
+    </genClasses>
+    <genClasses ecoreClass="annotationExtensions.ecore#//Delay"/>
+    <genClasses ecoreClass="annotationExtensions.ecore#//Priority"/>
+    <genClasses ecoreClass="annotationExtensions.ecore#//Weight"/>
+    <genClasses ecoreClass="annotationExtensions.ecore#//Capacity">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference annotationExtensions.ecore#//Capacity/containerPlace"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

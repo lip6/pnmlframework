@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="partitions" nsURI="http:///hlpn.partitions.ecore" nsPrefix="partitions">
+  <eClassifiers xsi:type="ecore:EClass" name="Partition" eSuperTypes="terms.ecore#//SortDecl">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="partition"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="def" ordered="false" lowerBound="1"
+        eType="ecore:EClass terms.ecore#//Sort" containment="true" eOpposite="terms.ecore#//Sort/containerPartition">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="kind" value="follow"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="partitionelements" lowerBound="1"
+        upperBound="-1" eType="#//PartitionElement" containment="true" eOpposite="#//PartitionElement/refpartition">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="kind" value="follow"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PartitionElement" eSuperTypes="terms.ecore#//OperatorDecl">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="constantsType" value="self.partitionelementconstants->forAll{p | p.sort = self.refpartition.def}"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="constantsType"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="partitionelement"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refpartition" eType="#//Partition"
+        eOpposite="#//Partition/partitionelements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="partitionelementconstants"
+        ordered="false" lowerBound="1" upperBound="-1" eType="ecore:EClass terms.ecore#//Term"
+        containment="true" eOpposite="terms.ecore#//Term/containerPartitionElement">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="kind" value="follow"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GreaterThan" eSuperTypes="#//PartitionOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="gtp"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PartitionElementOf" eSuperTypes="#//PartitionOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.input->size() = 1"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="partitionelementof"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refpartition" lowerBound="1"
+        eType="#//Partition">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="tag" value="refpartition"/>
+        <details key="kind" value="idref"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PartitionOperator" abstract="true" eSuperTypes="terms.ecore#//BuiltInOperator"/>
+  <eClassifiers xsi:type="ecore:EClass" name="LessThan" eSuperTypes="#//PartitionOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="ltp"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,69 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="all tests" verbose="1">
+	<test name="validation">
+		<classes>
+			<class
+				name="fr.lip6.move.pnml.framework.utils.validation.PnmlRngValidationTest" />
+		</classes>
+	</test>
+
+	<test name="ID utils">
+		<classes>
+			<class
+				name="fr.lip6.move.pnml.framework.utils.IdRefLinkerTest" />
+			<class
+				name="fr.lip6.move.pnml.framework.utils.IdRepositoryTest" />
+			<class
+				name="fr.lip6.move.pnml.framework.utils.ModelRepositoryTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="littletest">
+		<groups>
+			<run>
+				<include name="idRefLinker" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.utils"></package>
+		</packages>
+	</test>
+
+	<test name="importutils">
+		<groups>
+			<run>
+				<include name="customPNMLfile" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general"></package>
+		</packages>
+	</test>
+
+	<test name="prettyprint">
+		<groups>
+			<run>
+				<include name="PrettyPrint" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.utils"></package>
+		</packages>
+	</test>
+
+	<test name="other elements">
+		<groups>
+			<run>
+				<include name="other elements" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.utils"></package>
+		</packages>
+	</test>
+
+
+
+</suite>

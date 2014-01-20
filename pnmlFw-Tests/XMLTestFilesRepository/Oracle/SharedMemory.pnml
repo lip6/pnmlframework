@@ -1,0 +1,813 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="cs1"
+		type="http://www.pnml.org/version-2009/grammar/symmetricnet">
+		<page id="page0">
+			<name>
+				<text>Shared Memory</text>
+			</name>
+			<declaration>
+				<text>
+					Shared_mem_multi_p by Denis and revised by Fabrice v
+					1.0
+				</text>
+				<structure>
+					<declarations>
+						<!-- Sorts declaration -->
+						<namedsort id="pro" name="P">
+							<finiteintrange start="1" end="10" />
+						</namedsort>
+						<namedsort id="pp" name="PxP">
+							<productsort>
+								<usersort declaration="pro" />
+								<usersort declaration="pro" />
+							</productsort>
+						</namedsort>
+						<!-- Variables declaration -->
+						<variabledecl id="varx" name="x">
+							<usersort declaration="pro" />
+						</variabledecl>
+						<variabledecl id="vary" name="y">
+							<usersort declaration="pro" />
+						</variabledecl>
+						<variabledecl id="varm" name="m">
+							<usersort declaration="pro" />
+						</variabledecl>
+					</declarations>
+				</structure>
+			</declaration>
+			<!-- The net graph -->
+			<page id="page1">
+				<place id="pOwn">
+					<graphics>
+						<position x="35" y="35" />
+					</graphics>
+					<name>
+						<text>OwnMemAcc</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pro" />
+						</structure>
+					</type>
+				</place>
+				<place id="pActive">
+					<graphics>
+						<position x="35" y="70" />
+					</graphics>
+					<name>
+						<text>Active</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pro" />
+						</structure>
+					</type>
+					<hlinitialMarking>
+						<structure>
+							<add>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="1">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="2">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="3">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="1">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="4">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="5">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="6">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="7">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="8">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="9">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="10">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+							</add>
+						</structure>
+					</hlinitialMarking>
+				</place>
+				<place id="pQue">
+					<graphics>
+						<dimension x="18" y="18" />
+						<position x="70" y="70" />
+					</graphics>
+					<name>
+						<text>Queue</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pro" />
+						</structure>
+					</type>
+				</place>
+				<place id="pExt">
+					<graphics>
+						<position x="100" y="80" />
+					</graphics>
+					<name>
+						<text>Ext_Bus</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pp" />
+						</structure>
+					</type>
+					<hlinitialMarking>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<dotconstant />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinitialMarking>
+				</place>
+				<place id="pExtMem">
+					<graphics>
+						<position x="100" y="70" />
+					</graphics>
+					<name>
+						<text>Ext_Mem_Acc</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pp" />
+						</structure>
+					</type>
+				</place>
+				<place id="pMem">
+					<graphics>
+						<position x="100" y="40" />
+					</graphics>
+					<name>
+						<text>Memory</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="pro" />
+						</structure>
+					</type>
+					<hlinitialMarking>
+						<structure>
+							<add>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="1">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="2">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="3">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="1">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="4">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="5">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="6">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="7">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="8">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="9">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+								<subterm>
+									<numberof>
+										<subterm>
+											<numberconstant value="1">
+												<natural />
+											</numberconstant>
+										</subterm>
+										<subterm>
+											<finiteintrangeconstant
+												value="10">
+												<finiteintrange
+													start="1" end="10" />
+											</finiteintrangeconstant>
+										</subterm>
+									</numberof>
+								</subterm>
+							</add>
+						</structure>
+					</hlinitialMarking>
+				</place>
+				<transition id="tBO">
+					<graphics>
+						<position x="30" y="50" />
+					</graphics>
+					<name>
+						<text>Begin_Own_Acc</text>
+					</name>
+				</transition>
+				<transition id="tEO">
+					<graphics>
+						<position x="30" y="50" />
+					</graphics>
+					<name>
+						<text>End_Own_Acc</text>
+					</name>
+					<condition>
+						<structure>
+							<equality>
+								<subterm>
+									<variable refvariable="varm" />
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</equality>
+						</structure>
+					</condition>
+				</transition>
+				<transition id="tReq">
+					<graphics>
+						<position x="52" y="70" />
+					</graphics>
+					<name>
+						<text>Req_Ext_Acc</text>
+					</name>
+				</transition>
+				<transition id="tBE">
+					<graphics>
+						<position x="85" y="70" />
+					</graphics>
+					<name>
+						<text>Begin_Ext_Acc</text>
+						<graphics>
+							<offset x="-10" y="-3" />
+						</graphics>
+					</name>
+					<condition>
+						<structure>
+							<inequality>
+								<subterm>
+									<variable refvariable="varm" />
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</inequality>
+						</structure>
+					</condition>
+				</transition>
+				<transition id="tEE">
+					<graphics>
+						<dimension x="20" y="6" />
+						<position x="120" y="70" />
+					</graphics>
+					<name>
+						<text>End_Ext_Acc</text>
+						<graphics>
+							<offset x="3" y="-2" />
+						</graphics>
+					</name>
+				</transition>
+				<arc id="a1" source="tBO" target="pOwn">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a2" source="pOwn" target="tEO">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a3" source="tEO" target="pActive">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a4" source="pActive" target="tBO">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a5" source="tEO" target="pMem">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varm" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a6" source="pMem" target="tEO">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varm" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a7" source="pActive" target="tReq">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a8" source="tReq" target="pQue">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a9" source="pQue" target="tBE">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a10" source="tBE" target="pExt">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varx" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="varm" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a11" source="pExt" target="tEE">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varx" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="vary" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a12" source="tEE" target="pActive">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varx" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a13" source="tEE" target="pMem">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="vary" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a14" source="pMem" target="tBE">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varm" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a15" source="tEE" target="pExt">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<dotconstant />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a16" source="pExt" target="tBE">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<dotconstant />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+			</page>
+		</page>
+	</net>
+</pnml>

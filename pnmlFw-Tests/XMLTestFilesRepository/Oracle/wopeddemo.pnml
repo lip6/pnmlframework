@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Created with Workflow PetriNet Designer Version 1.0 (woped.org)
+-->
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="noID"
+		type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id="page0">
+			<place id="p3">
+				<name>
+					<text>p3</text>
+					<graphics>
+						<offset y="310" x="470" />
+					</graphics>
+				</name>
+				<graphics>
+					<position y="270" x="470" />
+					<dimension y="40" x="40" />
+				</graphics>
+			</place>
+			<place id="p1">
+				<name>
+					<text>p1</text>
+					<graphics>
+						<offset y="160" x="100" />
+					</graphics>
+				</name>
+				<graphics>
+					<position y="120" x="100" />
+					<dimension y="40" x="40" />
+				</graphics>
+				<initialMarking>
+					<text>1</text>
+				</initialMarking>
+			</place>
+			<place id="p2">
+				<name>
+					<text>p2</text>
+					<graphics>
+						<offset y="200" x="500" />
+					</graphics>
+				</name>
+				<graphics>
+					<position y="160" x="500" />
+					<dimension y="40" x="40" />
+				</graphics>
+			</place>
+			<transition id="t1">
+				<name>
+					<text>t1</text>
+					<graphics>
+						<offset y="290" x="320" />
+					</graphics>
+				</name>
+				<graphics>
+					<position y="250" x="320" />
+					<dimension y="40" x="40" />
+				</graphics>
+				<toolspecific version="1.0" tool="WoPeD" />
+			</transition>
+			<transition id="t2">
+				<name>
+					<text>t2</text>
+					<graphics>
+						<offset y="120" x="320" />
+					</graphics>
+				</name>
+				<graphics>
+					<position y="80" x="320" />
+					<dimension y="40" x="40" />
+				</graphics>
+				<toolspecific version="1.0" tool="WoPeD" />
+			</transition>
+			<arc target="t2" source="p1" id="a2">
+				<inscription>
+					<text>1</text>
+				</inscription>
+				<graphics />
+			</arc>
+			<arc target="p3" source="t1" id="a4">
+				<inscription>
+					<text>1</text>
+				</inscription>
+				<graphics />
+			</arc>
+			<arc target="t1" source="p1" id="a1">
+				<inscription>
+					<text>1</text>
+				</inscription>
+				<graphics />
+			</arc>
+			<arc target="t2" source="p2" id="a3">
+				<inscription>
+					<text>1</text>
+				</inscription>
+				<graphics />
+			</arc>
+			<toolspecific version="1.0" tool="WoPeD">
+				<bounds>
+					<position y="0" x="0" />
+					<dimension y="405" x="746" />
+				</bounds>
+			</toolspecific>
+		</page>
+	</net>
+</pnml>

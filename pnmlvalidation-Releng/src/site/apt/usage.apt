@@ -1,0 +1,110 @@
+~~
+~~  Copyright 2009-2014 University Pierre & Marie Curie - UMR CNRS 7606 (LIP6/MoVe)
+~~  All rights reserved.   This program and the accompanying materials
+~~  are made available under the terms of the Eclipse Public License v1.0
+~~  which accompanies this distribution, and is available at
+~~  http://www.eclipse.org/legal/epl-v10.html
+~~
+~~  Initial contributor:
+~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+~~
+~~  Mailing list:
+~~    lom-messan.hillah@lip6.fr
+~~
+
+ -------
+Usage
+ -------
+ -------
+2014-01
+ -------
+
+Invocation
+
+  The general invocation command is: <java -jar jar_name [options] [pnmlFile1 pnmlFfile2 ...]>.
+Run the application with <-h> or <--help> to get help.
+
+* Standalone mode
+
+  The default execution mode is standalone. In this mode, the application expects arguments, which should be PNML documents to check.
+You can specify one or many.
+
+** Include PNML DoC in your toolkit via a Shell Script
+  
+  We provide a {{{./download/validatePNML-PFW.sh}Shell script}} to help you increase productivity in using PNML DoC in standalone mode.
+In particular, a set of arguments for the Java VM is included, that you can start with and modify to your system's settings.
+
+  For instance, the -Xmx argument allocates some max amount of memory to the heap. If you mostly deal with small
+documents (a few hundreds KB), we advise you decrease it (current setting is 2 GB). If you use large documents,
+(a few hundreds MB to GB), then you should increase it.   
+
+** Service result
+
+  In standalone mode, here is an example of the result message; this case when the validation was successful:
+
+  * HTTP/1.1 200 OK
+
+  * Message: Your PNML document conforms to the standard.
+  
+  * Model name: philo
+
+  * Model type: Place/Transition Net.
+
+  * Number of nets: 1
+  
+  * Number of places: 60
+  
+  * Number of transitions: 60
+
+  * Number of arcs: 192
+
+  * Number of reference places: 0
+
+  * Number of reference transitions: 0
+
+* Server mode
+
+  To run in server mode with default port and temporary working directory: <java -jar jar_name -s>.
+
+  Unless you specify them, a default port will be used (10002), and a temporary working directory will be created. Its name is <./pnmlvalidatortmp>.
+The server logs will be located in <./pnmlvalidatortmp/logs/>.
+
+  You can also specify the delay you want conversion tasks not to exceed. When that delay is over, the server cancels the tasks in such a situation. Before
+they stop, they will send you a message with status code <HTTP/1.1 408 Request Timeout>.
+
+
+** Service result
+
+   In server mode, the result message is the same as above, in standalone mode.
+
+HTTP status codes
+
+  The results returned by the server use HTTP status codes in their first line to tell you if the service was successful of if something went wrong.
+They are followed by a message. 
+
+  Here are the HTTP status codes this application uses:
+
+
+*---------------------------------------*------------------------------*
+| HTTP/1.1 200 OK                       | Service successful           |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 202 Accepted                 | For later use                |
+|                                       | (Asynchronous invocation)    |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 400 Bad Request              | Malformed request            |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 403 Forbidden                | Access rights problem        |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 404 Not Found                | A resource is missing        |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 408 Request Timeout          | Task exceeded its delay      |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 413 Request Entity Too Large | File too large to be handled |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 415 Unsupported Media Type   | Unsupported Petri net type,  | 
+|                                       | Not a PNML file              |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 500 Internal Server Error    | Internal problem             |
+*---------------------------------------*------------------------------*
+| HTTP/1.1 503 Service Unavailable      | Cannot serve request         |
+*---------------------------------------*------------------------------*

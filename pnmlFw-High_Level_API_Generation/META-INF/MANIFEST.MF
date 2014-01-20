@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: High Level API Generator
+Bundle-SymbolicName: fr.lip6.move.pnml.framework.hlapigen
+Bundle-Version: 2.2.0.qualifier
+Export-Package: fr.lip6.move.pnml.framework.apigen
+Require-Bundle: org.eclipse.emf,
+ org.eclipse.emf.codegen,
+ org.eclipse.emf.codegen.ecore,
+ org.eclipse.emf.ecore.xmi,
+ fr.lip6.move.pnml.framework.utils,
+ org.eclipse.core.runtime;bundle-version="3.8.0",
+ fr.lip6.move.pnml.framework.3rdpartimports;bundle-version="2.2.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: http://pnml.lip6.fr

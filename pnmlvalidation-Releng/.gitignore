@@ -1,0 +1,4 @@
+.settings
+target
+*.zip
+.DS_Store

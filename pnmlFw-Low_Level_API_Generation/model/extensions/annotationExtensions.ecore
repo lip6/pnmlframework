@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="annotationExtensions"
+    nsURI="http:///annotationExtensions.ecore" nsPrefix="annotationExtensions">
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationExtension" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//AnnotationExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Delay" eSuperTypes="#//AnnotationExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Priority" eSuperTypes="#//AnnotationExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Weight" eSuperTypes="#//AnnotationExtension"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capacity" eSuperTypes="#//AnnotationExtension"/>
+</ecore:EPackage>

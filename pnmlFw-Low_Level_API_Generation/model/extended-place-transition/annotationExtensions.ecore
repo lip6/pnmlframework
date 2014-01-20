@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="annotationExtensions"
+    nsURI="http:///extendedptnet.annotationExtensions.ecore" nsPrefix="annotationExtensions">
+  <eClassifiers xsi:type="ecore:EClass" name="AnnotationExtension" abstract="true"
+      eSuperTypes="extendedPlaceTransition.ecore#//Annotation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="tag" value="text"/>
+        <details key="kind" value="son"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Action" eSuperTypes="#//AnnotationExtension">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="action"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containerTransition" eType="ecore:EClass extendedPlaceTransition.ecore#//Transition"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Delay" eSuperTypes="#//AnnotationExtension">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="delay"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Priority" eSuperTypes="#//AnnotationExtension">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="priority"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Weight" eSuperTypes="#//AnnotationExtension">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="weight"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Capacity" eSuperTypes="#//AnnotationExtension">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="capacity"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containerPlace" lowerBound="1"
+        eType="ecore:EClass extendedPlaceTransition.ecore#//Place" eOpposite="extendedPlaceTransition.ecore#//Place/capacity"/>
+  </eClassifiers>
+</ecore:EPackage>

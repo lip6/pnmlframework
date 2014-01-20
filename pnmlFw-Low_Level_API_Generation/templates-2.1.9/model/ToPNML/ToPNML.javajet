@@ -1,0 +1,426 @@
+<%final String ToPNMLNsURI = "http://www.pnml.org/models/ToPNML";%>
+
+<%if(genClass.isAbstract()&&isInterface){%>
+	public abstract String toPNML();
+	public abstract void fromPNML(OMElement locRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException;
+<%}%>
+<%EClassifier classifier = genClass.getEcoreClassifier();
+	EAnnotation ean = classifier.getEAnnotation(ToPNMLNsURI);
+	genModel.getImportManager().addImport("fr.lip6.move.pnml.framework.utils.logging.LogMaster");
+if(ean!=null){
+	EMap<String, String> content = ean.getDetails();
+	String thistag = content.get("tag");
+	List<GenFeature> allgen = genClass.getAllGenFeatures();
+
+	//processing attributes
+	List<GenFeature> IdRefList = new ArrayList<GenFeature>();
+	List<GenFeature> IdList = new ArrayList<GenFeature>();
+	List<GenFeature> AttList = new ArrayList<GenFeature>();
+	List<GenFeature> SonsList = new ArrayList<GenFeature>();
+	List<GenFeature> FollowList = new ArrayList<GenFeature>();
+	List<GenFeature> AllSonsList = new ArrayList<GenFeature>();
+
+	for (Iterator iterator = allgen.iterator(); iterator.hasNext();) {
+	   GenFeature genFeature = (GenFeature) iterator.next();
+		EAnnotation ea;
+		if (genFeature.isContainer()){continue;}
+		if (!genFeature.isReferenceType()) {
+			ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+		} else {
+			ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+		}
+		if (ea == null) {
+			if(!isInterface){%>
+		//TODO this element (<%=genFeature.getName()%>) seems not to have any ToPNML associated tag.
+		//This is maybe a mistake ?
+	<%		}
+		}else{
+			String type = ea.getDetails().get("kind");
+			if(type==null)
+				continue;
+			if(type.equals("id"))
+				IdList.add(genFeature);
+			if(type.equals("idref"))
+				IdRefList.add(genFeature);
+			if(type.equals("attribute"))
+				AttList.add(genFeature);
+			if(type.equals("son") || type.equals("follow"))
+				SonsList.add(genFeature);
+		}
+	}
+	%>
+
+<%if(isInterface){%>
+	/**
+	 * Return the string containing the pnml output
+	 */
+	public String toPNML();
+
+	/**
+	 * set values to conform PNML document
+	 */
+	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException;
+
+<%}else{%>
+	/**
+	 * Return the string containing the pnml output
+	 */
+	public String toPNML(){
+		//id <%=IdList.size()%>
+		//idref <%=IdRefList.size()%>
+		//attributes <%=AttList.size()%>
+		//sons <%=SonsList.size()%>
+
+		<%Boolean autoclose = false;%>
+		Boolean prettyPrintStatus= ModelRepository.getInstance().isPrettyPrintActive();
+		String retline = "";
+		String headline = "";
+		PrettyPrintData prpd = null;
+		if(prettyPrintStatus){
+			retline = "\n";
+			prpd = ModelRepository.getInstance().getPrettyPrintData();
+			headline = prpd.getCurrentLineHeader();
+		}
+
+		StringBuffer sb = new StringBuffer();
+		sb.append(headline);
+		sb.append("<<%=thistag%>");
+		if(prettyPrintStatus){headline =prpd.increaseLineHeaderLevel();}
+		//begin attributes, id and id ref processing
+		<%//all "kind" of attributes processing%>
+		<%List<GenFeature> AllAttList = new ArrayList<GenFeature>();
+		AllAttList.addAll(IdList);
+		AllAttList.addAll(IdRefList);
+		AllAttList.addAll(AttList);%>
+
+		<%for (Iterator iterator = AllAttList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;
+			if (!genFeature.isReferenceType()) {
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);%>
+				if(<%=genFeature.getGetAccessor()%>()!=null){
+					sb.append(" <%=ea.getDetails().get("tag")%>");
+					sb.append("=\"");
+					sb.append(<%=genFeature.getGetAccessor()%>());
+					sb.append("\"");
+				}
+			<%} else {
+				if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null)
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(
+	            ToPNMLNsURI);%>
+	         if(<%=genFeature.getGetAccessor()%>()!=null){
+	         	sb.append(" <%=ea.getDetails().get("tag")%>");
+					sb.append("=\"");
+					sb.append(<%=genFeature.getGetAccessor()%>().getId());
+					sb.append("\"");
+				}
+			<%}
+		}%>
+
+		<%if(SonsList.size()==0) autoclose=true;
+		if(autoclose){%>
+			sb.append("/>");
+			sb.append(retline);
+		<%}else{%>
+			boolean haveSons = false;
+			sb.append(">");
+			sb.append(retline);
+		<%}%>
+
+
+		//sons, follow processing
+		<%for (Iterator iterator = SonsList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;%>
+			if(<%=genFeature.getGetAccessor()%>()!=null){
+			<%
+			if (!genFeature.isReferenceType()) {//not a reference so is a standard type
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);%>
+				<%if(!genFeature.isListType()){%>
+					<%if(ea.getDetails().get("tag")==null||ea.getDetails().get("tag").equals("")){%>
+						sb.append(<%=genFeature.getGetAccessor()%>().toString());
+					<%}else{%>
+						sb.append(headline);
+						sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(<%=genFeature.getGetAccessor()%>().toString());
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}%>
+						haveSons = true;
+				<%}else{%>
+            	<%=genFeature.getType()%> items = <%=genFeature.getGetAccessor()%>();
+        			for (Iterator iterator = items.iterator(); iterator.hasNext();) {
+            	<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+            	<%if(ea.getDetails().get("tag")==null||ea.getDetails().get("tag").equals("")){%>
+            		sb.append(item.toString());
+            	<%}else{%>
+            		sb.append(headline);
+            		sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(item.toString());
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}%>
+						haveSons = true;
+        			}
+				<%}%>
+			<%} else {//reference to another type
+				if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null)
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(
+	            ToPNMLNsURI);%>
+	         <%if(!genFeature.isListType()){%>
+					String top=<%=genFeature.getGetAccessor()%>().toPNML();
+					if(!top.equals("")){
+					<%if(ea.getDetails().get("tag")!=null && !ea.getDetails().get("tag").equals("")){%>
+						sb.append(headline);
+						sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(top);
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}else{//if no "tag"%>
+						sb.append(top);
+					<%}%>
+						haveSons = true;
+					}
+				<%}else{//list type%>
+            	<%=genFeature.getType()%> items = <%=genFeature.getGetAccessor()%>();
+        			for (Iterator<<%=genFeature.getListItemType(genClass)%>> iterator = items.iterator(); iterator.hasNext();) {
+            		<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+						<%if(ea.getDetails().get("tag")!=null && !ea.getDetails().get("tag").equals("")){%>
+							sb.append(headline);
+							sb.append("<");
+							sb.append("<%=ea.getDetails().get("tag")%>");
+							sb.append(">");
+							sb.append(item.toPNML());
+							sb.append(headline);
+							sb.append("</");
+							sb.append("<%=ea.getDetails().get("tag")%>");
+							sb.append(">");
+						<%}else{%>
+							sb.append(item.toPNML());
+						<%}%>
+							haveSons = true;
+        			}
+				<%}%>
+			<%}//end if (!genFeature.isReferenceType())%>
+			}
+		<%}%>
+
+		/****/
+
+		if(prettyPrintStatus){headline = prpd.decreaseLineHeaderLevel();}
+		<%if(!autoclose){%>
+		if(haveSons){
+			sb.append(headline);
+			sb.append("</<%=thistag%>>");
+			sb.append(retline);
+		}else{
+			sb.delete(sb.lastIndexOf(">"), sb.length());
+			sb.append("/>");
+		}<%}%>
+
+		return sb.toString();
+	}
+
+
+	@SuppressWarnings("unchecked")
+	public void fromPNML(OMElement locRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
+		//<%=IdList.size()%>
+		//<%=IdRefList.size()%>
+		//<%=AttList.size()%>
+		//<%=SonsList.size()%>
+		@SuppressWarnings("unused")
+		<%=genClass.getGenPackage().getFactoryInterfaceName()%> fact = new <%=genClass.getGenPackage().getFactoryClassName()%>();
+		<%
+		List<GenFeature> idatt = new ArrayList<GenFeature>();
+		idatt.addAll(IdList);
+		idatt.addAll(AttList);
+		%>
+
+		//processing id
+		<%for (Iterator iterator = IdList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;
+			if (!genFeature.isReferenceType()) {
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+			} else {
+				if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null)
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(
+	            ToPNMLNsURI);
+	      }%>
+	      <%if(genFeature.isEnumType()){%>
+			if(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))!=null){
+				this.set<%=genFeature.getIsName()%>(<%=genFeature.getType(genClass)%>.get(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))));
+				ModelRepository.getInstance().getCurrentIdRepository().checkId(
+					<%=genFeature.getType(genClass)%>.get(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))).toString(),
+            	(Object) this);
+			}
+			<%}else{%>
+			if(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))!=null){
+				this.set<%=genFeature.getIsName()%>(new <%=genFeature.getType(genClass)%>(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))));
+				ModelRepository.getInstance().getCurrentIdRepository().checkId(
+					new <%=genFeature.getType(genClass)%>(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))).toString(),
+            	(Object) this);
+			}
+			<%}%>
+
+		<%}%>
+
+		//processing idref
+		<%if(IdRefList.size()!=0){%>
+		List<String> ids = new ArrayList<String>();
+		String[] tmp={};
+		<%}%>
+		<%for (Iterator iterator = IdRefList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;
+			if (!genFeature.isReferenceType()) {
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+			} else if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null){
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(ToPNMLNsURI);
+	      }%>
+			if(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))!=null){
+				ids.add(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>")).toString());
+			}
+			idr.addIdRef((Object)this,ids.toArray(tmp));
+		<%}%>
+
+		//processing attributes
+		<%for (Iterator iterator = AttList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			if(!genFeature.isSet()) continue;
+			EAnnotation ea;
+			if (!genFeature.isReferenceType()) {
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+			} else if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null){
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(ToPNMLNsURI);
+	      }%>
+	      <%if(genFeature.isEnumType()){%>
+			if(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))!=null){
+				this.set<%=genFeature.getIsName()%>(<%=genFeature.getImportedType(genClass)%>.get(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))));
+			}
+			<%}else{%>
+			if(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))!=null){
+				try{
+					this.set<%=genFeature.getIsName()%>(new <%=genFeature.getImportedType(genClass)%>(locRoot.getAttributeValue(new QName("<%=ea.getDetails().get("tag")%>"))));
+				} catch (Exception e) {
+                throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
+            }
+			}
+			<%}%>
+		<%}%>
+
+
+		//processing sons
+	<%if(SonsList.size() != 0){%>
+		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
+				@SuppressWarnings("unused")
+            OMElement type = (OMElement) iterator.next();
+		<%for (Iterator iterator = SonsList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+			if(ea.getDetails().get("kind").equals("follow")||
+				ea.getDetails().get("kind").equals("songen")){%>
+			<%if(ea.getDetails().get("tag")==null){%>
+				  <%for (Iterator iterator2 = genClass.getChildrenClasses(genFeature).iterator(); iterator2.hasNext();) {
+				        GenClass genClassLoc = (GenClass) iterator2.next();
+				        if((ea=genClassLoc.getEcoreClass().getEAnnotation(ToPNMLNsURI))==null){%>
+				        //missing toPNML
+							<%continue;}%>
+				if(type.getLocalName().equals("<%=ea.getDetails().get("tag")%>")){
+					<%=genClassLoc.getImportedInterfaceName()%> item;
+					item = new <%=genClassLoc.getGenPackage().getImportedFactoryClassName()%>().create<%=genClassLoc.getName()%>();
+					item.fromPNML(type,idr);
+					<%if(genFeature.getReverse()!=null){%>
+						item.set<%=genFeature.getReverse().getAccessorName()%>(this);
+					<%}else{%>
+						//FIXME PROBLEM: a container setter do not exist for this type
+						//(Maybe this container has not been declared as changeable?)
+					<%}%>
+				    continue;
+				}//end if
+				    <%}//end for%>
+			<%}else{//if tag!=null%>
+
+			if(type.getLocalName().equals("<%=ea.getDetails().get("tag")%>")){
+				<%if(genFeature.isListType()){%>
+					<%=genFeature.getListItemType(genClass)%> item = null;
+				<%}else{%>
+					<%=genFeature.getType(genClass)%> item = null;
+				<%}%>
+				for (Iterator iterator2 = type.getChildElements(); iterator2.hasNext();){
+					OMElement subType = (OMElement) iterator2.next();
+				<%for (GenClass gcljr : genClass.getChildrenClasses(genFeature)) {
+					EAnnotation ealoc;
+					if((ealoc = gcljr.getEcoreClass().getEAnnotation(ToPNMLNsURI)) ==null) continue;%>
+					if(subType.getLocalName().equals("<%=ealoc.getDetails().get("tag")%>")){
+						item = new <%=gcljr.getGenPackage().getImportedFactoryClassName()%>().create<%=gcljr.getName()%>();
+						item.fromPNML(subType, idr);
+						<%if(genFeature.getReverse()!=null){%>
+							item.set<%=genFeature.getReverse().getAccessorName()%>(this);
+						<%}else{%>
+							//FIXME PROBLEM: a container setter do not exist for this type
+							//(Maybe this container has not been declared as changeable?)
+						<%}%>
+				 		continue;
+					}
+        		<%}//end for%>
+        		}
+			}
+
+			//tag!=null
+			<%};//end if tag==null%>
+			<%}else{//kind not follow%>
+				<%if(!genFeature.isListType()){%>
+					<%if(!ea.getDetails().get("tag").equals("")){%>
+					if(type.getLocalName().equals("<%=ea.getDetails().get("tag")%>")){
+						this.set<%=genFeature.getIsName()%>(new <%=genFeature.getType(genClass)%>(type.getText()));
+					}
+					<%}else{%>
+					//Any Elements
+					//all sub element of <<%=thistag%>> will be serialized in a <%=genFeature.getType(genClass)%>
+	            StringBuffer sb = new StringBuffer();
+	            for (Iterator iterator2 = locRoot.getChildElements(); iterator2
+	                    .hasNext();) {
+	                OMElement type2 = (OMElement) iterator2.next();
+	                sb.append(type2.toString());
+	            }
+					this.set<%=genFeature.getIsName()%>(new <%=genFeature.getType(genClass)%>(sb.toString()));
+					<%}%>
+				<%}else{%>
+			//FIXME gestion de listes <%=genFeature.getIsName()%>
+				<%}%>
+			<%}%>
+		<%}//end for%>
+		}
+	<%}//end sons process%>
+
+	}
+
+<%if(!IdRefList.isEmpty()){%>
+	public void idRefHang(ArrayList<Object> oList){
+		<%int num = 0;
+			for (Iterator iterator = IdRefList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();%>
+	      <%if(!genFeature.isEnumType()){%>
+			this.set<%=genFeature.getIsName()%>((<%=genFeature.getType(genClass)%>)oList.get(<%=num%>));
+			<%}
+			num++;
+			%>
+		<%}%>
+	}
+<%}//endif%>
+
+<%}//!interface%>
+<%}//ean!null%>

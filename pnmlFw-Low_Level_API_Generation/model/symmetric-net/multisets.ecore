@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="multisets" nsURI="http:///symmetricnet.multisets.ecore" nsPrefix="multisets">
+  <eClassifiers xsi:type="ecore:EClass" name="Cardinality" eSuperTypes="terms.ecore#//BuiltInOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsTypeOf(integers::Natural) and self.input.oclIsKindOf(terms::MultisetSort)"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="cardinality"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Contains" eSuperTypes="terms.ecore#//BuiltInOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2 and self.input->forAll {c | c.oclIsKindOf(terms::MultisetSort)}"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="contains"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CardinalityOf" eSuperTypes="terms.ecore#//BuiltInOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsTypeOf(integers::Natural) and self.input.size() = 2"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="cardinalityof"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Add" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputType" value="self.input->size() >= 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)} "/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputType"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="add"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="All" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.input->size() = 0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="all"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refsort" ordered="false"
+        lowerBound="1" eType="ecore:EClass terms.ecore#//Sort" containment="true"
+        eOpposite="terms.ecore#//Sort/containerAll">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="kind" value="follow"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Empty" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="InputSize" value="self.input->size = 0"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="InputSize"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="empty"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refsort" lowerBound="1"
+        eType="ecore:EClass terms.ecore#//Sort" containment="true" eOpposite="terms.ecore#//Sort/containerEmpty">
+      <eAnnotations source="http://www.pnml.org/models/ToPNML">
+        <details key="kind" value="follow"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NumberOf" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.input->size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and self.output.oclIsKindOf(terms::MultisetSort)"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="numberof"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Subtract" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputType" value="self.input->size() = 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)}"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputType"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="subtract"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ScalarProduct" eSuperTypes="terms.ecore#//MultisetOperator">
+    <eAnnotations source="http://www.pnml.org/models/OCL">
+      <details key="inputOutputTypes" value="self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="inputOutputTypes"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="scalarproduct"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+</ecore:EPackage>

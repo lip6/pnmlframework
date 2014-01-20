@@ -1,0 +1,24 @@
+public <%= genClass.getInterfaceName() %>HLAPI(<%
+	Helpers.resetComma();
+	for (GenFeature genFeature : featureList) {
+	//We need to distinct model object from externals ones.
+	if(genFeature.isReferenceType()||genFeature.isEnumType()){%>
+		<%=Helpers.putComma()%> <%=genFeature.getImportedType(genClass)%>HLAPI <%=genFeature.getName()%><%}else{%>
+		<%=Helpers.putComma()%> <%=genFeature.getType(genClass)%> <%=genFeature.getName()%><%}%>
+	<%}%>)<%if(theId.size()!=0){%> throws InvalidIDException ,VoidRepositoryException <%}%>{//BEGIN CONSTRUCTOR BODY
+		<%=genClass.getGenPackage().getFactoryInterfaceName()%> fact = <%=genClass.getGenPackage().getFactoryClassName()%>.eINSTANCE;
+		synchronized(fact){item = fact.create<%=genClass.getInterfaceName()%>();}
+	<%for (GenFeature genFeature : featureList) {%>
+ 		<%if(genFeature.isReferenceType()||genFeature.isEnumType()){%>
+ 		if(<%=genFeature.getName()%>!=null)
+			item.set<%=genFeature.getIsName()%>((<%=genFeature.getImportedType(genClass)%>)<%=genFeature.getName()%>.getContainedItem());
+		<%}else{%>
+			if(<%=genFeature.getName()%>!=null){
+			<%if(theId.contains(genFeature)){%>
+				item.set<%=genFeature.getIsName()%>(ModelRepository.getInstance().getCurrentIdRepository().checkId(<%=genFeature.getName()%>, this));
+			<%}else{%>
+				item.set<%=genFeature.getIsName()%>(<%=genFeature.getName()%>);
+			<%}%>}
+		<%}%>
+	<%}%>
+	}

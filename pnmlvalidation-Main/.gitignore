@@ -1,0 +1,10 @@
+target
+.settings
+bin
+lib
+.DS_Store
+resources
+output.txt
+src/main/schematron
+src/main/xslt
+src/fr/lip6/move/pnml/validation/experiment

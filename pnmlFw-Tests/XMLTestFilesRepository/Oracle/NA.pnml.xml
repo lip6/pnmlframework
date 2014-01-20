@@ -1,0 +1,54 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="NA"
+		type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id="page0">
+			<name>
+				<text>NA</text>
+			</name>
+			<place id="p1">
+				<name>
+					<text>p1</text>
+				</name>
+				<initialMarking>
+					<text>0</text>
+				</initialMarking>
+			</place>
+			<place id="p2">
+				<name>
+					<text>p2</text>
+				</name>
+				<initialMarking>
+					<text>0</text>
+				</initialMarking>
+			</place>
+			<place id="p3">
+				<name>
+					<text>p3</text>
+				</name>
+				<initialMarking>
+					<text>2</text>
+				</initialMarking>
+			</place>
+			<transition id="t1">
+				<name>
+					<text>t1</text>
+				</name>
+			</transition>
+			<arc id="a1" source="p1" target="t1">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="a2" source="t1" target="p2">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="a3" source="t1" target="p3">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+		</page>
+	</net>
+</pnml>

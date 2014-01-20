@@ -1,0 +1,46 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="NB"
+		type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<page id="page0">
+			<name>
+				<text>NB</text>
+			</name>
+			<place id="p4">
+				<name>
+					<text>p4</text>
+				</name>
+				<initialMarking>
+					<text>1</text>
+				</initialMarking>
+			</place>
+			<place id="p5">
+				<name>
+					<text>p5</text>
+				</name>
+				<initialMarking>
+					<text>1</text>
+				</initialMarking>
+			</place>
+			<transition id="t2">
+				<name>
+					<text>t2</text>
+				</name>
+			</transition>
+			<arc id="a1" source="t2" target="p4">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="a2" source="t2" target="p5">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="a3" source="p4" target="t2">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+		</page>
+	</net>
+</pnml>

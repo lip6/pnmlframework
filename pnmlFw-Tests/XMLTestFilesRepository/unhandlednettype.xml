@@ -1,0 +1,25 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="net0"
+		type="http://www.pnml.org/version-2009/grammar/wawawouf">
+		<page id="toppage">
+			<name>
+				<text>myname</text>
+			</name>
+			<page id="subpage">
+				<name>
+					<text>toto</text>
+				</name>
+				<arc id="a3" source="place3" target="transistion2"></arc>
+				<arc id="a4" source="transistion2" target="place2"></arc>
+				<place id="place3"></place>
+				<place id="place2"></place>
+				<transition id="transistion2"></transition>
+			</page>
+			<arc id="a1" source="place1" target="transistion1"></arc>
+			<arc id="a2" source="transistion1" target="reftop3"></arc>
+			<place id="place1"></place>
+			<transition id="transistion1"></transition>
+			<referencePlace id="reftop3" ref="place3"></referencePlace>
+		</page>
+	</net>
+</pnml>

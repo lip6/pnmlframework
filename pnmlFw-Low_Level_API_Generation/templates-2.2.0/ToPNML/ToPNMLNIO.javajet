@@ -1,0 +1,280 @@
+
+<%if(genClass.isAbstract()&&isInterface){%>
+	public abstract void toPNML(FileChannel fc);
+<%}%>
+<%
+	genModel.getImportManager().addImport("java.util.List");
+	genModel.getImportManager().addImport("java.nio.ByteBuffer");
+	genModel.getImportManager().addImport("java.nio.channels.FileChannel");
+	genModel.getImportManager().addImport("java.nio.charset.Charset");
+	genModel.getImportManager().addImport("java.io.IOException");
+	genModel.getImportManager().addImport("fr.lip6.move.pnml.framework.utils.PNMLEncoding");
+	genModel.getImportManager().addImport("fr.lip6.move.pnml.framework.general.PnmlExport");
+if(ean!=null){
+	EMap<String, String> content = ean.getDetails();
+	String thistag = content.get("tag");
+	List<GenFeature> allgen = genClass.getAllGenFeatures();
+
+	//processing attributes
+	List<GenFeature> IdRefList = new ArrayList<GenFeature>();
+	List<GenFeature> IdList = new ArrayList<GenFeature>();
+	List<GenFeature> AttList = new ArrayList<GenFeature>();
+	List<GenFeature> SonsList = new ArrayList<GenFeature>();
+	List<GenFeature> FollowList = new ArrayList<GenFeature>();
+	List<GenFeature> AllSonsList = new ArrayList<GenFeature>();
+
+	for (Iterator iterator = allgen.iterator(); iterator.hasNext();) {
+	   GenFeature genFeature = (GenFeature) iterator.next();
+		EAnnotation ea;
+		if (genFeature.isContainer()){continue;}
+		if (!genFeature.isReferenceType()) {
+			ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+		} else {
+			ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+		}
+		if (ea == null) {
+			if(!isInterface){%>
+		//TODO this element (<%=genFeature.getName()%>) seems not to have any ToPNML associated tag.
+		//This is maybe a mistake ?
+	<%		}
+		}else{
+			String type = ea.getDetails().get("kind");
+			if(type==null)
+				continue;
+			if(type.equals("id"))
+				IdList.add(genFeature);
+			if(type.equals("idref"))
+				IdRefList.add(genFeature);
+			if(type.equals("attribute"))
+				AttList.add(genFeature);
+			if(type.equals("son") || type.equals("follow"))
+				SonsList.add(genFeature);
+		}
+	}
+	%>
+
+<%if(isInterface){%>
+	/**
+	 * Write the PNML xml tree of this object into file
+	 */
+	public void toPNML(FileChannel fc);
+
+<%}else{%>
+	/**
+	 * Return the string containing the pnml output
+	 */
+	public void toPNML(FileChannel fc){
+		//id <%=IdList.size()%>
+		//idref <%=IdRefList.size()%>
+		//attributes <%=AttList.size()%>
+		//sons <%=SonsList.size()%>
+		
+		final int bufferSizeKB = 8;
+		final int bufferSize = bufferSizeKB * 1024;
+		final ByteBuffer bytebuf = ByteBuffer.allocateDirect(bufferSize);
+		final String charsetEncoding = PNMLEncoding.ISO_8859_1.getName();
+		<%Boolean autoclose = false;%>
+		Boolean prettyPrintStatus= ModelRepository.getInstance().isPrettyPrintActive();
+		String retline = "";
+		String headline = "";
+		PrettyPrintData prpd = null;
+		if(prettyPrintStatus){
+			retline = "\n";
+			prpd = ModelRepository.getInstance().getPrettyPrintData();
+			headline = prpd.getCurrentLineHeader();
+		}
+		
+		StringBuilder sb = new StringBuilder();
+		sb.append(headline);
+		sb.append("<<%=thistag%>");
+		if(prettyPrintStatus){headline =prpd.increaseLineHeaderLevel();}
+		//begin attributes, id and id ref processing
+		<%//all "kind" of attributes processing%>
+		<%List<GenFeature> AllAttList = new ArrayList<GenFeature>();
+		AllAttList.addAll(IdList);
+		AllAttList.addAll(IdRefList);
+		AllAttList.addAll(AttList);%>
+
+		<%for (Iterator iterator = AllAttList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;
+			if (!genFeature.isReferenceType()) {
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);%>
+				if(<%=genFeature.getGetAccessor()%>()!=null){
+					sb.append(" <%=ea.getDetails().get("tag")%>");
+					sb.append("=\"");
+					sb.append(<%=genFeature.getGetAccessor()%>());
+					sb.append("\"");
+				}
+			<%} else {
+				if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null)
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(
+	            ToPNMLNsURI);%>
+	         if(<%=genFeature.getGetAccessor()%>()!=null){
+	         	sb.append(" <%=ea.getDetails().get("tag")%>");
+					sb.append("=\"");
+					sb.append(<%=genFeature.getGetAccessor()%>().getId());
+					sb.append("\"");
+				}
+			<%}
+		}%>
+
+		<%if(SonsList.size()==0) autoclose=true;
+		if(autoclose){%>
+			sb.append("/>");
+			sb.append(retline);
+		<%}else{%>
+			boolean haveSons = false;
+			sb.append(">");
+			sb.append(retline);
+		<%}%>
+
+
+		//sons, follow processing
+		<%for (Iterator iterator = SonsList.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();
+			EAnnotation ea;%>
+			if(<%=genFeature.getGetAccessor()%>()!=null){
+			<%
+			if (!genFeature.isReferenceType()) {//not a reference so is a standard type
+				ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);%>
+				<%if(!genFeature.isListType()){%>
+					<%if(ea.getDetails().get("tag")==null||ea.getDetails().get("tag").equals("")){%>
+						sb.append(<%=genFeature.getGetAccessor()%>().toString());
+					<%}else{%>
+						sb.append(headline);
+						sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(<%=genFeature.getGetAccessor()%>().toString());
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}%>
+						haveSons = true;
+				<%}else{%>
+            	<%=genFeature.getType(genFeature.getGenClass())%> items = <%=genFeature.getGetAccessor()%>();
+        			for (Iterator iterator = items.iterator(); iterator.hasNext();) {
+            	<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+            	<%if(ea.getDetails().get("tag")==null||ea.getDetails().get("tag").equals("")){%>
+            		sb.append(item.toString());
+            	<%}else{%>
+            		sb.append(headline);
+            		sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(item.toString());
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}%>
+						haveSons = true;
+        			}
+				<%}%>
+			<%} else {//reference to another type
+				if((ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI))==null)
+				ea = genFeature.getEcoreFeature().getEType().getEAnnotation(
+	            ToPNMLNsURI);%>
+	         <%if(!genFeature.isListType()){%>
+					String top=<%=genFeature.getGetAccessor()%>().toPNML();
+					if(!top.equals("")){
+					<%if(ea.getDetails().get("tag")!=null && !ea.getDetails().get("tag").equals("")){%>
+						sb.append(headline);
+						sb.append("<");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(top);
+						sb.append("</");
+						sb.append("<%=ea.getDetails().get("tag")%>");
+						sb.append(">");
+						sb.append(retline);
+					<%}else{//if no "tag"%>
+						sb.append(top);
+					<%}%>
+						haveSons = true;
+					}
+				<%}else{//list type%>
+				try {
+					writeIntoStream(bytebuf, fc, sb.toString().getBytes(Charset.forName(charsetEncoding)));
+				} catch (IOException io) {
+					io.printStackTrace();
+					// fail fast
+					return;
+				}
+				sb.delete(0, sb.length());
+            	<%=genFeature.getType(genFeature.getGenClass())%> items = <%=genFeature.getGetAccessor()%>();
+        			for (Iterator<<%=genFeature.getListItemType(genClass)%>> iterator = items.iterator(); iterator.hasNext();) {
+            		<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+						<%if(ea.getDetails().get("tag")!=null && !ea.getDetails().get("tag").equals("")){%>
+							sb.append(headline);
+							sb.append("<");
+							sb.append("<%=ea.getDetails().get("tag")%>");
+							sb.append(">");
+							try {
+								writeIntoStream(bytebuf, fc, sb.toString().getBytes(Charset.forName(charsetEncoding)));
+							} catch (IOException io) {
+								io.printStackTrace();
+								// fail fast
+								return;
+							}
+							sb.delete(0, sb.length());
+							item.toPNML(fc);
+							sb.append(headline);
+							sb.append("</");
+							sb.append("<%=ea.getDetails().get("tag")%>");
+							sb.append(">");
+						<%}else{%>
+							item.toPNML(fc);
+						<%}%>
+							haveSons = true;
+        			}
+				<%}%>
+			<%}//end if (!genFeature.isReferenceType())%>
+			}
+		<%}%>
+
+		/****/
+
+		if(prettyPrintStatus){headline = prpd.decreaseLineHeaderLevel();}
+		<%if(!autoclose){%>
+			sb.append(headline);
+			sb.append("</<%=thistag%>>");
+			sb.append(retline);
+	    <%}%>
+
+		try {
+			writeIntoStream(bytebuf, fc, sb.toString().getBytes(Charset.forName(charsetEncoding)));
+		} catch (IOException io) {
+			io.printStackTrace();
+			// fail fast
+			return;
+		}
+		sb = null;
+	}
+
+    /**
+     * Writes buffer of a given max size into file channel.
+     */
+	private static final void writeIntoStream(final ByteBuffer bytebuf, final FileChannel fc, final byte[] contents) throws IOException {
+		final int chopSize = 6 * 1024;
+		if (contents.length >= bytebuf.capacity()) {
+			List<byte[]> chops = PnmlExport.chopBytes(contents, chopSize);
+			for (byte[] buf : chops) {
+				bytebuf.put(buf);
+				bytebuf.flip();
+				fc.write(bytebuf);
+				bytebuf.clear();
+			}
+		} else {
+			bytebuf.put(contents);
+			bytebuf.flip();
+			fc.write(bytebuf);
+			bytebuf.clear();
+		}
+	}
+
+
+<%}//!interface%>
+<%}//ean!null%>

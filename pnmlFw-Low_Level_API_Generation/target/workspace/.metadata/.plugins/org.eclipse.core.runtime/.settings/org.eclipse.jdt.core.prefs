@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.EMF_CODEGEN=/Users/lom/.m2/repository/p2/osgi/bundle/org.eclipse.emf.codegen/2.9.0.v20130902-0605/org.eclipse.emf.codegen-2.9.0.v20130902-0605.jar
+org.eclipse.jdt.core.classpathVariable.EMF_CODEGEN_ECORE=/Users/lom/.m2/repository/p2/osgi/bundle/org.eclipse.emf.codegen.ecore/2.9.1.v20130902-0605/org.eclipse.emf.codegen.ecore-2.9.1.v20130902-0605.jar
+org.eclipse.jdt.core.classpathVariable.EMF_COMMON=/Users/lom/.m2/repository/p2/osgi/bundle/org.eclipse.emf.common/2.9.1.v20130827-0309/org.eclipse.emf.common-2.9.1.v20130827-0309.jar
+org.eclipse.jdt.core.classpathVariable.EMF_ECORE=/Users/lom/.m2/repository/p2/osgi/bundle/org.eclipse.emf.ecore/2.9.1.v20130827-0309/org.eclipse.emf.ecore-2.9.1.v20130827-0309.jar

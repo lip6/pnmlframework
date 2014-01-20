@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="attributeExtensions"
+    nsURI="http:///attributeExtensions.ecore" nsPrefix="attributeExtensions">
+  <eClassifiers xsi:type="ecore:EClass" name="ArcNature" eSuperTypes="#//ObjectNature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//ArcNatures"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArcNatures">
+    <eLiterals name="NORMAL" literal="normal"/>
+    <eLiterals name="INHIBITOR" value="1" literal="inhibitor"/>
+    <eLiterals name="READ" value="2" literal="read"/>
+    <eLiterals name="RESET" value="3" literal="reset"/>
+    <eLiterals name="TRANSFER" value="4" literal="transfer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionNature" eSuperTypes="#//ObjectNature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//TransitionNatures"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TransitionNatures">
+    <eLiterals name="NORMAL" literal="normal"/>
+    <eLiterals name="IMMEDIATE" value="1" literal="immediate"/>
+    <eLiterals name="FIXEDELAY" value="2" literal="fixedelay"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PlaceNature" eSuperTypes="#//ObjectNature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="#//PlaceNatures"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PlaceNatures">
+    <eLiterals name="NORMAL" literal="normal"/>
+    <eLiterals name="QUEUE" value="1" literal="queue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectNature" abstract="true"/>
+</ecore:EPackage>

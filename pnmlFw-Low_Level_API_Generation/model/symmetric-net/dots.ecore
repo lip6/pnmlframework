@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dots" nsURI="http:///symmetricnet.dots.ecore" nsPrefix="dots">
+  <eClassifiers xsi:type="ecore:EClass" name="Dot" eSuperTypes="terms.ecore#//BuiltInSort">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="dot"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+    <eAnnotations source="http://www.pnml.org/models/methods/SORT">
+      <details key="signature" value="boolean equalSorts(Sort sort)"/>
+      <details key="body" value="boolean isEqual = false;&#xA;&#x9;&#x9;if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {&#xA;&#x9;&#x9;    //by default they are the same sort, unless they have been named.&#xA;&#x9;&#x9;  &#x9;isEqual = true;&#xA;&#x9;&#x9;  &#x9;if (this.getContainerNamedSort() != null&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&amp;&amp; sort.getContainerNamedSort() != null) {&#xA;&#x9;&#x9;&#x9;&#x9;// we test them if they have been explicitly named.&#xA;&#x9;&#x9;&#x9;&#x9;isEqual = this.getContainerNamedSort().getName()&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;.equalsIgnoreCase(&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sort.getContainerNamedSort().getName());&#xA;&#x9;&#x9;&#x9;}// otherwise, keep the default.&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;return isEqual;"/>
+      <details key="documentation" value="/**&#xD; * Returns true if this sort and argument sort are actually &#xD; * semantically the same sort, even in two different objects.&#xD; * Ex: two FiniteEnumerations or two Integers.&#xD; * @return true if so. &#xD; * @param sort the sort to which we compare this one. &#xD; * @throws NullPointerException if according to the model, some&#xD; * required reference attributes have not been set.&#xD; */"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DotConstant" eSuperTypes="terms.ecore#//BuiltInConstant">
+    <eAnnotations source="http://www.pnml.org/models/ToPNML">
+      <details key="tag" value="dotconstant"/>
+      <details key="kind" value="son"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,26 @@
+<pnmlcustomtypes>
+	<pnmlcustomtype typename="first custom type"
+		namespace="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"
+		rngurl="http://www.pnml.org/version-2009/grammar/pnmlcoremodel.rng">
+		<rootclass>
+			fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI
+		</rootclass>
+	</pnmlcustomtype>
+	<pnmlcustomtype typename="fake custom type"
+		namespace="http://www.pnml.org/version-2009/grammar/nimportequoi"
+		rngurl="http://www.pnml.org/version-2009/grammar/nimportequoi.rng">
+		<rootclass>
+			fr.lip6.move.pnml.nimportequoi.hlapi.PetriNetDocHLAPI
+		</rootclass>
+		<fallbackclass>
+			fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI
+		</fallbackclass>
+	</pnmlcustomtype>
+	<pnmlcustomtype typename="fake custom type 2"
+		namespace="http://www.pnml.org/version-2009/grammar/nimportequoibis"
+		rngurl="http://www.pnml.org/version-2009/grammar/nimportequoibis.rng">
+		<rootclass>
+			fr.lip6.move.pnml.nimportequoibis.hlapi.PetriNetDocHLAPI
+		</rootclass>
+	</pnmlcustomtype>
+</pnmlcustomtypes>

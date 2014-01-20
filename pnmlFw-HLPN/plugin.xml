@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ (C) University Pierre & Marie Curie - UMR CNRS 7606 (LIP6/MoVe)
+ All rights reserved.   This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+  
+  Contributors: 
+    Lom HILLAH (LIP6) - Initial models and implementation
+    Rachid Alahyane (UPMC) - Infrastructure and continuous integration
+    Bastien Bouzerau (UPMC) - Architecture
+    Guillaume Giffo (UPMC)  - Code generation refactoring, high-level API
+
+ $Id$
+-->
+
+<plugin>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.arbitrarydeclarations.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.booleans.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.booleans.BooleansPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.cyclicEnumerations.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumerationsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.dots.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.dots.DotsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.finiteEnumerations.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumerationsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.finiteIntRanges.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangesPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.hlcorestructure.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.hlcorestructure.HlcorestructurePackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.integers.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.integers.IntegersPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.lists.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.lists.ListsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.multisets.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.multisets.MultisetsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.partitions.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.partitions.PartitionsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.strings.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.strings.StringsPackage" />
+  </extension>
+
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package 
+       uri = "http:///hlpn.terms.ecore" 
+       class = "fr.lip6.move.pnml.hlpn.terms.TermsPackage" />
+  </extension>
+
+</plugin>

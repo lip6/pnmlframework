@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests of the Utils Plugin
+Bundle-SymbolicName: fr.lip6.move.pnml.framework.utils.tests
+Bundle-Version: 2.2.0.qualifier
+Fragment-Host: fr.lip6.move.pnml.framework.utils;bundle-version="2.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

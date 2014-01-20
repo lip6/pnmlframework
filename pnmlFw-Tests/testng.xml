@@ -1,0 +1,71 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="all tests" verbose="1">
+	<test name="TypesBasesTests">
+		<groups>
+			<run>
+				<include name="pnmltypetests" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general"></package>
+		</packages>
+	</test>
+	<test name="import_export">
+		<groups>
+			<run>
+				<include name="generalimport" />
+				<include name="generalexport" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general" />
+		</packages>
+	</test>
+
+	<test name="idrepintegration">
+		<groups>
+			<run>
+				<include name="idrepintegration" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general" />
+		</packages>
+	</test>
+
+	<test name="fallback">
+		<groups>
+			<run>
+				<include name="fallback" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general" />
+		</packages>
+	</test>
+
+	<test name="Oracle">
+		<groups>
+			<run>
+				<include name="Oracle" />
+				<include name="inoutinout" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general" />
+		</packages>
+	</test>
+	
+	<test name="pnmlTypes">
+		<groups>
+			<run>
+				<include name="TypesTests" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.framework.general" />
+		</packages>
+	</test>
+
+</suite>

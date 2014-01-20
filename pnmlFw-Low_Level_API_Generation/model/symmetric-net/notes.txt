@@ -1,0 +1,75 @@
+***************Date : July 22, 2008
+A/ Ajout des liens "container" pour les compositions dans les diagrammes
+1- Dans Terms :
+   - Quand plusieurs classes partagent une même ascendance, le lien
+   container est mis dans l'ascendance (exemple, Declaration)
+
+2- Pour HLCoreStructure et Terms il peut y avoir problème de d'import
+circulaire de packages entre eux, car HLCoreStructure importe déjà Terms
+et l'ajout de lien container dans les classes Sort, Term et Declaration
+vers Type, HLMarking, etc impose d'importer HLCoreStructure...
+
+3- Idem entre Terms et Multisets avec All et Empty
+
+4- Le problème du raccrochement entre FEConstant et FiniteEnum et CyclicEnum
+est-il réglé ? Aux dernières nouvelles CyclicEnum hérite de FiniteEnum et ce
+dernier n'étant pas abstract, il y avait un souci... ?
+
+
+***************Date : July 14, 2008
+A/
+1- Les liens retour dans les compositions, qui sont generalement nommes
+container... ne sont pas encore implementes dans les modeles. Sont-ils encore necessaires ?
+
+2- Les liens retour qui existent parce que explicitement nommes dans le standard, sont
+positionnes a changeable = true.
+
+B/ Packages to explicitly import in the generated code so that OCL constraints
+checker code can use them. 
+NB : Terms, are already implicitly imported in the ecore model definition of
+ the importing packages. 
+
+1- Les contraintes OCL sur le package Multisets impliquent l'import
+de Booleans et Integers dans le plugin final (insérer dans le genmodel ?).
+Terms est déjà importé.
+
+2- Pour FiniteIntRanges, il s'agit de Booleans.
+
+3- Pour Partitions, il s'agit également de Booleans
+
+4- Pour Integer, idem Booleans
+
+5- Pour Strings, idem Booleans et Integers
+
+6- Pour Lists, idem Integers
+
+C/ In the grammar for terms, some sequence ordering is required
+in the nesting of sub-elements, for instance for NameOperator.
+This is also the case at other places in the models. 
+Is it harmful for the PNML generation ? (i.e., is it difficult to figure this out ?)
+In which case, the grammar might be updated by including <interleave> definition
+at those places. 
+
+D/ There are some reference attributes which are sub-elements with their declared tag,
+but in addition they should be "followed" to the type they are referencing.
+
+For instance, hlcorestructure::Declaration::structure is in such a case.
+Same for :
+- hlcorestructure::Type::structure
+- hlcorestructure::HLMarking::structure
+- hlcorestructure::Condition::structure
+- hlcorestructure::HLAnnotation::structure
+- terms::operator::subterm 
+- terms::namedoperator::def
+- terms::namedoperator::parameters
+
+Therefore, there should be two "kind" annotations: one which declares the sub-element,
+the other which tells that it should be "followed". But These are annotations
+with the same key, which EMF obviously does not like ;-)
+
+We should find a way to put this info as annotation with another key than "kind".
+For now another annotation with key "toBeFollowed" is temporarily set to flag
+places where such issue resides.
+
+This is to be checked and corrected if not properly set.
+

@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  
+	<parent>
+		<groupId>fr.lip6.move.pnml</groupId>
+		<artifactId>framework.releng</artifactId>
+		<version>2.2.0</version>
+		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
+	</parent>
+
+
+  
+	<groupId>fr.lip6.move.pnml.framework</groupId>
+	<artifactId>apigen.feature</artifactId>
+	<version>${current}</version>
+	<packaging>eclipse-feature</packaging>
+	<name>Pnml Framework (API for code generation plugin)</name>
+	<description>
+		Pnml Framework - API for code generation plugin
+	</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>fr.lip6.move.pnml.framework</groupId>
+      <artifactId>utils</artifactId>
+    </dependency>
+  </dependencies>
+  <!--Pre-position actual dependency; above to be removed ?
+   There is no pom for apigen yet. Create one.
+  <dependencies>
+    <dependency>
+      <groupId>fr.lip6.move.pnml.framework</groupId>
+      <artifactId>apigen</artifactId>
+    </dependency>
+-->
+<profiles>
+	<!--Normally the dev-snapshot profile is not activated for features-->
+	<profile>
+		<id>dev-snapshot</id>
+		<properties>
+			<current>${dev.snapshot}.${timestamp}</current>
+		</properties>
+	</profile>
+	<profile>
+		<id>dev-release</id>
+		<properties>
+			<current>${dev.release}</current>
+		</properties>
+	</profile>
+	<profile>
+		<id>pnml-candidate</id>
+		<properties>
+			<current>${pnml.candidate}</current>
+		</properties>
+	</profile>
+	<profile>
+		<id>pnml-release</id>
+		<properties>
+			<current>${pnml.release}</current>
+		</properties>
+	</profile>
+</profiles>
+  
+</project>

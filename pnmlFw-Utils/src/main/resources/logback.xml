@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+     Copyright 2009 Sorbonne Universités, Université Pierre & Marie Curie - CNRS UMR 7606 (LIP6/MoVe)
+     All rights reserved.   This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License v1.0
+     which accompanies this distribution, and is available at
+     http://www.eclipse.org/legal/epl-v10.html
+
+     Initial contributor:
+       Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+
+     Mailing list:
+       lom-messan.hillah@lip6.fr
+
+-->
+<configuration debug="true">
+	<!-- sends logs to logback-beagle -->
+	<consolePlugin silent="true" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<socketPlugin silent="true"/>
+	
+	<appender name="SOCKET" class="ch.qos.logback.classic.net.SocketAppender">
+		<reconnectionDelay>0</reconnectionDelay>
+  		
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

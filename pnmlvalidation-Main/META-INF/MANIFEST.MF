@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Main-Class: fr.lip6.move.pnml.validation.ValidationMain
+Bundle-ManifestVersion: 2
+Bundle-Name: PNML DoC (PNML Document Checker)
+Bundle-SymbolicName: fr.lip6.move.pnml.check;singleton:=true
+Bundle-Version: 1.0.1
+Export-Package: fr.lip6.move.pnml.validation;uses:="fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.validation.stats",
+ fr.lip6.move.pnml.validation.exceptions,
+ fr.lip6.move.pnml.validation.impl;
+  uses:="fr.lip6.move.pnml.validation,
+   fr.lip6.move.pnml.framework.hlapi,
+   fr.lip6.move.pnml.ptnet.hlapi,
+   fr.lip6.move.pnml.framework.utils,
+   fr.lip6.move.pnml.validation.stats",
+ fr.lip6.move.pnml.validation.stats;uses:="fr.lip6.move.pnml.validation,fr.lip6.move.pnml.framework.hlapi",
+ fr.lip6.move.pnml.validation.stats.impl;uses:="fr.lip6.move.pnml.validation,fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.validation.stats",
+ fr.lip6.pnml.validation.client
+Bundle-Vendor: Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)
+Bundle-Activator: fr.lip6.move.pnml.validation.ValidationMain
+Require-Bundle: fr.lip6.move.pnml.framework.coremodel,
+ fr.lip6.move.pnml.framework.ptnet,
+ fr.lip6.move.pnml.framework.symmetricnet,
+ fr.lip6.move.pnml.framework.hlpn,
+ fr.lip6.move.pnml.framework.pthlpng;bundle-version="2.2.0",
+ fr.lip6.move.pnml.framework.utils,
+ fr.lip6.move.pnml.framework.3rdpartimports;bundle-version="2.2.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .

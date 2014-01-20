@@ -1,0 +1,327 @@
+/**
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * All rights reserved.   This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *  
+ *  Contributors: 
+ *    Lom HILLAH (LIP6) - Initial models and implementation
+ *    Rachid Alahyane (UPMC) - Infrastructure and continuous integration
+ *    Bastien Bouzerau (UPMC) - Architecture 
+ *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
+ *
+ * $Id ggiffo, Thu Jan 02 00:08:26 CET 2014$
+ */
+package fr.lip6.move.pnml.ptnet.hlapi;
+
+import fr.lip6.move.pnml.ptnet.Annotation;
+import fr.lip6.move.pnml.ptnet.AnnotationGraphics;
+import fr.lip6.move.pnml.ptnet.AnyObject;
+import fr.lip6.move.pnml.ptnet.Arc;
+import fr.lip6.move.pnml.ptnet.ArcGraphics;
+import fr.lip6.move.pnml.ptnet.CSS2Color;
+import fr.lip6.move.pnml.ptnet.Dimension;
+import fr.lip6.move.pnml.ptnet.Fill;
+import fr.lip6.move.pnml.ptnet.Font;
+import fr.lip6.move.pnml.ptnet.Gradient;
+import fr.lip6.move.pnml.ptnet.Label;
+import fr.lip6.move.pnml.ptnet.Line;
+import fr.lip6.move.pnml.ptnet.LineShape;
+import fr.lip6.move.pnml.ptnet.LineStyle;
+import fr.lip6.move.pnml.ptnet.Name;
+import fr.lip6.move.pnml.ptnet.Node;
+import fr.lip6.move.pnml.ptnet.NodeGraphics;
+import fr.lip6.move.pnml.ptnet.Offset;
+import fr.lip6.move.pnml.ptnet.PNType;
+import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
+import fr.lip6.move.pnml.ptnet.PTMarking;
+import fr.lip6.move.pnml.ptnet.Page;
+import fr.lip6.move.pnml.ptnet.PetriNet;
+import fr.lip6.move.pnml.ptnet.PetriNetDoc;
+import fr.lip6.move.pnml.ptnet.Place;
+import fr.lip6.move.pnml.ptnet.PnObject;
+import fr.lip6.move.pnml.ptnet.Position;
+import fr.lip6.move.pnml.ptnet.ToolInfo;
+
+import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
+
+import java.net.URI;
+
+import java.util.List;
+
+import  fr.lip6.move.pnml.framework.hlapi.*;
+import fr.lip6.move.pnml.ptnet.hlapi.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import fr.lip6.move.pnml.ptnet.*;
+import fr.lip6.move.pnml.ptnet.impl.*;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import org.testng.annotations.*;
+public class ArcGraphicsHLAPITest {
+
+	
+	private LineHLAPI itemline;
+		
+	
+	private ArcHLAPI itemcontainerArc;
+	
+
+
+	@AfterTest(groups = { "ArcGraphicsHLAPI", "hlapi" })
+	public void After() {
+	    System.out.println("done for "+"ArcGraphicsHLAPI(ptnet)");
+	}
+
+
+	@BeforeMethod(groups = { "ArcGraphicsHLAPI", "hlapi" })
+	public void setup() throws Exception{
+	//ModelRepository.reset(); ModelRepository.getInstance().createDocumentWorkspace("void");
+	ModelRepository mr = ModelRepository.getInstance();
+	mr.createDocumentWorkspace("void");
+	
+			
+			//PtnetFactoryImpl
+			itemline = new LineHLAPI(new PtnetFactoryImpl().createLine());
+			
+		
+
+	
+		
+		itemcontainerArc = new ArcHLAPI(new PtnetFactoryImpl().createArc());
+		
+	
+	}
+
+	/**
+	 * this constructor allows you to set all 'settable' values
+	 * excepted container.
+	 */
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"}, dependsOnMethods={"ArcGraphicsHLAPI_LLAPI"})
+	public void ArcGraphicsHLAPI_1(){//BEGIN CONSTRUCTOR BODY
+   @SuppressWarnings("unused")
+	ArcGraphicsHLAPI totest = new ArcGraphicsHLAPI(
+		itemline
+	);
+	
+	
+	
+	assert totest.getLine().equals(itemline.getContainedItem());
+	
+	
+	}
+
+	/**
+	 * this constructor allows you to set all 'settable' values, including container if any.
+	 */
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"}, dependsOnMethods={"ArcGraphicsHLAPI_LLAPI"})
+	public void ArcGraphicsHLAPI_2_containerArc(){//BEGIN CONSTRUCTOR BODY
+
+	ArcGraphicsHLAPI totest = new ArcGraphicsHLAPI(
+		itemline
+	,	
+		itemcontainerArc
+	);
+	
+	
+		
+			assert totest.getLine().equals(itemline.getContainedItem());
+		
+	
+	assert totest.getContainerArc().equals(itemcontainerArc.getContainedItem());
+	}
+
+	/**
+    * This constructor give access to required stuff only (not container if any)
+    */
+
+	/**
+    * This constructor give access to required stuff only (and container)
+    */
+   @Test(groups = { "hlapi", "ArcGraphicsHLAPI"}, dependsOnMethods={"ArcGraphicsHLAPI_LLAPI"})
+	public void ArcGraphicsHLAPI_4_containerArc(){//BEGIN CONSTRUCTOR BODY
+
+	ArcGraphicsHLAPI totest = new ArcGraphicsHLAPI(
+	  itemcontainerArc
+	);
+
+	
+	assert totest.getContainerArc().equals(itemcontainerArc.getContainedItem());
+	}
+
+
+	/**
+	 * This constructor encapsulate a low level API object in HLAPI.
+	 */
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+	public void ArcGraphicsHLAPI_LLAPI(){
+	   ArcGraphics llapi = new PtnetFactoryImpl().createArcGraphics();
+	   fr.lip6.move.pnml.ptnet.hlapi.ArcGraphicsHLAPI hlapi = new ArcGraphicsHLAPI(llapi);
+		assert hlapi.getContainedItem().equals(llapi);
+	}
+
+	//getters giving HLAPI object
+	
+
+	
+		/**
+		 * This test add a random number of desired objet in the list or of one of each existing subtypes.
+		 * then test how many objet are retuned and if any exist inthe original list.
+		 */
+		@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+		public void getPositionsHLAPITest(){
+			ArcGraphics llapi = new PtnetFactoryImpl().createArcGraphics();
+			int howmany;
+			
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getPositions().add(new PtnetFactoryImpl().createPosition());
+			
+
+			ArcGraphicsHLAPI elem = new ArcGraphicsHLAPI(llapi);
+			List<PositionHLAPI> totest = elem.getPositionsHLAPI();
+
+			assert totest.size() == howmany;
+
+			for (PositionHLAPI unit : totest) {
+             assert llapi.getPositions().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+	
+	
+
+	
+		
+		/**
+		 * This accessor automatically encapsulate an element of the current object.
+		 * WARNING : this creates a new object in memory.
+		 * @return : null if the element is null
+		 */
+		@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+		public void getLineHLAPITest(){
+			ArcGraphicsHLAPI elem = new ArcGraphicsHLAPI(new PtnetFactoryImpl().createArcGraphics());
+
+			
+				elem.setLineHLAPI(itemline);
+				LineHLAPI totest = elem.getLineHLAPI();
+				assert totest.getContainedItem().equals(elem.getLine());
+			
+		}
+	
+	
+
+	
+		
+		/**
+		 * This accessor automatically encapsulate an element of the current object.
+		 * WARNING : this creates a new object in memory.
+		 * @return : null if the element is null
+		 */
+		@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+		public void getContainerArcHLAPITest(){
+			ArcGraphicsHLAPI elem = new ArcGraphicsHLAPI(new PtnetFactoryImpl().createArcGraphics());
+
+			
+				elem.setContainerArcHLAPI(itemcontainerArc);
+				ArcHLAPI totest = elem.getContainerArcHLAPI();
+				assert totest.getContainedItem().equals(elem.getContainerArc());
+			
+		}
+	
+
+	//Special getter for list of generics object, return only one object type.
+	
+	
+	
+	
+
+	//setters/remover for lists.
+	
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+	public void addPositionsHLAPITest(){
+		ArcGraphicsHLAPI elem = new ArcGraphicsHLAPI(new PtnetFactoryImpl().createArcGraphics());
+		int howmany = (int)(Math.random()*10);
+		for(int i =0; i<howmany;i++)
+			
+			elem.addPositionsHLAPI(new PositionHLAPI(new PtnetFactoryImpl().createPosition()));
+			
+
+		assert elem.getContainedItem().getPositions().size() == howmany;
+	}
+
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+	public void removePositionsTest(){
+		ArcGraphicsHLAPI elem = new ArcGraphicsHLAPI(new PtnetFactoryImpl().createArcGraphics());
+		int howmany = (int)(Math.random()*10);
+		int howdiff = (int)(Math.random()*10);
+
+			
+			PositionHLAPI sav;
+
+		for(int i =0; i<(howmany);i++)
+			
+			elem.addPositionsHLAPI(new PositionHLAPI(new PtnetFactoryImpl().createPosition()));
+			
+
+
+		
+		sav = new PositionHLAPI(new PtnetFactoryImpl().createPosition());
+		
+
+		elem.addPositionsHLAPI(sav);
+		assert elem.getContainedItem().getPositions().size() == howmany+1;
+
+		for(int i =0; i<(howdiff);i++)
+			
+			elem.addPositionsHLAPI(new PositionHLAPI(new PtnetFactoryImpl().createPosition()));
+			
+
+
+		elem.removePositionsHLAPI(sav);
+
+		assert elem.getContainedItem().getPositions().size() == howmany+howdiff;
+	}
+	
+
+	@Test(groups = { "hlapi", "ArcGraphicsHLAPI"})
+	public void equalsTest(){
+		ArcGraphics a = new PtnetFactoryImpl().createArcGraphics();
+		ArcGraphics b = new PtnetFactoryImpl().createArcGraphics();
+		ArcGraphicsHLAPI aprime = new ArcGraphicsHLAPI(a);
+		ArcGraphicsHLAPI asecond = new ArcGraphicsHLAPI(a);
+		ArcGraphicsHLAPI bprime = new ArcGraphicsHLAPI(b);
+
+		assert aprime.equals(asecond);
+		assert !aprime.equals(bprime);
+	}
+
+	//cloning method
+	//public ArcGraphicsHLAPI clone(){
+	//	return new ArcGraphicsHLAPI(this);
+	//}
+
+	//PNML
+	
+	/**
+	 * return the PNML xml tree for this object.
+	 */
+	//public String toPNML(){
+		//return item.toPNML();
+	//}
+
+	/**
+	 * creates an object from the xml nodes.(symetric work of toPNML)
+	 */
+	//public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
+		//item.fromPNML(subRoot,idr);
+	//}
+	
+}

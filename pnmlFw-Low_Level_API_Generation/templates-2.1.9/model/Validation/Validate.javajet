@@ -1,0 +1,67 @@
+<%if(genClass.isAbstract()){%>
+	public abstract boolean validateOCL(DiagnosticChain diagnostics);
+<%}else if(isInterface){%>
+	public boolean validateOCL(DiagnosticChain diagnostics);
+<%}else{%>
+	/**
+	 * -
+	 */
+	public boolean validateOCL(DiagnosticChain diagnostics){
+	<%if(genPackage.hasConstraints()){%>
+	<%if(genPackage.getAllValidatorBaseGenPackages().size()!=0){%>
+		<%GenPackage mygen = genPackage.getAllValidatorBaseGenPackages().get(0);%>
+		<%=mygen.getImportedValidatorClassName()%> val = new <%=mygen.getValidatorClassName()%>();
+		boolean retour = true;
+		<%List<GenFeature> allgen = genClass.getAllGenFeatures();
+		for (Iterator iterator = allgen.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();%>
+			<%if(genFeature.getTypeGenClass()!=null&&genFeature.isContains()){%>
+				<%if(!genFeature.isListType()){%>
+		         if(<%=genFeature.getGetAccessor()%>()!=null){
+						retour &= <%=genFeature.getGetAccessor()%>().validateOCL(diagnostics);
+					}
+				<%}else{%>
+					if (<%=genFeature.getGetAccessor()%>() != null){
+	            	<%=genFeature.getType()%> items = <%=genFeature.getGetAccessor()%>();
+	        			for (Iterator<<%=genFeature.getListItemType(genClass)%>> iterator = items.iterator(); iterator.hasNext();) {
+	            		<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+							retour &= item.validateOCL(diagnostics);
+	        			}
+	        		}
+				<%}%>
+			<%}%>
+		<%}%>
+		retour &= val.validate(this,diagnostics,null);
+		return retour;
+	<%}else{%>
+		<%GenPackage mygen = genPackage;%>
+		<%=mygen.getImportedValidatorClassName()%> val = new <%=mygen.getValidatorClassName()%>();
+		boolean retour = true;
+		<%List<GenFeature> allgen = genClass.getAllGenFeatures();
+		for (Iterator iterator = allgen.iterator(); iterator.hasNext();){
+			GenFeature genFeature = (GenFeature) iterator.next();%>
+			<%if(genFeature.getTypeGenClass()!=null&&genFeature.isContains()){%>
+				<%if(!genFeature.isListType()){%>
+		         if(<%=genFeature.getGetAccessor()%>()!=null){
+						retour &= <%=genFeature.getGetAccessor()%>().validateOCL(diagnostics);
+					}
+				<%}else{%>
+					if (<%=genFeature.getGetAccessor()%>() != null){
+	            	<%=genFeature.getType()%> items = <%=genFeature.getGetAccessor()%>();
+	        			for (Iterator<<%=genFeature.getListItemType(genClass)%>> iterator = items.iterator(); iterator.hasNext();) {
+	            		<%=genFeature.getListItemType(genClass)%> item = (<%=genFeature.getListItemType(genClass)%>) iterator.next();
+							retour &= item.validateOCL(diagnostics);
+	        			}
+	        		}
+				<%}%>
+			<%}%>
+		<%}%>
+		retour &= val.validate(this,diagnostics,null);
+		return retour;
+	<%}//end else getAllValidatorBaseGenPackages%>
+	<%}else{%>
+		//this package has no validator class
+		return true;
+	<%}%>
+	}
+<%}%>

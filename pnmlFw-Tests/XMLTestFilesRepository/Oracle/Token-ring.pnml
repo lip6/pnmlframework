@@ -1,0 +1,777 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="cId1"
+		type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<name>
+			<text>Token-ring</text>
+		</name>
+		<page id="i808">
+			<place id="cId26">
+				<name>
+					<text>CSW</text>
+					<graphics>
+						<offset x="3" y="-22" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="131" y="81" />
+				</graphics>
+			</place>
+			<place id="cId75">
+				<name>
+					<text>GoRelay</text>
+					<graphics>
+						<offset x="51" y="11" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="491" y="401" />
+				</graphics>
+			</place>
+			<place id="cId7">
+				<name>
+					<text>EnterCS</text>
+					<graphics>
+						<offset x="7" y="15" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="421" y="111" />
+				</graphics>
+			</place>
+			<place id="cId6">
+				<name>
+					<text>Idle</text>
+					<graphics>
+						<offset x="-22" y="-5" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="531" y="316" />
+				</graphics>
+			</place>
+			<place id="cId8">
+				<name>
+					<text>CS</text>
+					<graphics>
+						<offset x="-9" y="6" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="421" y="276" />
+				</graphics>
+			</place>
+			<place id="cId2">
+				<name>
+					<text>InR</text>
+					<graphics>
+						<offset x="4" y="14" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="26" y="131" />
+				</graphics>
+			</place>
+			<place id="cId61">
+				<name>
+					<text>Wait2</text>
+					<graphics>
+						<offset x="25" y="9" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="261" y="501" />
+				</graphics>
+			</place>
+			<place id="cId28">
+				<name>
+					<text>PReq</text>
+					<graphics>
+						<offset x="5" y="-4" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="281" y="256" />
+				</graphics>
+			</place>
+			<place id="cId5">
+				<name>
+					<text>OutT</text>
+					<graphics>
+						<offset x="-16" y="-19" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="16" y="561" />
+				</graphics>
+			</place>
+			<place id="cId60">
+				<name>
+					<text>Wait1</text>
+					<graphics>
+						<offset x="-14" y="6" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="366" y="181" />
+				</graphics>
+			</place>
+			<place id="cId4">
+				<name>
+					<text>InT</text>
+					<graphics>
+						<offset x="2" y="16" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="16" y="436" />
+				</graphics>
+			</place>
+			<place id="cId25">
+				<name>
+					<text>Token</text>
+					<graphics>
+						<offset x="8" y="-21" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="136" y="331" />
+				</graphics>
+			</place>
+			<place id="cId10">
+				<name>
+					<text>GoIdle</text>
+					<graphics>
+						<offset x="48" y="-14" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="491" y="621" />
+				</graphics>
+			</place>
+			<place id="cId3">
+				<name>
+					<text>OutR</text>
+					<graphics>
+						<offset x="-4" y="8" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="16" y="241" />
+				</graphics>
+			</place>
+			<place id="cId79">
+				<name>
+					<text>Relay</text>
+					<graphics>
+						<offset x="35" y="11" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="421" y="456" />
+				</graphics>
+			</place>
+			<place id="cId27">
+				<name>
+					<text>InCS</text>
+					<graphics>
+						<offset x="8" y="-25" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="211" y="256" />
+				</graphics>
+			</place>
+			<place id="cId62">
+				<name>
+					<text>Go</text>
+					<graphics>
+						<offset x="20" y="8" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="261" y="536" />
+				</graphics>
+			</place>
+			<place id="cId9">
+				<name>
+					<text>ExitCS</text>
+					<graphics>
+						<offset x="-18" y="8" />
+					</graphics>
+				</name>
+				<graphics>
+					<position x="421" y="351" />
+				</graphics>
+			</place>
+			<transition id="cId21">
+				<graphics>
+					<position x="175" y="187" />
+				</graphics>
+			</transition>
+			<transition id="cId20">
+				<graphics>
+					<position x="100" y="192" />
+				</graphics>
+			</transition>
+			<transition id="cId12">
+				<graphics>
+					<position x="530" y="537" />
+				</graphics>
+			</transition>
+			<transition id="cId22">
+				<graphics>
+					<position x="235" y="187" />
+				</graphics>
+			</transition>
+			<transition id="cId80">
+				<graphics>
+					<position x="310" y="462" />
+				</graphics>
+			</transition>
+			<transition id="cId71">
+				<graphics>
+					<position x="490" y="357" />
+				</graphics>
+			</transition>
+			<transition id="cId24">
+				<graphics>
+					<position x="130" y="507" />
+				</graphics>
+			</transition>
+			<transition id="cId67">
+				<graphics>
+					<position x="365" y="247" />
+				</graphics>
+			</transition>
+			<transition id="cId81">
+				<graphics>
+					<position x="420" y="542" />
+				</graphics>
+			</transition>
+			<transition id="cId23">
+				<graphics>
+					<position x="50" y="507" />
+				</graphics>
+			</transition>
+			<transition id="cId13">
+				<graphics>
+					<position x="420" y="317" />
+				</graphics>
+			</transition>
+			<transition id="cId11">
+				<graphics>
+					<position x="530" y="202" />
+				</graphics>
+			</transition>
+			<transition id="cId76">
+				<graphics>
+					<position x="420" y="407" />
+				</graphics>
+			</transition>
+			<transition id="cId55">
+				<graphics>
+					<position x="330" y="117" />
+				</graphics>
+			</transition>
+			<transition id="cId77">
+				<graphics>
+					<position x="490" y="457" />
+				</graphics>
+			</transition>
+			<arc id="cId101" source="cId81" target="cId10">
+				<graphics>
+					<position x="427" y="627" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId85" source="cId76" target="cId79">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId92" source="cId4" target="cId24">
+				<graphics>
+					<position x="143" y="442" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId42" source="cId21" target="cId5">
+				<graphics>
+					<position x="182" y="634" />
+					<position x="22" y="634" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId36" source="cId2" target="cId22">
+				<graphics>
+					<position x="242" y="137" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId14" source="cId11" target="cId7">
+				<graphics>
+					<position x="537" y="117" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId78" source="cId71" target="cId75">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId86" source="cId79" target="cId81">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId16" source="cId13" target="cId9">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId31" source="cId20" target="cId25">
+				<graphics>
+					<position x="107" y="337" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId58" source="cId55" target="cId26">
+				<graphics>
+					<position x="333" y="87" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId41" source="cId21" target="cId27">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId30" source="cId25" target="cId20">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId29" source="cId2" target="cId20">
+				<graphics>
+					<position x="110" y="137" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId51" source="cId23" target="cId26">
+				<graphics>
+					<position x="53" y="87" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId93" source="cId28" target="cId76">
+				<graphics>
+					<position x="298" y="348" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId66" source="cId24" target="cId62">
+				<graphics>
+					<position x="137" y="542" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId102" source="cId28" target="cId81">
+				<graphics>
+					<position x="251" y="474" />
+					<position x="251" y="277" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId89" source="cId80" target="cId79">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId74" source="cId26" target="cId71">
+				<graphics>
+					<position x="146" y="48" />
+					<position x="493" y="48" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId52" source="cId26" target="cId24">
+				<graphics>
+					<position x="84" y="490" />
+					<position x="84" y="105" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId46" source="cId22" target="cId27">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId59" source="cId55" target="cId3">
+				<graphics>
+					<position x="12" y="231" />
+					<position x="340" y="61" />
+					<position x="12" y="61" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId96" source="cId76" target="cId25">
+				<graphics>
+					<position x="155" y="390" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId47" source="cId25" target="cId22">
+				<graphics>
+					<position x="242" y="337" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId49" source="cId4" target="cId23">
+				<graphics>
+					<position x="22" y="506" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId19" source="cId6" target="cId11">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId100" source="cId25" target="cId24">
+				<graphics>
+					<position x="119" y="463" />
+					<position x="119" y="354" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId45" source="cId27" target="cId22">
+				<graphics>
+					<position x="238" y="261" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId54" source="cId23" target="cId5">
+				<graphics>
+					<position x="22" y="508" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId68" source="cId60" target="cId67">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId98" source="cId80" target="cId3">
+				<graphics>
+					<position x="202" y="462" />
+					<position x="22" y="380" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId33" source="cId20" target="cId26">
+				<graphics>
+					<position x="137" y="192" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId87" source="cId79" target="cId80">
+				<graphics>
+					<position x="418" y="486" />
+					<position x="312" y="486" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId99" source="cId24" target="cId25">
+				<graphics>
+					<position x="102" y="345" />
+					<position x="102" y="474" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId43" source="cId22" target="cId28">
+				<graphics>
+					<position x="287" y="187" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId84" source="cId77" target="cId10">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId15" source="cId8" target="cId13">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId63" source="cId55" target="cId60">
+				<graphics>
+					<position x="372" y="131" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId37" source="cId20" target="cId3">
+				<graphics>
+					<position x="102" y="247" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId56" source="cId7" target="cId55">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId38" source="cId25" target="cId21">
+				<graphics>
+					<position x="178" y="321" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId70" source="cId62" target="cId67">
+				<graphics>
+					<position x="368" y="542" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId64" source="cId55" target="cId61">
+				<graphics>
+					<position x="333" y="507" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId53" source="cId24" target="cId26">
+				<graphics>
+					<position x="74" y="103" />
+					<position x="74" y="507" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId48" source="cId22" target="cId25">
+				<graphics>
+					<position x="170" y="353" />
+					<position x="245" y="353" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId97" source="cId76" target="cId5">
+				<graphics>
+					<position x="464" y="567" />
+					<position x="464" y="430" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId44" source="cId28" target="cId22">
+				<graphics>
+					<position x="278" y="202" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId94" source="cId76" target="cId28">
+				<graphics>
+					<position x="287" y="370" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId72" source="cId9" target="cId71">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId50" source="cId26" target="cId23">
+				<graphics>
+					<position x="60" y="97" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId103" source="cId81" target="cId28">
+				<graphics>
+					<position x="265" y="298" />
+					<position x="265" y="469" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId95" source="cId25" target="cId76">
+				<graphics>
+					<position x="142" y="408" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId18" source="cId12" target="cId6">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId83" source="cId75" target="cId77">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId73" source="cId71" target="cId26">
+				<graphics>
+					<position x="136" y="38" />
+					<position x="500" y="38" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId35" source="cId2" target="cId21">
+				<graphics>
+					<position x="182" y="137" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId32" source="cId26" target="cId20">
+				<graphics>
+					<position x="103" y="106" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId69" source="cId67" target="cId8">
+				<graphics>
+					<position x="375" y="282" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId57" source="cId26" target="cId55">
+				<graphics>
+					<position x="190" y="117" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId39" source="cId21" target="cId25">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId65" source="cId61" target="cId24">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId91" source="cId80" target="cId28">
+				<graphics>
+					<position x="320" y="262" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId17" source="cId10" target="cId12">
+				<graphics>
+					<position x="537" y="627" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId40" source="cId27" target="cId21">
+				<graphics>
+					<position x="185" y="262" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId82" source="cId75" target="cId76">
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+			<arc id="cId90" source="cId28" target="cId80">
+				<graphics>
+					<position x="313" y="287" />
+				</graphics>
+				<inscription>
+					<text>1</text>
+				</inscription>
+			</arc>
+		</page>
+	</net>
+</pnml>

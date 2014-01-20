@@ -1,0 +1,409 @@
+<%@ jet package="org.eclipse.emf.pnml.codegen.templates.model" imports="java.util.* org.eclipse.emf.codegen.ecore.genmodel.* org.eclipse.emf.ecore.* fr.lip6.move.pnml.framework.apigen.Helpers" class="HLAPI" version="$Id$" %>
+<%final String ToPNMLNsURI = "http://www.pnml.org/models/ToPNML";%>
+<%final GenClass genClass = (GenClass)argument;%>
+<%final GenPackage genPackage = genClass.getGenPackage();%>
+<%final GenModel genModel=genPackage.getGenModel();%>
+<%final List<GenFeature> mySetters = new ArrayList<GenFeature>();//do not include container setter%>
+<%final List<GenFeature> myContainers = new ArrayList<GenFeature>();//tofix : always one element list%>
+<%final List<GenFeature> myGetters = new ArrayList<GenFeature>();%>
+<%final List<GenFeature> myRequired = new ArrayList<GenFeature>();%>
+<%final List<GenFeature> myRequiredLight = new ArrayList<GenFeature>();//required without containers%>
+<%final List<GenFeature> myLists = new ArrayList<GenFeature>();%>
+<%final List<GenFeature> allgenf = genClass.getAllGenFeatures();%>
+<%final List<GenFeature> theId = new ArrayList<GenFeature>();%>
+<%final String HLAPINsURI = "http://www.pnml.org/models/HLAPI";%>
+<%List<GenFeature> featureList;%>
+<%for (GenFeature genFeature : allgenf) {
+	//we need to know what feature is a container what is settable, what is an id...
+
+	if (genFeature.isSet()&&!genFeature.isContainer()) {
+		mySetters.add(genFeature);//real setters
+	}
+	if (genFeature.isSet()&&genFeature.isContainer()) {
+		myContainers.add(genFeature);//container setter
+	}
+	if (genFeature.isGet()) {
+		myGetters.add(genFeature);//getter
+	}
+	if(genFeature.isSet()&&genFeature.getEcoreFeature().isRequired()){
+		myRequired.add(genFeature);//required and settable
+	}
+	if(genFeature.isSet()&&genFeature.getEcoreFeature().isRequired()&&!genFeature.isContainer()){
+		myRequiredLight.add(genFeature);//required and settable but not container
+	}
+	if(genFeature.isEffectiveContains() && genFeature.isListType()){
+		myLists.add(genFeature);
+	}
+
+	EAnnotation ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);
+	if(ea!=null
+			&&	ea.getDetails().get("kind") != null
+			&& ea.getDetails().get("kind").equals("id")){
+		theId.add(genFeature);
+	}
+
+}%>
+<%final List<GenClass> implem = genClass.getExtendedGenClasses();%>
+<%@include file="../Header.javajetinc"%>
+package <%=genPackage.getInterfacePackageName()%>.hlapi;
+
+<%genModel.markImportLocation(stringBuffer, genPackage);%>
+
+import  fr.lip6.move.pnml.framework.hlapi.*;
+<%for (GenPackage gp : genModel.getAllGenAndUsedGenPackagesWithClassifiers()) {%>
+import <%=gp.getInterfacePackageName()%>.hlapi.*;
+<%}%>
+
+import java.util.ArrayList;
+import java.util.List;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import <%=genClass.getGenPackage().getInterfacePackageName()%>.*;
+import <%=genClass.getGenPackage().getClassPackageName()%>.*;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+
+<%if(!genClass.isAbstract()){%>
+
+public class <%=genClass.getInterfaceName()%>HLAPI implements <%if(genClass.getInterfaceName().equals("PetriNetDoc")){%>HLAPIRootClass<%}else{%>HLAPIClass<%}%><%for (Iterator<GenClass> iterator = implem.iterator(); iterator.hasNext();) {
+GenClass genFeature2 = (GenClass) iterator.next();
+if(genFeature2.getEcoreClassifier().getEAnnotation(HLAPINsURI)!=null&&(genFeature2.isInterface()||genFeature2.isAbstract())){%>,<%=genFeature2.getName()%>HLAPI<%}}%>{
+
+	/**
+	 * The contained LLAPI element.
+	 */
+	private <%=genClass.getImportedInterfaceName()%> item;
+
+	/**
+	 * this constructor allows you to set all 'settable' values
+	 * excepted container.
+	 */
+	<%featureList=mySetters;//this is used by the included file for building constructor%>
+	<%@ include file="parts/HLAPIConstructor.javajetinc" %>
+
+<%for (GenFeature mycont : myContainers) {%>
+<%if(!mycont.getEcoreFeature().getEType().getName().equals(genClass.getInterfaceName())||mySetters.size()!=0){
+	java.util.List<GenFeature> copymySetters = new ArrayList<GenFeature>();
+	copymySetters.addAll(mySetters);
+	copymySetters.add(mycont);
+%>
+	/**
+	 * this constructor allows you to set all 'settable' values, including container if any.
+	 */
+	<%featureList=copymySetters;//this is used by the included file for building constructor%>
+	<%@ include file="parts/HLAPIConstructor.javajetinc" %>
+
+<%}//end if%>
+<%}//end for%>
+
+<%if(myRequiredLight.size()!=0&&!myRequiredLight.equals(mySetters)){%>
+	/**
+    * This constructor give access to required stuff only (not container if any)
+    */
+   <%featureList=myRequiredLight;//this is used by the included file for building constructor%>
+	<%@ include file="parts/HLAPIConstructor.javajetinc" %>
+
+<%}%>
+
+<%for (GenFeature mycont : myContainers) {%>
+	<%if(myContainers.size()!=0&&!mySetters.equals(myRequiredLight)){
+		List<GenFeature> copymyRequiredLight = new ArrayList<GenFeature>();
+		copymyRequiredLight.addAll(myRequiredLight);
+		copymyRequiredLight.add(mycont);
+	%>
+	/**
+    * This constructor give access to required stuff only (and container)
+    */
+   <%featureList=copymyRequiredLight;//this is used by the included file for building constructor%>
+	<%@ include file="parts/HLAPIConstructor.javajetinc" %>
+	<%}%>
+<%}%>
+
+	/**
+	 * This constructor encapsulate a low level API object in HLAPI.
+	 */
+	public <%= genClass.getInterfaceName() %>HLAPI(<%= genClass.getImportedInterfaceName() %> lowLevelAPI){
+		item = lowLevelAPI;
+	}
+
+	// access to low level API
+	/**
+	 * Return encapsulated object
+	 */
+	public <%= genClass.getImportedInterfaceName() %> getContainedItem(){
+		return item;
+	}
+
+	//getters giving LLAPI object
+	<%for (GenFeature genFeature : myGetters) {%>
+	/**
+	 * Return the encapsulate Low Level API object.
+	 */
+	public <%=genFeature.getImportedType(genClass)%> <%=genFeature.getGetAccessor()%>(){
+		return item.<%=genFeature.getGetAccessor()%>();
+	}
+	<%}//end for%>
+
+	//getters giving HLAPI object
+	<%for (GenFeature genFeature : myGetters) {%>
+	<%if(genFeature.getTypeGenClass()==null) continue;%>
+	<%if(!genFeature.isListType()){%>
+		/**
+		 * This accessor automatically encapsulate an element of the current object.
+		 * WARNING : this creates a new object in memory.
+		 * @return : null if the element is null
+		 */
+		<%if(genFeature.getTypeGenClass().isAbstract()){%>
+		<%if(genClass.getChildrenClasses(genFeature).size()==0) continue;%>
+		public <%=genFeature.getImportedType(genClass)%>HLAPI <%=genFeature.getGetAccessor()%>HLAPI(){
+			if(item.<%=genFeature.getGetAccessor()%>() == null) return null;
+			<%=genFeature.getImportedType(genClass)%> object = item.<%=genFeature.getGetAccessor()%>();
+			<%for (GenClass sony : genClass.getChildrenClasses(genFeature)) {%>
+			if(object.getClass().equals(<%=sony.getGenPackage().getBasePackage()%>.<%=sony.getGenPackage().getNSName()%>.<%=sony.getGenPackage().getClassPackageSuffix()%>.<%=sony.getClassName()%>.class)){
+				return new <%=sony.getGenPackage().getInterfacePackageName()%>.hlapi.<%=sony.getName()%>HLAPI((<%=sony.getGenPackage().getInterfacePackageName()%>.<%=sony.getName()%>)object);
+			}
+			<%}//for%>
+			return null;
+		}
+		<%}else{%>
+		public <%=genFeature.getImportedType(genClass)%>HLAPI <%=genFeature.getGetAccessor()%>HLAPI(){
+			if(item.<%=genFeature.getGetAccessor()%>() == null) return null;
+			return new <%=genFeature.getImportedType(genClass)%>HLAPI(item.<%=genFeature.getGetAccessor()%>());
+		}
+		<%}//isAbstract%>
+	<%}else{%>
+		/**
+		 * This accessor automatically encapsulate all elements of the selected sublist.
+		 * WARNING : this can creates a lot of new object in memory.
+		 */
+		<%if(genFeature.getTypeGenClass().isAbstract()){%>
+			<%if(genClass.getChildrenClasses(genFeature).size()==0) continue;%>
+		public java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> <%=genFeature.getGetAccessor()%>HLAPI(){
+			java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> retour = new ArrayList<<%=genFeature.getListItemType(genClass)%>HLAPI>();
+			for (<%=genFeature.getListItemType(genClass)%> elemnt : <%=genFeature.getGetAccessor()%>()) {
+				<%for (GenClass sony : genClass.getChildrenClasses(genFeature)) {%>
+				if(elemnt.getClass().equals(<%=sony.getGenPackage().getClassPackageName()%>.<%=sony.getClassName()%>.class)){
+					retour.add(new <%=sony.getGenPackage().getInterfacePackageName()%>.hlapi.<%=sony.getName()%>HLAPI(
+						(<%=sony.getGenPackage().getInterfacePackageName()%>.<%=sony.getName()%>)elemnt
+						));
+					continue;
+				}
+				<%}//for%>
+			}
+			return retour;
+		}
+		<%}else{%>
+		public java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> <%=genFeature.getGetAccessor()%>HLAPI(){
+			java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> retour = new ArrayList<<%=genFeature.getListItemType(genClass)%>HLAPI>();
+			for (<%=genFeature.getListItemType(genClass)%> elemnt : <%=genFeature.getGetAccessor()%>()) {
+				retour.add(new <%=genFeature.getListItemType(genClass)%>HLAPI(elemnt));
+			}
+			return retour;
+		}
+	<%}//isAbstract%>
+	<%}%>
+	<%}//end for%>
+
+	//Special getter for list of generics object, return only one object type.
+	<%for (GenFeature genFeature : myGetters) {
+	if(genFeature.getTypeGenClass()==null) continue;
+	if(genFeature.isListType() && genFeature.getTypeGenClass().isAbstract()
+		  && genClass.getChildrenClasses(genFeature).size()!=0){%>
+		<% for (GenClass sony : genClass.getChildrenClasses(genFeature)) { %>
+		<% String addname = "";
+			if(genModel.getAllGenPackagesWithClassifiers().size()!=1) {addname = sony.getGenPackage().getNSName() + "_";}%>
+		/**
+		 * This accessor return a list of encapsulated subelement, only of <%=sony.getName()%>HLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<<%=Helpers.hlapiPackage(sony)%>.<%=sony.getName()%>HLAPI> <%=genFeature.getGetAccessor()%>_<%=addname%><%=sony.getName()%>HLAPI(){
+			java.util.List<<%=Helpers.hlapiPackage(sony)%>.<%=sony.getName()%>HLAPI> retour = new ArrayList<<%=Helpers.hlapiPackage(sony)%>.<%=sony.getName()%>HLAPI>();
+			for (<%=genFeature.getListItemType(genClass)%> elemnt : <%=genFeature.getGetAccessor()%>()) {
+				if(elemnt.getClass().equals(<%=sony.getGenPackage().getClassPackageName()%>.<%=sony.getClassName()%>.class)){
+					retour.add(new <%=Helpers.hlapiPackage(sony)%>.<%=sony.getName()%>HLAPI(
+						(<%=sony.getGenPackage().getInterfacePackageName()%>.<%=sony.getName()%>)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		<%}//for%>
+	<%}//if%>
+	<%}//for%>
+
+	//setters (including container setter if aviable)
+	<%final List<GenFeature> allSetters = new ArrayList<GenFeature>();
+	allSetters.addAll(mySetters);
+	allSetters.addAll(myContainers);%>
+	<%for (GenFeature genFeature : allSetters) {%>
+	/**
+	 * set <%=genFeature.getAccessorName()%>
+	 */
+	public void set<%=genFeature.getAccessorName()%>HLAPI(
+	<%if(genFeature.isReferenceType()){%>
+	<%=genFeature.getImportedType(genClass)%>HLAPI elem<%}else{%>
+	<%=genFeature.getType(genClass)%> elem<%}%>)<%if(theId.contains(genFeature)){%> throws InvalidIDException ,VoidRepositoryException   <%}%>{
+	<%EAnnotation ea = genFeature.getEcoreFeature().getEAnnotation(ToPNMLNsURI);%>
+	<%if(genFeature.isReferenceType()){%>
+ 		if(elem!=null)
+			item.set<%=genFeature.getIsName()%>((<%=genFeature.getImportedType(genClass)%>)elem.getContainedItem());
+	<% }else{//this element is one of a standard types (String etc...) %>
+		if(elem!=null){
+		<%if(ea!=null
+			&&	ea.getDetails().get("kind") != null
+			&& ea.getDetails().get("kind").equals("id")){%>
+			try{
+			item.set<%=genFeature.getIsName()%>(ModelRepository.getInstance().getCurrentIdRepository().changeId(this, elem));
+			}catch (OtherException e){
+			ModelRepository.getInstance().getCurrentIdRepository().checkId(elem, this);
+			}
+		<%}else{%>
+			item.set<%=genFeature.getIsName()%>(elem);
+		<%}%>}
+	<% } %>
+	}
+	<%}%>
+
+	//setters/remover for lists.
+	<%for (GenFeature genFeature : myLists) {%>
+	<%if ("Page".equalsIgnoreCase(genClass.getInterfaceName())){%>
+	//Thread-safe insertion of objects in a Page
+	public synchronized void add<%=genFeature.getIsName()%>HLAPI(<%=genFeature.getListItemType(genClass)%>HLAPI unit){
+	<%} else {%>
+	public void add<%=genFeature.getIsName()%>HLAPI(<%=genFeature.getListItemType(genClass)%>HLAPI unit){
+	<%}%>
+		item.<%=genFeature.getGetArrayAccessor()%>().add((<%=genFeature.getListItemType(genClass)%>)unit.getContainedItem());
+	}
+
+	public void remove<%=genFeature.getIsName()%>HLAPI(<%=genFeature.getListItemType(genClass)%>HLAPI unit){
+		item.<%=genFeature.getGetArrayAccessor()%>().remove((<%=genFeature.getListItemType(genClass)%>)unit.getContainedItem());
+	}
+	<%}%>
+
+	//equals method
+	public boolean equals(<%=genClass.getInterfaceName()%>HLAPI item){
+		return item.getContainedItem().equals(getContainedItem());
+	}
+
+	//PNML
+	<%EClassifier classifier = genClass.getEcoreClassifier();
+	EAnnotation ean = classifier.getEAnnotation(ToPNMLNsURI);
+	if(ean!=null){%>
+	/**
+	 * Returns the PNML xml tree for this object.
+	 */
+	public String toPNML(){
+		return item.toPNML();
+	}
+	
+	/**
+	 * Writes the PNML XML tree of this object into file channel.
+	 */
+	public void toPNML(FileChannel fc){
+		 item.toPNML(fc);
+	}
+
+	/**
+	 * creates an object from the xml nodes.(symetric work of toPNML)
+	 */
+	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
+		item.fromPNML(subRoot,idr);
+	}
+	<%}%>
+
+	public boolean validateOCL(DiagnosticChain diagnostics){
+		return item.validateOCL(diagnostics);
+	}
+
+}
+<%}else{%>
+public interface <%=genClass.getInterfaceName()%>HLAPI extends <%if(genClass.getInterfaceName().equals("PetriNetDoc")){%>HLAPIRootClass<%}else{%>HLAPIClass<%}%><%for (Iterator<GenClass> iterator = implem.iterator(); iterator.hasNext();) {
+GenClass genFeature2 = (GenClass) iterator.next();
+if(genFeature2.getEcoreClassifier().getEAnnotation(HLAPINsURI)!=null&&(genFeature2.isInterface()||genFeature2.isAbstract())){%>,<%=genFeature2.getName()%>HLAPI<%}}%>{
+
+	//getters giving LLAPI object
+	<%for (GenFeature genFeature : myGetters) {%>
+	/**
+	 *
+	 */
+	public <%=genFeature.getImportedType(genClass)%> <%=genFeature.getGetAccessor()%>();
+	<%}//end for%>
+
+	//getters giving HLAPI object
+	<%for (GenFeature genFeature : myGetters) {%>
+	<%if(genFeature.getTypeGenClass()==null) continue;%>
+	<%if(!genFeature.isListType()){%>
+		/**
+		 * This accessor automaticaly encapsulate an element of the current object.
+		 * WARNING : this creates a new object in memory.
+		 */
+		<%if(genFeature.getTypeGenClass().isAbstract()){%>
+		<%if(genClass.getChildrenClasses(genFeature).size()==0) continue;%>
+		public <%=genFeature.getImportedType(genClass)%>HLAPI <%=genFeature.getGetAccessor()%>HLAPI();
+		<%}else{%>
+		public <%=genFeature.getImportedType(genClass)%>HLAPI <%=genFeature.getGetAccessor()%>HLAPI();
+		<%}//isAbstract%>
+	<%}else{%>
+		/**
+		 * This accessor automaticaly encapsulate all elements of the selected sublist.
+		 * WARNING : this can creates a lot of new object in memory.
+		 */
+		<%if(genFeature.getTypeGenClass().isAbstract()){%>
+		<%if(genClass.getChildrenClasses(genFeature).size()==0) continue;%>
+		public java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> <%=genFeature.getGetAccessor()%>HLAPI();
+		<%}else{%>
+		public java.util.List<<%=genFeature.getListItemType(genClass)%>HLAPI> <%=genFeature.getGetAccessor()%>HLAPI();
+		<%}//isAbstract%>
+	<%}%>
+	<%}//end for%>
+
+	//setters (including container setter if aviable)
+	<%final List<GenFeature> allSetters = new ArrayList<GenFeature>();
+	allSetters.addAll(mySetters);
+	allSetters.addAll(myContainers);%>
+	<%for (GenFeature genFeature : allSetters) {%>
+	/**
+	 * set <%=genFeature.getAccessorName()%>
+	 */
+	public void set<%=genFeature.getAccessorName()%>HLAPI(<%if(genFeature.isReferenceType()){%>
+	<%=genFeature.getImportedType(genClass)%>HLAPI elem<%}else{%>
+	<%=genFeature.getType(genClass)%> elem<%}%>)<%if(theId.contains(genFeature)){%> throws InvalidIDException ,VoidRepositoryException<%}%>;
+	<%}%>
+
+	<%for (GenFeature genFeature : myGetters) {
+	if(genFeature.getTypeGenClass()==null) continue;
+	if(genFeature.isListType() && genFeature.getTypeGenClass().isAbstract()
+		  && genClass.getChildrenClasses(genFeature).size()!=0){%>
+		<% for (GenClass sony : genClass.getChildrenClasses(genFeature)) { %>
+		<% String addname = "";
+			if(genModel.getAllGenPackagesWithClassifiers().size()!=1){ addname = sony.getGenPackage().getNSName() + "_"; }%>
+		/**
+		 * This accessor return a list of encapsulated subelement, only of <%=sony.getName()%>HLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<<%=Helpers.hlapiPackage(sony)%>.<%=sony.getName()%>HLAPI> <%=genFeature.getGetAccessor()%>_<%=addname%><%=sony.getName()%>HLAPI();
+		<%}//for%>
+	<%}//if%>
+	<%}//for%>
+
+
+	//setters/remover for lists.
+	<%for (GenFeature genFeature : myLists) {%>
+	public void add<%=genFeature.getIsName()%>HLAPI(<%=genFeature.getListItemType(genClass)%>HLAPI unit);
+	public void remove<%=genFeature.getIsName()%>HLAPI(<%=genFeature.getListItemType(genClass)%>HLAPI unit);
+	<%}%>
+
+	//equals method
+	public boolean equals(Object item);
+
+}
+<%}%>
+<%genModel.emitSortedImports();%>

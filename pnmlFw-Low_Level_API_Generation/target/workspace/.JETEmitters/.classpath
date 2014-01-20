@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="var" path="EMF_CODEGEN">
+		<attributes>
+			<attribute name="plugin_id" value="org.eclipse.emf.codegen"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="var" path="EMF_CODEGEN_ECORE">
+		<attributes>
+			<attribute name="plugin_id" value="org.eclipse.emf.codegen.ecore"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="var" path="EMF_COMMON">
+		<attributes>
+			<attribute name="plugin_id" value="org.eclipse.emf.common"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="var" path="EMF_ECORE">
+		<attributes>
+			<attribute name="plugin_id" value="org.eclipse.emf.ecore"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

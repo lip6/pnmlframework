@@ -1,0 +1,84 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="all tests" verbose="1">
+	<test name="pnml">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.pnmlcoremodel.hlapi" />
+			<package name="fr.lip6.move.pnml.pnmlcoremodel.tools" />
+		</packages>
+	</test>
+	<test name="ptnet">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.ptnet.hlapi" />
+			<package name="fr.lip6.move.pnml.ptnet.tools" />
+		</packages>
+	</test>
+	<test name="hlpn">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.booleans.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.hlpn.cyclicEnumerations.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.dots.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.hlpn.finiteEnumerations.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi" />
+				<package
+				name="fr.lip6.move.pnml.hlpn.hlcorestructure.tools" />
+			<package name="fr.lip6.move.pnml.hlpn.integers.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.lists.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.multisets.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.partitions.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.strings.hlapi" />
+			<package name="fr.lip6.move.pnml.hlpn.terms.hlapi" />
+		</packages>
+	</test>
+	<test name="symmetricnet">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.booleans.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.hlapi" />
+			<package name="fr.lip6.move.pnml.symmetricnet.dots.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.finiteEnumerations.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.finiteIntRanges.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi" />
+				<package
+				name="fr.lip6.move.pnml.symmetricnet.hlcorestructure.tools" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.integers.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.multisets.hlapi" />
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.partitions.hlapi" />
+			<package name="fr.lip6.move.pnml.symmetricnet.terms.hlapi" />
+		</packages>
+	</test>
+</suite>

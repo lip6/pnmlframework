@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="all tests" verbose="1">
+	<test name="pnml">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.pnmlcoremodel.tools" />
+		</packages>
+	</test>
+	<test name="ptnet">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package name="fr.lip6.move.pnml.ptnet.tools" />
+		</packages>
+	</test>
+	<test name="hlpn">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="fr.lip6.move.pnml.hlpn.hlcorestructure.tools" />
+		</packages>
+	</test>
+	<test name="symmetricnet">
+		<groups>
+			<run>
+				<include name="hlapi" />
+			</run>
+		</groups>
+		<packages>
+			<package
+				name="fr.lip6.move.pnml.symmetricnet.hlcorestructure.tools" />
+		</packages>
+	</test>
+</suite>

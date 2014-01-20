@@ -1,0 +1,423 @@
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<net id="cs1"
+		type="http://www.pnml.org/version-2009/grammar/symmetricnet">
+		<page id="page0">
+			<name>
+				<text>Client Server</text>
+			</name>
+			<toolspecific tool="Macao" version="3.0.2">
+				<documentation>
+					This is a client-server example created for a demo
+					at ATPN 06 that we have translated into PNML.
+				</documentation>
+			</toolspecific>
+			<declaration>
+				<structure>
+					<declarations>
+						<!-- Sorts declaration -->
+						<namedsort id="cli" name="Clients">
+							<cyclicenumeration>
+								<feconstant id="c1" name="client1" />
+								<feconstant id="c2" name="client2" />
+								<feconstant id="c3" name="client3" />
+							</cyclicenumeration>
+						</namedsort>
+						<namedsort id="ser" name="Servers">
+							<cyclicenumeration>
+								<feconstant id="s1" name="server1" />
+								<feconstant id="s2" name="server2" />
+								<feconstant id="s3" name="server3" />
+							</cyclicenumeration>
+						</namedsort>
+						<namedsort id="cliser" name="CxS">
+							<productsort>
+								<usersort declaration="cli" />
+								<usersort declaration="ser" />
+							</productsort>
+						</namedsort>
+						<!-- Variables declaration -->
+						<variabledecl id="varcli" name="client">
+							<usersort declaration="cli" />
+						</variabledecl>
+						<variabledecl id="varser" name="server">
+							<usersort declaration="ser" />
+						</variabledecl>
+					</declarations>
+					<!-- <toolspecific tool="Macao" version="3.0.2">
+						<documentation>
+							Some symmetric observations. There is an
+							idle server: create transition "PROP_Srest"
+							(x 500, y100); connect " &lt;serv&gt; "
+							place "IdleServer" to transition
+							"PROP_Srest"; There is always an idle server
+							(true nserv > ncli) G (Srest) eventually a
+							server will become available (true) GF
+							(Srest)
+						</documentation>
+					</toolspecific>-->
+				</structure>
+			</declaration>
+			<!-- The net graph -->
+			<page id="page1">
+				<arc id="a8" source="pTre" target="t3">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varcli" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="varser" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<place id="pIdlecli">
+					<graphics>
+						<position x="25" y="75" />
+					</graphics>
+					<name>
+						<text>IdleClient</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="cli" />
+						</structure>
+					</type>
+					<hlinitialMarking>
+						<structure>
+							<all>
+								<usersort declaration="cli" />
+							</all>
+						</structure>
+					</hlinitialMarking>
+				</place>
+				<arc id="a7" source="t2" target="pTre">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varcli" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="varser" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<place id="pWai">
+					<graphics>
+						<position x="35" y="75" />
+					</graphics>
+					<name>
+						<text>wait</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="cli" />
+						</structure>
+					</type>
+				</place>
+				<place id="pReq">
+					<graphics>
+						<dimension x="18" y="18" />
+						<position x="55" y="50" />
+					</graphics>
+					<name>
+						<text>Req</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="cliser" />
+						</structure>
+					</type>
+				</place>
+				<arc id="a5" source="t1" target="pReq">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varcli" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="varser" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<place id="pTre">
+					<graphics>
+						<position x="75" y="75" />
+					</graphics>
+					<name>
+						<text>Treat</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="cliser" />
+						</structure>
+					</type>
+				</place>
+				<place id="pIdleser">
+					<graphics>
+						<position x="90" y="75" />
+						<line color="black" shape="curve" style="solid" />
+					</graphics>
+					<name>
+						<text>IdleServer</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="ser" />
+						</structure>
+					</type>
+					<hlinitialMarking>
+						<structure>
+							<all>
+								<usersort declaration="ser" />
+							</all>
+						</structure>
+					</hlinitialMarking>
+				</place>
+				<place id="pAck">
+					<graphics>
+						<position x="55" y="100" />
+					</graphics>
+					<name>
+						<text>ack</text>
+					</name>
+					<type>
+						<structure>
+							<usersort declaration="cli" />
+						</structure>
+					</type>
+				</place>
+				<transition id="t1">
+					<graphics>
+						<position x="30" y="50" />
+					</graphics>
+					<name>
+						<text>t1</text>
+					</name>
+				</transition>
+				<transition id="t2">
+					<graphics>
+						<position x="82" y="50" />
+					</graphics>
+					<name>
+						<text>t2</text>
+					</name>
+				</transition>
+				<transition id="t3">
+					<graphics>
+						<position x="82" y="100" />
+					</graphics>
+					<name>
+						<text>t3</text>
+						<graphics>
+							<offset x="2" y="3" />
+						</graphics>
+					</name>
+				</transition>
+				<transition id="t4">
+					<graphics>
+						<position x="30" y="100" />
+						<dimension x="20" y="6" />
+					</graphics>
+					<name>
+						<text>t4</text>
+					</name>
+				</transition>
+				<arc id="a1" source="pIdlecli" target="t1">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a2" source="t1" target="pWai">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a3" source="pWai" target="t4">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a4" source="t4" target="pIdlecli">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a6" source="pReq" target="t2">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<tuple>
+										<subterm>
+											<variable
+												refvariable="varcli" />
+										</subterm>
+										<subterm>
+											<variable
+												refvariable="varser" />
+										</subterm>
+									</tuple>
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a9" source="t3" target="pIdleser">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varser" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a10" source="pIdleser" target="t2">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varser" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a11" source="t3" target="pAck">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+				<arc id="a12" source="pAck" target="t4">
+					<hlinscription>
+						<structure>
+							<numberof>
+								<subterm>
+									<numberconstant value="1">
+										<natural />
+									</numberconstant>
+								</subterm>
+								<subterm>
+									<variable refvariable="varcli" />
+								</subterm>
+							</numberof>
+						</structure>
+					</hlinscription>
+				</arc>
+			</page>
+		</page>
+	</net>
+</pnml>
