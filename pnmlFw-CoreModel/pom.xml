@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>fr.lip6.move.pnml</groupId>
+		<artifactId>framework.releng</artifactId>
+		<version>2.2.0</version>
+		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>fr.lip6.move.pnml.framework.coremodel</artifactId>
+	<version>${pnml.release}</version>
+	<packaging>eclipse-plugin</packaging>
+	
+	<name>PNML Framework - Core Model</name>
+	
+	<description>
+		PNML Core Model Library
+	</description>
+	
+	<dependencies>
+			<dependency>
+			<groupId>fr.lip6.move.pnml</groupId>
+			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
+			<version>${thirdparty.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>fr.lip6.move.pnml</groupId>
+			<artifactId>fr.lip6.move.pnml.framework.utils</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	
+</project>
