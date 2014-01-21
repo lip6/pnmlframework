@@ -2,11 +2,11 @@
 <launchConfiguration type="org.testng.eclipse.launchconfig">
 <booleanAttribute key="com.mountainminds.eclemma.core.INPLACE_INSTRUMENTATION" value="false"/>
 <listAttribute key="com.mountainminds.eclemma.core.INSTRUMENTATION_PATHS">
-<listEntry value="/[pnmlFw]HLPN/bin"/>
-<listEntry value="/[pnmlFw]CoreModel/bin"/>
-<listEntry value="/[pnmlFw]Utils/bin"/>
-<listEntry value="/[pnmlFw]SNNet/bin"/>
-<listEntry value="/[pnmlFw]PTNet/bin"/>
+<listEntry value="/pnmlFw-HLPN/bin"/>
+<listEntry value="/pnmlFw-CoreModel/bin"/>
+<listEntry value="/pnmlFw-Utils/bin"/>
+<listEntry value="/pnmlFw-SNNet/bin"/>
+<listEntry value="/pnmlFw-PTNet/bin"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/pnmlFw-Tests"/>

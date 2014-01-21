@@ -43,8 +43,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<thirdparty.version>2.2.0.qualifier</thirdparty.version>
-		<pnml.release>2.2.0-SNAPSHOT</pnml.release>
-		<pnml.snapshot>2.2.1-SNAPSHOT</pnml.snapshot>
+		<pnml.release>2.2.1.RELEASE</pnml.release>
+		<pnml.snapshot>2.2.2-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
 		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
@@ -373,6 +373,14 @@
 							<packages>fr.lip6.move.pnml.pthlpng*</packages>
 						</group>
 					</groups>
+					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
+					<docletArtifact>
+						<groupId>org.umlgraph</groupId>
+						<artifactId>umlgraph</artifactId>
+						<version>5.6.6</version>
+					</docletArtifact>
+					<additionalparam>-views -all</additionalparam>
+					<useStandardDocletOptions>true</useStandardDocletOptions>
 				</configuration>
 				<executions>
 					<execution>
@@ -481,7 +489,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>2.6</version>
+					<version>2.7</version>
 				</plugin>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->

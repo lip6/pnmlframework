@@ -29,7 +29,7 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-
+<!--  
 	<build>
 		<plugins>
 			<plugin>
@@ -51,6 +51,7 @@
 				</configuration>
 			</plugin>
 </plugins>
-			
+		
 	</build>
+	-->	
 </project>

@@ -34,46 +34,4 @@
 		</dependency>
 	</dependencies>
 
-	<profiles>
-		<profile>
-			<id>dev-snapshot</id>
-			<properties>
-				<mycurrent>${ptnet.dev.snapshot}.${timestamp}</mycurrent>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>fr.lip6.move.pnml.framework</groupId>
-					<artifactId>utils</artifactId>
-					<version>${utils.dev.snapshot}.${timestamp}</version>
-				</dependency>
-			</dependencies>
-		</profile>
-		<profile>
-			<id>dev-release</id>
-			<properties>
-				<mycurrent>${ptnet.dev.release}</mycurrent>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>fr.lip6.move.pnml.framework</groupId>
-					<artifactId>utils</artifactId>
-					<version>${utils.dev.release}</version>
-				</dependency>
-			</dependencies>
-		</profile>
-		<profile>
-			<id>pnml-release</id>
-			<properties>
-				<mycurrent>${pnml.release}</mycurrent>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>fr.lip6.move.pnml.framework</groupId>
-					<artifactId>utils</artifactId>
-					<version>${pnml.release}</version>
-				</dependency>
-			</dependencies>
-		</profile>
-	</profiles>
-
 </project>
