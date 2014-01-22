@@ -23,13 +23,6 @@
 		<manifestdir>META-INF</manifestdir>
 	</properties>
 
-	<distributionManagement>
-		<site>
-			<id>shango</id>
-			<url>scp://shango.rsr.lip6.fr/data/updateSite/</url>
-		</site>
-	</distributionManagement>
-
 	<reporting>
 		<plugins>
 			<plugin>
@@ -74,11 +67,11 @@
 		</developer>
 	</developers>
 	<scm>
-		<url>scm:svn:https://forge.cosyverif.org/svn/pnmlframework</url>
+		<url>scm:svn:https://github.com/lhillah/pnmlframework.git</url>
 	</scm>
 	<issueManagement>
 		<system>Redmine</system>
-		<url>https://forge.cosyverif.org/projects/pnmlframework/issues</url>
+		<url>https://github.com/lhillah/pnmlframework/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Hudson</system>
@@ -87,7 +80,7 @@
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
-			<name>CNRS UMR 7606 - LIP6 / PNML Framework License</name>
+			<name>PNML Validation Framework License</name>
 			<url>http://pnml.lip6.fr/resources/License</url>
 		</license>
 	</licenses>
