@@ -11,7 +11,9 @@
 	<url>http://pnml.lip6.fr</url>
 
 	<modules>
+		<!--  
 		<module>../pnmlFw-3rdPartyDependencies</module>
+		-->
 		<module>../pnmlFw-Utils</module>
 		<module>../pnmlFw-Utils.tests</module>
 
@@ -43,9 +45,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<thirdparty.version>2.2.0.qualifier</thirdparty.version>
-		<pnml.release>2.2.1.SNAPSHOT</pnml.release>
-		<pnml.release.doc>2.2.1</pnml.release.doc>
-		<pnml.snapshot>2.2.2-SNAPSHOT</pnml.snapshot>
+		<pnml.release>2.2.2.SNAPSHOT</pnml.release>
+		<pnml.release.doc>2.2.2</pnml.release.doc>
+		<pnml.snapshot>2.2.3-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
 		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
@@ -91,20 +93,16 @@
 		</developer>
 	</developers>
 	<scm>
-		<url>scm:svn:https://forge.cosyverif.org/svn/pnmlframework</url>
+		<url>scm:svn:https://github.com/lhillah/pnmlframework.git</url>
 	</scm>
 	<issueManagement>
-		<system>Redmine</system>
-		<url>https://forge.cosyverif.org/projects/pnmlframework/issues</url>
+		<system>GitHub</system>
+		<url>https://github.com/lhillah/pnmlframework/issues</url>
 	</issueManagement>
-	<ciManagement>
-		<system>Hudson</system>
-		<url>http://miage11.u-paris10.fr:8080</url>
-	</ciManagement>
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
-			<name>LIP6-Move / PNML Framework License</name>
+			<name>PNML Framework License</name>
 			<url>http://pnml.lip6.fr/resources/License</url>
 		</license>
 	</licenses>
