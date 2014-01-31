@@ -289,8 +289,7 @@ public final class PNMLUtils {
 			OtherException, InvalidIDException, InvocationFailedException {
 
 		ModelRepository mr = ModelRepository.getInstance();
-		final Random r = ThreadLocalRandom.current();
-		r.setSeed(new Date().getTime());
+		final Random r = new Random(new Date().getTime());
 		final String wksId = object.getClass().getCanonicalName() + DOT
 				+ r.nextLong();
 		mr.createDocumentWorkspace(wksId, object);
@@ -408,7 +407,7 @@ public final class PNMLUtils {
 				throw new InvalidFileTypeException(message, new Throwable(
 						message));
 			}
-		} catch (NullPointerException npe) {// TODO: Bad practice! update!
+		} catch (NullPointerException npe) {// FIXME: Bad practice! update!
 			npe.printStackTrace();
 			throw new InternalException("Null pointer exception",
 					new Throwable("Something went wrong. Please, re-submit."));

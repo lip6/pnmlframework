@@ -24,7 +24,6 @@ import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ThreadLocalRandom;
 
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
@@ -124,10 +123,7 @@ public final class IdRepository {
 			throw new InvalidIDException("the prefix can't begin with a digit");
 		}
 
-		// final Random generator = new Random(new Date().getTime());
-
-		final Random generator = ThreadLocalRandom.current();
-		generator.setSeed(new Date().getTime());
+		final Random generator = new Random(new Date().getTime());
 		long rand = generator.nextLong();
 		myId = prefix + rand;
 

@@ -22,7 +22,6 @@ import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ThreadLocalRandom;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -70,8 +69,6 @@ public final class ModelRepository {
 	private static final String NO_MODEL_REPOSITORY_UNIT_ASSOCIATED_TO_CURRENT_WORKSPACE = "There is no model repository unit associated to the current workspace in the repository.";
 
 	private static final String NO_REGISTERED_MODELS_IN_REPOSITORY = "There is no registered models in the repository";
-
-	private static final String RANDOM_WORKSPACE_ID = "RandomWorkspaceId";
 
 	private static final String DOT = ".";
 
