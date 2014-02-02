@@ -57,10 +57,6 @@
 	</properties>
 
 	<distributionManagement>
-		<site>
-			<id>shango</id>
-			<url>scp://shango.rsr.lip6.fr/data/updateSite/</url>
-		</site>
 		<repository>
 			<id>deployment</id>
 			<name>Public Releases</name>
