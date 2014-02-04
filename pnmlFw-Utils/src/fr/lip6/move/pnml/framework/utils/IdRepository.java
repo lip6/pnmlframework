@@ -138,7 +138,7 @@ public final class IdRepository {
 			throw new InvalidIDException("the prefix can't begin with a digit");
 		}
 		
-		return generateFreeId(prefix, obj);
+		return generateId(prefix, obj);
 	}
 
 	/**
