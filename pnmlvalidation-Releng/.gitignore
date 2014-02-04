@@ -3,3 +3,4 @@ target
 *.zip
 .DS_Store
 *.jar
+pom-old.xml
