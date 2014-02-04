@@ -151,7 +151,7 @@ public final class IdRepository {
 	 */
 	public final synchronized String generateFreeId(Object obj) throws InvalidIDException {
 		String prefix = generatePrefix();
-		return generateFreeId(prefix, obj);
+		return generateId(prefix, obj);
 	}
 	
 	/**
