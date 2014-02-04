@@ -43,12 +43,18 @@ public final class IdRepository {
 	 * @type long
 	 */
 	private static final long LIMIT_LOOP = 1000000000L;
+	
 
 	/**
-	 * @type HashSet
+	 * @type Map
 	 */
 	private ConcurrentMap<String, Object> myHash; // NOPMD by ggiffo on 7/1/08
-
+	/**
+	 * To keep track of how many times we are trying to find a prefix.
+	 * Prevents infinite loop by setting upper bound to LIMIT_LOOP.
+	 */
+	private static long prefixTentatives = 0L;
+	
 	// 9:42 AM
 
 	/**
@@ -59,7 +65,7 @@ public final class IdRepository {
 	}
 
 	/**
-	 * Erase the list.
+	 * Erase the content of the Id repository
 	 */
 	public final void eraseIt() {
 		myHash.clear();
@@ -81,10 +87,13 @@ public final class IdRepository {
 			throws InvalidIDException {
 
 		// check if id is well formated
-		if (myId == null || "".equals(myId)
-				|| java.lang.Character.isDigit((char) myId.charAt(0))) {
+		if (myId == null) {
+				throw new InvalidIDException("The ID can't be null");
+		} else if ("".equals(myId)) {
+				throw new InvalidIDException("The ID can't be void");
+		} else if (java.lang.Character.isDigit((char) myId.charAt(0))) {
 			throw new InvalidIDException(
-					"the id can't be void or can't begin with a digit");
+					"The ID can't begin with a digit");
 		} else {
 			// insert key if it does'nt exist in hashlist
 			if (myHash.containsKey(myId)) {
@@ -101,6 +110,8 @@ public final class IdRepository {
 
 	/**
 	 * Generates an unused id and link an object to it.
+	 * The generated id must be XML-compliant (NCName), 
+	 * so the prefix must not start with a digit.
 	 * 
 	 * @param prefix
 	 *            a prefix for the id, must begin with a letter, may be pnml
@@ -108,13 +119,14 @@ public final class IdRepository {
 	 * @param obj
 	 *            the object which will be linked to this id.
 	 * @throws InvalidIDException
-	 *             raise exception if a problem occure.
-	 * @return a string
+	 *             raise exception if a problem occurs, typically the prefix
+	 *             is null, empty, or begins with a digit.
+	 * @return a string (the generated Id)
+	 * @see #generateFreeId(Object)
 	 */
 	public synchronized final String generateFreeId(String prefix, Object obj)
 			throws InvalidIDException {
-
-		String myId;
+		
 		/*
 		 * check if pnml type is not an empty string or begin by a character
 		 */
@@ -122,13 +134,30 @@ public final class IdRepository {
 			throw new InvalidIDException("please give a prefix");
 		} else if ("".equals(prefix)) {
 			throw new InvalidIDException("please give a prefix");
-		} else if (java.lang.Character.isDigit((char) prefix.charAt(0))) {
+		} else if (java.lang.Character.isDigit(prefix.charAt(0))) {
 			throw new InvalidIDException("the prefix can't begin with a digit");
 		}
+		
+		return generateFreeId(prefix, obj);
+	}
 
+	/**
+	 * Generates an unused id and link an object to it. The generated id
+	 * is XML-compliant. It is thus a NCName.
+	 * @param obj  the object that will be linked to this id.
+	 * @return the generated id
+	 * @throws InvalidIDException 
+	 * @see #generateFreeId(String, Object)
+	 */
+	public final synchronized String generateFreeId(Object obj) throws InvalidIDException {
+		String prefix = generatePrefix();
+		return generateFreeId(prefix, obj);
+	}
+	
+	private final synchronized String generateId(String prefix, Object obj) throws InvalidIDException {
 		final Random generator = new Random(new Date().getTime());
 		long rand = generator.nextLong();
-		myId = prefix + rand;
+		String myId = prefix + rand;
 
 		for (int i = 0; i < LIMIT_LOOP; i++) {
 			if (myHash.containsKey(myId)) {
@@ -145,7 +174,30 @@ public final class IdRepository {
 
 		return myId;
 	}
-
+	
+	private final synchronized String generatePrefix(){
+		String prefix = Long.toHexString(Double.doubleToLongBits(Math.random()));
+		String res = null;
+		int i;
+		for(i = 0; i < prefix.length(); i++) {
+			if (java.lang.Character.isLetter(prefix.charAt(i))) {
+				break;
+			}
+		}
+		if (i < prefix.length()) {
+			res = prefix.substring(i);
+		}
+		else {//try limit times
+			 	prefixTentatives++;
+			 	if (prefixTentatives < LIMIT_LOOP) {
+			 		res = generatePrefix();
+			 	}
+			 	// otherwise, will return null. Reset tentatives count.
+			 	prefixTentatives = 0L;
+		}
+		return res;
+	}
+	
 	/**
 	 * Returns the object with the given id.
 	 * 
