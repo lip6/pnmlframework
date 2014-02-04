@@ -154,6 +154,13 @@ public final class IdRepository {
 		return generateFreeId(prefix, obj);
 	}
 	
+	/**
+	 * Generates an id with a provided prefix.
+	 * @param prefix
+	 * @param obj
+	 * @return
+	 * @throws InvalidIDException
+	 */
 	private final synchronized String generateId(String prefix, Object obj) throws InvalidIDException {
 		final Random generator = new Random(new Date().getTime());
 		long rand = generator.nextLong();
@@ -175,6 +182,10 @@ public final class IdRepository {
 		return myId;
 	}
 	
+	/**
+	 * Generates a prefix.
+	 * @return
+	 */
 	private final synchronized String generatePrefix(){
 		String prefix = Long.toHexString(Double.doubleToLongBits(Math.random()));
 		String res = null;
