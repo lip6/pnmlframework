@@ -45,9 +45,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<thirdparty.version>2.2.0.qualifier</thirdparty.version>
-		<pnml.release>2.2.3.SNAPSHOT</pnml.release>
-		<pnml.release.doc>2.2.3</pnml.release.doc>
-		<pnml.snapshot>2.2.4-SNAPSHOT</pnml.snapshot>
+		<pnml.release>2.2.4.SNAPSHOT</pnml.release>
+		<pnml.release.doc>2.2.4</pnml.release.doc>
+		<pnml.snapshot>2.2.5-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.19.0</tycho.version>
 		<tycho-extras.version>0.19.0</tycho-extras.version>
 		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>

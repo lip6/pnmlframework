@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.move.pnml.framework.utils.feature"
       label="PNML Framework Utils and Runtime"
-      version="2.2.3.qualifier"
+      version="2.2.4.qualifier"
       provider-name="%Bundle-Vendor"
       plugin="fr.lip6.move.pnml.framework.utils">
 
