@@ -86,19 +86,20 @@ public final class IdRepository {
 	public final synchronized String checkId(String myId, Object obj)
 			throws InvalidIDException {
 
+		String objName =  obj.getClass().getCanonicalName();
 		// check if id is well formated
 		if (myId == null) {
-				throw new InvalidIDException("The ID can't be null");
+				throw new InvalidIDException("The ID can't be null (" + objName +")");
 		} else if ("".equals(myId)) {
-				throw new InvalidIDException("The ID can't be void");
+				throw new InvalidIDException("The ID can't be void (" + objName +")");
 		} else if (java.lang.Character.isDigit((char) myId.charAt(0))) {
 			throw new InvalidIDException(
-					"The ID can't begin with a digit");
+					"The ID can't begin with a digit (" + objName +")");
 		} else {
 			// insert key if it does'nt exist in hashlist
 			if (myHash.containsKey(myId)) {
 				throw new InvalidIDException("this id '" + myId
-						+ "' already exists in the model : \""
+						+ " (" + objName +") already exists in the model : \""
 						+ ModelRepository.getInstance().getCurrentDocWSId()
 						+ "\"");
 			} else {
@@ -186,7 +187,7 @@ public final class IdRepository {
 	 * Generates a prefix.
 	 * @return
 	 */
-	private final synchronized String generatePrefix(){
+	private final String generatePrefix(){
 		String prefix = Long.toHexString(Double.doubleToLongBits(Math.random()));
 		String res = null;
 		int i;
