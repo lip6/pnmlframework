@@ -22,6 +22,10 @@ Changelog of PNML Document Checker ${project.version}
 Changelog
 
 * What's new in version ${project.version}?
+
+  * Relies on version 2.2.4 of PNML Framewiork
+
+* What's new in version 1.0.2?
   
   * Relies on the stable release 2.2.1 of {{{http://pnml.lip6.fr/}PNML Framework}}.
 
