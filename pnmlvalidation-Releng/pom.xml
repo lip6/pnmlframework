@@ -4,7 +4,7 @@
 
 	<groupId>fr.lip6.move.pnml</groupId>
 	<artifactId>validation.releng</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>pom</packaging>
 
 	<name>PNML Document Validation</name>
@@ -16,8 +16,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.0</thirdparty.version>
-		<pnml.version>2.2.3.SNAPSHOT</pnml.version>
+		<thirdparty.version>2.2.0.qualifier</thirdparty.version>
+		<pnml.version>2.2.4.SNAPSHOT</pnml.version>
 		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
 		<license-p2-repo>http://download.eclipse.org/eclipse/updates/license/</license-p2-repo>
 		<manifestdir>META-INF</manifestdir>
