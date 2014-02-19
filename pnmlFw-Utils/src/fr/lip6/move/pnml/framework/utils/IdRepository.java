@@ -187,7 +187,7 @@ public final class IdRepository {
 	 * Generates a prefix.
 	 * @return
 	 */
-	private final String generatePrefix(){
+	public final String generatePrefix() {
 		String prefix = Long.toHexString(Double.doubleToLongBits(Math.random()));
 		String res = null;
 		int i;
