@@ -20,8 +20,7 @@
 		PNML Framework Utils Source
 	</description>
 
-
-
+<!--  
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
@@ -29,4 +28,5 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+-->
 </project>

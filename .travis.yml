@@ -1,0 +1,6 @@
+language: java
+script: "./build.sh"
+# whitelist
+branches:
+  only:
+    - master
