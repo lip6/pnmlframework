@@ -11,71 +11,21 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Thu Jan 02 00:08:26 CET 2014$
+ * $Id ggiffo, Tue Dec 23 11:30:46 CET 2014$
  */
 package fr.lip6.move.pnml.ptnet.hlapi;
 
-import fr.lip6.move.pnml.ptnet.Annotation;
-import fr.lip6.move.pnml.ptnet.AnnotationGraphics;
-import fr.lip6.move.pnml.ptnet.AnyObject;
-import fr.lip6.move.pnml.ptnet.Arc;
-import fr.lip6.move.pnml.ptnet.ArcGraphics;
-import fr.lip6.move.pnml.ptnet.CSS2Color;
-import fr.lip6.move.pnml.ptnet.CSS2FontFamily;
-import fr.lip6.move.pnml.ptnet.CSS2FontSize;
-import fr.lip6.move.pnml.ptnet.CSS2FontStyle;
-import fr.lip6.move.pnml.ptnet.CSS2FontWeight;
-import fr.lip6.move.pnml.ptnet.Dimension;
-import fr.lip6.move.pnml.ptnet.Fill;
-import fr.lip6.move.pnml.ptnet.Font;
-import fr.lip6.move.pnml.ptnet.FontAlign;
-import fr.lip6.move.pnml.ptnet.FontDecoration;
-import fr.lip6.move.pnml.ptnet.Gradient;
-import fr.lip6.move.pnml.ptnet.Label;
-import fr.lip6.move.pnml.ptnet.Line;
-import fr.lip6.move.pnml.ptnet.LineShape;
-import fr.lip6.move.pnml.ptnet.LineStyle;
-import fr.lip6.move.pnml.ptnet.Name;
-import fr.lip6.move.pnml.ptnet.Node;
-import fr.lip6.move.pnml.ptnet.NodeGraphics;
-import fr.lip6.move.pnml.ptnet.Offset;
-import fr.lip6.move.pnml.ptnet.PNType;
-import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
-import fr.lip6.move.pnml.ptnet.PTMarking;
-import fr.lip6.move.pnml.ptnet.Page;
-import fr.lip6.move.pnml.ptnet.PetriNet;
-import fr.lip6.move.pnml.ptnet.PetriNetDoc;
-import fr.lip6.move.pnml.ptnet.Place;
-import fr.lip6.move.pnml.ptnet.PnObject;
-import fr.lip6.move.pnml.ptnet.Position;
-import fr.lip6.move.pnml.ptnet.RefPlace;
-import fr.lip6.move.pnml.ptnet.RefTransition;
-import fr.lip6.move.pnml.ptnet.ToolInfo;
-
-import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
-
-import java.math.BigDecimal;
-
-import java.net.URI;
-
 import java.util.List;
 
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.ptnet.hlapi.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.ptnet.*;
-import fr.lip6.move.pnml.ptnet.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.ptnet.Place;
+import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
 public class PlaceHLAPITest {
 
 	

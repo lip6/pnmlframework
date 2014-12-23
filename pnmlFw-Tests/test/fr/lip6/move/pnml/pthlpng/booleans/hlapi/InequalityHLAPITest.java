@@ -11,59 +11,32 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Thu Jan 02 00:08:30 CET 2014$
+ * $Id ggiffo, Tue Dec 23 11:30:49 CET 2014$
  */
 package fr.lip6.move.pnml.pthlpng.booleans.hlapi;
 
-import fr.lip6.move.pnml.pthlpng.booleans.Equality;
-import fr.lip6.move.pnml.pthlpng.booleans.Inequality;
-
-import fr.lip6.move.pnml.pthlpng.booleans.impl.BooleansFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.dots.impl.DotsFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition;
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation;
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking;
-
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
-
-import fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionsFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.terms.NamedOperator;
-import fr.lip6.move.pnml.pthlpng.terms.Operator;
-import fr.lip6.move.pnml.pthlpng.terms.Sort;
-import fr.lip6.move.pnml.pthlpng.terms.Term;
-
-import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
-
 import java.util.List;
 
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.pthlpng.booleans.*;
-import fr.lip6.move.pnml.pthlpng.booleans.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.pthlpng.booleans.Inequality;
+import fr.lip6.move.pnml.pthlpng.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.ConditionHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.HLAnnotationHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.HLMarkingHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.partitions.hlapi.PartitionElementHLAPI;
+import fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionsFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.NamedOperatorHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.OperatorHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.SortHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.TermHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 public class InequalityHLAPITest {
 
 	

@@ -3,15 +3,24 @@
  * <copyright>
  * </copyright>
  *
- * $Id ggiffo, Thu Jan 02 00:08:31 CET 2014$
+ * $Id ggiffo, Tue Dec 23 11:30:49 CET 2014$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.tools;
 
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.tools.*;
-import fr.lip6.move.pnml.framework.utils.exception.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PageHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetDocHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PlaceHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.RefPlaceHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.RefTransitionHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.TransitionHLAPI;
 
 public class ToolsTest {
 
