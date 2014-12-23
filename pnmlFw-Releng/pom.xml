@@ -96,7 +96,7 @@
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
-			<name>PNML Framework License</name>
+			<name>Eclipse Public License</name>
 			<url>http://pnml.lip6.fr/resources/License</url>
 		</license>
 	</licenses>
@@ -315,7 +315,8 @@
 					<properties>
 						<year>${project.inceptionYear}</year>
 						<organisation>
-							Universite Paris Ouest and Sorbonne Universites, Univ. Paris 06 - CNRS UMR
+							Universite Paris Ouest and Sorbonne Universites,
+							Univ. Paris 06 - CNRS UMR
 							7606 (LIP6)
 						</organisation>
 						<maincontributor>Lom Messan Hillah</maincontributor>
@@ -381,7 +382,8 @@
 						<artifactId>umlgraph</artifactId>
 						<version>5.6.6</version>
 					</docletArtifact>
-					<additionalparam>-views -all -quiet -hide java.* -qualify -postfixpackage</additionalparam>
+					<additionalparam>-views -all -quiet -hide java.* -qualify
+						-postfixpackage</additionalparam>
 					<useStandardDocletOptions>true</useStandardDocletOptions>
 					<failOnError>false</failOnError>
 				</configuration>
@@ -551,5 +553,32 @@
 
 		</pluginManagement>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>ossrh-deployment</id>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+				</snapshotRepository>
+			</distributionManagement>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId>
+						<artifactId>nexus-staging-maven-plugin</artifactId>
+						<version>1.6.3</version>
+						<extensions>true</extensions>
+						<configuration>
+							<serverId>ossrh</serverId>
+							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
