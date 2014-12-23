@@ -23,6 +23,7 @@ import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
 import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 
 /**
+ * Model type used in this class in PNML Core Model.
  * @author ggiffo
  * 
  */

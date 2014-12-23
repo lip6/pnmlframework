@@ -2,39 +2,39 @@
 
 	<generationItem>
 		<genmodel>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Low_Level_API_Generation/model/Core/pnmlcoremodel.genmodel
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/Core/pnmlcoremodel.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-CoreModel/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-CoreModel/src
 		</outsrcfolder>
 		<outtestfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Tests/test
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
 		</outtestfolder>
 		<tooling>fr.lip6.move.pnml.pnmlcoremodel</tooling>
 	</generationItem>
 	
 	<generationItem>
 		<genmodel>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Low_Level_API_Generation/model/place-transition/placeTransition.genmodel
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/place-transition/placeTransition.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-PTNet/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-PTNet/src
 		</outsrcfolder>
 		<outtestfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Tests/test
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
 		</outtestfolder>
 		<tooling>fr.lip6.move.pnml.ptnet</tooling>
 	</generationItem>
 
 	<generationItem>
 		<genmodel>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Low_Level_API_Generation/model/symmetric-net/symmetricnet.genmodel
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/symmetric-net/symmetricnet.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-SNNet/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-SNNet/src
 		</outsrcfolder>
 		<outtestfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Tests/test
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
 		</outtestfolder>
 		<tooling>
 			fr.lip6.move.pnml.symmetricnet.hlcorestructure
@@ -43,26 +43,26 @@
 
 	<generationItem>
 		<genmodel>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Low_Level_API_Generation/model/high-level-net/hlpn.genmodel
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/high-level-net/hlpn.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-HLPN/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-HLPN/src
 		</outsrcfolder>
 		<outtestfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Tests/test
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
 		</outtestfolder>
 		<tooling>fr.lip6.move.pnml.hlpn.hlcorestructure</tooling>
 	</generationItem>
 	 
 	<generationItem>
 		<genmodel>
-		/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Low_Level_API_Generation/model/pthlpng/pthlpng.genmodel
+		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/pthlpng/pthlpng.genmodel
 		</genmodel>
 		<outsrcfolder>
-		/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-PT-HLPNG/src
+		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-PT-HLPNG/src
 		</outsrcfolder>
 		<outtestfolder>
-			/Applications/Eclipses/eclipse-3.7-PFW-APPS-ColoaneDev/workspace/pnmlFw-Tests/test
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
 		</outtestfolder>
 		<tooling>fr.lip6.move.pnml.pthlpng.hlcorestructure</tooling>
 	</generationItem>

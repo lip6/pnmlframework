@@ -23,7 +23,6 @@ import org.eclipse.emf.pnml.codegen.templates.model.ToolsTest;
 import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.LoggerContext;
-
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**

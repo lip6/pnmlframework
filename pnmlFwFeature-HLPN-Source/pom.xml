@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>fr.lip6.move.pnml</groupId>
+		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>framework.releng</artifactId>
-		<version>2.2.0</version>
+		<version>2.2.1</version>
 		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
 	</parent>
 
@@ -20,9 +20,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>fr.lip6.move.pnml</groupId>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
-			<version>${thirdparty.version}</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.1.qualifier.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.1.qualifier">
       <category name="Utilities and 3rd part jars"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.5.qualifier">
       <category name="Utilities and 3rd part jars"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
    <category-def name="Utilities and 3rd part jars" label="Utilities and 3rd part jars">
