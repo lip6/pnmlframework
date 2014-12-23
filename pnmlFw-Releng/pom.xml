@@ -36,7 +36,7 @@
 		<module>../pnmlFwFeature-PT-HLPNG-Source</module>
 
 		<module>../PnmlFramework_UpdateSite</module>
-		<module>../PnmlFramework_UpdateSite-Dev</module>
+		<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
 	</modules>
 
 	<properties>

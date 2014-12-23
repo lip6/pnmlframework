@@ -1,54 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.0.qualifier.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.0.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.1.qualifier.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.1.qualifier">
       <category name="Utilities and 3rd part jars"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.5.qualifier">
       <category name="Utilities and 3rd part jars"/>
    </feature>
-   <feature url="features/org.eclipse.emf.ecore_2.9.1.v20130827-0309.jar" id="org.eclipse.emf.ecore" version="2.9.1.v20130827-0309">
-      <category name="Utilities and 3rd part jars"/>
-   </feature>
-   <feature url="features/org.eclipse.emf.common_2.9.1.v20130827-0309.jar" id="org.eclipse.emf.common" version="2.9.1.v20130827-0309">
-      <category name="Utilities and 3rd part jars"/>
-   </feature>
-   <feature url="features/org.eclipse.ocl.all_4.1.0.v20130909-1552.jar" id="org.eclipse.ocl.all" version="4.1.0.v20130909-1552">
-      <category name="Utilities and 3rd part jars"/>
-   </feature>
-   <feature url="features/org.eclipse.ocl_3.3.0.v20130909-1552.jar" id="org.eclipse.ocl" version="3.3.0.v20130909-1552">
-      <category name="Utilities and 3rd part jars"/>
-   </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature" version="2.2.5.qualifier">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.hlpn.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.ptnet.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.utils.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.utils.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.utils.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature.source_2.2.4.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature.source" version="2.2.4.qualifier">
+   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature.source_2.2.5.qualifier.jar" id="fr.lip6.move.pnml.framework.coremodel.feature.source" version="2.2.5.qualifier">
       <category name="Source"/>
    </feature>
    <category-def name="Utilities and 3rd part jars" label="Utilities and 3rd part jars">
