@@ -183,7 +183,7 @@ public enum OfficialPNMLFileType implements PNMLFileType {
 
 	/**
 	 * 
-	 * @param classname
+	 * @param nativeclassname
 	 *            the class canonical name
 	 * @return The item corresponding to the native class canonical name (native
 	 *         means EMF-generated, i.e. extends EObject).
