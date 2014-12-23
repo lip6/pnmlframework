@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: %pluginName
+Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.move.pnml.framework.coremodel;singleton:=true
 Bundle-Version: 2.2.5.qualifier
 Bundle-ClassPath: .
-Bundle-Vendor: %providerName
+Bundle-Vendor: %Provider-Name
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: fr.lip6.move.pnml.pnmlcoremodel,
@@ -16,5 +16,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
  fr.lip6.move.pnml.framework.utils,
- fr.lip6.move.pnml.framework.3rdpartimports;bundle-version="2.2.0"
+ fr.lip6.move.pnml.framework.3rdpartimports;bundle-version="2.2.1"
 Bundle-ActivationPolicy: lazy
