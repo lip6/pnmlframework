@@ -21,7 +21,6 @@
 	</description>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
