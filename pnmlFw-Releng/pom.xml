@@ -10,35 +10,6 @@
 	<name>PNML Framework</name>
 	<url>http://pnml.lip6.fr</url>
 
-	<modules>
-		<!-- <module>../pnmlFw-3rdPartyDependencies</module> -->
-		<module>../pnmlFw-Utils</module>
-		<module>../pnmlFw-Utils.tests</module>
-
-		<module>../pnmlFw-CoreModel</module>
-		<module>../pnmlFw-PTNet</module>
-		<module>../pnmlFw-SNNet</module>
-		<module>../pnmlFw-HLPN</module>
-		<module>../pnmlFw-PT-HLPNG</module>
-
-		<module>../pnmlFwFeature-3rdPart_Plugin</module>
-		<module>../pnmlFwFeature-Utils</module>
-		<module>../pnmlFwFeature-Utils-Source</module>
-		<module>../pnmlFwFeature-CoreModel</module>
-		<module>../pnmlFwFeature-CoreModel-Source</module>
-		<module>../pnmlFwFeature-PTNet</module>
-		<module>../pnmlFwFeature-PTNet-Source</module>
-		<module>../pnmlFwFeature-SNNet</module>
-		<module>../pnmlFwFeature-SNNet-Source</module>
-		<module>../pnmlFwFeature-HLPN</module>
-		<module>../pnmlFwFeature-HLPN-Source</module>
-		<module>../pnmlFwFeature-PT-HLPNG</module>
-		<module>../pnmlFwFeature-PT-HLPNG-Source</module>
-
-		<module>../PnmlFramework_UpdateSite</module>
-		<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
-	</modules>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -96,7 +67,7 @@
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
-			<name>Eclipse Public License</name>
+			<name>Eclipse Public License - Version 1.0</name>
 			<url>http://pnml.lip6.fr/resources/License</url>
 		</license>
 	</licenses>
@@ -391,7 +362,7 @@
 					<execution>
 						<id>attach-javadocs</id>
 						<goals>
-							<goal>jar</goal>
+							<goal>aggregate</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -471,7 +442,7 @@
 						<baselineReplace>none</baselineReplace>
 						<baselineRepositories>
 							<repository>
-								<url>http://download.eclipse.org/eclipse/updates/4.3</url>
+								<url>http://download.eclipse.org/eclipse/updates/4.4</url>
 							</repository>
 						</baselineRepositories>
 					</configuration>
@@ -556,25 +527,113 @@
 
 	<profiles>
 		<profile>
-			<id>ossrh-deployment</id>
+			<id>all</id>
+			<modules>
+				<!-- <module>../pnmlFw-3rdPartyDependencies</module> -->
+				<module>../pnmlFw-Utils</module>
+				<module>../pnmlFw-Utils.tests</module>
+
+				<module>../pnmlFw-CoreModel</module>
+				<module>../pnmlFw-PTNet</module>
+				<module>../pnmlFw-SNNet</module>
+				<module>../pnmlFw-HLPN</module>
+				<module>../pnmlFw-PT-HLPNG</module>
+
+				<module>../pnmlFwFeature-3rdPart_Plugin</module>
+				<module>../pnmlFwFeature-Utils</module>
+				<module>../pnmlFwFeature-Utils-Source</module>
+				<module>../pnmlFwFeature-CoreModel</module>
+				<module>../pnmlFwFeature-CoreModel-Source</module>
+				<module>../pnmlFwFeature-PTNet</module>
+				<module>../pnmlFwFeature-PTNet-Source</module>
+				<module>../pnmlFwFeature-SNNet</module>
+				<module>../pnmlFwFeature-SNNet-Source</module>
+				<module>../pnmlFwFeature-HLPN</module>
+				<module>../pnmlFwFeature-HLPN-Source</module>
+				<module>../pnmlFwFeature-PT-HLPNG</module>
+				<module>../pnmlFwFeature-PT-HLPNG-Source</module>
+
+				<module>../PnmlFramework_UpdateSite</module>
+				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
+			</modules>
+		</profile>
+		<profile>
+			<id>ossrh-release</id>
+			<modules>
+				<!-- <module>../pnmlFw-3rdPartyDependencies</module> -->
+				<module>../pnmlFw-Utils</module>
+				<module>../pnmlFw-CoreModel</module>
+				<module>../pnmlFw-PTNet</module>
+				<module>../pnmlFw-SNNet</module>
+				<module>../pnmlFw-HLPN</module>
+				<module>../pnmlFw-PT-HLPNG</module>
+			</modules>
 			<distributionManagement>
 				<snapshotRepository>
 					<id>ossrh</id>
 					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 				</snapshotRepository>
+				<repository>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
 			</distributionManagement>
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.3</version>
+						<version>1.6.5</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>ossrh</serverId>
 							<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-							<autoReleaseAfterClose>true</autoReleaseAfterClose>
+							<autoReleaseAfterClose>false</autoReleaseAfterClose>
 						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>2.4</version>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar-no-fork</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.10.1</version>
+						<configuration>
+							<additionalJOption>-J-Xmx2048m</additionalJOption>
+							<failOnError>false</failOnError>
+						</configuration>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>aggregate</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>
