@@ -4,3 +4,4 @@ target
 .DS_Store
 *.jar
 pom-old.xml
+/brouilon.txt

@@ -1,16 +1,23 @@
 #! /bin/sh
-#------------------------------------------------------------------------------------
-# Copyright Lom M. Hillah - Date: Jan 04, 2014 - Version: 0.1 
-# License: GNU GPL v3. See http://www.gnu.org/licenses/
 #
-# Invocation: ./validatePNML-PFW.sh pathToPNMLDocumentsFolder
-# 
-# This script uses PNML Document Checher to validate your PNML Documents.
-# The result is redirected in a .txt file next to each document you are validating.
-# This script looks into folders, so it expects as argument the path to the folder
-# where your PNML Documents are located.
-# http://pnml.lip6.fr/pnmlvalidation/index.html
-#------------------------------------------------------------------------------------
+#  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+# 							Univ. Paris 06 - CNRS UMR
+# 							7606 (LIP6)
+#
+#  All rights reserved.   This program and the accompanying materials
+#  are made available under the terms of the Eclipse Public License v1.0
+#  which accompanies this distribution, and is available at
+#  http://www.eclipse.org/legal/epl-v10.html
+#
+#  Project leader / Initial Contributor:
+#    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+#
+#  Contributors:
+#    ${ocontributors} - <$oemails}>
+#
+#  Mailing list:
+#    lom-messan.hillah@lip6.fr
+#
 
 # Path the executable jar of PNML Document Checker
 JAR_PATH=fr.lip6.move.pnml.check-1.0.1.jar

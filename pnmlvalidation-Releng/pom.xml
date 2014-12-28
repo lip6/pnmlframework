@@ -2,9 +2,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>fr.lip6.move.pnml</groupId>
+	<groupId>fr.lip6.pnml</groupId>
 	<artifactId>validation.releng</artifactId>
-	<version>1.0.4</version>
+	<version>1.0.5</version>
 	<packaging>pom</packaging>
 
 	<name>PNML Document Validation</name>
@@ -16,19 +16,34 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.0.qualifier</thirdparty.version>
-		<pnml.version>2.2.4.SNAPSHOT</pnml.version>
-		<kepler-repo.url>http://download.eclipse.org/releases/kepler</kepler-repo.url>
-		<license-p2-repo>http://download.eclipse.org/eclipse/updates/license/</license-p2-repo>
+		<thirdparty.version>2.2.1-SNAPSHOT</thirdparty.version>
+		<pnml.version>2.2.5-SNAPSHOT</pnml.version>
+		<tycho.version>0.22.0</tycho.version>
+		<tycho-extras.version>0.22.0</tycho-extras.version>
+		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
+		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>deployment</id>
+			<name>Public Releases</name>
+			<url>http://miage11.u-paris10.fr:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>Snapshots</name>
+			<url>http://miage11.u-paris10.fr:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<reporting>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>2.6</version>
+				<version>2.7</version>
 				<reportSets>
 					<reportSet>
 						<reports>
@@ -80,7 +95,7 @@
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>
-			<name>PNML Validation Framework License</name>
+			<name>Eclipse Public License - Version 1.0</name>
 			<url>http://pnml.lip6.fr/resources/License</url>
 		</license>
 	</licenses>
@@ -90,77 +105,69 @@
 		</mailingList>
 	</mailingLists>
 
-	<repositories>
-		<repository>
-			<id>kepler</id>
-			<url>${kepler-repo.url}</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>license</id>
-			<url>${license-p2-repo}</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
-
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
-				<version>6.8.7</version>
+				<version>6.8.13</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
 				<artifactId>org.eclipse.emf.ecore</artifactId>
-				<version>2.9.1-v20130827-0309</version>
+				<version>2.10.1</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.emf</groupId>
 				<artifactId>org.eclipse.emf.common</artifactId>
-				<version>2.9.1-v20130827-0309</version>
+				<version>2.10.1</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>org.eclipse</groupId>
+				<artifactId>ocl</artifactId>
+				<version>3.4.0</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.utils</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.coremodel</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.ptnet</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.symmetricnet</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.hlpn</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.pthlpng</artifactId>
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.move.pnml</groupId>
+				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
-				<version>2.2.0.qualifier</version>
+				<version>${thirdparty.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
-				<version>2.0.26</version>
+				<version>2.0.29</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -173,22 +180,73 @@
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-ssh</artifactId>
-				<version>2.4</version>
+				<version>2.8</version>
 			</extension>
 		</extensions>
 		<plugins>
 			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<configuration>
+					<pomDependencies>consider</pomDependencies>
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<configuration>
+					<includeAllDependencies>true</includeAllDependencies>
+				</configuration>
+			</plugin>
+			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.2</version>
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.mycila.maven-license-plugin</groupId>
-				<artifactId>maven-license-plugin</artifactId>
-				<version>1.9.0</version>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>2.0</version>
 				<configuration>
 					<basedir>${basedir}</basedir>
 					<header>http://pnml.lip6.fr/resources/License</header>
@@ -209,7 +267,9 @@
 					<properties>
 						<year>${project.inceptionYear}</year>
 						<organisation>
-						Universite Paris Ouest and Sorbonne Universites, Univ. Paris 06 - CNRS UMR 7606 (LIP6)
+							Universite Paris Ouest and Sorbonne Universites,
+							Univ. Paris 06 - CNRS UMR
+							7606 (LIP6)
 						</organisation>
 						<maincontributor>Lom Messan Hillah</maincontributor>
 						<email>lom-messan.hillah@lip6.fr</email>
@@ -246,24 +306,61 @@
 		<pluginManagement>
 			<plugins>
 				<plugin>
+					<groupId>org.eclipse.tycho.extras</groupId>
+					<artifactId>tycho-p2-extras-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>target-platform-configuration</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<pomDependencies>consider</pomDependencies>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-director-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-repository-plugin</artifactId>
+					<version>${tycho.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.eclipse.tycho</groupId>
+					<artifactId>tycho-p2-plugin</artifactId>
+					<version>${tycho.version}</version>
+					<configuration>
+						<baselineMode>warn</baselineMode>
+						<baselineReplace>none</baselineReplace>
+						<baselineRepositories>
+							<repository>
+								<url>http://download.eclipse.org/eclipse/updates/4.4</url>
+							</repository>
+						</baselineRepositories>
+					</configuration>
+				</plugin>
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.14.1</version>
+					<version>2.18</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>wagon-maven-plugin</artifactId>
-					<version>1.0-beta-4</version>
+					<version>1.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-site-plugin</artifactId>
-					<version>3.3</version>
+					<version>3.4</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>2.6</version>
+					<version>2.7</version>
 				</plugin>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->
@@ -277,13 +374,13 @@
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>
-											com.mycila.maven-license-plugin
+											com.mycila
 										</groupId>
 										<artifactId>
-											maven-license-plugin
+											license-maven-plugin
 										</artifactId>
 										<versionRange>
-											[1.9.0,)
+											[2.0,)
 										</versionRange>
 										<goals>
 											<goal>format</goal>
