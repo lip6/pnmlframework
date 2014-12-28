@@ -1,5 +1,8 @@
 /**
- *  Copyright 2009 Universite Paris Ouest Nanterre & Sorbonne Universites, Univ. Paris 06 - CNRS UMR 7606 (LIP6/MoVe)
+ *  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+ * 							Univ. Paris 06 - CNRS UMR
+ * 							7606 (LIP6)
+ *
  *  All rights reserved.   This program and the accompanying materials
  *  are made available under the terms of the Eclipse Public License v1.0
  *  which accompanies this distribution, and is available at
@@ -104,18 +107,18 @@ public interface CheckPnmlFile extends PnmlDocStatistics {
 	 * Tells if the PNML document is a Place/Transition net in high-level
 	 * notation document.
 	 * @return true if if is a P/T net in high-level net document.
-	 * @warning this is not yet supported by PNML Framework enumerated types in
+	 * <p><strong>Warning</strong> this is not yet supported by PNML Framework enumerated types in
 	 *          each Petri net type package, as of version 2.1.6 of those.
 	 *          Basically, the literal value for PT-HLPN is missing. Will be
-	 *          fixed soon.
+	 *          fixed soon.</p>
 	 */
 	boolean isPTHLPNDocument();
 
 	/**
-	 * Makes this class explicitly create a {@link PnmlDocStatistics} object to
+	 * <p>Makes this class explicitly create a {@link PnmlDocStatistics} object to
 	 * compute various stats on the loaded PNML document. Do this if you really
-	 * need the stats, to avoid creating objects unnecessarily. <br/> After this
-	 * method, you can invoke the stats methods.
+	 * need the stats, to avoid creating objects unnecessarily.</p><p>After this
+	 * method, you can invoke the stats methods.</p>
 	 * @see #getNumOfArcs()
 	 * @see #getNumOfNets()
 	 * @see #getNumOfPlaces()

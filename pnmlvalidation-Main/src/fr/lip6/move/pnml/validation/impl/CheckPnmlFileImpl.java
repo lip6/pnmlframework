@@ -1,5 +1,8 @@
 /**
- *  Copyright 2009 Universite Paris Ouest Nanterre & Sorbonne Universites, Univ. Paris 06 - CNRS UMR 7606 (LIP6/MoVe)
+ *  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+ * 							Univ. Paris 06 - CNRS UMR
+ * 							7606 (LIP6)
+ *
  *  All rights reserved.   This program and the accompanying materials
  *  are made available under the terms of the Eclipse Public License v1.0
  *  which accompanies this distribution, and is available at
@@ -442,6 +445,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
+	 * {@inheritDoc}
 	 * Tells if the loaded PNML document is a HLPNG net document. Not yet
 	 * supported.
 	 * 
@@ -452,7 +456,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * Tells if the loaded PNML document is a P/T net document.
+	 * {@inheritDoc}
 	 * 
 	 * @return true if so
 	 */

@@ -1,5 +1,8 @@
 /**
- *  Copyright 2009 Universite Paris Ouest Nanterre & Sorbonne Universites, Univ. Paris 06 - CNRS UMR 7606 (LIP6/MoVe)
+ *  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+ * 							Univ. Paris 06 - CNRS UMR
+ * 							7606 (LIP6)
+ *
  *  All rights reserved.   This program and the accompanying materials
  *  are made available under the terms of the Eclipse Public License v1.0
  *  which accompanies this distribution, and is available at
@@ -72,6 +75,7 @@ public class PTStats implements PnmlDocStatistics {
 	 */
 	public PTStats(CheckPnmlFile cpf) {
 		loadPnmlDocument(cpf.getPnmlDocHLAPIRootClass(), cpf);
+		resetAllStats();
 		computeStats();
 	}
 
@@ -145,8 +149,6 @@ public class PTStats implements PnmlDocStatistics {
 	private void loadPnmlDocument(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		this.checkpf = cpf;
 		this.pnmldoc = (PetriNetDocHLAPI) this.checkpf.getPnmlDocHLAPIRootClass();
-		resetAllStats();
-		computeStats();
 	}
 
 	/**
