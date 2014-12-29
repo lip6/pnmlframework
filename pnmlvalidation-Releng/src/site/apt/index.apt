@@ -39,6 +39,7 @@ Execution modes
  PNML DoC supports 2 executions modes: it can simply run as a standalone application upon invocation on the
 command line, with a list of PNML Documents to check, or be launched as a server to listen for incoming validation requests.
 
+
 * Standalone
 
   PNML Check can be simply run on the command line and returns as soon as it finishes checking the provided documents.

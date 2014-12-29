@@ -50,7 +50,7 @@
 			<titleTemplate>%2$s | %1$s</titleTemplate>
 			<toc>top</toc>
 			<tocTopMax>6</tocTopMax>
-			<topNav>Download|Documentation|reports</topNav>
+			<topNav>Download|Documentation</topNav>
 			<bottomNav maxSpan="9">
 				<column>Overview</column>
 				<column>Download|Documentation</column>
@@ -59,7 +59,7 @@
 			</bottomNav>
 			<bottomDescription>
 			<![CDATA[
-				 <span class="color-highlight">PNML Check</span> is a simple command-line tool to check your <a href="http://www.pnml.org">Petri Net Markup Language</a> Documents againts 
+				 <span class="color-highlight">PNML Check</span> is a simple command-line tool to check your <a href="http://www.pnml.org">Petri Net Markup Language</a> Documents against 
 				the <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=43538">ISO/IEC 15909-2</a> Specifications (metamodels and constraints).
 				<script type="text/javascript">
   					var _gaq = _gaq || [];
@@ -83,7 +83,7 @@
 					<toc>false</toc>
 					<markPageHeader>false</markPageHeader>
 					<sections>
-						<thumbs>2</thumbs>
+						<body />
 						<body />
 						<columns>2</columns>
 						<body />

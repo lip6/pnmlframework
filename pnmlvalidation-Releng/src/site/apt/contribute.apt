@@ -1,3 +1,23 @@
+~~
+~~  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+~~ 							Univ. Paris 06 - CNRS UMR
+~~ 							7606 (LIP6)
+~~
+~~  All rights reserved.   This program and the accompanying materials
+~~  are made available under the terms of the Eclipse Public License v1.0
+~~  which accompanies this distribution, and is available at
+~~  http://www.eclipse.org/legal/epl-v10.html
+~~
+~~  Project leader / Initial Contributor:
+~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+~~
+~~  Contributors:
+~~    L.M. Hillah - <$oemails}>
+~~
+~~  Mailing list:
+~~    lom-messan.hillah@lip6.fr
+~~
+
  ------
 How to contribute
  ------
@@ -7,7 +27,7 @@ How to contribute
 
 Purpose
 
- PNML Check is a free and open-source tool to help you easily check the conformance of your PNML Documents against the ISO/IEC 15909-2 Standard specifications.
+ PNML Check is a free and open-source tool to help you easily check the conformance of your PNML Documents with the ISO/IEC 15909-2 Standard specifications. It is developed and maintained by Lom Messan Hillah, in LIP6.
 
  PNML Check can be used freely and is released under the {{{https://eclipse.org/org/documents/epl-v10.php}Eclipse Public License Version 1.0}}.
 
@@ -32,12 +52,12 @@ Fork, patch and contribute code
 ===
 
 Support
-
+ 
  {{{mailto:lom-messan.hillah@lip6.fr}Contact me}} if you have questions about the usage, or are facing an unexpected behaviour.
 
 ===
 
 Acknowledgements
 
- PNML Check is built on {{{http://pnml.lip6.fr}PNML Framework}} and uses args4j from {{{http://args4j.kohsuke.org}Kawagushi et al.}}
+ PNML Check is built on {{{http://pnml.lip6.fr}PNML Framework}}, and uses args4j from {{{http://args4j.kohsuke.org}Kawagushi et al.}}
 

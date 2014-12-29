@@ -16,12 +16,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.1-SNAPSHOT</thirdparty.version>
-		<pnml.version>2.2.5-SNAPSHOT</pnml.version>
-		<tycho.version>0.22.0</tycho.version>
-		<tycho-extras.version>0.22.0</tycho-extras.version>
-		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
-		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
+		<thirdparty.version>2.2.1</thirdparty.version>
+		<pnml.version>2.2.5</pnml.version>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
 
