@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.move.pnml.framework.symmetricnet.feature.source"
       label="PNML Framework Symmetric Nets Source"
-      version="2.2.5.qualifier"
+      version="2.2.5"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.move.pnml.framework.symmetricnet.source">
 

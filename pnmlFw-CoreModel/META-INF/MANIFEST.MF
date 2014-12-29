@@ -1,8 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Bundle-Localization: OSGI-INF/l10n/bundle
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.move.pnml.framework.coremodel;singleton:=true
-Bundle-Version: 2.2.5.qualifier
+Bundle-Version: 2.2.5
 Bundle-ClassPath: .
 Bundle-Vendor: %Provider-Name
 Bundle-Localization: plugin

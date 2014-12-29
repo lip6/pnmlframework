@@ -1,5 +1,6 @@
 /**
- *  Copyright 2009 Universite Paris Ouest and Sorbonne Universites, Univ. Paris 06 - CNRS UMR
+ *  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+ * 							Univ. Paris 06 - CNRS UMR
  * 							7606 (LIP6)
  *
  *  All rights reserved.   This program and the accompanying materials

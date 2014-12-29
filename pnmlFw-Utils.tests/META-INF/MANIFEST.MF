@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Tests of the PNML Framework Utils Plugin
 Bundle-SymbolicName: fr.lip6.move.pnml.framework.utils.tests
-Bundle-Version: 2.2.5.qualifier
+Bundle-Version: 2.2.5
 Fragment-Host: fr.lip6.move.pnml.framework.utils
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: %Vendor-Name

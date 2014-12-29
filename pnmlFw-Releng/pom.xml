@@ -13,8 +13,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<thirdparty.version>2.2.1-SNAPSHOT</thirdparty.version>
-		<pnml.release>2.2.5-SNAPSHOT</pnml.release>
+		<thirdparty.version>2.2.1</thirdparty.version>
+		<pnml.release>2.2.5</pnml.release>
 		<pnml.release.doc>2.2.5</pnml.release.doc>
 		<pnml.snapshot>2.2.6-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.21.0</tycho.version>
@@ -241,7 +241,13 @@
 					</environments>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<configuration>
+					<includeAllDependencies>true</includeAllDependencies>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-source-plugin</artifactId>
@@ -479,13 +485,13 @@
 								<pluginExecution>
 									<pluginExecutionFilter>
 										<groupId>
-											com.mycila.maven-license-plugin
+											com.mycila
 										</groupId>
 										<artifactId>
-											maven-license-plugin
+											license-maven-plugin
 										</artifactId>
 										<versionRange>
-											[1.9.0,)
+											[2.0,)
 										</versionRange>
 										<goals>
 											<goal>format</goal>
