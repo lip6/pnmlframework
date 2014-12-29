@@ -15,20 +15,6 @@
 	<description>PNML Document Checker is a simple application to 
 		validate PNML documents against the standard specifications.</description>
 
-
-	<repositories>
-		<repository>
-			<id>luna</id>
-			<url>${luna-repo.url}</url>
-			<layout>p2</layout>
-		</repository>
-		<repository>
-			<id>license</id>
-			<url>${license-p2-repo}</url>
-			<layout>p2</layout>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
