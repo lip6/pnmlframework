@@ -1,0 +1,43 @@
+ ------
+How to contribute
+ ------
+ ------
+2014-12
+ ------
+
+Purpose
+
+ PNML Check is a free and open-source tool to help you easily check the conformance of your PNML Documents against the ISO/IEC 15909-2 Standard specifications.
+
+ PNML Check can be used freely and is released under the {{{https://eclipse.org/org/documents/epl-v10.php}Eclipse Public License Version 1.0}}.
+
+===
+
+Issues
+
+ Please report any bugs found, feature requests or other issues on
+{{{https://github.com/lhillah/pnmlframework/issues}PNML Framework GitHub tracker}}.
+
+ When creating a new issue, try following {{{http://github.com/necolas/issue-guidelines/#readme}these guidelines for contributing}}.
+ 
+===
+
+Fork, patch and contribute code
+
+ Feel free to fork PNML Check {{{https://github.com/lhillah/pnmlframework}Git repository at GitHub}} for your own use and updates. PNML Check is structured in the 2 modules: <<pnmlvalidation-Releng>> (parent), and <<pnmlvalidation-Main>> (actual Java source code).
+
+ Contribute your fixes and new features back to the main codebase using
+{{{http://help.github.com/articles/using-pull-requests}GitHub pull requests}}.
+
+===
+
+Support
+
+ {{{mailto:lom-messan.hillah@lip6.fr}Contact me}} if you have questions about the usage, or are facing an unexpected behaviour.
+
+===
+
+Acknowledgements
+
+ PNML Check is built on {{{http://pnml.lip6.fr}PNML Framework}} and uses args4j from {{{http://args4j.kohsuke.org}Kawagushi et al.}}
+

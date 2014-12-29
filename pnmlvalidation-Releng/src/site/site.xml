@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites, 
-	Univ. Paris 06 - CNRS UMR 7606 (LIP6) All rights reserved. This program and 
-	the accompanying materials are made available under the terms of the Eclipse 
-	Public License v1.0 which accompanies this distribution, and is available 
-	at http://www.eclipse.org/legal/epl-v10.html Project leader / Initial Contributor: 
-	Lom Messan Hillah - <lom-messan.hillah@lip6.fr> Contributors: L.M. Hillah 
-	- <$oemails}> Mailing list: lom-messan.hillah@lip6.fr -->
+<!--
 
+     Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+    							Univ. Paris 06 - CNRS UMR
+    							7606 (LIP6)
+
+     All rights reserved.   This program and the accompanying materials
+     are made available under the terms of the Eclipse Public License v1.0
+     which accompanies this distribution, and is available at
+     http://www.eclipse.org/legal/epl-v10.html
+
+     Project leader / Initial Contributor:
+       Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+
+     Contributors:
+       L.M. Hillah - <$oemails}>
+
+     Mailing list:
+       lom-messan.hillah@lip6.fr
+
+-->
 <project xmlns="http://maven.apache.org/DECORATION/1.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd"
@@ -24,12 +37,13 @@
 	<custom>
 		<reflowSkin>
 			<smoothScroll>true</smoothScroll>
-			<theme>bootswatch-readable</theme>
+			<!-- bootswatch-readable -->
+			<theme>bootswatch-flatly</theme>
 			<highlightJs>true</highlightJs>
 			<highlightJsTheme>github</highlightJsTheme>
 			<brand>
 				<name>PNML Check</name>
-				<href>http://pnml.lip6.fr/pnmlvalidation/</href>
+				<href>http://pnml.lip6.fr/pnmlvalidation/index.html</href>
 			</brand>
 			<slogan>Free Tool to Check your PNML Documents against the ISO/IEC
 				15909-2 Specifications</slogan>
@@ -38,17 +52,29 @@
 			<tocTopMax>6</tocTopMax>
 			<topNav>Download|Documentation|reports</topNav>
 			<bottomNav maxSpan="9">
-				<column>Overview|Find out more</column>
-				<column>Download</column>
-				<column>Documentation</column>
-				<column>reports|modules</column>
+				<column>Overview</column>
+				<column>Download|Documentation</column>
+				<column>Find out more</column>
+				<column>Contribute|reports|modules</column>
 			</bottomNav>
 			<bottomDescription>
 			<![CDATA[
 				 <span class="color-highlight">PNML Check</span> is a simple command-line tool to check your <a href="http://www.pnml.org">Petri Net Markup Language</a> Documents againts 
-				the <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=43538">ISO/IEC 15909-2</a> Specifications (metamodels and constraints). 
+				the <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=43538">ISO/IEC 15909-2</a> Specifications (metamodels and constraints).
+				<script type="text/javascript">
+  					var _gaq = _gaq || [];
+  					_gaq.push(['_setAccount', 'UA-48245698-1']);
+  					_gaq.push(['_trackPageview']);
+
+  					(function() {
+    					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  					})();
+  				</script> 
 			 ]]>
 			</bottomDescription>
+			<skinAttribution>false</skinAttribution>
 			<pages>
 				<index project="pnmlvalidation-Releng">
 					<titleTemplate>PNML Document Checker</titleTemplate>
@@ -57,13 +83,19 @@
 					<toc>false</toc>
 					<markPageHeader>false</markPageHeader>
 					<sections>
-						<carousel />
-						<body />
-						<sidebar />
 						<thumbs>2</thumbs>
+						<body />
 						<columns>2</columns>
+						<body />
 					</sections>
 				</index>
+				<changelog project="pnmlvalidation-Releng">
+					<breadcrumbs>false</breadcrumbs>
+					<toc>false</toc>
+				 	<sections>
+				 		<body />
+				 	</sections>
+				</changelog>
 				<source-repository>
 					<highlightJs>false</highlightJs>
 				</source-repository>
@@ -96,17 +128,12 @@
 			<link rel="author" href="http://lip6.fr/Lom-Messan.Hillah" />
 		</head>
 
-		<links>
-			<item name="Download" href="download.html" />
-			<item name="Project on GitHub" href="https://github.com/lhillah/pnmlframework/tree/master/pnmlvalidation-Releng" />
-		</links>
-
 		<breadcrumbs>
-			<item name="PNML Check" href="/" />
+			<item name="PNML Check" href="index.html" />
 		</breadcrumbs>
 
 		<menu name="Overview" inherit="top">
-			<item name="Home" href="./" />
+			<item name="Home" href="index.html" />
 			<item name="Changelog" href="changelog.html" />
 		</menu>
 		<menu name="Download" inherit="top">
@@ -116,9 +143,9 @@
 			<item name="Usage" href="usage.html" />
 		</menu>
 		<menu name="Find out more" inherit="bottom">
-			<item name="Project on GitHub" href="https://github.com/lhillah/pnmlframework/tree/master/pnmlvalidation-Releng" />
 			<item name="PNML Framework" href="http://pnml.lip6.fr" />
-			<item name="PNML.ORG" href="http://www.pnml.org" />
+			<item name="PNML.org" href="http://www.pnml.org" />
+			<item name="Project on GitHub" href="https://github.com/lhillah/pnmlframework/tree/master/pnmlvalidation-Releng" />
 		</menu>
 		<menu name="Contribute" inherit="bottom">
 			<item name="Contribute" href="contribute.html" />

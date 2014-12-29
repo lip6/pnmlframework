@@ -63,7 +63,7 @@
 	</reporting>
 
 	<organization>
-		<name>Université Pierre et Marie Curie / CNRS UMR 7606 (LIP6/ MoVe)</name>
+		<name>Université Pierre et Marie Curie / CNRS UMR 7606 (LIP6 - MoVe)</name>
 		<url>http://www.lip6.fr/</url>
 	</organization>
 	<developers>
@@ -82,7 +82,7 @@
 		</developer>
 	</developers>
 	<scm>
-		<url>scm:svn:https://github.com/lhillah/pnmlframework.git</url>
+		<url>scm:git:https://github.com/lhillah/pnmlframework.git</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>

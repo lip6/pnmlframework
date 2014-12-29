@@ -1,5 +1,5 @@
 ~~
-~~  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+~~  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
 ~~ 							Univ. Paris 06 - CNRS UMR
 ~~ 							7606 (LIP6)
 ~~
@@ -12,30 +12,32 @@
 ~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
 ~~
 ~~  Contributors:
-~~    ${ocontributors} - <$oemails}>
+~~    L.M. Hillah - <$oemails}>
 ~~
 ~~  Mailing list:
 ~~    lom-messan.hillah@lip6.fr
 ~~
 
  -------
-Usage
+Usage Information
  -------
  -------
-2014-01
+2014-12
  -------
 
 Invocation
 
-  The general invocation command is: <java -jar jar_name [options] [pnmlFile1 pnmlFfile2 ...]>.
+  The general invocation command is: <java -jar jar_name [options] [pnmlFile1 pnmlFile2 ...]>.
 Run the application with <-h> or <--help> to get help.
 
-* Standalone mode
+===
+
+Standalone mode
 
   The default execution mode is standalone. In this mode, the application expects arguments, which should be PNML documents to check.
 You can specify one or many.
 
-** Include PNML DoC in your toolkit via a Shell Script
+* Include PNML DoC in your toolkit via a Shell Script
   
   We provide a {{{./download/validatePNML-PFW.sh}Shell script}} to help you increase productivity in using PNML DoC in standalone mode.
 In particular, a set of arguments for the Java VM is included, that you can start with and modify to your system's settings.
@@ -44,7 +46,7 @@ In particular, a set of arguments for the Java VM is included, that you can star
 documents (a few hundreds KB), we advise you decrease it (current setting is 2 GB). If you use large documents,
 (a few hundreds MB to GB), then you should increase it.   
 
-** Service result
+* Service result
 
   In standalone mode, here is an example of the result message; this case when the validation was successful:
 
@@ -67,8 +69,12 @@ documents (a few hundreds KB), we advise you decrease it (current setting is 2 G
   * Number of reference places: 0
 
   * Number of reference transitions: 0
+  
+  []
 
-* Server mode
+===
+
+Server mode
 
   To run in server mode with default port and temporary working directory: <java -jar jar_name -s>.
 
@@ -79,9 +85,11 @@ The server logs will be located in <./pnmlvalidatortmp/logs/>.
 they stop, they will send you a message with status code <HTTP/1.1 408 Request Timeout>.
 
 
-** Service result
+* Service result
 
    In server mode, the result message is the same as above, in standalone mode.
+
+===
 
 HTTP status codes
 

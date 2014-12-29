@@ -1,5 +1,5 @@
 ~~
-~~  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+~~  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
 ~~ 							Univ. Paris 06 - CNRS UMR
 ~~ 							7606 (LIP6)
 ~~
@@ -12,7 +12,7 @@
 ~~    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
 ~~
 ~~  Contributors:
-~~    ${ocontributors} - <$oemails}>
+~~    L.M. Hillah - <$oemails}>
 ~~
 ~~  Mailing list:
 ~~    lom-messan.hillah@lip6.fr
@@ -22,7 +22,7 @@
 Validates PNML Documents against the Petri Net Standard specifications
  ------
  ------
-2014-01
+2014-12
  ------
 
 PNML Document Checker (PNML DoC)
@@ -32,12 +32,17 @@ You can use it as a dependency in your application, or run it on the command lin
 
  PNML DoC relies on {{{http://pnml.lip6.fr}PNML Framework}} to perform the validation of PNML Documents.
 
+===
+
 Execution modes
+ 
+ PNML DoC supports 2 executions modes: it can simply run as a standalone application upon invocation on the
+command line, with a list of PNML Documents to check, or be launched as a server to listen for incoming validation requests.
 
 * Standalone
 
   PNML Check can be simply run on the command line and returns as soon as it finishes checking the provided documents.
-This is the recommended way. Simply provide a list of PNML Documents to check. Of course you can also provide just a single document. 
+This is the recommended way. Simply provide a list of PNML Documents to check. Of course, you may also provide just a single document. 
 
 * Server 
 
@@ -52,6 +57,8 @@ This is the recommended way. Simply provide a list of PNML Documents to check. O
   * get the result of the service;
 
   * close the connection. That's it.
+  
+  []
 
   The result is composed of:
 
@@ -60,6 +67,10 @@ This is the recommended way. Simply provide a list of PNML Documents to check. O
    * a message explaining the result of the service;
 
    * and some basic stats about the PNML Document (how many nets, nodes, and arcs).
+   
+   []
+
+===
 
 Standard support
 
@@ -74,11 +85,13 @@ Standard support
    * High-Level Petri Nets.
    
    * P/T Nets in High-level notation (known as PT-HLPN)
-   
-Alternative way to check  PNML Documents for conformance against the Standard specifications
+
+===
+
+Alternative way to check  PNML Documents
  
- To check PNML Documents, you may also use the method explained on the {{{http://www.pnml.org/validation.php}PNML reference site}}.
- We have encoded and contributed as Schematron rules all OCL constraints in the PNML Standard meta-models.
+ To check PNML Documents, you might also want to use the method explained on the {{{http://www.pnml.org/validation.php}PNML reference site}}.
+ We have encoded and contributed as {{{http://www.pnml.org/grammar.php}Schematron rules}} all OCL constraints in the PNML Standard metamodels.
  
  However, remember to start the check with a regular one first against the PNML grammar (e.g using XML Lint) before proceeding
 with the schematron rules. 

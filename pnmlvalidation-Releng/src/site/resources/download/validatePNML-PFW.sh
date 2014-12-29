@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-#  Copyright 2009 Universite Paris Ouest and Sorbonne Universites,
+#  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
 # 							Univ. Paris 06 - CNRS UMR
 # 							7606 (LIP6)
 #
@@ -13,14 +13,14 @@
 #    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
 #
 #  Contributors:
-#    ${ocontributors} - <$oemails}>
+#    L.M. Hillah - <$oemails}>
 #
 #  Mailing list:
 #    lom-messan.hillah@lip6.fr
 #
 
 # Path the executable jar of PNML Document Checker
-JAR_PATH=fr.lip6.move.pnml.check-1.0.1.jar
+JAR_PATH=fr.lip6.pnml.check-1.0.5.jar
 
 # How many expected arguments to this script?
 NBPARAM=1
