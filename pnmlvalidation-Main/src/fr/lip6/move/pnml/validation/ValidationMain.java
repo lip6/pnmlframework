@@ -22,13 +22,12 @@ package fr.lip6.move.pnml.validation;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.commons.logging.Log;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.LoggerContext;
-
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.validation.exceptions.ExitException;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
@@ -78,8 +77,8 @@ public class ValidationMain {
 	/**
 	 * Logger
 	 */
-	private static final Log JOURNAL = LogMaster
-			.giveLogger(ValidationMain.class.getCanonicalName());
+	private static final Logger JOURNAL = LogMaster
+			.getLogger(ValidationMain.class.getCanonicalName());
 	/**
 	 * The command-line parser.
 	 */
