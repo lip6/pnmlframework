@@ -29,8 +29,14 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This utility class is used for logging access and config.
+ * <p>
+ * Logging level is set to <strong>info</strong> by default in embedded <strong>logback.xml</strong> You can
+ * change that by using the following command-line property to Java:
+ * <code>java -Dlogback.configurationFile=/path/to/config.xml ...</code.
+ * <p>
  *
  * @author Guillaume Giffo
+ * @author lom
  *
  */
 public final class LogMaster {
@@ -121,7 +127,8 @@ public final class LogMaster {
 	}
 
 	/**
-	 * Provides a logger.
+	 * <p>Provides a logger. Logging level is set to <strong>info</strong> by default.</p>
+	 * <p><code>TRACE lt DEBUG lt INFO lt WARN lt ERROR</code></p>
 	 *
 	 * @param name
 	 *            The logger name identification

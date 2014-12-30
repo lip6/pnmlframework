@@ -8,24 +8,24 @@ import java.util.List;
 
 import org.apache.axiom.om.OMAttribute;
 import org.apache.axiom.om.OMElement;
-import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 public class XMLTreeCompare {
 
-    private Log logos;
+    private Logger logos;
 
     // used to avoid case when two pairs of values give the same results when
     // concatenated : like 123 456 and 12 3456 which give
     public static String separator = "<>";
 
     public XMLTreeCompare() {
-        logos = LogMaster.giveLogger("XML tree Comparison");
+        logos = LogMaster.getLogger("XML tree Comparison");
     }
 
-    @SuppressWarnings("unchecked")
-    public int hashTree(OMElement elem) {
+    @SuppressWarnings("rawtypes")
+	public int hashTree(OMElement elem) {
 
         StringBuffer sb = new StringBuffer();
         HashMap<String, String> alist = new HashMap<String, String>();

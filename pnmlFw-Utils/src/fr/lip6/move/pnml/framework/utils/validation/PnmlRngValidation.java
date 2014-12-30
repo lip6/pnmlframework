@@ -21,7 +21,7 @@ package fr.lip6.move.pnml.framework.utils.validation;
 
 import java.io.IOException;
 
-import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -41,13 +41,13 @@ public class PnmlRngValidation {
     /**
      * the logger.
      */
-    private final Log log;
+    private final Logger log;
 
     /**
      * Default constructor.
      */
     public PnmlRngValidation() {
-        log = LogMaster.giveLogger("PNML validation");
+        log = LogMaster.getLogger("PNML validation");
     }
 
     /**

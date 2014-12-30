@@ -38,7 +38,7 @@ import javax.xml.stream.XMLStreamReader;
 
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.impl.builder.StAXOMBuilder;
-import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
@@ -67,7 +67,7 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
     /**
      * The logger.
      */
-    private final Log log; // NOPMD by ggiffo on 6/27/08 4:46 PM
+    private final Logger log; // NOPMD by ggiffo on 6/27/08 4:46 PM
 
     /**
      * The array with all found officialPNMLfiles.
@@ -94,7 +94,7 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
             // 3:07
             // PM
             BadFileFormatException, OtherException {
-        log = LogMaster.giveLogger("customTypes");
+        log = LogMaster.getLogger("customTypes");
         oPNML = new ArrayList<CustomPNMLFileType>();
 
         String typeName;

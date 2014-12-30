@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.logging.Log;
+import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
@@ -48,13 +48,13 @@ public class IdRefLinker {
     /**
      * 
      */
-    private final Log log; // NOPMD by ggiffo on 6/12/08 4:18 PM
+    private final Logger log; // NOPMD by ggiffo on 6/12/08 4:18 PM
 
     /**
      * the default constructor.
      */
     public IdRefLinker() {
-        log = LogMaster.giveLogger("IdrefLinker");
+        log = LogMaster.getLogger("IdrefLinker");
         idRefElements = new HashMap<Object, String[]>();
     }
 
@@ -92,8 +92,8 @@ public class IdRefLinker {
      */
     public final void linkAll() throws VoidRepositoryException,
             InvalidIDException {
-        log.debug(idRefElements.keySet().size());
-        log.debug(ModelRepository.getInstance().getCurrentIdRepository().getAllId());
+        log.info(String.valueOf(idRefElements.keySet().size()));
+        log.info(ModelRepository.getInstance().getCurrentIdRepository().getAllId().toString());
         for (Object object : idRefElements.keySet()) {
             final Object type = (Object) object;
             final ArrayList<Object> lobj = new ArrayList<Object>(); // NOPMD by

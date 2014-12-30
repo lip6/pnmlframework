@@ -22,10 +22,10 @@
  */
 package fr.lip6.move.pnml.framework.general;
 
-import org.apache.commons.logging.Log;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.slf4j.Logger;
 import org.xml.sax.InputSource;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
@@ -47,7 +47,7 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
     /**
      * Logging system.
      */
-    protected final Log log; // NOPMD by ggiffo on 8/1/08 2:58 PM
+    protected final Logger log; // NOPMD by ggiffo on 8/1/08 2:58 PM
 
     /**
      * the extensions filetype file.
@@ -73,7 +73,7 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
      *            the path to the custom plug in registration file
      */
     protected AbstractPnmlImportExport(String loggername, String filePath) {
-        log = LogMaster.giveLogger(loggername);
+        log = LogMaster.getLogger(loggername);
         newTypeFilePath = filePath;
     }
 
