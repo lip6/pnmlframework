@@ -19,14 +19,5 @@
 	<description>
 		PNML Framework Utils Feature
 	</description>
-<!--  
-	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
-			<version>${thirdparty.version}</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
--->
+
 </project>

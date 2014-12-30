@@ -20,13 +20,4 @@
 		PNML Framework Utils Source
 	</description>
 
-<!--  
-	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
--->
 </project>
