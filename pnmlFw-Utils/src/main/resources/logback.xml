@@ -29,13 +29,6 @@
 			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
 		</encoder>
 	</appender>
-	
-	<socketPlugin silent="true"/>
-	
-	<appender name="SOCKET" class="ch.qos.logback.classic.net.SocketAppender">
-		<reconnectionDelay>0</reconnectionDelay>
-  		
-	</appender>
 
 	<root level="info">
 		<appender-ref ref="STDOUT" />
