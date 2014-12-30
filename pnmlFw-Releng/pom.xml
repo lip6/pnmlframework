@@ -286,6 +286,7 @@
 					<excludes>
 						<exclude>target/**</exclude>
 						<exclude>.clover/**</exclude>
+						<exclude>**/logback.xml</exclude>
 					</excludes>
 					<useDefaultExcludes>true</useDefaultExcludes>
 					<useDefaultMapping>true</useDefaultMapping>
