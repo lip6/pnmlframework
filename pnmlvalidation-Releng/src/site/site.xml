@@ -156,5 +156,4 @@
 		<menu name="Maven documentation" ref="reports" inherit="bottom" />
 	</body>
 
-
 </project>
