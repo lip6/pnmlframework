@@ -49,7 +49,7 @@
 			<highlightJs>true</highlightJs>
 			<highlightJsTheme>github</highlightJsTheme>
 			<brand>
-				<name>PNML Check</name>
+				<name>PNML Checker</name>
 				<href>http://pnml.lip6.fr/pnmlvalidation/index.html</href>
 			</brand>
 			<slogan>Free Tool to Check your PNML Documents against the ISO/IEC
@@ -136,7 +136,7 @@
 		</head>
 
 		<breadcrumbs>
-			<item name="PNML Check" href="index.html" />
+			<item name="PNML Checker" href="index.html" />
 		</breadcrumbs>
 
 		<menu name="Overview" inherit="top">
