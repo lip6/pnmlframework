@@ -27,7 +27,7 @@ Validates PNML Documents against the Petri Net Standard specifications
 
 PNML Document Checker (PNML DoC)
 
-  This application validates {{{http://www.pnml.org}PNML}} Documents against the {{{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43538}Petri Net Standard}} specifications. 
+  This tool validates {{{http://www.pnml.org}PNML}} Documents against the {{{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43538}Petri Net Standard}} specifications. 
 You can use it as a dependency in your application, or run it on the command line, or launch it as a server to which you may connect to.
 
  PNML DoC relies on {{{http://pnml.lip6.fr}PNML Framework}} to perform the validation of PNML Documents.
