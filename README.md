@@ -5,3 +5,4 @@ This repository hosts the source code of [PNML Framework](http://pnml.lip6.fr/),
 
 Download PNML Framework from its [companion web site](http://pnml.lip6.fr).
 
+[![Build Status](https://travis-ci.org/lhillah/pnmlframework.svg?branch=v2.2.5)](https://travis-ci.org/lhillah/pnmlframework)
