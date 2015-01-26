@@ -527,16 +527,18 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * Loads PNML document root class from the checker thread. This is not
-	 * implemented in this class. Stats class has this responsibility.
+	 * Loads PNML document root class from the checker thread. <strong>This is not
+	 * implemented in this class.</strong> Stats classes has this responsibility.
 	 * 
 	 * @param pnmlDoc
 	 *            PNML document
 	 * @param cpf
 	 *            document checker
+	 * @see PnmlDocStatistics 
+	 *            
 	 */
 	public final void loadPnmlDoc(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
-		// Do nothing. Specific stats class will implement this.
+		// Do nothing. Specific stats classes will implement this.
 	}
 
 	/**
