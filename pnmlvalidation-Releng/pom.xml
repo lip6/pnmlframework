@@ -32,6 +32,10 @@
 			<name>Snapshots</name>
 			<url>http://miage11.u-paris10.fr:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
+		<site>
+			<id>pnml.lip6.fr</id>
+			<url>http://pnml.lip6.fr/pnmlvalidation</url>
+		</site>
 	</distributionManagement>
 
 	<reporting>
@@ -84,10 +88,6 @@
 		<system>GitHub</system>
 		<url>https://github.com/lhillah/pnmlframework/issues</url>
 	</issueManagement>
-	<ciManagement>
-		<system>Hudson</system>
-		<url>http://miage11.u-paris10.fr:8080</url>
-	</ciManagement>
 	<inceptionYear>2009</inceptionYear>
 	<licenses>
 		<license>

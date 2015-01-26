@@ -122,3 +122,13 @@ They are followed by a message.
 *---------------------------------------*------------------------------*
 | HTTP/1.1 503 Service Unavailable      | Cannot serve request         |
 *---------------------------------------*------------------------------*
+
+
+===
+
+Maven dependency
+
+  If you want to use PNML Check directly in your software as a Maven-based dependency instead of using it on the command line, you may specify it like so:
+  
+%{snippet|id=depinfo-id|file=src/site/apt/dependency-info.xml}
+

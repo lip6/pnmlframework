@@ -31,7 +31,11 @@ Changelog
 * What's new in version ${project.version}?
 
   * Corrects a bug in counting the number of objects in the PNML Document
+  
+  * Introduces a factory to enable easier use (of CheckPnmlFile interface) as a direct dependency in third-party software
+  
   * Relies on version 2.2.5 of PNML Framework
+   
 
 * What's new in version 1.0.4?
 
