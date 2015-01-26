@@ -74,6 +74,7 @@ public class CoreModelStats implements PnmlDocStatistics {
 	 */
 	public CoreModelStats(CheckPnmlFile cpf) {
 		loadPnmlDocument(cpf.getPnmlDocHLAPIRootClass(), cpf);
+		resetAllStats();
 		computeStats();
 	}
 
@@ -147,8 +148,6 @@ public class CoreModelStats implements PnmlDocStatistics {
 	private void loadPnmlDocument(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		this.checkpf = cpf;
 		this.pnmldoc = (PetriNetDocHLAPI) this.checkpf.getPnmlDocHLAPIRootClass();
-		resetAllStats();
-		computeStats();
 	}
 
 	/**

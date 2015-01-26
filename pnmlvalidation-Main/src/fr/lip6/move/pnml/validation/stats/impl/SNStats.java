@@ -75,6 +75,7 @@ public class SNStats implements PnmlDocStatistics {
 	 */
 	public SNStats(CheckPnmlFile cpf) {
 		loadPnmlDocument(cpf.getPnmlDocHLAPIRootClass(), cpf);
+		resetAllStats();
 		computeStats();
 	}
 
@@ -148,8 +149,6 @@ public class SNStats implements PnmlDocStatistics {
 	private void loadPnmlDocument(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		this.checkpf = cpf;
 		this.pnmldoc = (PetriNetDocHLAPI) this.checkpf.getPnmlDocHLAPIRootClass();
-		resetAllStats();
-		computeStats();
 	}
 
 	/**

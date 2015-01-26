@@ -75,6 +75,7 @@ public class HLPNStats implements PnmlDocStatistics {
 	 */
 	public HLPNStats(CheckPnmlFile cpf) {
 		loadPnmlDocument(cpf.getPnmlDocHLAPIRootClass(), cpf);
+		resetAllStats();
 		computeStats();
 	}
 
@@ -149,8 +150,6 @@ public class HLPNStats implements PnmlDocStatistics {
 	private void loadPnmlDocument(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		this.checkpf = cpf;
 		this.pnmldoc = (PetriNetDocHLAPI) this.checkpf.getPnmlDocHLAPIRootClass();
-		resetAllStats();
-		computeStats();
 	}
 
 	/**

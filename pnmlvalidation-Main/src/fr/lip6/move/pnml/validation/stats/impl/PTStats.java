@@ -137,7 +137,6 @@ public class PTStats implements PnmlDocStatistics {
 	 */
 	public final void loadPnmlDoc(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		loadPnmlDocument(pnmlDoc, cpf);
-
 	}
 
 	/**
