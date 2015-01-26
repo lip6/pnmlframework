@@ -1,0 +1,11 @@
+ <!-- START SNIPPET: depinfo-id -->
+ <dependencies>
+ 	<!-- Of course, you must keep your existing dependencies, and just add the following -->
+ 	<dependency>
+        	<groupId>fr.lip6.pnml</groupId>
+		<artifactId>fr.lip6.move.pnml.check</artifactId>
+		<version>1.0.5</version>
+	</dependency>
+</dependencies>
+<!-- END SNIPPET: depinfo-id -->
+ 

@@ -132,3 +132,6 @@ Maven dependency
   
 %{snippet|id=depinfo-id|file=src/site/apt/dependency-info.xml}
 
+ The corresponding artefact is deployed in our Maven repository:
+
+%{snippet|id=repinfo-id|file=src/site/apt/repository-info.xml}

@@ -1,0 +1,14 @@
+ <!-- START SNIPPET: repinfo-id -->
+<repositories>
+	<repository>
+		<id>pnml.framework</id>
+		<url>http://miage11.u-paris10.fr:8081/nexus/content/groups/public/</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+		    <enabled>true</enabled>
+		</snapshots>
+	</repository>
+</repositories>
+<!-- END SNIPPET: repinfo-id -->
