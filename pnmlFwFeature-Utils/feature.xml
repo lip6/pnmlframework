@@ -3,7 +3,7 @@
       id="fr.lip6.move.pnml.framework.utils.feature"
       label="PNML Framework Utils and Runtime"
       version="2.2.5"
-      provider-name="%Bundle-Vendor"
+      provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.move.pnml.framework.utils">
 
    <description url="http://pnml.lip6.fr">
