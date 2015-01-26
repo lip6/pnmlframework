@@ -209,7 +209,7 @@ public class ValidationMain {
 	 *            an ad hoc message.
 	 */
 	private static void printHelp(String mesg) {
-		parser.setUsageWidth(PARSER_WIDTH);
+		//parser.setUsageWidth(PARSER_WIDTH);
 		System.err.println(mesg);
 		System.err.println(USAGE);
 		parser.printUsage(System.err);
