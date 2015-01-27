@@ -58,13 +58,17 @@ public final class CLOptions {
 	 */
 	private boolean help;
 	/**
-	 * Is standalone explicitly set by the user ?
+	 * Is standalone explicitly set by the user?
 	 */
 	private boolean stalSet;
 	/**
-	 * Is normalization issues checking asked for ?
+	 * Is normalization issues checking asked for?
 	 */
 	private boolean cnSet = false;
+	/**
+	 * Is normalization asked for?
+	 */
+	private boolean nmzSet = false;
 	/**
 	 * User-defined delay for tasks.
 	 */
@@ -189,6 +193,24 @@ public final class CLOptions {
 	 */
 	public final boolean isCheckNormalization() {
 		return cnSet;
+	}
+	
+	/**
+	 * Option to normalize the PNML Document.
+	 */
+	@Option(name = "-nmz", aliases = { "--normalize" }, required = false, usage = "Normalize the PNML Document (e.g. merge parallel arcs).\n"
+			+ "This option is run after a classic check of the PNML file. It is supported in standalone mode only.\n"
+			+ "This option is in mutual exclusion with the --checknorm option, since it reports the normalization issues it fixed.")
+	private void setNormalize(boolean n) {
+		nmzSet = true;
+	}
+	
+	/**
+	 * Tells whether the user has requested to normalize the PNML Document.
+	 * @return true is so, false otherwise
+	 */
+	public final boolean isNormalize() {
+		return nmzSet;
 	}
 
 	/**
