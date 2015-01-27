@@ -28,6 +28,13 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.LoggerContext;
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
+import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
+import fr.lip6.move.pnml.framework.utils.exception.OCLValidationFailed;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.UnhandledNetType;
+import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.validation.exceptions.ExitException;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
@@ -70,11 +77,17 @@ public class ValidationMain {
 	/**
 	 * No help and check normalization option at the same time.
 	 */
-	private static final String NOT_HCN = "Help, and check normalization are exclusive options.";
+	private static final String NOT_HCNMZ = "Help, and check normalization issues (or normalizing) are exclusive options.";
+	/**
+	 * No check normalization issues, and normalizing options at the same time.
+	 */
+	private static final String NOT_CNMZ = "Check normalization issues, and normalizing are exclusive options.";
 	/**
 	 * Usage.
 	 */
 	private static final String USAGE = "java -jar myprogram.jar [options...] [pnmlFile1 pnmlFile2 ...]";
+
+	private static final String PNML_EXT = ".pnml";
 	/**
 	 * Parser printing space width.
 	 */
@@ -82,9 +95,12 @@ public class ValidationMain {
 	/**
 	 * Logger
 	 */
-	private static final Logger JOURNAL = LogMaster
-			.getLogger(ValidationMain.class.getCanonicalName());
-	
+	private static final Logger JOURNAL = LogMaster.getLogger(ValidationMain.class.getCanonicalName());
+	/**
+	 * Version of this tool.
+	 */
+	private static final String VERSION = "1.0.6";
+
 	/**
 	 * The command-line parser.
 	 */
@@ -112,8 +128,8 @@ public class ValidationMain {
 			long startTime = System.nanoTime();
 			parseArgs(args);
 			long endTime = System.nanoTime();
-			JOURNAL.info("PNML check took " + (endTime - startTime) / 1.0e9
-					+ " seconds.");
+			JOURNAL.info("Checked by PNML DoC " + VERSION);
+			JOURNAL.info("The PNML checking took " + (endTime - startTime) / 1.0e9 + " seconds.");
 		} catch (IOException e1) {
 			printHelp(e1.getCause().getMessage());
 			// e1.printStackTrace();
@@ -132,8 +148,7 @@ public class ValidationMain {
 	 * @throws ExitException
 	 *             exits with trouble
 	 */
-	private static void parseArgs(String[] args) throws IOException,
-			ExitException {
+	private static void parseArgs(String[] args) throws IOException, ExitException {
 		cloptions = new CLOptions();
 		parser = new CmdLineParser(cloptions);
 
@@ -153,11 +168,9 @@ public class ValidationMain {
 
 			if (cloptions.isServer()) {
 				JOURNAL.info("invoked server execution mode");
-				final String[] arguments = {
-						cloptions.getTmpDir().getCanonicalPath(),
-						String.valueOf(cloptions.getPort()),
-						String.valueOf(cloptions.getTimeout()), 
-						String.valueOf(cloptions.isCheckNormalization()),};
+				final String[] arguments = { cloptions.getTmpDir().getCanonicalPath(),
+						String.valueOf(cloptions.getPort()), String.valueOf(cloptions.getTimeout()),
+						String.valueOf(cloptions.isCheckNormalization()), };
 				ConcurrentValidationMain.main(arguments);
 
 			}
@@ -178,8 +191,7 @@ public class ValidationMain {
 	 */
 	private static void checkArgs(CLOptions cloptions) throws IOException {
 		// these 3 options are exclusive one of the other
-		if (cloptions.isStandAlone() && cloptions.isServer()
-				&& cloptions.isHelp()) {
+		if (cloptions.isStandAlone() && cloptions.isServer() && cloptions.isHelp()) {
 			throw new IOException(NOT_AHS, new Throwable(NOT_AHS));
 		}
 
@@ -194,10 +206,14 @@ public class ValidationMain {
 		if (cloptions.isServer() && cloptions.isHelp()) {
 			throw new IOException(NOT_SH, new Throwable(NOT_SH));
 		}
-		
-		if (cloptions.isHelp() && cloptions.isCheckNormalization()) {
-			throw new IOException(NOT_HCN, new Throwable(NOT_HCN));
+
+		if (cloptions.isHelp() && (cloptions.isCheckNormalization() || cloptions.isNormalize())) {
+			throw new IOException(NOT_HCNMZ, new Throwable(NOT_HCNMZ));
 		}
+		if (cloptions.isCheckNormalization() && cloptions.isNormalize()) {
+			throw new IOException(NOT_CNMZ, new Throwable(NOT_CNMZ));
+		}
+
 		// Now check help
 		checkHelp(cloptions);
 	}
@@ -224,7 +240,7 @@ public class ValidationMain {
 	 *            an ad hoc message.
 	 */
 	private static void printHelp(String mesg) {
-		//parser.setUsageWidth(PARSER_WIDTH);
+		// parser.setUsageWidth(PARSER_WIDTH);
 		System.err.println(mesg);
 		System.err.println(USAGE);
 		parser.printUsage(System.err);
@@ -244,36 +260,47 @@ public class ValidationMain {
 				JOURNAL.info("importing file " + filepath);
 				final String msg = cpf.checkPnmlFile(filepath);
 				System.out.println(msg);
-				if (cloptions.isCheckNormalization()) {
+				if (cloptions.isNormalize()) {
+					final PnmlNormalizer pnz = new PnmlNormalizerImpl(cpf);
+					try {
+						exportNormalizedDoc(pnz.mergeParallelArcs(cpf), filepath);
+					} catch (UnhandledNetType | OCLValidationFailed | IOException | ValidationFailedException
+							| BadFileFormatException | OtherException e) {
+						JOURNAL.error(e.getMessage());
+						e.printStackTrace();
+					}
+				} else if (cloptions.isCheckNormalization()) {
 					final PnmlNormalizer pnz = new PnmlNormalizerImpl(cpf);
 					System.out.println(pnz.reportParallelArcs(cpf));
 				}
 			}
-
 		} catch (ValidationException e) {
-			System.out.println(MessageUtility.buildMessage(
-					HTTPStatusCodes.BAD_REQUEST,
+			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.BAD_REQUEST,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			//e.printStackTrace();
+			// e.printStackTrace();
 		} catch (InvalidFileException e) {
-			System.out.println(MessageUtility.buildMessage(
-					HTTPStatusCodes.UNSUPPORTED,
+			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			//e.printStackTrace();
+			// e.printStackTrace();
 		} catch (InvalidFileTypeException e) {
-			System.out.println(MessageUtility.buildMessage(
-					HTTPStatusCodes.UNSUPPORTED,
+			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			//e.printStackTrace();
+			// e.printStackTrace();
 		} catch (InternalException e) {
-			System.out.println(MessageUtility.buildMessage(
-					HTTPStatusCodes.INTERNAL_SERROR,
+			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.INTERNAL_SERROR,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			//e.printStackTrace();
+			// e.printStackTrace();
 		}
+	}
+
+	private static void exportNormalizedDoc(HLAPIRootClass mergedDoc, String filepath) throws UnhandledNetType,
+			OCLValidationFailed, IOException, ValidationFailedException, BadFileFormatException, OtherException {
+		String newfilepath = filepath.substring(0, filepath.lastIndexOf(PNML_EXT)) + "-normalized" + PNML_EXT;
+		final PnmlExport pex = new PnmlExport();
+		pex.exportObject(mergedDoc, newfilepath);
 	}
 }
