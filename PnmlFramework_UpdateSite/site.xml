@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.1.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.1">
-      <category name="Utilities and 3rd part jars"/>
+      <category name="Utilities and 3rd party libraries"/>
    </feature>
    <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.5">
-      <category name="Utilities and 3rd part jars"/>
+      <category name="Utilities and 3rd party libraries"/>
    </feature>
    <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.5">
       <category name="Petri net types"/>
@@ -21,9 +21,9 @@
    <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.5">
       <category name="Petri net types"/>
    </feature>
-   <category-def name="Utilities and 3rd party jars" label="Utilities and 3rd party jars">
+   <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
-         Utilities and 3rd party jars for PNML Framework.
+         Utilities and 3rd party libraries for PNML Framework.
       </description>
    </category-def>
    <category-def name="Petri net types" label="Petri net types">
