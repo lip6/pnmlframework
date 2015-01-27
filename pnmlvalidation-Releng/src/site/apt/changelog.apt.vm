@@ -30,7 +30,9 @@ Changelog
 
 * What's new in version ${project.version}?
 
-  * Introduces new option to check and report normalization issues, e.g. parallel arcs.
+  * New feature to check and report normalization issues. Parallel arcs detection in P/T Nets is supported.
+  
+  * New feature to normalize the PNML Document. Parallel arcs merging in P/T Nets is supported.
   
   * Corrects a bug in counting the number of objects in the PNML Document
   
