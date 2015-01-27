@@ -19,6 +19,8 @@
  */
 package fr.lip6.move.pnml.validation;
 
+import java.util.UUID;
+
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
@@ -47,7 +49,7 @@ public interface CheckPnmlFile extends PnmlDocStatistics {
 	 * file. This includes: XML well-formedness, and standard PNML type
 	 * conformity. The standard OCL rules are also checked in the process.
 	 * @param filePath the file path
-	 * @return a message every returned properly (validation was successful).
+	 * @return a message everything returned properly (validation was successful).
 	 *         This message must be displayed to the user requesting the
 	 *         validation.
 	 * @throws InvalidFileException I/O related exceptions
@@ -134,5 +136,11 @@ public interface CheckPnmlFile extends PnmlDocStatistics {
 	 * @return the name of the first model in the current PNML document.
 	 */
 	String getModelName();
+	
+	/**
+	 * Returns the UUID of the current instance of the checker. Each instance must create an ID upon creation.
+	 * @return the UUID of the current instance of the checker.
+	 */
+	UUID getCheckerID();
 
 }

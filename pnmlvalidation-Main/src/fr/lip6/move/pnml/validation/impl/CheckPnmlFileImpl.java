@@ -21,6 +21,7 @@ package fr.lip6.move.pnml.validation.impl;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.UUID;
 
 import javax.activation.MimetypesFileTypeMap;
 
@@ -114,6 +115,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 * Model repository.
 	 */
 	protected final ModelRepository modelRepo = ModelRepository.getInstance();
+	private UUID id;
 
 	/**
 	 * Constructor inits a workspace in the PFW.
@@ -123,6 +125,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	public CheckPnmlFileImpl() throws ValidationException {
 		try {
+			this.id = UUID.randomUUID();
 			initWorkspace();
 		} catch (ValidationException e) {
 			throw new ValidationException(
@@ -549,6 +552,11 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	public final String getModelName() {
 		return ptDocStat != null ? ptDocStat.getModelName() : "Unknown";
+	}
+
+	@Override
+	public UUID getCheckerID() {
+		return this.id;
 	}
 
 }
