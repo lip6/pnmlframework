@@ -29,6 +29,7 @@ import java.util.concurrent.Callable;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 
+import fr.lip6.move.pnml.validation.PnmlNormalizer;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileTypeException;
@@ -71,6 +72,10 @@ public class ConcurrentCheckPnmlFileImpl extends CheckPnmlFileImpl implements Ca
 	 * Thread ID.
 	 */
 	private String myID;
+	/**
+	 * Is normalization checking requested
+	 */
+	private Boolean isCheckNormz;
 
 	/**
 	 * Default.
@@ -83,6 +88,7 @@ public class ConcurrentCheckPnmlFileImpl extends CheckPnmlFileImpl implements Ca
 		if (!this.workingDir.exists()) {
 			this.workingDir.mkdir();
 		}
+		this.isCheckNormz = false;
 	}
 
 	/**
@@ -90,14 +96,16 @@ public class ConcurrentCheckPnmlFileImpl extends CheckPnmlFileImpl implements Ca
 	 * @param clientSocket the client socket
 	 * @param tmpDir the temp directory
 	 * @param theLogs the logs queue
+	 * @param checkNorm if normalization checking is requested
 	 * @throws ValidationException some problem encountered during the
 	 *             validation.
 	 */
-	public ConcurrentCheckPnmlFileImpl(Socket clientSocket, File tmpDir, BlockingQueue<LogRecord> theLogs) throws ValidationException {
+	public ConcurrentCheckPnmlFileImpl(Socket clientSocket, File tmpDir, BlockingQueue<LogRecord> theLogs, String checkNorm) throws ValidationException {
 		super();
 		this.myClient = clientSocket;
 		this.workingDir = tmpDir;
 		this.logs = theLogs;
+		this.isCheckNormz = Boolean.valueOf(checkNorm);
 		try {
 			this.logs.put(new LogRecord(Level.INFO, "Thread " + String.valueOf(Thread.currentThread().getId()) + ": " + "Accepted client: "
 					+ this.myClient.getInetAddress()));
@@ -135,6 +143,10 @@ public class ConcurrentCheckPnmlFileImpl extends CheckPnmlFileImpl implements Ca
 			tmpFilepw.close();
 			this.logs.put(new LogRecord(Level.INFO, THREAD_TYPE + this.myID + ": Checking file..."));
 			result = this.checkPnmlFile(tmpFile.getCanonicalPath());
+			if (isCheckNormz) {
+				final PnmlNormalizer pnz = new PnmlNormalizerImpl(this);
+				result += ("\n" + pnz.reportParallelArcs(this));
+			}
 			// System.err.println(result);
 			// Thread.sleep(3000);
 			out.println(result);

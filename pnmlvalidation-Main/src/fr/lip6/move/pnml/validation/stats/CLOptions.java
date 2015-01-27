@@ -31,7 +31,7 @@ import org.kohsuke.args4j.Option;
  * between the command-line execution mode and the server one.
  * @author lom
  */
-public class CLOptions {
+public final class CLOptions {
 	/**
 	 * Default port.
 	 */
@@ -62,6 +62,10 @@ public class CLOptions {
 	 */
 	private boolean stalSet;
 	/**
+	 * Is normalization issues checking asked for ?
+	 */
+	private boolean cnSet = false;
+	/**
 	 * User-defined delay for tasks.
 	 */
 	private int timeout = DEFAULT_TIMEOUT;
@@ -91,7 +95,6 @@ public class CLOptions {
 	 * Help option processing.
 	 * @param h the help option.
 	 */
-	@SuppressWarnings("unused")
 	@Option(name = "-h", aliases = { "--help" }, usage = "Prints this help")
 	private void setHelp(boolean h) {
 		help = h;
@@ -128,7 +131,6 @@ public class CLOptions {
 	 * Instantiates standalone execution mode.
 	 * @param a the standalone exec mode set to a.
 	 */
-	@SuppressWarnings("unused")
 	@Option(name = "-a", aliases = { "--stand-alone" }, usage = "Instantiates the standalone execution mode (default)."
 			+ "In this case, you must provide paths to files to validate.")
 	private void setStal(boolean a) {
@@ -148,7 +150,6 @@ public class CLOptions {
 	 * Instantiates server execution mode.
 	 * @param s the server exec mode is set to s.
 	 */
-	@SuppressWarnings("unused")
 	@Option(name = "-s", aliases = { "--server" }, usage = "Instantiates the server execution mode\n" + "Disables the stand alone execution mode.")
 	private void disableStandAlone(boolean s) {
 		stal = false;
@@ -167,11 +168,27 @@ public class CLOptions {
 	 * Tasks delay set by the user (in sec). Default is 20 sec.
 	 * @param t the delay
 	 */
-	@SuppressWarnings("unused")
 	@Option(name = "-t", aliases = { "--timeout" }, usage = "The delay (in sec) not to be exceeded, for each conversion task.\n" + "Default is "
 			+ DEFAULT_TIMEOUT)
 	private void setTimeout(int t) {
 		timeout = t;
+	}
+	
+	/**
+	 * Check and report normalization issues.
+	 */
+	@Option(name = "-cn", aliases = { "--checknorm" }, required = false, usage = "Checks and report normalization issues.\n"
+			+ "This option is run after a classic check of the PNML file. It is supported in standalone and server modes.")
+	private void setCheckNormalization(boolean c) {
+		cnSet = true;
+	}
+	
+	/**
+	 * Tells whether the user has requested to check for normalization issues.
+	 * @return true is so, false otherwise
+	 */
+	public final boolean isCheckNormalization() {
+		return cnSet;
 	}
 
 	/**

@@ -35,6 +35,7 @@ import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileTypeException;
 import fr.lip6.move.pnml.validation.exceptions.ValidationException;
 import fr.lip6.move.pnml.validation.impl.CheckPnmlFileImpl;
+import fr.lip6.move.pnml.validation.impl.PnmlNormalizerImpl;
 import fr.lip6.move.pnml.validation.stats.CLOptions;
 import fr.lip6.move.pnml.validation.stats.HTTPStatusCodes;
 import fr.lip6.move.pnml.validation.stats.MessageUtility;
@@ -67,6 +68,10 @@ public class ValidationMain {
 	private static final String NO_ARG = "You must specify the paths to the files to validate."
 			+ " Standalone execution mode (default).";
 	/**
+	 * No help and check normalization option at the same time.
+	 */
+	private static final String NOT_HCN = "Help, and check normalization are exclusive options.";
+	/**
 	 * Usage.
 	 */
 	private static final String USAGE = "java -jar myprogram.jar [options...] [pnmlFile1 pnmlFile2 ...]";
@@ -79,10 +84,15 @@ public class ValidationMain {
 	 */
 	private static final Logger JOURNAL = LogMaster
 			.getLogger(ValidationMain.class.getCanonicalName());
+	
 	/**
 	 * The command-line parser.
 	 */
 	private static CmdLineParser parser;
+	/**
+	 * Command-line options.
+	 */
+	private static CLOptions cloptions;
 
 	/**
 	 * Hidden constructor.
@@ -124,7 +134,7 @@ public class ValidationMain {
 	 */
 	private static void parseArgs(String[] args) throws IOException,
 			ExitException {
-		final CLOptions cloptions = new CLOptions();
+		cloptions = new CLOptions();
 		parser = new CmdLineParser(cloptions);
 
 		try {
@@ -146,7 +156,8 @@ public class ValidationMain {
 				final String[] arguments = {
 						cloptions.getTmpDir().getCanonicalPath(),
 						String.valueOf(cloptions.getPort()),
-						String.valueOf(cloptions.getTimeout()), };
+						String.valueOf(cloptions.getTimeout()), 
+						String.valueOf(cloptions.isCheckNormalization()),};
 				ConcurrentValidationMain.main(arguments);
 
 			}
@@ -182,6 +193,10 @@ public class ValidationMain {
 
 		if (cloptions.isServer() && cloptions.isHelp()) {
 			throw new IOException(NOT_SH, new Throwable(NOT_SH));
+		}
+		
+		if (cloptions.isHelp() && cloptions.isCheckNormalization()) {
+			throw new IOException(NOT_HCN, new Throwable(NOT_HCN));
 		}
 		// Now check help
 		checkHelp(cloptions);
@@ -229,6 +244,10 @@ public class ValidationMain {
 				JOURNAL.info("importing file " + filepath);
 				final String msg = cpf.checkPnmlFile(filepath);
 				System.out.println(msg);
+				if (cloptions.isCheckNormalization()) {
+					final PnmlNormalizer pnz = new PnmlNormalizerImpl(cpf);
+					System.out.println(pnz.reportParallelArcs(cpf));
+				}
 			}
 
 		} catch (ValidationException e) {

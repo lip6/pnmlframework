@@ -126,7 +126,7 @@ public class ConcurrentValidationMain {
 					// ConcurrentCheckPnmlFileImpl ccpf = new
 					// ConcurrentCheckPnmlFileImpl(
 					// clientSocket);
-					final Future<String> result = pool.submit(new ConcurrentCheckPnmlFileImpl(clientSocket, tmpDir, logs));
+					final Future<String> result = pool.submit(new ConcurrentCheckPnmlFileImpl(clientSocket, tmpDir, logs, args[3]));
 					fileCheckers.put(result);
 				} catch (IOException ioe) {
 					logs.put(new LogRecord(Level.SEVERE, "Server: Accept failed on port" + port + ": " + ioe.getMessage()));
