@@ -198,9 +198,9 @@ public final class CLOptions {
 	/**
 	 * Option to normalize the PNML Document.
 	 */
-	@Option(name = "-nmz", aliases = { "--normalize" }, required = false, usage = "Normalize the PNML Document (e.g. merge parallel arcs).\n"
+	@Option(name = "-nmz", aliases = { "--normalize" }, required = false, usage = "Normalizes the PNML Document (e.g. merge parallel arcs).\n"
 			+ "This option is run after a classic check of the PNML file. It is supported in standalone mode only.\n"
-			+ "This option is in mutual exclusion with the --checknorm option, since it reports the normalization issues it fixed.")
+			+ "This option wins over the --checknorm option when they are specified in the same invocation, since it reports the normalization issues it fixed.")
 	private void setNormalize(boolean n) {
 		nmzSet = true;
 	}
