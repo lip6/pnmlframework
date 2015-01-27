@@ -1,6 +1,24 @@
+/**
+ *  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+ * 							Univ. Paris 06 - CNRS UMR
+ * 							7606 (LIP6)
+ *
+ *  All rights reserved.   This program and the accompanying materials
+ *  are made available under the terms of the Eclipse Public License v1.0
+ *  which accompanies this distribution, and is available at
+ *  http://www.eclipse.org/legal/epl-v10.html
+ *
+ *  Project leader / Initial Contributor:
+ *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
+ *
+ *  Contributors:
+ *    L.M. Hillah - <$oemails}>
+ *
+ *  Mailing list:
+ *    lom-messan.hillah@lip6.fr
+ */
 package fr.lip6.move.pnml.validation.impl;
 
-import java.nio.file.attribute.AclEntry.Builder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +29,6 @@ import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.ptnet.Arc;
 import fr.lip6.move.pnml.ptnet.Page;
 import fr.lip6.move.pnml.ptnet.PetriNet;
-import fr.lip6.move.pnml.ptnet.PnObject;
 import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
 import fr.lip6.move.pnml.validation.CheckPnmlFile;
 import fr.lip6.move.pnml.validation.PnmlNormalizer;
