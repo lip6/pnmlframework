@@ -7,7 +7,7 @@
 	<version>1.0.6</version>
 	<packaging>pom</packaging>
 
-	<name>PNML Document Checker</name>
+	<name>PNML Document Checker Releng</name>
 	<url>http://pnml.lip6.fr/pnmlvalidation</url>
 
 	<modules>
