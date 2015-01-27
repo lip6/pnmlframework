@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.lip6.move.pnml.framework.3rdPart.feature_2.2.1.jar" id="fr.lip6.move.pnml.framework.3rdPart.feature" version="2.2.1">
+   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.utils.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.utils.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.utils.feature_2.2.6.jar" id="fr.lip6.pnml.framework.utils.feature" version="2.2.6">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.coremodel.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.coremodel.feature_2.2.6.jar" id="fr.lip6.pnml.framework.coremodel.feature" version="2.2.6">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.hlpn.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.hlpn.feature_2.2.6.jar" id="fr.lip6.pnml.framework.hlpn.feature" version="2.2.6">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.pthlpng.feature_2.2.6.jar" id="fr.lip6.pnml.framework.pthlpng.feature" version="2.2.6">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.ptnet.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.ptnet.feature_2.2.6.jar" id="fr.lip6.pnml.framework.ptnet.feature" version="2.2.6">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature_2.2.5.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.symmetricnet.feature_2.2.6.jar" id="fr.lip6.pnml.framework.symmetricnet.feature" version="2.2.6">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.coremodel.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.coremodel.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.coremodel.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.coremodel.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.hlpn.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.hlpn.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.hlpn.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.hlpn.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.pthlpng.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.pthlpng.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.pthlpng.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.pthlpng.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.ptnet.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.ptnet.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.ptnet.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.ptnet.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.symmetricnet.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.symmetricnet.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.symmetricnet.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.symmetricnet.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
-   <feature url="features/fr.lip6.move.pnml.framework.utils.feature.source_2.2.5.jar" id="fr.lip6.move.pnml.framework.utils.feature.source" version="2.2.5">
+   <feature url="features/fr.lip6.pnml.framework.utils.feature.source_2.2.6.jar" id="fr.lip6.pnml.framework.utils.feature.source" version="2.2.6">
       <category name="Source"/>
    </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
