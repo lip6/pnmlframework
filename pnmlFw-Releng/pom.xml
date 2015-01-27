@@ -18,7 +18,7 @@
 		<pnml.release.doc>2.2.6</pnml.release.doc>
 		<pnml.snapshot>2.2.7-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.22.0</tycho.version>
-		<tycho-extras.version>0.21.0</tycho-extras.version>
+		<tycho-extras.version>0.22.0</tycho-extras.version>
 		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
