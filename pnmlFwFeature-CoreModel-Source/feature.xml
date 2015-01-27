@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.pnml.framework.coremodel.feature.source"
+      id="fr.lip6.pnml.framework.coremodel.feature.source"
       label="PNML Framework Core Model Source"
-      version="2.2.5"
+      version="2.2.6"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
-      plugin="fr.lip6.move.pnml.framework.coremodel.source">
+      plugin="fr.lip6.pnml.framework.coremodel.source">
 
    <description url="http://www.lip6.fr/pnml">
       PNML Framework is a library to help Petri net tools handle Petri
@@ -35,12 +35,12 @@
 
    <requires>
       <import plugin="org.eclipse.ocl.ecore"/>
-      <import plugin="fr.lip6.move.pnml.framework.utils.source" version="2.2.0" match="greaterOrEqual"/>
-      <import plugin="fr.lip6.move.pnml.framework.3rdpartimports" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.utils.source" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
-         id="fr.lip6.move.pnml.framework.coremodel.source"
+         id="fr.lip6.pnml.framework.coremodel.source"
          download-size="0"
          install-size="0"
          version="0.0.0"

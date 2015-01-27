@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.pnml.framework.3rdPart.feature"
+      id="fr.lip6.pnml.framework.3rdPart.feature"
       label="PNML Framework 3rd Party Library"
-      version="2.2.1"
+      version="2.2.2"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.move.pnml.framework.3rdpartimports">
 

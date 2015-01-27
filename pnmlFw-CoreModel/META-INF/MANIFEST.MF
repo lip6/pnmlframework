@@ -2,8 +2,8 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Localization: OSGI-INF/l10n/bundle
 Bundle-Name: %Bundle-Name
-Bundle-SymbolicName: fr.lip6.move.pnml.framework.coremodel;singleton:=true
-Bundle-Version: 2.2.5
+Bundle-SymbolicName: fr.lip6.pnml.framework.coremodel;singleton:=true
+Bundle-Version: 2.2.6
 Bundle-ClassPath: .
 Bundle-Vendor: %Provider-Name
 Bundle-Localization: plugin
@@ -16,6 +16,6 @@ Export-Package: fr.lip6.move.pnml.pnmlcoremodel,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
- fr.lip6.move.pnml.framework.utils,
- fr.lip6.move.pnml.framework.3rdpartimports;bundle-version="2.2.1"
+ fr.lip6.pnml.framework.utils,
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.2"
 Bundle-ActivationPolicy: lazy

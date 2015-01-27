@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>validation.releng</artifactId>
-		<version>1.0.5</version>
+		<version>1.0.6</version>
 		<relativePath>../pnmlvalidation-Releng/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>fr.lip6.move.pnml.check</artifactId>
+	<artifactId>fr.lip6.pnml.check</artifactId>
 
 	<name>PNML Document Checker</name>
 	<description>PNML Document Checker is a simple application to 
@@ -35,31 +35,31 @@
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.utils</artifactId>
+			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.coremodel</artifactId>
+			<artifactId>fr.lip6.pnml.framework.coremodel</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.ptnet</artifactId>
+			<artifactId>fr.lip6.pnml.framework.ptnet</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.symmetricnet</artifactId>
+			<artifactId>fr.lip6.pnml.framework.symmetricnet</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.hlpn</artifactId>
+			<artifactId>fr.lip6.pnml.framework.hlpn</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.pthlpng</artifactId>
+			<artifactId>fr.lip6.pnml.framework.pthlpng</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
+			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>args4j</groupId>

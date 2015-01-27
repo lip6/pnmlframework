@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.pnml.framework.apigen.feature"
+      id="fr.lip6.pnml.framework.apigen.feature"
       label="High Level API Generation Feature"
       version="2.0.0">
 
@@ -21,11 +21,11 @@
       <import plugin="org.eclipse.emf.codegen"/>
       <import plugin="org.eclipse.emf.codegen.ecore"/>
       <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.move.pnml.framework.utils"/>
+      <import plugin="fr.lip6.pnml.framework.utils"/>
    </requires>
 
    <plugin
-         id="fr.lip6.move.pnml.framework.apigen"
+         id="fr.lip6.pnml.framework.apigen"
          download-size="0"
          install-size="0"
          version="0.0.0"

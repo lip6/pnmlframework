@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.pnml.framework.symmetricnet.feature"
+      id="fr.lip6.pnml.framework.symmetricnet.feature"
       label="PNML Framework Symmetric Nets"
-      version="2.2.5"
+      version="2.2.6"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
-      plugin="fr.lip6.move.pnml.framework.symmetricnet">
+      plugin="fr.lip6.pnml.framework.symmetricnet">
 
    <description url="http://www.lip6.fr/pnml">
       PNML Framework is a library to help Petri net tools handle Petri
@@ -34,11 +34,11 @@
    </license>
 
    <requires>
-      <import plugin="fr.lip6.move.pnml.framework.utils"/>
+      <import plugin="fr.lip6.pnml.framework.utils"/>
    </requires>
 
    <plugin
-         id="fr.lip6.move.pnml.framework.symmetricnet"
+         id="fr.lip6.pnml.framework.symmetricnet"
          download-size="2400"
          install-size="2400"
          version="0.0.0"

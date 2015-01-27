@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.move.pnml.framework.hlpn.feature.source"
+      id="fr.lip6.pnml.framework.hlpn.feature.source"
       label="PNML Framework High-Level Petri Nets Source"
-      version="2.2.5"
+      version="2.2.6"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
-      plugin="fr.lip6.move.pnml.framework.hlpn.source">
+      plugin="fr.lip6.pnml.framework.hlpn.source">
 
    <description url="http://www.lip6.fr/pnml">
       PNML Framework is a library to help Petri net tools handle Petri
@@ -34,11 +34,11 @@
    </license>
 
    <requires>
-      <import plugin="fr.lip6.move.pnml.framework.utils.source"/>
+      <import plugin="fr.lip6.pnml.framework.utils.source"/>
    </requires>
 
    <plugin
-         id="fr.lip6.move.pnml.framework.hlpn.source"
+         id="fr.lip6.pnml.framework.hlpn.source"
          download-size="0"
          install-size="0"
          version="0.0.0"

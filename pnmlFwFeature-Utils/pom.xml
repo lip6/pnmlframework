@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>framework.releng</artifactId>
-		<version>2.2.5</version>
+		<version>2.2.6</version>
 		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
 	</parent>
 
 
-	<artifactId>fr.lip6.move.pnml.framework.utils.feature</artifactId>
+	<artifactId>fr.lip6.pnml.framework.utils.feature</artifactId>
 	<version>${pnml.release}</version>
 	<packaging>eclipse-feature</packaging>
 

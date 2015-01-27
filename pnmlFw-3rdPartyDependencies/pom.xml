@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>framework.releng</artifactId>
-		<version>2.2.1</version>
+		<version>2.2.6</version>
 		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
+	<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
 	<version>${thirdparty.version}</version>
 	<!--<packaging>bundle</packaging> -->
 	<packaging>eclipse-plugin</packaging>

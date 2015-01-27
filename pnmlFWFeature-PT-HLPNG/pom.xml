@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>framework.releng</artifactId>
-		<version>2.2.5</version>
+		<version>2.2.6</version>
 		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
 	</parent>
 
-	<artifactId>fr.lip6.move.pnml.framework.pthlpng.feature</artifactId>
+	<artifactId>fr.lip6.pnml.framework.pthlpng.feature</artifactId>
 	<version>${pnml.release}</version>
 	<packaging>eclipse-feature</packaging>
 	
@@ -21,7 +21,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.move.pnml.framework.3rdpartimports</artifactId>
+			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
