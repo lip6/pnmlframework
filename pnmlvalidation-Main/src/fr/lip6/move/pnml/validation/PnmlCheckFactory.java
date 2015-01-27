@@ -43,8 +43,8 @@ public final class PnmlCheckFactory {
 	
 	/**
 	 * Returns a new instance of {@link CheckPnmlFile} interface. That instance is not thread-safe.
-	 * @returnn a new instance of {@link CheckPnmlFile} that is not thread-safe.
-	 * @throws ValidationException
+	 * @return a new instance of {@link CheckPnmlFile} that is not thread-safe.
+	 * @throws ValidationException if something went wrong during the validation process
 	 */
 	public static CheckPnmlFile createPnmlCheck() throws ValidationException {
 		return new CheckPnmlFileImpl();
@@ -53,10 +53,9 @@ public final class PnmlCheckFactory {
 	/**
 	 * Returns a new instance of {@link CheckPnmlFile} interface. That instance is thread-safe. 
 	 * @return a new instance of {@link CheckPnmlFile} that is thread-safe. 
-	 * @throws ValidationException 
+	 * @throws ValidationException if something went wrong during the validation process
 	 */
 	public static CheckPnmlFile createThreadSafePnmlCheck() throws ValidationException {
 		return new ConcurrentCheckPnmlFileImpl();
 	}
-	
 }

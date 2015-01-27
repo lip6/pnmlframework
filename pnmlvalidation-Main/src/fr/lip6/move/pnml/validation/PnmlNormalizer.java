@@ -36,22 +36,22 @@ public interface PnmlNormalizer {
 	
 	/**
 	 * Tells if there are parallel arcs in the PNML Document that is hold by the {@link CheckPnmlFile} instance.
-	 * @param checker
-	 * @return
+	 * @param checker the PNML checker instance
+	 * @return true if there are parallel arcs in the PNML Document (they can thus be merged), false otherwise
 	 */
 	boolean checkCanMergeParallelArcs(CheckPnmlFile checker);
 	
 	/**
 	 * Reports the parallel arcs in the PNML Document that is hold by the {@link CheckPnmlFile} instance.
-	 * @param checker
-	 * @return
+	 * @param checker the PNML checker instance
+	 * @return a simple, and indented textual report of the parallel arcs that have been found
 	 */
 	String reportParallelArcs(CheckPnmlFile checker);
 	
 	/**
 	 * Normalizes the PNML Document hold by the {@link CheckPnmlFile} instance, by merging parallel arcs.
 	 * Errors are reported in the log.
-	 * * @param checker
+	 * @param checker the PNML checker instance
 	 * @return the root class representing the PNML Document, possibly modified if parallel arcs were merged.
 	 * Otherwise the PNML Document will remain unchanged
 	 */

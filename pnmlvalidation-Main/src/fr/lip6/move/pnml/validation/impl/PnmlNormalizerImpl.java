@@ -27,9 +27,7 @@ import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
-import fr.lip6.move.pnml.ptnet.Arc;
 import fr.lip6.move.pnml.ptnet.Page;
-import fr.lip6.move.pnml.ptnet.PetriNet;
 import fr.lip6.move.pnml.ptnet.hlapi.ArcHLAPI;
 import fr.lip6.move.pnml.ptnet.hlapi.PageHLAPI;
 import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
@@ -197,7 +195,7 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 				}
 				log.info("I merged the following " + ptParArcs.size() + " sets of parallel arcs:" + NL);
 				System.out.println(sb.toString());
-				log.info("For each merge, the first arc in the set is kept as the resulting arc.");
+				log.info("For each merge, the first arc in the set was kept as the resulting arc.");
 			} else {
 				log.warn("There are no parallel arcs to merge in this net.");
 			}
