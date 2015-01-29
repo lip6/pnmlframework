@@ -7,7 +7,7 @@
 	<version>1.0.6</version>
 	<packaging>pom</packaging>
 
-	<name>PNML Document Checker Releng</name>
+	<name>PNML Document Checker</name>
 	<url>http://pnml.lip6.fr/pnmlvalidation</url>
 
 	<modules>
@@ -63,7 +63,7 @@
 	</reporting>
 
 	<organization>
-		<name>Université Pierre et Marie Curie / CNRS UMR 7606 (LIP6 - MoVe)</name>
+		<name>Univ. Paris Ouest and Univ. Pierre et Marie Curie / CNRS UMR 7606 (LIP6)</name>
 		<url>http://www.lip6.fr/</url>
 	</organization>
 	<developers>
@@ -212,7 +212,7 @@
 					<properties>
 						<year>${project.inceptionYear}-2015</year>
 						<organisation>
-							Universite Paris Ouest and Sorbonne Universites,
+							Université Paris Ouest and Sorbonne Universités,
 							Univ. Paris 06 - CNRS UMR
 							7606 (LIP6)
 						</organisation>

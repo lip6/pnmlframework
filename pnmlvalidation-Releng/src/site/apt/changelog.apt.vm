@@ -40,6 +40,8 @@ Changelog
   
   * Relies on version 2.2.6 of PNML Framework
   
+  * Runs now on Java 1.8+
+  
 
 * What happened to version 1.0.5?
 

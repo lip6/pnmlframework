@@ -37,5 +37,5 @@ Download PNML Document Checker ${project.version}
   
 Requirements
 
-  * Runs on Java 1.7+
+  * Runs on Java 1.8+
  
