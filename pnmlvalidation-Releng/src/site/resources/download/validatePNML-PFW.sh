@@ -20,7 +20,14 @@
 #
 
 # Path the executable jar of PNML Document Checker
-JAR_PATH=fr.lip6.pnml.check-1.0.5.jar
+JAR_PATH=fr.lip6.pnml.check-1.0.6.jar
+
+# Options to look for, or fix normalization issues (run the jar with -h to get help)
+# Related options you can include in the OPTION var below are: 
+# -cn (aka --checknorm) 
+# -nmz (aka --normalize)
+# the -nmz option supersedes the -cn option so you should not use them together
+OPTION=""
 
 # How many expected arguments to this script?
 NBPARAM=1
@@ -50,6 +57,6 @@ fi
 
 for file in $1/*.pnml
 do
-	java $JVM_ARGS -jar $JAR_PATH $file &> $file.pfwvalidation.txt && sed -e '1,18d' -i .bak $file.pfwvalidation.txt || exit "$E_ERROR"
+	java $JVM_ARGS -jar $JAR_PATH $OPTION $file &> $file.pfwvalidation.txt && sed -e '1,18d' -i .bak $file.pfwvalidation.txt || exit "$E_ERROR"
 done
 exit "$E_SUCCESS"
