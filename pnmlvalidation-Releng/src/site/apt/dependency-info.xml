@@ -1,6 +1,6 @@
 <!--
 
-     Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+     Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
     							Univ. Paris 06 - CNRS UMR
     							7606 (LIP6)
 
@@ -25,7 +25,7 @@
  	<dependency>
         	<groupId>fr.lip6.pnml</groupId>
 		<artifactId>fr.lip6.move.pnml.check</artifactId>
-		<version>1.0.5</version>
+		<version>1.0.6</version>
 	</dependency>
 </dependencies>
 <!-- END SNIPPET: depinfo-id -->

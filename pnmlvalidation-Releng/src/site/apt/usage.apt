@@ -1,5 +1,5 @@
 ~~
-~~  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+~~  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
 ~~ 							Univ. Paris 06 - CNRS UMR
 ~~ 							7606 (LIP6)
 ~~
@@ -132,6 +132,8 @@ Maven dependency
   
 %{snippet|id=depinfo-id|file=src/site/apt/dependency-info.xml}
 
- The corresponding artefact is deployed in our Maven repository:
+ The corresponding artefact is deployed in Maven Central, so you can use it with the declaration above,
+ without any further repository declaration. However, just in case of unavailability, 
+ latest snapshot or release is always deployed in our Maven repository:
 
 %{snippet|id=repinfo-id|file=src/site/apt/repository-info.xml}

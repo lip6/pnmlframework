@@ -1,5 +1,5 @@
 #*
- *  Copyright 2009-2015 Universite Paris Ouest and Sorbonne Universites,
+ *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
  * 							Univ. Paris 06 - CNRS UMR
  * 							7606 (LIP6)
  *
@@ -17,7 +17,6 @@
  *  Mailing list:
  *    lom-messan.hillah@lip6.fr
  *#
-
  ------
 Changelog of PNML Document Checker ${project.version}
  ------
