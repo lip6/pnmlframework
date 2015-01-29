@@ -40,7 +40,7 @@
 	</distributionManagement>
 
 	<organization>
-		<name>Sorbonne Universites, Universite Pierre et Marie Curie / CNRS UMR 7606 (LIP6/MoVe)</name>
+		<name>Univ. Paris Ouest, and Univ. Pierre et Marie Curie / CNRS UMR 7606 (LIP6)</name>
 		<url>http://www.lip6.fr/</url>
 	</organization>
 	<developers>
@@ -293,7 +293,7 @@
 					<properties>
 						<year>${project.inceptionYear}</year>
 						<organisation>
-							Universite Paris Ouest and Sorbonne Universites,
+							Université Paris Ouest and Sorbonne Universités,
 							Univ. Paris 06 - CNRS UMR
 							7606 (LIP6)
 						</organisation>
