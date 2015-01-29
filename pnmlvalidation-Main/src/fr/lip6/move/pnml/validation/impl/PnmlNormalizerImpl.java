@@ -81,9 +81,6 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 			ptParArcs.clear();
 		if (this.pchecker.isPTNetDocument()) {
 			res = findParallelArcsInPT(pdoc);
-
-		} else {
-			log.error("Only P/T Nets are currently supported in searching for parallel arcs.");
 		}
 		return res;
 	}
