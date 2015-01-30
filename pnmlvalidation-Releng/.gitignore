@@ -6,3 +6,6 @@ target
 pom-old.xml
 /brouilon.txt
 /site-avant2015.xml
+*.tgz
+caroussel-components.jpg
+caroussel-themes.jpg
