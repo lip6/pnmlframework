@@ -24,8 +24,8 @@
  	<!-- Of course, you must keep your existing dependencies, and just add the following -->
  	<dependency>
         	<groupId>fr.lip6.pnml</groupId>
-		<artifactId>fr.lip6.move.pnml.check</artifactId>
-		<version>1.0.6</version>
+		<artifactId>fr.lip6.pnml.check</artifactId>
+		<version>1.0.7</version>
 	</dependency>
 </dependencies>
 <!-- END SNIPPET: depinfo-id -->
