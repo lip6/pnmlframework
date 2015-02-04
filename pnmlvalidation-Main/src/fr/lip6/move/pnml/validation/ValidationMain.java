@@ -77,11 +77,11 @@ public class ValidationMain {
 	/**
 	 * No help and check normalization option at the same time.
 	 */
-	private static final String NOT_HCNMZ = "Help, and check normalization issues (or normalizing) are exclusive options.";
+	private static final String NOT_HCNMZ = "Help, and check normalization issues (or direct normalization) are exclusive options.";
 	/**
 	 * No check normalization issues, and normalizing options at the same time.
 	 */
-	private static final String NOT_CNMZ = "Check normalization issues, and normalizing are exclusive options.";
+	private static final String NOT_CNMZ = "Check normalization issues, and direct normalization are exclusive options.";
 	/**
 	 * Usage.
 	 */
@@ -99,7 +99,7 @@ public class ValidationMain {
 	/**
 	 * Version of this tool.
 	 */
-	private static final String VERSION = "1.0.6";
+	private static final String VERSION = "1.0.7";
 
 	/**
 	 * The command-line parser.
