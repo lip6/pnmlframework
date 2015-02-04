@@ -46,6 +46,7 @@ import fr.lip6.move.pnml.validation.impl.PnmlNormalizerImpl;
 import fr.lip6.move.pnml.validation.stats.CLOptions;
 import fr.lip6.move.pnml.validation.stats.HTTPStatusCodes;
 import fr.lip6.move.pnml.validation.stats.MessageUtility;
+import fr.lip6.move.pnml.validation.util.impl.PNMLValidationUtilsImpl;
 
 /**
  * Entry point for validation service.
@@ -82,6 +83,10 @@ public class ValidationMain {
 	 * No check normalization issues, and normalizing options at the same time.
 	 */
 	private static final String NOT_CNMZ = "Check normalization issues, and direct normalization are exclusive options.";
+	/**
+	 * No help and remove graphical info at the same time.
+	 */
+	private static final String NOT_HRMG = "Help, and removal of graphical information are exclusive options.";
 	/**
 	 * Usage.
 	 */
@@ -213,6 +218,10 @@ public class ValidationMain {
 		if (cloptions.isCheckNormalization() && cloptions.isNormalize()) {
 			throw new IOException(NOT_CNMZ, new Throwable(NOT_CNMZ));
 		}
+		
+		if (cloptions.isHelp() && cloptions.isRemoveGraphInfo()) {
+			throw new IOException(NOT_HRMG, new Throwable(NOT_HRMG));
+		}
 
 		// Now check help
 		checkHelp(cloptions);
@@ -256,22 +265,34 @@ public class ValidationMain {
 	private static void standalone(List<String> files) {
 		try {
 			final CheckPnmlFile cpf = new CheckPnmlFileImpl();
+			HLAPIRootClass modifiedDoc = null;
+			boolean modifiedOtherThanNormalization = false;
 			for (String filepath : files) {
 				JOURNAL.info("importing file " + filepath);
 				final String msg = cpf.checkPnmlFile(filepath);
 				System.out.println(msg);
 				if (cloptions.isNormalize()) {
 					final PnmlNormalizer pnz = new PnmlNormalizerImpl(cpf);
-					try {
-						exportNormalizedDoc(pnz.mergeParallelArcs(cpf), filepath);
-					} catch (UnhandledNetType | OCLValidationFailed | IOException | ValidationFailedException
-							| BadFileFormatException | OtherException e) {
-						JOURNAL.error(e.getMessage());
-						e.printStackTrace();
-					}
+					modifiedDoc = pnz.mergeParallelArcs(cpf);
 				} else if (cloptions.isCheckNormalization()) {
 					final PnmlNormalizer pnz = new PnmlNormalizerImpl(cpf);
 					System.out.println(pnz.reportParallelArcs(cpf));
+				}
+				if (cloptions.isRemoveGraphInfo()) {
+					final PNMLValidationUtils pvu = new PNMLValidationUtilsImpl(cpf);
+					modifiedDoc = pvu.removeGraphics(cpf);
+					modifiedOtherThanNormalization = true;
+				}
+				try {
+					if (cloptions.isNormalize()) {
+						exportNormalizedDoc(modifiedDoc, filepath);
+					} else if (modifiedOtherThanNormalization) {
+						exportModifiedDoc(modifiedDoc, filepath);
+					}
+				} catch (UnhandledNetType | OCLValidationFailed | IOException | ValidationFailedException
+						| BadFileFormatException | OtherException e) {
+					JOURNAL.error(e.getMessage());
+					e.printStackTrace();
 				}
 			}
 		} catch (ValidationException e) {
@@ -297,10 +318,63 @@ public class ValidationMain {
 		}
 	}
 
-	private static void exportNormalizedDoc(HLAPIRootClass mergedDoc, String filepath) throws UnhandledNetType,
+	/**
+	 * Export modified PNML doc (in any way other than normalization-related
+	 * tasks, e.g. removing graphical information).
+	 * 
+	 * @param modifiedDoc
+	 *            the PNML doc resulting from the modification operation
+	 * @param filepath
+	 *            the path to the file of the original PNML doc
+	 * @throws UnhandledNetType
+	 *             PN type not supported
+	 * @throws OCLValidationFailed
+	 *             OCL validation failed
+	 * @throws IOException
+	 *             Input/Output failure
+	 * @throws ValidationFailedException
+	 *             something went wrong during the validation process (apart
+	 *             from OCL stuff)
+	 * @throws BadFileFormatException
+	 *             the PNML file does not have the expected format
+	 * @throws OtherException
+	 *             Any other problem.
+	 */
+	private static void exportModifiedDoc(HLAPIRootClass modifiedDoc, String filepath) throws UnhandledNetType,
+			OCLValidationFailed, IOException, ValidationFailedException, BadFileFormatException, OtherException {
+		String newfilepath = filepath.substring(0, filepath.lastIndexOf(PNML_EXT)) + "-modified" + PNML_EXT;
+		final PnmlExport pex = new PnmlExport();
+		pex.exportObject(modifiedDoc, newfilepath);
+	}
+
+	/**
+	 * <p>
+	 * Exports the normalized PNML Document into a new PNML file, with
+	 * <strong>-normalized</strong> appended to its original name.
+	 * </p>
+	 * 
+	 * @param mergedDoc
+	 *            the PNML doc resulting from the normalization operation
+	 * @param filepath
+	 *            the path to the file of the original PNML doc
+	 * @throws UnhandledNetType
+	 *             PN type not supported
+	 * @throws OCLValidationFailed
+	 *             OCL validation failed
+	 * @throws IOException
+	 *             Input/Output failure
+	 * @throws ValidationFailedException
+	 *             something went wrong during the validation process (apart
+	 *             from OCL stuff)
+	 * @throws BadFileFormatException
+	 *             the PNML file does not have the expected format
+	 * @throws OtherException
+	 *             Any other problem.
+	 */
+	private static void exportNormalizedDoc(HLAPIRootClass normalizedDoc, String filepath) throws UnhandledNetType,
 			OCLValidationFailed, IOException, ValidationFailedException, BadFileFormatException, OtherException {
 		String newfilepath = filepath.substring(0, filepath.lastIndexOf(PNML_EXT)) + "-normalized" + PNML_EXT;
 		final PnmlExport pex = new PnmlExport();
-		pex.exportObject(mergedDoc, newfilepath);
+		pex.exportObject(normalizedDoc, newfilepath);
 	}
 }
