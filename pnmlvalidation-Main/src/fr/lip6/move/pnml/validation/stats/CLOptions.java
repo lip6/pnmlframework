@@ -70,6 +70,10 @@ public final class CLOptions {
 	 */
 	private boolean nmzSet = false;
 	/**
+	 * Is "remove graphical information" asked for?
+	 */
+	private boolean rmgSet = false;
+	/**
 	 * User-defined delay for tasks.
 	 */
 	private int timeout = DEFAULT_TIMEOUT;
@@ -211,6 +215,24 @@ public final class CLOptions {
 	 */
 	public final boolean isNormalize() {
 		return nmzSet;
+	}
+	
+	/**
+	 * Option to remove graphical information from the PNML Document.
+	 */
+	@Option(name = "-rmg", aliases = { "--rmgraphinfo" }, required = false, usage = "Removes all graphical information from the PNML Document.\n"
+			+ "This option is run after a classic check of the PNML file. It is supported in standalone mode only.\n"
+			+ "This option can be run with the --checknorm option in the same invocation, but normalization always runs first.")
+	private void setRemoveGraphInfo(boolean n) {
+		rmgSet = true;
+	}
+	
+	/**
+	 * Tells whether the user has requested to remove all graphical information from the PNML Document.
+	 * @return true is so, false otherwise
+	 */
+	public final boolean isRemoveGraphInfo() {
+		return rmgSet;
 	}
 
 	/**
