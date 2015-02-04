@@ -21,7 +21,7 @@
 Download PNML Document Checker ${project.version}
  ------
  ------
-2015-01
+2015-02
  ------
 
 Download PNML Document Checker ${project.version}
@@ -41,6 +41,8 @@ Requirements
   
 Previous stable versions
 
+  * Download {{{./download/fr.lip6.pnml.check-1.0.6.jar}version 1.0.6}}. (Runs on Java 1.8+)
+  
   * Download {{{./download/fr.lip6.move.pnml.check-1.0.4.jar}version 1.0.4}}. (Runs on Java 1.7+)
   
  

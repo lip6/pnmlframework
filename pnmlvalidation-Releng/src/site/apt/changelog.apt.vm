@@ -21,21 +21,24 @@
 Changelog of PNML Document Checker ${project.version}
  ------
  ------
-2015-01
+2015-02
  ------
 
 Changelog
 
-
 * What's new in version ${project.version}?
+
+  * New feature to remove all graphical information a PNML Document.
+
+* What's new in version 1.0.6?
 
   * New feature to check and report normalization issues. Parallel arcs detection in P/T Nets is supported.
   
   * New feature to normalize the PNML Document. Parallel arcs merging in P/T Nets is supported.
   
-  * Corrects a bug in counting the number of objects in the PNML Document
+  * Corrects a bug in duplicate counting of the number of objects in the PNML Document
   
-  * Introduces a factory to enable easier use (of CheckPnmlFile interface) as a direct dependency in third-party software
+  * Introduces a factory to enable easier use (of CheckPnmlFile interface) as a direct dependency in a third-party software
   
   * Relies on version 2.2.6 of PNML Framework
   

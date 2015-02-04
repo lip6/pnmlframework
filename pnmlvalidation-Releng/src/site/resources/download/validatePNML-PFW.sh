@@ -19,14 +19,14 @@
 #    lom-messan.hillah@lip6.fr
 #
 
-# Path the executable jar of PNML Document Checker
-JAR_PATH=fr.lip6.pnml.check-1.0.6.jar
+# Path to the executable jar of PNML Document Checker
+JAR_PATH=fr.lip6.pnml.check-1.0.7.jar
 
 # Options to look for, or fix normalization issues (run the jar with -h to get help)
 # Related options you can include in the OPTION var below are: 
-# -cn (aka --checknorm) 
-# -nmz (aka --normalize)
-# the -nmz option supersedes the -cn option so you should not use them together
+# -cn (aka --checknorm) : check for normalization issues
+# -nmz (aka --normalize); the -nmz option supersedes the -cn option so you should not use them together
+# -rmg (aka --rmgraphic info) : remove all graphical information from the PNML Document. Can be combined with -nmz or -cn
 OPTION=""
 
 # How many expected arguments to this script?
