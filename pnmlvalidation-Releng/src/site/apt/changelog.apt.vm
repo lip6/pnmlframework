@@ -28,7 +28,7 @@ Changelog
 
 * What's new in version ${project.version}?
 
-  * New feature to remove all graphical information a PNML Document.
+  * New feature to remove all graphical information from a PNML Document.
 
 * What's new in version 1.0.6?
 
