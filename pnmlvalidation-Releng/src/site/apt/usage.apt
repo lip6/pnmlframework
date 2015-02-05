@@ -44,7 +44,23 @@ In particular, a set of arguments for the Java VM is included, that you can star
 
   For instance, the -Xmx argument allocates some max amount of memory to the heap. If you mostly deal with small
 documents (a few hundreds KB), we advise you decrease it (current setting is 2 GB). If you use large documents,
-(a few hundreds MB to GB), then you should increase it.   
+(a few hundreds MB to GB), then you should increase it. 
+
+* Experimental Options
+
+ This tool supports some experimental options, that are the following:
+ 
+ * <<-cn>> (aka --checknorm): it checks and reports normalization issues. Currently, only the presence of parallel arcs is checked.
+ 
+ * <<-nmz>> (aka --normalize): it fixes normalization issues (supersedes <<-cn>>). Currently, parallel arcs are merged into a single one,
+ by using the appropriate sum operation on their inscriptions, depending on the type of the net. Currently P/T nets are supported (Symmetric nets in a upcoming release).
+ 
+ * <<-rmg>> (aka --rmgraphinfo): removes graphical information from the PNML document, in order to reduce its size. 
+ Currently, P/T nets are supported, since this option is most useful in reducing large (generated, unfolded) P/T net documents.
+ This option can be combined with <<-nmz>>, but normalization always runs first.
+ 
+ 
+ [] 
 
 * Service result
 
