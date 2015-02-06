@@ -292,11 +292,10 @@
 					<useDefaultExcludes>true</useDefaultExcludes>
 					<useDefaultMapping>true</useDefaultMapping>
 					<properties>
-						<year>${project.inceptionYear}</year>
+						<year>${project.inceptionYear}-2015</year>
 						<organisation>
 							Université Paris Ouest and Sorbonne Universités,
-							Univ. Paris 06 - CNRS UMR
-							7606 (LIP6)
+							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
 						</organisation>
 						<maincontributor>Lom Messan Hillah</maincontributor>
 						<email>lom-messan.hillah@lip6.fr</email>
