@@ -8,6 +8,7 @@
 	<packaging>pom</packaging>
 
 	<name>PNML Framework</name>
+	<description>PNML Framework is a Model-Driven Engineering library that fully implements the ISO/IEC 15909-2 standard.</description>
 	<url>http://pnml.lip6.fr</url>
 
 	<properties>
