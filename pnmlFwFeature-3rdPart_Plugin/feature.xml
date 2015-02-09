@@ -4,7 +4,7 @@
       label="PNML Framework 3rd Party Library"
       version="2.2.2"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
-      plugin="fr.lip6.move.pnml.framework.3rdpartimports">
+      plugin="fr.lip6.pnml.framework.3rdpartimports">
 
    <description url="http://www.lip6.fr/pnml">
       PNML Framework is a library to help Petri net tools handle Petri
@@ -18,7 +18,7 @@
    </description>
 
    <copyright url="http://pnml.lip6.fr/resources/License">
-      Copyright (c) 2006-2014 Sorbonne Universites, Univ. Paris 06, UMR CNRS 7606. 
+      Copyright (c) 2006-2015 Sorbonne Universites, Univ. Paris 06, UMR CNRS 7606. 
  All rights reserved. This program and the accompanying materials
  are made available under the terms of the Eclipse Public License
  v1.0 which accompanies this distribution, and is available at
@@ -32,7 +32,7 @@
    </license>
 
    <plugin
-         id="fr.lip6.move.pnml.framework.3rdpartimports"
+         id="fr.lip6.pnml.framework.3rdpartimports"
          download-size="0"
          install-size="0"
          version="0.0.0"
