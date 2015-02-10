@@ -40,9 +40,9 @@ import org.slf4j.LoggerFactory;
  */
 public final class LogMaster {
 	/**
-	 * The logger class.
+	 * The logger class. SLF4JLog
 	 */
-	private static String logger = "org.apache.commons.logging.impl.SLF4JLog";
+	private static String logger = "org.apache.commons.logging.impl.SimpleLog";
 	// "org.apache.commons.logging.impl.SimpleLog";
 	/**
 	 * the level of logging.
