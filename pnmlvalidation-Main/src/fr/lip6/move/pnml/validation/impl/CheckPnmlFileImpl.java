@@ -25,6 +25,7 @@ import java.util.UUID;
 
 import javax.activation.MimetypesFileTypeMap;
 
+import fr.lip6.move.pnml.framework.general.PNType;
 import fr.lip6.move.pnml.framework.general.PnmlImport;
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
@@ -37,7 +38,6 @@ import fr.lip6.move.pnml.framework.utils.exception.OtherException;
 import fr.lip6.move.pnml.framework.utils.exception.UnhandledNetType;
 import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.general.PNType;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
 import fr.lip6.move.pnml.validation.CheckPnmlFile;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
@@ -555,7 +555,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	@Override
 	public fr.lip6.move.pnml.ptnet.PetriNetDoc getPnmlDocRootClassAsPTNet() {
 		if (isPTNetDocument())
-			return (fr.lip6.move.pnml.ptnet.PetriNetDoc) this.imported;
+			return ((fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI) this.imported).getContainedItem();
 		else
 			return null;
 	}
@@ -563,7 +563,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	@Override
 	public fr.lip6.move.pnml.symmetricnet.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsSymNet() {
 		if (isSymNetDocument())
-			return (fr.lip6.move.pnml.symmetricnet.hlcorestructure.PetriNetDoc) this.imported;
+			return ((fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetDocHLAPI) this.imported).getContainedItem();
 		else
 			return null;
 	}
@@ -571,7 +571,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	@Override
 	public fr.lip6.move.pnml.hlpn.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsHLPN() {
 		if (isHLPNDocument())
-			return (fr.lip6.move.pnml.hlpn.hlcorestructure.PetriNetDoc) this.imported;
+			return ((fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.PetriNetDocHLAPI) this.imported).getContainedItem();
 		else
 			return null;
 	}
@@ -579,7 +579,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	@Override
 	public fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsPTHLPNG() {
 		if (isPTHLPNDocument())
-			return (fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc) this.imported;
+			return ((fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetDocHLAPI) this.imported).getContainedItem();
 		else
 			return null;
 	}
