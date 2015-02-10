@@ -28,6 +28,10 @@ Changelog
 
 * What's new in version ${project.version}?
 
+  * New API offered by CheckPnmlFile to fetch the PNML root document class as its typed PetriNetDoc class (P/T, Symmetric net, HLPN, or PT-HLPNG).
+
+* What's new in version 1.0.7?
+
   * New feature to remove all graphical information from a PNML Document.
 
 * What's new in version 1.0.6?
@@ -44,6 +48,7 @@ Changelog
   
   * Runs now on Java 1.8+
   
+  []
 
 * What happened to version 1.0.5?
 
