@@ -136,7 +136,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * Checks a PNML document.
+	 * Checks a PNML document. Stats are computed after having loaded the PNML document. 
 	 * 
 	 * @throws InvalidFileException
 	 *             document has formating errors.
@@ -530,8 +530,9 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * Loads PNML document root class from the checker thread. <strong>This is not
+	 * Loads PNML document root class from the checker thread. <strong>This method is not
 	 * implemented in this class.</strong> Stats classes has this responsibility.
+	 * <p>Use {@link #checkPnmlFile(String)} and {@link #getPnmlDocHLAPIRootClass()} instead.</p>
 	 * 
 	 * @param pnmlDoc
 	 *            PNML document
