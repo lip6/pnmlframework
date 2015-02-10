@@ -115,7 +115,39 @@ public interface CheckPnmlFile extends PnmlDocStatistics {
 	 *          fixed soon.</p>
 	 */
 	boolean isPTHLPNDocument();
+	
+	/**
+	 * Returns the root class of the PNML Document from the Core Model namespace, only if it is a Core Model Document. 
+	 * @return the root class of the PNML Document as a PetriNetDoc from the Core Model namespace, null otherwise.
+	 */
+	fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc getPnmlDocRootClassAsCoreModel();
+	
+	/**
+	 * Returns the root class of the PNML Document from the P/T nets namespace, only if it is a P/T Net Document. 
+	 * @return the root class of the PNML Document as a PetriNetDoc from the P/T nets namespace, null otherwise.
+	 */
+	fr.lip6.move.pnml.ptnet.PetriNetDoc getPnmlDocRootClassAsPTNet();
+	
 
+	/**
+	 * Returns the root class of the PNML Document from the Symmetric nets namespace, only if it is a Symmetric Net Document. 
+	 * @return the root class of the PNML Document as a PetriNetDoc from the Symmetric nets namespace, null otherwise.
+	 */
+	fr.lip6.move.pnml.symmetricnet.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsSymNet();
+	
+	
+	/**
+	 * Returns the root class of the PNML Document from the High-level nets namespace, only if it is a High-level Petri Net Document. 
+	 * @return the root class of the PNML Document as a PetriNetDoc from the High-level nets namespace, null otherwise.
+	 */
+	fr.lip6.move.pnml.hlpn.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsHLPN();
+
+	/**
+	 * Returns the root class of the PNML Document from the P/T - High-level nets namespace, only if it is a P/T - High-level Petri Net Graph Document. 
+	 * @return the root class of the PNML Document as a PetriNetDoc from the P/T - High-level nets namespace, null otherwise.
+	 */
+	fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsPTHLPNG();
+	
 	/**
 	 * <p>Makes this class explicitly create a {@link PnmlDocStatistics} object to
 	 * compute various stats on the loaded PNML document. Do this if you really

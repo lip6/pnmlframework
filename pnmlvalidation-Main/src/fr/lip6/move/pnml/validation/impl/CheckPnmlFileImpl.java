@@ -38,6 +38,7 @@ import fr.lip6.move.pnml.framework.utils.exception.UnhandledNetType;
 import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.framework.general.PNType;
+import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
 import fr.lip6.move.pnml.validation.CheckPnmlFile;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
@@ -128,15 +129,15 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 			this.id = UUID.randomUUID();
 			initWorkspace();
 		} catch (ValidationException e) {
-			throw new ValidationException(
-					"Problem when setting up PNML Framework workspace :"
-							+ MessageUtility.NL + e.getMessage());
+			throw new ValidationException("Problem when setting up PNML Framework workspace :" + MessageUtility.NL
+					+ e.getMessage());
 		}
 
 	}
 
 	/**
-	 * Checks a PNML document. Stats are computed after having loaded the PNML document. 
+	 * Checks a PNML document. Stats are computed after having loaded the PNML
+	 * document.
 	 * 
 	 * @throws InvalidFileException
 	 *             document has formating errors.
@@ -150,8 +151,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 *            the path of the PNML document.
 	 * @return the validation message.
 	 */
-	public final String checkPnmlFile(String filePath)
-			throws InvalidFileException, InvalidFileTypeException,
+	public final String checkPnmlFile(String filePath) throws InvalidFileException, InvalidFileTypeException,
 			ValidationException, InternalException {
 		resetMessage();
 		message = new StringBuilder(BUFFER_SIZE);
@@ -159,29 +159,24 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 
 			final File pFile = new File(filePath);
 			if (!pFile.exists()) {
-				throw new InvalidFileException("File " + pFile.getName()
-						+ " does not exist.", new Throwable("File "
+				throw new InvalidFileException("File " + pFile.getName() + " does not exist.", new Throwable("File "
 						+ pFile.getName() + " does not exist."));
 			}
 			// check if regular file or directory
 			if (!pFile.isFile()) {
-				throw new InvalidFileTypeException(pFile.getName()
-						+ " is not a regular file.", new Throwable(
+				throw new InvalidFileTypeException(pFile.getName() + " is not a regular file.", new Throwable(
 						pFile.getName() + " is not a regular file."));
 			}
 			if (!pFile.canRead()) {
-				throw new InvalidFileException("Cannot read file "
-						+ pFile.getName(), new Throwable("Cannot read file "
+				throw new InvalidFileException("Cannot read file " + pFile.getName(), new Throwable("Cannot read file "
 						+ pFile.getName()));
 			}
 			final MimetypesFileTypeMap ftm = new MimetypesFileTypeMap();
 			ftm.addMimeTypes("text/xml xml pnml XML PNML");
 			final String contentType = ftm.getContentType(pFile);
 			if (!contentType.contains("text/xml")) {
-				throw new InvalidFileTypeException(pFile.getName()
-						+ " is not an XML file: " + contentType,
-						new Throwable(pFile.getName() + " is not an XML file: "
-								+ contentType));
+				throw new InvalidFileTypeException(pFile.getName() + " is not an XML file: " + contentType,
+						new Throwable(pFile.getName() + " is not an XML file: " + contentType));
 			}
 			importPnmlFile(pFile);
 			setUpStats();
@@ -193,20 +188,17 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 			}
 		} catch (NullPointerException npe) {
 			npe.printStackTrace();
-			throw new InternalException("Null pointer exception",
-					new Throwable("Something went wrong. Please, re-submit."));
+			throw new InternalException("Null pointer exception", new Throwable(
+					"Something went wrong. Please, re-submit."));
 		} catch (SecurityException se) {
-			throw new InternalException(
-					se.getMessage(),
-					new Throwable(
-							"Access right problem while accessing the file system. Please, re-submit."));
+			throw new InternalException(se.getMessage(), new Throwable(
+					"Access right problem while accessing the file system. Please, re-submit."));
 		}
 		return message.toString();
 	}
 
 	private void writeUnknowPNMessage() {
-		message.append(HTTPStatusCodes.NOT_FOUND.getStatusCode()
-				+ MessageUtility.NL);
+		message.append(HTTPStatusCodes.NOT_FOUND.getStatusCode() + MessageUtility.NL);
 		message.append(MessageUtility.MSG
 				+ "Your PNML Document contains Petri Net(s) unknown to the standard specifications."
 				+ MessageUtility.NL);
@@ -234,8 +226,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	protected final void writeConformanceMessage() {
 		message.append(HTTPStatusCodes.OK.getStatusCode() + MessageUtility.NL);
-		message.append(MessageUtility.MSG
-				+ "Your PNML document conforms to the standard specifications."
+		message.append(MessageUtility.MSG + "Your PNML document conforms to the standard specifications."
 				+ MessageUtility.NL);
 		message.append(MODEL_NAME + getModelName() + MessageUtility.NL);
 		message.append(MODEL_TYPE);
@@ -263,8 +254,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	protected final void initWorkspace() throws ValidationException {
 		try {
-			modelRepo.createDocumentWorkspace("check"
-					+ String.valueOf(Thread.currentThread().getId()));
+			modelRepo.createDocumentWorkspace("check" + String.valueOf(Thread.currentThread().getId()));
 		} catch (InvalidIDException e1) {
 			e1.printStackTrace();
 			throw new ValidationException(e1.getMessage());
@@ -283,22 +273,19 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 * @throws InvalidFileTypeException
 	 *             file type is wrong
 	 */
-	private void importPnmlFile(File file) throws ValidationException,
-			InvalidFileException, InvalidFileTypeException {
+	private void importPnmlFile(File file) throws ValidationException, InvalidFileException, InvalidFileTypeException {
 
 		try {
 
 			final PnmlImport pim = new PnmlImport();
 			pim.setFallUse(false);
-			this.imported = (HLAPIRootClass) pim.importFile(file
-					.getCanonicalPath());
+			this.imported = (HLAPIRootClass) pim.importFile(file.getCanonicalPath());
 			determineNetType();
 
 		} catch (IOException ioe) {
 			throw new InvalidFileException(ioe.getMessage(), ioe.getCause());
 		} catch (BadFileFormatException bffe) {
-			throw new InvalidFileTypeException(bffe.getMessage(),
-					bffe.getCause());
+			throw new InvalidFileTypeException(bffe.getMessage(), bffe.getCause());
 		} catch (UnhandledNetType unte) {
 			throw new ValidationException(unte.getMessage(), unte.getCause());
 		} catch (ValidationFailedException vfe) {
@@ -327,23 +314,17 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	protected final void determineNetType() {
 
-		if (this.imported.getClass().equals(
-				fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI.class)) {
+		if (this.imported.getClass().equals(fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI.class)) {
 			myPnType = PNType.COREMODEL;
-		} else if (this.imported.getClass().equals(
-				fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI.class)) {
+		} else if (this.imported.getClass().equals(fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI.class)) {
 			myPnType = PNType.PTNET;
-		} else if (this.imported
-				.getClass()
-				.equals(fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
+		} else if (this.imported.getClass().equals(
+				fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
 			myPnType = PNType.SYMNET;
-		} else if (this.imported
-				.getClass()
-				.equals(fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
+		} else if (this.imported.getClass().equals(fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
 			myPnType = PNType.HLPN;
-		} else if (this.imported
-				.getClass()
-				.equals(fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
+		} else if (this.imported.getClass().equals(
+				fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetDocHLAPI.class)) {
 			myPnType = PNType.PTHLPN;
 		} else {
 			myPnType = null;
@@ -448,9 +429,8 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * {@inheritDoc}
-	 * Tells if the loaded PNML document is a HLPNG net document. Not yet
-	 * supported.
+	 * {@inheritDoc} Tells if the loaded PNML document is a HLPNG net document.
+	 * Not yet supported.
 	 * 
 	 * @return true if so
 	 */
@@ -530,16 +510,20 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	}
 
 	/**
-	 * Loads PNML document root class from the checker thread. <strong>This method is not
-	 * implemented in this class.</strong> Stats classes has this responsibility.
-	 * <p>Use {@link #checkPnmlFile(String)} and {@link #getPnmlDocHLAPIRootClass()} instead.</p>
+	 * Loads PNML document root class from the checker thread. <strong>This
+	 * method is not implemented in this class.</strong> Stats classes has this
+	 * responsibility.
+	 * <p>
+	 * Use {@link #checkPnmlFile(String)} and
+	 * {@link #getPnmlDocHLAPIRootClass()} instead.
+	 * </p>
 	 * 
 	 * @param pnmlDoc
 	 *            PNML document
 	 * @param cpf
 	 *            document checker
-	 * @see PnmlDocStatistics 
-	 *            
+	 * @see PnmlDocStatistics
+	 * 
 	 */
 	public final void loadPnmlDoc(HLAPIRootClass pnmlDoc, CheckPnmlFile cpf) {
 		// Do nothing. Specific stats classes will implement this.
@@ -560,4 +544,43 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		return this.id;
 	}
 
+	@Override
+	public PetriNetDoc getPnmlDocRootClassAsCoreModel() {
+		if (isCoreModelDocument())
+			return (fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc) this.imported;
+		else
+			return null;
+	}
+
+	@Override
+	public fr.lip6.move.pnml.ptnet.PetriNetDoc getPnmlDocRootClassAsPTNet() {
+		if (isPTNetDocument())
+			return (fr.lip6.move.pnml.ptnet.PetriNetDoc) this.imported;
+		else
+			return null;
+	}
+
+	@Override
+	public fr.lip6.move.pnml.symmetricnet.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsSymNet() {
+		if (isSymNetDocument())
+			return (fr.lip6.move.pnml.symmetricnet.hlcorestructure.PetriNetDoc) this.imported;
+		else
+			return null;
+	}
+
+	@Override
+	public fr.lip6.move.pnml.hlpn.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsHLPN() {
+		if (isHLPNDocument())
+			return (fr.lip6.move.pnml.hlpn.hlcorestructure.PetriNetDoc) this.imported;
+		else
+			return null;
+	}
+
+	@Override
+	public fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc getPnmlDocRootClassAsPTHLPNG() {
+		if (isPTHLPNDocument())
+			return (fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc) this.imported;
+		else
+			return null;
+	}
 }
