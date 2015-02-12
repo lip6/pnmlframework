@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.ptnet.feature.source"
       label="PNML Framework Place/Transition Nets Source"
-      version="2.2.6"
+      version="2.2.6.1"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.ptnet.source">
 

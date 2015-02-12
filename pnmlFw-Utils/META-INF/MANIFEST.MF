@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: %Bundle-Name
+Bundle-Name: PNML Framework Utils Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.utils;singleton:=true
-Bundle-Version: 2.2.6
+Bundle-Version: 2.2.6.1
 Export-Package: fr.lip6.move.pnml.framework.general,
  fr.lip6.move.pnml.framework.hlapi;uses:="fr.lip6.move.pnml.framework.utils,org.apache.axiom.om,org.eclipse.emf.common.util",
  fr.lip6.move.pnml.framework.utils,
@@ -16,4 +16,4 @@ Require-Bundle: org.eclipse.ocl.ecore;visibility:=reexport,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Eclipse-BuddyPolicy: registered
-Bundle-Vendor: %Vendor-Name
+Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)

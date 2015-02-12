@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.coremodel.feature"
       label="PNML Framework Core Model"
-      version="2.2.6"
+      version="2.2.6.1"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.coremodel">
 

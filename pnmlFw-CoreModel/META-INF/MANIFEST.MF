@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Localization: OSGI-INF/l10n/bundle
-Bundle-Name: %Bundle-Name
+Bundle-Name: PNML Framework Core Model Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.coremodel;singleton:=true
-Bundle-Version: 2.2.6
+Bundle-Version: 2.2.6.1
 Bundle-ClassPath: .
-Bundle-Vendor: %Provider-Name
+Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: fr.lip6.move.pnml.pnmlcoremodel,
