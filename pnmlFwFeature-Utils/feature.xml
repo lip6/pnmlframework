@@ -38,7 +38,7 @@ http://www.eclipse.org/legal/epl-v10.html
       <import plugin="org.eclipse.ocl.ecore"/>
       <import plugin="org.eclipse.emf.codegen.ecore"/>
       <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.2" match="greaterOrEqual"/>
    </requires>
 
    <plugin
