@@ -538,7 +538,7 @@
 		<profile>
 			<id>all</id>
 			<modules>
-				<!-- <module>../pnmlFw-3rdPartyDependencies</module> -->
+				<module>../pnmlFw-3rdPartyDependencies</module>
 				<module>../pnmlFw-Utils</module>
 				<module>../pnmlFw-Utils.tests</module>
 
