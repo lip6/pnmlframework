@@ -185,7 +185,9 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
+		<!--  
 		<finalName>${project.artifactId}_${project.version}-${maven.build.timestamp}</finalName>
+		-->
 		<extensions>
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
