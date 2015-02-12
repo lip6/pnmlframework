@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
-      <category name="Utilities and 3rd party libraries"/>
-   </feature>
    <feature url="features/fr.lip6.pnml.framework.utils.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.utils.feature" version="2.2.6.1">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
@@ -38,6 +35,9 @@
    </feature>
    <feature url="features/fr.lip6.pnml.framework.utils.feature.source_2.2.6.1.jar" id="fr.lip6.pnml.framework.utils.feature.source" version="2.2.6.1">
       <category name="Source"/>
+   </feature>
+   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
+      <category name="Utilities and 3rd party libraries"/>
    </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
