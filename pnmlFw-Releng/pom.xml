@@ -557,8 +557,8 @@
 				<module>../pnmlFwFeature-SNNet-Source</module>
 				<module>../pnmlFwFeature-HLPN</module>
 				<module>../pnmlFwFeature-HLPN-Source</module>
-				<module>../pnmlFwFeature-PT-HLPNG</module>
-				<module>../pnmlFwFeature-PT-HLPNG-Source</module>
+				<module>../pnmlFWFeature-PT-HLPNG</module>
+				<module>../pnmlFWFeature-PT-HLPNG-Source</module>
 
 				<module>../PnmlFramework_UpdateSite</module>
 				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
