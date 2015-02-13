@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.pnml.framework"
+      id="fr.lip6.pnml.framework.sdk"
       label="PNML Framework SDK"
       version="2.2.6.qualifier"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)">
