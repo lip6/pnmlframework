@@ -1724,5 +1724,5 @@ Export-Package: ch.qos.logback.classic;
  org.slf4j.impl;uses:="org.slf4j,org.slf4j.spi",
  org.slf4j.spi;uses:="org.slf4j"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Bundle-Vendor: Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)
+Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ActivationPolicy: lazy

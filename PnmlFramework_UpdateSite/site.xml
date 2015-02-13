@@ -21,6 +21,9 @@
    <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
+   <feature url="features/fr.lip6.pnml.framework.sdk_2.2.6.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.6.qualifier">
+      <category name="PNML Framework SDK"/>
+   </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
          Utilities and 3rd party libraries for PNML Framework.
@@ -29,6 +32,11 @@
    <category-def name="Petri net types" label="Petri net types">
       <description>
          Libraries to import/export Petri Net models in PNML (ISO/IEC 15909-2). Compliance with Petri Net Types defined by the PNML Standard: P/T Nets, Symmetric Nets, High-Level Petri Nets, and P/T Nets in High-level notation.
+      </description>
+   </category-def>
+   <category-def name="PNML Framework SDK" label="PNML Framework SDK">
+      <description>
+         The complete PNML Framework SDK (all the libraries, sources included).
       </description>
    </category-def>
 </site>

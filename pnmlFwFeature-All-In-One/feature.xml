@@ -3,15 +3,14 @@
       id="fr.lip6.pnml.framework.sdk"
       label="PNML Framework SDK"
       version="2.2.6.qualifier"
-      provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)">
+      provider-name="Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)">
 
    <description url="http://www.lip6.fr/pnml">
       PNML Framework is a library to help Petri net tools handle Petri
-Net Markup Language models, compliant with the ISO/IEC 15909
-Standard.
-It thus enables them to create, save, load and fetch PNML models.
-NB: This plugin requires Eclipse Modeling Framework (EMF). 
-Therefore, you must also have EMF included in your Eclipse distribution.
+Net Markup Language models, compliant with the ISO/IEC 15909 Standard.
+It thus enables Petri net tools to create, save, load and fetch PNML models.
+
+NB: This plugin requires Eclipse Modeling Framework (EMF), therefore, you must also have EMF included in your Eclipse distribution.
 
 This feature brands the complete PNML Framework library.
    </description>
