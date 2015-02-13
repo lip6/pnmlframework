@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="fr.lip6.pnml.framework"
-      label="PNML Framework All-In-One"
+      label="PNML Framework SDK"
       version="2.2.6.qualifier"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)">
 
@@ -11,9 +11,9 @@ Net Markup Language models, compliant with the ISO/IEC 15909
 Standard.
 It thus enables them to create, save, load and fetch PNML models.
 NB: This plugin requires Eclipse Modeling Framework (EMF). 
-Therefore, you must also point the Eclipse update manager to
-EMF&apos;s update site.
-This feature brands the complete PNML Framework library
+Therefore, you must also have EMF included in your Eclipse distribution.
+
+This feature brands the complete PNML Framework library.
    </description>
 
    <copyright url="http://www.example.com/copyright">

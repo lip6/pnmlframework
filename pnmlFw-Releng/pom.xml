@@ -562,6 +562,7 @@
 				<module>../pnmlFWFeature-PT-HLPNG</module>
 				<module>../pnmlFWFeature-PT-HLPNG-Source</module>
 
+				<module>../pnmlFwFeature-SDK</module>
 				<module>../PnmlFramework_UpdateSite</module>
 				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
 			</modules>

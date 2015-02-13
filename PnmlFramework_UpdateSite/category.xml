@@ -39,6 +39,9 @@
    <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
+   <feature url="features/fr.lip6.pnml.framework_2.2.6.qualifier.jar" id="fr.lip6.pnml.framework" version="2.2.6.qualifier">
+      <category name="PNML Framework SDK"/>
+   </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
          Utilities and 3rd party libraries for PNML Framework.
@@ -53,6 +56,11 @@
    <category-def name="Source" label="PNML Framework Source">
       <description>
          PNML Framework Source
+      </description>
+   </category-def>
+   <category-def name="PNML Framework SDK" label="PNML Framework SDK">
+      <description>
+         Everything from the other categories is packaged in this SDK one, the sources included.
       </description>
    </category-def>
 </site>
