@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.framework.ptnet.feature</artifactId>
-	<version>${pnml.release}</version>
+
 	<packaging>eclipse-feature</packaging>
 
 	<name>PNML Framework - P/T Nets Feature</name>

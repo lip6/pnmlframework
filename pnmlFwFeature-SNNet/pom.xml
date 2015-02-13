@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.framework.symmetricnet.feature</artifactId>
-	<version>${pnml.release}</version>
+
 	<packaging>eclipse-feature</packaging>
 
 	<name>PNML Framework - Symmtric Nets Feature</name>

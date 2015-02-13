@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
@@ -10,12 +11,10 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.framework.coremodel.feature.source</artifactId>
-	<version>${pnml.release}</version>
 	<packaging>eclipse-feature</packaging>
 	<name>PNML Framework - Core Model Source Feature</name>
 	<description>
 		PNML Framework Core Model Source
 	</description>
 
-	
 </project>

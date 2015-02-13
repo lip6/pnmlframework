@@ -12,8 +12,10 @@
 	<artifactId>fr.lip6.pnml.check</artifactId>
 
 	<name>PNML Document Checker</name>
+	
 	<description>PNML Document Checker is a simple application to 
-		validate PNML documents against the standard specifications.</description>
+		validate PNML documents against the standard specifications.
+	</description>
 
 	<dependencies>
 		<dependency>

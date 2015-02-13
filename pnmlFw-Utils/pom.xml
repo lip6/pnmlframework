@@ -12,7 +12,6 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.framework.utils</artifactId>
-	<version>${pnml.release}</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<name>PNML Framework - Utils</name>
@@ -38,11 +37,6 @@
 					<pomDependencies>consider</pomDependencies>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>org.eclipse.tycho</groupId> <artifactId>tycho-compiler-plugin</artifactId> 
-				<configuration> <compilerArguments> <inlineJSR /> <enableJavadoc /> <encoding>UTF-8</encoding> 
-				</compilerArguments> </configuration> </plugin> -->
 		</plugins>
-
 	</build>
-
 </project>

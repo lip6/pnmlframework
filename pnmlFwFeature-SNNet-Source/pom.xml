@@ -1,8 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 
-		<parent>
+	<parent>
 		<groupId>fr.lip6.pnml</groupId>
 		<artifactId>framework.releng</artifactId>
 		<version>2.2.6.1</version>
@@ -10,14 +11,14 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.framework.symmetricnet.feature.source</artifactId>
-	<version>${pnml.release}</version>
+
 	<packaging>eclipse-feature</packaging>
-	
-	<name>PNML Framework - Symmtric Nets Source Feature</name>
+
+	<name>PNML Framework - Symmetric Nets Source Feature</name>
 	<description>
 		PNML Framework Symmetric Nets Source
 	</description>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>

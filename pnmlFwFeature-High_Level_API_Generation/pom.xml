@@ -11,7 +11,6 @@
 	</parent>
 	
 	<artifactId>apigen.feature</artifactId>
-	<version>${pnml.release}</version>
 	<packaging>eclipse-feature</packaging>
 	<name>Pnml Framework (API for code generation plugin)</name>
 	<description>
