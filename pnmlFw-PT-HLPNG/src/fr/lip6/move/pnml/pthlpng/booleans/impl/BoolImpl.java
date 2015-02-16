@@ -88,6 +88,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -126,6 +127,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -134,7 +136,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		BooleansFactory fact = BooleansFactoryImpl.eINSTANCE;
+		BooleansFactory fact = BooleansFactory.eINSTANCE;
 
 		//processing id
 
@@ -149,6 +151,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -224,6 +227,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -234,6 +238,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {

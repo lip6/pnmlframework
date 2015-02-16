@@ -33,60 +33,37 @@
  */
 package fr.lip6.move.pnml.pthlpng.booleans.hlapi;
 
-import fr.lip6.move.pnml.pthlpng.booleans.BooleanConstant;
-import fr.lip6.move.pnml.pthlpng.booleans.Equality;
-import fr.lip6.move.pnml.pthlpng.booleans.Inequality;
+import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.axiom.om.OMElement;
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.pthlpng.booleans.BooleansFactory;
 import fr.lip6.move.pnml.pthlpng.booleans.Or;
-
 import fr.lip6.move.pnml.pthlpng.booleans.impl.BooleansFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.dots.impl.DotsFactoryImpl;
-
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking;
-
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
-
-import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
-
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.ConditionHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.HLAnnotationHLAPI;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.HLMarkingHLAPI;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
-
-import fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionsFactoryImpl;
-
+import fr.lip6.move.pnml.pthlpng.partitions.hlapi.PartitionElementHLAPI;
 import fr.lip6.move.pnml.pthlpng.terms.NamedOperator;
 import fr.lip6.move.pnml.pthlpng.terms.Operator;
 import fr.lip6.move.pnml.pthlpng.terms.Sort;
 import fr.lip6.move.pnml.pthlpng.terms.Term;
-
-import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
-
-import java.util.List;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
-import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.pthlpng.booleans.*;
-import fr.lip6.move.pnml.pthlpng.booleans.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.NamedOperatorHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.OperatorHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.SortHLAPI;
+import fr.lip6.move.pnml.pthlpng.terms.hlapi.TermHLAPI;
 
 
 public class OrHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{

@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:49 CET 2014$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
-import  fr.lip6.move.pnml.pthlpng.hlcorestructure.*;
+import fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontWeight;
 public enum CSS2FontWeightHLAPI{
 	NORMAL("NORMAL"),
 	BOLD("BOLD"),

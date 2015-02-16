@@ -66,5 +66,6 @@ public abstract class BuiltInConstantImpl extends OperatorImpl implements BuiltI
 		return TermsPackage.Literals.BUILT_IN_CONSTANT;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //BuiltInConstantImpl

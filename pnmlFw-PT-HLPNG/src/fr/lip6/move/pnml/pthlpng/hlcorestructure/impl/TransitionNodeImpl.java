@@ -93,6 +93,7 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<RefTransition> getReferencingTransitions() {
 		if (referencingTransitions == null) {
 			referencingTransitions = new EObjectWithInverseResolvingEList<RefTransition>(RefTransition.class, this,
@@ -160,5 +161,6 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //TransitionNodeImpl

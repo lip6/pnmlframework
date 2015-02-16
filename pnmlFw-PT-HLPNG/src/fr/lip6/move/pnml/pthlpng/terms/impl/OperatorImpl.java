@@ -120,6 +120,7 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Term> getSubterm() {
 		if (subterm == null) {
 			subterm = new EObjectContainmentWithInverseEList<Term>(Term.class, this, TermsPackage.OPERATOR__SUBTERM,
@@ -133,6 +134,7 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getOutput() {
 		if (output != null && output.eIsProxy()) {
 			InternalEObject oldOutput = (InternalEObject) output;
@@ -160,6 +162,7 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOutput(Sort newOutput) {
 		Sort oldOutput = output;
 		output = newOutput;
@@ -172,6 +175,7 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Sort> getInput() {
 		if (input == null) {
 			input = new EObjectResolvingEList<Sort>(Sort.class, this, TermsPackage.OPERATOR__INPUT);
@@ -291,5 +295,6 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //OperatorImpl

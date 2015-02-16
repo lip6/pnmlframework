@@ -54,12 +54,16 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
  */
 public interface PartitionOperator extends BuiltInOperator {
 
+	@Override
 	public abstract String toPNML();
 
+	@Override
 	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException;
 
+	@Override
 	public abstract void toPNML(FileChannel fc);
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } // PartitionOperator

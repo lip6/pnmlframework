@@ -93,6 +93,7 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<RefPlace> getReferencingPlaces() {
 		if (referencingPlaces == null) {
 			referencingPlaces = new EObjectWithInverseResolvingEList<RefPlace>(RefPlace.class, this,
@@ -159,5 +160,6 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //PlaceNodeImpl

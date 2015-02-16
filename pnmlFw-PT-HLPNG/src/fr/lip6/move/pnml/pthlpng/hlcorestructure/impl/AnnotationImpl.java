@@ -90,6 +90,7 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getAnnotationgraphics() {
 		return annotationgraphics;
 	}
@@ -118,6 +119,7 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAnnotationgraphics(AnnotationGraphics newAnnotationgraphics) {
 		if (newAnnotationgraphics != annotationgraphics) {
 			NotificationChain msgs = null;
@@ -226,5 +228,6 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //AnnotationImpl

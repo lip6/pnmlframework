@@ -58,9 +58,9 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.booleans.Bool;
-import fr.lip6.move.pnml.pthlpng.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.booleans.BooleansFactory;
 import fr.lip6.move.pnml.pthlpng.dots.Dot;
-import fr.lip6.move.pnml.pthlpng.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.dots.DotsFactory;
 import fr.lip6.move.pnml.pthlpng.terms.MultisetSort;
 import fr.lip6.move.pnml.pthlpng.terms.NamedOperator;
 import fr.lip6.move.pnml.pthlpng.terms.ProductSort;
@@ -120,6 +120,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getSort() {
 		return sort;
 	}
@@ -148,6 +149,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSort(Sort newSort) {
 		if (newSort != sort) {
 			NotificationChain msgs = null;
@@ -169,6 +171,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NamedOperator getContainerNamedOperator() {
 		if (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR)
 			return null;
@@ -192,6 +195,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
@@ -334,6 +338,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -408,6 +413,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -416,7 +422,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		//1
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -425,7 +431,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -448,7 +454,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerVariableDecl(this);
@@ -458,7 +464,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerVariableDecl(this);
@@ -468,7 +474,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerVariableDecl(this);
@@ -478,7 +484,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setContainerVariableDecl(this);
@@ -488,7 +494,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setContainerVariableDecl(this);
@@ -503,6 +509,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -609,6 +616,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();

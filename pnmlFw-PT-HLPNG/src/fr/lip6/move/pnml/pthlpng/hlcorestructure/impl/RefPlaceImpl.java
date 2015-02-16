@@ -114,6 +114,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PlaceNode getRef() {
 		if (ref != null && ref.eIsProxy()) {
 			InternalEObject oldRef = (InternalEObject) ref;
@@ -160,6 +161,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRef(PlaceNode newRef) {
 		if (newRef != ref) {
 			NotificationChain msgs = null;
@@ -279,6 +281,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 1
@@ -339,7 +342,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -378,6 +381,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -386,7 +390,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -395,7 +399,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -406,7 +410,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		if (locRoot.getAttributeValue(new QName("ref")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("ref")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		//processing attributes
 
@@ -418,7 +422,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -428,7 +432,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -438,7 +442,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createNodeGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createNodeGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerNode(this);
@@ -468,6 +472,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 1
@@ -541,7 +546,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -607,6 +612,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -619,7 +625,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

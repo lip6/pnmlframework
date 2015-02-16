@@ -55,9 +55,9 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.booleans.Bool;
-import fr.lip6.move.pnml.pthlpng.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.booleans.BooleansFactory;
 import fr.lip6.move.pnml.pthlpng.dots.Dot;
-import fr.lip6.move.pnml.pthlpng.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.pthlpng.dots.DotsFactory;
 import fr.lip6.move.pnml.pthlpng.terms.MultisetSort;
 import fr.lip6.move.pnml.pthlpng.terms.ProductSort;
 import fr.lip6.move.pnml.pthlpng.terms.Sort;
@@ -114,6 +114,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getBasis() {
 		return basis;
 	}
@@ -142,6 +143,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setBasis(Sort newBasis) {
 		if (newBasis != basis) {
 			NotificationChain msgs = null;
@@ -248,6 +250,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -308,6 +311,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -316,7 +320,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -332,7 +336,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setMulti(this);
@@ -342,7 +346,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setMulti(this);
@@ -352,7 +356,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setMulti(this);
@@ -362,7 +366,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setMulti(this);
@@ -372,7 +376,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setMulti(this);
@@ -387,6 +391,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -479,6 +484,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -493,6 +499,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {

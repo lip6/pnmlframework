@@ -148,6 +148,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<PnObject> getObjects() {
 		if (objects == null) {
 			objects = new EObjectContainmentWithInverseEList<PnObject>(PnObject.class, this,
@@ -161,6 +162,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerPetriNet() {
 		if (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET)
 			return null;
@@ -183,6 +185,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
@@ -207,6 +210,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getNodegraphics() {
 		return nodegraphics;
 	}
@@ -235,6 +239,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNodegraphics(NodeGraphics newNodegraphics) {
 		if (newNodegraphics != nodegraphics) {
 			NotificationChain msgs = null;
@@ -257,6 +262,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Declaration> getDeclaration() {
 		if (declaration == null) {
 			declaration = new EObjectContainmentWithInverseEList<Declaration>(Declaration.class, this,
@@ -421,6 +427,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -474,7 +481,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -487,7 +494,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject> items = getObjects();
 			for (Iterator<PnObject> iterator = items.iterator(); iterator.hasNext();) {
-				PnObject item = (PnObject) iterator.next();
+				PnObject item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -512,7 +519,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -539,6 +546,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -547,7 +555,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		//0
 		//5
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -556,7 +564,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -571,7 +579,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -581,7 +589,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -591,7 +599,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("page")) {
 				Page item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createPage();
+				item = HlcorestructureFactory.eINSTANCE.createPage();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -601,7 +609,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("arc")) {
 				Arc item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createArc();
+				item = HlcorestructureFactory.eINSTANCE.createArc();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -611,7 +619,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("place")) {
 				Place item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createPlace();
+				item = HlcorestructureFactory.eINSTANCE.createPlace();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -621,7 +629,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("referenceTransition")) {
 				RefTransition item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createRefTransition();
+				item = HlcorestructureFactory.eINSTANCE.createRefTransition();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -631,7 +639,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("transition")) {
 				Transition item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createTransition();
+				item = HlcorestructureFactory.eINSTANCE.createTransition();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -641,7 +649,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("referencePlace")) {
 				RefPlace item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createRefPlace();
+				item = HlcorestructureFactory.eINSTANCE.createRefPlace();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -651,7 +659,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createNodeGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createNodeGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerPage(this);
@@ -661,7 +669,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createDeclaration();
+				item = HlcorestructureFactory.eINSTANCE.createDeclaration();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarationPage(this);
@@ -676,6 +684,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -742,7 +751,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -763,7 +772,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject> items = getObjects();
 			for (Iterator<PnObject> iterator = items.iterator(); iterator.hasNext();) {
-				PnObject item = (PnObject) iterator.next();
+				PnObject item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -796,7 +805,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -850,6 +859,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -862,7 +872,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -870,7 +880,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		if (getObjects() != null) {
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject> items = getObjects();
 			for (Iterator<PnObject> iterator = items.iterator(); iterator.hasNext();) {
-				PnObject item = (PnObject) iterator.next();
+				PnObject item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -882,7 +892,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		if (getDeclaration() != null) {
 			java.util.List<fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

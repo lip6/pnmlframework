@@ -67,5 +67,6 @@ public abstract class BooleanOperatorImpl extends BuiltInOperatorImpl implements
 		return BooleansPackage.Literals.BOOLEAN_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //BooleanOperatorImpl

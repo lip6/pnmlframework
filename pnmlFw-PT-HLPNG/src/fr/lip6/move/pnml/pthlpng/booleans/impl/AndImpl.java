@@ -101,6 +101,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -135,7 +136,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 
 			java.util.List<fr.lip6.move.pnml.pthlpng.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -170,6 +171,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -178,7 +180,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		BooleansFactory fact = BooleansFactoryImpl.eINSTANCE;
+		BooleansFactory fact = BooleansFactory.eINSTANCE;
 
 		//processing id
 
@@ -427,6 +429,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -474,7 +477,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pthlpng.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -544,6 +547,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -552,7 +556,7 @@ public class AndImpl extends BooleanOperatorImpl implements And {
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.pthlpng.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

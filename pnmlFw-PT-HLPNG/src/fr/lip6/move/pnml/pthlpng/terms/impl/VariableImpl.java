@@ -109,6 +109,7 @@ public class VariableImpl extends TermImpl implements Variable {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VariableDecl getVariableDecl() {
 		if (variableDecl != null && variableDecl.eIsProxy()) {
 			InternalEObject oldVariableDecl = (InternalEObject) variableDecl;
@@ -136,6 +137,7 @@ public class VariableImpl extends TermImpl implements Variable {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVariableDecl(VariableDecl newVariableDecl) {
 		VariableDecl oldVariableDecl = variableDecl;
 		variableDecl = newVariableDecl;
@@ -210,6 +212,7 @@ public class VariableImpl extends TermImpl implements Variable {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 1
@@ -255,6 +258,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -263,7 +267,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -275,7 +279,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		if (locRoot.getAttributeValue(new QName("refvariable")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("refvariable")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		//processing attributes
 
@@ -295,6 +299,7 @@ public class VariableImpl extends TermImpl implements Variable {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 1
@@ -377,6 +382,7 @@ public class VariableImpl extends TermImpl implements Variable {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
