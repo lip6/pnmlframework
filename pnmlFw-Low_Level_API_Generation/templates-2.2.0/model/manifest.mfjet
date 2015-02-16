@@ -21,7 +21,7 @@ Bundle-ClassPath: <%if (genModel.isRuntimeJar()) {%><%=genModel.getModelPluginID
 <%if (genModel.hasModelPluginClass()) {%>
 Bundle-Activator: <%=genModel.getQualifiedModelPluginClassName()%>$Implementation
 <%}%>
-Bundle-Vendor: %providerName
+Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-Localization: plugin
 <%if (genModel.getComplianceLevel() == GenJDKLevel.JDK50_LITERAL) {%>
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
