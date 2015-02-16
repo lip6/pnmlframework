@@ -31,7 +31,6 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.util;
 
-import fr.lip6.move.pnml.pnmlcoremodel.*;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;

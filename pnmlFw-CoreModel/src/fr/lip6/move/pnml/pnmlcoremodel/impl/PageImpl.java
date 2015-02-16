@@ -31,11 +31,6 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -45,6 +40,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
+
+import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -56,8 +53,14 @@ import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.*;
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pnmlcoremodel.Arc;
 import fr.lip6.move.pnml.pnmlcoremodel.Name;
 import fr.lip6.move.pnml.pnmlcoremodel.NodeGraphics;

@@ -31,17 +31,17 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel;
 
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.nio.channels.FileChannel;
 import java.util.List;
 
+import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.*;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
  * <!-- begin-user-doc -->

@@ -31,7 +31,6 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
-import fr.lip6.move.pnml.pnmlcoremodel.*;
 import java.net.URI;
 
 import org.eclipse.emf.ecore.EClass;
