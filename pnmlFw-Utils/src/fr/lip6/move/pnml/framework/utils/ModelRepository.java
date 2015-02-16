@@ -132,9 +132,10 @@ public final class ModelRepository {
 
 	/**
 	 * <p>Sets the current selected document workspace. This change is effective only if
-	 * parallel property is not set.</p> <p>In the situation where parallel property is set,
+	 * parallel property is not set.</p> 
+	 * <p>In the situation where the Mode Repository is in the parallel mode,
 	 * there is no central notion of current document workspace, except when retrieved
-	 * by the current thread, provided that its associated workspace was created using the thread id.
+	 * by the current thread, provided its associated workspace was created using the thread id.
 	 * </p>  
 	 * 
 	 * @param documentWSId
@@ -233,7 +234,7 @@ public final class ModelRepository {
 	 * associated (as {@link HLAPIRootClass}). This workspace becomes the
 	 * current one, if parallel property is not set.</p>
 	 * <p>If you set the parallel property to true, you should <strong>create each document
-	 * workspace using your thread id</strong>, to facilitate a best effort retrieval of the
+	 * workspace using your thread id</strong>, to facilitate later a best effort retrieval of the
 	 * workspace of that thread by the Model Repository.</p>
 	 * 
 	 * @param docWorkspaceId
@@ -278,10 +279,13 @@ public final class ModelRepository {
 	}
 
 	/**
-	 * Creates a new model workspace into the repository, with a PetriNetDoc
+	 * <p>Creates a new model workspace into the repository, with a PetriNetDoc
 	 * associated, as {@link HLAPIRootClass}. This model (and its workspace)
 	 * becomes the current active one in the model repository, if parallel
-	 * property is not set.
+	 * property is not set.</p>
+	 * <p>If you set the parallel property to true, you should <strong>create each document
+	 * workspace using your thread id</strong>, to facilitate a best effort retrieval of the
+	 * workspace of that thread by the Model Repository.</p>
 	 * 
 	 * @param docWorkspaceId
 	 *            an id to give to this document workspace
@@ -378,20 +382,22 @@ public final class ModelRepository {
 		if (!isParallel) {
 			if (currentDocWSId != null) {
 				documents.remove(currentDocWSId);
-				currentDocWSId = null; // NOPMD by ggiffo on 7/17/08 5:48 PM
 			}
 		} else { // best effort
 			String toBeRemoved = String.valueOf(Thread.currentThread().getId());
 			if (documents.containsKey(toBeRemoved)) {
 				documents.remove(toBeRemoved);
 			} 
-			currentDocWSId = null;
 		}
+		currentDocWSId = null; // NOPMD by ggiffo on 7/17/08 5:48 PM
 		return documents.size();
 	}
 
 	/**
-	 * Returns the IdRepository associated to the current workspace.
+	 * Returns the {@link IdRepository} associated to the current workspace.
+	 * <p>If the Model Repository in parallel model, will try to retrieve the Id Rpository
+	 * using the current thread id to first find the corresponding workspace, then fetch the 
+	 * associated Id Repository</p>
 	 * 
 	 * @return the model IdRepository
 	 * @throws VoidRepositoryException
