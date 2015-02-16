@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:47 CET 2014$
  */
 package fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi;
-import  fr.lip6.move.pnml.symmetricnet.hlcorestructure.*;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.FontAlign;
 public enum FontAlignHLAPI{
 	LEFT("left"),
 	CENTER("center"),

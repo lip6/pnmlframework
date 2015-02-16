@@ -24,9 +24,19 @@
  */
 package fr.lip6.move.pnml.symmetricnet.hlcorestructure.tools;
 
-import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.framework.utils.*;
-import fr.lip6.move.pnml.framework.utils.exception.*;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetDocHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PlaceHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PlaceNodeHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.RefPlaceHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.RefTransitionHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.TransitionHLAPI;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.TransitionNodeHLAPI;
 
 public class Tools {
 	 /**

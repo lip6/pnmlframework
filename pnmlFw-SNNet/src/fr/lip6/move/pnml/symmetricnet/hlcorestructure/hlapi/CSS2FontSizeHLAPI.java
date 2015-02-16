@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:47 CET 2014$
  */
 package fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi;
-import  fr.lip6.move.pnml.symmetricnet.hlcorestructure.*;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.CSS2FontSize;
 public enum CSS2FontSizeHLAPI{
 	XXSMALL("xxsmall"),
 	XSMALL("xsmall"),

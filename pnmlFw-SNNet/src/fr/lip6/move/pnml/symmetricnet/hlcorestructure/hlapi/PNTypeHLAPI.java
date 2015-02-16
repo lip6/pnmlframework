@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:47 CET 2014$
  */
 package fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi;
-import  fr.lip6.move.pnml.symmetricnet.hlcorestructure.*;
+import fr.lip6.move.pnml.symmetricnet.hlcorestructure.PNType;
 public enum PNTypeHLAPI{
 	SYMNET("http://www.pnml.org/version-2009/grammar/symmetricnet"),
 	COREMODEL("http://www.pnml.org/version-2009/grammar/pnmlcoremodel"),
