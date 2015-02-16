@@ -318,7 +318,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		} catch (VoidRepositoryException vre) {
 			throw new ValidationException(vre.getMessage(), vre.getCause());
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			throw new ValidationException(e.getMessage(), e.getCause());
 		}
 
