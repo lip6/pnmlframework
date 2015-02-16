@@ -645,7 +645,6 @@ public final class ModelRepository {
 	 * <p>
 	 * Consequently, any subsequent to workspace-specific method will not be
 	 * effective, and {@link #getCurrentDocWSId()} will return <code>null</code>
-	 * .
 	 * </p>
 	 * 
 	 * @param mode
