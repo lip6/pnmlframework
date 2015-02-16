@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/fr.lip6.pnml.framework.utils.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.utils.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.utils.feature_2.2.7.jar" id="fr.lip6.pnml.framework.utils.feature" version="2.2.7">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.coremodel.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.coremodel.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.coremodel.feature_2.2.7.jar" id="fr.lip6.pnml.framework.coremodel.feature" version="2.2.7">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.hlpn.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.hlpn.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.hlpn.feature_2.2.7.jar" id="fr.lip6.pnml.framework.hlpn.feature" version="2.2.7">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.pthlpng.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.pthlpng.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.pthlpng.feature_2.2.7.jar" id="fr.lip6.pnml.framework.pthlpng.feature" version="2.2.7">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.ptnet.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.ptnet.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.ptnet.feature_2.2.7.jar" id="fr.lip6.pnml.framework.ptnet.feature" version="2.2.7">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.symmetricnet.feature_2.2.6.1.jar" id="fr.lip6.pnml.framework.symmetricnet.feature" version="2.2.6.1">
+   <feature url="features/fr.lip6.pnml.framework.symmetricnet.feature_2.2.7.jar" id="fr.lip6.pnml.framework.symmetricnet.feature" version="2.2.7">
       <category name="Petri net types"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.2.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.2">
-      <category name="Utilities and 3rd party libraries"/>
-   </feature>
-   <feature url="features/fr.lip6.pnml.framework.sdk_2.2.6.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.6.qualifier">
+   <feature url="features/fr.lip6.pnml.framework.sdk_2.2.7.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.7.qualifier">
       <category name="PNML Framework SDK"/>
+   </feature>
+   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.7.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.7">
+      <category name="Utilities and 3rd party libraries"/>
    </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
