@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
-Bundle-SymbolicName: fr.lip6.move.pnml.framework.ptnet.feature.source;singleton:=true
-Bundle-Version: 2.2.6
+Bundle-SymbolicName: fr.lip6.pnml.framework.ptnet.feature.source;singleton:=true
+Bundle-Version: 2.2.7
 Bundle-Vendor: %Bundle-Vendor
 
