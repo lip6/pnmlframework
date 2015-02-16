@@ -16,7 +16,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: <%=genModel.getModelName()%>
 Bundle-SymbolicName: <%=genModel.getModelPluginID()%>;singleton:=true
-Bundle-Version: 2.2.0.qualifier
+Bundle-Version: 2.2.7
 Bundle-ClassPath: <%if (genModel.isRuntimeJar()) {%><%=genModel.getModelPluginID()%>.jar<%}else{%>.<%}%>
 <%if (genModel.hasModelPluginClass()) {%>
 Bundle-Activator: <%=genModel.getQualifiedModelPluginClassName()%>$Implementation
@@ -36,8 +36,10 @@ Export-Package: <%=pack%><%while(packagesIterator.hasNext()) { pack = packagesIt
 <%}%>
 <%Iterator<String> requiredPluginIterator = genModel.getModelRequiredPlugins().iterator(); if (requiredPluginIterator.hasNext()) { String pluginID = requiredPluginIterator.next();%>
 Require-Bundle: <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtime")){%>;visibility:=reexport<%} while(requiredPluginIterator.hasNext()) { pluginID = requiredPluginIterator.next();%>,
- <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtime")){%>;visibility:=reexport<%}}%>
+ <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtime")){%>;visibility:=reexport<%}}%>,
 <%}%>
+ fr.lip6.pnml.framework.utils,
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.7"
 <%if (genModel.getRuntimeVersion() == GenRuntimeVersion.EMF22 || genModel.getRuntimeVersion() == GenRuntimeVersion.EMF23) {%>
 Eclipse-LazyStart: true
 <%}%>
