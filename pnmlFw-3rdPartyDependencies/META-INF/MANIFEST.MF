@@ -18,7 +18,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
    org.slf4j,
@@ -42,7 +43,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    groovy.lang,
    ch.qos.logback.core.boolex",
@@ -60,7 +62,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.db.names,
    ch.qos.logback.classic.spi,
    ch.qos.logback.core.db",
@@ -78,7 +81,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  ch.qos.logback.classic.encoder;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -93,7 +97,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core.pattern",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core.pattern",
  ch.qos.logback.classic.filter;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -108,7 +113,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
    ch.qos.logback.classic,
@@ -127,7 +133,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.classic,
@@ -149,7 +156,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.servlet",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.servlet",
  ch.qos.logback.classic.html;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -164,7 +172,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.html,
    ch.qos.logback.core.pattern",
@@ -182,7 +191,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
@@ -203,7 +213,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.joran,
    ch.qos.logback.core.joran.spi",
  ch.qos.logback.classic.joran.action;
@@ -220,7 +231,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.joran.action,
    ch.qos.logback.classic,
@@ -240,7 +252,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
    ch.qos.logback.classic",
@@ -258,7 +271,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core",
  ch.qos.logback.classic.net;
@@ -275,7 +289,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
    org.slf4j,
@@ -304,7 +319,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.spi,
    ch.qos.logback.classic,
@@ -326,7 +342,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    org.slf4j,
    ch.qos.logback.core.util,
@@ -345,7 +362,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.pattern.color",
  ch.qos.logback.classic.selector;
@@ -362,7 +380,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.classic",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.classic",
  ch.qos.logback.classic.selector.servlet;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -377,7 +396,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.servlet",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.servlet",
  ch.qos.logback.classic.sift;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -392,7 +412,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.core.joran.action,
    ch.qos.logback.core.joran.event,
@@ -414,7 +435,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.classic,
    org.slf4j,
@@ -433,7 +455,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    org.slf4j,
    ch.qos.logback.classic,
@@ -453,7 +476,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.classic.spi,
    ch.qos.logback.classic,
    org.slf4j.spi,
@@ -474,7 +498,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.core.encoder,
@@ -495,7 +520,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.janino,
    ch.qos.logback.core.spi",
  ch.qos.logback.core.db;
@@ -512,7 +538,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.joran.action,
    ch.qos.logback.core,
@@ -534,7 +561,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core.spi",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core.spi",
  ch.qos.logback.core.encoder;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -549,7 +577,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core",
  ch.qos.logback.core.filter;
@@ -566,7 +595,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.boolex",
  ch.qos.logback.core.helpers;
@@ -583,7 +613,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core",
  ch.qos.logback.core.html;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -598,7 +629,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core,
    ch.qos.logback.core.pattern",
  ch.qos.logback.core.joran;
@@ -615,7 +647,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core,
    org.xml.sax,
@@ -634,7 +667,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.util,
    ch.qos.logback.core,
@@ -657,7 +691,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.joran.action,
    ch.qos.logback.core.spi,
    ch.qos.logback.core.joran.event,
@@ -677,7 +712,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    org.xml.sax.helpers,
@@ -698,7 +734,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.core.joran.action,
@@ -719,7 +756,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.core.util,
@@ -739,7 +777,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core",
  ch.qos.logback.core.net;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -754,7 +793,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.net.ssl,
    ch.qos.logback.core.util,
@@ -781,7 +821,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.net.ssl,
    ch.qos.logback.core,
@@ -800,7 +841,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.joran.spi,
    javax.net.ssl,
@@ -819,7 +861,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.core.encoder,
@@ -838,7 +881,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core.pattern",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core.pattern",
  ch.qos.logback.core.pattern.parser;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -853,7 +897,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.pattern,
    ch.qos.logback.core.pattern.util",
@@ -871,7 +916,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  ch.qos.logback.core.property;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -886,7 +932,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core",
  ch.qos.logback.core.read;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -901,7 +948,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.helpers,
    ch.qos.logback.core",
  ch.qos.logback.core.recovery;
@@ -918,7 +966,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core",
  ch.qos.logback.core.rolling;
@@ -935,7 +984,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core.rolling.helper,
    ch.qos.logback.core.util,
@@ -954,7 +1004,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core,
    ch.qos.logback.core.pattern",
@@ -972,7 +1023,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    ch.qos.logback.core,
    ch.qos.logback.core.util,
@@ -992,7 +1044,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.filter,
    ch.qos.logback.core,
@@ -1011,7 +1064,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.spi,
    javax.servlet.http,
    ch.qos.logback.core",
@@ -1029,7 +1083,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="ch.qos.logback.core.spi",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="ch.qos.logback.core.spi",
  ch.qos.logback.core.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1044,7 +1099,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="ch.qos.logback.core.status,
    ch.qos.logback.core.spi,
    ch.qos.logback.core",
@@ -1062,7 +1118,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.io,
    org.codehaus.stax2,
    javax.xml.stream,
@@ -1086,7 +1143,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.stream",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.stream",
  com.ctc.wstx.compat;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1101,7 +1159,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.namespace",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.namespace",
  com.ctc.wstx.dom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1116,7 +1175,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    javax.xml.namespace,
    com.ctc.wstx.sw,
@@ -1138,7 +1198,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.stream,
    com.ctc.wstx.ent,
    org.codehaus.stax2.validation,
@@ -1161,7 +1222,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.stream,
    com.ctc.wstx.evt,
    com.ctc.wstx.io,
@@ -1180,7 +1242,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.ri.evt,
    org.codehaus.stax2,
    javax.xml.stream,
@@ -1205,7 +1268,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.validation,
    javax.xml.stream",
  com.ctc.wstx.io;
@@ -1222,7 +1286,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2,
    javax.xml.stream,
    com.ctc.wstx.util,
@@ -1241,7 +1306,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    com.sun.msv.grammar.xmlschema,
    com.sun.msv.verifier,
@@ -1270,7 +1336,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.osgi,
    org.codehaus.stax2.validation,
    org.osgi.framework,
@@ -1289,7 +1356,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    javax.xml.stream,
@@ -1313,7 +1381,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.codehaus.stax2,
    com.ctc.wstx.exc,
@@ -1344,7 +1413,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2,
    javax.xml.stream,
    com.ctc.wstx.dtd,
@@ -1373,7 +1443,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2,
    javax.xml.stream,
    org.codehaus.stax2.typed,
@@ -1400,7 +1471,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    javax.xml.stream,
    com.ctc.wstx.dtd,
@@ -1426,7 +1498,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.sun.org.apache.bcel.internal;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1441,7 +1514,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.sun.org.apache.bcel.internal.verifier;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1456,7 +1530,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.swing.event,
    javax.swing",
  com.sun.org.apache.bcel.internal.verifier.exc;
@@ -1473,7 +1548,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.sun.org.apache.bcel.internal.verifier.statics;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1488,7 +1564,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.sun.org.apache.bcel.internal.generic,
    com.sun.org.apache.bcel.internal.classfile,
    com.sun.org.apache.bcel.internal,
@@ -1507,7 +1584,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.sun.org.apache.bcel.internal.generic,
    com.sun.org.apache.bcel.internal,
    com.sun.org.apache.bcel.internal.verifier",
@@ -1525,7 +1603,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.xml.sax,
    org.w3c.dom.html,
@@ -1544,7 +1623,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.sun.org.apache.xalan.internal.client;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1559,7 +1639,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.transform",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.transform",
  com.sun.org.apache.xalan.internal.processor;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1574,7 +1655,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.sun.org.apache.xml.internal.utils,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -1597,7 +1679,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.sun.org.apache.xpath.internal.objects,
    com.sun.org.apache.xml.internal.dtm,
    com.sun.org.apache.xml.internal.serializer,
@@ -1617,7 +1700,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.sun.org.apache.xml.internal.utils,
    com.sun.org.apache.xpath.internal.objects,
    org.w3c.dom,
@@ -1639,7 +1723,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    com.sun.org.apache.xpath.internal.objects,
    org.xml.sax.helpers,
@@ -1673,7 +1758,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.sun.org.apache.xalan.internal.xsltc.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1688,7 +1774,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.thaiopensource.datatype;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1703,7 +1790,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.relaxng.datatype",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.relaxng.datatype",
  com.thaiopensource.datatype.xsd;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1718,7 +1806,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    com.thaiopensource.datatype,
    com.thaiopensource.datatype.xsd.regex,
@@ -1737,7 +1826,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.thaiopensource.datatype.xsd.regex.java;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1752,7 +1842,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.datatype.xsd.regex,
    com.thaiopensource.util",
  com.thaiopensource.datatype.xsd.regex.xerces2;
@@ -1769,7 +1860,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.impl.xpath.regex,
    com.thaiopensource.datatype.xsd.regex",
  com.thaiopensource.relaxng;
@@ -1786,7 +1878,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    com.thaiopensource.xml.sax,
    org.xml.sax,
@@ -1805,7 +1898,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    com.thaiopensource.relaxng.pattern,
    javax.xml.validation,
@@ -1828,7 +1922,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    com.thaiopensource.resolver.xml.sax,
    org.xml.sax,
@@ -1848,7 +1943,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    org.xml.sax,
    com.thaiopensource.resolver,
@@ -1867,7 +1963,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax,
    com.thaiopensource.relaxng.parse,
    com.thaiopensource.resolver,
@@ -1886,7 +1983,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    org.relaxng.datatype,
    com.thaiopensource.xml.sax,
@@ -1908,7 +2006,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.relaxng.datatype,
    new com.thaiopensource.relaxng.pattern,
    com.thaiopensource.datatype,
@@ -1931,7 +2030,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.relaxng.pattern,
    org.xml.sax,
    com.thaiopensource.relaxng.match,
@@ -1950,7 +2050,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.xml.sax,
    org.xml.sax,
    com.thaiopensource.validate,
@@ -1970,7 +2071,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.thaiopensource.resolver.catalog;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -1985,7 +2087,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    org.xml.sax,
    org.apache.xml.resolver,
@@ -2004,7 +2107,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="com.thaiopensource.resolver",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="com.thaiopensource.resolver",
  com.thaiopensource.resolver.xml;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2019,7 +2123,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="com.thaiopensource.resolver",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="com.thaiopensource.resolver",
  com.thaiopensource.resolver.xml.ls;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2034,7 +2139,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom.ls,
    com.thaiopensource.resolver",
  com.thaiopensource.resolver.xml.sax;
@@ -2051,7 +2157,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2070,7 +2177,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2090,7 +2198,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.thaiopensource.validate;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2105,7 +2214,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2124,7 +2234,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.transform.sax,
    org.xml.sax,
    com.thaiopensource.validate,
@@ -2143,7 +2254,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.iso_relax.verifier,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2163,7 +2275,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    org.xml.sax,
    com.thaiopensource.xml.util,
@@ -2184,7 +2297,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2206,7 +2320,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2228,7 +2343,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    com.thaiopensource.xml.sax,
    org.xml.sax,
@@ -2249,7 +2365,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.validate,
    com.thaiopensource.util",
  com.thaiopensource.validate.prop.schematron;
@@ -2266,7 +2383,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="new com.thaiopensource.validate.prop.schematron,
    com.thaiopensource.validate",
  com.thaiopensource.validate.prop.wrap;
@@ -2283,7 +2401,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="com.thaiopensource.util",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="com.thaiopensource.util",
  com.thaiopensource.validate.rng;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2298,7 +2417,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    javax.xml.transform.sax,
    org.xml.sax,
@@ -2321,7 +2441,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="com.thaiopensource.resolver.xml.sax,
    com.thaiopensource.relaxng.pattern,
    com.thaiopensource.relaxng.sax,
@@ -2345,7 +2466,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    com.thaiopensource.xml.sax,
    javax.xml.transform.sax,
@@ -2367,7 +2489,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni.grammars,
    org.apache.xerces.xni,
    org.apache.xerces.util,
@@ -2391,7 +2514,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.validation,
    org.w3c.dom.ls,
    javax.xml.transform.sax,
@@ -2411,7 +2535,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  com.thaiopensource.xml.sax;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2426,7 +2551,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax",
  com.thaiopensource.xml.util;
@@ -2443,7 +2569,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  java_cup.runtime;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2458,7 +2585,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  javax.mail;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2473,7 +2601,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.mail.event,
    javax.mail.search,
    javax.activation",
@@ -2491,7 +2620,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.mail",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.mail",
  javax.mail.internet;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2506,7 +2636,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.mail,
    javax.activation",
  javax.mail.search;
@@ -2523,7 +2654,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.mail",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.mail",
  javax.mail.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2538,7 +2670,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.mail.internet,
    javax.activation",
  jp.gr.xml.relax.dom;
@@ -2555,7 +2688,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.w3c.dom",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.w3c.dom",
  jp.gr.xml.relax.sax;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2570,7 +2704,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.w3c.dom,
    org.xml.sax,
@@ -2589,7 +2724,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="jp.co.swiftinc.relax.verifier,
    jp.co.swiftinc.relax.schema,
    org.iso_relax.verifier,
@@ -2609,7 +2745,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  lpg.lpgjavaruntime;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2624,7 +2761,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  net.sf.saxon;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2639,7 +2777,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.tree,
    net.sf.saxon.sort,
@@ -2673,7 +2812,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="net.sf.saxon",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="net.sf.saxon",
  net.sf.saxon.codenorm;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2688,7 +2828,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="net.sf.saxon.sort",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="net.sf.saxon.sort",
  net.sf.saxon.event;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2703,7 +2844,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    net.sf.saxon.sort,
    net.sf.saxon.expr,
@@ -2729,7 +2871,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.sort,
    net.sf.saxon.type,
    javax.xml.transform,
@@ -2757,7 +2900,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.value,
    net.sf.saxon.om",
@@ -2775,7 +2919,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.sort,
    net.sf.saxon.query,
@@ -2803,7 +2948,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.sort,
    net.sf.saxon.query,
@@ -2833,7 +2979,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="net.sf.saxon.om",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="net.sf.saxon.om",
  net.sf.saxon.om;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2848,7 +2995,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.type,
    javax.xml.transform,
@@ -2872,7 +3020,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.sort,
    net.sf.saxon.type,
@@ -2895,7 +3044,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    javax.xml.stream,
    net.sf.saxon.instruct,
@@ -2919,7 +3069,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.type,
    javax.xml.transform,
@@ -2946,7 +3097,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="net.sf.saxon.om",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="net.sf.saxon.om",
  net.sf.saxon.sort;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -2961,7 +3113,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.type,
    net.sf.saxon.instruct,
@@ -2984,7 +3137,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.tree,
    net.sf.saxon.sort,
@@ -3016,7 +3170,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon,
    net.sf.saxon.om,
@@ -3037,7 +3192,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.value,
    net.sf.saxon,
    net.sf.saxon.om,
@@ -3059,7 +3215,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.om,
    net.sf.saxon.event",
@@ -3077,7 +3234,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.type,
    javax.xml.transform,
@@ -3102,7 +3260,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.value,
    net.sf.saxon,
    net.sf.saxon.om,
@@ -3123,7 +3282,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.value,
    org.xml.sax,
@@ -3144,7 +3304,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="net.sf.saxon.expr,
    net.sf.saxon.type,
    javax.xml.transform,
@@ -3166,7 +3327,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    nu.xom.jaxen,
    org.xml.sax,
@@ -3186,7 +3348,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom",
  nu.xom.converters;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3201,7 +3364,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    nu.xom,
    org.w3c.dom,
@@ -3220,7 +3384,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="nu.xom.jaxen.expr,
    nu.xom.jaxen.saxpath",
  nu.xom.jaxen.expr;
@@ -3237,7 +3402,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="nu.xom.jaxen.expr.iter,
    nu.xom.jaxen",
  nu.xom.jaxen.expr.iter;
@@ -3254,7 +3420,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen",
  nu.xom.jaxen.function;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3269,7 +3436,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen",
  nu.xom.jaxen.function.ext;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3284,7 +3452,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen",
  nu.xom.jaxen.function.xslt;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3299,7 +3468,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen",
  nu.xom.jaxen.saxpath;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3314,7 +3484,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  nu.xom.jaxen.saxpath.base;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3329,7 +3500,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen.saxpath",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen.saxpath",
  nu.xom.jaxen.saxpath.helpers;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3344,7 +3516,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen.saxpath",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen.saxpath",
  nu.xom.jaxen.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3359,7 +3532,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom.jaxen",
  nu.xom.tests;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3374,7 +3548,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="nu.xom,
    junit.framework",
  nu.xom.xinclude;
@@ -3391,7 +3566,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="nu.xom",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="nu.xom",
  nu.xom.xslt;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3406,7 +3582,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    nu.xom,
    javax.xml.transform.sax,
@@ -3425,7 +3602,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.mail.internet,
    org.apache.axiom.attachments.lifecycle,
@@ -3447,7 +3625,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.attachments.utils,
    javax.activation",
  org.apache.axiom.attachments.lifecycle;
@@ -3464,7 +3643,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.axiom.attachments.lifecycle.impl",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.axiom.attachments.lifecycle.impl",
  org.apache.axiom.attachments.lifecycle.impl;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3479,7 +3659,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.commons.logging,
    org.apache.axiom.attachments.lifecycle,
    javax.activation",
@@ -3497,7 +3678,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.axiom.ext.io",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.axiom.ext.io",
  org.apache.axiom.c14n;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3512,7 +3694,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.c14n.omwrapper.interfaces",
  org.apache.axiom.c14n.exceptions;
@@ -3529,7 +3712,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.axiom.c14n.helpers;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3544,7 +3728,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.axiom.c14n.omwrapper.interfaces",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.axiom.c14n.omwrapper.interfaces",
  org.apache.axiom.c14n.impl;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3559,7 +3744,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.c14n,
    org.apache.axiom.c14n.omwrapper.interfaces,
    org.apache.axiom.c14n.helpers",
@@ -3577,7 +3763,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.c14n.omwrapper.factory,
    org.apache.axiom.c14n.omwrapper.interfaces",
@@ -3595,7 +3782,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.c14n.omwrapper.interfaces",
  org.apache.axiom.c14n.omwrapper.interfaces;
@@ -3612,7 +3800,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.axiom.c14n.utils;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3627,7 +3816,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.axiom.ext.activation;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3642,7 +3832,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.activation",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.activation",
  org.apache.axiom.ext.io;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3657,7 +3848,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.axiom.ext.stax;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3672,7 +3864,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.stream",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.stream",
  org.apache.axiom.ext.stax.datahandler;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3687,7 +3880,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.activation",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.activation",
  org.apache.axiom.locator;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3702,7 +3896,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.osgi.framework,
    org.apache.axiom.om,
    org.osgi.util.tracker",
@@ -3720,7 +3915,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.axiom.om",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.axiom.om",
  org.apache.axiom.mime;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3735,7 +3931,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.activation",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.activation",
  org.apache.axiom.mime.impl.axiom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -3750,7 +3947,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.mime,
    javax.activation",
  org.apache.axiom.mime.impl.javamail;
@@ -3767,7 +3965,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.mime,
    javax.activation",
  org.apache.axiom.om;
@@ -3784,7 +3983,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.soap,
    org.w3c.dom,
@@ -3812,7 +4012,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.w3c.dom,
    javax.xml.parsers",
@@ -3830,7 +4031,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.namespace,
    org.apache.commons.logging,
@@ -3851,7 +4053,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.stream,
    org.apache.axiom.om.impl.builder",
@@ -3869,7 +4072,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.util.stax.xop,
    org.apache.axiom.om.ds,
@@ -3892,7 +4096,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.om,
    org.apache.axiom.util.activation,
@@ -3918,7 +4123,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.om,
@@ -3945,7 +4151,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.om,
    org.w3c.dom,
@@ -3975,7 +4182,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.locator.loader,
    org.apache.axiom.om,
@@ -4009,7 +4217,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.w3c.dom,
    javax.xml.validation,
@@ -4029,7 +4238,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.axiom.om",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.axiom.om",
  org.apache.axiom.om.impl.jaxp;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4044,7 +4254,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.transform.sax",
  org.apache.axiom.om.impl.llom;
@@ -4061,7 +4272,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.om,
    javax.xml.transform.sax,
@@ -4089,7 +4301,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.locator.loader,
    org.apache.axiom.om,
@@ -4121,7 +4334,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.om.util,
    org.apache.axiom.util.namespace",
@@ -4139,7 +4353,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.stream,
    org.apache.axiom.util.sax,
@@ -4158,7 +4373,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.namespace",
  org.apache.axiom.om.impl.util;
@@ -4175,7 +4391,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.stream",
  org.apache.axiom.om.util;
@@ -4192,7 +4409,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.util.base64,
    org.apache.axiom.soap,
@@ -4218,7 +4436,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.bind",
  org.apache.axiom.om.xpath;
@@ -4235,7 +4454,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.jaxen",
  org.apache.axiom.soap;
@@ -4252,7 +4472,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    javax.xml.namespace",
  org.apache.axiom.soap.impl.builder;
@@ -4269,7 +4490,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    org.apache.axiom.util.stax.xop,
@@ -4291,7 +4513,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    org.w3c.dom,
@@ -4311,7 +4534,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    org.apache.axiom.soap.impl.builder,
@@ -4330,7 +4554,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.soap.impl.dom,
    org.apache.axiom.om,
    org.apache.axiom.soap,
@@ -4353,7 +4578,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.soap.impl.dom,
    org.apache.axiom.om,
    org.apache.axiom.soap,
@@ -4376,7 +4602,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    javax.xml.stream,
@@ -4395,7 +4622,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    javax.xml.namespace,
@@ -4417,7 +4645,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.om,
    org.apache.axiom.soap,
    javax.xml.namespace,
@@ -4439,7 +4668,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.axiom.util.activation;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4454,7 +4684,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.activation,
    javax.activation",
  org.apache.axiom.util.base64;
@@ -4471,7 +4702,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.activation",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.activation",
  org.apache.axiom.util.blob;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4486,7 +4718,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.activation,
    org.apache.axiom.ext.io",
  org.apache.axiom.util.jaxb;
@@ -4503,7 +4736,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.util.stax.xop,
    javax.xml.stream,
    javax.xml.bind.attachment,
@@ -4522,7 +4756,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.namespace",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.namespace",
  org.apache.axiom.util.sax;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4537,7 +4772,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax",
  org.apache.axiom.util.stax;
@@ -4554,7 +4790,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    javax.xml.namespace,
    javax.xml.stream,
@@ -4573,7 +4810,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.util.stax.wrapper,
    org.apache.commons.logging,
    javax.xml.stream",
@@ -4591,7 +4829,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.util.stax.wrapper,
    javax.xml.namespace,
    javax.xml.stream,
@@ -4613,7 +4852,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.namespace,
    javax.xml.stream,
    javax.xml.stream.util,
@@ -4632,7 +4872,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.axiom.ext.stax.datahandler,
    org.apache.axiom.util.stax.wrapper,
    javax.xml.namespace,
@@ -4652,7 +4893,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.commons.logging.impl;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4667,7 +4909,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.slf4j,
    org.apache.avalon.framework.logger,
    javax.servlet,
@@ -4689,7 +4932,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.osgi.framework,
    org.osgi.util.tracker,
    org.apache.geronimo.osgi.locator",
@@ -4707,7 +4951,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.activation",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.activation",
  org.apache.geronimo.mail.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4722,7 +4967,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.mail",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.mail",
  org.apache.geronimo.osgi.locator;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4737,7 +4983,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.osgi.framework",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.osgi.framework",
  org.apache.geronimo.osgi.registry;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4752,7 +4999,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.osgi.framework,
    org.apache.geronimo.osgi.registry.api,
    org.osgi.util.tracker",
@@ -4770,7 +5018,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.geronimo.specs.activation;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4785,7 +5034,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.osgi.framework,
    org.osgi.util.tracker,
    org.apache.geronimo.osgi.locator",
@@ -4803,7 +5053,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.dom,
    org.w3c.dom,
    org.xml.sax,
@@ -4822,7 +5073,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.james.mime4j.codec;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4837,7 +5089,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.james.mime4j.io;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4852,7 +5105,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.james.mime4j.util,
    org.apache.james.mime4j",
  org.apache.james.mime4j.parser;
@@ -4869,7 +5123,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.james.mime4j.stream,
    org.apache.james.mime4j.codec",
  org.apache.james.mime4j.stream;
@@ -4886,7 +5141,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.james.mime4j.util,
    org.apache.james.mime4j.codec,
    org.apache.james.mime4j,
@@ -4905,7 +5161,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.wml;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4920,7 +5177,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.w3c.dom",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.w3c.dom",
  org.apache.wml.dom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4935,7 +5193,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.dom,
    org.apache.wml,
    org.w3c.dom",
@@ -4953,7 +5212,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xalan.client;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4968,7 +5228,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.transform",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.transform",
  org.apache.xalan.extensions;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -4983,7 +5244,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.apache.xpath,
    org.apache.xalan.templates,
@@ -5009,7 +5271,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.apache.xml.serializer,
    org.apache.xpath,
@@ -5032,7 +5295,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.w3c.dom,
    org.apache.xml.utils,
@@ -5056,7 +5320,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    org.w3c.dom,
    javax.xml.transform.sax,
@@ -5079,7 +5344,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xpath.res",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xpath.res",
  org.apache.xalan.serialize;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5094,7 +5360,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.dtm,
    org.apache.xml.serializer,
    org.apache.xpath.objects,
@@ -5114,7 +5381,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="new org.apache.xalan.templates,
    org.xml.sax.helpers,
    org.apache.xpath.operations,
@@ -5147,7 +5415,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.apache.xpath,
    org.apache.xpath.objects,
@@ -5169,7 +5438,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.apache.xml.serializer,
@@ -5203,7 +5473,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.w3c.dom",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.w3c.dom",
  org.apache.xalan.xsltc;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5218,7 +5489,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.dtm,
    org.apache.xml.serializer,
    org.w3c.dom,
@@ -5238,7 +5510,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xalan.xsltc.cmdline.getopt;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5253,7 +5526,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xalan.xsltc.compiler;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5268,7 +5542,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.serializer,
    org.apache.bcel.classfile,
    org.apache.xalan.xsltc.compiler.util,
@@ -5290,7 +5565,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xalan.xsltc.compiler,
    org.apache.bcel.generic",
  org.apache.xalan.xsltc.dom;
@@ -5307,7 +5583,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.apache.xml.serializer,
    org.w3c.dom,
@@ -5334,7 +5611,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.serializer,
    org.w3c.dom,
    javax.xml.transform,
@@ -5356,7 +5634,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.w3c.dom,
    org.apache.xml.serializer,
@@ -5375,7 +5654,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -5402,7 +5682,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xerces.dom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5417,7 +5698,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl.validation,
@@ -5447,7 +5729,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom.views,
    org.w3c.dom.events,
    org.w3c.dom",
@@ -5465,7 +5748,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.w3c.dom.ls",
  org.apache.xerces.impl;
@@ -5482,7 +5766,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl.validation,
@@ -5504,7 +5789,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.xni.grammars,
    org.apache.xerces.impl.dv,
@@ -5527,7 +5813,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.xni",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.xni",
  org.apache.xerces.impl.dv;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5542,7 +5829,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.util,
    org.apache.xerces.impl.xs.util,
    org.apache.xerces.xs",
@@ -5560,7 +5848,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.impl.dv",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.impl.dv",
  org.apache.xerces.impl.dv.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5575,7 +5864,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.xs.datatypes",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.xs.datatypes",
  org.apache.xerces.impl.dv.xs;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5590,7 +5880,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.xs.datatypes,
@@ -5614,7 +5905,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.util",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.util",
  org.apache.xerces.impl.msg;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5629,7 +5921,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.util",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.util",
  org.apache.xerces.impl.validation;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5644,7 +5937,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.impl.dv,
    org.apache.xerces.util",
@@ -5662,7 +5956,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util",
  org.apache.xerces.impl.xpath.regex;
@@ -5679,7 +5974,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xerces.impl.xs;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -5694,7 +5990,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl.validation,
@@ -5725,7 +6022,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl.xpath,
@@ -5745,7 +6043,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.impl.dtd.models,
    org.apache.xerces.impl.xs,
@@ -5764,7 +6063,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.xni.grammars,
    org.apache.xerces.impl.dv,
@@ -5788,7 +6088,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl.validation,
@@ -5816,7 +6117,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.xs",
@@ -5834,7 +6136,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.xml.sax.helpers,
@@ -5863,7 +6166,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.namespace,
    javax.xml.datatype",
  org.apache.xerces.jaxp.validation;
@@ -5880,7 +6184,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.xml.sax.ext,
    org.apache.xerces.util,
@@ -5909,7 +6214,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.xml.sax.ext,
    org.apache.xerces.util,
@@ -5941,7 +6247,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.xml.sax.ext,
    org.w3c.dom,
@@ -5966,7 +6273,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl,
@@ -5986,7 +6294,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.xni.parser",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.xni.parser",
  org.apache.xerces.xni.grammars;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6001,7 +6310,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.xni.parser,
    org.apache.xerces.xs",
@@ -6019,7 +6329,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xerces.xni",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xerces.xni",
  org.apache.xerces.xpointer;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6034,7 +6345,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    org.apache.xerces.util,
    org.apache.xerces.impl,
@@ -6054,7 +6366,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.w3c.dom.ls",
  org.apache.xerces.xs.datatypes;
@@ -6071,7 +6384,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xerces.xni,
    javax.xml.namespace,
    javax.xml.datatype",
@@ -6089,7 +6403,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.w3c.dom,
    org.xml.sax,
@@ -6109,7 +6424,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -6133,7 +6449,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.dtm,
    org.xml.sax.ext,
    org.w3c.dom,
@@ -6156,7 +6473,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.dtm,
    org.xml.sax.ext,
    org.apache.xml.serializer,
@@ -6178,7 +6496,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xml.serialize;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6193,7 +6512,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.apache.xerces.util,
    org.apache.xerces.dom,
@@ -6214,7 +6534,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -6236,7 +6557,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.xml.sax",
  org.apache.xml.utils;
@@ -6253,7 +6575,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -6273,7 +6596,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xmlcommons;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6288,7 +6612,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.apache.xpath;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6303,7 +6628,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xpath.operations,
    org.w3c.dom,
    org.apache.xpath.functions,
@@ -6331,7 +6657,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.apache.xpath,
    org.apache.xpath.functions,
@@ -6356,7 +6683,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xpath,
    org.apache.xpath.functions,
    org.apache.xml.utils,
@@ -6376,7 +6704,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom.xpath,
    org.w3c.dom.events,
    org.w3c.dom,
@@ -6398,7 +6727,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xpath.compiler,
    org.apache.xpath,
    org.apache.xpath.objects,
@@ -6418,7 +6748,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    javax.xml.namespace,
    org.apache.xpath,
@@ -6442,7 +6773,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.apache.xml.dtm,
    org.w3c.dom,
@@ -6465,7 +6797,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xpath.objects,
    org.apache.xpath,
    org.apache.xalan.templates,
@@ -6485,7 +6818,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.apache.xml.dtm,
    org.apache.xpath,
    org.apache.xpath.objects,
@@ -6504,7 +6838,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.apache.xml.res",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.apache.xml.res",
  org.codehaus.stax2;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6519,7 +6854,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.validation,
    javax.xml.namespace,
    javax.xml.stream,
@@ -6538,7 +6874,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2,
    javax.xml.stream,
    javax.xml.stream.events",
@@ -6556,7 +6893,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="javax.xml.transform",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="javax.xml.transform",
  org.codehaus.stax2.osgi;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6571,7 +6909,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.validation,
    org.codehaus.stax2",
  org.codehaus.stax2.ri;
@@ -6588,7 +6927,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.evt,
    org.codehaus.stax2,
    javax.xml.stream,
@@ -6613,7 +6953,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2,
    org.w3c.dom,
    javax.xml.stream,
@@ -6637,7 +6978,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.evt,
    org.codehaus.stax2,
    javax.xml.namespace,
@@ -6658,7 +7000,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.ri,
    javax.xml.namespace,
    org.codehaus.stax2.typed",
@@ -6676,7 +7019,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.namespace,
    javax.xml.stream",
  org.codehaus.stax2.util;
@@ -6693,7 +7037,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.codehaus.stax2.validation,
    org.codehaus.stax2,
    javax.xml.namespace,
@@ -6714,7 +7059,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="javax.xml.namespace,
    javax.xml.stream",
  org.iso_relax.ant;
@@ -6731,7 +7077,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax,
    org.apache.tools.ant,
    org.apache.tools.ant.types",
@@ -6749,7 +7096,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    org.xml.sax",
  org.iso_relax.dispatcher;
@@ -6766,7 +7114,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.xml.sax",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.xml.sax",
  org.iso_relax.dispatcher.impl;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6781,7 +7130,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    org.xml.sax,
    org.iso_relax.dispatcher",
@@ -6799,7 +7149,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.helpers,
    org.w3c.dom,
    org.iso_relax.verifier,
@@ -6819,7 +7170,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.xml.sax",
  org.iso_relax.verifier.impl;
@@ -6836,7 +7188,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.xml.sax.ext,
    org.xml.sax.helpers,
    org.w3c.dom,
@@ -6857,7 +7210,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.jaxen.expr,
    org.jaxen.saxpath",
  org.jaxen.dom;
@@ -6874,7 +7228,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.w3c.dom,
    org.jaxen",
  org.jaxen.dom4j;
@@ -6891,7 +7246,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.jaxen,
    org.dom4j.io",
  org.jaxen.expr;
@@ -6908,7 +7264,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.jaxen,
    org.jaxen.expr.iter",
  org.jaxen.expr.iter;
@@ -6925,7 +7282,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.function;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6940,7 +7298,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.function.ext;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6955,7 +7314,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.function.xslt;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6970,7 +7330,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.javabean;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -6985,7 +7346,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.jdom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7000,7 +7362,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.jaxen,
    org.jdom",
  org.jaxen.pattern;
@@ -7017,7 +7380,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.jaxen,
    org.jaxen.expr",
  org.jaxen.saxpath;
@@ -7034,7 +7398,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.jaxen.saxpath.base;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7049,7 +7414,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen.saxpath",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen.saxpath",
  org.jaxen.saxpath.helpers;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7064,7 +7430,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen.saxpath",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen.saxpath",
  org.jaxen.util;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7079,7 +7446,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.jaxen.xom;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7094,7 +7462,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.jaxen",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.jaxen",
  org.relaxng.datatype;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7109,7 +7478,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check",
  org.relaxng.datatype.helpers;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7124,7 +7494,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.relaxng.datatype",
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.relaxng.datatype",
  org.slf4j;
   x-friends:="fr.lip6.pnml.framework.coremodel,
    fr.lip6.pnml.framework.coremodel.feature,
@@ -7139,7 +7510,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.slf4j.spi,
    org.slf4j.helpers",
  org.slf4j.helpers;
@@ -7156,7 +7528,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.slf4j,
    org.slf4j.spi",
  org.slf4j.impl;
@@ -7173,7 +7546,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";
   uses:="org.slf4j,
    org.slf4j.spi",
  org.slf4j.spi;
@@ -7190,7 +7564,8 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.framework.symmetricnet,
    fr.lip6.pnml.framework.tests,
    fr.lip6.pnml.framework.utils,
-   fr.lip6.pnml.framework.utils.tests";uses:="org.slf4j"
+   fr.lip6.pnml.framework.utils.tests,
+   fr.lip6.pnml.check";uses:="org.slf4j"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ActivationPolicy: lazy
