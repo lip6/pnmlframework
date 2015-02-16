@@ -31,8 +31,12 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import java.util.List;
 
+import javax.xml.stream.XMLStreamException;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
@@ -41,9 +45,14 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.util.EObjectWithInverseResolvingEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.eclipse.emf.common.util.*;
 import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelPackage;
 import fr.lip6.move.pnml.pnmlcoremodel.RefTransition;
 import fr.lip6.move.pnml.pnmlcoremodel.TransitionNode;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
 
 /**
  * <!-- begin-user-doc -->

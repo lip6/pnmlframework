@@ -31,6 +31,7 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.util;
 
+import fr.lip6.move.pnml.pnmlcoremodel.*;
 import java.net.URI;
 import java.util.Map;
 

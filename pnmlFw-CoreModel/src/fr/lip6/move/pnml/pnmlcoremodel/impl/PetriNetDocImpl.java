@@ -31,6 +31,11 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -39,7 +44,6 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
@@ -49,14 +53,8 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.*;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNet;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
 import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelFactory;
@@ -132,6 +130,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<PetriNet> getNets() {
 		if (nets == null) {
 			nets = new EObjectContainmentWithInverseEList<PetriNet>(PetriNet.class, this,
@@ -145,6 +144,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getXmlns() {
 		return xmlns;
 	}
@@ -262,6 +262,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -303,7 +304,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.PetriNet> items = getNets();
 			for (Iterator<PetriNet> iterator = items.iterator(); iterator.hasNext();) {
-				PetriNet item = (PetriNet) iterator.next();
+				PetriNet item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -330,6 +331,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -338,7 +340,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		//1
 		//1
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -354,7 +356,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 
 			if (type.getLocalName().equals("net")) {
 				PetriNet item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createPetriNet();
+				item = PnmlcoremodelFactory.eINSTANCE.createPetriNet();
 				item.fromPNML(type, idr);
 
 				item.setContainerPetriNetDoc(this);
@@ -369,6 +371,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -423,7 +426,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.PetriNet> items = getNets();
 			for (Iterator<PetriNet> iterator = items.iterator(); iterator.hasNext();) {
-				PetriNet item = (PetriNet) iterator.next();
+				PetriNet item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -477,6 +480,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();
@@ -485,7 +489,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		if (getNets() != null) {
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.PetriNet> items = getNets();
 			for (Iterator<PetriNet> iterator = items.iterator(); iterator.hasNext();) {
-				PetriNet item = (PetriNet) iterator.next();
+				PetriNet item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

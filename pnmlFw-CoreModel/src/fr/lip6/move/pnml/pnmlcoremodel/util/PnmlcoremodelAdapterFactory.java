@@ -31,6 +31,7 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.util;
 
+import fr.lip6.move.pnml.pnmlcoremodel.*;
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;

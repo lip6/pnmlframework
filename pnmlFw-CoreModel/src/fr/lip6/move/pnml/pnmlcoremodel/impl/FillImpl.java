@@ -31,6 +31,11 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.net.URI;
 import java.nio.ByteBuffer;
@@ -39,8 +44,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
-import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -50,14 +53,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.*;
 import fr.lip6.move.pnml.pnmlcoremodel.AnnotationGraphics;
 import fr.lip6.move.pnml.pnmlcoremodel.CSS2Color;
 import fr.lip6.move.pnml.pnmlcoremodel.Fill;
@@ -190,6 +187,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2Color getColor() {
 		return color;
 	}
@@ -199,6 +197,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(CSS2Color newColor) {
 		CSS2Color oldColor = color;
 		color = newColor == null ? COLOR_EDEFAULT : newColor;
@@ -211,6 +210,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2Color getGradientcolor() {
 		return gradientcolor;
 	}
@@ -220,6 +220,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGradientcolor(CSS2Color newGradientcolor) {
 		CSS2Color oldGradientcolor = gradientcolor;
 		gradientcolor = newGradientcolor == null ? GRADIENTCOLOR_EDEFAULT : newGradientcolor;
@@ -233,6 +234,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Gradient getGradientrotation() {
 		return gradientrotation;
 	}
@@ -242,6 +244,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGradientrotation(Gradient newGradientrotation) {
 		Gradient oldGradientrotation = gradientrotation;
 		gradientrotation = newGradientrotation == null ? GRADIENTROTATION_EDEFAULT : newGradientrotation;
@@ -255,6 +258,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public URI getImage() {
 		return image;
 	}
@@ -264,6 +268,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setImage(URI newImage) {
 		URI oldImage = image;
 		image = newImage;
@@ -276,6 +281,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerNodeGraphics() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.FILL__CONTAINER_NODE_GRAPHICS)
 			return null;
@@ -298,6 +304,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.FILL__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
@@ -322,6 +329,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.FILL__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -345,6 +353,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.FILL__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -553,6 +562,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -619,6 +629,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -627,7 +638,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		//4
 		//0
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -662,6 +673,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -765,6 +777,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();

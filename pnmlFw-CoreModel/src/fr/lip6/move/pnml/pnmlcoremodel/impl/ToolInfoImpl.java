@@ -1,22 +1,4 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
- *
- *  All rights reserved.   This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License v1.0
- *  which accompanies this distribution, and is available at
- *  http://www.eclipse.org/legal/epl-v10.html
- *
- *  Project leader / Initial Contributor:
- *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
- *
- *  Contributors:
- *    ${ocontributors} - <$oemails}>
- *
- *  Mailing list:
- *    lom-messan.hillah@lip6.fr
- */
-/**
  * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
@@ -31,42 +13,51 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
-import java.io.IOException;
-import java.net.URI;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import java.util.Iterator;
-import java.util.List;
-
-import javax.xml.namespace.QName;
-
-import org.apache.axiom.om.OMElement;
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.InternalEObject;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-
 import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
+
 import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+
 import fr.lip6.move.pnml.pnmlcoremodel.AnyObject;
 import fr.lip6.move.pnml.pnmlcoremodel.Label;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNet;
 import fr.lip6.move.pnml.pnmlcoremodel.PnObject;
-import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelFactory;
 import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelPackage;
 import fr.lip6.move.pnml.pnmlcoremodel.ToolInfo;
+
 import fr.lip6.move.pnml.pnmlcoremodel.util.PnmlcoremodelValidator;
+
+import java.io.IOException;
+
+import java.net.URI;
+
+import java.nio.ByteBuffer;
+
+import java.nio.channels.FileChannel;
+
+import java.nio.charset.Charset;
+
+import java.util.List;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import org.eclipse.emf.ecore.util.EcoreUtil;
+
+import org.apache.axiom.om.*;
+import org.eclipse.emf.common.util.*;
+import fr.lip6.move.pnml.framework.utils.*;
+import java.util.*;
+import javax.xml.namespace.QName;
+import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelFactory;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
  * <!-- begin-user-doc -->
@@ -203,6 +194,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getTool() {
 		return tool;
 	}
@@ -212,6 +204,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTool(String newTool) {
 		String oldTool = tool;
 		tool = newTool;
@@ -224,6 +217,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getVersion() {
 		return version;
 	}
@@ -233,6 +227,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setVersion(String newVersion) {
 		String oldVersion = version;
 		version = newVersion;
@@ -246,6 +241,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StringBuffer getFormattedXMLBuffer() {
 		return formattedXMLBuffer;
 	}
@@ -255,6 +251,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFormattedXMLBuffer(StringBuffer newFormattedXMLBuffer) {
 		StringBuffer oldFormattedXMLBuffer = formattedXMLBuffer;
 		formattedXMLBuffer = newFormattedXMLBuffer;
@@ -268,6 +265,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public URI getToolInfoGrammarURI() {
 		return toolInfoGrammarURI;
 	}
@@ -277,6 +275,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setToolInfoGrammarURI(URI newToolInfoGrammarURI) {
 		URI oldToolInfoGrammarURI = toolInfoGrammarURI;
 		toolInfoGrammarURI = newToolInfoGrammarURI;
@@ -290,6 +289,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerPetriNet() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_PETRI_NET)
 			return null;
@@ -312,6 +312,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
@@ -336,6 +337,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PnObject getContainerPnObject() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_PN_OBJECT)
 			return null;
@@ -358,6 +360,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPnObject(PnObject newContainerPnObject) {
 		if (newContainerPnObject != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_PN_OBJECT && newContainerPnObject != null)) {
@@ -382,6 +385,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Label getContainerLabel() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_LABEL)
 			return null;
@@ -404,6 +408,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerLabel(Label newContainerLabel) {
 		if (newContainerLabel != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.TOOL_INFO__CONTAINER_LABEL && newContainerLabel != null)) {
@@ -428,6 +433,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnyObject getToolInfoModel() {
 		return toolInfoModel;
 	}
@@ -456,6 +462,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setToolInfoModel(AnyObject newToolInfoModel) {
 		if (newToolInfoModel != toolInfoModel) {
 			NotificationChain msgs = null;
@@ -705,6 +712,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -775,6 +783,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -783,7 +792,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		//2
 		//1
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -835,6 +844,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -937,6 +947,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();

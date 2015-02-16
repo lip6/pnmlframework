@@ -31,6 +31,11 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -38,7 +43,6 @@ import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -47,14 +51,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.*;
 import fr.lip6.move.pnml.pnmlcoremodel.AnnotationGraphics;
 import fr.lip6.move.pnml.pnmlcoremodel.Name;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNet;
@@ -124,6 +122,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getText() {
 		return text;
 	}
@@ -133,6 +132,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(String newText) {
 		String oldText = text;
 		text = newText;
@@ -145,6 +145,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerNamePetriNet() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.NAME__CONTAINER_NAME_PETRI_NET)
 			return null;
@@ -167,6 +168,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePetriNet(PetriNet newContainerNamePetriNet) {
 		if (newContainerNamePetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.NAME__CONTAINER_NAME_PETRI_NET && newContainerNamePetriNet != null)) {
@@ -191,6 +193,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PnObject getContainerNamePnObject() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.NAME__CONTAINER_NAME_PN_OBJECT)
 			return null;
@@ -213,6 +216,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePnObject(PnObject newContainerNamePnObject) {
 		if (newContainerNamePnObject != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.NAME__CONTAINER_NAME_PN_OBJECT && newContainerNamePnObject != null)) {
@@ -384,6 +388,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -418,7 +423,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -473,6 +478,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -481,7 +487,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -497,7 +503,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createToolInfo();
+				item = PnmlcoremodelFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -507,7 +513,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = PnmlcoremodelFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -526,6 +532,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -573,7 +580,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -655,6 +662,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();
@@ -663,7 +671,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

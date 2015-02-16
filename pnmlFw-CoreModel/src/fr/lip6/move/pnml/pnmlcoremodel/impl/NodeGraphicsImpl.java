@@ -31,6 +31,11 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -38,7 +43,6 @@ import java.nio.charset.Charset;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -47,14 +51,8 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.*;
 import fr.lip6.move.pnml.pnmlcoremodel.Dimension;
 import fr.lip6.move.pnml.pnmlcoremodel.Fill;
 import fr.lip6.move.pnml.pnmlcoremodel.Line;
@@ -149,6 +147,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Position getPosition() {
 		return position;
 	}
@@ -177,6 +176,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPosition(Position newPosition) {
 		if (newPosition != position) {
 			NotificationChain msgs = null;
@@ -199,6 +199,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Dimension getDimension() {
 		return dimension;
 	}
@@ -227,6 +228,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDimension(Dimension newDimension) {
 		if (newDimension != dimension) {
 			NotificationChain msgs = null;
@@ -249,6 +251,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Fill getFill() {
 		return fill;
 	}
@@ -277,6 +280,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFill(Fill newFill) {
 		if (newFill != fill) {
 			NotificationChain msgs = null;
@@ -299,6 +303,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -327,6 +332,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -349,6 +355,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Node getContainerNode() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.NODE_GRAPHICS__CONTAINER_NODE)
 			return null;
@@ -371,6 +378,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNode(Node newContainerNode) {
 		if (newContainerNode != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.NODE_GRAPHICS__CONTAINER_NODE && newContainerNode != null)) {
@@ -395,6 +403,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Page getContainerPage() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.NODE_GRAPHICS__CONTAINER_PAGE)
 			return null;
@@ -417,6 +426,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.NODE_GRAPHICS__CONTAINER_PAGE && newContainerPage != null)) {
@@ -627,6 +637,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -723,6 +734,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -731,7 +743,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -747,7 +759,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("position")) {
 				Position item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createPosition();
+				item = PnmlcoremodelFactory.eINSTANCE.createPosition();
 				item.fromPNML(type, idr);
 
 				item.setContainerPNodeGraphics(this);
@@ -757,7 +769,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("dimension")) {
 				Dimension item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createDimension();
+				item = PnmlcoremodelFactory.eINSTANCE.createDimension();
 				item.fromPNML(type, idr);
 
 				item.setContainerDNodeGraphics(this);
@@ -767,7 +779,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createFill();
+				item = PnmlcoremodelFactory.eINSTANCE.createFill();
 				item.fromPNML(type, idr);
 
 				item.setContainerNodeGraphics(this);
@@ -777,7 +789,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createLine();
+				item = PnmlcoremodelFactory.eINSTANCE.createLine();
 				item.fromPNML(type, idr);
 
 				item.setContainerNodeGraphics(this);
@@ -792,6 +804,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -920,6 +933,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();

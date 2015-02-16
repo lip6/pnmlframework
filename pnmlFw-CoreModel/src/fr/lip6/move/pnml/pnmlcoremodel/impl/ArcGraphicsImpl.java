@@ -31,6 +31,11 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.impl;
 
+import fr.lip6.move.pnml.framework.general.PnmlExport;
+import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -39,7 +44,6 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -51,14 +55,8 @@ import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import fr.lip6.move.pnml.framework.general.PnmlExport;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.PNMLEncoding;
-import fr.lip6.move.pnml.framework.utils.PrettyPrintData;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.*;
 import fr.lip6.move.pnml.pnmlcoremodel.Arc;
 import fr.lip6.move.pnml.pnmlcoremodel.ArcGraphics;
 import fr.lip6.move.pnml.pnmlcoremodel.Line;
@@ -127,6 +125,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Position> getPositions() {
 		if (positions == null) {
 			positions = new EObjectContainmentWithInverseEList<Position>(Position.class, this,
@@ -140,6 +139,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -168,6 +168,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -190,6 +191,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Arc getContainerArc() {
 		if (eContainerFeatureID() != PnmlcoremodelPackage.ARC_GRAPHICS__CONTAINER_ARC)
 			return null;
@@ -212,6 +214,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
 				|| (eContainerFeatureID() != PnmlcoremodelPackage.ARC_GRAPHICS__CONTAINER_ARC && newContainerArc != null)) {
@@ -370,6 +373,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -404,7 +408,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -443,6 +447,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -451,7 +456,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		//0
 		//2
 		@SuppressWarnings("unused")
-		PnmlcoremodelFactory fact = PnmlcoremodelFactoryImpl.eINSTANCE;
+		PnmlcoremodelFactory fact = PnmlcoremodelFactory.eINSTANCE;
 
 		//processing id
 
@@ -467,7 +472,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			if (type.getLocalName().equals("position")) {
 				Position item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createPosition();
+				item = PnmlcoremodelFactory.eINSTANCE.createPosition();
 				item.fromPNML(type, idr);
 
 				item.setContainerArcGraphics(this);
@@ -477,7 +482,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
-				item = PnmlcoremodelFactoryImpl.eINSTANCE.createLine();
+				item = PnmlcoremodelFactory.eINSTANCE.createLine();
 				item.fromPNML(type, idr);
 
 				item.setContainerArcGraphics(this);
@@ -492,6 +497,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -539,7 +545,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -605,6 +611,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PnmlcoremodelValidator val = new PnmlcoremodelValidator();
@@ -613,7 +620,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		if (getPositions() != null) {
 			java.util.List<fr.lip6.move.pnml.pnmlcoremodel.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
