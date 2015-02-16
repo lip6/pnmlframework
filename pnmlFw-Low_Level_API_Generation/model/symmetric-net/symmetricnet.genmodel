@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="(C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)&#xD;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA; Contributors: &#xA;   Lom HILLAH (LIP6) - Initial models and implementation&#xD;   Rachid Alahyane (UPMC) - Infrastructure and continuous integration&#xD;   Bastien Bouzerau (UPMC) - Architecture &#xD;   Guillaume Giffo (UPMC) - Code generation refactoring, High-level API"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="(C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)&#xD;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA; Contributors: &#xA;   Lom HILLAH (LIP6) - Initial models and implementation&#xD;   Rachid Alahyane (UPMC) - Infrastructure and continuous integration&#xD;   Bastien Bouzerau (UPMC) - Architecture &#xD;   Guillaume Giffo (UPMC) - Code generation refactoring, High-level API"
     modelDirectory="/pnmlFw-SNNet/src" editDirectory="/pnmlFw-SNNet.edit/src" editorDirectory="/[pnmlFw]SNNet.editor/src"
-    modelPluginID="fr.lip6.move.pnml.framework.symmetricnet" templateDirectory="/pnmlFw-Low_Level_API_Generation/templates-2.2.0"
-    dynamicTemplates="true" redirection="" forceOverwrite="true" modelName="PNML Framework Symmetric Net"
+    modelPluginID="fr.lip6.pnml.framework.symmetricnet" templateDirectory="/pnmlFw-Low_Level_API_Generation/templates-2.2.0"
+    dynamicTemplates="true" redirection="" forceOverwrite="true" modelName="PNML Framework Symmetric Nets"
     editPluginClass="fr.lip6.move.pnml.framework.symmetricnet.provider.SymmetricnetEditPlugin"
     editorPluginClass="fr.lip6.move.pnml.framework.symmetricnet.presentation.SymmetricnetEditorPlugin"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl" suppressEMFTypes="true"
     featureMapWrapperInternalInterface="" codeFormatting="true" testSuiteClass="fr.lip6.move.pnml.framework.symmetricnet.tests.SymmetricnetAllTests"
-    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false">
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    cleanup="true">
   <foreignModel>booleans.ecore</foreignModel>
   <foreignModel>cyclicEnumerations.ecore</foreignModel>
   <foreignModel>dots.ecore</foreignModel>
