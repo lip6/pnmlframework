@@ -24,9 +24,19 @@
  */
 package fr.lip6.move.pnml.ptnet.tools;
 
-import fr.lip6.move.pnml.ptnet.hlapi.*;
-import fr.lip6.move.pnml.framework.utils.*;
-import fr.lip6.move.pnml.framework.utils.exception.*;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.PetriNetHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.PlaceHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.PlaceNodeHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.RefPlaceHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.RefTransitionHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.TransitionHLAPI;
+import fr.lip6.move.pnml.ptnet.hlapi.TransitionNodeHLAPI;
 
 public class Tools {
 	 /**

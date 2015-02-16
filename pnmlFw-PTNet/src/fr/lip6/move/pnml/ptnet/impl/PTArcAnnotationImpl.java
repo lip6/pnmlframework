@@ -122,6 +122,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getText() {
 		return text;
 	}
@@ -131,6 +132,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Integer newText) {
 		Integer oldText = text;
 		text = newText;
@@ -143,6 +145,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Arc getContainerArc() {
 		if (eContainerFeatureID() != PtnetPackage.PT_ARC_ANNOTATION__CONTAINER_ARC)
 			return null;
@@ -165,6 +168,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.PT_ARC_ANNOTATION__CONTAINER_ARC && newContainerArc != null)) {
@@ -316,6 +320,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -350,7 +355,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -405,6 +410,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -413,7 +419,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 		//0
 		//3
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -429,7 +435,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = PtnetFactoryImpl.eINSTANCE.createToolInfo();
+				item = PtnetFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -439,7 +445,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = PtnetFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = PtnetFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -458,6 +464,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -505,7 +512,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -587,6 +594,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();
@@ -595,7 +603,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

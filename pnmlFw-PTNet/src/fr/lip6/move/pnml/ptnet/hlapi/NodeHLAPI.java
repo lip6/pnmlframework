@@ -33,60 +33,16 @@
  */
 package fr.lip6.move.pnml.ptnet.hlapi;
 
-import fr.lip6.move.pnml.ptnet.Annotation;
-import fr.lip6.move.pnml.ptnet.AnnotationGraphics;
-import fr.lip6.move.pnml.ptnet.AnyObject;
-import fr.lip6.move.pnml.ptnet.Arc;
-import fr.lip6.move.pnml.ptnet.ArcGraphics;
-import fr.lip6.move.pnml.ptnet.CSS2Color;
-import fr.lip6.move.pnml.ptnet.Dimension;
-import fr.lip6.move.pnml.ptnet.Fill;
-import fr.lip6.move.pnml.ptnet.Font;
-import fr.lip6.move.pnml.ptnet.Gradient;
-import fr.lip6.move.pnml.ptnet.Label;
-import fr.lip6.move.pnml.ptnet.Line;
-import fr.lip6.move.pnml.ptnet.LineShape;
-import fr.lip6.move.pnml.ptnet.LineStyle;
-import fr.lip6.move.pnml.ptnet.Name;
-import fr.lip6.move.pnml.ptnet.Node;
-import fr.lip6.move.pnml.ptnet.NodeGraphics;
-import fr.lip6.move.pnml.ptnet.Offset;
-import fr.lip6.move.pnml.ptnet.PNType;
-import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
-import fr.lip6.move.pnml.ptnet.PTMarking;
-import fr.lip6.move.pnml.ptnet.Page;
-import fr.lip6.move.pnml.ptnet.PetriNet;
-import fr.lip6.move.pnml.ptnet.PetriNetDoc;
-import fr.lip6.move.pnml.ptnet.Place;
-import fr.lip6.move.pnml.ptnet.PnObject;
-import fr.lip6.move.pnml.ptnet.Position;
-import fr.lip6.move.pnml.ptnet.ToolInfo;
-
-import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
-
-import java.net.URI;
-
 import java.util.List;
 
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.ptnet.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.ptnet.*;
-import fr.lip6.move.pnml.ptnet.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.ptnet.Arc;
+import fr.lip6.move.pnml.ptnet.Name;
+import fr.lip6.move.pnml.ptnet.NodeGraphics;
+import fr.lip6.move.pnml.ptnet.Page;
+import fr.lip6.move.pnml.ptnet.ToolInfo;
 
 public interface NodeHLAPI extends HLAPIClass,PnObjectHLAPI{
 

@@ -124,6 +124,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getText() {
 		return text;
 	}
@@ -133,6 +134,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(String newText) {
 		String oldText = text;
 		text = newText;
@@ -145,6 +147,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerNamePetriNet() {
 		if (eContainerFeatureID() != PtnetPackage.NAME__CONTAINER_NAME_PETRI_NET)
 			return null;
@@ -167,6 +170,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePetriNet(PetriNet newContainerNamePetriNet) {
 		if (newContainerNamePetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.NAME__CONTAINER_NAME_PETRI_NET && newContainerNamePetriNet != null)) {
@@ -191,6 +195,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PnObject getContainerNamePnObject() {
 		if (eContainerFeatureID() != PtnetPackage.NAME__CONTAINER_NAME_PN_OBJECT)
 			return null;
@@ -213,6 +218,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePnObject(PnObject newContainerNamePnObject) {
 		if (newContainerNamePnObject != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.NAME__CONTAINER_NAME_PN_OBJECT && newContainerNamePnObject != null)) {
@@ -382,6 +388,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -416,7 +423,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -471,6 +478,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -479,7 +487,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -495,7 +503,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = PtnetFactoryImpl.eINSTANCE.createToolInfo();
+				item = PtnetFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -505,7 +513,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = PtnetFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = PtnetFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -524,6 +532,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -571,7 +580,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -653,6 +662,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();
@@ -661,7 +671,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

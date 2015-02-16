@@ -127,6 +127,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Position> getPositions() {
 		if (positions == null) {
 			positions = new EObjectContainmentWithInverseEList<Position>(Position.class, this,
@@ -140,6 +141,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -168,6 +170,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -189,6 +192,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Arc getContainerArc() {
 		if (eContainerFeatureID() != PtnetPackage.ARC_GRAPHICS__CONTAINER_ARC)
 			return null;
@@ -210,6 +214,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.ARC_GRAPHICS__CONTAINER_ARC && newContainerArc != null)) {
@@ -368,6 +373,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -402,7 +408,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			java.util.List<fr.lip6.move.pnml.ptnet.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -441,6 +447,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -449,7 +456,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		//0
 		//2
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -465,7 +472,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			if (type.getLocalName().equals("position")) {
 				Position item;
-				item = PtnetFactoryImpl.eINSTANCE.createPosition();
+				item = PtnetFactory.eINSTANCE.createPosition();
 				item.fromPNML(type, idr);
 
 				item.setContainerArcGraphics(this);
@@ -475,7 +482,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
-				item = PtnetFactoryImpl.eINSTANCE.createLine();
+				item = PtnetFactory.eINSTANCE.createLine();
 				item.fromPNML(type, idr);
 
 				item.setContainerArcGraphics(this);
@@ -490,6 +497,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -537,7 +545,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.ptnet.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -603,6 +611,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();
@@ -611,7 +620,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		if (getPositions() != null) {
 			java.util.List<fr.lip6.move.pnml.ptnet.Position> items = getPositions();
 			for (Iterator<Position> iterator = items.iterator(); iterator.hasNext();) {
-				Position item = (Position) iterator.next();
+				Position item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

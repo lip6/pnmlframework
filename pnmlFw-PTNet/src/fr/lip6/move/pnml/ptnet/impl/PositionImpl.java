@@ -102,6 +102,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArcGraphics getContainerArcGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.POSITION__CONTAINER_ARC_GRAPHICS)
 			return null;
@@ -124,6 +125,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.POSITION__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
@@ -148,6 +150,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerPNodeGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.POSITION__CONTAINER_PNODE_GRAPHICS)
 			return null;
@@ -171,6 +174,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPNodeGraphics(NodeGraphics newContainerPNodeGraphics) {
 		if (newContainerPNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.POSITION__CONTAINER_PNODE_GRAPHICS && newContainerPNodeGraphics != null)) {
@@ -315,6 +319,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -367,6 +372,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -375,7 +381,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -406,6 +412,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -495,6 +502,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

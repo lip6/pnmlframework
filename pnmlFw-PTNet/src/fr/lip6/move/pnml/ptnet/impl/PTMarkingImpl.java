@@ -122,6 +122,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getText() {
 		return text;
 	}
@@ -131,6 +132,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(Integer newText) {
 		Integer oldText = text;
 		text = newText;
@@ -143,6 +145,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Place getContainerPlace() {
 		if (eContainerFeatureID() != PtnetPackage.PT_MARKING__CONTAINER_PLACE)
 			return null;
@@ -164,6 +167,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPlace(Place newContainerPlace) {
 		if (newContainerPlace != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.PT_MARKING__CONTAINER_PLACE && newContainerPlace != null)) {
@@ -315,6 +319,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -349,7 +354,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -404,6 +409,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -412,7 +418,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -428,7 +434,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = PtnetFactoryImpl.eINSTANCE.createToolInfo();
+				item = PtnetFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -438,7 +444,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = PtnetFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = PtnetFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -457,6 +463,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -504,7 +511,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -586,6 +593,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();
@@ -594,7 +602,7 @@ public class PTMarkingImpl extends AnnotationImpl implements PTMarking {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

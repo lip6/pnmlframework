@@ -101,6 +101,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -154,7 +155,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -193,6 +194,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -201,16 +203,14 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
-			ModelRepository
-					.getInstance()
-					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+			ModelRepository.getInstance().getCurrentIdRepository()
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -225,7 +225,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = PtnetFactoryImpl.eINSTANCE.createName();
+				item = PtnetFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -235,7 +235,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = PtnetFactoryImpl.eINSTANCE.createToolInfo();
+				item = PtnetFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -245,7 +245,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
-				item = PtnetFactoryImpl.eINSTANCE.createNodeGraphics();
+				item = PtnetFactory.eINSTANCE.createNodeGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerNode(this);
@@ -269,6 +269,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -335,7 +336,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -401,6 +402,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();
@@ -413,7 +415,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.ptnet.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

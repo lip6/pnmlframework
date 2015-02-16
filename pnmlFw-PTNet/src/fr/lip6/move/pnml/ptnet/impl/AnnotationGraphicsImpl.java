@@ -147,6 +147,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Offset getOffset() {
 		return offset;
 	}
@@ -175,6 +176,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOffset(Offset newOffset) {
 		if (newOffset != offset) {
 			NotificationChain msgs = null;
@@ -197,6 +199,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Fill getFill() {
 		return fill;
 	}
@@ -225,6 +228,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFill(Fill newFill) {
 		if (newFill != fill) {
 			NotificationChain msgs = null;
@@ -247,6 +251,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -275,6 +280,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -297,6 +303,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Font getFont() {
 		return font;
 	}
@@ -325,6 +332,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFont(Font newFont) {
 		if (newFont != font) {
 			NotificationChain msgs = null;
@@ -347,6 +355,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Annotation getContainerAnnotation() {
 		if (eContainerFeatureID() != PtnetPackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION)
 			return null;
@@ -369,6 +378,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotation(Annotation newContainerAnnotation) {
 		if (newContainerAnnotation != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION && newContainerAnnotation != null)) {
@@ -563,6 +573,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -659,6 +670,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -667,7 +679,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		//0
 		//4
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -683,7 +695,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 			if (type.getLocalName().equals("offset")) {
 				Offset item;
-				item = PtnetFactoryImpl.eINSTANCE.createOffset();
+				item = PtnetFactory.eINSTANCE.createOffset();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotationGraphics(this);
@@ -693,7 +705,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
-				item = PtnetFactoryImpl.eINSTANCE.createFill();
+				item = PtnetFactory.eINSTANCE.createFill();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotationGraphics(this);
@@ -703,7 +715,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
-				item = PtnetFactoryImpl.eINSTANCE.createLine();
+				item = PtnetFactory.eINSTANCE.createLine();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotationGraphics(this);
@@ -713,7 +725,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 			if (type.getLocalName().equals("font")) {
 				Font item;
-				item = PtnetFactoryImpl.eINSTANCE.createFont();
+				item = PtnetFactory.eINSTANCE.createFont();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotationGraphics(this);
@@ -728,6 +740,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -856,6 +869,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

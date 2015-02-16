@@ -255,6 +255,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FontAlign getAlign() {
 		return align;
 	}
@@ -264,6 +265,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAlign(FontAlign newAlign) {
 		FontAlign oldAlign = align;
 		align = newAlign == null ? ALIGN_EDEFAULT : newAlign;
@@ -276,6 +278,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FontDecoration getDecoration() {
 		return decoration;
 	}
@@ -285,6 +288,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDecoration(FontDecoration newDecoration) {
 		FontDecoration oldDecoration = decoration;
 		decoration = newDecoration == null ? DECORATION_EDEFAULT : newDecoration;
@@ -298,6 +302,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2FontFamily getFamily() {
 		return family;
 	}
@@ -307,6 +312,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFamily(CSS2FontFamily newFamily) {
 		CSS2FontFamily oldFamily = family;
 		family = newFamily == null ? FAMILY_EDEFAULT : newFamily;
@@ -319,6 +325,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BigDecimal getRotation() {
 		return rotation;
 	}
@@ -328,6 +335,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRotation(BigDecimal newRotation) {
 		BigDecimal oldRotation = rotation;
 		rotation = newRotation;
@@ -340,6 +348,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2FontSize getSize() {
 		return size;
 	}
@@ -349,6 +358,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSize(CSS2FontSize newSize) {
 		CSS2FontSize oldSize = size;
 		size = newSize == null ? SIZE_EDEFAULT : newSize;
@@ -361,6 +371,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2FontStyle getStyle() {
 		return style;
 	}
@@ -370,6 +381,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStyle(CSS2FontStyle newStyle) {
 		CSS2FontStyle oldStyle = style;
 		style = newStyle == null ? STYLE_EDEFAULT : newStyle;
@@ -382,6 +394,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2FontWeight getWeight() {
 		return weight;
 	}
@@ -391,6 +404,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setWeight(CSS2FontWeight newWeight) {
 		CSS2FontWeight oldWeight = weight;
 		weight = newWeight == null ? WEIGHT_EDEFAULT : newWeight;
@@ -403,6 +417,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.FONT__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -426,6 +441,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.FONT__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -650,6 +666,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -737,6 +754,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -745,7 +763,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		//7
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -792,6 +810,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -916,6 +935,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

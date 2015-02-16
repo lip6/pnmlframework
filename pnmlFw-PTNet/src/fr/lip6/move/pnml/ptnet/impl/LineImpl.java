@@ -192,6 +192,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2Color getColor() {
 		return color;
 	}
@@ -201,6 +202,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(CSS2Color newColor) {
 		CSS2Color oldColor = color;
 		color = newColor == null ? COLOR_EDEFAULT : newColor;
@@ -213,6 +215,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LineShape getShape() {
 		return shape;
 	}
@@ -222,6 +225,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setShape(LineShape newShape) {
 		LineShape oldShape = shape;
 		shape = newShape == null ? SHAPE_EDEFAULT : newShape;
@@ -234,6 +238,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getWidth() {
 		return width;
 	}
@@ -243,6 +248,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setWidth(Integer newWidth) {
 		Integer oldWidth = width;
 		width = newWidth;
@@ -255,6 +261,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerNodeGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_NODE_GRAPHICS)
 			return null;
@@ -277,6 +284,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
@@ -301,6 +309,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArcGraphics getContainerArcGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_ARC_GRAPHICS)
 			return null;
@@ -323,6 +332,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
@@ -347,6 +357,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -370,6 +381,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.LINE__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -394,6 +406,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LineStyle getStyle() {
 		return style;
 	}
@@ -403,6 +416,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStyle(LineStyle newStyle) {
 		LineStyle oldStyle = style;
 		style = newStyle == null ? STYLE_EDEFAULT : newStyle;
@@ -616,6 +630,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -682,6 +697,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -690,7 +706,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		//4
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -725,6 +741,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -828,6 +845,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

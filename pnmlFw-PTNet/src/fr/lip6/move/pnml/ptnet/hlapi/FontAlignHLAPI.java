@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:46 CET 2014$
  */
 package fr.lip6.move.pnml.ptnet.hlapi;
-import  fr.lip6.move.pnml.ptnet.*;
+import fr.lip6.move.pnml.ptnet.FontAlign;
 public enum FontAlignHLAPI{
 	LEFT("left"),
 	CENTER("center"),

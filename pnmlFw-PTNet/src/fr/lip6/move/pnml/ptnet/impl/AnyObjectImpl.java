@@ -79,6 +79,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ToolInfo getContainerToolInfo() {
 		if (eContainerFeatureID() != PtnetPackage.ANY_OBJECT__CONTAINER_TOOL_INFO)
 			return null;
@@ -158,5 +159,6 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //AnyObjectImpl

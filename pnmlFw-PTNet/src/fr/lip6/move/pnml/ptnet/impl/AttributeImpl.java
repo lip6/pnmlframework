@@ -66,5 +66,6 @@ public abstract class AttributeImpl extends LabelImpl implements Attribute {
 		return PtnetPackage.Literals.ATTRIBUTE;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //AttributeImpl

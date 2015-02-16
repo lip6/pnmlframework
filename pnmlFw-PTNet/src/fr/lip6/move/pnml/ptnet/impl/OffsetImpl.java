@@ -100,6 +100,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -123,6 +124,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -248,6 +250,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -300,6 +303,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -308,7 +312,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -339,6 +343,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -428,6 +433,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

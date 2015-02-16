@@ -190,6 +190,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2Color getColor() {
 		return color;
 	}
@@ -199,6 +200,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setColor(CSS2Color newColor) {
 		CSS2Color oldColor = color;
 		color = newColor == null ? COLOR_EDEFAULT : newColor;
@@ -211,6 +213,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CSS2Color getGradientcolor() {
 		return gradientcolor;
 	}
@@ -220,6 +223,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGradientcolor(CSS2Color newGradientcolor) {
 		CSS2Color oldGradientcolor = gradientcolor;
 		gradientcolor = newGradientcolor == null ? GRADIENTCOLOR_EDEFAULT : newGradientcolor;
@@ -233,6 +237,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Gradient getGradientrotation() {
 		return gradientrotation;
 	}
@@ -242,6 +247,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setGradientrotation(Gradient newGradientrotation) {
 		Gradient oldGradientrotation = gradientrotation;
 		gradientrotation = newGradientrotation == null ? GRADIENTROTATION_EDEFAULT : newGradientrotation;
@@ -255,6 +261,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public URI getImage() {
 		return image;
 	}
@@ -264,6 +271,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setImage(URI newImage) {
 		URI oldImage = image;
 		image = newImage;
@@ -276,6 +284,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerNodeGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.FILL__CONTAINER_NODE_GRAPHICS)
 			return null;
@@ -298,6 +307,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.FILL__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
@@ -322,6 +332,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.FILL__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -345,6 +356,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.FILL__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -552,6 +564,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -618,6 +631,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -626,7 +640,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		//4
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -661,6 +675,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -764,6 +779,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

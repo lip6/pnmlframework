@@ -100,6 +100,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerDNodeGraphics() {
 		if (eContainerFeatureID() != PtnetPackage.DIMENSION__CONTAINER_DNODE_GRAPHICS)
 			return null;
@@ -123,6 +124,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDNodeGraphics(NodeGraphics newContainerDNodeGraphics) {
 		if (newContainerDNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.DIMENSION__CONTAINER_DNODE_GRAPHICS && newContainerDNodeGraphics != null)) {
@@ -248,6 +250,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -300,6 +303,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -308,7 +312,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		PtnetFactory fact = PtnetFactoryImpl.eINSTANCE;
+		PtnetFactory fact = PtnetFactory.eINSTANCE;
 
 		//processing id
 
@@ -339,6 +343,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -428,6 +433,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		PtnetValidator val = new PtnetValidator();

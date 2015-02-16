@@ -133,6 +133,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -142,6 +143,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -154,6 +156,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Name getName() {
 		return name;
 	}
@@ -182,6 +185,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(Name newName) {
 		if (newName != name) {
 			NotificationChain msgs = null;
@@ -203,6 +207,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<ToolInfo> getToolspecifics() {
 		if (toolspecifics == null) {
 			toolspecifics = new EObjectContainmentWithInverseEList<ToolInfo>(ToolInfo.class, this,
@@ -216,6 +221,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Page getContainerPage() {
 		if (eContainerFeatureID() != PtnetPackage.PN_OBJECT__CONTAINER_PAGE)
 			return null;
@@ -237,6 +243,7 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
 				|| (eContainerFeatureID() != PtnetPackage.PN_OBJECT__CONTAINER_PAGE && newContainerPage != null)) {
@@ -419,5 +426,6 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 		return result.toString();
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //PnObjectImpl

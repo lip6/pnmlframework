@@ -33,41 +33,28 @@
  */
 package fr.lip6.move.pnml.ptnet.hlapi;
 
-import fr.lip6.move.pnml.ptnet.AnnotationGraphics;
-import fr.lip6.move.pnml.ptnet.Arc;
+import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.axiom.om.OMElement;
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.ptnet.Name;
 import fr.lip6.move.pnml.ptnet.PNType;
-import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
-import fr.lip6.move.pnml.ptnet.PTMarking;
 import fr.lip6.move.pnml.ptnet.Page;
 import fr.lip6.move.pnml.ptnet.PetriNet;
 import fr.lip6.move.pnml.ptnet.PetriNetDoc;
-import fr.lip6.move.pnml.ptnet.Place;
+import fr.lip6.move.pnml.ptnet.PtnetFactory;
 import fr.lip6.move.pnml.ptnet.ToolInfo;
-
 import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
-
-import java.util.List;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.ptnet.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.ptnet.*;
-import fr.lip6.move.pnml.ptnet.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
 
 
 public class PetriNetHLAPI implements HLAPIClass{

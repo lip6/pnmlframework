@@ -67,5 +67,6 @@ public abstract class GraphicsImpl extends MinimalEObjectImpl implements Graphic
 		return PtnetPackage.Literals.GRAPHICS;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //GraphicsImpl

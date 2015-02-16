@@ -118,6 +118,7 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Arc> getInArcs() {
 		if (inArcs == null) {
 			inArcs = new EObjectWithInverseResolvingEList<Arc>(Arc.class, this, PtnetPackage.NODE__IN_ARCS,
@@ -131,6 +132,7 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Arc> getOutArcs() {
 		if (outArcs == null) {
 			outArcs = new EObjectWithInverseResolvingEList<Arc>(Arc.class, this, PtnetPackage.NODE__OUT_ARCS,
@@ -144,6 +146,7 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getNodegraphics() {
 		return nodegraphics;
 	}
@@ -172,6 +175,7 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setNodegraphics(NodeGraphics newNodegraphics) {
 		if (newNodegraphics != nodegraphics) {
 			NotificationChain msgs = null;
@@ -295,5 +299,6 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //NodeImpl
