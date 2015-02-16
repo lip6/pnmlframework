@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: PNML Framework Symmetric Nets Library
+Bundle-Name: PNML Framework Symmetric Nets
 Bundle-SymbolicName: fr.lip6.pnml.framework.symmetricnet;singleton:=true
 Bundle-Version: 2.2.7
 Bundle-ClassPath: .
