@@ -12,7 +12,7 @@
 
 	<artifactId>fr.lip6.pnml.framework.ptnet</artifactId>
 	<packaging>eclipse-plugin</packaging>
-	
+
 	<name>PNML Framework - P/T Nets</name>
 	<description>
 		Place/Transition Nets Library
@@ -31,5 +31,6 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
 
 </project>
