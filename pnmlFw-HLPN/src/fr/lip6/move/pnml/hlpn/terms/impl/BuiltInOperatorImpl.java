@@ -66,5 +66,6 @@ public abstract class BuiltInOperatorImpl extends OperatorImpl implements BuiltI
 		return TermsPackage.Literals.BUILT_IN_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //BuiltInOperatorImpl

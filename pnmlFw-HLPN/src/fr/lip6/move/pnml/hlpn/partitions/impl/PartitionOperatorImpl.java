@@ -67,5 +67,6 @@ public abstract class PartitionOperatorImpl extends BuiltInOperatorImpl implemen
 		return PartitionsPackage.Literals.PARTITION_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //PartitionOperatorImpl

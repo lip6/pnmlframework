@@ -67,5 +67,6 @@ public abstract class StringOperatorImpl extends BuiltInOperatorImpl implements 
 		return StringsPackage.Literals.STRING_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //StringOperatorImpl

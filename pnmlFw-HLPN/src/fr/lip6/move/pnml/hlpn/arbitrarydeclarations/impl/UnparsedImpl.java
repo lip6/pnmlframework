@@ -111,6 +111,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnyObject getUnparsedModel() {
 		return unparsedModel;
 	}
@@ -139,6 +140,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setUnparsedModel(AnyObject newUnparsedModel) {
 		if (newUnparsedModel != unparsedModel) {
 			NotificationChain msgs = null;
@@ -248,6 +250,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -322,6 +325,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -330,7 +334,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 		//1
 		//1
 		@SuppressWarnings("unused")
-		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactoryImpl.eINSTANCE;
+		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -339,7 +343,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -367,6 +371,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -473,6 +478,7 @@ public class UnparsedImpl extends TermsDeclarationImpl implements Unparsed {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

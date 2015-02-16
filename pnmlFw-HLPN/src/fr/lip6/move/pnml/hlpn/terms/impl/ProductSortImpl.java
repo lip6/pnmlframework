@@ -57,25 +57,25 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsFactory;
 import fr.lip6.move.pnml.hlpn.booleans.Bool;
-import fr.lip6.move.pnml.hlpn.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.hlpn.booleans.BooleansFactory;
 import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumeration;
-import fr.lip6.move.pnml.hlpn.cyclicEnumerations.impl.CyclicEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.dots.Dot;
-import fr.lip6.move.pnml.hlpn.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.dots.DotsFactory;
 import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumeration;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRange;
-import fr.lip6.move.pnml.hlpn.finiteIntRanges.impl.FiniteIntRangesFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangesFactory;
 import fr.lip6.move.pnml.hlpn.integers.HLInteger;
+import fr.lip6.move.pnml.hlpn.integers.IntegersFactory;
 import fr.lip6.move.pnml.hlpn.integers.Natural;
 import fr.lip6.move.pnml.hlpn.integers.Positive;
-import fr.lip6.move.pnml.hlpn.integers.impl.IntegersFactoryImpl;
 import fr.lip6.move.pnml.hlpn.lists.HLPNList;
-import fr.lip6.move.pnml.hlpn.lists.impl.ListsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.lists.ListsFactory;
 import fr.lip6.move.pnml.hlpn.strings.HLPNString;
-import fr.lip6.move.pnml.hlpn.strings.impl.StringsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.strings.StringsFactory;
 import fr.lip6.move.pnml.hlpn.terms.MultisetSort;
 import fr.lip6.move.pnml.hlpn.terms.ProductSort;
 import fr.lip6.move.pnml.hlpn.terms.Sort;
@@ -132,6 +132,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Sort> getElementSort() {
 		if (elementSort == null) {
 			elementSort = new EObjectContainmentWithInverseEList<Sort>(Sort.class, this,
@@ -232,6 +233,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -266,7 +268,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Sort> items = getElementSort();
 			for (Iterator<Sort> iterator = items.iterator(); iterator.hasNext();) {
-				Sort item = (Sort) iterator.next();
+				Sort item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -293,6 +295,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -301,7 +304,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -317,7 +320,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -327,7 +330,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -337,7 +340,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -347,7 +350,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("anysort")) {
 				AnySort item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createAnySort();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createAnySort();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -357,7 +360,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -367,7 +370,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("cyclicenumeration")) {
 				CyclicEnumeration item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createCyclicEnumeration();
+				item = CyclicEnumerationsFactory.eINSTANCE.createCyclicEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -377,7 +380,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -387,7 +390,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("finiteenumeration")) {
 				FiniteEnumeration item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFiniteEnumeration();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFiniteEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -397,7 +400,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("finiteintrange")) {
 				FiniteIntRange item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRange();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRange();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -407,7 +410,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
-				item = IntegersFactoryImpl.eINSTANCE.createNatural();
+				item = IntegersFactory.eINSTANCE.createNatural();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -417,7 +420,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
-				item = IntegersFactoryImpl.eINSTANCE.createPositive();
+				item = IntegersFactory.eINSTANCE.createPositive();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -427,7 +430,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
-				item = IntegersFactoryImpl.eINSTANCE.createHLInteger();
+				item = IntegersFactory.eINSTANCE.createHLInteger();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -437,7 +440,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("list")) {
 				HLPNList item;
-				item = ListsFactoryImpl.eINSTANCE.createHLPNList();
+				item = ListsFactory.eINSTANCE.createHLPNList();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -447,7 +450,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 			if (type.getLocalName().equals("string")) {
 				HLPNString item;
-				item = StringsFactoryImpl.eINSTANCE.createHLPNString();
+				item = StringsFactory.eINSTANCE.createHLPNString();
 				item.fromPNML(type, idr);
 
 				item.setContainerProductSort(this);
@@ -462,6 +465,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -509,7 +513,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Sort> items = getElementSort();
 			for (Iterator<Sort> iterator = items.iterator(); iterator.hasNext();) {
-				Sort item = (Sort) iterator.next();
+				Sort item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -563,6 +567,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -571,7 +576,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 		if (getElementSort() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Sort> items = getElementSort();
 			for (Iterator<Sort> iterator = items.iterator(); iterator.hasNext();) {
-				Sort item = (Sort) iterator.next();
+				Sort item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -581,6 +586,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
@@ -592,7 +598,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				// strictly check for ProductSort only. Further sub-classes must 
 				//override this method.
 				if ("ProductSort".equalsIgnoreCase(this.eClass().getName())) {
-					ProductSort mySort = (ProductSort) this;
+					ProductSort mySort = this;
 					ProductSort thatSort = (ProductSort) sort;
 					List<Sort> myElements = mySort.getElementSort();
 					List<Sort> thoseElements = thatSort.getElementSort();

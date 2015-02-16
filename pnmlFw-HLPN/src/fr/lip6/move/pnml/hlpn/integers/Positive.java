@@ -56,18 +56,22 @@ public interface Positive extends HLPNNumber {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML();
 
 	/**
 	 * set values to conform PNML document
 	 */
+	@Override
 	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file
 	 */
+	@Override
 	public void toPNML(FileChannel fc);
 
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics);
 } // Positive

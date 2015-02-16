@@ -62,15 +62,15 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitraryOperator;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarySort;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsFactory;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.Unparsed;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.finiteEnumerations.FEConstant;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.hlcorestructure.Declaration;
 import fr.lip6.move.pnml.hlpn.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.hlpn.partitions.Partition;
 import fr.lip6.move.pnml.hlpn.partitions.PartitionElement;
-import fr.lip6.move.pnml.hlpn.partitions.impl.PartitionsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.partitions.PartitionsFactory;
 import fr.lip6.move.pnml.hlpn.terms.Declarations;
 import fr.lip6.move.pnml.hlpn.terms.NamedOperator;
 import fr.lip6.move.pnml.hlpn.terms.NamedSort;
@@ -129,6 +129,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<TermsDeclaration> getDeclaration() {
 		if (declaration == null) {
 			declaration = new EObjectContainmentWithInverseEList<TermsDeclaration>(TermsDeclaration.class, this,
@@ -142,6 +143,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Declaration getContainerDeclaration() {
 		if (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION)
 			return null;
@@ -164,6 +166,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDeclaration(Declaration newContainerDeclaration) {
 		if (newContainerDeclaration != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION && newContainerDeclaration != null)) {
@@ -306,6 +309,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -340,7 +344,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.TermsDeclaration> items = getDeclaration();
 			for (Iterator<TermsDeclaration> iterator = items.iterator(); iterator.hasNext();) {
-				TermsDeclaration item = (TermsDeclaration) iterator.next();
+				TermsDeclaration item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -367,6 +371,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -375,7 +380,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		//0
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -391,7 +396,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("variabledecl")) {
 				VariableDecl item;
-				item = TermsFactoryImpl.eINSTANCE.createVariableDecl();
+				item = TermsFactory.eINSTANCE.createVariableDecl();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -401,7 +406,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("namedsort")) {
 				NamedSort item;
-				item = TermsFactoryImpl.eINSTANCE.createNamedSort();
+				item = TermsFactory.eINSTANCE.createNamedSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -411,7 +416,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("namedoperator")) {
 				NamedOperator item;
-				item = TermsFactoryImpl.eINSTANCE.createNamedOperator();
+				item = TermsFactory.eINSTANCE.createNamedOperator();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -421,7 +426,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("arbitrarysort")) {
 				ArbitrarySort item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createArbitrarySort();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createArbitrarySort();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -431,7 +436,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("arbitraryoperator")) {
 				ArbitraryOperator item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createArbitraryOperator();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createArbitraryOperator();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -441,7 +446,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("unparsed")) {
 				Unparsed item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createUnparsed();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createUnparsed();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -451,7 +456,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("feconstant")) {
 				FEConstant item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFEConstant();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFEConstant();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -461,7 +466,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("partition")) {
 				Partition item;
-				item = PartitionsFactoryImpl.eINSTANCE.createPartition();
+				item = PartitionsFactory.eINSTANCE.createPartition();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -471,7 +476,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
-				item = PartitionsFactoryImpl.eINSTANCE.createPartitionElement();
+				item = PartitionsFactory.eINSTANCE.createPartitionElement();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarations(this);
@@ -486,6 +491,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -533,7 +539,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.TermsDeclaration> items = getDeclaration();
 			for (Iterator<TermsDeclaration> iterator = items.iterator(); iterator.hasNext();) {
-				TermsDeclaration item = (TermsDeclaration) iterator.next();
+				TermsDeclaration item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -587,6 +593,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -595,7 +602,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		if (getDeclaration() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.TermsDeclaration> items = getDeclaration();
 			for (Iterator<TermsDeclaration> iterator = items.iterator(); iterator.hasNext();) {
-				TermsDeclaration item = (TermsDeclaration) iterator.next();
+				TermsDeclaration item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

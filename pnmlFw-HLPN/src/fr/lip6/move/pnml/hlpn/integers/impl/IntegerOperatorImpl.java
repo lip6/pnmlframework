@@ -67,5 +67,6 @@ public abstract class IntegerOperatorImpl extends BuiltInOperatorImpl implements
 		return IntegersPackage.Literals.INTEGER_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //IntegerOperatorImpl

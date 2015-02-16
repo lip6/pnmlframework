@@ -100,6 +100,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteEnumeration getSort() {
 		if (eContainerFeatureID() != FiniteEnumerationsPackage.FE_CONSTANT__SORT)
 			return null;
@@ -121,6 +122,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSort(FiniteEnumeration newSort) {
 		if (newSort != eInternalContainer()
 				|| (eContainerFeatureID() != FiniteEnumerationsPackage.FE_CONSTANT__SORT && newSort != null)) {
@@ -246,6 +248,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -298,6 +301,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -306,7 +310,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 		//1
 		//0
 		@SuppressWarnings("unused")
-		FiniteEnumerationsFactory fact = FiniteEnumerationsFactoryImpl.eINSTANCE;
+		FiniteEnumerationsFactory fact = FiniteEnumerationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -315,7 +319,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -337,6 +341,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -426,6 +431,7 @@ public class FEConstantImpl extends OperatorDeclImpl implements FEConstant {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

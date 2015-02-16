@@ -121,6 +121,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Cardinality createCardinality() {
 		CardinalityImpl cardinality = new CardinalityImpl();
 		return cardinality;
@@ -131,6 +132,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Contains createContains() {
 		ContainsImpl contains = new ContainsImpl();
 		return contains;
@@ -141,6 +143,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CardinalityOf createCardinalityOf() {
 		CardinalityOfImpl cardinalityOf = new CardinalityOfImpl();
 		return cardinalityOf;
@@ -151,6 +154,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Add createAdd() {
 		AddImpl add = new AddImpl();
 		return add;
@@ -161,6 +165,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public All createAll() {
 		AllImpl all = new AllImpl();
 		return all;
@@ -171,6 +176,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Empty createEmpty() {
 		EmptyImpl empty = new EmptyImpl();
 		return empty;
@@ -181,6 +187,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NumberOf createNumberOf() {
 		NumberOfImpl numberOf = new NumberOfImpl();
 		return numberOf;
@@ -191,6 +198,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Subtract createSubtract() {
 		SubtractImpl subtract = new SubtractImpl();
 		return subtract;
@@ -201,6 +209,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ScalarProduct createScalarProduct() {
 		ScalarProductImpl scalarProduct = new ScalarProductImpl();
 		return scalarProduct;
@@ -211,6 +220,7 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MultisetsPackage getMultisetsPackage() {
 		return (MultisetsPackage) getEPackage();
 	}

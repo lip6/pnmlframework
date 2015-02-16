@@ -126,6 +126,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getIndex() {
 		return index;
 	}
@@ -135,6 +136,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIndex(Integer newIndex) {
 		Integer oldIndex = index;
 		index = newIndex;
@@ -229,6 +231,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -270,7 +273,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -305,6 +308,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -313,7 +317,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 		//1
 		//1
 		@SuppressWarnings("unused")
-		ListsFactory fact = ListsFactoryImpl.eINSTANCE;
+		ListsFactory fact = ListsFactory.eINSTANCE;
 
 		//processing id
 
@@ -867,6 +871,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -921,7 +926,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -991,6 +996,7 @@ public class MemberAtIndexImpl extends ListOperatorImpl implements MemberAtIndex
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

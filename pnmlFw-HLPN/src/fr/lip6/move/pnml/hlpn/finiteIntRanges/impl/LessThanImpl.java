@@ -106,6 +106,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -140,7 +141,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -175,6 +176,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -183,7 +185,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 		//0
 		//1
 		@SuppressWarnings("unused")
-		FiniteIntRangesFactory fact = FiniteIntRangesFactoryImpl.eINSTANCE;
+		FiniteIntRangesFactory fact = FiniteIntRangesFactory.eINSTANCE;
 
 		//processing id
 
@@ -729,6 +731,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -776,7 +779,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -846,6 +849,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -854,7 +858,7 @@ public class LessThanImpl extends FiniteIntRangeOperatorImpl implements LessThan
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

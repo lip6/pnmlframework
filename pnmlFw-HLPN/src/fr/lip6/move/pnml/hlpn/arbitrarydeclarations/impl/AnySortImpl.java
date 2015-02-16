@@ -110,6 +110,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnyObject getAnySortModel() {
 		if (anySortModel != null && anySortModel.eIsProxy()) {
 			InternalEObject oldAnySortModel = (InternalEObject) anySortModel;
@@ -156,6 +157,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setAnySortModel(AnyObject newAnySortModel) {
 		if (newAnySortModel != anySortModel) {
 			NotificationChain msgs = null;
@@ -267,6 +269,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -327,6 +330,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -335,7 +339,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactoryImpl.eINSTANCE;
+		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -356,6 +360,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -448,6 +453,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class
@@ -455,6 +461,7 @@ public class AnySortImpl extends SortImpl implements AnySort {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		//TODO: implement this method. 
 		throw new UnsupportedOperationException("Implementation unvailable.");

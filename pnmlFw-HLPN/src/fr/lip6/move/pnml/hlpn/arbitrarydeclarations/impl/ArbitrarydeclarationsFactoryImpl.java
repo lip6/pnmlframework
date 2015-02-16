@@ -106,6 +106,7 @@ public class ArbitrarydeclarationsFactoryImpl extends EFactoryImpl implements Ar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArbitrarySort createArbitrarySort() {
 		ArbitrarySortImpl arbitrarySort = new ArbitrarySortImpl();
 		return arbitrarySort;
@@ -116,6 +117,7 @@ public class ArbitrarydeclarationsFactoryImpl extends EFactoryImpl implements Ar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArbitraryOperator createArbitraryOperator() {
 		ArbitraryOperatorImpl arbitraryOperator = new ArbitraryOperatorImpl();
 		return arbitraryOperator;
@@ -126,6 +128,7 @@ public class ArbitrarydeclarationsFactoryImpl extends EFactoryImpl implements Ar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Unparsed createUnparsed() {
 		UnparsedImpl unparsed = new UnparsedImpl();
 		return unparsed;
@@ -136,6 +139,7 @@ public class ArbitrarydeclarationsFactoryImpl extends EFactoryImpl implements Ar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnySort createAnySort() {
 		AnySortImpl anySort = new AnySortImpl();
 		return anySort;
@@ -146,6 +150,7 @@ public class ArbitrarydeclarationsFactoryImpl extends EFactoryImpl implements Ar
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArbitrarydeclarationsPackage getArbitrarydeclarationsPackage() {
 		return (ArbitrarydeclarationsPackage) getEPackage();
 	}

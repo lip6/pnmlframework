@@ -124,6 +124,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Term getStructure() {
 		return structure;
 	}
@@ -152,6 +153,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStructure(Term newStructure) {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
@@ -174,6 +176,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Arc getContainerArc() {
 		if (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC)
 			return null;
@@ -196,6 +199,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC && newContainerArc != null)) {
@@ -338,6 +342,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -372,7 +377,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -447,6 +452,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -455,7 +461,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -471,7 +477,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -481,7 +487,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -1016,6 +1022,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -1063,7 +1070,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -1165,6 +1172,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -1173,7 +1181,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

@@ -61,36 +61,36 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsFactory;
 import fr.lip6.move.pnml.hlpn.booleans.Bool;
-import fr.lip6.move.pnml.hlpn.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.hlpn.booleans.BooleansFactory;
 import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumeration;
-import fr.lip6.move.pnml.hlpn.cyclicEnumerations.impl.CyclicEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.dots.Dot;
-import fr.lip6.move.pnml.hlpn.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.dots.DotsFactory;
 import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumeration;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRange;
-import fr.lip6.move.pnml.hlpn.finiteIntRanges.impl.FiniteIntRangesFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangesFactory;
 import fr.lip6.move.pnml.hlpn.integers.HLInteger;
+import fr.lip6.move.pnml.hlpn.integers.IntegersFactory;
 import fr.lip6.move.pnml.hlpn.integers.Natural;
 import fr.lip6.move.pnml.hlpn.integers.Positive;
-import fr.lip6.move.pnml.hlpn.integers.impl.IntegersFactoryImpl;
 import fr.lip6.move.pnml.hlpn.lists.HLPNList;
-import fr.lip6.move.pnml.hlpn.lists.impl.ListsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.lists.ListsFactory;
 import fr.lip6.move.pnml.hlpn.partitions.Partition;
 import fr.lip6.move.pnml.hlpn.partitions.PartitionElement;
 import fr.lip6.move.pnml.hlpn.partitions.PartitionsFactory;
 import fr.lip6.move.pnml.hlpn.partitions.PartitionsPackage;
 import fr.lip6.move.pnml.hlpn.strings.HLPNString;
-import fr.lip6.move.pnml.hlpn.strings.impl.StringsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.strings.StringsFactory;
 import fr.lip6.move.pnml.hlpn.terms.MultisetSort;
 import fr.lip6.move.pnml.hlpn.terms.ProductSort;
 import fr.lip6.move.pnml.hlpn.terms.Sort;
+import fr.lip6.move.pnml.hlpn.terms.TermsFactory;
 import fr.lip6.move.pnml.hlpn.terms.TermsPackage;
 import fr.lip6.move.pnml.hlpn.terms.UserSort;
 import fr.lip6.move.pnml.hlpn.terms.impl.SortDeclImpl;
-import fr.lip6.move.pnml.hlpn.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.terms.util.TermsValidator;
 
 /**
@@ -152,6 +152,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getDef() {
 		return def;
 	}
@@ -180,6 +181,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDef(Sort newDef) {
 		if (newDef != def) {
 			NotificationChain msgs = null;
@@ -201,6 +203,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<PartitionElement> getPartitionelements() {
 		if (partitionelements == null) {
 			partitionelements = new EObjectContainmentWithInverseEList<PartitionElement>(PartitionElement.class, this,
@@ -319,6 +322,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -379,7 +383,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.partitions.PartitionElement> items = getPartitionelements();
 			for (Iterator<PartitionElement> iterator = items.iterator(); iterator.hasNext();) {
-				PartitionElement item = (PartitionElement) iterator.next();
+				PartitionElement item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -406,6 +410,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -414,7 +419,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		//1
 		//2
 		@SuppressWarnings("unused")
-		PartitionsFactory fact = PartitionsFactoryImpl.eINSTANCE;
+		PartitionsFactory fact = PartitionsFactory.eINSTANCE;
 
 		//processing id
 
@@ -423,7 +428,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -446,7 +451,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("anysort")) {
 				AnySort item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createAnySort();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createAnySort();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -456,7 +461,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -466,7 +471,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("cyclicenumeration")) {
 				CyclicEnumeration item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createCyclicEnumeration();
+				item = CyclicEnumerationsFactory.eINSTANCE.createCyclicEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -476,7 +481,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -486,7 +491,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("finiteenumeration")) {
 				FiniteEnumeration item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFiniteEnumeration();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFiniteEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -496,7 +501,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("finiteintrange")) {
 				FiniteIntRange item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRange();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRange();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -506,7 +511,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
-				item = IntegersFactoryImpl.eINSTANCE.createNatural();
+				item = IntegersFactory.eINSTANCE.createNatural();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -516,7 +521,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
-				item = IntegersFactoryImpl.eINSTANCE.createPositive();
+				item = IntegersFactory.eINSTANCE.createPositive();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -526,7 +531,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
-				item = IntegersFactoryImpl.eINSTANCE.createHLInteger();
+				item = IntegersFactory.eINSTANCE.createHLInteger();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -536,7 +541,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("list")) {
 				HLPNList item;
-				item = ListsFactoryImpl.eINSTANCE.createHLPNList();
+				item = ListsFactory.eINSTANCE.createHLPNList();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -546,7 +551,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("string")) {
 				HLPNString item;
-				item = StringsFactoryImpl.eINSTANCE.createHLPNString();
+				item = StringsFactory.eINSTANCE.createHLPNString();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -556,7 +561,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -566,7 +571,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -576,7 +581,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartition(this);
@@ -586,7 +591,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
-				item = PartitionsFactoryImpl.eINSTANCE.createPartitionElement();
+				item = PartitionsFactory.eINSTANCE.createPartitionElement();
 				item.fromPNML(type, idr);
 
 				item.setRefpartition(this);
@@ -601,6 +606,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -674,7 +680,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.partitions.PartitionElement> items = getPartitionelements();
 			for (Iterator<PartitionElement> iterator = items.iterator(); iterator.hasNext();) {
-				PartitionElement item = (PartitionElement) iterator.next();
+				PartitionElement item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -728,6 +734,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -740,7 +747,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		if (getPartitionelements() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.partitions.PartitionElement> items = getPartitionelements();
 			for (Iterator<PartitionElement> iterator = items.iterator(); iterator.hasNext();) {
-				PartitionElement item = (PartitionElement) iterator.next();
+				PartitionElement item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

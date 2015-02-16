@@ -124,6 +124,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -133,6 +134,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -145,6 +147,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -154,6 +157,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(String newName) {
 		String oldName = name;
 		name = newName;
@@ -166,6 +170,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Declarations getContainerDeclarations() {
 		if (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS)
 			return null;
@@ -188,6 +193,7 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDeclarations(Declarations newContainerDeclarations) {
 		if (newContainerDeclarations != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS && newContainerDeclarations != null)) {
@@ -350,5 +356,6 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 		return result.toString();
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //TermsDeclarationImpl

@@ -145,6 +145,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLPNNumber getType() {
 		return type;
 	}
@@ -173,6 +174,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setType(HLPNNumber newType) {
 		if (newType != type) {
 			NotificationChain msgs = null;
@@ -195,6 +197,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getValue() {
 		return value;
 	}
@@ -204,6 +207,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(Integer newValue) {
 		Integer oldValue = value;
 		value = newValue;
@@ -340,6 +344,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -381,7 +386,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -428,6 +433,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -436,7 +442,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		//1
 		//2
 		@SuppressWarnings("unused")
-		IntegersFactory fact = IntegersFactoryImpl.eINSTANCE;
+		IntegersFactory fact = IntegersFactory.eINSTANCE;
 
 		//processing id
 
@@ -976,7 +982,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
-				item = IntegersFactoryImpl.eINSTANCE.createNatural();
+				item = IntegersFactory.eINSTANCE.createNatural();
 				item.fromPNML(type, idr);
 
 				item.setContainerNumberConstant(this);
@@ -986,7 +992,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
-				item = IntegersFactoryImpl.eINSTANCE.createPositive();
+				item = IntegersFactory.eINSTANCE.createPositive();
 				item.fromPNML(type, idr);
 
 				item.setContainerNumberConstant(this);
@@ -996,7 +1002,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
-				item = IntegersFactoryImpl.eINSTANCE.createHLInteger();
+				item = IntegersFactory.eINSTANCE.createHLInteger();
 				item.fromPNML(type, idr);
 
 				item.setContainerNumberConstant(this);
@@ -1020,6 +1026,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -1074,7 +1081,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1156,6 +1163,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -1164,7 +1172,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

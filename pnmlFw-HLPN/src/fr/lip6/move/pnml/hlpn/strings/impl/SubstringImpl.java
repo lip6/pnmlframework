@@ -147,6 +147,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getStart() {
 		return start;
 	}
@@ -156,6 +157,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStart(Integer newStart) {
 		Integer oldStart = start;
 		start = newStart;
@@ -168,6 +170,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getLength() {
 		return length;
 	}
@@ -177,6 +180,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLength(Integer newLength) {
 		Integer oldLength = length;
 		length = newLength;
@@ -283,6 +287,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -331,7 +336,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -366,6 +371,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -374,7 +380,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 		//2
 		//1
 		@SuppressWarnings("unused")
-		StringsFactory fact = StringsFactoryImpl.eINSTANCE;
+		StringsFactory fact = StringsFactory.eINSTANCE;
 
 		//processing id
 
@@ -936,6 +942,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -997,7 +1004,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1067,6 +1074,7 @@ public class SubstringImpl extends StringOperatorImpl implements Substring {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

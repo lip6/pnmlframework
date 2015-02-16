@@ -32,7 +32,7 @@
  * $Id ggiffo, Tue Dec 23 11:30:48 CET 2014$
  */
 package fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi;
-import  fr.lip6.move.pnml.hlpn.hlcorestructure.*;
+import fr.lip6.move.pnml.hlpn.hlcorestructure.LineShape;
 public enum LineShapeHLAPI{
 	LINE("line"),
 	CURVE("curve");

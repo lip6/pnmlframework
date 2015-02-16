@@ -55,33 +55,41 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsFactory;
 import fr.lip6.move.pnml.hlpn.booleans.Bool;
+import fr.lip6.move.pnml.hlpn.booleans.BooleansFactory;
 import fr.lip6.move.pnml.hlpn.booleans.impl.BooleansFactoryImpl;
 import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumeration;
+import fr.lip6.move.pnml.hlpn.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.cyclicEnumerations.impl.CyclicEnumerationsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.dots.Dot;
+import fr.lip6.move.pnml.hlpn.dots.DotsFactory;
 import fr.lip6.move.pnml.hlpn.dots.impl.DotsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumeration;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRange;
+import fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangesFactory;
 import fr.lip6.move.pnml.hlpn.finiteIntRanges.impl.FiniteIntRangesFactoryImpl;
 import fr.lip6.move.pnml.hlpn.integers.HLInteger;
+import fr.lip6.move.pnml.hlpn.integers.IntegersFactory;
 import fr.lip6.move.pnml.hlpn.integers.Natural;
 import fr.lip6.move.pnml.hlpn.integers.Positive;
 import fr.lip6.move.pnml.hlpn.integers.impl.IntegersFactoryImpl;
 import fr.lip6.move.pnml.hlpn.lists.HLPNList;
+import fr.lip6.move.pnml.hlpn.lists.ListsFactory;
 import fr.lip6.move.pnml.hlpn.lists.impl.ListsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.multisets.Empty;
 import fr.lip6.move.pnml.hlpn.multisets.MultisetsFactory;
 import fr.lip6.move.pnml.hlpn.multisets.MultisetsPackage;
 import fr.lip6.move.pnml.hlpn.partitions.impl.PartitionsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.strings.HLPNString;
+import fr.lip6.move.pnml.hlpn.strings.StringsFactory;
 import fr.lip6.move.pnml.hlpn.strings.impl.StringsFactoryImpl;
 import fr.lip6.move.pnml.hlpn.terms.MultisetSort;
 import fr.lip6.move.pnml.hlpn.terms.ProductSort;
 import fr.lip6.move.pnml.hlpn.terms.Sort;
 import fr.lip6.move.pnml.hlpn.terms.Term;
+import fr.lip6.move.pnml.hlpn.terms.TermsFactory;
 import fr.lip6.move.pnml.hlpn.terms.TermsPackage;
 import fr.lip6.move.pnml.hlpn.terms.UserSort;
 import fr.lip6.move.pnml.hlpn.terms.impl.MultisetOperatorImpl;
@@ -136,6 +144,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getRefsort() {
 		return refsort;
 	}
@@ -164,6 +173,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRefsort(Sort newRefsort) {
 		if (newRefsort != refsort) {
 			NotificationChain msgs = null;
@@ -282,6 +292,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -316,7 +327,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -363,6 +374,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -371,7 +383,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 		//0
 		//2
 		@SuppressWarnings("unused")
-		MultisetsFactory fact = MultisetsFactoryImpl.eINSTANCE;
+		MultisetsFactory fact = MultisetsFactory.eINSTANCE;
 
 		//processing id
 
@@ -903,7 +915,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("anysort")) {
 				AnySort item;
-				item = ArbitrarydeclarationsFactoryImpl.eINSTANCE.createAnySort();
+				item = ArbitrarydeclarationsFactory.eINSTANCE.createAnySort();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -913,7 +925,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -923,7 +935,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("cyclicenumeration")) {
 				CyclicEnumeration item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createCyclicEnumeration();
+				item = CyclicEnumerationsFactory.eINSTANCE.createCyclicEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -933,7 +945,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -943,7 +955,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("finiteenumeration")) {
 				FiniteEnumeration item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFiniteEnumeration();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFiniteEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -953,7 +965,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("finiteintrange")) {
 				FiniteIntRange item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRange();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRange();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -963,7 +975,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
-				item = IntegersFactoryImpl.eINSTANCE.createNatural();
+				item = IntegersFactory.eINSTANCE.createNatural();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -973,7 +985,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
-				item = IntegersFactoryImpl.eINSTANCE.createPositive();
+				item = IntegersFactory.eINSTANCE.createPositive();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -983,7 +995,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
-				item = IntegersFactoryImpl.eINSTANCE.createHLInteger();
+				item = IntegersFactory.eINSTANCE.createHLInteger();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -993,7 +1005,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("list")) {
 				HLPNList item;
-				item = ListsFactoryImpl.eINSTANCE.createHLPNList();
+				item = ListsFactory.eINSTANCE.createHLPNList();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -1003,7 +1015,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("string")) {
 				HLPNString item;
-				item = StringsFactoryImpl.eINSTANCE.createHLPNString();
+				item = StringsFactory.eINSTANCE.createHLPNString();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -1013,7 +1025,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -1023,7 +1035,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -1033,7 +1045,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerEmpty(this);
@@ -1057,6 +1069,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -1104,7 +1117,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1186,6 +1199,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -1194,7 +1208,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

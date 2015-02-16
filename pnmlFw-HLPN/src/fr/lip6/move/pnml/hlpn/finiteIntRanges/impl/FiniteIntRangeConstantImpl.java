@@ -142,6 +142,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getValue() {
 		return value;
 	}
@@ -151,6 +152,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(Integer newValue) {
 		Integer oldValue = value;
 		value = newValue;
@@ -164,6 +166,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRange getRange() {
 		return range;
 	}
@@ -192,6 +195,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRange(FiniteIntRange newRange) {
 		if (newRange != range) {
 			NotificationChain msgs = null;
@@ -339,6 +343,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -380,7 +385,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -427,6 +432,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -435,7 +441,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 		//1
 		//2
 		@SuppressWarnings("unused")
-		FiniteIntRangesFactory fact = FiniteIntRangesFactoryImpl.eINSTANCE;
+		FiniteIntRangesFactory fact = FiniteIntRangesFactory.eINSTANCE;
 
 		//processing id
 
@@ -975,7 +981,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 
 			if (type.getLocalName().equals("finiteintrange")) {
 				FiniteIntRange item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRange();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRange();
 				item.fromPNML(type, idr);
 
 				item.setContainerFiniteIntRangeConstant(this);
@@ -999,6 +1005,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -1053,7 +1060,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1135,6 +1142,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -1143,7 +1151,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

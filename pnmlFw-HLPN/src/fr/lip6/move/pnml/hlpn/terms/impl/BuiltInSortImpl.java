@@ -66,5 +66,6 @@ public abstract class BuiltInSortImpl extends SortImpl implements BuiltInSort {
 		return TermsPackage.Literals.BUILT_IN_SORT;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //BuiltInSortImpl

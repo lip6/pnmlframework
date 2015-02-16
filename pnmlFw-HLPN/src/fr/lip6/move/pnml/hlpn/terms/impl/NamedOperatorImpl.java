@@ -135,6 +135,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Term getDef() {
 		return def;
 	}
@@ -163,6 +164,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDef(Term newDef) {
 		if (newDef != def) {
 			NotificationChain msgs = null;
@@ -184,6 +186,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<VariableDecl> getParameters() {
 		if (parameters == null) {
 			parameters = new EObjectContainmentWithInverseEList<VariableDecl>(VariableDecl.class, this,
@@ -301,6 +304,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -369,7 +373,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.VariableDecl> items = getParameters();
 			for (Iterator<VariableDecl> iterator = items.iterator(); iterator.hasNext();) {
-				VariableDecl item = (VariableDecl) iterator.next();
+				VariableDecl item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -404,6 +408,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -412,7 +417,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		//1
 		//2
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -421,7 +426,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -986,6 +991,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -1067,7 +1073,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.VariableDecl> items = getParameters();
 			for (Iterator<VariableDecl> iterator = items.iterator(); iterator.hasNext();) {
-				VariableDecl item = (VariableDecl) iterator.next();
+				VariableDecl item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1137,6 +1143,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -1149,7 +1156,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		if (getParameters() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.VariableDecl> items = getParameters();
 			for (Iterator<VariableDecl> iterator = items.iterator(); iterator.hasNext();) {
-				VariableDecl item = (VariableDecl) iterator.next();
+				VariableDecl item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

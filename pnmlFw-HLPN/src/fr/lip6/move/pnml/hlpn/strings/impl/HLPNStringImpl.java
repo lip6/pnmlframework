@@ -87,6 +87,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -125,6 +126,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -133,7 +135,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		StringsFactory fact = StringsFactoryImpl.eINSTANCE;
+		StringsFactory fact = StringsFactory.eINSTANCE;
 
 		//processing id
 
@@ -148,6 +150,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -223,6 +226,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class
@@ -230,6 +234,7 @@ public class HLPNStringImpl extends BuiltInSortImpl implements HLPNString {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {

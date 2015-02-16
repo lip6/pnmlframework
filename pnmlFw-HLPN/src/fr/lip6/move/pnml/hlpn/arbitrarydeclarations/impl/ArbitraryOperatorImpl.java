@@ -125,6 +125,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<AnySort> getInput() {
 		if (input == null) {
 			input = new EObjectContainmentEList<AnySort>(AnySort.class, this,
@@ -138,6 +139,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnySort getOutput() {
 		return output;
 	}
@@ -166,6 +168,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setOutput(AnySort newOutput) {
 		if (newOutput != output) {
 			NotificationChain msgs = null;
@@ -272,6 +275,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -320,7 +324,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 
 			java.util.List<fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort> items = getInput();
 			for (Iterator<AnySort> iterator = items.iterator(); iterator.hasNext();) {
-				AnySort item = (AnySort) iterator.next();
+				AnySort item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -375,6 +379,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -383,7 +388,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 		//1
 		//2
 		@SuppressWarnings("unused")
-		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactoryImpl.eINSTANCE;
+		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -392,7 +397,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -464,6 +469,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -525,7 +531,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort> items = getInput();
 			for (Iterator<AnySort> iterator = items.iterator(); iterator.hasNext();) {
-				AnySort item = (AnySort) iterator.next();
+				AnySort item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -615,6 +621,7 @@ public class ArbitraryOperatorImpl extends OperatorDeclImpl implements Arbitrary
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

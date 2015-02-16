@@ -106,6 +106,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getSort() {
 		if (sort != null && sort.eIsProxy()) {
 			InternalEObject oldSort = (InternalEObject) sort;
@@ -132,6 +133,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSort(Sort newSort) {
 		Sort oldSort = sort;
 		sort = newSort;
@@ -144,6 +146,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Operator getContainerOperator() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_OPERATOR)
 			return null;
@@ -165,6 +168,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerOperator(Operator newContainerOperator) {
 		if (newContainerOperator != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_OPERATOR && newContainerOperator != null)) {
@@ -189,6 +193,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NamedOperator getContainerNamedOperator() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR)
 			return null;
@@ -212,6 +217,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
@@ -236,6 +242,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLMarking getContainerHLMarking() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING)
 			return null;
@@ -258,6 +265,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerHLMarking(HLMarking newContainerHLMarking) {
 		if (newContainerHLMarking != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING && newContainerHLMarking != null)) {
@@ -282,6 +290,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Condition getContainerCondition() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_CONDITION)
 			return null;
@@ -303,6 +312,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerCondition(Condition newContainerCondition) {
 		if (newContainerCondition != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_CONDITION && newContainerCondition != null)) {
@@ -327,6 +337,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLAnnotation getContainerHLAnnotation() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION)
 			return null;
@@ -349,6 +360,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerHLAnnotation(HLAnnotation newContainerHLAnnotation) {
 		if (newContainerHLAnnotation != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION && newContainerHLAnnotation != null)) {
@@ -373,6 +385,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PartitionElement getContainerPartitionElement() {
 		if (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT)
 			return null;
@@ -396,6 +409,7 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPartitionElement(PartitionElement newContainerPartitionElement) {
 		if (newContainerPartitionElement != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT && newContainerPartitionElement != null)) {
@@ -624,5 +638,6 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //TermImpl

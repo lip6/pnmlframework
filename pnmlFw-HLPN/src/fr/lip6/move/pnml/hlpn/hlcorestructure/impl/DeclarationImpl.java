@@ -117,6 +117,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Declarations getStructure() {
 		return structure;
 	}
@@ -145,6 +146,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStructure(Declarations newStructure) {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
@@ -167,6 +169,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerDeclarationPetriNet() {
 		if (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET)
 			return null;
@@ -190,6 +193,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDeclarationPetriNet(PetriNet newContainerDeclarationPetriNet) {
 		if (newContainerDeclarationPetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET && newContainerDeclarationPetriNet != null)) {
@@ -215,6 +219,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Page getContainerDeclarationPage() {
 		if (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE)
 			return null;
@@ -237,6 +242,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDeclarationPage(Page newContainerDeclarationPage) {
 		if (newContainerDeclarationPage != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE && newContainerDeclarationPage != null)) {
@@ -399,6 +405,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -433,7 +440,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -508,6 +515,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -516,7 +524,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -532,7 +540,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -542,7 +550,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -582,6 +590,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -629,7 +638,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -731,6 +740,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -739,7 +749,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

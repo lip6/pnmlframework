@@ -124,6 +124,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLPNString createHLPNString() {
 		HLPNStringImpl hlpnString = new HLPNStringImpl();
 		return hlpnString;
@@ -134,6 +135,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StringConstant createStringConstant() {
 		StringConstantImpl stringConstant = new StringConstantImpl();
 		return stringConstant;
@@ -144,6 +146,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Append createAppend() {
 		AppendImpl append = new AppendImpl();
 		return append;
@@ -154,6 +157,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Concatenation createConcatenation() {
 		ConcatenationImpl concatenation = new ConcatenationImpl();
 		return concatenation;
@@ -164,6 +168,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThan createGreaterThan() {
 		GreaterThanImpl greaterThan = new GreaterThanImpl();
 		return greaterThan;
@@ -174,6 +179,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThanOrEqual createGreaterThanOrEqual() {
 		GreaterThanOrEqualImpl greaterThanOrEqual = new GreaterThanOrEqualImpl();
 		return greaterThanOrEqual;
@@ -184,6 +190,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
@@ -194,6 +201,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThanOrEqual createLessThanOrEqual() {
 		LessThanOrEqualImpl lessThanOrEqual = new LessThanOrEqualImpl();
 		return lessThanOrEqual;
@@ -204,6 +212,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Length createLength() {
 		LengthImpl length = new LengthImpl();
 		return length;
@@ -214,6 +223,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Substring createSubstring() {
 		SubstringImpl substring = new SubstringImpl();
 		return substring;
@@ -224,6 +234,7 @@ public class StringsFactoryImpl extends EFactoryImpl implements StringsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public StringsPackage getStringsPackage() {
 		return (StringsPackage) getEPackage();
 	}

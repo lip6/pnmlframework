@@ -148,6 +148,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Node getSource() {
 		if (source != null && source.eIsProxy()) {
 			InternalEObject oldSource = (InternalEObject) source;
@@ -194,6 +195,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSource(Node newSource) {
 		if (newSource != source) {
 			NotificationChain msgs = null;
@@ -216,6 +218,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Node getTarget() {
 		if (target != null && target.eIsProxy()) {
 			InternalEObject oldTarget = (InternalEObject) target;
@@ -262,6 +265,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setTarget(Node newTarget) {
 		if (newTarget != target) {
 			NotificationChain msgs = null;
@@ -284,6 +288,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArcGraphics getArcgraphics() {
 		return arcgraphics;
 	}
@@ -312,6 +317,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setArcgraphics(ArcGraphics newArcgraphics) {
 		if (newArcgraphics != arcgraphics) {
 			NotificationChain msgs = null;
@@ -334,6 +340,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLAnnotation getHlinscription() {
 		return hlinscription;
 	}
@@ -362,6 +369,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHlinscription(HLAnnotation newHlinscription) {
 		if (newHlinscription != hlinscription) {
 			NotificationChain msgs = null;
@@ -526,6 +534,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 2
@@ -593,7 +602,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -644,6 +653,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -652,7 +662,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -661,7 +671,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -672,12 +682,12 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (locRoot.getAttributeValue(new QName("source")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("source")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		if (locRoot.getAttributeValue(new QName("target")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("target")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		//processing attributes
 
@@ -689,7 +699,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -699,7 +709,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -709,7 +719,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 			if (type.getLocalName().equals("graphics")) {
 				ArcGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createArcGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createArcGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerArc(this);
@@ -719,7 +729,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 			if (type.getLocalName().equals("hlinscription")) {
 				HLAnnotation item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createHLAnnotation();
+				item = HlcorestructureFactory.eINSTANCE.createHLAnnotation();
 				item.fromPNML(type, idr);
 
 				item.setContainerArc(this);
@@ -742,6 +752,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 2
@@ -822,7 +833,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -900,6 +911,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -912,7 +924,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

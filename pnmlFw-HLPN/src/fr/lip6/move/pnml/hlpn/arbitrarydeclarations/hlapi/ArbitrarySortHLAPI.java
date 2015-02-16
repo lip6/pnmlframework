@@ -33,41 +33,25 @@
  */
 package fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi;
 
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarySort;
-
-import fr.lip6.move.pnml.hlpn.terms.Declarations;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.booleans.hlapi.*;
-import fr.lip6.move.pnml.hlpn.cyclicEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.dots.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi.*;
-import fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.hlpn.integers.hlapi.*;
-import fr.lip6.move.pnml.hlpn.lists.hlapi.*;
-import fr.lip6.move.pnml.hlpn.multisets.hlapi.*;
-import fr.lip6.move.pnml.hlpn.partitions.hlapi.*;
-import fr.lip6.move.pnml.hlpn.strings.hlapi.*;
-import fr.lip6.move.pnml.hlpn.terms.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+
+import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.*;
+
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
 import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarySort;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarydeclarationsFactory;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.terms.Declarations;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.DeclarationsHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.SortDeclHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.TermsDeclarationHLAPI;
 
 
 public class ArbitrarySortHLAPI implements HLAPIClass,TermsDeclarationHLAPI,SortDeclHLAPI{

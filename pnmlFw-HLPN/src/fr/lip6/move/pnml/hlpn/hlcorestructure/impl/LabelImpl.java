@@ -95,6 +95,7 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<ToolInfo> getToolspecifics() {
 		if (toolspecifics == null) {
 			toolspecifics = new EObjectContainmentWithInverseEList<ToolInfo>(ToolInfo.class, this,
@@ -192,5 +193,6 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //LabelImpl

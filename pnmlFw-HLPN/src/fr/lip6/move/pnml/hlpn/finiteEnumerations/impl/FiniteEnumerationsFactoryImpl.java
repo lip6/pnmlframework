@@ -100,6 +100,7 @@ public class FiniteEnumerationsFactoryImpl extends EFactoryImpl implements Finit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteEnumeration createFiniteEnumeration() {
 		FiniteEnumerationImpl finiteEnumeration = new FiniteEnumerationImpl();
 		return finiteEnumeration;
@@ -110,6 +111,7 @@ public class FiniteEnumerationsFactoryImpl extends EFactoryImpl implements Finit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FEConstant createFEConstant() {
 		FEConstantImpl feConstant = new FEConstantImpl();
 		return feConstant;
@@ -120,6 +122,7 @@ public class FiniteEnumerationsFactoryImpl extends EFactoryImpl implements Finit
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteEnumerationsPackage getFiniteEnumerationsPackage() {
 		return (FiniteEnumerationsPackage) getEPackage();
 	}

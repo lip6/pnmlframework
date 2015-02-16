@@ -123,6 +123,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Declarations createDeclarations() {
 		DeclarationsImpl declarations = new DeclarationsImpl();
 		return declarations;
@@ -133,6 +134,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MultisetSort createMultisetSort() {
 		MultisetSortImpl multisetSort = new MultisetSortImpl();
 		return multisetSort;
@@ -143,6 +145,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VariableDecl createVariableDecl() {
 		VariableDeclImpl variableDecl = new VariableDeclImpl();
 		return variableDecl;
@@ -153,6 +156,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Variable createVariable() {
 		VariableImpl variable = new VariableImpl();
 		return variable;
@@ -163,6 +167,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProductSort createProductSort() {
 		ProductSortImpl productSort = new ProductSortImpl();
 		return productSort;
@@ -173,6 +178,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Tuple createTuple() {
 		TupleImpl tuple = new TupleImpl();
 		return tuple;
@@ -183,6 +189,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NamedSort createNamedSort() {
 		NamedSortImpl namedSort = new NamedSortImpl();
 		return namedSort;
@@ -193,6 +200,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UserSort createUserSort() {
 		UserSortImpl userSort = new UserSortImpl();
 		return userSort;
@@ -203,6 +211,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NamedOperator createNamedOperator() {
 		NamedOperatorImpl namedOperator = new NamedOperatorImpl();
 		return namedOperator;
@@ -213,6 +222,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public UserOperator createUserOperator() {
 		UserOperatorImpl userOperator = new UserOperatorImpl();
 		return userOperator;
@@ -223,6 +233,7 @@ public class TermsFactoryImpl extends EFactoryImpl implements TermsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TermsPackage getTermsPackage() {
 		return (TermsPackage) getEPackage();
 	}

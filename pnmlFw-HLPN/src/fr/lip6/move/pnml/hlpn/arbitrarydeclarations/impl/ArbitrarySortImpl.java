@@ -88,6 +88,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -140,6 +141,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -148,7 +150,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 		//1
 		//0
 		@SuppressWarnings("unused")
-		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactoryImpl.eINSTANCE;
+		ArbitrarydeclarationsFactory fact = ArbitrarydeclarationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -157,7 +159,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -179,6 +181,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -268,6 +271,7 @@ public class ArbitrarySortImpl extends SortDeclImpl implements ArbitrarySort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

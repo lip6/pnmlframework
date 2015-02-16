@@ -124,6 +124,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getText() {
 		return text;
 	}
@@ -133,6 +134,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(String newText) {
 		String oldText = text;
 		text = newText;
@@ -145,6 +147,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet getContainerNamePetriNet() {
 		if (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET)
 			return null;
@@ -167,6 +170,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePetriNet(PetriNet newContainerNamePetriNet) {
 		if (newContainerNamePetriNet != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET && newContainerNamePetriNet != null)) {
@@ -192,6 +196,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PnObject getContainerNamePnObject() {
 		if (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT)
 			return null;
@@ -214,6 +219,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamePnObject(PnObject newContainerNamePnObject) {
 		if (newContainerNamePnObject != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT && newContainerNamePnObject != null)) {
@@ -386,6 +392,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -420,7 +427,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -475,6 +482,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -483,7 +491,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		//0
 		//3
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -499,7 +507,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -509,7 +517,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -528,6 +536,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -575,7 +584,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -657,6 +666,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -665,7 +675,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

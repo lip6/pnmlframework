@@ -67,5 +67,6 @@ public abstract class ListOperatorImpl extends BuiltInOperatorImpl implements Li
 		return ListsPackage.Literals.LIST_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //ListOperatorImpl

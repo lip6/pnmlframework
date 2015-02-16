@@ -144,6 +144,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getStart() {
 		return start;
 	}
@@ -153,6 +154,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStart(Integer newStart) {
 		Integer oldStart = start;
 		start = newStart;
@@ -166,6 +168,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getEnd() {
 		return end;
 	}
@@ -175,6 +178,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setEnd(Integer newEnd) {
 		Integer oldEnd = end;
 		end = newEnd;
@@ -188,6 +192,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRangeConstant getContainerFiniteIntRangeConstant() {
 		if (eContainerFeatureID() != FiniteIntRangesPackage.FINITE_INT_RANGE__CONTAINER_FINITE_INT_RANGE_CONSTANT)
 			return null;
@@ -211,6 +216,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerFiniteIntRangeConstant(FiniteIntRangeConstant newContainerFiniteIntRangeConstant) {
 		if (newContainerFiniteIntRangeConstant != eInternalContainer()
 				|| (eContainerFeatureID() != FiniteIntRangesPackage.FINITE_INT_RANGE__CONTAINER_FINITE_INT_RANGE_CONSTANT && newContainerFiniteIntRangeConstant != null)) {
@@ -376,6 +382,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -428,6 +435,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -436,7 +444,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 		//2
 		//0
 		@SuppressWarnings("unused")
-		FiniteIntRangesFactory fact = FiniteIntRangesFactoryImpl.eINSTANCE;
+		FiniteIntRangesFactory fact = FiniteIntRangesFactory.eINSTANCE;
 
 		//processing id
 
@@ -467,6 +475,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -556,6 +565,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -566,6 +576,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
@@ -574,7 +585,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
 				if ("FiniteIntRange".equalsIgnoreCase(this.eClass().getName())) {
-					FiniteIntRange myFIR = (FiniteIntRange) this;
+					FiniteIntRange myFIR = this;
 					FiniteIntRange thatFIR = (FiniteIntRange) sort;
 					isEqual = (myFIR.getStart() == thatFIR.getStart() && myFIR.getEnd() == thatFIR.getEnd());
 

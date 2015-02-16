@@ -124,6 +124,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getStructure() {
 		return structure;
 	}
@@ -152,6 +153,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStructure(Sort newStructure) {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
@@ -174,6 +176,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Place getContainerPlace() {
 		if (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE)
 			return null;
@@ -196,6 +199,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPlace(Place newContainerPlace) {
 		if (newContainerPlace != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE && newContainerPlace != null)) {
@@ -337,6 +341,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -371,7 +376,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -446,6 +451,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -454,7 +460,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -470,7 +476,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -480,7 +486,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -637,6 +643,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -684,7 +691,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -786,6 +793,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -794,7 +802,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.hlpn.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

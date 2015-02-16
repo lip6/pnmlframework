@@ -105,6 +105,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -139,7 +140,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -174,6 +175,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -182,7 +184,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		ListsFactory fact = ListsFactoryImpl.eINSTANCE;
+		ListsFactory fact = ListsFactory.eINSTANCE;
 
 		//processing id
 
@@ -728,6 +730,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -775,7 +778,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -845,6 +848,7 @@ public class AppendImpl extends ListOperatorImpl implements Append {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

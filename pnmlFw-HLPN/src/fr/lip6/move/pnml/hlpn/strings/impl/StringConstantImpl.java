@@ -125,6 +125,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getValue() {
 		return value;
 	}
@@ -134,6 +135,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setValue(String newValue) {
 		String oldValue = value;
 		value = newValue;
@@ -229,6 +231,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -263,7 +266,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -314,6 +317,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -322,7 +326,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 		//0
 		//2
 		@SuppressWarnings("unused")
-		StringsFactory fact = StringsFactoryImpl.eINSTANCE;
+		StringsFactory fact = StringsFactory.eINSTANCE;
 
 		//processing id
 
@@ -872,6 +876,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -919,7 +924,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.hlpn.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -1005,6 +1010,7 @@ public class StringConstantImpl extends BuiltInConstantImpl implements StringCon
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

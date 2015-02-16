@@ -109,6 +109,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ToolInfo getContainerToolInfo() {
 		if (eContainerFeatureID() != HlcorestructurePackage.ANY_OBJECT__CONTAINER_TOOL_INFO)
 			return null;
@@ -120,6 +121,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Unparsed getContainerUnparsed() {
 		if (eContainerFeatureID() != HlcorestructurePackage.ANY_OBJECT__CONTAINER_UNPARSED)
 			return null;
@@ -142,6 +144,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerUnparsed(Unparsed newContainerUnparsed) {
 		if (newContainerUnparsed != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.ANY_OBJECT__CONTAINER_UNPARSED && newContainerUnparsed != null)) {
@@ -166,6 +169,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnySort getContainerAnySort() {
 		if (containerAnySort != null && containerAnySort.eIsProxy()) {
 			InternalEObject oldContainerAnySort = (InternalEObject) containerAnySort;
@@ -213,6 +217,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnySort(AnySort newContainerAnySort) {
 		if (newContainerAnySort != containerAnySort) {
 			NotificationChain msgs = null;
@@ -235,6 +240,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArbitrarySort getContainerArbitrarySort() {
 		if (containerArbitrarySort != null && containerArbitrarySort.eIsProxy()) {
 			InternalEObject oldContainerArbitrarySort = (InternalEObject) containerArbitrarySort;
@@ -263,6 +269,7 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArbitrarySort(ArbitrarySort newContainerArbitrarySort) {
 		ArbitrarySort oldContainerArbitrarySort = containerArbitrarySort;
 		containerArbitrarySort = newContainerArbitrarySort;
@@ -419,5 +426,6 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //AnyObjectImpl

@@ -103,6 +103,7 @@ public class CyclicEnumerationsFactoryImpl extends EFactoryImpl implements Cycli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CyclicEnumeration createCyclicEnumeration() {
 		CyclicEnumerationImpl cyclicEnumeration = new CyclicEnumerationImpl();
 		return cyclicEnumeration;
@@ -113,6 +114,7 @@ public class CyclicEnumerationsFactoryImpl extends EFactoryImpl implements Cycli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Successor createSuccessor() {
 		SuccessorImpl successor = new SuccessorImpl();
 		return successor;
@@ -123,6 +125,7 @@ public class CyclicEnumerationsFactoryImpl extends EFactoryImpl implements Cycli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Predecessor createPredecessor() {
 		PredecessorImpl predecessor = new PredecessorImpl();
 		return predecessor;
@@ -133,6 +136,7 @@ public class CyclicEnumerationsFactoryImpl extends EFactoryImpl implements Cycli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CyclicEnumerationsPackage getCyclicEnumerationsPackage() {
 		return (CyclicEnumerationsPackage) getEPackage();
 	}

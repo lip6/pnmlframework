@@ -106,6 +106,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MultisetSort getMulti() {
 		if (eContainerFeatureID() != TermsPackage.SORT__MULTI)
 			return null;
@@ -127,6 +128,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setMulti(MultisetSort newMulti) {
 		if (newMulti != eInternalContainer() || (eContainerFeatureID() != TermsPackage.SORT__MULTI && newMulti != null)) {
 			if (EcoreUtil.isAncestor(this, newMulti))
@@ -149,6 +151,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NamedSort getContainerNamedSort() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_NAMED_SORT)
 			return null;
@@ -171,6 +174,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNamedSort(NamedSort newContainerNamedSort) {
 		if (newContainerNamedSort != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_NAMED_SORT && newContainerNamedSort != null)) {
@@ -195,6 +199,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public VariableDecl getContainerVariableDecl() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_VARIABLE_DECL)
 			return null;
@@ -217,6 +222,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerVariableDecl(VariableDecl newContainerVariableDecl) {
 		if (newContainerVariableDecl != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_VARIABLE_DECL && newContainerVariableDecl != null)) {
@@ -241,6 +247,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProductSort getContainerProductSort() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PRODUCT_SORT)
 			return null;
@@ -263,6 +270,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerProductSort(ProductSort newContainerProductSort) {
 		if (newContainerProductSort != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PRODUCT_SORT && newContainerProductSort != null)) {
@@ -287,6 +295,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Type getContainerType() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_TYPE)
 			return null;
@@ -308,6 +317,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerType(Type newContainerType) {
 		if (newContainerType != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_TYPE && newContainerType != null)) {
@@ -332,6 +342,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public All getContainerAll() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_ALL)
 			return null;
@@ -353,6 +364,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAll(All newContainerAll) {
 		if (newContainerAll != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_ALL && newContainerAll != null)) {
@@ -377,6 +389,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Empty getContainerEmpty() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_EMPTY)
 			return null;
@@ -398,6 +411,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerEmpty(Empty newContainerEmpty) {
 		if (newContainerEmpty != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_EMPTY && newContainerEmpty != null)) {
@@ -422,6 +436,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Partition getContainerPartition() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PARTITION)
 			return null;
@@ -443,6 +458,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPartition(Partition newContainerPartition) {
 		if (newContainerPartition != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PARTITION && newContainerPartition != null)) {
@@ -467,6 +483,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLPNList getContainerList() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_LIST)
 			return null;
@@ -488,6 +505,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerList(HLPNList newContainerList) {
 		if (newContainerList != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_LIST && newContainerList != null)) {
@@ -512,6 +530,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EmptyList getContainerEmptyList() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_EMPTY_LIST)
 			return null;
@@ -534,6 +553,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerEmptyList(EmptyList newContainerEmptyList) {
 		if (newContainerEmptyList != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_EMPTY_LIST && newContainerEmptyList != null)) {
@@ -558,6 +578,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MakeList getContainerMakeList() {
 		if (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_MAKE_LIST)
 			return null;
@@ -579,6 +600,7 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerMakeList(MakeList newContainerMakeList) {
 		if (newContainerMakeList != eInternalContainer()
 				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_MAKE_LIST && newContainerMakeList != null)) {
@@ -883,5 +905,6 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //SortImpl

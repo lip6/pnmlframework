@@ -149,6 +149,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Position getPosition() {
 		return position;
 	}
@@ -177,6 +178,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPosition(Position newPosition) {
 		if (newPosition != position) {
 			NotificationChain msgs = null;
@@ -199,6 +201,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Dimension getDimension() {
 		return dimension;
 	}
@@ -227,6 +230,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDimension(Dimension newDimension) {
 		if (newDimension != dimension) {
 			NotificationChain msgs = null;
@@ -249,6 +253,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Fill getFill() {
 		return fill;
 	}
@@ -277,6 +282,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setFill(Fill newFill) {
 		if (newFill != fill) {
 			NotificationChain msgs = null;
@@ -299,6 +305,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line getLine() {
 		return line;
 	}
@@ -327,6 +334,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setLine(Line newLine) {
 		if (newLine != line) {
 			NotificationChain msgs = null;
@@ -349,6 +357,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Node getContainerNode() {
 		if (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE)
 			return null;
@@ -371,6 +380,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNode(Node newContainerNode) {
 		if (newContainerNode != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE && newContainerNode != null)) {
@@ -395,6 +405,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Page getContainerPage() {
 		if (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE)
 			return null;
@@ -417,6 +428,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE && newContainerPage != null)) {
@@ -629,6 +641,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -725,6 +738,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -733,7 +747,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -749,7 +763,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("position")) {
 				Position item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createPosition();
+				item = HlcorestructureFactory.eINSTANCE.createPosition();
 				item.fromPNML(type, idr);
 
 				item.setContainerPNodeGraphics(this);
@@ -759,7 +773,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("dimension")) {
 				Dimension item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createDimension();
+				item = HlcorestructureFactory.eINSTANCE.createDimension();
 				item.fromPNML(type, idr);
 
 				item.setContainerDNodeGraphics(this);
@@ -769,7 +783,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createFill();
+				item = HlcorestructureFactory.eINSTANCE.createFill();
 				item.fromPNML(type, idr);
 
 				item.setContainerNodeGraphics(this);
@@ -779,7 +793,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createLine();
+				item = HlcorestructureFactory.eINSTANCE.createLine();
 				item.fromPNML(type, idr);
 
 				item.setContainerNodeGraphics(this);
@@ -794,6 +808,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -922,6 +937,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();

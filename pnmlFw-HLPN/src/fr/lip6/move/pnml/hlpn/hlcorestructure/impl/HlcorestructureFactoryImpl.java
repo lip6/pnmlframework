@@ -258,6 +258,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNetDoc createPetriNetDoc() {
 		PetriNetDocImpl petriNetDoc = new PetriNetDocImpl();
 		return petriNetDoc;
@@ -268,6 +269,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNet createPetriNet() {
 		PetriNetImpl petriNet = new PetriNetImpl();
 		return petriNet;
@@ -278,6 +280,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Page createPage() {
 		PageImpl page = new PageImpl();
 		return page;
@@ -288,6 +291,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Name createName() {
 		NameImpl name = new NameImpl();
 		return name;
@@ -298,6 +302,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ToolInfo createToolInfo() {
 		ToolInfoImpl toolInfo = new ToolInfoImpl();
 		return toolInfo;
@@ -308,6 +313,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics createNodeGraphics() {
 		NodeGraphicsImpl nodeGraphics = new NodeGraphicsImpl();
 		return nodeGraphics;
@@ -318,6 +324,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Position createPosition() {
 		PositionImpl position = new PositionImpl();
 		return position;
@@ -328,6 +335,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Offset createOffset() {
 		OffsetImpl offset = new OffsetImpl();
 		return offset;
@@ -338,6 +346,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Dimension createDimension() {
 		DimensionImpl dimension = new DimensionImpl();
 		return dimension;
@@ -348,6 +357,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics createAnnotationGraphics() {
 		AnnotationGraphicsImpl annotationGraphics = new AnnotationGraphicsImpl();
 		return annotationGraphics;
@@ -358,6 +368,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Fill createFill() {
 		FillImpl fill = new FillImpl();
 		return fill;
@@ -368,6 +379,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Line createLine() {
 		LineImpl line = new LineImpl();
 		return line;
@@ -378,6 +390,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArcGraphics createArcGraphics() {
 		ArcGraphicsImpl arcGraphics = new ArcGraphicsImpl();
 		return arcGraphics;
@@ -388,6 +401,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Arc createArc() {
 		ArcImpl arc = new ArcImpl();
 		return arc;
@@ -398,6 +412,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Font createFont() {
 		FontImpl font = new FontImpl();
 		return font;
@@ -408,6 +423,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Place createPlace() {
 		PlaceImpl place = new PlaceImpl();
 		return place;
@@ -418,6 +434,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RefTransition createRefTransition() {
 		RefTransitionImpl refTransition = new RefTransitionImpl();
 		return refTransition;
@@ -428,6 +445,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Transition createTransition() {
 		TransitionImpl transition = new TransitionImpl();
 		return transition;
@@ -438,6 +456,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RefPlace createRefPlace() {
 		RefPlaceImpl refPlace = new RefPlaceImpl();
 		return refPlace;
@@ -448,6 +467,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Type createType() {
 		TypeImpl type = new TypeImpl();
 		return type;
@@ -458,6 +478,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLMarking createHLMarking() {
 		HLMarkingImpl hlMarking = new HLMarkingImpl();
 		return hlMarking;
@@ -468,6 +489,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Condition createCondition() {
 		ConditionImpl condition = new ConditionImpl();
 		return condition;
@@ -478,6 +500,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLAnnotation createHLAnnotation() {
 		HLAnnotationImpl hlAnnotation = new HLAnnotationImpl();
 		return hlAnnotation;
@@ -488,6 +511,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Declaration createDeclaration() {
 		DeclarationImpl declaration = new DeclarationImpl();
 		return declaration;
@@ -776,6 +800,7 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HlcorestructurePackage getHlcorestructurePackage() {
 		return (HlcorestructurePackage) getEPackage();
 	}
