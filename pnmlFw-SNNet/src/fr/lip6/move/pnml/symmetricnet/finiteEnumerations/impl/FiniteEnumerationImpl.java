@@ -111,6 +111,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<FEConstant> getElements() {
 		if (elements == null) {
 			elements = new EObjectContainmentWithInverseEList<FEConstant>(FEConstant.class, this,
@@ -211,6 +212,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -245,7 +247,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant> items = getElements();
 			for (Iterator<FEConstant> iterator = items.iterator(); iterator.hasNext();) {
-				FEConstant item = (FEConstant) iterator.next();
+				FEConstant item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -272,6 +274,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -280,7 +283,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 		//0
 		//1
 		@SuppressWarnings("unused")
-		FiniteEnumerationsFactory fact = FiniteEnumerationsFactoryImpl.eINSTANCE;
+		FiniteEnumerationsFactory fact = FiniteEnumerationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -296,7 +299,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 
 			if (type.getLocalName().equals("feconstant")) {
 				FEConstant item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFEConstant();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFEConstant();
 				item.fromPNML(type, idr);
 
 				item.setSort(this);
@@ -311,6 +314,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -358,7 +362,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant> items = getElements();
 			for (Iterator<FEConstant> iterator = items.iterator(); iterator.hasNext();) {
-				FEConstant item = (FEConstant) iterator.next();
+				FEConstant item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -412,6 +416,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class
@@ -419,6 +424,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
@@ -427,7 +433,7 @@ public class FiniteEnumerationImpl extends BuiltInSortImpl implements FiniteEnum
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
 				if ("FiniteEnumeration".equalsIgnoreCase(this.eClass().getName())) {
-					FiniteEnumeration myFE = (FiniteEnumeration) this;
+					FiniteEnumeration myFE = this;
 					FiniteEnumeration thatFE = (FiniteEnumeration) sort;
 					List<FEConstant> myConstants = myFE.getElements();
 					List<FEConstant> thoseConstants = thatFE.getElements();

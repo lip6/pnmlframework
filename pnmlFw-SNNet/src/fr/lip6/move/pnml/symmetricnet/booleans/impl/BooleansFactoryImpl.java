@@ -118,6 +118,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Equality createEquality() {
 		EqualityImpl equality = new EqualityImpl();
 		return equality;
@@ -128,6 +129,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Inequality createInequality() {
 		InequalityImpl inequality = new InequalityImpl();
 		return inequality;
@@ -138,6 +140,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BooleanConstant createBooleanConstant() {
 		BooleanConstantImpl booleanConstant = new BooleanConstantImpl();
 		return booleanConstant;
@@ -148,6 +151,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Or createOr() {
 		OrImpl or = new OrImpl();
 		return or;
@@ -158,6 +162,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public And createAnd() {
 		AndImpl and = new AndImpl();
 		return and;
@@ -168,6 +173,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Imply createImply() {
 		ImplyImpl imply = new ImplyImpl();
 		return imply;
@@ -178,6 +184,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Not createNot() {
 		NotImpl not = new NotImpl();
 		return not;
@@ -188,6 +195,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Bool createBool() {
 		BoolImpl bool = new BoolImpl();
 		return bool;
@@ -198,6 +206,7 @@ public class BooleansFactoryImpl extends EFactoryImpl implements BooleansFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BooleansPackage getBooleansPackage() {
 		return (BooleansPackage) getEPackage();
 	}

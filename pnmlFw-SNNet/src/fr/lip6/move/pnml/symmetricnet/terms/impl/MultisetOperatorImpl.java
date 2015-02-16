@@ -66,5 +66,6 @@ public abstract class MultisetOperatorImpl extends OperatorImpl implements Multi
 		return TermsPackage.Literals.MULTISET_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //MultisetOperatorImpl

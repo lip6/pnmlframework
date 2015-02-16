@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -125,6 +124,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Type getType() {
 		return type;
 	}
@@ -153,6 +153,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setType(Type newType) {
 		if (newType != type) {
 			NotificationChain msgs = null;
@@ -174,6 +175,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLMarking getHlinitialMarking() {
 		return hlinitialMarking;
 	}
@@ -202,6 +204,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setHlinitialMarking(HLMarking newHlinitialMarking) {
 		if (newHlinitialMarking != hlinitialMarking) {
 			NotificationChain msgs = null;
@@ -337,6 +340,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -390,7 +394,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -453,6 +457,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -461,7 +466,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		//0
 		//5
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -470,7 +475,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -485,7 +490,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -495,7 +500,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -505,7 +510,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createNodeGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createNodeGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerNode(this);
@@ -515,7 +520,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			if (type.getLocalName().equals("type")) {
 				Type item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createType();
+				item = HlcorestructureFactory.eINSTANCE.createType();
 				item.fromPNML(type, idr);
 
 				item.setContainerPlace(this);
@@ -525,7 +530,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 			if (type.getLocalName().equals("hlinitialMarking")) {
 				HLMarking item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createHLMarking();
+				item = HlcorestructureFactory.eINSTANCE.createHLMarking();
 				item.fromPNML(type, idr);
 
 				item.setContainerPlace(this);
@@ -549,6 +554,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -615,7 +621,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -705,6 +711,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -717,7 +724,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

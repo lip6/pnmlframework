@@ -66,5 +66,6 @@ public abstract class SortDeclImpl extends TermsDeclarationImpl implements SortD
 		return TermsPackage.Literals.SORT_DECL;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //SortDeclImpl

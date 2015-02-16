@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -47,7 +46,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-
 import fr.lip6.move.pnml.framework.general.PnmlExport;
 import fr.lip6.move.pnml.framework.utils.IdRefLinker;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
@@ -57,19 +55,19 @@ import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.symmetricnet.booleans.Bool;
-import fr.lip6.move.pnml.symmetricnet.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.booleans.BooleansFactory;
 import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumeration;
-import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.impl.CyclicEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.symmetricnet.dots.Dot;
-import fr.lip6.move.pnml.symmetricnet.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.dots.DotsFactory;
 import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FiniteEnumeration;
-import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRange;
-import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.impl.FiniteIntRangesFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRangesFactory;
 import fr.lip6.move.pnml.symmetricnet.integers.HLInteger;
+import fr.lip6.move.pnml.symmetricnet.integers.IntegersFactory;
 import fr.lip6.move.pnml.symmetricnet.integers.Natural;
 import fr.lip6.move.pnml.symmetricnet.integers.Positive;
-import fr.lip6.move.pnml.symmetricnet.integers.impl.IntegersFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.terms.MultisetSort;
 import fr.lip6.move.pnml.symmetricnet.terms.NamedSort;
 import fr.lip6.move.pnml.symmetricnet.terms.ProductSort;
@@ -127,6 +125,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Sort getSortdef() {
 		return sortdef;
 	}
@@ -155,6 +154,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setSortdef(Sort newSortdef) {
 		if (newSortdef != sortdef) {
 			NotificationChain msgs = null;
@@ -264,6 +264,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -338,6 +339,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -346,7 +348,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		//1
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -355,7 +357,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -378,7 +380,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
-				item = TermsFactoryImpl.eINSTANCE.createMultisetSort();
+				item = TermsFactory.eINSTANCE.createMultisetSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -388,7 +390,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
-				item = TermsFactoryImpl.eINSTANCE.createProductSort();
+				item = TermsFactory.eINSTANCE.createProductSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -398,7 +400,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
-				item = TermsFactoryImpl.eINSTANCE.createUserSort();
+				item = TermsFactory.eINSTANCE.createUserSort();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -408,7 +410,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
-				item = BooleansFactoryImpl.eINSTANCE.createBool();
+				item = BooleansFactory.eINSTANCE.createBool();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -418,7 +420,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("cyclicenumeration")) {
 				CyclicEnumeration item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createCyclicEnumeration();
+				item = CyclicEnumerationsFactory.eINSTANCE.createCyclicEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -428,7 +430,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
-				item = DotsFactoryImpl.eINSTANCE.createDot();
+				item = DotsFactory.eINSTANCE.createDot();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -438,7 +440,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("finiteenumeration")) {
 				FiniteEnumeration item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFiniteEnumeration();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFiniteEnumeration();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -448,7 +450,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("finiteintrange")) {
 				FiniteIntRange item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRange();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRange();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -458,7 +460,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
-				item = IntegersFactoryImpl.eINSTANCE.createNatural();
+				item = IntegersFactory.eINSTANCE.createNatural();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -468,7 +470,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
-				item = IntegersFactoryImpl.eINSTANCE.createPositive();
+				item = IntegersFactory.eINSTANCE.createPositive();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -478,7 +480,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
-				item = IntegersFactoryImpl.eINSTANCE.createHLInteger();
+				item = IntegersFactory.eINSTANCE.createHLInteger();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamedSort(this);
@@ -493,6 +495,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -599,6 +602,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();

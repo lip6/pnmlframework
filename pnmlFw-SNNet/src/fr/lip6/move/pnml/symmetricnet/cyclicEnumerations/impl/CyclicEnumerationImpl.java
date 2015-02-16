@@ -41,7 +41,6 @@ import java.util.List;
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-
 import fr.lip6.move.pnml.framework.general.PnmlExport;
 import fr.lip6.move.pnml.framework.utils.IdRefLinker;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
@@ -54,8 +53,8 @@ import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumeration;
 import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumerationsPackage;
 import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant;
+import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FiniteEnumerationsFactory;
 import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.impl.FiniteEnumerationImpl;
-import fr.lip6.move.pnml.symmetricnet.finiteEnumerations.impl.FiniteEnumerationsFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.terms.Sort;
 import fr.lip6.move.pnml.symmetricnet.terms.util.TermsValidator;
 
@@ -91,6 +90,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -125,7 +125,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant> items = getElements();
 			for (Iterator<FEConstant> iterator = items.iterator(); iterator.hasNext();) {
-				FEConstant item = (FEConstant) iterator.next();
+				FEConstant item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -152,6 +152,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -160,7 +161,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 		//0
 		//1
 		@SuppressWarnings("unused")
-		CyclicEnumerationsFactory fact = CyclicEnumerationsFactoryImpl.eINSTANCE;
+		CyclicEnumerationsFactory fact = CyclicEnumerationsFactory.eINSTANCE;
 
 		//processing id
 
@@ -176,7 +177,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 
 			if (type.getLocalName().equals("feconstant")) {
 				FEConstant item;
-				item = FiniteEnumerationsFactoryImpl.eINSTANCE.createFEConstant();
+				item = FiniteEnumerationsFactory.eINSTANCE.createFEConstant();
 				item.fromPNML(type, idr);
 
 				item.setSort(this);
@@ -191,6 +192,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -238,7 +240,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant> items = getElements();
 			for (Iterator<FEConstant> iterator = items.iterator(); iterator.hasNext();) {
-				FEConstant item = (FEConstant) iterator.next();
+				FEConstant item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -292,6 +294,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -300,7 +303,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 		if (getElements() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.finiteEnumerations.FEConstant> items = getElements();
 			for (Iterator<FEConstant> iterator = items.iterator(); iterator.hasNext();) {
-				FEConstant item = (FEConstant) iterator.next();
+				FEConstant item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -310,6 +313,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
@@ -318,7 +322,7 @@ public class CyclicEnumerationImpl extends FiniteEnumerationImpl implements Cycl
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
 				if ("CyclicEnumeration".equalsIgnoreCase(this.eClass().getName())) {
-					CyclicEnumeration myFE = (CyclicEnumeration) this;
+					CyclicEnumeration myFE = this;
 					CyclicEnumeration thatFE = (CyclicEnumeration) sort;
 					List<FEConstant> myConstants = myFE.getElements();
 					List<FEConstant> thoseConstants = thatFE.getElements();

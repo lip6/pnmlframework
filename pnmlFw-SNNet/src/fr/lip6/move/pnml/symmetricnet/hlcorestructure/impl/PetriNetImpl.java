@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -197,6 +196,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getId() {
 		return id;
 	}
@@ -206,6 +206,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setId(String newId) {
 		String oldId = id;
 		id = newId;
@@ -218,6 +219,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PNType getType() {
 		return type;
 	}
@@ -227,6 +229,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setType(PNType newType) {
 		PNType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
@@ -239,6 +242,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Page> getPages() {
 		if (pages == null) {
 			pages = new EObjectContainmentWithInverseEList<Page>(Page.class, this,
@@ -252,6 +256,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Name getName() {
 		return name;
 	}
@@ -280,6 +285,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setName(Name newName) {
 		if (newName != name) {
 			NotificationChain msgs = null;
@@ -302,6 +308,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<ToolInfo> getToolspecifics() {
 		if (toolspecifics == null) {
 			toolspecifics = new EObjectContainmentWithInverseEList<ToolInfo>(ToolInfo.class, this,
@@ -316,6 +323,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PetriNetDoc getContainerPetriNetDoc() {
 		if (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC)
 			return null;
@@ -338,6 +346,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPetriNetDoc(PetriNetDoc newContainerPetriNetDoc) {
 		if (newContainerPetriNetDoc != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC && newContainerPetriNetDoc != null)) {
@@ -363,6 +372,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Declaration> getDeclaration() {
 		if (declaration == null) {
 			declaration = new EObjectContainmentWithInverseEList<Declaration>(Declaration.class, this,
@@ -581,6 +591,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -629,7 +640,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Page> items = getPages();
 			for (Iterator<Page> iterator = items.iterator(); iterator.hasNext();) {
-				Page item = (Page) iterator.next();
+				Page item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -654,7 +665,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -667,7 +678,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -694,6 +705,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -702,7 +714,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		//1
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -711,7 +723,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -730,7 +742,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			if (type.getLocalName().equals("page")) {
 				Page item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createPage();
+				item = HlcorestructureFactory.eINSTANCE.createPage();
 				item.fromPNML(type, idr);
 
 				item.setContainerPetriNet(this);
@@ -740,7 +752,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePetriNet(this);
@@ -750,7 +762,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPetriNet(this);
@@ -760,7 +772,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createDeclaration();
+				item = HlcorestructureFactory.eINSTANCE.createDeclaration();
 				item.fromPNML(type, idr);
 
 				item.setContainerDeclarationPetriNet(this);
@@ -775,6 +787,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -836,7 +849,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Page> items = getPages();
 			for (Iterator<Page> iterator = items.iterator(); iterator.hasNext();) {
-				Page item = (Page) iterator.next();
+				Page item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -869,7 +882,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -890,7 +903,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -944,6 +957,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -952,7 +966,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		if (getPages() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Page> items = getPages();
 			for (Iterator<Page> iterator = items.iterator(); iterator.hasNext();) {
-				Page item = (Page) iterator.next();
+				Page item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -964,7 +978,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}
@@ -972,7 +986,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		if (getDeclaration() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.Declaration> items = getDeclaration();
 			for (Iterator<Declaration> iterator = items.iterator(); iterator.hasNext();) {
-				Declaration item = (Declaration) iterator.next();
+				Declaration item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

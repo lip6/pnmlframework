@@ -86,6 +86,7 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -124,6 +125,7 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -132,7 +134,7 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		IntegersFactory fact = IntegersFactoryImpl.eINSTANCE;
+		IntegersFactory fact = IntegersFactory.eINSTANCE;
 
 		//processing id
 
@@ -147,6 +149,7 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -222,6 +225,7 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();

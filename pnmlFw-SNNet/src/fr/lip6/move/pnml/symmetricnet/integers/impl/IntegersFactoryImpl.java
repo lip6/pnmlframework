@@ -133,6 +133,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Natural createNatural() {
 		NaturalImpl natural = new NaturalImpl();
 		return natural;
@@ -143,6 +144,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Positive createPositive() {
 		PositiveImpl positive = new PositiveImpl();
 		return positive;
@@ -153,6 +155,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public HLInteger createHLInteger() {
 		HLIntegerImpl hlInteger = new HLIntegerImpl();
 		return hlInteger;
@@ -163,6 +166,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NumberConstant createNumberConstant() {
 		NumberConstantImpl numberConstant = new NumberConstantImpl();
 		return numberConstant;
@@ -173,6 +177,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Addition createAddition() {
 		AdditionImpl addition = new AdditionImpl();
 		return addition;
@@ -183,6 +188,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Subtraction createSubtraction() {
 		SubtractionImpl subtraction = new SubtractionImpl();
 		return subtraction;
@@ -193,6 +199,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Multiplication createMultiplication() {
 		MultiplicationImpl multiplication = new MultiplicationImpl();
 		return multiplication;
@@ -203,6 +210,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Division createDivision() {
 		DivisionImpl division = new DivisionImpl();
 		return division;
@@ -213,6 +221,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Modulo createModulo() {
 		ModuloImpl modulo = new ModuloImpl();
 		return modulo;
@@ -223,6 +232,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThan createGreaterThan() {
 		GreaterThanImpl greaterThan = new GreaterThanImpl();
 		return greaterThan;
@@ -233,6 +243,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThanOrEqual createGreaterThanOrEqual() {
 		GreaterThanOrEqualImpl greaterThanOrEqual = new GreaterThanOrEqualImpl();
 		return greaterThanOrEqual;
@@ -243,6 +254,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
@@ -253,6 +265,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThanOrEqual createLessThanOrEqual() {
 		LessThanOrEqualImpl lessThanOrEqual = new LessThanOrEqualImpl();
 		return lessThanOrEqual;
@@ -263,6 +276,7 @@ public class IntegersFactoryImpl extends EFactoryImpl implements IntegersFactory
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IntegersPackage getIntegersPackage() {
 		return (IntegersPackage) getEPackage();
 	}

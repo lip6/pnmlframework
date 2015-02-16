@@ -122,6 +122,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Term getStructure() {
 		return structure;
 	}
@@ -150,6 +151,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setStructure(Term newStructure) {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
@@ -172,6 +174,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Transition getContainerTransition() {
 		if (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION)
 			return null;
@@ -194,6 +197,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerTransition(Transition newContainerTransition) {
 		if (newContainerTransition != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION && newContainerTransition != null)) {
@@ -337,6 +341,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -371,7 +376,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -446,6 +451,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -454,7 +460,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -470,7 +476,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerLabel(this);
@@ -480,7 +486,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createAnnotationGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createAnnotationGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerAnnotation(this);
@@ -871,6 +877,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -918,7 +925,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -1020,6 +1027,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -1028,7 +1036,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

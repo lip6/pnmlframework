@@ -109,6 +109,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Partition createPartition() {
 		PartitionImpl partition = new PartitionImpl();
 		return partition;
@@ -119,6 +120,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PartitionElement createPartitionElement() {
 		PartitionElementImpl partitionElement = new PartitionElementImpl();
 		return partitionElement;
@@ -129,6 +131,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThan createGreaterThan() {
 		GreaterThanImpl greaterThan = new GreaterThanImpl();
 		return greaterThan;
@@ -139,6 +142,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PartitionElementOf createPartitionElementOf() {
 		PartitionElementOfImpl partitionElementOf = new PartitionElementOfImpl();
 		return partitionElementOf;
@@ -149,6 +153,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
@@ -159,6 +164,7 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PartitionsPackage getPartitionsPackage() {
 		return (PartitionsPackage) getEPackage();
 	}

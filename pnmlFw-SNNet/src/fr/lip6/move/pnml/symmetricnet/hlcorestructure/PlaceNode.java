@@ -77,12 +77,16 @@ public interface PlaceNode extends Node {
 	 */
 	List<RefPlace> getReferencingPlaces();
 
+	@Override
 	public abstract String toPNML();
 
+	@Override
 	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException;
 
+	@Override
 	public abstract void toPNML(FileChannel fc);
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } // PlaceNode

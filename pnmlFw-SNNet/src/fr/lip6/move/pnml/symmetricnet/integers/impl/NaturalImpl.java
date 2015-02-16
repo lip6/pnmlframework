@@ -86,6 +86,7 @@ public class NaturalImpl extends HLPNNumberImpl implements Natural {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -124,6 +125,7 @@ public class NaturalImpl extends HLPNNumberImpl implements Natural {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -132,7 +134,7 @@ public class NaturalImpl extends HLPNNumberImpl implements Natural {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		IntegersFactory fact = IntegersFactoryImpl.eINSTANCE;
+		IntegersFactory fact = IntegersFactory.eINSTANCE;
 
 		//processing id
 
@@ -147,6 +149,7 @@ public class NaturalImpl extends HLPNNumberImpl implements Natural {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -222,6 +225,7 @@ public class NaturalImpl extends HLPNNumberImpl implements Natural {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();

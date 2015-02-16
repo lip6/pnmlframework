@@ -105,6 +105,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -139,7 +140,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -174,6 +175,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -182,7 +184,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		BooleansFactory fact = BooleansFactoryImpl.eINSTANCE;
+		BooleansFactory fact = BooleansFactory.eINSTANCE;
 
 		//processing id
 
@@ -584,6 +586,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -631,7 +634,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -701,6 +704,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -709,7 +713,7 @@ public class InequalityImpl extends OperatorImpl implements Inequality {
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

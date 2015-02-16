@@ -67,5 +67,6 @@ public abstract class CyclicEnumOperatorImpl extends BuiltInOperatorImpl impleme
 		return CyclicEnumerationsPackage.Literals.CYCLIC_ENUM_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //CyclicEnumOperatorImpl

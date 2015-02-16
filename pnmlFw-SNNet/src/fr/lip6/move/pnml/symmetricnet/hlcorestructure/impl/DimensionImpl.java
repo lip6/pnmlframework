@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -100,6 +99,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerDNodeGraphics() {
 		if (eContainerFeatureID() != HlcorestructurePackage.DIMENSION__CONTAINER_DNODE_GRAPHICS)
 			return null;
@@ -123,6 +123,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerDNodeGraphics(NodeGraphics newContainerDNodeGraphics) {
 		if (newContainerDNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.DIMENSION__CONTAINER_DNODE_GRAPHICS && newContainerDNodeGraphics != null)) {
@@ -249,6 +250,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -301,6 +303,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -309,7 +312,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -340,6 +343,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -429,6 +433,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();

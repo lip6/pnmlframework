@@ -83,6 +83,7 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NumberConstant getContainerNumberConstant() {
 		if (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT)
 			return null;
@@ -106,6 +107,7 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerNumberConstant(NumberConstant newContainerNumberConstant) {
 		if (newContainerNumberConstant != eInternalContainer()
 				|| (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT && newContainerNumberConstant != null)) {
@@ -229,8 +231,10 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 		return super.eIsSet(featureID);
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {

@@ -112,6 +112,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRange createFiniteIntRange() {
 		FiniteIntRangeImpl finiteIntRange = new FiniteIntRangeImpl();
 		return finiteIntRange;
@@ -122,6 +123,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRangeConstant createFiniteIntRangeConstant() {
 		FiniteIntRangeConstantImpl finiteIntRangeConstant = new FiniteIntRangeConstantImpl();
 		return finiteIntRangeConstant;
@@ -132,6 +134,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThan createLessThan() {
 		LessThanImpl lessThan = new LessThanImpl();
 		return lessThan;
@@ -142,6 +145,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThan createGreaterThan() {
 		GreaterThanImpl greaterThan = new GreaterThanImpl();
 		return greaterThan;
@@ -152,6 +156,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public LessThanOrEqual createLessThanOrEqual() {
 		LessThanOrEqualImpl lessThanOrEqual = new LessThanOrEqualImpl();
 		return lessThanOrEqual;
@@ -162,6 +167,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public GreaterThanOrEqual createGreaterThanOrEqual() {
 		GreaterThanOrEqualImpl greaterThanOrEqual = new GreaterThanOrEqualImpl();
 		return greaterThanOrEqual;
@@ -172,6 +178,7 @@ public class FiniteIntRangesFactoryImpl extends EFactoryImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRangesPackage getFiniteIntRangesPackage() {
 		return (FiniteIntRangesPackage) getEPackage();
 	}

@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -102,6 +101,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ArcGraphics getContainerArcGraphics() {
 		if (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS)
 			return null;
@@ -124,6 +124,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
@@ -149,6 +150,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public NodeGraphics getContainerPNodeGraphics() {
 		if (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS)
 			return null;
@@ -172,6 +174,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerPNodeGraphics(NodeGraphics newContainerPNodeGraphics) {
 		if (newContainerPNodeGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS && newContainerPNodeGraphics != null)) {
@@ -317,6 +320,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -369,6 +373,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -377,7 +382,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -408,6 +413,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -497,6 +503,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();

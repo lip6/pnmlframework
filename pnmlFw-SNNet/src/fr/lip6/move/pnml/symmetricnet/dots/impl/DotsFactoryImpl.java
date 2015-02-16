@@ -99,6 +99,7 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Dot createDot() {
 		DotImpl dot = new DotImpl();
 		return dot;
@@ -109,6 +110,7 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DotConstant createDotConstant() {
 		DotConstantImpl dotConstant = new DotConstantImpl();
 		return dotConstant;
@@ -119,6 +121,7 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DotsPackage getDotsPackage() {
 		return (DotsPackage) getEPackage();
 	}

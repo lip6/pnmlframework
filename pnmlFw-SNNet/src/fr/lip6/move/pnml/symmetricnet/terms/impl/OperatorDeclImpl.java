@@ -66,5 +66,6 @@ public abstract class OperatorDeclImpl extends TermsDeclarationImpl implements O
 		return TermsPackage.Literals.OPERATOR_DECL;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //OperatorDeclImpl

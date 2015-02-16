@@ -39,7 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -110,6 +109,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SortDecl getDeclaration() {
 		if (declaration != null && declaration.eIsProxy()) {
 			InternalEObject oldDeclaration = (InternalEObject) declaration;
@@ -137,6 +137,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDeclaration(SortDecl newDeclaration) {
 		SortDecl oldDeclaration = declaration;
 		declaration = newDeclaration;
@@ -208,6 +209,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 1
@@ -253,6 +255,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -261,7 +264,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		//0
 		//0
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -273,7 +276,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		if (locRoot.getAttributeValue(new QName("declaration")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("declaration")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		//processing attributes
 
@@ -290,6 +293,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 1
@@ -372,6 +376,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -382,6 +387,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 
 	}
 
+	@Override
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {

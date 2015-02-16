@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -118,6 +117,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public OperatorDecl getDeclaration() {
 		if (declaration != null && declaration.eIsProxy()) {
 			InternalEObject oldDeclaration = (InternalEObject) declaration;
@@ -145,6 +145,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setDeclaration(OperatorDecl newDeclaration) {
 		OperatorDecl oldDeclaration = declaration;
 		declaration = newDeclaration;
@@ -225,6 +226,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 1
@@ -266,7 +268,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -301,6 +303,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -309,7 +312,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
+		TermsFactory fact = TermsFactory.eINSTANCE;
 
 		//processing id
 
@@ -321,7 +324,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 		if (locRoot.getAttributeValue(new QName("declaration")) != null) {
 			ids.add(locRoot.getAttributeValue(new QName("declaration")).toString());
 		}
-		idr.addIdRef((Object) this, ids.toArray(tmp));
+		idr.addIdRef(this, ids.toArray(tmp));
 
 		//processing attributes
 
@@ -725,6 +728,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 1
@@ -779,7 +783,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -849,6 +853,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -857,7 +862,7 @@ public class UserOperatorImpl extends OperatorImpl implements UserOperator {
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

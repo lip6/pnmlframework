@@ -104,6 +104,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -138,7 +139,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -173,6 +174,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -181,7 +183,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 		//0
 		//1
 		@SuppressWarnings("unused")
-		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
+		DotsFactory fact = DotsFactory.eINSTANCE;
 
 		//processing id
 
@@ -583,6 +585,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -630,7 +633,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -700,6 +703,7 @@ public class DotConstantImpl extends BuiltInConstantImpl implements DotConstant 
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		//this package has no validator class

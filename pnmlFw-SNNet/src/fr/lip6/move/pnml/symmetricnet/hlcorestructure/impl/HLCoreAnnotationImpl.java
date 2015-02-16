@@ -97,6 +97,7 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getText() {
 		return text;
 	}
@@ -106,6 +107,7 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setText(String newText) {
 		String oldText = text;
 		text = newText;
@@ -189,5 +191,6 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 		return result.toString();
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //HLCoreAnnotationImpl

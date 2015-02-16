@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -52,7 +51,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
-
 import fr.lip6.move.pnml.framework.general.PnmlExport;
 import fr.lip6.move.pnml.framework.utils.IdRefLinker;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
@@ -63,38 +61,38 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.symmetricnet.booleans.And;
 import fr.lip6.move.pnml.symmetricnet.booleans.BooleanConstant;
+import fr.lip6.move.pnml.symmetricnet.booleans.BooleansFactory;
 import fr.lip6.move.pnml.symmetricnet.booleans.Equality;
 import fr.lip6.move.pnml.symmetricnet.booleans.Imply;
 import fr.lip6.move.pnml.symmetricnet.booleans.Inequality;
 import fr.lip6.move.pnml.symmetricnet.booleans.Not;
 import fr.lip6.move.pnml.symmetricnet.booleans.Or;
-import fr.lip6.move.pnml.symmetricnet.booleans.impl.BooleansFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.CyclicEnumerationsFactory;
 import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.Predecessor;
 import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.Successor;
-import fr.lip6.move.pnml.symmetricnet.cyclicEnumerations.impl.CyclicEnumerationsFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.dots.DotConstant;
-import fr.lip6.move.pnml.symmetricnet.dots.impl.DotsFactoryImpl;
+import fr.lip6.move.pnml.symmetricnet.dots.DotsFactory;
 import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRangeConstant;
+import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRangesFactory;
 import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.GreaterThanOrEqual;
 import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.LessThanOrEqual;
-import fr.lip6.move.pnml.symmetricnet.finiteIntRanges.impl.FiniteIntRangesFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.integers.Addition;
 import fr.lip6.move.pnml.symmetricnet.integers.Division;
+import fr.lip6.move.pnml.symmetricnet.integers.IntegersFactory;
 import fr.lip6.move.pnml.symmetricnet.integers.Modulo;
 import fr.lip6.move.pnml.symmetricnet.integers.Multiplication;
 import fr.lip6.move.pnml.symmetricnet.integers.NumberConstant;
 import fr.lip6.move.pnml.symmetricnet.integers.Subtraction;
-import fr.lip6.move.pnml.symmetricnet.integers.impl.IntegersFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.multisets.Add;
 import fr.lip6.move.pnml.symmetricnet.multisets.All;
 import fr.lip6.move.pnml.symmetricnet.multisets.Cardinality;
 import fr.lip6.move.pnml.symmetricnet.multisets.CardinalityOf;
 import fr.lip6.move.pnml.symmetricnet.multisets.Contains;
 import fr.lip6.move.pnml.symmetricnet.multisets.Empty;
+import fr.lip6.move.pnml.symmetricnet.multisets.MultisetsFactory;
 import fr.lip6.move.pnml.symmetricnet.multisets.NumberOf;
 import fr.lip6.move.pnml.symmetricnet.multisets.ScalarProduct;
 import fr.lip6.move.pnml.symmetricnet.multisets.Subtract;
-import fr.lip6.move.pnml.symmetricnet.multisets.impl.MultisetsFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.partitions.GreaterThan;
 import fr.lip6.move.pnml.symmetricnet.partitions.LessThan;
 import fr.lip6.move.pnml.symmetricnet.partitions.Partition;
@@ -103,12 +101,12 @@ import fr.lip6.move.pnml.symmetricnet.partitions.PartitionElementOf;
 import fr.lip6.move.pnml.symmetricnet.partitions.PartitionsFactory;
 import fr.lip6.move.pnml.symmetricnet.partitions.PartitionsPackage;
 import fr.lip6.move.pnml.symmetricnet.terms.Term;
+import fr.lip6.move.pnml.symmetricnet.terms.TermsFactory;
 import fr.lip6.move.pnml.symmetricnet.terms.TermsPackage;
 import fr.lip6.move.pnml.symmetricnet.terms.Tuple;
 import fr.lip6.move.pnml.symmetricnet.terms.UserOperator;
 import fr.lip6.move.pnml.symmetricnet.terms.Variable;
 import fr.lip6.move.pnml.symmetricnet.terms.impl.OperatorDeclImpl;
-import fr.lip6.move.pnml.symmetricnet.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.symmetricnet.terms.util.TermsValidator;
 
 /**
@@ -160,6 +158,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Partition getRefpartition() {
 		if (eContainerFeatureID() != PartitionsPackage.PARTITION_ELEMENT__REFPARTITION)
 			return null;
@@ -182,6 +181,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setRefpartition(Partition newRefpartition) {
 		if (newRefpartition != eInternalContainer()
 				|| (eContainerFeatureID() != PartitionsPackage.PARTITION_ELEMENT__REFPARTITION && newRefpartition != null)) {
@@ -206,6 +206,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public List<Term> getPartitionelementconstants() {
 		if (partitionelementconstants == null) {
 			partitionelementconstants = new EObjectContainmentWithInverseEList<Term>(Term.class, this,
@@ -339,6 +340,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -387,7 +389,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getPartitionelementconstants();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -414,6 +416,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -422,7 +425,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		//1
 		//1
 		@SuppressWarnings("unused")
-		PartitionsFactory fact = PartitionsFactoryImpl.eINSTANCE;
+		PartitionsFactory fact = PartitionsFactory.eINSTANCE;
 
 		//processing id
 
@@ -431,7 +434,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -454,7 +457,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("gtp")) {
 				GreaterThan item;
-				item = PartitionsFactoryImpl.eINSTANCE.createGreaterThan();
+				item = PartitionsFactory.eINSTANCE.createGreaterThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -464,7 +467,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("partitionelementof")) {
 				PartitionElementOf item;
-				item = PartitionsFactoryImpl.eINSTANCE.createPartitionElementOf();
+				item = PartitionsFactory.eINSTANCE.createPartitionElementOf();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -474,7 +477,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("ltp")) {
 				LessThan item;
-				item = PartitionsFactoryImpl.eINSTANCE.createLessThan();
+				item = PartitionsFactory.eINSTANCE.createLessThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -484,7 +487,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("equality")) {
 				Equality item;
-				item = BooleansFactoryImpl.eINSTANCE.createEquality();
+				item = BooleansFactory.eINSTANCE.createEquality();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -494,7 +497,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("inequality")) {
 				Inequality item;
-				item = BooleansFactoryImpl.eINSTANCE.createInequality();
+				item = BooleansFactory.eINSTANCE.createInequality();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -504,7 +507,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("booleanconstantt")) {
 				BooleanConstant item;
-				item = BooleansFactoryImpl.eINSTANCE.createBooleanConstant();
+				item = BooleansFactory.eINSTANCE.createBooleanConstant();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -514,7 +517,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("or")) {
 				Or item;
-				item = BooleansFactoryImpl.eINSTANCE.createOr();
+				item = BooleansFactory.eINSTANCE.createOr();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -524,7 +527,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("and")) {
 				And item;
-				item = BooleansFactoryImpl.eINSTANCE.createAnd();
+				item = BooleansFactory.eINSTANCE.createAnd();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -534,7 +537,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("imply")) {
 				Imply item;
-				item = BooleansFactoryImpl.eINSTANCE.createImply();
+				item = BooleansFactory.eINSTANCE.createImply();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -544,7 +547,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("not")) {
 				Not item;
-				item = BooleansFactoryImpl.eINSTANCE.createNot();
+				item = BooleansFactory.eINSTANCE.createNot();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -554,7 +557,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("successor")) {
 				Successor item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createSuccessor();
+				item = CyclicEnumerationsFactory.eINSTANCE.createSuccessor();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -564,7 +567,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("predecessor")) {
 				Predecessor item;
-				item = CyclicEnumerationsFactoryImpl.eINSTANCE.createPredecessor();
+				item = CyclicEnumerationsFactory.eINSTANCE.createPredecessor();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -574,7 +577,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("dotconstant")) {
 				DotConstant item;
-				item = DotsFactoryImpl.eINSTANCE.createDotConstant();
+				item = DotsFactory.eINSTANCE.createDotConstant();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -584,7 +587,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("finiteintrangeconstant")) {
 				FiniteIntRangeConstant item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createFiniteIntRangeConstant();
+				item = FiniteIntRangesFactory.eINSTANCE.createFiniteIntRangeConstant();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -594,7 +597,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("lessthan")) {
 				fr.lip6.move.pnml.symmetricnet.finiteIntRanges.LessThan item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createLessThan();
+				item = FiniteIntRangesFactory.eINSTANCE.createLessThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -604,7 +607,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("greaterthan")) {
 				fr.lip6.move.pnml.symmetricnet.finiteIntRanges.GreaterThan item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createGreaterThan();
+				item = FiniteIntRangesFactory.eINSTANCE.createGreaterThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -614,7 +617,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("lessthanorequal")) {
 				LessThanOrEqual item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createLessThanOrEqual();
+				item = FiniteIntRangesFactory.eINSTANCE.createLessThanOrEqual();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -624,7 +627,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("greaterthanorequal")) {
 				GreaterThanOrEqual item;
-				item = FiniteIntRangesFactoryImpl.eINSTANCE.createGreaterThanOrEqual();
+				item = FiniteIntRangesFactory.eINSTANCE.createGreaterThanOrEqual();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -634,7 +637,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("numberconstant")) {
 				NumberConstant item;
-				item = IntegersFactoryImpl.eINSTANCE.createNumberConstant();
+				item = IntegersFactory.eINSTANCE.createNumberConstant();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -644,7 +647,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("addition")) {
 				Addition item;
-				item = IntegersFactoryImpl.eINSTANCE.createAddition();
+				item = IntegersFactory.eINSTANCE.createAddition();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -654,7 +657,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("subtraction")) {
 				Subtraction item;
-				item = IntegersFactoryImpl.eINSTANCE.createSubtraction();
+				item = IntegersFactory.eINSTANCE.createSubtraction();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -664,7 +667,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("mult")) {
 				Multiplication item;
-				item = IntegersFactoryImpl.eINSTANCE.createMultiplication();
+				item = IntegersFactory.eINSTANCE.createMultiplication();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -674,7 +677,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("div")) {
 				Division item;
-				item = IntegersFactoryImpl.eINSTANCE.createDivision();
+				item = IntegersFactory.eINSTANCE.createDivision();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -684,7 +687,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("mod")) {
 				Modulo item;
-				item = IntegersFactoryImpl.eINSTANCE.createModulo();
+				item = IntegersFactory.eINSTANCE.createModulo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -694,7 +697,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("gt")) {
 				fr.lip6.move.pnml.symmetricnet.integers.GreaterThan item;
-				item = IntegersFactoryImpl.eINSTANCE.createGreaterThan();
+				item = IntegersFactory.eINSTANCE.createGreaterThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -704,7 +707,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("geq")) {
 				fr.lip6.move.pnml.symmetricnet.integers.GreaterThanOrEqual item;
-				item = IntegersFactoryImpl.eINSTANCE.createGreaterThanOrEqual();
+				item = IntegersFactory.eINSTANCE.createGreaterThanOrEqual();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -714,7 +717,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("lt")) {
 				fr.lip6.move.pnml.symmetricnet.integers.LessThan item;
-				item = IntegersFactoryImpl.eINSTANCE.createLessThan();
+				item = IntegersFactory.eINSTANCE.createLessThan();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -724,7 +727,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("leq")) {
 				fr.lip6.move.pnml.symmetricnet.integers.LessThanOrEqual item;
-				item = IntegersFactoryImpl.eINSTANCE.createLessThanOrEqual();
+				item = IntegersFactory.eINSTANCE.createLessThanOrEqual();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -734,7 +737,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("cardinality")) {
 				Cardinality item;
-				item = MultisetsFactoryImpl.eINSTANCE.createCardinality();
+				item = MultisetsFactory.eINSTANCE.createCardinality();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -744,7 +747,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("contains")) {
 				Contains item;
-				item = MultisetsFactoryImpl.eINSTANCE.createContains();
+				item = MultisetsFactory.eINSTANCE.createContains();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -754,7 +757,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("cardinalityof")) {
 				CardinalityOf item;
-				item = MultisetsFactoryImpl.eINSTANCE.createCardinalityOf();
+				item = MultisetsFactory.eINSTANCE.createCardinalityOf();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -764,7 +767,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("add")) {
 				Add item;
-				item = MultisetsFactoryImpl.eINSTANCE.createAdd();
+				item = MultisetsFactory.eINSTANCE.createAdd();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -774,7 +777,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("all")) {
 				All item;
-				item = MultisetsFactoryImpl.eINSTANCE.createAll();
+				item = MultisetsFactory.eINSTANCE.createAll();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -784,7 +787,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("empty")) {
 				Empty item;
-				item = MultisetsFactoryImpl.eINSTANCE.createEmpty();
+				item = MultisetsFactory.eINSTANCE.createEmpty();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -794,7 +797,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("numberof")) {
 				NumberOf item;
-				item = MultisetsFactoryImpl.eINSTANCE.createNumberOf();
+				item = MultisetsFactory.eINSTANCE.createNumberOf();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -804,7 +807,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("subtract")) {
 				Subtract item;
-				item = MultisetsFactoryImpl.eINSTANCE.createSubtract();
+				item = MultisetsFactory.eINSTANCE.createSubtract();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -814,7 +817,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("scalarproduct")) {
 				ScalarProduct item;
-				item = MultisetsFactoryImpl.eINSTANCE.createScalarProduct();
+				item = MultisetsFactory.eINSTANCE.createScalarProduct();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -824,7 +827,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("variable")) {
 				Variable item;
-				item = TermsFactoryImpl.eINSTANCE.createVariable();
+				item = TermsFactory.eINSTANCE.createVariable();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -834,7 +837,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("tuple")) {
 				Tuple item;
-				item = TermsFactoryImpl.eINSTANCE.createTuple();
+				item = TermsFactory.eINSTANCE.createTuple();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -844,7 +847,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 			if (type.getLocalName().equals("useroperator")) {
 				UserOperator item;
-				item = TermsFactoryImpl.eINSTANCE.createUserOperator();
+				item = TermsFactory.eINSTANCE.createUserOperator();
 				item.fromPNML(type, idr);
 
 				item.setContainerPartitionElement(this);
@@ -859,6 +862,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -920,7 +924,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getPartitionelementconstants();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -974,6 +978,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -982,7 +987,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		if (getPartitionelementconstants() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getPartitionelementconstants();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

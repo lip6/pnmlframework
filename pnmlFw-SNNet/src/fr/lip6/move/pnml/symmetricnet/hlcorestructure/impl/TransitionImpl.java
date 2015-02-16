@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -113,6 +112,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Condition getCondition() {
 		return condition;
 	}
@@ -141,6 +141,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCondition(Condition newCondition) {
 		if (newCondition != condition) {
 			NotificationChain msgs = null;
@@ -259,6 +260,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 1
 		//idref 0
@@ -312,7 +314,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				sb.append(item.toPNML());
 
@@ -363,6 +365,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -371,7 +374,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		//0
 		//4
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -380,7 +383,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 			ModelRepository
 					.getInstance()
 					.getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), (Object) this);
+					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
 		//processing idref
@@ -395,7 +398,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createName();
+				item = HlcorestructureFactory.eINSTANCE.createName();
 				item.fromPNML(type, idr);
 
 				item.setContainerNamePnObject(this);
@@ -405,7 +408,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createToolInfo();
+				item = HlcorestructureFactory.eINSTANCE.createToolInfo();
 				item.fromPNML(type, idr);
 
 				item.setContainerPnObject(this);
@@ -415,7 +418,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createNodeGraphics();
+				item = HlcorestructureFactory.eINSTANCE.createNodeGraphics();
 				item.fromPNML(type, idr);
 
 				item.setContainerNode(this);
@@ -425,7 +428,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 			if (type.getLocalName().equals("condition")) {
 				Condition item;
-				item = HlcorestructureFactoryImpl.eINSTANCE.createCondition();
+				item = HlcorestructureFactory.eINSTANCE.createCondition();
 				item.fromPNML(type, idr);
 
 				item.setContainerTransition(this);
@@ -449,6 +452,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 1
 		//idref 0
@@ -515,7 +519,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 
 				item.toPNML(fc);
 
@@ -593,6 +597,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
@@ -605,7 +610,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		if (getToolspecifics() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.hlcorestructure.ToolInfo> items = getToolspecifics();
 			for (Iterator<ToolInfo> iterator = items.iterator(); iterator.hasNext();) {
-				ToolInfo item = (ToolInfo) iterator.next();
+				ToolInfo item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

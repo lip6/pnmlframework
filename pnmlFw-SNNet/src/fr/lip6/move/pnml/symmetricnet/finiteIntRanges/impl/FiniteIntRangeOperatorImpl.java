@@ -67,5 +67,6 @@ public abstract class FiniteIntRangeOperatorImpl extends BuiltInOperatorImpl imp
 		return FiniteIntRangesPackage.Literals.FINITE_INT_RANGE_OPERATOR;
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //FiniteIntRangeOperatorImpl

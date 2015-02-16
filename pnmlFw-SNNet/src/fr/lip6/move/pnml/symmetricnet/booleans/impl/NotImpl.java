@@ -104,6 +104,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -138,7 +139,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -173,6 +174,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -181,7 +183,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 		//0
 		//1
 		@SuppressWarnings("unused")
-		BooleansFactory fact = BooleansFactoryImpl.eINSTANCE;
+		BooleansFactory fact = BooleansFactory.eINSTANCE;
 
 		//processing id
 
@@ -583,6 +585,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -630,7 +633,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 			sb.delete(0, sb.length());
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 
 				sb.append(headline);
 				sb.append("<");
@@ -700,6 +703,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		TermsValidator val = new TermsValidator();
@@ -708,7 +712,7 @@ public class NotImpl extends BooleanOperatorImpl implements Not {
 		if (getSubterm() != null) {
 			java.util.List<fr.lip6.move.pnml.symmetricnet.terms.Term> items = getSubterm();
 			for (Iterator<Term> iterator = items.iterator(); iterator.hasNext();) {
-				Term item = (Term) iterator.next();
+				Term item = iterator.next();
 				retour &= item.validateOCL(diagnostics);
 			}
 		}

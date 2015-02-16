@@ -119,6 +119,7 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getX() {
 		return x;
 	}
@@ -128,6 +129,7 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setX(Integer newX) {
 		Integer oldX = x;
 		x = newX;
@@ -140,6 +142,7 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Integer getY() {
 		return y;
 	}
@@ -149,6 +152,7 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setY(Integer newY) {
 		Integer oldY = y;
 		y = newY;
@@ -243,5 +247,6 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 		return result.toString();
 	}
 
+	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
 } //CoordinateImpl

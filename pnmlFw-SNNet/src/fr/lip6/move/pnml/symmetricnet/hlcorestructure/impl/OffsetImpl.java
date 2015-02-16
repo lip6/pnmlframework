@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -100,6 +99,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public AnnotationGraphics getContainerAnnotationGraphics() {
 		if (eContainerFeatureID() != HlcorestructurePackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS)
 			return null;
@@ -123,6 +123,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
 				|| (eContainerFeatureID() != HlcorestructurePackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
@@ -249,6 +250,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public String toPNML() {
 		//id 0
 		//idref 0
@@ -301,6 +303,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		return sb.toString();
 	}
 
+	@Override
 	@SuppressWarnings("unchecked")
 	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
 			VoidRepositoryException {
@@ -309,7 +312,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		//2
 		//0
 		@SuppressWarnings("unused")
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
 		//processing id
 
@@ -340,6 +343,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * Return the string containing the pnml output
 	 */
+	@Override
 	public void toPNML(FileChannel fc) {
 		//id 0
 		//idref 0
@@ -429,6 +433,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
 	 * -
 	 */
+	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
 		HlcorestructureValidator val = new HlcorestructureValidator();
