@@ -60,10 +60,11 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  * 
  * <p>
- * If you set the parallel property to true, you will get <code>null</code> when
+ * If you set the parallel property to true, you will mostly get <code>null</code> when
  * trying to retrieve the current workspace id, or nothing will happen if you
  * try to delete the current workspace, or switch between workspaces, since all
- * are now active, by the virtue of setting that property to true.
+ * are now active, by the virtue of setting that property to true. Please read the javadoc of
+ * each method which deals with workspaces matter in order to know how it behaves in this case.
  * </p>
  * 
  * @author Guillaume Giffo
@@ -130,14 +131,18 @@ public final class ModelRepository {
 	}
 
 	/**
-	 * Sets the current selected document workspace. This change is effective if
-	 * parallel property is not set.
+	 * <p>Sets the current selected document workspace. This change is effective only if
+	 * parallel property is not set.</p> <p>In the situation where parallel property is set,
+	 * there is no central notion of current document workspace, except when retrieved
+	 * by the current thread, provided that its associated workspace was created using the thread id.
+	 * </p>  
 	 * 
 	 * @param documentWSId
 	 *            the id of the Document Workspace to be set as the current one.
 	 * @throws InvalidIDException
 	 *             if the model id doesn't exists
 	 * @see #setParallelWorkspaces(boolean)
+	 * @see #getCurrentDocWSId()
 	 */
 	public synchronized void changeCurrentDocWorkspace(String documentWSId)
 			throws InvalidIDException {
@@ -162,11 +167,27 @@ public final class ModelRepository {
 
 	/**
 	 * Gives the id of the currently used document workspace.
+	 * <p>If you set the model repository in parallel mode, you should have
+	 * created the workspace with your thread id, so that this method makes a
+	 * best effort in retrieving the workspace associated to the current thread id.
+	 * Otherwise <code>null</code> will be returned.</p>
 	 * 
-	 * @return an id
+	 * @return the id of the current active document workspace, <code>null</code> if none
+	 * is active, or the ModelRepository is in parallel mode, and no workspace has been created
+	 * using the current thread id.
 	 */
 	public String getCurrentDocWSId() {
-		return currentDocWSId;
+		String res;
+		if (currentDocWSId != null) {
+			res = currentDocWSId;
+		} else { // best effort
+			if (documents.containsKey(String.valueOf(Thread.currentThread().getId()))) {
+				res = String.valueOf(Thread.currentThread().getId());
+			} else {
+				res = null;
+			}
+		}
+		return res;
 	}
 
 	/**
@@ -208,15 +229,19 @@ public final class ModelRepository {
 	}
 
 	/**
-	 * Creates a new model workspace into the repository, with no PetriNetDoc
+	 * <p>Creates a new model workspace into the repository, with no PetriNetDoc
 	 * associated (as {@link HLAPIRootClass}). This workspace becomes the
-	 * current one, if parallel property is not set.
+	 * current one, if parallel property is not set.</p>
+	 * <p>If you set the parallel property to true, you should <strong>create each document
+	 * workspace using your thread id</strong>, to facilitate a best effort retrieval of the
+	 * workspace of that thread by the Model Repository.</p>
 	 * 
 	 * @param docWorkspaceId
 	 *            the model Id
 	 * @return the new model Id
 	 * @throws InvalidIDException
 	 *             if the id is already used
+	 * @see #getCurrentDocWSId()
 	 */
 	public synchronized String createDocumentWorkspace(String docWorkspaceId)
 			throws InvalidIDException {
@@ -266,6 +291,7 @@ public final class ModelRepository {
 	 * @throws InvalidIDException
 	 *             if the id is already used
 	 * @see #changeCurrentDocWorkspace(String)
+	 * @see #getCurrentDocWSId()
 	 */
 	public synchronized String createDocumentWorkspace(String docWorkspaceId,
 			HLAPIRootClass petriNetDoc) throws InvalidIDException {
@@ -282,12 +308,16 @@ public final class ModelRepository {
 	}
 
 	/**
-	 * Same as {@link #createModelWorkspace(String, HLAPIRootClass)}, but this
-	 * time with the root PetriNetDoc object typed as an EObject (EMF).
+	 * <p>Same as {@link #createModelWorkspace(String, HLAPIRootClass)}, but this
+	 * time with the root PetriNetDoc object typed as an EObject (EMF).</p>
 	 * 
+	 * <p>If you set the parallel property to true, you should <strong>create each document
+	 * workspace using your thread id</strong>, to facilitate a best effort retrieval of the
+	 * workspace of that thread by the Model Repository.</p>
 	 * @param docWorkspaceId
 	 * @param petriNetDoc
 	 * @throws InvalidIDException
+	 * @see {@link #getCurrentDocWSId()}
 	 */
 	public synchronized void createDocumentWorkspace(String docWorkspaceId,
 			EObject petriNetDoc) throws InvalidIDException {
@@ -317,15 +347,20 @@ public final class ModelRepository {
 	}
 
 	/**
-	 * Destroys current model workspace data about a registered model, the
-	 * current workspace ID becomes null. This change is effective only if
-	 * parallel property is not set.
+	 * <p>Destroys the current model workspace data about a registered model, the
+	 * current workspace ID becomes <code>null</code>. This change is immediately effective only if
+	 * parallel property is not set.</p>
+	 * <p>If parallel property is set, this method will try to find your current workspace using
+	 * your current thread id, and then remove it from the repository of workspaces. Nothing will 
+	 * happen otherwise. This means it could not find any workspace previously created using your
+	 * current thread id.</p>
 	 * 
 	 * @return the number of left opened workspaces.
 	 * @throws VoidRepositoryException
 	 *             if the repository is void
 	 * @see #reset()
 	 * @see #areWorkspacesParallel()
+	 * @see #getCurrentDocWSId()
 	 */
 	public synchronized int destroyCurrentWorkspace()
 			throws VoidRepositoryException {
@@ -345,6 +380,12 @@ public final class ModelRepository {
 				documents.remove(currentDocWSId);
 				currentDocWSId = null; // NOPMD by ggiffo on 7/17/08 5:48 PM
 			}
+		} else { // best effort
+			String toBeRemoved = String.valueOf(Thread.currentThread().getId());
+			if (documents.containsKey(toBeRemoved)) {
+				documents.remove(toBeRemoved);
+			} 
+			currentDocWSId = null;
 		}
 		return documents.size();
 	}
@@ -366,6 +407,11 @@ public final class ModelRepository {
 		IdRepository rep = null;
 		if (!isParallel) {
 			rep = documents.get(getCurrentDocWSId()).getIdrep();
+		} else {
+			String currentThreadWS = getCurrentDocWSId();
+			if (currentThreadWS != null) {	
+				rep = documents.get(currentThreadWS).getIdrep();
+			}
 		}
 		return rep;
 	}
@@ -643,12 +689,14 @@ public final class ModelRepository {
 	 * <em>current active workspace</em>.
 	 * </p>
 	 * <p>
-	 * Consequently, any subsequent to workspace-specific method will not be
-	 * effective, and {@link #getCurrentDocWSId()} will return <code>null</code>
+	 * Consequently, any subsequent call to workspace-specific method will not be
+	 * effective. {@link #getCurrentDocWSId()} will look for the current workspace based
+	 * on the current thead id, and return that workspace if any, <code>null</code> otherwise.
 	 * </p>
 	 * 
 	 * @param mode
 	 * @return
+	 * @see #getCurrentDocWSId()
 	 */
 	public synchronized void setParallelWorkspaces(boolean mode) {
 		this.isParallel = mode;

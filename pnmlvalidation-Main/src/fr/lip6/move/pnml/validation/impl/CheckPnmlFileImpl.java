@@ -119,7 +119,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	private UUID id;
 
 	/**
-	 * Constructor inits a workspace in the PFW.
+	 * Constructor. Inits a workspace in the PNML FW.
 	 * 
 	 * @throws ValidationException
 	 *             something went wrong during init.
@@ -132,7 +132,22 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 			throw new ValidationException("Problem when setting up PNML Framework workspace :" + MessageUtility.NL
 					+ e.getMessage());
 		}
-
+	}
+	/**
+	 * Constructor. Inits a parallel workspace in the PNML FW.
+	 * 
+	 * @param paralleWS
+	 * @throws ValidationException
+	 */
+	public CheckPnmlFileImpl(boolean paralleWS) throws ValidationException {
+		try {
+			this.id = UUID.randomUUID();
+			modelRepo.setParallelWorkspaces(true);
+			initWorkspace();
+		} catch (ValidationException e) {
+			throw new ValidationException("Problem when setting up PNML Framework workspace :" + MessageUtility.NL
+					+ e.getMessage());
+		}
 	}
 
 	/**
@@ -254,7 +269,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	protected final void initWorkspace() throws ValidationException {
 		try {
-			modelRepo.createDocumentWorkspace("check" + String.valueOf(Thread.currentThread().getId()));
+			modelRepo.createDocumentWorkspace(String.valueOf(Thread.currentThread().getId()));
 		} catch (InvalidIDException e1) {
 			e1.printStackTrace();
 			throw new ValidationException(e1.getMessage());
@@ -303,6 +318,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		} catch (VoidRepositoryException vre) {
 			throw new ValidationException(vre.getMessage(), vre.getCause());
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new ValidationException(e.getMessage(), e.getCause());
 		}
 
