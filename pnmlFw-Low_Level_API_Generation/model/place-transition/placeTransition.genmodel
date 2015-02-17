@@ -10,7 +10,7 @@
   <foreignModel>placeTransition.ecore</foreignModel>
   <modelPluginVariables>OCL_ECORE=org.eclipse.ocl.ecore</modelPluginVariables>
   <genPackages prefix="Ptnet" basePackage="fr.lip6.move.pnml" disposableProviderFactory="true"
-      ecorePackage="placeTransition.ecore#/">
+      fileExtensions="ptnet" ecorePackage="placeTransition.ecore#/" publicationLocation="">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="placeTransition.ecore#//PNType">
       <genEnumLiterals ecoreEnumLiteral="placeTransition.ecore#//PNType/PTNET"/>
       <genEnumLiterals ecoreEnumLiteral="placeTransition.ecore#//PNType/COREMODEL"/>
