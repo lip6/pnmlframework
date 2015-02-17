@@ -390,12 +390,9 @@ if(ean!=null){
 					<%}else{%>
 					//Any Elements
 					//all sub element of <<%=thistag%>> will be serialized in a <%=genFeature.getType(genClass)%>
+					// including <<%=thistag%>> itself.
 	            StringBuffer sb = new StringBuffer();
-	            for (Iterator iterator2 = locRoot.getChildElements(); iterator2
-	                    .hasNext();) {
-	                OMElement type2 = (OMElement) iterator2.next();
-	                sb.append(type2.toString());
-	            }
+	            sb.append(locRoot.toString());
 					this.set<%=genFeature.getIsName()%>(new <%=genFeature.getType(genClass)%>(sb.toString()));
 					<%}%>
 				<%}else{%>

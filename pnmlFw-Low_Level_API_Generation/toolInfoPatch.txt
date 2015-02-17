@@ -1,0 +1,11 @@
+1) On Feb 17, 2015 (pnmlFW 2.2.7)
+
+The following snippet:
+for (Iterator iterator2 = locRoot.getChildElements(); iterator2.hasNext();) {
+				OMElement type2 = (OMElement) iterator2.next();
+				sb.append(type2.toString());
+}
+
+was replaced by:
+sb.append(locRoot.toString());
+

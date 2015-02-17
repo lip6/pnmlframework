@@ -831,10 +831,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			//Any Elements
 			//all sub element of <toolspecific> will be serialized in a java.lang.StringBuffer
 			StringBuffer sb = new StringBuffer();
-			for (Iterator iterator2 = locRoot.getChildElements(); iterator2.hasNext();) {
-				OMElement type2 = (OMElement) iterator2.next();
-				sb.append(type2.toString());
-			}
+			sb.append(locRoot.toString());
 			this.setFormattedXMLBuffer(new java.lang.StringBuffer(sb.toString()));
 
 		}
