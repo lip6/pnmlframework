@@ -2,18 +2,24 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework Utils Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.utils;singleton:=true
-Bundle-Version: 2.2.7
-Export-Package: fr.lip6.move.pnml.framework.general,
- fr.lip6.move.pnml.framework.hlapi;uses:="fr.lip6.move.pnml.framework.utils,org.apache.axiom.om,org.eclipse.emf.common.util",
- fr.lip6.move.pnml.framework.utils,
+Bundle-Version: 2.2.8
+Export-Package: fr.lip6.move.pnml.framework.general;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.common.util,
+   org.slf4j,
+   org.xml.sax,
+   fr.lip6.move.pnml.framework.hlapi",
+ fr.lip6.move.pnml.framework.hlapi;uses:="org.apache.axiom.om,org.eclipse.emf.common.util,fr.lip6.move.pnml.framework.utils",
+ fr.lip6.move.pnml.framework.utils;uses:="org.eclipse.emf.ecore,fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.framework.general",
  fr.lip6.move.pnml.framework.utils.exception,
- fr.lip6.move.pnml.framework.utils.logging;uses:="org.apache.commons.logging",
- fr.lip6.move.pnml.framework.utils.validation
+ fr.lip6.move.pnml.framework.utils.logging;uses:="org.slf4j,org.apache.commons.logging",
+ fr.lip6.move.pnml.framework.utils.validation;uses:="org.xml.sax"
 Require-Bundle: org.eclipse.ocl.ecore;visibility:=reexport,
  org.eclipse.emf.codegen.ecore;visibility:=reexport,
- org.eclipse.emf.ecore.xmi;visibility:=reexport,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.7"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.8"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Eclipse-BuddyPolicy: registered
+Eclipse-RegisterBuddy: fr.lip6.pnml.framework.3rdpartimports
 Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
+Bundle-ClassPath: .

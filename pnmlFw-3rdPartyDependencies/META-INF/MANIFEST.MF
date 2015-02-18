@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework 3rd Party Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.3rdpartimports;singleton:=true
-Bundle-Version: 2.2.7
+Bundle-Version: 2.2.8
 Bundle-ClassPath: .
 Export-Package: ch.qos.logback.classic;
   x-friends:="fr.lip6.pnml.framework.coremodel,
@@ -7942,5 +7942,6 @@ Export-Package: ch.qos.logback.classic;
    fr.lip6.pnml.check,
    fr.lip6.pnml2scribe";uses:="org.slf4j"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-BuddyPolicy: registered
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ActivationPolicy: lazy

@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.coremodel.feature"
       label="PNML Framework Core Model"
-      version="2.2.7"
+      version="2.2.8"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.coremodel">
 
@@ -18,11 +18,11 @@
    </description>
 
    <copyright url="http://pnml.lip6.fr/resources/License">
-      Copyright (c) 2006-2009 UniversitE Pierre et Marie Curie UMR CNRS 7606 (LIP6/MoVe). 
-  All rights reserved. This program and the accompanying materials
-  are made available under the terms of the Eclipse Public License
-  v1.0 which accompanies this distribution, and is available at
-  http://www.eclipse.org/legal/epl-v10.html
+      Copyright (c) 2006-2015 Univ. Paris Ouest and CNRS UMR 7606 (LIP6). 
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License
+v1.0 which accompanies this distribution, and is available at
+http://www.eclipse.org/legal/epl-v10.html
    </copyright>
 
    <license url="http://www.eclipse.org/legal/epl-v10.html">
@@ -35,8 +35,8 @@
 
    <requires>
       <import plugin="org.eclipse.ocl.ecore"/>
-      <import plugin="fr.lip6.pnml.framework.utils" version="2.2.0" match="greaterOrEqual"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.utils" version="2.2.8" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.8" match="greaterOrEqual"/>
    </requires>
 
    <plugin
