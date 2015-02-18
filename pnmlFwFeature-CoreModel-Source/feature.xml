@@ -35,8 +35,8 @@
 
    <requires>
       <import plugin="org.eclipse.ocl.ecore"/>
-      <import plugin="fr.lip6.pnml.framework.utils.source" version="2.2.0" match="greaterOrEqual"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.utils.source" version="2.2.8" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.8" match="greaterOrEqual"/>
    </requires>
 
    <plugin
