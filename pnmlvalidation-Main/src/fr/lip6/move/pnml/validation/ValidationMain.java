@@ -94,10 +94,6 @@ public class ValidationMain {
 
 	private static final String PNML_EXT = ".pnml";
 	/**
-	 * Parser printing space width.
-	 */
-	private static final int PARSER_WIDTH = 80;
-	/**
 	 * Logger
 	 */
 	private static final Logger JOURNAL = LogMaster.getLogger(ValidationMain.class.getCanonicalName());
