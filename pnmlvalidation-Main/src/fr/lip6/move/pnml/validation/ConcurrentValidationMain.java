@@ -40,6 +40,7 @@ import fr.lip6.move.pnml.validation.stats.ConcurrentLogger;
 /**
  * Concurrent version of PNML document checker server. Accepts port number and
  * name of main temporary folder.
+ * 
  * @author lom
  */
 public class ConcurrentValidationMain {
@@ -69,10 +70,13 @@ public class ConcurrentValidationMain {
 	}
 
 	/**
-	 * @param args the temp directory path and port number.
-	 * @throws ExitException exits with trouble
+	 * @param args
+	 *            the temp directory path and port number.
+	 * @throws ExitException
+	 *             exits with trouble
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws ExitException {
+	public static void main(String[] args) throws ExitException, IOException {
 
 		final ExecutorService pool = Executors.newCachedThreadPool();
 		ServerSocket serverSocket = null;
@@ -119,17 +123,20 @@ public class ConcurrentValidationMain {
 
 		// start accepting connections
 		Socket clientSocket = null;
-		while (true) {
-			try {
+		try {
+			while (true) {
+
 				try {
 					clientSocket = serverSocket.accept();
 					// ConcurrentCheckPnmlFileImpl ccpf = new
 					// ConcurrentCheckPnmlFileImpl(
 					// clientSocket);
-					final Future<String> result = pool.submit(new ConcurrentCheckPnmlFileImpl(clientSocket, tmpDir, logs, args[3]));
+					final Future<String> result = pool.submit(new ConcurrentCheckPnmlFileImpl(clientSocket, tmpDir,
+							logs, args[3]));
 					fileCheckers.put(result);
 				} catch (IOException ioe) {
-					logs.put(new LogRecord(Level.SEVERE, "Server: Accept failed on port" + port + ": " + ioe.getMessage()));
+					logs.put(new LogRecord(Level.SEVERE, "Server: Accept failed on port" + port + ": "
+							+ ioe.getMessage()));
 					// System.exit(-3);
 					// ioe.printStackTrace();
 				} catch (ValidationException ve) {
@@ -139,12 +146,15 @@ public class ConcurrentValidationMain {
 					logs.put(new LogRecord(Level.SEVERE, "Server: got interrupted: " + ie.getMessage()));
 					// ie.printStackTrace();
 				}
-			} catch (InterruptedException ie) {
-				System.err.println("Server: error while logging an exception: " + ie.getMessage());
-				System.err.println("Server: exiting");
-				throw new ExitException(ExitException.EXIT_CODE4);
-				// return;
+
 			}
+		} catch (InterruptedException ie) {
+			System.err.println("Server: error while logging an exception: " + ie.getMessage());
+			System.err.println("Server: exiting");
+			throw new ExitException(ExitException.EXIT_CODE4);
+			// return;
+		} finally {
+			serverSocket.close();
 		}
 
 	}
