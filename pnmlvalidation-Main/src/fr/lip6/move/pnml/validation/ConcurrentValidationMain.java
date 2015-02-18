@@ -146,7 +146,6 @@ public class ConcurrentValidationMain {
 					logs.put(new LogRecord(Level.SEVERE, "Server: got interrupted: " + ie.getMessage()));
 					// ie.printStackTrace();
 				}
-
 			}
 		} catch (InterruptedException ie) {
 			System.err.println("Server: error while logging an exception: " + ie.getMessage());
