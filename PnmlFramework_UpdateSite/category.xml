@@ -19,22 +19,22 @@
       <category name="Petri net types"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.coremodel.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.coremodel.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.hlpn.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.hlpn.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.pthlpng.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.pthlpng.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.ptnet.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.ptnet.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.symmetricnet.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.symmetricnet.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.utils.feature.source_2.2.8.jar" id="fr.lip6.pnml.framework.utils.feature.source" version="2.2.8">
-      <category name="Source"/>
+      <category name="Sources"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.sdk_2.2.8.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.8.qualifier">
       <category name="PNML Framework SDK"/>
@@ -44,6 +44,9 @@
    </feature>
    <feature url="features/fr.lip6.pnml.nupntoolinfo_2.2.8.jar" id="fr.lip6.pnml.nupntoolinfo" version="2.2.8">
       <category name="Optional Tools"/>
+   </feature>
+   <feature url="features/fr.lip6.pnml.nupntoolinfo.feature.source_2.2.8.jar" id="fr.lip6.pnml.nupntoolinfo.feature.source" version="2.2.8">
+      <category name="Sources"/>
    </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
@@ -56,9 +59,9 @@
          P/T Nets, Symmetric Nets, High-Level Petri Nets, and P/T Nets in High-level notation.
       </description>
    </category-def>
-   <category-def name="Source" label="PNML Framework Source">
+   <category-def name="Sources" label="PNML Framework Source Code">
       <description>
-         PNML Framework Source
+         PNML Framework Source Code
       </description>
    </category-def>
    <category-def name="PNML Framework SDK" label="PNML Framework SDK">
