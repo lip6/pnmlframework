@@ -9,6 +9,8 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.nupntoolInfo</artifactId>
+	
+	<packaging>eclipse-plugin</packaging>
 
 	<name>PNML Framework - NUPN Toolinfo Reader-Writer</name>
 
