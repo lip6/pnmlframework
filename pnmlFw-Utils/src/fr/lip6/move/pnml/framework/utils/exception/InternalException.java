@@ -20,6 +20,11 @@ package fr.lip6.move.pnml.framework.utils.exception;
 
 public class InternalException extends Exception {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7462258089254039045L;
+
 	public InternalException() {
 		// TODO Auto-generated constructor stub
 	}
