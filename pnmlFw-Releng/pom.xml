@@ -547,6 +547,7 @@
 				<module>../pnmlFw-SNNet</module>
 				<module>../pnmlFw-HLPN</module>
 				<module>../pnmlFw-PT-HLPNG</module>
+				<module>../fr.lip6.pnml.nupntoolInfo</module>
 
 				<module>../pnmlFwFeature-3rdPart_Plugin</module>
 				<module>../pnmlFwFeature-Utils</module>
@@ -561,7 +562,9 @@
 				<module>../pnmlFwFeature-HLPN-Source</module>
 				<module>../pnmlFWFeature-PT-HLPNG</module>
 				<module>../pnmlFWFeature-PT-HLPNG-Source</module>
-
+				<module>../pnmlFwFeature-NUPN-ToolInfo</module>
+				<module>../pnmlFwFeature-NUPN-ToolInfo-Source</module>
+				
 				<module>../pnmlFwFeature-All-In-One</module>
 				<module>../PnmlFramework_UpdateSite</module>
 				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
