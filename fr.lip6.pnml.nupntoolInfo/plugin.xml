@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated nupn -->
+      <package
+            uri="http://www.pnml.org/version-2009/grammar/pnml"
+            class="fr.lip6.nupn.NupnPackage"
+            genModel="model/nupn.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated nupn -->
+      <parser
+            type="nupn"
+            class="fr.lip6.nupn.util.NupnResourceFactoryImpl"/>
+   </extension>
+</plugin>

@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.lip6.pnml</groupId>
+		<artifactId>framework.releng</artifactId>
+		<version>2.2.8</version>
+		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>fr.lip6.pnml.nupntoolInfo</artifactId>
+
+	<name>PNML Framework - NUPN Toolinfo Reader-Writer</name>
+
+	<description>Parses and hand over a NUPN toolspecific section (in XML) as an Ecore model.
+	Also provides an API to create and save NUPN-specific XML.</description>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
