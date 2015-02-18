@@ -84,7 +84,6 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
      * @throws BadFileFormatException
      *             if the xml file is not well formated
      */
-    @SuppressWarnings("unchecked")
     public ImportCustomPNMLFileType(String filePath) throws IOException, // NOPMD
             // by
             // ggiffo
@@ -106,7 +105,8 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
         final QName nametype = new QName("typename");
 
         final OMElement root = getDocument(filePath);
-        final Iterator iter = root.getChildrenWithLocalName("pnmlcustomtype");
+        @SuppressWarnings("rawtypes")
+		final Iterator iter = root.getChildrenWithLocalName("pnmlcustomtype");
 
         while (iter.hasNext()) {
             final OMElement element = (OMElement) iter.next();
@@ -123,7 +123,8 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
                 throw new BadFileFormatException("missing type name");
             }
 
-            final Iterator iter2 = element.getChildElements();
+            @SuppressWarnings("rawtypes")
+			final Iterator iter2 = element.getChildElements();
             while (iter2.hasNext()) {
                 final OMElement subelement = (OMElement) iter2.next();
                 if (subelement.getLocalName().equals("rootclass")) {
