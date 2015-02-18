@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.pnml.nupntoolinfo.feature"
+      id="fr.lip6.pnml.nupn.toolinfo.feature"
       label="PNML Framework NUPN ToolInfo Helper"
       version="2.2.8"
       provider-name="Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)"

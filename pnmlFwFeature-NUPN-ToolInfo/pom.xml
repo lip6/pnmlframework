@@ -8,7 +8,7 @@
 		<relativePath>../pnmlFw-Releng/pom.xml</relativePath>
 	</parent>
 	
-  <artifactId>fr.lip6.pnml.nupntoolinfo.feature</artifactId>
+  <artifactId>fr.lip6.pnml.nupn.toolinfo.feature</artifactId>
   
   <packaging>eclipse-feature</packaging>
   

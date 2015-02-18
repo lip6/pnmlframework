@@ -185,9 +185,7 @@
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-		<!--  
-		<finalName>${project.artifactId}_${project.version}-${maven.build.timestamp}</finalName>
-		-->
+		<!-- <finalName>${project.artifactId}_${project.version}-${maven.build.timestamp}</finalName> -->
 		<extensions>
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
@@ -263,10 +261,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-        		<groupId>org.eclipse.tycho.extras</groupId>
-        		<artifactId>tycho-source-feature-plugin</artifactId>
-      		</plugin>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-surefire-plugin</artifactId>
@@ -568,7 +562,7 @@
 				<module>../pnmlFWFeature-PT-HLPNG-Source</module>
 				<module>../pnmlFwFeature-NUPN-ToolInfo</module>
 				<module>../pnmlFwFeature-NUPN-ToolInfo-Source</module>
-				
+
 				<module>../pnmlFwFeature-All-In-One</module>
 				<module>../PnmlFramework_UpdateSite</module>
 				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->

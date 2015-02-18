@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="fr.lip6.pnml.nupntoolinfo.feature.source"
-      label="PNML Framework NUPN ToolInfo Source Feature"
+      id="fr.lip6.pnml.nupn.toolinfo.feature.source"
+      label="PNML Framework NUPN ToolInfo Helper Developer Resources"
       version="2.2.8"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
-      plugin="fr.lip6.pnml.nupntoolinfo.source">
+      plugin="fr.lip6.pnml.nupn.toolinfo.source">
 
    <description url="http://pnml.lip6.fr/">
       This library provides an API to read NUPN toolspecific sections
@@ -27,8 +27,13 @@ http://www.eclipse.org/legal/epl-v10.html
   - Eclipse Foundation Software User Agreement
    </license>
 
+   <includes
+         id="fr.lip6.pnml.nupn.toolinfo.feature"
+         version="0.0.0"
+         search-location="self"/>
+
    <plugin
-         id="fr.lip6.pnml.nupntoolinfo.source"
+         id="fr.lip6.pnml.nupn.toolinfo.source"
          download-size="0"
          install-size="0"
          version="0.0.0"

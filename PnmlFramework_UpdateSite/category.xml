@@ -42,11 +42,11 @@
    <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.8.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.8">
       <category name="Utilities and 3rd party libraries"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.nupntoolinfo_2.2.8.jar" id="fr.lip6.pnml.nupntoolinfo" version="2.2.8">
-      <category name="Optional Tools"/>
-   </feature>
-   <feature url="features/fr.lip6.pnml.nupntoolinfo.feature.source_2.2.8.jar" id="fr.lip6.pnml.nupntoolinfo.feature.source" version="2.2.8">
+   <feature url="features/fr.lip6.pnml.nupn.toolinfo.feature.source_2.2.8.jar" id="fr.lip6.pnml.nupn.toolinfo.feature.source" version="2.2.8">
       <category name="Sources"/>
+   </feature>
+   <feature url="features/fr.lip6.pnml.nupn.toolinfo.feature_2.2.8.jar" id="fr.lip6.pnml.nupn.toolinfo.feature" version="2.2.8">
+      <category name="Optional Tools"/>
    </feature>
    <category-def name="Utilities and 3rd party libraries" label="Utilities and 3rd party libraries">
       <description>
