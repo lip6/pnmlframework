@@ -264,6 +264,10 @@
 				</executions>
 			</plugin>
 			<plugin>
+        		<groupId>org.eclipse.tycho.extras</groupId>
+        		<artifactId>tycho-source-feature-plugin</artifactId>
+      		</plugin>
+			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-surefire-plugin</artifactId>
 				<configuration>
