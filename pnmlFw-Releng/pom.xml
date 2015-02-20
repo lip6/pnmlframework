@@ -16,7 +16,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<thirdparty.version>2.2.8</thirdparty.version>
 		<pnml.release>2.2.8</pnml.release>
-		<pnml.release.doc>2.2.6</pnml.release.doc>
+		<pnml.release.doc>2.2.8</pnml.release.doc>
 		<pnml.snapshot>2.2.8-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.22.0</tycho.version>
 		<tycho-extras.version>0.22.0</tycho-extras.version>
@@ -353,6 +353,10 @@
 							<title>Place/Transition High-level Petri Net Graphs</title>
 							<packages>fr.lip6.move.pnml.pthlpng*</packages>
 						</group>
+						<group>
+							<title>NUPN Tool Specific Info Helper</title>
+							<packages>fr.lip6.nupn.*</packages>
+						</group>
 					</groups>
 					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
 					<docletArtifact>
@@ -578,6 +582,7 @@
 				<module>../pnmlFw-SNNet</module>
 				<module>../pnmlFw-HLPN</module>
 				<module>../pnmlFw-PT-HLPNG</module>
+				<module>../fr.lip6.pnml.nupntoolInfo</module>
 			</modules>
 			<distributionManagement>
 				<snapshotRepository>
