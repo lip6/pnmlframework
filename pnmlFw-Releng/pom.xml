@@ -355,7 +355,7 @@
 						</group>
 						<group>
 							<title>NUPN Tool Specific Info Helper</title>
-							<packages>fr.lip6.nupn.*</packages>
+							<packages>fr.lip6.nupn*</packages>
 						</group>
 					</groups>
 					<doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
