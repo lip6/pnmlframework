@@ -12,7 +12,7 @@
 	
 	<packaging>eclipse-plugin</packaging>
 
-	<name>PNML Framework - NUPN Toolinfo Reader-Writer</name>
+	<name>PNML Framework - NUPN Toolinfo Helper</name>
 
 	<description>Parses and hand over a NUPN toolspecific section (in XML) as an Ecore model.
 	Also provides an API to create and save NUPN-specific XML.</description>
