@@ -20,8 +20,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.2</thirdparty.version>
-		<pnml.version>2.2.6</pnml.version>
+		<thirdparty.version>2.2.8</thirdparty.version>
+		<pnml.version>2.2.8</pnml.version>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
 
