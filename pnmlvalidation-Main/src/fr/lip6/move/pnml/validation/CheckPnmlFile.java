@@ -161,6 +161,13 @@ public interface CheckPnmlFile extends PnmlDocStatistics {
 	 * @see #getNumOfRefTransitions()
 	 */
 	void setUpStats();
+	
+	/**
+	 * Returns stats on the currently loaded PNML Document, such as number of nodes and arcs.
+	 * @return an object that holds information on the number of nodes and arcs in the currently
+	 * loaded PNML Document.
+	 */
+	PnmlDocStatistics getStatsOnCurrentPnDoc();
 
 	/**
 	 * Returns the name of the first model in this PNML document. Uses Stat

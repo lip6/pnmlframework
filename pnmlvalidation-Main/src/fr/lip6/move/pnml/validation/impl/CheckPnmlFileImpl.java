@@ -524,6 +524,13 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		}
 
 	}
+	
+	/**
+	 * {@inheritDoc}
+	 */
+	public PnmlDocStatistics getStatsOnCurrentPnDoc() {
+		return ptDocStat;
+	}
 
 	/**
 	 * Loads PNML document root class from the checker thread. <strong>This
