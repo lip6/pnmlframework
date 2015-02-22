@@ -7,7 +7,7 @@
 	<version>1.1.0</version>
 	<packaging>pom</packaging>
 
-	<name>PNML Document Checker Releng</name>
+	<name>PNML Document Checker</name>
 
 	<description>PNML Document Checker is a free tool to check 
 	the conformance of your Petri Net Markup Language Documents with the ISO/IEC 15909-2 standard.
