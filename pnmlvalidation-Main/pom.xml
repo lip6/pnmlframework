@@ -34,8 +34,7 @@
 		<dependency>
 			<groupId>org.eclipse</groupId>
 			<artifactId>ocl</artifactId>
-		</dependency>
-		<!--  
+		</dependency> 
 		<dependency>
 			<groupId>fr.lip6.pnml</groupId>
 			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
@@ -64,7 +63,6 @@
 			<groupId>fr.lip6.pnml</groupId>
 			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
 		</dependency>
-		-->
 		<dependency>
 			<groupId>args4j</groupId>
 			<artifactId>args4j</artifactId>
