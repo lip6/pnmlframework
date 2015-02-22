@@ -29,6 +29,8 @@ Changelog
 * What's new in version ${project.version}?
 
   * New API offered by CheckPnmlFile to fetch the PNML root document class as its typed PetriNetDoc class (P/T, Symmetric net, HLPN, or PT-HLPNG).
+  
+  * Relies on version 2.2.8 of PNML Framework
 
 * What's new in version 1.0.7?
 
