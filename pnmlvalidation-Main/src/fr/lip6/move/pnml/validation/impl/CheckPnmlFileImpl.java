@@ -152,7 +152,11 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 
 	/**
 	 * Checks a PNML document. Stats are computed after having loaded the PNML
-	 * document.
+	 * document. 
+	 * <p>This methods initialises a PNML doc workspace in the PFW ModelRepository, if
+	 * there is none currently open. So if you want it to destroy the current workspace before calling this method
+	 * again, use the {@link #dispose()} method first.
+	 * </p>
 	 * 
 	 * @throws InvalidFileException
 	 *             document has formating errors.
@@ -168,6 +172,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 	 */
 	public final String checkPnmlFile(String filePath) throws InvalidFileException, InvalidFileTypeException,
 			ValidationException, InternalException {
+		initWorkspace();
 		resetMessage();
 		message = new StringBuilder(BUFFER_SIZE);
 		try {
@@ -263,13 +268,18 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 
 	/**
 	 * Inits the PFW workspace in which the imported document will be hold.
+	 * Uses the current thread Id as the workspace name.
 	 * 
 	 * @throws ValidationException
 	 *             something went wrong during validation.
+	 * @see #dispose()
 	 */
 	protected final void initWorkspace() throws ValidationException {
 		try {
-			modelRepo.createDocumentWorkspace(String.valueOf(Thread.currentThread().getId()));
+			String threadId = String.valueOf(Thread.currentThread().getId());
+			if (!threadId.equals(modelRepo.getCurrentDocWSId())) {
+				modelRepo.createDocumentWorkspace(threadId);
+			}
 		} catch (InvalidIDException e1) {
 			e1.printStackTrace();
 			throw new ValidationException(e1.getMessage());
