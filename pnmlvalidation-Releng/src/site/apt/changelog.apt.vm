@@ -30,7 +30,7 @@ Changelog
 
   * New API to fetch the stats object that hold information on the number of nodes and arcs in the currently loaded PNML Document.
   
-  * Improved behaviour of initWorkspace (based on thread Id), and checkPnmlFile(String) which starts by initialising the workspace.
+  * Improved behaviour of initWorkspace (based on thread Id), and checkPnmlFile(String) which starts by initialising the PNML doc workspace.
 
 * What's new in version 1.1.0?
 
