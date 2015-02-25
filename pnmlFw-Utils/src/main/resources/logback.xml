@@ -21,8 +21,6 @@
 
 -->
 <configuration debug="true">
-	<!-- sends logs to logback-beagle -->
-	<consolePlugin silent="true" />
 
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
