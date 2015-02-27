@@ -27,7 +27,7 @@ Validates PNML Documents against the Petri Net Standard specifications
 
 PNML Document Checker (PNML DoC)
 
-  This tool validates {{{http://www.pnml.org}PNML}} Documents against the {{{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43538}Petri Net Standard}} specifications. 
+  PNML DoC is a free and open source tool which validates {{{http://www.pnml.org}PNML}} Documents against the {{{http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43538}Petri Net Standard}} specifications. 
 You can use it as a dependency in your application, or run it on the command line, or launch it as a server to which you may connect to.
 
  PNML DoC relies on {{{http://pnml.lip6.fr}PNML Framework}} to perform the validation of PNML Documents.
@@ -63,9 +63,9 @@ This is the recommended way. Simply provide a list of PNML Documents to check. O
 
   The result is composed of:
 
-   * a HTTP status code; the list of the codes used is provided on the {{{./usage.html}usage page}};
+   * a HTTP status code; the list of the codes used is provided on the {{{./usage.html}usage page}},
 
-   * a message explaining the result of the service;
+   * a message explaining the result of the service,
 
    * and some basic stats about the PNML Document (how many nets, nodes, and arcs).
    
@@ -83,13 +83,13 @@ Standard support
    
    * Symmetric Nets,
    
-   * High-Level Petri Nets.
+   * High-Level Petri Nets,
    
-   * P/T Nets in High-level notation (known as PT-HLPN)
+   * P/T Nets in High-level notation (known as PT-HLPNG).
 
 ===
 
-Alternative way to check  PNML Documents
+Alternative way to check PNML Documents
  
  To check PNML Documents, you might also want to use the method explained on the {{{http://www.pnml.org/validation.php}PNML reference site}}.
  We have encoded and contributed as {{{http://www.pnml.org/grammar.php}Schematron rules}} all OCL constraints in the PNML Standard metamodels.
