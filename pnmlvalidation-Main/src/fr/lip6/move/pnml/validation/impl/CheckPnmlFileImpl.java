@@ -304,6 +304,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 
 			final PnmlImport pim = new PnmlImport();
 			pim.setFallUse(false);
+			pim.enableOclChecking();
 			this.imported = (HLAPIRootClass) pim.importFile(file.getCanonicalPath());
 			determineNetType();
 
