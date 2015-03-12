@@ -91,8 +91,8 @@ public class IdRefLinker {
      */
     public final void linkAll() throws VoidRepositoryException,
             InvalidIDException {
-        log.info(String.valueOf(idRefElements.keySet().size()));
-        log.info(ModelRepository.getInstance().getCurrentIdRepository().getAllId().toString());
+        log.debug(String.valueOf(idRefElements.keySet().size()));
+        log.debug(ModelRepository.getInstance().getCurrentIdRepository().getAllId().toString());
         for (Object object : idRefElements.keySet()) {
             final Object type = (Object) object;
             final ArrayList<Object> lobj = new ArrayList<Object>(); // NOPMD by
