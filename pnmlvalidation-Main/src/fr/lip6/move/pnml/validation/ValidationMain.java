@@ -100,7 +100,7 @@ public class ValidationMain {
 	/**
 	 * Version of this tool.
 	 */
-	private static final String VERSION = "1.1.0";
+	private static final String VERSION = "1.2.0";
 
 	/**
 	 * The command-line parser.
