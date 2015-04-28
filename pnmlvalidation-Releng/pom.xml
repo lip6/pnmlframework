@@ -4,7 +4,7 @@
 
 	<groupId>fr.lip6.pnml</groupId>
 	<artifactId>validation.releng</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.2</version>
 	<packaging>pom</packaging>
 
 	<name>PNML Document Checker</name>

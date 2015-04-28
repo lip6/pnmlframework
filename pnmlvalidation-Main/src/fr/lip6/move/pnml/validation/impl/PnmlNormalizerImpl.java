@@ -27,7 +27,9 @@ import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
 import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
+import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
 import fr.lip6.move.pnml.ptnet.Page;
+import fr.lip6.move.pnml.ptnet.PtnetFactory;
 import fr.lip6.move.pnml.ptnet.hlapi.ArcHLAPI;
 import fr.lip6.move.pnml.ptnet.hlapi.PageHLAPI;
 import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
@@ -196,7 +198,13 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 						a2.getContainedItem().setTarget(null);
 						pg.getObjects().remove(a2.getContainedItem());
 					}
-					a1.getInscription().setText(insc);
+					if (a1.getInscription() != null) {
+						a1.getInscription().setText(insc);
+					} else {
+						PTArcAnnotation anno = PtnetFactory.eINSTANCE.createPTArcAnnotation();
+						anno.setText(insc);
+						a1.getContainedItem().setInscription(anno);
+					}
 				}
 				log.info("I merged the following " + ptParArcs.size() + " sets of parallel arcs:" + NL);
 				System.out.println(sb.toString());
