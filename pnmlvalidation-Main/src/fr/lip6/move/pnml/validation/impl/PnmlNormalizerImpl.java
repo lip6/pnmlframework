@@ -177,12 +177,20 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 					a1 = la.get(0);
 					sb.append(TAB).append(a1.getId()).append(": ").append(a1.getSource().getId()).append(" -> ")
 					.append(a1.getTarget().getId()).append(NL);
-					insc = a1.getInscription().getText();
+					if (a1.getInscription() != null) {
+						insc = a1.getInscription().getText();
+					} else {
+						insc = 1;
+					}
 					for (int j = 1; j < la.size(); j++) {
 						a2 = la.get(j);
 						sb.append(TAB).append(a2.getId()).append(": ").append(a2.getSource().getId()).append(" -> ")
 								.append(a2.getTarget().getId()).append(NL);
-						insc += a2.getInscription().getText();
+						if (a2.getInscription() != null) {
+							insc += a2.getInscription().getText();
+						} else {
+							insc++;
+						}	
 						pg = a2.getContainerPage();
 						a2.getContainedItem().setSource(null);
 						a2.getContainedItem().setTarget(null);
