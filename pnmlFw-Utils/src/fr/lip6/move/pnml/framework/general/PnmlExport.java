@@ -185,7 +185,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 
 		out = new File(filepath);
 
-		final String classname = object.getClass().getCanonicalName();
+		final String classname = object.eClass().getInstanceClassName();
 
 		PNMLFileType otype = OfficialPNMLFileType
 				.getByNativeClassName(classname);
