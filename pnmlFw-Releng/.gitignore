@@ -2,3 +2,4 @@ target
 *.zip
 .settings
 /CopyPom-2014.xml
+/NexusDeployMavenCentral.pdf

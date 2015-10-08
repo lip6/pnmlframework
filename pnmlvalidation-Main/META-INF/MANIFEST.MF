@@ -22,10 +22,10 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .
 Eclipse-BuddyPolicy: registered
-Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.coremodel;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.hlpn;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.pthlpng;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.ptnet;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.symmetricnet;bundle-version="2.2.8.1",
- fr.lip6.pnml.framework.utils;bundle-version="2.2.8.1"
+Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.coremodel;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.hlpn;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.pthlpng;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.ptnet;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.symmetricnet;bundle-version="2.2.9",
+ fr.lip6.pnml.framework.utils;bundle-version="2.2.9"
