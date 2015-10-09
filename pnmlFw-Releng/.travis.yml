@@ -1,6 +1,6 @@
+sudo: false
 language: java
 # whitelist
 branches:
   only:
     - master
-sudo: false
