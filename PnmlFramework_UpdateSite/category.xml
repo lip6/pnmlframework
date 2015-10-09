@@ -36,7 +36,7 @@
    <feature url="features/fr.lip6.pnml.framework.utils.feature.source_2.2.9.jar" id="fr.lip6.pnml.framework.utils.feature.source" version="2.2.9">
       <category name="Sources"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.sdk_2.2.8.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.8.qualifier">
+   <feature url="features/fr.lip6.pnml.framework.sdk_2.2.9.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.9">
       <category name="PNML Framework SDK"/>
    </feature>
    <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.9.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.9">
