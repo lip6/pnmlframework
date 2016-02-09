@@ -54,6 +54,9 @@ import fr.lip6.move.pnml.validation.util.impl.PNMLValidationUtilsImpl;
  * @author lom
  */
 public class ValidationMain {
+	public static final String PNMLVAL_DEBUG = "PNMLVAL_DEBUG";
+	
+	private static boolean isDebug;
 	/**
 	 * No standalone, help and server exec modes at the same time.
 	 */
@@ -100,7 +103,7 @@ public class ValidationMain {
 	/**
 	 * Version of this tool.
 	 */
-	private static final String VERSION = "1.2.0";
+	private static final String VERSION = "1.2.3";
 
 	/**
 	 * The command-line parser.
@@ -133,7 +136,7 @@ public class ValidationMain {
 			JOURNAL.info("The PNML checking took " + (endTime - startTime) / 1.0e9 + " seconds.");
 		} catch (IOException e1) {
 			printHelp(e1.getCause().getMessage());
-			// e1.printStackTrace();
+			printStackTrace(e1);
 		}
 		LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 		loggerContext.stop();
@@ -152,7 +155,8 @@ public class ValidationMain {
 	private static void parseArgs(String[] args) throws IOException, ExitException {
 		cloptions = new CLOptions();
 		parser = new CmdLineParser(cloptions);
-
+		// Debug mode?
+		checkDebugMode();
 		try {
 			parser.parseArgument(args);
 			checkArgs(cloptions);
@@ -173,7 +177,6 @@ public class ValidationMain {
 						String.valueOf(cloptions.getPort()), String.valueOf(cloptions.getTimeout()),
 						String.valueOf(cloptions.isCheckNormalization()), };
 				ConcurrentValidationMain.main(arguments);
-
 			}
 		} catch (CmdLineException cle) {
 			// printHelp(parser, cle.getMessage());
@@ -263,6 +266,7 @@ public class ValidationMain {
 			final CheckPnmlFile cpf = new CheckPnmlFileImpl();
 			HLAPIRootClass modifiedDoc = null;
 			boolean modifiedOtherThanNormalization = false;
+			
 			for (String filepath : files) {
 				JOURNAL.info("importing file " + filepath);
 				final String msg = cpf.checkPnmlFile(filepath);
@@ -295,22 +299,22 @@ public class ValidationMain {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.BAD_REQUEST,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			// e.printStackTrace();
+			printStackTrace(e);
 		} catch (InvalidFileException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			// e.printStackTrace();
+			printStackTrace(e);
 		} catch (InvalidFileTypeException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			// e.printStackTrace();
+			printStackTrace(e);
 		} catch (InternalException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.INTERNAL_SERROR,
 					MessageUtility.getExceptionMessage(e)));
 			JOURNAL.error(e.getMessage());
-			// e.printStackTrace();
+			printStackTrace(e);
 		}
 	}
 
@@ -373,4 +377,46 @@ public class ValidationMain {
 		final PnmlExport pex = new PnmlExport();
 		pex.exportObject(normalizedDoc, newfilepath);
 	}
+	
+	/**
+	 * Checks the value of the environment variable for debug mode.
+	 * @param myLog
+	 * @param msg
+	 */
+	private static void checkDebugMode() {
+		StringBuilder msg = new StringBuilder();
+		String debug = System.getenv(PNMLVAL_DEBUG);
+		if ("true".equalsIgnoreCase(debug)) {
+			isDebug = true;
+			msg.append("Debug mode set.");
+		} else {
+			isDebug = false;
+			msg.append(
+					"Debug mode not set. If you want to activate the debug mode (print stacktraces in case of errors), then set the ")
+					.append(PNMLVAL_DEBUG).append(" environment variable like so: export ").append(PNMLVAL_DEBUG)
+					.append("=true.");
+			JOURNAL.warn(msg.toString());
+		}
+	}
+	
+	/**
+	 * Returns true if debug mode is set.
+	 * 
+	 * @return true if debug mode is set
+	 */
+	public static boolean isDebug() {
+		return isDebug;
+	}
+	/**
+	 * Prints the stack trace of the exception passed as parameter,
+	 * if debug mode is set.
+	 * 
+	 * @param e the exception to print
+	 */
+	public static synchronized void printStackTrace(Exception e) {
+		if (isDebug) {
+			e.printStackTrace();
+		}
+	}
+
 }

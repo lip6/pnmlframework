@@ -40,6 +40,7 @@ import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
 import fr.lip6.move.pnml.validation.CheckPnmlFile;
+import fr.lip6.move.pnml.validation.ValidationMain;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileTypeException;
@@ -134,10 +135,10 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		}
 	}
 	/**
-	 * Constructor. Inits a parallel workspace in the PNML FW.
+	 * Constructor. Inits a parallel workspace behavior in the PNML FW.
 	 * 
-	 * @param paralleWS
-	 * @throws ValidationException
+	 * @param paralleWS set to true if you want a parallel workspaces
+	 * @throws ValidationException Any error occurring during the validation process
 	 */
 	public CheckPnmlFileImpl(boolean paralleWS) throws ValidationException {
 		try {
@@ -329,7 +330,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 		} catch (VoidRepositoryException vre) {
 			throw new ValidationException(vre.getMessage(), vre.getCause());
 		} catch (Exception e) {
-			//e.printStackTrace();
+			ValidationMain.printStackTrace(e);
 			throw new ValidationException(e.getMessage(), e.getCause());
 		}
 

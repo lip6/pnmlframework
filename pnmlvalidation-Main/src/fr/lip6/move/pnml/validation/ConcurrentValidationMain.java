@@ -74,7 +74,7 @@ public class ConcurrentValidationMain {
 	 *            the temp directory path and port number.
 	 * @throws ExitException
 	 *             exits with trouble
-	 * @throws IOException 
+	 * @throws IOException  Any I/O error.
 	 */
 	public static void main(String[] args) throws ExitException, IOException {
 
@@ -138,13 +138,13 @@ public class ConcurrentValidationMain {
 					logs.put(new LogRecord(Level.SEVERE, "Server: Accept failed on port" + port + ": "
 							+ ioe.getMessage()));
 					// System.exit(-3);
-					// ioe.printStackTrace();
+					ValidationMain.printStackTrace(ioe);
 				} catch (ValidationException ve) {
 					logs.put(new LogRecord(Level.SEVERE, "Server: Validation exception: " + ve.getMessage()));
-					// ve.printStackTrace();
+					ValidationMain.printStackTrace(ve);
 				} catch (InterruptedException ie) {
 					logs.put(new LogRecord(Level.SEVERE, "Server: got interrupted: " + ie.getMessage()));
-					// ie.printStackTrace();
+					ValidationMain.printStackTrace(ie);
 				}
 			}
 		} catch (InterruptedException ie) {
