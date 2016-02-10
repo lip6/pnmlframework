@@ -3,24 +3,15 @@
  * <copyright>
  * </copyright>
  *
- * $Id ggiffo, Tue Dec 23 11:30:46 CET 2014$
+ * $Id ggiffo, Wed Feb 10 15:00:49 CET 2016$
  */
 package fr.lip6.move.pnml.ptnet.tools;
 
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
+import fr.lip6.move.pnml.ptnet.hlapi.*;
+import fr.lip6.move.pnml.ptnet.tools.*;
+import fr.lip6.move.pnml.framework.utils.exception.*;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.ptnet.hlapi.PageHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.PetriNetHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.PlaceHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.RefPlaceHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.RefTransitionHLAPI;
-import fr.lip6.move.pnml.ptnet.hlapi.TransitionHLAPI;
+import org.testng.annotations.*;
 
 public class ToolsTest {
 

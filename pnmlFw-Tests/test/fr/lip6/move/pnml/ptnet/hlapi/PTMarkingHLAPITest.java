@@ -1,5 +1,5 @@
 /**
- * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -11,25 +11,41 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Tue Dec 23 11:30:46 CET 2014$
+ * $Id ggiffo, Wed Feb 10 15:00:49 CET 2016$
  */
 package fr.lip6.move.pnml.ptnet.hlapi;
 
+import fr.lip6.move.pnml.ptnet.AnnotationGraphics;
+import fr.lip6.move.pnml.ptnet.PTMarking;
+import fr.lip6.move.pnml.ptnet.Place;
+import fr.lip6.move.pnml.ptnet.ToolInfo;
+
+import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
+
 import java.util.List;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import  fr.lip6.move.pnml.framework.hlapi.*;
+import fr.lip6.move.pnml.ptnet.hlapi.*;
 
+import java.util.ArrayList;
+import java.util.List;
+import org.apache.axiom.om.*;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import fr.lip6.move.pnml.ptnet.*;
+import fr.lip6.move.pnml.ptnet.impl.*;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import fr.lip6.move.pnml.ptnet.PTMarking;
-import fr.lip6.move.pnml.ptnet.impl.PtnetFactoryImpl;
+import org.testng.annotations.*;
 public class PTMarkingHLAPITest {
 
 	
 	private AnnotationGraphicsHLAPI itemannotationgraphics;
 		
-	private Integer itemtext;
+	private Long itemtext;
 		
 	
 	private PlaceHLAPI itemcontainerPlace;
@@ -53,7 +69,7 @@ public class PTMarkingHLAPITest {
 			itemannotationgraphics = new AnnotationGraphicsHLAPI(new PtnetFactoryImpl().createAnnotationGraphics());
 			
 		
-			itemtext = new Integer("0");
+			itemtext = new Long("0");
 			
 
 	
