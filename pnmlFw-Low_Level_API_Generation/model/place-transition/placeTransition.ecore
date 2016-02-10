@@ -43,8 +43,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="containerArc" eType="#//Arc"
         eOpposite="#//Arc/inscription"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EDataType" name="PositiveInteger" instanceClassName="java.lang.Integer"/>
-  <eClassifiers xsi:type="ecore:EDataType" name="Natural" instanceClassName="java.lang.Integer"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="PositiveInteger" instanceClassName="java.lang.Long"/>
+  <eClassifiers xsi:type="ecore:EDataType" name="Natural" instanceClassName="java.lang.Long"/>
   <eClassifiers xsi:type="ecore:EClass" name="PetriNetDoc">
     <eAnnotations source="http://www.pnml.org/models/HLAPI"/>
     <eAnnotations source="http://www.pnml.org/models/ToPNML">
