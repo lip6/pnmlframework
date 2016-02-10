@@ -1,23 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
- *
- *  All rights reserved.   This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License v1.0
- *  which accompanies this distribution, and is available at
- *  http://www.eclipse.org/legal/epl-v10.html
- *
- *  Project leader / Initial Contributor:
- *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
- *
- *  Contributors:
- *    ${ocontributors} - <$oemails}>
- *
- *  Mailing list:
- *    lom-messan.hillah@lip6.fr
- */
-/**
- * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -86,7 +68,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer TEXT_EDEFAULT = null;
+	protected static final Long TEXT_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
@@ -96,7 +78,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer text = TEXT_EDEFAULT;
+	protected Long text = TEXT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,7 +105,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * @generated
 	 */
 	@Override
-	public Integer getText() {
+	public Long getText() {
 		return text;
 	}
 
@@ -133,8 +115,8 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	 * @generated
 	 */
 	@Override
-	public void setText(Integer newText) {
-		Integer oldText = text;
+	public void setText(Long newText) {
+		Long oldText = text;
 		text = newText;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, PtnetPackage.PT_ARC_ANNOTATION__TEXT, oldText, text));
@@ -257,7 +239,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case PtnetPackage.PT_ARC_ANNOTATION__TEXT:
-			setText((Integer) newValue);
+			setText((Long) newValue);
 			return;
 		case PtnetPackage.PT_ARC_ANNOTATION__CONTAINER_ARC:
 			setContainerArc((Arc) newValue);
@@ -454,7 +436,7 @@ public class PTArcAnnotationImpl extends AnnotationImpl implements PTArcAnnotati
 			}//end if
 
 			if (type.getLocalName().equals("text")) {
-				this.setText(new java.lang.Integer(type.getText()));
+				this.setText(new java.lang.Long(type.getText()));
 			}
 
 		}

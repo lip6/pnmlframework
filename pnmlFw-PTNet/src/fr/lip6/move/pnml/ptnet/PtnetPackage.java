@@ -2211,7 +2211,7 @@ public interface PtnetPackage extends EPackage {
 	 * The meta object id for the '<em>Positive Integer</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see java.lang.Integer
+	 * @see java.lang.Long
 	 * @see fr.lip6.move.pnml.ptnet.impl.PtnetPackageImpl#getPositiveInteger()
 	 * @generated
 	 */
@@ -2221,7 +2221,7 @@ public interface PtnetPackage extends EPackage {
 	 * The meta object id for the '<em>Natural</em>' data type.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see java.lang.Integer
+	 * @see java.lang.Long
 	 * @see fr.lip6.move.pnml.ptnet.impl.PtnetPackageImpl#getNatural()
 	 * @generated
 	 */
@@ -3614,23 +3614,23 @@ public interface PtnetPackage extends EPackage {
 	EEnum getLineStyle();
 
 	/**
-	 * Returns the meta object for data type '{@link java.lang.Integer <em>Positive Integer</em>}'.
+	 * Returns the meta object for data type '{@link java.lang.Long <em>Positive Integer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>Positive Integer</em>'.
-	 * @see java.lang.Integer
-	 * @model instanceClass="java.lang.Integer"
+	 * @see java.lang.Long
+	 * @model instanceClass="java.lang.Long"
 	 * @generated
 	 */
 	EDataType getPositiveInteger();
 
 	/**
-	 * Returns the meta object for data type '{@link java.lang.Integer <em>Natural</em>}'.
+	 * Returns the meta object for data type '{@link java.lang.Long <em>Natural</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for data type '<em>Natural</em>'.
-	 * @see java.lang.Integer
-	 * @model instanceClass="java.lang.Integer"
+	 * @see java.lang.Long
+	 * @model instanceClass="java.lang.Long"
 	 * @generated
 	 */
 	EDataType getNatural();
@@ -4791,7 +4791,7 @@ public interface PtnetPackage extends EPackage {
 		 * The meta object literal for the '<em>Positive Integer</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see java.lang.Integer
+		 * @see java.lang.Long
 		 * @see fr.lip6.move.pnml.ptnet.impl.PtnetPackageImpl#getPositiveInteger()
 		 * @generated
 		 */
@@ -4801,7 +4801,7 @@ public interface PtnetPackage extends EPackage {
 		 * The meta object literal for the '<em>Natural</em>' data type.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see java.lang.Integer
+		 * @see java.lang.Long
 		 * @see fr.lip6.move.pnml.ptnet.impl.PtnetPackageImpl#getNatural()
 		 * @generated
 		 */

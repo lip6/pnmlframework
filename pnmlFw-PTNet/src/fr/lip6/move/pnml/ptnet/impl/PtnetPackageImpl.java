@@ -471,6 +471,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(thePtnetPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return PtnetValidator.INSTANCE;
 			}
@@ -489,6 +490,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPTMarking() {
 		return ptMarkingEClass;
 	}
@@ -498,6 +500,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPTMarking_Text() {
 		return (EAttribute) ptMarkingEClass.getEStructuralFeatures().get(0);
 	}
@@ -507,6 +510,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPTMarking_ContainerPlace() {
 		return (EReference) ptMarkingEClass.getEStructuralFeatures().get(1);
 	}
@@ -516,6 +520,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPTArcAnnotation() {
 		return ptArcAnnotationEClass;
 	}
@@ -525,6 +530,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPTArcAnnotation_Text() {
 		return (EAttribute) ptArcAnnotationEClass.getEStructuralFeatures().get(0);
 	}
@@ -534,6 +540,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPTArcAnnotation_ContainerArc() {
 		return (EReference) ptArcAnnotationEClass.getEStructuralFeatures().get(1);
 	}
@@ -543,6 +550,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPetriNetDoc() {
 		return petriNetDocEClass;
 	}
@@ -552,6 +560,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPetriNetDoc_Nets() {
 		return (EReference) petriNetDocEClass.getEStructuralFeatures().get(0);
 	}
@@ -561,6 +570,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPetriNetDoc_Xmlns() {
 		return (EAttribute) petriNetDocEClass.getEStructuralFeatures().get(1);
 	}
@@ -570,6 +580,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPetriNet() {
 		return petriNetEClass;
 	}
@@ -579,6 +590,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPetriNet_Id() {
 		return (EAttribute) petriNetEClass.getEStructuralFeatures().get(0);
 	}
@@ -588,6 +600,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPetriNet_Type() {
 		return (EAttribute) petriNetEClass.getEStructuralFeatures().get(1);
 	}
@@ -597,6 +610,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPetriNet_Pages() {
 		return (EReference) petriNetEClass.getEStructuralFeatures().get(2);
 	}
@@ -606,6 +620,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPetriNet_Name() {
 		return (EReference) petriNetEClass.getEStructuralFeatures().get(3);
 	}
@@ -615,6 +630,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPetriNet_Toolspecifics() {
 		return (EReference) petriNetEClass.getEStructuralFeatures().get(4);
 	}
@@ -624,6 +640,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPetriNet_ContainerPetriNetDoc() {
 		return (EReference) petriNetEClass.getEStructuralFeatures().get(5);
 	}
@@ -633,6 +650,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPage() {
 		return pageEClass;
 	}
@@ -642,6 +660,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPage_Objects() {
 		return (EReference) pageEClass.getEStructuralFeatures().get(0);
 	}
@@ -651,6 +670,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPage_ContainerPetriNet() {
 		return (EReference) pageEClass.getEStructuralFeatures().get(1);
 	}
@@ -660,6 +680,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPage_Nodegraphics() {
 		return (EReference) pageEClass.getEStructuralFeatures().get(2);
 	}
@@ -669,6 +690,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPnObject() {
 		return pnObjectEClass;
 	}
@@ -678,6 +700,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getPnObject_Id() {
 		return (EAttribute) pnObjectEClass.getEStructuralFeatures().get(0);
 	}
@@ -687,6 +710,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPnObject_Name() {
 		return (EReference) pnObjectEClass.getEStructuralFeatures().get(1);
 	}
@@ -696,6 +720,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPnObject_Toolspecifics() {
 		return (EReference) pnObjectEClass.getEStructuralFeatures().get(2);
 	}
@@ -705,6 +730,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPnObject_ContainerPage() {
 		return (EReference) pnObjectEClass.getEStructuralFeatures().get(3);
 	}
@@ -714,6 +740,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getName_() {
 		return nameEClass;
 	}
@@ -723,6 +750,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getName_Text() {
 		return (EAttribute) nameEClass.getEStructuralFeatures().get(0);
 	}
@@ -732,6 +760,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getName_ContainerNamePetriNet() {
 		return (EReference) nameEClass.getEStructuralFeatures().get(1);
 	}
@@ -741,6 +770,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getName_ContainerNamePnObject() {
 		return (EReference) nameEClass.getEStructuralFeatures().get(2);
 	}
@@ -750,6 +780,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getToolInfo() {
 		return toolInfoEClass;
 	}
@@ -759,6 +790,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getToolInfo_Tool() {
 		return (EAttribute) toolInfoEClass.getEStructuralFeatures().get(0);
 	}
@@ -768,6 +800,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getToolInfo_Version() {
 		return (EAttribute) toolInfoEClass.getEStructuralFeatures().get(1);
 	}
@@ -777,6 +810,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getToolInfo_FormattedXMLBuffer() {
 		return (EAttribute) toolInfoEClass.getEStructuralFeatures().get(2);
 	}
@@ -786,6 +820,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getToolInfo_ToolInfoGrammarURI() {
 		return (EAttribute) toolInfoEClass.getEStructuralFeatures().get(3);
 	}
@@ -795,6 +830,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getToolInfo_ContainerPetriNet() {
 		return (EReference) toolInfoEClass.getEStructuralFeatures().get(4);
 	}
@@ -804,6 +840,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getToolInfo_ContainerPnObject() {
 		return (EReference) toolInfoEClass.getEStructuralFeatures().get(5);
 	}
@@ -813,6 +850,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getToolInfo_ContainerLabel() {
 		return (EReference) toolInfoEClass.getEStructuralFeatures().get(6);
 	}
@@ -822,6 +860,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getToolInfo_ToolInfoModel() {
 		return (EReference) toolInfoEClass.getEStructuralFeatures().get(7);
 	}
@@ -831,6 +870,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLabel() {
 		return labelEClass;
 	}
@@ -840,6 +880,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLabel_Toolspecifics() {
 		return (EReference) labelEClass.getEStructuralFeatures().get(0);
 	}
@@ -849,6 +890,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNodeGraphics() {
 		return nodeGraphicsEClass;
 	}
@@ -858,6 +900,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_Position() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(0);
 	}
@@ -867,6 +910,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_Dimension() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(1);
 	}
@@ -876,6 +920,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_Fill() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(2);
 	}
@@ -885,6 +930,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_Line() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(3);
 	}
@@ -894,6 +940,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_ContainerNode() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(4);
 	}
@@ -903,6 +950,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNodeGraphics_ContainerPage() {
 		return (EReference) nodeGraphicsEClass.getEStructuralFeatures().get(5);
 	}
@@ -912,6 +960,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGraphics() {
 		return graphicsEClass;
 	}
@@ -921,6 +970,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCoordinate() {
 		return coordinateEClass;
 	}
@@ -930,6 +980,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCoordinate_X() {
 		return (EAttribute) coordinateEClass.getEStructuralFeatures().get(0);
 	}
@@ -939,6 +990,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getCoordinate_Y() {
 		return (EAttribute) coordinateEClass.getEStructuralFeatures().get(1);
 	}
@@ -948,6 +1000,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPosition() {
 		return positionEClass;
 	}
@@ -957,6 +1010,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPosition_ContainerArcGraphics() {
 		return (EReference) positionEClass.getEStructuralFeatures().get(0);
 	}
@@ -966,6 +1020,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPosition_ContainerPNodeGraphics() {
 		return (EReference) positionEClass.getEStructuralFeatures().get(1);
 	}
@@ -975,6 +1030,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOffset() {
 		return offsetEClass;
 	}
@@ -984,6 +1040,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getOffset_ContainerAnnotationGraphics() {
 		return (EReference) offsetEClass.getEStructuralFeatures().get(0);
 	}
@@ -993,6 +1050,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDimension() {
 		return dimensionEClass;
 	}
@@ -1002,6 +1060,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDimension_ContainerDNodeGraphics() {
 		return (EReference) dimensionEClass.getEStructuralFeatures().get(0);
 	}
@@ -1011,6 +1070,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAnnotationGraphics() {
 		return annotationGraphicsEClass;
 	}
@@ -1020,6 +1080,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotationGraphics_Offset() {
 		return (EReference) annotationGraphicsEClass.getEStructuralFeatures().get(0);
 	}
@@ -1029,6 +1090,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotationGraphics_Fill() {
 		return (EReference) annotationGraphicsEClass.getEStructuralFeatures().get(1);
 	}
@@ -1038,6 +1100,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotationGraphics_Line() {
 		return (EReference) annotationGraphicsEClass.getEStructuralFeatures().get(2);
 	}
@@ -1047,6 +1110,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotationGraphics_Font() {
 		return (EReference) annotationGraphicsEClass.getEStructuralFeatures().get(3);
 	}
@@ -1056,6 +1120,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotationGraphics_ContainerAnnotation() {
 		return (EReference) annotationGraphicsEClass.getEStructuralFeatures().get(4);
 	}
@@ -1065,6 +1130,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFill() {
 		return fillEClass;
 	}
@@ -1074,6 +1140,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFill_Color() {
 		return (EAttribute) fillEClass.getEStructuralFeatures().get(0);
 	}
@@ -1083,6 +1150,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFill_Gradientcolor() {
 		return (EAttribute) fillEClass.getEStructuralFeatures().get(1);
 	}
@@ -1092,6 +1160,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFill_Gradientrotation() {
 		return (EAttribute) fillEClass.getEStructuralFeatures().get(2);
 	}
@@ -1101,6 +1170,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFill_Image() {
 		return (EAttribute) fillEClass.getEStructuralFeatures().get(3);
 	}
@@ -1110,6 +1180,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFill_ContainerNodeGraphics() {
 		return (EReference) fillEClass.getEStructuralFeatures().get(4);
 	}
@@ -1119,6 +1190,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFill_ContainerAnnotationGraphics() {
 		return (EReference) fillEClass.getEStructuralFeatures().get(5);
 	}
@@ -1128,6 +1200,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLine() {
 		return lineEClass;
 	}
@@ -1137,6 +1210,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_Color() {
 		return (EAttribute) lineEClass.getEStructuralFeatures().get(0);
 	}
@@ -1146,6 +1220,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_Shape() {
 		return (EAttribute) lineEClass.getEStructuralFeatures().get(1);
 	}
@@ -1155,6 +1230,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_Width() {
 		return (EAttribute) lineEClass.getEStructuralFeatures().get(2);
 	}
@@ -1164,6 +1240,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_ContainerNodeGraphics() {
 		return (EReference) lineEClass.getEStructuralFeatures().get(3);
 	}
@@ -1173,6 +1250,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_ContainerArcGraphics() {
 		return (EReference) lineEClass.getEStructuralFeatures().get(4);
 	}
@@ -1182,6 +1260,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getLine_ContainerAnnotationGraphics() {
 		return (EReference) lineEClass.getEStructuralFeatures().get(5);
 	}
@@ -1191,6 +1270,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getLine_Style() {
 		return (EAttribute) lineEClass.getEStructuralFeatures().get(6);
 	}
@@ -1200,6 +1280,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getArcGraphics() {
 		return arcGraphicsEClass;
 	}
@@ -1209,6 +1290,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArcGraphics_Positions() {
 		return (EReference) arcGraphicsEClass.getEStructuralFeatures().get(0);
 	}
@@ -1218,6 +1300,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArcGraphics_Line() {
 		return (EReference) arcGraphicsEClass.getEStructuralFeatures().get(1);
 	}
@@ -1227,6 +1310,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArcGraphics_ContainerArc() {
 		return (EReference) arcGraphicsEClass.getEStructuralFeatures().get(2);
 	}
@@ -1236,6 +1320,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getArc() {
 		return arcEClass;
 	}
@@ -1245,6 +1330,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArc_Source() {
 		return (EReference) arcEClass.getEStructuralFeatures().get(0);
 	}
@@ -1254,6 +1340,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArc_Target() {
 		return (EReference) arcEClass.getEStructuralFeatures().get(1);
 	}
@@ -1263,6 +1350,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArc_Arcgraphics() {
 		return (EReference) arcEClass.getEStructuralFeatures().get(2);
 	}
@@ -1272,6 +1360,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getArc_Inscription() {
 		return (EReference) arcEClass.getEStructuralFeatures().get(3);
 	}
@@ -1281,6 +1370,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNode() {
 		return nodeEClass;
 	}
@@ -1290,6 +1380,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNode_InArcs() {
 		return (EReference) nodeEClass.getEStructuralFeatures().get(0);
 	}
@@ -1299,6 +1390,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNode_OutArcs() {
 		return (EReference) nodeEClass.getEStructuralFeatures().get(1);
 	}
@@ -1308,6 +1400,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNode_Nodegraphics() {
 		return (EReference) nodeEClass.getEStructuralFeatures().get(2);
 	}
@@ -1317,6 +1410,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFont() {
 		return fontEClass;
 	}
@@ -1326,6 +1420,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Align() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(0);
 	}
@@ -1335,6 +1430,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Decoration() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(1);
 	}
@@ -1344,6 +1440,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Family() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(2);
 	}
@@ -1353,6 +1450,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Rotation() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(3);
 	}
@@ -1362,6 +1460,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Size() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(4);
 	}
@@ -1371,6 +1470,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Style() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(5);
 	}
@@ -1380,6 +1480,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFont_Weight() {
 		return (EAttribute) fontEClass.getEStructuralFeatures().get(6);
 	}
@@ -1389,6 +1490,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFont_ContainerAnnotationGraphics() {
 		return (EReference) fontEClass.getEStructuralFeatures().get(7);
 	}
@@ -1398,6 +1500,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPlaceNode() {
 		return placeNodeEClass;
 	}
@@ -1407,6 +1510,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPlaceNode_ReferencingPlaces() {
 		return (EReference) placeNodeEClass.getEStructuralFeatures().get(0);
 	}
@@ -1416,6 +1520,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTransitionNode() {
 		return transitionNodeEClass;
 	}
@@ -1425,6 +1530,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTransitionNode_ReferencingTransitions() {
 		return (EReference) transitionNodeEClass.getEStructuralFeatures().get(0);
 	}
@@ -1434,6 +1540,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPlace() {
 		return placeEClass;
 	}
@@ -1443,6 +1550,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPlace_InitialMarking() {
 		return (EReference) placeEClass.getEStructuralFeatures().get(0);
 	}
@@ -1452,6 +1560,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRefTransition() {
 		return refTransitionEClass;
 	}
@@ -1461,6 +1570,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRefTransition_Ref() {
 		return (EReference) refTransitionEClass.getEStructuralFeatures().get(0);
 	}
@@ -1470,6 +1580,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTransition() {
 		return transitionEClass;
 	}
@@ -1479,6 +1590,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getRefPlace() {
 		return refPlaceEClass;
 	}
@@ -1488,6 +1600,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getRefPlace_Ref() {
 		return (EReference) refPlaceEClass.getEStructuralFeatures().get(0);
 	}
@@ -1497,6 +1610,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAttribute() {
 		return attributeEClass;
 	}
@@ -1506,6 +1620,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAnnotation() {
 		return annotationEClass;
 	}
@@ -1515,6 +1630,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnnotation_Annotationgraphics() {
 		return (EReference) annotationEClass.getEStructuralFeatures().get(0);
 	}
@@ -1524,6 +1640,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAnyObject() {
 		return anyObjectEClass;
 	}
@@ -1533,6 +1650,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAnyObject_ContainerToolInfo() {
 		return (EReference) anyObjectEClass.getEStructuralFeatures().get(0);
 	}
@@ -1542,6 +1660,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getPNType() {
 		return pnTypeEEnum;
 	}
@@ -1551,6 +1670,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCSS2Color() {
 		return css2ColorEEnum;
 	}
@@ -1560,6 +1680,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getGradient() {
 		return gradientEEnum;
 	}
@@ -1569,6 +1690,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLineShape() {
 		return lineShapeEEnum;
 	}
@@ -1578,6 +1700,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFontAlign() {
 		return fontAlignEEnum;
 	}
@@ -1587,6 +1710,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getFontDecoration() {
 		return fontDecorationEEnum;
 	}
@@ -1596,6 +1720,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCSS2FontFamily() {
 		return css2FontFamilyEEnum;
 	}
@@ -1605,6 +1730,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCSS2FontSize() {
 		return css2FontSizeEEnum;
 	}
@@ -1614,6 +1740,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCSS2FontStyle() {
 		return css2FontStyleEEnum;
 	}
@@ -1623,6 +1750,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getCSS2FontWeight() {
 		return css2FontWeightEEnum;
 	}
@@ -1632,6 +1760,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EEnum getLineStyle() {
 		return lineStyleEEnum;
 	}
@@ -1641,6 +1770,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getPositiveInteger() {
 		return positiveIntegerEDataType;
 	}
@@ -1650,6 +1780,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getNatural() {
 		return naturalEDataType;
 	}
@@ -1659,6 +1790,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getURI() {
 		return uriEDataType;
 	}
@@ -1668,6 +1800,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EDataType getLongString() {
 		return longStringEDataType;
 	}
@@ -1677,6 +1810,7 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PtnetFactory getPtnetFactory() {
 		return (PtnetFactory) getEFactoryInstance();
 	}
@@ -2317,9 +2451,9 @@ public class PtnetPackageImpl extends EPackageImpl implements PtnetPackage {
 		addEEnumLiteral(lineStyleEEnum, LineStyle.DOT);
 
 		// Initialize data types
-		initEDataType(positiveIntegerEDataType, Integer.class, "PositiveInteger", IS_SERIALIZABLE,
+		initEDataType(positiveIntegerEDataType, Long.class, "PositiveInteger", IS_SERIALIZABLE,
 				!IS_GENERATED_INSTANCE_CLASS);
-		initEDataType(naturalEDataType, Integer.class, "Natural", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
+		initEDataType(naturalEDataType, Long.class, "Natural", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(uriEDataType, java.net.URI.class, "URI", IS_SERIALIZABLE, !IS_GENERATED_INSTANCE_CLASS);
 		initEDataType(longStringEDataType, StringBuffer.class, "LongString", IS_SERIALIZABLE,
 				!IS_GENERATED_INSTANCE_CLASS);

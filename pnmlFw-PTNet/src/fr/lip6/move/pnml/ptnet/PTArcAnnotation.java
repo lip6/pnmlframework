@@ -70,13 +70,13 @@ public interface PTArcAnnotation extends Annotation {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Text</em>' attribute.
-	 * @see #setText(Integer)
+	 * @see #setText(Long)
 	 * @see fr.lip6.move.pnml.ptnet.PtnetPackage#getPTArcAnnotation_Text()
 	 * @model dataType="fr.lip6.move.pnml.ptnet.PositiveInteger" required="true"
 	 *        annotation="http://www.pnml.org/models/ToPNML tag='text' kind='son'"
 	 * @generated
 	 */
-	Integer getText();
+	Long getText();
 
 	/**
 	 * Sets the value of the '{@link fr.lip6.move.pnml.ptnet.PTArcAnnotation#getText <em>Text</em>}' attribute.
@@ -86,7 +86,7 @@ public interface PTArcAnnotation extends Annotation {
 	 * @see #getText()
 	 * @generated
 	 */
-	void setText(Integer value);
+	void setText(Long value);
 
 	/**
 	 * Returns the value of the '<em><b>Container Arc</b></em>' container reference.

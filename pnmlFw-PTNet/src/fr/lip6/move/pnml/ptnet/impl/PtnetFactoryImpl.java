@@ -729,8 +729,8 @@ public class PtnetFactoryImpl extends EFactoryImpl implements PtnetFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Integer createPositiveIntegerFromString(EDataType eDataType, String initialValue) {
-		return (Integer) super.createFromString(eDataType, initialValue);
+	public Long createPositiveIntegerFromString(EDataType eDataType, String initialValue) {
+		return (Long) super.createFromString(eDataType, initialValue);
 	}
 
 	/**
@@ -747,8 +747,8 @@ public class PtnetFactoryImpl extends EFactoryImpl implements PtnetFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Integer createNaturalFromString(EDataType eDataType, String initialValue) {
-		return (Integer) super.createFromString(eDataType, initialValue);
+	public Long createNaturalFromString(EDataType eDataType, String initialValue) {
+		return (Long) super.createFromString(eDataType, initialValue);
 	}
 
 	/**

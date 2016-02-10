@@ -241,9 +241,9 @@ public class PtnetValidator extends EObjectValidator {
 		case PtnetPackage.LINE_STYLE:
 			return validateLineStyle((LineStyle) value, diagnostics, context);
 		case PtnetPackage.POSITIVE_INTEGER:
-			return validatePositiveInteger((Integer) value, diagnostics, context);
+			return validatePositiveInteger((Long) value, diagnostics, context);
 		case PtnetPackage.NATURAL:
-			return validateNatural((Integer) value, diagnostics, context);
+			return validateNatural((Long) value, diagnostics, context);
 		case PtnetPackage.URI:
 			return validateURI((URI) value, diagnostics, context);
 		case PtnetPackage.LONG_STRING:
@@ -799,7 +799,7 @@ public class PtnetValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePositiveInteger(Integer positiveInteger, DiagnosticChain diagnostics,
+	public boolean validatePositiveInteger(Long positiveInteger, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return true;
 	}
@@ -809,7 +809,7 @@ public class PtnetValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNatural(Integer natural, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNatural(Long natural, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return true;
 	}
 
