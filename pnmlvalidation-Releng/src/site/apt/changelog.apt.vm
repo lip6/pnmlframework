@@ -21,14 +21,19 @@
 Changelog of PNML Document Checker ${project.version}
  ------
  ------
-2015-02
+2016-02
  ------
 
 Changelog
 
+
 * What's new in version ${project.version}?
 
-  * New API to fetch the stats object that hold information on the number of nodes and arcs in the currently loaded PNML Document.
+  * Upgraded dependency on PNML Framework 2.2.10.
+
+* What's new in version 1.2.0?
+
+  * New API to fetch the stats object that holds information on the number of nodes and arcs in the currently loaded PNML Document.
   
   * Improved behaviour of initWorkspace (based on thread Id), and checkPnmlFile(String) which starts by initialising the PNML doc workspace.
 
