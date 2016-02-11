@@ -3,7 +3,7 @@ Main-Class: fr.lip6.move.pnml.validation.ValidationMain
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML DoC (PNML Document Checker)
 Bundle-SymbolicName: fr.lip6.pnml.check;singleton:=true
-Bundle-Version: 1.1.0
+Bundle-Version: 1.2.4
 Export-Package: fr.lip6.move.pnml.validation;uses:="fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.validation.stats",
  fr.lip6.move.pnml.validation.exceptions,
  fr.lip6.move.pnml.validation.impl;
