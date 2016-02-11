@@ -1,23 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
- *
- *  All rights reserved.   This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License v1.0
- *  which accompanies this distribution, and is available at
- *  http://www.eclipse.org/legal/epl-v10.html
- *
- *  Project leader / Initial Contributor:
- *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
- *
- *  Contributors:
- *    ${ocontributors} - <$oemails}>
- *
- *  Mailing list:
- *    lom-messan.hillah@lip6.fr
- */
-/**
- * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -107,7 +89,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer VALUE_EDEFAULT = null;
+	protected static final Long VALUE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -117,7 +99,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer value = VALUE_EDEFAULT;
+	protected Long value = VALUE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,7 +178,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * @generated
 	 */
 	@Override
-	public Integer getValue() {
+	public Long getValue() {
 		return value;
 	}
 
@@ -206,8 +188,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	 * @generated
 	 */
 	@Override
-	public void setValue(Integer newValue) {
-		Integer oldValue = value;
+	public void setValue(Long newValue) {
+		Long oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, IntegersPackage.NUMBER_CONSTANT__VALUE, oldValue,
@@ -273,7 +255,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 			setType((HLPNNumber) newValue);
 			return;
 		case IntegersPackage.NUMBER_CONSTANT__VALUE:
-			setValue((Integer) newValue);
+			setValue((Long) newValue);
 			return;
 		}
 		super.eSet(featureID, newValue);
@@ -450,7 +432,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 		if (locRoot.getAttributeValue(new QName("value")) != null) {
 			try {
-				this.setValue(new Integer(locRoot.getAttributeValue(new QName("value"))));
+				this.setValue(new Long(locRoot.getAttributeValue(new QName("value"))));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}

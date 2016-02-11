@@ -43,6 +43,8 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 import fr.lip6.move.pnml.pthlpng.dots.impl.DotsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructurePackageImpl;
+import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersPackageImpl;
 import fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage;
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.partitions.GreaterThan;
@@ -163,6 +165,9 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
@@ -175,6 +180,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 		theBooleansPackage.createPackageContents();
 		theDotsPackage.createPackageContents();
 		theHlcorestructurePackage.createPackageContents();
+		theIntegersPackage.createPackageContents();
 		theMultisetsPackage.createPackageContents();
 		theTermsPackage.createPackageContents();
 
@@ -183,11 +189,13 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 		theBooleansPackage.initializePackageContents();
 		theDotsPackage.initializePackageContents();
 		theHlcorestructurePackage.initializePackageContents();
+		theIntegersPackage.initializePackageContents();
 		theMultisetsPackage.initializePackageContents();
 		theTermsPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(thePartitionsPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return PartitionsValidator.INSTANCE;
 			}
@@ -206,6 +214,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPartition() {
 		return partitionEClass;
 	}
@@ -215,6 +224,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPartition_Def() {
 		return (EReference) partitionEClass.getEStructuralFeatures().get(0);
 	}
@@ -224,6 +234,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPartition_Partitionelements() {
 		return (EReference) partitionEClass.getEStructuralFeatures().get(1);
 	}
@@ -233,6 +244,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPartitionElement() {
 		return partitionElementEClass;
 	}
@@ -242,6 +254,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPartitionElement_Refpartition() {
 		return (EReference) partitionElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -251,6 +264,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPartitionElement_Partitionelementconstants() {
 		return (EReference) partitionElementEClass.getEStructuralFeatures().get(1);
 	}
@@ -260,6 +274,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGreaterThan() {
 		return greaterThanEClass;
 	}
@@ -269,6 +284,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPartitionElementOf() {
 		return partitionElementOfEClass;
 	}
@@ -278,6 +294,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getPartitionElementOf_Refpartition() {
 		return (EReference) partitionElementOfEClass.getEStructuralFeatures().get(0);
 	}
@@ -287,6 +304,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPartitionOperator() {
 		return partitionOperatorEClass;
 	}
@@ -296,6 +314,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLessThan() {
 		return lessThanEClass;
 	}
@@ -305,6 +324,7 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PartitionsFactory getPartitionsFactory() {
 		return (PartitionsFactory) getEFactoryInstance();
 	}

@@ -169,7 +169,8 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 			checkCanMergeParallelArcs(checker);
 		}
 		StringBuilder sb = new StringBuilder();
-		int i = 1, insc;
+		int i = 1;
+		long insc;
 		if (this.pchecker.isPTNetDocument()) {
 			if (ptParArcs != null && ptParArcs.size() > 0) {
 				ArcHLAPI a1, a2;

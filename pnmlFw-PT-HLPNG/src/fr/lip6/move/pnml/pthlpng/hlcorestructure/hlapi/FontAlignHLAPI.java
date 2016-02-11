@@ -12,7 +12,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign;

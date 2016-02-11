@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 
@@ -76,6 +76,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Empty;
 
@@ -107,6 +109,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -360,6 +363,46 @@ public class ConditionHLAPITest {
 				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI(new DotsFactoryImpl().createDotConstant()));
 				TermHLAPI totest_dots_DotConstant = elem.getStructureHLAPI();
 				assert totest_dots_DotConstant.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI(new IntegersFactoryImpl().createNumberConstant()));
+				TermHLAPI totest_integers_NumberConstant = elem.getStructureHLAPI();
+				assert totest_integers_NumberConstant.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI(new IntegersFactoryImpl().createAddition()));
+				TermHLAPI totest_integers_Addition = elem.getStructureHLAPI();
+				assert totest_integers_Addition.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI(new IntegersFactoryImpl().createSubtraction()));
+				TermHLAPI totest_integers_Subtraction = elem.getStructureHLAPI();
+				assert totest_integers_Subtraction.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI(new IntegersFactoryImpl().createMultiplication()));
+				TermHLAPI totest_integers_Multiplication = elem.getStructureHLAPI();
+				assert totest_integers_Multiplication.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI(new IntegersFactoryImpl().createDivision()));
+				TermHLAPI totest_integers_Division = elem.getStructureHLAPI();
+				assert totest_integers_Division.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI(new IntegersFactoryImpl().createModulo()));
+				TermHLAPI totest_integers_Modulo = elem.getStructureHLAPI();
+				assert totest_integers_Modulo.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI(new IntegersFactoryImpl().createGreaterThan()));
+				TermHLAPI totest_integers_GreaterThan = elem.getStructureHLAPI();
+				assert totest_integers_GreaterThan.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI(new IntegersFactoryImpl().createGreaterThanOrEqual()));
+				TermHLAPI totest_integers_GreaterThanOrEqual = elem.getStructureHLAPI();
+				assert totest_integers_GreaterThanOrEqual.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI(new IntegersFactoryImpl().createLessThan()));
+				TermHLAPI totest_integers_LessThan = elem.getStructureHLAPI();
+				assert totest_integers_LessThan.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI(new IntegersFactoryImpl().createLessThanOrEqual()));
+				TermHLAPI totest_integers_LessThanOrEqual = elem.getStructureHLAPI();
+				assert totest_integers_LessThanOrEqual.getContainedItem().equals(elem.getStructure());
 			
 				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.multisets.hlapi.CardinalityHLAPI(new MultisetsFactoryImpl().createCardinality()));
 				TermHLAPI totest_multisets_Cardinality = elem.getStructureHLAPI();

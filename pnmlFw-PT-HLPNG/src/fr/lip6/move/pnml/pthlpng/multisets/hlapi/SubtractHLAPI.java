@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.multisets.hlapi;
 
@@ -482,6 +482,18 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot)object);
 			}
 			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI((fr.lip6.move.pnml.pthlpng.integers.Natural)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI((fr.lip6.move.pnml.pthlpng.integers.Positive)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI((fr.lip6.move.pnml.pthlpng.integers.HLInteger)object);
+			}
+			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){
 				return new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI((fr.lip6.move.pnml.pthlpng.terms.MultisetSort)object);
 			}
@@ -578,6 +590,46 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotConstantImpl.class)){
 				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI((fr.lip6.move.pnml.pthlpng.dots.DotConstant)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI((fr.lip6.move.pnml.pthlpng.integers.NumberConstant)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.AdditionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Addition)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.SubtractionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Subtraction)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.MultiplicationImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI((fr.lip6.move.pnml.pthlpng.integers.Multiplication)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.DivisionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Division)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.ModuloImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI((fr.lip6.move.pnml.pthlpng.integers.Modulo)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI((fr.lip6.move.pnml.pthlpng.integers.GreaterThan)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanOrEqualImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI((fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI((fr.lip6.move.pnml.pthlpng.integers.LessThan)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanOrEqualImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI((fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual)object);
 			}
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.partitions.impl.GreaterThanImpl.class)){
@@ -811,6 +863,76 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 					continue;
 				}
 				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.NumberConstant)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.AdditionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Addition)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.SubtractionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Subtraction)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.MultiplicationImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Multiplication)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.DivisionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Division)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.ModuloImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Modulo)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.GreaterThan)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanOrEqualImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.LessThan)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanOrEqualImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual)elemnt
+						));
+					continue;
+				}
+				
 				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.partitions.impl.GreaterThanImpl.class)){
 					retour.add(new fr.lip6.move.pnml.pthlpng.partitions.hlapi.GreaterThanHLAPI(
 						(fr.lip6.move.pnml.pthlpng.partitions.GreaterThan)elemnt
@@ -880,6 +1002,18 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot)object);
 			}
 			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI((fr.lip6.move.pnml.pthlpng.integers.Natural)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI((fr.lip6.move.pnml.pthlpng.integers.Positive)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI((fr.lip6.move.pnml.pthlpng.integers.HLInteger)object);
+			}
+			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){
 				return new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI((fr.lip6.move.pnml.pthlpng.terms.MultisetSort)object);
 			}
@@ -919,6 +1053,27 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
 					retour.add(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(
 						(fr.lip6.move.pnml.pthlpng.dots.Dot)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
 						));
 					continue;
 				}
@@ -1252,6 +1407,176 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 		
 		
 		/**
+		 * This accessor return a list of encapsulated subelement, only of NumberConstantHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI> getSubterm_integers_NumberConstantHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.NumberConstant)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of AdditionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI> getSubterm_integers_AdditionHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.AdditionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Addition)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of SubtractionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI> getSubterm_integers_SubtractionHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.SubtractionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Subtraction)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of MultiplicationHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI> getSubterm_integers_MultiplicationHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.MultiplicationImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Multiplication)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of DivisionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI> getSubterm_integers_DivisionHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.DivisionImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Division)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of ModuloHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI> getSubterm_integers_ModuloHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.ModuloImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Modulo)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of GreaterThanHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI> getSubterm_integers_GreaterThanHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.GreaterThan)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of GreaterThanOrEqualHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI> getSubterm_integers_GreaterThanOrEqualHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanOrEqualImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of LessThanHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI> getSubterm_integers_LessThanHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.LessThan)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of LessThanOrEqualHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI> getSubterm_integers_LessThanOrEqualHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI>();
+			for (Term elemnt : getSubterm()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanOrEqualImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
 		 * This accessor return a list of encapsulated subelement, only of GreaterThanHLAPI kind.
 		 * WARNING : this method can creates a lot of new object in memory.
 		 */
@@ -1384,6 +1709,57 @@ public class SubtractHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
 					retour.add(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(
 						(fr.lip6.move.pnml.pthlpng.dots.Dot)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of NaturalHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> getInput_integers_NaturalHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI>();
+			for (Sort elemnt : getInput()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of PositiveHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> getInput_integers_PositiveHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI>();
+			for (Sort elemnt : getInput()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of HLIntegerHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> getInput_integers_HLIntegerHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI>();
+			for (Sort elemnt : getInput()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
 						));
 				}
 			}

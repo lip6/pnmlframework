@@ -53,6 +53,8 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 import fr.lip6.move.pnml.pthlpng.dots.impl.DotsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructurePackageImpl;
+import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersPackageImpl;
 import fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage;
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
@@ -184,6 +186,9 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
@@ -198,6 +203,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 		theBooleansPackage.createPackageContents();
 		theDotsPackage.createPackageContents();
 		theHlcorestructurePackage.createPackageContents();
+		theIntegersPackage.createPackageContents();
 		theMultisetsPackage.createPackageContents();
 		thePartitionsPackage.createPackageContents();
 		theTermsPackage.createPackageContents();
@@ -206,12 +212,14 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 		theBooleansPackage.initializePackageContents();
 		theDotsPackage.initializePackageContents();
 		theHlcorestructurePackage.initializePackageContents();
+		theIntegersPackage.initializePackageContents();
 		theMultisetsPackage.initializePackageContents();
 		thePartitionsPackage.initializePackageContents();
 		theTermsPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theBooleansPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return BooleansValidator.INSTANCE;
 			}
@@ -230,6 +238,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getEquality() {
 		return equalityEClass;
 	}
@@ -239,6 +248,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getInequality() {
 		return inequalityEClass;
 	}
@@ -248,6 +258,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBooleanConstant() {
 		return booleanConstantEClass;
 	}
@@ -257,6 +268,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getBooleanConstant_Value() {
 		return (EAttribute) booleanConstantEClass.getEStructuralFeatures().get(0);
 	}
@@ -266,6 +278,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOr() {
 		return orEClass;
 	}
@@ -275,6 +288,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBooleanOperator() {
 		return booleanOperatorEClass;
 	}
@@ -284,6 +298,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAnd() {
 		return andEClass;
 	}
@@ -293,6 +308,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getImply() {
 		return implyEClass;
 	}
@@ -302,6 +318,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNot() {
 		return notEClass;
 	}
@@ -311,6 +328,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBool() {
 		return boolEClass;
 	}
@@ -320,6 +338,7 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public BooleansFactory getBooleansFactory() {
 		return (BooleansFactory) getEFactoryInstance();
 	}

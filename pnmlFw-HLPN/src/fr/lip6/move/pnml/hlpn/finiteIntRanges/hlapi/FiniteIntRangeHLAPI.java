@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:13 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:29:58 CET 2016$
  */
 package fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi;
 
@@ -67,9 +67,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	){//BEGIN CONSTRUCTOR BODY
 		FiniteIntRangesFactory fact = FiniteIntRangesFactoryImpl.eINSTANCE;
 		synchronized(fact){item = fact.createFiniteIntRange();}
@@ -95,9 +95,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, MultisetSortHLAPI multi
 	){//BEGIN CONSTRUCTOR BODY
@@ -130,9 +130,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, NamedSortHLAPI containerNamedSort
 	){//BEGIN CONSTRUCTOR BODY
@@ -165,9 +165,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, VariableDeclHLAPI containerVariableDecl
 	){//BEGIN CONSTRUCTOR BODY
@@ -200,9 +200,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, ProductSortHLAPI containerProductSort
 	){//BEGIN CONSTRUCTOR BODY
@@ -235,9 +235,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, TypeHLAPI containerType
 	){//BEGIN CONSTRUCTOR BODY
@@ -270,9 +270,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, AllHLAPI containerAll
 	){//BEGIN CONSTRUCTOR BODY
@@ -305,9 +305,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, EmptyHLAPI containerEmpty
 	){//BEGIN CONSTRUCTOR BODY
@@ -340,9 +340,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, PartitionHLAPI containerPartition
 	){//BEGIN CONSTRUCTOR BODY
@@ -375,9 +375,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, HLPNListHLAPI containerList
 	){//BEGIN CONSTRUCTOR BODY
@@ -410,9 +410,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, EmptyListHLAPI containerEmptyList
 	){//BEGIN CONSTRUCTOR BODY
@@ -445,9 +445,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, MakeListHLAPI containerMakeList
 	){//BEGIN CONSTRUCTOR BODY
@@ -480,9 +480,9 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	
 	public FiniteIntRangeHLAPI(
-		 java.lang.Integer start
+		 java.lang.Long start
 	
-		, java.lang.Integer end
+		, java.lang.Long end
 	
 		, FiniteIntRangeConstantHLAPI containerFiniteIntRangeConstant
 	){//BEGIN CONSTRUCTOR BODY
@@ -622,14 +622,14 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Integer getStart(){
+	public Long getStart(){
 		return item.getStart();
 	}
 	
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Integer getEnd(){
+	public Long getEnd(){
 		return item.getEnd();
 	}
 	
@@ -849,7 +849,7 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	public void setStartHLAPI(
 	
-	java.lang.Integer elem){
+	java.lang.Long elem){
 	
 	
 		if(elem!=null){
@@ -864,7 +864,7 @@ public class FiniteIntRangeHLAPI implements HLAPIClass,SortHLAPI{
 	 */
 	public void setEndHLAPI(
 	
-	java.lang.Integer elem){
+	java.lang.Long elem){
 	
 	
 		if(elem!=null){

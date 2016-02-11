@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework Utils Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.utils;singleton:=true
-Bundle-Version: 2.2.9
+Bundle-Version: 2.2.10
 Export-Package: fr.lip6.move.pnml.framework.general;
   uses:="org.eclipse.emf.ecore,
    org.eclipse.emf.common.util,
@@ -16,7 +16,7 @@ Export-Package: fr.lip6.move.pnml.framework.general;
  fr.lip6.move.pnml.framework.utils.validation;uses:="org.xml.sax"
 Require-Bundle: org.eclipse.ocl.ecore;visibility:=reexport,
  org.eclipse.emf.codegen.ecore;visibility:=reexport,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.9"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.10"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Eclipse-BuddyPolicy: registered

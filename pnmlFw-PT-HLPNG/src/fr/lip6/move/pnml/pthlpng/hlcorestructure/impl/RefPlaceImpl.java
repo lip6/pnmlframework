@@ -396,9 +396,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
-			ModelRepository
-					.getInstance()
-					.getCurrentIdRepository()
+			ModelRepository.getInstance().getCurrentIdRepository()
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 

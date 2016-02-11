@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:13 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:29:58 CET 2016$
  */
 package fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi;
 
@@ -131,7 +131,7 @@ public class FiniteIntRangeConstantHLAPITest {
 		
 	private SortHLAPI itemoutput;
 		
-	private Integer itemvalue;
+	private Long itemvalue;
 		
 	private FiniteIntRangeHLAPI itemrange;
 		
@@ -178,7 +178,7 @@ public class FiniteIntRangeConstantHLAPITest {
 				
 			
 		
-			itemvalue = new Integer("0");
+			itemvalue = new Long("0");
 			
 			
 			//FiniteIntRangesFactoryImpl

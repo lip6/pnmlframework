@@ -4,7 +4,7 @@
 
 	<groupId>fr.lip6.pnml</groupId>
 	<artifactId>framework.releng</artifactId>
-	<version>2.2.9</version>
+	<version>2.2.10</version>
 	<packaging>pom</packaging>
 
 	<name>PNML Framework Releng</name>
@@ -14,10 +14,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<thirdparty.version>2.2.9</thirdparty.version>
-		<pnml.release>2.2.9</pnml.release>
-		<pnml.release.doc>2.2.9</pnml.release.doc>
-		<pnml.snapshot>2.2.10-SNAPSHOT</pnml.snapshot>
+		<thirdparty.version>2.2.10</thirdparty.version>
+		<pnml.release>2.2.10</pnml.release>
+		<pnml.release.doc>2.2.10</pnml.release.doc>
+		<pnml.snapshot>2.2.11-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.22.0</tycho.version>
 		<tycho-extras.version>0.22.0</tycho-extras.version>
 		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>

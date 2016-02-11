@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:11 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:29:02 CET 2016$
  */
 package fr.lip6.move.pnml.symmetricnet.finiteIntRanges.hlapi;
 
@@ -108,9 +108,9 @@ import org.testng.annotations.*;
 public class FiniteIntRangeHLAPITest {
 
 	
-	private Integer itemstart;
+	private Long itemstart;
 		
-	private Integer itemend;
+	private Long itemend;
 		
 	
 	private MultisetSortHLAPI itemmulti;
@@ -145,9 +145,9 @@ public class FiniteIntRangeHLAPITest {
 	ModelRepository mr = ModelRepository.getInstance();
 	mr.createDocumentWorkspace("void");
 	
-			itemstart = new Integer("0");
+			itemstart = new Long("0");
 			
-			itemend = new Integer("0");
+			itemend = new Long("0");
 			
 
 	

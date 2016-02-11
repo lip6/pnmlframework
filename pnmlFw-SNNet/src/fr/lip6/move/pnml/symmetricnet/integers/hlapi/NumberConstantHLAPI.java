@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:12 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:29:02 CET 2016$
  */
 package fr.lip6.move.pnml.symmetricnet.integers.hlapi;
 
@@ -68,7 +68,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	){//BEGIN CONSTRUCTOR BODY
 		IntegersFactory fact = IntegersFactoryImpl.eINSTANCE;
 		synchronized(fact){item = fact.createNumberConstant();}
@@ -108,7 +108,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, OperatorHLAPI containerOperator
 	){//BEGIN CONSTRUCTOR BODY
@@ -155,7 +155,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, NamedOperatorHLAPI containerNamedOperator
 	){//BEGIN CONSTRUCTOR BODY
@@ -202,7 +202,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, HLMarkingHLAPI containerHLMarking
 	){//BEGIN CONSTRUCTOR BODY
@@ -249,7 +249,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, ConditionHLAPI containerCondition
 	){//BEGIN CONSTRUCTOR BODY
@@ -296,7 +296,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, HLAnnotationHLAPI containerHLAnnotation
 	){//BEGIN CONSTRUCTOR BODY
@@ -343,7 +343,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	
 		, HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, PartitionElementHLAPI containerPartitionElement
 	){//BEGIN CONSTRUCTOR BODY
@@ -386,7 +386,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	){//BEGIN CONSTRUCTOR BODY
 		IntegersFactory fact = IntegersFactoryImpl.eINSTANCE;
 		synchronized(fact){item = fact.createNumberConstant();}
@@ -413,7 +413,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, OperatorHLAPI containerOperator
 	){//BEGIN CONSTRUCTOR BODY
@@ -446,7 +446,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, NamedOperatorHLAPI containerNamedOperator
 	){//BEGIN CONSTRUCTOR BODY
@@ -479,7 +479,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, HLMarkingHLAPI containerHLMarking
 	){//BEGIN CONSTRUCTOR BODY
@@ -512,7 +512,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, ConditionHLAPI containerCondition
 	){//BEGIN CONSTRUCTOR BODY
@@ -545,7 +545,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, HLAnnotationHLAPI containerHLAnnotation
 	){//BEGIN CONSTRUCTOR BODY
@@ -578,7 +578,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	public NumberConstantHLAPI(
 		 HLPNNumberHLAPI type
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, PartitionElementHLAPI containerPartitionElement
 	){//BEGIN CONSTRUCTOR BODY
@@ -702,7 +702,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Integer getValue(){
+	public Long getValue(){
 		return item.getValue();
 	}
 	
@@ -2439,7 +2439,7 @@ public class NumberConstantHLAPI implements HLAPIClass,TermHLAPI,OperatorHLAPI{
 	 */
 	public void setValueHLAPI(
 	
-	java.lang.Integer elem){
+	java.lang.Long elem){
 	
 	
 		if(elem!=null){

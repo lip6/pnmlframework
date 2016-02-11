@@ -14,6 +14,7 @@
   <foreignModel>booleans.ecore</foreignModel>
   <foreignModel>dots.ecore</foreignModel>
   <foreignModel>hlcorestructure.ecore</foreignModel>
+  <foreignModel>integers.ecore</foreignModel>
   <foreignModel>multisets.ecore</foreignModel>
   <foreignModel>partitions.ecore</foreignModel>
   <foreignModel>terms.ecore</foreignModel>
@@ -284,6 +285,29 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Declaration/containerDeclarationPetriNet"/>
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference hlcorestructure.ecore#//Declaration/containerDeclarationPage"/>
     </genClasses>
+  </genPackages>
+  <genPackages prefix="Integers" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
+      ecorePackage="integers.ecore#/">
+    <genClasses image="false" ecoreClass="integers.ecore#//HLPNNumber">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference integers.ecore#//HLPNNumber/containerNumberConstant"/>
+    </genClasses>
+    <genClasses ecoreClass="integers.ecore#//Natural"/>
+    <genClasses ecoreClass="integers.ecore#//Positive"/>
+    <genClasses ecoreClass="integers.ecore#//HLInteger"/>
+    <genClasses ecoreClass="integers.ecore#//NumberConstant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference integers.ecore#//NumberConstant/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute integers.ecore#//NumberConstant/value"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="integers.ecore#//IntegerOperator"/>
+    <genClasses ecoreClass="integers.ecore#//Addition"/>
+    <genClasses ecoreClass="integers.ecore#//Subtraction"/>
+    <genClasses ecoreClass="integers.ecore#//Multiplication"/>
+    <genClasses ecoreClass="integers.ecore#//Division"/>
+    <genClasses ecoreClass="integers.ecore#//Modulo"/>
+    <genClasses ecoreClass="integers.ecore#//GreaterThan"/>
+    <genClasses ecoreClass="integers.ecore#//GreaterThanOrEqual"/>
+    <genClasses ecoreClass="integers.ecore#//LessThan"/>
+    <genClasses ecoreClass="integers.ecore#//LessThanOrEqual"/>
   </genPackages>
   <genPackages prefix="Multisets" basePackage="fr.lip6.move.pnml.pthlpng" disposableProviderFactory="true"
       ecorePackage="multisets.ecore#/">

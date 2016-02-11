@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.terms.hlapi;
 
@@ -442,6 +442,27 @@ public class ProductSortHLAPI implements HLAPIClass,SortHLAPI{
 					continue;
 				}
 				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
+						));
+					continue;
+				}
+				
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
+						));
+					continue;
+				}
+				
 			}
 			return retour;
 		}
@@ -539,6 +560,57 @@ public class ProductSortHLAPI implements HLAPIClass,SortHLAPI{
 				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
 					retour.add(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(
 						(fr.lip6.move.pnml.pthlpng.dots.Dot)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of NaturalHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> getElementSort_integers_NaturalHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI>();
+			for (Sort elemnt : getElementSort()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of PositiveHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> getElementSort_integers_PositiveHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI>();
+			for (Sort elemnt : getElementSort()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
+						));
+				}
+			}
+			return retour;
+		}
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of HLIntegerHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> getElementSort_integers_HLIntegerHLAPI(){
+			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI>();
+			for (Sort elemnt : getElementSort()) {
+				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
 						));
 				}
 			}

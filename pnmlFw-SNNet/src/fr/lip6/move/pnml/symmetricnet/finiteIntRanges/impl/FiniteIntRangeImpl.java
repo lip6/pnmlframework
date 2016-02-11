@@ -1,23 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
- *
- *  All rights reserved.   This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License v1.0
- *  which accompanies this distribution, and is available at
- *  http://www.eclipse.org/legal/epl-v10.html
- *
- *  Project leader / Initial Contributor:
- *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
- *
- *  Contributors:
- *    ${ocontributors} - <$oemails}>
- *
- *  Mailing list:
- *    lom-messan.hillah@lip6.fr
- */
-/**
- * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -88,7 +70,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer START_EDEFAULT = null;
+	protected static final Long START_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getStart() <em>Start</em>}' attribute.
@@ -98,7 +80,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer start = START_EDEFAULT;
+	protected Long start = START_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getEnd() <em>End</em>}' attribute.
@@ -108,7 +90,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer END_EDEFAULT = null;
+	protected static final Long END_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getEnd() <em>End</em>}' attribute.
@@ -118,7 +100,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer end = END_EDEFAULT;
+	protected Long end = END_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,7 +127,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 */
 	@Override
-	public Integer getStart() {
+	public Long getStart() {
 		return start;
 	}
 
@@ -155,8 +137,8 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 */
 	@Override
-	public void setStart(Integer newStart) {
-		Integer oldStart = start;
+	public void setStart(Long newStart) {
+		Long oldStart = start;
 		start = newStart;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FiniteIntRangesPackage.FINITE_INT_RANGE__START,
@@ -169,7 +151,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 */
 	@Override
-	public Integer getEnd() {
+	public Long getEnd() {
 		return end;
 	}
 
@@ -179,8 +161,8 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	 * @generated
 	 */
 	@Override
-	public void setEnd(Integer newEnd) {
-		Integer oldEnd = end;
+	public void setEnd(Long newEnd) {
+		Long oldEnd = end;
 		end = newEnd;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, FiniteIntRangesPackage.FINITE_INT_RANGE__END, oldEnd,
@@ -309,10 +291,10 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case FiniteIntRangesPackage.FINITE_INT_RANGE__START:
-			setStart((Integer) newValue);
+			setStart((Long) newValue);
 			return;
 		case FiniteIntRangesPackage.FINITE_INT_RANGE__END:
-			setEnd((Integer) newValue);
+			setEnd((Long) newValue);
 			return;
 		case FiniteIntRangesPackage.FINITE_INT_RANGE__CONTAINER_FINITE_INT_RANGE_CONSTANT:
 			setContainerFiniteIntRangeConstant((FiniteIntRangeConstant) newValue);
@@ -454,7 +436,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 
 		if (locRoot.getAttributeValue(new QName("start")) != null) {
 			try {
-				this.setStart(new Integer(locRoot.getAttributeValue(new QName("start"))));
+				this.setStart(new Long(locRoot.getAttributeValue(new QName("start"))));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}
@@ -462,7 +444,7 @@ public class FiniteIntRangeImpl extends BuiltInSortImpl implements FiniteIntRang
 
 		if (locRoot.getAttributeValue(new QName("end")) != null) {
 			try {
-				this.setEnd(new Integer(locRoot.getAttributeValue(new QName("end"))));
+				this.setEnd(new Long(locRoot.getAttributeValue(new QName("end"))));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}

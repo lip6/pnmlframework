@@ -44,6 +44,8 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 import fr.lip6.move.pnml.pthlpng.dots.impl.DotsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructurePackageImpl;
+import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersPackageImpl;
 import fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage;
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
@@ -276,6 +278,9 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
@@ -288,6 +293,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		theBooleansPackage.createPackageContents();
 		theDotsPackage.createPackageContents();
 		theHlcorestructurePackage.createPackageContents();
+		theIntegersPackage.createPackageContents();
 		theMultisetsPackage.createPackageContents();
 		thePartitionsPackage.createPackageContents();
 
@@ -296,11 +302,13 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		theBooleansPackage.initializePackageContents();
 		theDotsPackage.initializePackageContents();
 		theHlcorestructurePackage.initializePackageContents();
+		theIntegersPackage.initializePackageContents();
 		theMultisetsPackage.initializePackageContents();
 		thePartitionsPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theTermsPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return TermsValidator.INSTANCE;
 			}
@@ -319,6 +327,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDeclarations() {
 		return declarationsEClass;
 	}
@@ -328,6 +337,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDeclarations_Declaration() {
 		return (EReference) declarationsEClass.getEStructuralFeatures().get(0);
 	}
@@ -337,6 +347,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getDeclarations_ContainerDeclaration() {
 		return (EReference) declarationsEClass.getEStructuralFeatures().get(1);
 	}
@@ -346,6 +357,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTermsDeclaration() {
 		return termsDeclarationEClass;
 	}
@@ -355,6 +367,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTermsDeclaration_Id() {
 		return (EAttribute) termsDeclarationEClass.getEStructuralFeatures().get(0);
 	}
@@ -364,6 +377,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getTermsDeclaration_Name() {
 		return (EAttribute) termsDeclarationEClass.getEStructuralFeatures().get(1);
 	}
@@ -373,6 +387,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTermsDeclaration_ContainerDeclarations() {
 		return (EReference) termsDeclarationEClass.getEStructuralFeatures().get(2);
 	}
@@ -382,6 +397,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSort() {
 		return sortEClass;
 	}
@@ -391,6 +407,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_Multi() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(0);
 	}
@@ -400,6 +417,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerNamedSort() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(1);
 	}
@@ -409,6 +427,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerVariableDecl() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(2);
 	}
@@ -418,6 +437,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerProductSort() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(3);
 	}
@@ -427,6 +447,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerType() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(4);
 	}
@@ -436,6 +457,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerAll() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(5);
 	}
@@ -445,6 +467,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerEmpty() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(6);
 	}
@@ -454,6 +477,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getSort_ContainerPartition() {
 		return (EReference) sortEClass.getEStructuralFeatures().get(7);
 	}
@@ -463,6 +487,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMultisetSort() {
 		return multisetSortEClass;
 	}
@@ -472,6 +497,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getMultisetSort_Basis() {
 		return (EReference) multisetSortEClass.getEStructuralFeatures().get(0);
 	}
@@ -481,6 +507,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTerm() {
 		return termEClass;
 	}
@@ -490,6 +517,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_Sort() {
 		return (EReference) termEClass.getEStructuralFeatures().get(0);
 	}
@@ -499,6 +527,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerOperator() {
 		return (EReference) termEClass.getEStructuralFeatures().get(1);
 	}
@@ -508,6 +537,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerNamedOperator() {
 		return (EReference) termEClass.getEStructuralFeatures().get(2);
 	}
@@ -517,6 +547,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerHLMarking() {
 		return (EReference) termEClass.getEStructuralFeatures().get(3);
 	}
@@ -526,6 +557,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerCondition() {
 		return (EReference) termEClass.getEStructuralFeatures().get(4);
 	}
@@ -535,6 +567,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerHLAnnotation() {
 		return (EReference) termEClass.getEStructuralFeatures().get(5);
 	}
@@ -544,6 +577,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getTerm_ContainerPartitionElement() {
 		return (EReference) termEClass.getEStructuralFeatures().get(6);
 	}
@@ -553,6 +587,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOperator() {
 		return operatorEClass;
 	}
@@ -562,6 +597,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getOperator_Subterm() {
 		return (EReference) operatorEClass.getEStructuralFeatures().get(0);
 	}
@@ -571,6 +607,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getOperator_Output() {
 		return (EReference) operatorEClass.getEStructuralFeatures().get(1);
 	}
@@ -580,6 +617,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getOperator_Input() {
 		return (EReference) operatorEClass.getEStructuralFeatures().get(2);
 	}
@@ -589,6 +627,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getVariableDecl() {
 		return variableDeclEClass;
 	}
@@ -598,6 +637,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getVariableDecl_Sort() {
 		return (EReference) variableDeclEClass.getEStructuralFeatures().get(0);
 	}
@@ -607,6 +647,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getVariableDecl_ContainerNamedOperator() {
 		return (EReference) variableDeclEClass.getEStructuralFeatures().get(1);
 	}
@@ -616,6 +657,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getVariable() {
 		return variableEClass;
 	}
@@ -625,6 +667,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getVariable_VariableDecl() {
 		return (EReference) variableEClass.getEStructuralFeatures().get(0);
 	}
@@ -634,6 +677,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBuiltInSort() {
 		return builtInSortEClass;
 	}
@@ -643,6 +687,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getProductSort() {
 		return productSortEClass;
 	}
@@ -652,6 +697,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getProductSort_ElementSort() {
 		return (EReference) productSortEClass.getEStructuralFeatures().get(0);
 	}
@@ -661,6 +707,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBuiltInConstant() {
 		return builtInConstantEClass;
 	}
@@ -670,6 +717,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMultisetOperator() {
 		return multisetOperatorEClass;
 	}
@@ -679,6 +727,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getTuple() {
 		return tupleEClass;
 	}
@@ -688,6 +737,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSortDecl() {
 		return sortDeclEClass;
 	}
@@ -697,6 +747,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getBuiltInOperator() {
 		return builtInOperatorEClass;
 	}
@@ -706,6 +757,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNamedSort() {
 		return namedSortEClass;
 	}
@@ -715,6 +767,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNamedSort_Sortdef() {
 		return (EReference) namedSortEClass.getEStructuralFeatures().get(0);
 	}
@@ -724,6 +777,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getUserSort() {
 		return userSortEClass;
 	}
@@ -733,6 +787,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getUserSort_Declaration() {
 		return (EReference) userSortEClass.getEStructuralFeatures().get(0);
 	}
@@ -742,6 +797,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getOperatorDecl() {
 		return operatorDeclEClass;
 	}
@@ -751,6 +807,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNamedOperator() {
 		return namedOperatorEClass;
 	}
@@ -760,6 +817,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNamedOperator_Def() {
 		return (EReference) namedOperatorEClass.getEStructuralFeatures().get(0);
 	}
@@ -769,6 +827,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNamedOperator_Parameters() {
 		return (EReference) namedOperatorEClass.getEStructuralFeatures().get(1);
 	}
@@ -778,6 +837,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getUserOperator() {
 		return userOperatorEClass;
 	}
@@ -787,6 +847,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getUserOperator_Declaration() {
 		return (EReference) userOperatorEClass.getEStructuralFeatures().get(0);
 	}
@@ -796,6 +857,7 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public TermsFactory getTermsFactory() {
 		return (TermsFactory) getEFactoryInstance();
 	}

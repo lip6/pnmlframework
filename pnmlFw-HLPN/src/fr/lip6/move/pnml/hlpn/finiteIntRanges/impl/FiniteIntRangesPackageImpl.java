@@ -247,6 +247,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theFiniteIntRangesPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return FiniteIntRangesValidator.INSTANCE;
 			}
@@ -265,6 +266,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFiniteIntRange() {
 		return finiteIntRangeEClass;
 	}
@@ -274,6 +276,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFiniteIntRange_Start() {
 		return (EAttribute) finiteIntRangeEClass.getEStructuralFeatures().get(0);
 	}
@@ -283,6 +286,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFiniteIntRange_End() {
 		return (EAttribute) finiteIntRangeEClass.getEStructuralFeatures().get(1);
 	}
@@ -292,6 +296,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFiniteIntRange_ContainerFiniteIntRangeConstant() {
 		return (EReference) finiteIntRangeEClass.getEStructuralFeatures().get(2);
 	}
@@ -301,6 +306,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFiniteIntRangeConstant() {
 		return finiteIntRangeConstantEClass;
 	}
@@ -310,6 +316,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getFiniteIntRangeConstant_Value() {
 		return (EAttribute) finiteIntRangeConstantEClass.getEStructuralFeatures().get(0);
 	}
@@ -319,6 +326,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getFiniteIntRangeConstant_Range() {
 		return (EReference) finiteIntRangeConstantEClass.getEStructuralFeatures().get(1);
 	}
@@ -328,6 +336,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLessThan() {
 		return lessThanEClass;
 	}
@@ -337,6 +346,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getFiniteIntRangeOperator() {
 		return finiteIntRangeOperatorEClass;
 	}
@@ -346,6 +356,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGreaterThan() {
 		return greaterThanEClass;
 	}
@@ -355,6 +366,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLessThanOrEqual() {
 		return lessThanOrEqualEClass;
 	}
@@ -364,6 +376,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGreaterThanOrEqual() {
 		return greaterThanOrEqualEClass;
 	}
@@ -373,6 +386,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public FiniteIntRangesFactory getFiniteIntRangesFactory() {
 		return (FiniteIntRangesFactory) getEFactoryInstance();
 	}
@@ -460,12 +474,11 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 		// Initialize classes and features; add operations and parameters
 		initEClass(finiteIntRangeEClass, FiniteIntRange.class, "FiniteIntRange", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFiniteIntRange_Start(), ecorePackage.getEIntegerObject(), "start", null, 1, 1,
+		initEAttribute(getFiniteIntRange_Start(), ecorePackage.getELongObject(), "start", null, 1, 1,
 				FiniteIntRange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getFiniteIntRange_End(), ecorePackage.getEIntegerObject(), "end", null, 1, 1,
-				FiniteIntRange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
-				!IS_DERIVED, !IS_ORDERED);
+		initEAttribute(getFiniteIntRange_End(), ecorePackage.getELongObject(), "end", null, 1, 1, FiniteIntRange.class,
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getFiniteIntRange_ContainerFiniteIntRangeConstant(), this.getFiniteIntRangeConstant(),
 				this.getFiniteIntRangeConstant_Range(), "containerFiniteIntRangeConstant", null, 0, 1,
 				FiniteIntRange.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
@@ -473,7 +486,7 @@ public class FiniteIntRangesPackageImpl extends EPackageImpl implements FiniteIn
 
 		initEClass(finiteIntRangeConstantEClass, FiniteIntRangeConstant.class, "FiniteIntRangeConstant", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getFiniteIntRangeConstant_Value(), ecorePackage.getEIntegerObject(), "value", null, 1, 1,
+		initEAttribute(getFiniteIntRangeConstant_Value(), ecorePackage.getELongObject(), "value", null, 1, 1,
 				FiniteIntRangeConstant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID,
 				IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getFiniteIntRangeConstant_Range(), this.getFiniteIntRange(),

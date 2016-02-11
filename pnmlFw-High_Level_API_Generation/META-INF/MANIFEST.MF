@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework High Level API Generator
 Bundle-SymbolicName: fr.lip6.pnml.framework.hlapigen
-Bundle-Version: 2.2.9
+Bundle-Version: 2.2.10
 Export-Package: fr.lip6.move.pnml.framework.apigen
 Require-Bundle: org.eclipse.emf,
  org.eclipse.emf.codegen,

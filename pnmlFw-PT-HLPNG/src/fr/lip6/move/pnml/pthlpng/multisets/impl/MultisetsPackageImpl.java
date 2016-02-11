@@ -43,6 +43,8 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 import fr.lip6.move.pnml.pthlpng.dots.impl.DotsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructurePackageImpl;
+import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersPackageImpl;
 import fr.lip6.move.pnml.pthlpng.multisets.Add;
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Cardinality;
@@ -187,6 +189,9 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
@@ -199,6 +204,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		theBooleansPackage.createPackageContents();
 		theDotsPackage.createPackageContents();
 		theHlcorestructurePackage.createPackageContents();
+		theIntegersPackage.createPackageContents();
 		thePartitionsPackage.createPackageContents();
 		theTermsPackage.createPackageContents();
 
@@ -207,11 +213,13 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		theBooleansPackage.initializePackageContents();
 		theDotsPackage.initializePackageContents();
 		theHlcorestructurePackage.initializePackageContents();
+		theIntegersPackage.initializePackageContents();
 		thePartitionsPackage.initializePackageContents();
 		theTermsPackage.initializePackageContents();
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theMultisetsPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return MultisetsValidator.INSTANCE;
 			}
@@ -230,6 +238,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCardinality() {
 		return cardinalityEClass;
 	}
@@ -239,6 +248,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getContains() {
 		return containsEClass;
 	}
@@ -248,6 +258,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getCardinalityOf() {
 		return cardinalityOfEClass;
 	}
@@ -257,6 +268,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAdd() {
 		return addEClass;
 	}
@@ -266,6 +278,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAll() {
 		return allEClass;
 	}
@@ -275,6 +288,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getAll_Refsort() {
 		return (EReference) allEClass.getEStructuralFeatures().get(0);
 	}
@@ -284,6 +298,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getEmpty() {
 		return emptyEClass;
 	}
@@ -293,6 +308,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getEmpty_Refsort() {
 		return (EReference) emptyEClass.getEStructuralFeatures().get(0);
 	}
@@ -302,6 +318,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNumberOf() {
 		return numberOfEClass;
 	}
@@ -311,6 +328,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSubtract() {
 		return subtractEClass;
 	}
@@ -320,6 +338,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getScalarProduct() {
 		return scalarProductEClass;
 	}
@@ -329,6 +348,7 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MultisetsFactory getMultisetsFactory() {
 		return (MultisetsFactory) getEFactoryInstance();
 	}

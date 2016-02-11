@@ -73,13 +73,13 @@ public interface FiniteIntRange extends BuiltInSort {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Start</em>' attribute.
-	 * @see #setStart(Integer)
+	 * @see #setStart(Long)
 	 * @see fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRangesPackage#getFiniteIntRange_Start()
 	 * @model required="true" ordered="false"
 	 *        annotation="http://www.pnml.org/models/ToPNML tag='start' kind='attribute'"
 	 * @generated
 	 */
-	Integer getStart();
+	Long getStart();
 
 	/**
 	 * Sets the value of the '{@link fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRange#getStart <em>Start</em>}' attribute.
@@ -89,7 +89,7 @@ public interface FiniteIntRange extends BuiltInSort {
 	 * @see #getStart()
 	 * @generated
 	 */
-	void setStart(Integer value);
+	void setStart(Long value);
 
 	/**
 	 * Returns the value of the '<em><b>End</b></em>' attribute.
@@ -100,13 +100,13 @@ public interface FiniteIntRange extends BuiltInSort {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>End</em>' attribute.
-	 * @see #setEnd(Integer)
+	 * @see #setEnd(Long)
 	 * @see fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRangesPackage#getFiniteIntRange_End()
 	 * @model required="true" ordered="false"
 	 *        annotation="http://www.pnml.org/models/ToPNML tag='end' kind='attribute'"
 	 * @generated
 	 */
-	Integer getEnd();
+	Long getEnd();
 
 	/**
 	 * Sets the value of the '{@link fr.lip6.move.pnml.symmetricnet.finiteIntRanges.FiniteIntRange#getEnd <em>End</em>}' attribute.
@@ -116,7 +116,7 @@ public interface FiniteIntRange extends BuiltInSort {
 	 * @see #getEnd()
 	 * @generated
 	 */
-	void setEnd(Integer value);
+	void setEnd(Long value);
 
 	/**
 	 * Returns the value of the '<em><b>Container Finite Int Range Constant</b></em>' container reference.

@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.partitions.hlapi;
 
@@ -76,6 +76,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.Addition;
+import fr.lip6.move.pnml.pthlpng.integers.Division;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThan;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.HLInteger;
+import fr.lip6.move.pnml.pthlpng.integers.HLPNNumber;
+import fr.lip6.move.pnml.pthlpng.integers.LessThan;
+import fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.Modulo;
+import fr.lip6.move.pnml.pthlpng.integers.Multiplication;
+import fr.lip6.move.pnml.pthlpng.integers.Natural;
+import fr.lip6.move.pnml.pthlpng.integers.NumberConstant;
+import fr.lip6.move.pnml.pthlpng.integers.Positive;
+import fr.lip6.move.pnml.pthlpng.integers.Subtraction;
+
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.Add;
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Cardinality;
@@ -88,7 +105,6 @@ import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
 
-import fr.lip6.move.pnml.pthlpng.partitions.GreaterThan;
 import fr.lip6.move.pnml.pthlpng.partitions.Partition;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf;
@@ -117,6 +133,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -628,6 +645,18 @@ public class PartitionElementOfHLAPITest {
 				SortHLAPI totest_dots_Dot = elem.getSortHLAPI();
 				assert totest_dots_Dot.getContainedItem().equals(elem.getSort());
 			
+				elem.setSortHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(new IntegersFactoryImpl().createNatural()));
+				SortHLAPI totest_integers_Natural = elem.getSortHLAPI();
+				assert totest_integers_Natural.getContainedItem().equals(elem.getSort());
+			
+				elem.setSortHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(new IntegersFactoryImpl().createPositive()));
+				SortHLAPI totest_integers_Positive = elem.getSortHLAPI();
+				assert totest_integers_Positive.getContainedItem().equals(elem.getSort());
+			
+				elem.setSortHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(new IntegersFactoryImpl().createHLInteger()));
+				SortHLAPI totest_integers_HLInteger = elem.getSortHLAPI();
+				assert totest_integers_HLInteger.getContainedItem().equals(elem.getSort());
+			
 				elem.setSortHLAPI(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(new TermsFactoryImpl().createMultisetSort()));
 				SortHLAPI totest_terms_MultisetSort = elem.getSortHLAPI();
 				assert totest_terms_MultisetSort.getContainedItem().equals(elem.getSort());
@@ -699,6 +728,46 @@ public class PartitionElementOfHLAPITest {
 				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI(new DotsFactoryImpl().createDotConstant()));
 				OperatorHLAPI totest_dots_DotConstant = elem.getContainerOperatorHLAPI();
 				assert totest_dots_DotConstant.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI(new IntegersFactoryImpl().createNumberConstant()));
+				OperatorHLAPI totest_integers_NumberConstant = elem.getContainerOperatorHLAPI();
+				assert totest_integers_NumberConstant.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI(new IntegersFactoryImpl().createAddition()));
+				OperatorHLAPI totest_integers_Addition = elem.getContainerOperatorHLAPI();
+				assert totest_integers_Addition.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI(new IntegersFactoryImpl().createSubtraction()));
+				OperatorHLAPI totest_integers_Subtraction = elem.getContainerOperatorHLAPI();
+				assert totest_integers_Subtraction.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI(new IntegersFactoryImpl().createMultiplication()));
+				OperatorHLAPI totest_integers_Multiplication = elem.getContainerOperatorHLAPI();
+				assert totest_integers_Multiplication.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI(new IntegersFactoryImpl().createDivision()));
+				OperatorHLAPI totest_integers_Division = elem.getContainerOperatorHLAPI();
+				assert totest_integers_Division.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI(new IntegersFactoryImpl().createModulo()));
+				OperatorHLAPI totest_integers_Modulo = elem.getContainerOperatorHLAPI();
+				assert totest_integers_Modulo.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI(new IntegersFactoryImpl().createGreaterThan()));
+				OperatorHLAPI totest_integers_GreaterThan = elem.getContainerOperatorHLAPI();
+				assert totest_integers_GreaterThan.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI(new IntegersFactoryImpl().createGreaterThanOrEqual()));
+				OperatorHLAPI totest_integers_GreaterThanOrEqual = elem.getContainerOperatorHLAPI();
+				assert totest_integers_GreaterThanOrEqual.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI(new IntegersFactoryImpl().createLessThan()));
+				OperatorHLAPI totest_integers_LessThan = elem.getContainerOperatorHLAPI();
+				assert totest_integers_LessThan.getContainedItem().equals(elem.getContainerOperator());
+			
+				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI(new IntegersFactoryImpl().createLessThanOrEqual()));
+				OperatorHLAPI totest_integers_LessThanOrEqual = elem.getContainerOperatorHLAPI();
+				assert totest_integers_LessThanOrEqual.getContainedItem().equals(elem.getContainerOperator());
 			
 				elem.setContainerOperatorHLAPI(new fr.lip6.move.pnml.pthlpng.multisets.hlapi.CardinalityHLAPI(new MultisetsFactoryImpl().createCardinality()));
 				OperatorHLAPI totest_multisets_Cardinality = elem.getContainerOperatorHLAPI();
@@ -903,6 +972,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -950,7 +1059,7 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany = 23;
+			howmany = 33;
 			
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
@@ -984,6 +1093,18 @@ public class PartitionElementOfHLAPITest {
 				elem.setOutputHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(new DotsFactoryImpl().createDot()));
 				SortHLAPI totest_dots_Dot = elem.getOutputHLAPI();
 				assert totest_dots_Dot.getContainedItem().equals(elem.getOutput());
+			
+				elem.setOutputHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(new IntegersFactoryImpl().createNatural()));
+				SortHLAPI totest_integers_Natural = elem.getOutputHLAPI();
+				assert totest_integers_Natural.getContainedItem().equals(elem.getOutput());
+			
+				elem.setOutputHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(new IntegersFactoryImpl().createPositive()));
+				SortHLAPI totest_integers_Positive = elem.getOutputHLAPI();
+				assert totest_integers_Positive.getContainedItem().equals(elem.getOutput());
+			
+				elem.setOutputHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(new IntegersFactoryImpl().createHLInteger()));
+				SortHLAPI totest_integers_HLInteger = elem.getOutputHLAPI();
+				assert totest_integers_HLInteger.getContainedItem().equals(elem.getOutput());
 			
 				elem.setOutputHLAPI(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(new TermsFactoryImpl().createMultisetSort()));
 				SortHLAPI totest_terms_MultisetSort = elem.getOutputHLAPI();
@@ -1020,6 +1141,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -1031,7 +1164,7 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany = 5;
+			howmany = 8;
 			
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
@@ -1135,6 +1268,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1182,12 +1355,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.partitions.hlapi.GreaterThanHLAPI> totest = elem.getSubterm_partitions_GreaterThanHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1254,6 +1427,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1301,12 +1514,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.partitions.hlapi.PartitionElementOfHLAPI> totest = elem.getSubterm_partitions_PartitionElementOfHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1373,6 +1586,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1420,12 +1673,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.partitions.hlapi.LessThanHLAPI> totest = elem.getSubterm_partitions_LessThanHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1492,6 +1745,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1539,12 +1832,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.EqualityHLAPI> totest = elem.getSubterm_booleans_EqualityHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1611,6 +1904,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1658,12 +1991,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.InequalityHLAPI> totest = elem.getSubterm_booleans_InequalityHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1730,6 +2063,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1777,12 +2150,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BooleanConstantHLAPI> totest = elem.getSubterm_booleans_BooleanConstantHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1849,6 +2222,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -1896,12 +2309,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.OrHLAPI> totest = elem.getSubterm_booleans_OrHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -1968,6 +2381,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2015,12 +2468,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.AndHLAPI> totest = elem.getSubterm_booleans_AndHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2087,6 +2540,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2134,12 +2627,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.ImplyHLAPI> totest = elem.getSubterm_booleans_ImplyHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2206,6 +2699,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2253,12 +2786,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.NotHLAPI> totest = elem.getSubterm_booleans_NotHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2325,6 +2858,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2372,12 +2945,1602 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI> totest = elem.getSubterm_dots_DotConstantHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_NumberConstantHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createNumberConstant());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI> totest = elem.getSubterm_integers_NumberConstantHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_AdditionHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createAddition());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI> totest = elem.getSubterm_integers_AdditionHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_SubtractionHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createSubtraction());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI> totest = elem.getSubterm_integers_SubtractionHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_MultiplicationHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createMultiplication());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI> totest = elem.getSubterm_integers_MultiplicationHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_DivisionHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createDivision());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI> totest = elem.getSubterm_integers_DivisionHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_ModuloHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createModulo());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI> totest = elem.getSubterm_integers_ModuloHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_GreaterThanHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createGreaterThan());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI> totest = elem.getSubterm_integers_GreaterThanHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_GreaterThanOrEqualHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createGreaterThanOrEqual());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI> totest = elem.getSubterm_integers_GreaterThanOrEqualHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_LessThanHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createLessThan());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI> totest = elem.getSubterm_integers_LessThanHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
+
+			for (TermHLAPI unit : totest) {
+             assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getSubterm_integers_LessThanOrEqualHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getSubterm().add(new IntegersFactoryImpl().createLessThanOrEqual());
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createPartitionElementOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new PartitionsFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createEquality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createInequality()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createBooleanConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createOr()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createAnd()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createImply()
+			);
+			
+			llapi.getSubterm().add(
+			   new BooleansFactoryImpl().createNot()
+			);
+			
+			llapi.getSubterm().add(
+			   new DotsFactoryImpl().createDotConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinality()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createContains()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createCardinalityOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAdd()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createAll()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createEmpty()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createNumberOf()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createSubtract()
+			);
+			
+			llapi.getSubterm().add(
+			   new MultisetsFactoryImpl().createScalarProduct()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createVariable()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createTuple()
+			);
+			
+			llapi.getSubterm().add(
+			   new TermsFactoryImpl().createUserOperator()
+			);
+			
+			howmany += 33;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI> totest = elem.getSubterm_integers_LessThanOrEqualHLAPI();
+
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2444,6 +4607,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2491,12 +4694,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.CardinalityHLAPI> totest = elem.getSubterm_multisets_CardinalityHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2563,6 +4766,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2610,12 +4853,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.ContainsHLAPI> totest = elem.getSubterm_multisets_ContainsHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2682,6 +4925,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2729,12 +5012,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.CardinalityOfHLAPI> totest = elem.getSubterm_multisets_CardinalityOfHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2801,6 +5084,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2848,12 +5171,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.AddHLAPI> totest = elem.getSubterm_multisets_AddHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -2920,6 +5243,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -2967,12 +5330,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.AllHLAPI> totest = elem.getSubterm_multisets_AllHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3039,6 +5402,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3086,12 +5489,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.EmptyHLAPI> totest = elem.getSubterm_multisets_EmptyHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3158,6 +5561,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3205,12 +5648,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.NumberOfHLAPI> totest = elem.getSubterm_multisets_NumberOfHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3277,6 +5720,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3324,12 +5807,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.SubtractHLAPI> totest = elem.getSubterm_multisets_SubtractHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3396,6 +5879,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3443,12 +5966,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.multisets.hlapi.ScalarProductHLAPI> totest = elem.getSubterm_multisets_ScalarProductHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3515,6 +6038,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3562,12 +6125,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.VariableHLAPI> totest = elem.getSubterm_terms_VariableHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3634,6 +6197,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3681,12 +6284,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.TupleHLAPI> totest = elem.getSubterm_terms_TupleHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3753,6 +6356,46 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createNumberConstant()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createAddition()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createSubtraction()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createMultiplication()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createDivision()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createModulo()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createGreaterThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThan()
+			);
+			
+			llapi.getSubterm().add(
+			   new IntegersFactoryImpl().createLessThanOrEqual()
+			);
+			
+			llapi.getSubterm().add(
 			   new MultisetsFactoryImpl().createCardinality()
 			);
 			
@@ -3800,12 +6443,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserOperator()
 			);
 			
-			howmany += 23;
+			howmany += 33;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserOperatorHLAPI> totest = elem.getSubterm_terms_UserOperatorHLAPI();
 
-			assert totest.size() == howmany + 1 - 23;
+			assert totest.size() == howmany + 1 - 33;
 
 			for (TermHLAPI unit : totest) {
              assert llapi.getSubterm().contains(unit.getContainedItem()) : "missing element";
@@ -3840,6 +6483,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -3851,12 +6506,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany += 5;
+			howmany += 8;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> totest = elem.getInput_booleans_BoolHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
@@ -3887,6 +6542,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -3898,12 +6565,189 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany += 5;
+			howmany += 8;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> totest = elem.getInput_dots_DotHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getInput_integers_NaturalHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getInput().add(new IntegersFactoryImpl().createNatural());
+			
+			llapi.getInput().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getInput().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			howmany += 8;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> totest = elem.getInput_integers_NaturalHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getInput_integers_PositiveHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getInput().add(new IntegersFactoryImpl().createPositive());
+			
+			llapi.getInput().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getInput().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			howmany += 8;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> totest = elem.getInput_integers_PositiveHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "PartitionElementOfHLAPI"})
+		public void getInput_integers_HLIntegerHLAPITest(){
+			PartitionElementOf llapi = new PartitionsFactoryImpl().createPartitionElementOf();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getInput().add(new IntegersFactoryImpl().createHLInteger());
+			
+			llapi.getInput().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getInput().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getInput().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			howmany += 8;
+
+			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> totest = elem.getInput_integers_HLIntegerHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
@@ -3934,6 +6778,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -3945,12 +6801,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany += 5;
+			howmany += 8;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> totest = elem.getInput_terms_MultisetSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
@@ -3981,6 +6837,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -3992,12 +6860,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany += 5;
+			howmany += 8;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> totest = elem.getInput_terms_ProductSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";
@@ -4028,6 +6896,18 @@ public class PartitionElementOfHLAPITest {
 			);
 			
 			llapi.getInput().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getInput().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			llapi.getInput().add(
 			   new TermsFactoryImpl().createMultisetSort()
 			);
 			
@@ -4039,12 +6919,12 @@ public class PartitionElementOfHLAPITest {
 			   new TermsFactoryImpl().createUserSort()
 			);
 			
-			howmany += 5;
+			howmany += 8;
 
 			PartitionElementOfHLAPI elem = new PartitionElementOfHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> totest = elem.getInput_terms_UserSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getInput().contains(unit.getContainedItem()) : "missing element";

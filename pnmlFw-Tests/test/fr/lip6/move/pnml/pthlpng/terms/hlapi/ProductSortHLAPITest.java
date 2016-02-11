@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.terms.hlapi;
 
@@ -76,6 +76,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.Addition;
+import fr.lip6.move.pnml.pthlpng.integers.Division;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThan;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.HLInteger;
+import fr.lip6.move.pnml.pthlpng.integers.HLPNNumber;
+import fr.lip6.move.pnml.pthlpng.integers.LessThan;
+import fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.Modulo;
+import fr.lip6.move.pnml.pthlpng.integers.Multiplication;
+import fr.lip6.move.pnml.pthlpng.integers.Natural;
+import fr.lip6.move.pnml.pthlpng.integers.NumberConstant;
+import fr.lip6.move.pnml.pthlpng.integers.Positive;
+import fr.lip6.move.pnml.pthlpng.integers.Subtraction;
+
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.Add;
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Cardinality;
@@ -88,8 +105,6 @@ import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
 
-import fr.lip6.move.pnml.pthlpng.partitions.GreaterThan;
-import fr.lip6.move.pnml.pthlpng.partitions.LessThan;
 import fr.lip6.move.pnml.pthlpng.partitions.Partition;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf;
@@ -120,6 +135,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -512,7 +528,19 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany = 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany = 8;
 			
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
@@ -572,12 +600,24 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany += 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> totest = elem.getElementSort_terms_MultisetSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
@@ -619,12 +659,24 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany += 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> totest = elem.getElementSort_terms_ProductSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
@@ -666,12 +718,24 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany += 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> totest = elem.getElementSort_terms_UserSortHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
@@ -713,12 +777,24 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany += 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> totest = elem.getElementSort_booleans_BoolHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
@@ -760,12 +836,201 @@ public class ProductSortHLAPITest {
 			   new DotsFactoryImpl().createDot()
 			);
 			
-			howmany += 5;
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
 
 			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
 			List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> totest = elem.getElementSort_dots_DotHLAPI();
 
-			assert totest.size() == howmany + 1 - 5;
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "ProductSortHLAPI"})
+		public void getElementSort_integers_NaturalHLAPITest(){
+			ProductSort llapi = new TermsFactoryImpl().createProductSort();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getElementSort().add(new IntegersFactoryImpl().createNatural());
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getElementSort().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
+
+			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> totest = elem.getElementSort_integers_NaturalHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "ProductSortHLAPI"})
+		public void getElementSort_integers_PositiveHLAPITest(){
+			ProductSort llapi = new TermsFactoryImpl().createProductSort();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getElementSort().add(new IntegersFactoryImpl().createPositive());
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getElementSort().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
+
+			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> totest = elem.getElementSort_integers_PositiveHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
+
+			for (SortHLAPI unit : totest) {
+             assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";
+         }
+		}
+		
+		
+		/**
+		 * This test add a random number (1..10) of wanting output objets
+		 * Then add one of all possible objet in the list.
+		 * It test the number of wanted objet returned by the methods, and if any object really exist in the original list.
+		 */
+		@Test(groups = { "hlapi", "ProductSortHLAPI"})
+		public void getElementSort_integers_HLIntegerHLAPITest(){
+			ProductSort llapi = new TermsFactoryImpl().createProductSort();
+			int howmany;
+
+			howmany = (int)(Math.random()*10);
+			for(int i =0; i<howmany;i++)
+			llapi.getElementSort().add(new IntegersFactoryImpl().createHLInteger());
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createMultisetSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createProductSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new TermsFactoryImpl().createUserSort()
+			);
+			
+			llapi.getElementSort().add(
+			   new BooleansFactoryImpl().createBool()
+			);
+			
+			llapi.getElementSort().add(
+			   new DotsFactoryImpl().createDot()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createNatural()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createPositive()
+			);
+			
+			llapi.getElementSort().add(
+			   new IntegersFactoryImpl().createHLInteger()
+			);
+			
+			howmany += 8;
+
+			ProductSortHLAPI elem = new ProductSortHLAPI(llapi);
+			List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> totest = elem.getElementSort_integers_HLIntegerHLAPI();
+
+			assert totest.size() == howmany + 1 - 8;
 
 			for (SortHLAPI unit : totest) {
              assert llapi.getElementSort().contains(unit.getContainedItem()) : "missing element";

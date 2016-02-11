@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 
@@ -269,6 +269,46 @@ public class HLAnnotationHLAPI implements HLAPIClass,LabelHLAPI,AnnotationHLAPI{
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotConstantImpl.class)){
 				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI((fr.lip6.move.pnml.pthlpng.dots.DotConstant)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI((fr.lip6.move.pnml.pthlpng.integers.NumberConstant)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.AdditionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Addition)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.SubtractionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Subtraction)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.MultiplicationImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI((fr.lip6.move.pnml.pthlpng.integers.Multiplication)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.DivisionImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI((fr.lip6.move.pnml.pthlpng.integers.Division)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.ModuloImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI((fr.lip6.move.pnml.pthlpng.integers.Modulo)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI((fr.lip6.move.pnml.pthlpng.integers.GreaterThan)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.GreaterThanOrEqualImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI((fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI((fr.lip6.move.pnml.pthlpng.integers.LessThan)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.LessThanOrEqualImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI((fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual)object);
 			}
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.multisets.impl.CardinalityImpl.class)){

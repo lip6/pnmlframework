@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 
@@ -245,6 +245,18 @@ public class TypeHLAPI implements HLAPIClass,LabelHLAPI,AnnotationHLAPI{
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
 				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI((fr.lip6.move.pnml.pthlpng.integers.Natural)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI((fr.lip6.move.pnml.pthlpng.integers.Positive)object);
+			}
+			
+			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
+				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI((fr.lip6.move.pnml.pthlpng.integers.HLInteger)object);
 			}
 			
 			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){

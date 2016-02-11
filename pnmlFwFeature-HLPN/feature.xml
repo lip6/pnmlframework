@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.hlpn.feature"
       label="PNML Framework High-Level Petri Nets"
-      version="2.2.9"
+      version="2.2.10"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.hlpn">
 

@@ -289,6 +289,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 
 		// Register package validator
 		EValidator.Registry.INSTANCE.put(theIntegersPackage, new EValidator.Descriptor() {
+			@Override
 			public EValidator getEValidator() {
 				return IntegersValidator.INSTANCE;
 			}
@@ -307,6 +308,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getHLPNNumber() {
 		return hlpnNumberEClass;
 	}
@@ -316,6 +318,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getHLPNNumber_ContainerNumberConstant() {
 		return (EReference) hlpnNumberEClass.getEStructuralFeatures().get(0);
 	}
@@ -325,6 +328,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNatural() {
 		return naturalEClass;
 	}
@@ -334,6 +338,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getPositive() {
 		return positiveEClass;
 	}
@@ -343,6 +348,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getHLInteger() {
 		return hlIntegerEClass;
 	}
@@ -352,6 +358,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNumberConstant() {
 		return numberConstantEClass;
 	}
@@ -361,6 +368,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getNumberConstant_Type() {
 		return (EReference) numberConstantEClass.getEStructuralFeatures().get(0);
 	}
@@ -370,6 +378,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getNumberConstant_Value() {
 		return (EAttribute) numberConstantEClass.getEStructuralFeatures().get(1);
 	}
@@ -379,6 +388,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIntegerOperator() {
 		return integerOperatorEClass;
 	}
@@ -388,6 +398,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getAddition() {
 		return additionEClass;
 	}
@@ -397,6 +408,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getSubtraction() {
 		return subtractionEClass;
 	}
@@ -406,6 +418,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMultiplication() {
 		return multiplicationEClass;
 	}
@@ -415,6 +428,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDivision() {
 		return divisionEClass;
 	}
@@ -424,6 +438,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getModulo() {
 		return moduloEClass;
 	}
@@ -433,6 +448,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGreaterThan() {
 		return greaterThanEClass;
 	}
@@ -442,6 +458,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getGreaterThanOrEqual() {
 		return greaterThanOrEqualEClass;
 	}
@@ -451,6 +468,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLessThan() {
 		return lessThanEClass;
 	}
@@ -460,6 +478,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getLessThanOrEqual() {
 		return lessThanOrEqualEClass;
 	}
@@ -469,6 +488,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IntegersFactory getIntegersFactory() {
 		return (IntegersFactory) getEFactoryInstance();
 	}
@@ -595,7 +615,7 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		initEReference(getNumberConstant_Type(), this.getHLPNNumber(), this.getHLPNNumber_ContainerNumberConstant(),
 				"type", null, 1, 1, NumberConstant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getNumberConstant_Value(), ecorePackage.getEIntegerObject(), "value", null, 1, 1,
+		initEAttribute(getNumberConstant_Value(), ecorePackage.getELongObject(), "value", null, 1, 1,
 				NumberConstant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, IS_ORDERED);
 

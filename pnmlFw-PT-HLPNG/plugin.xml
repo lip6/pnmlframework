@@ -37,6 +37,13 @@
        class = "fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage" />
   </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated pthlpng -->
+      <package
+            uri="http:///hlpn.integers.ecore"
+            class="fr.lip6.move.pnml.pthlpng.integers.IntegersPackage"/>
+   </extension>
+
   <extension point="org.eclipse.emf.ecore.generated_package">
     <package 
        uri = "http:///pthlpng.multisets.ecore" 

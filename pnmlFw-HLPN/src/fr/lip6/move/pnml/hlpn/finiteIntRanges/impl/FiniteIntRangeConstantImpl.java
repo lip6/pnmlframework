@@ -1,23 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
- *
- *  All rights reserved.   This program and the accompanying materials
- *  are made available under the terms of the Eclipse Public License v1.0
- *  which accompanies this distribution, and is available at
- *  http://www.eclipse.org/legal/epl-v10.html
- *
- *  Project leader / Initial Contributor:
- *    Lom Messan Hillah - <lom-messan.hillah@lip6.fr>
- *
- *  Contributors:
- *    ${ocontributors} - <$oemails}>
- *
- *  Mailing list:
- *    lom-messan.hillah@lip6.fr
- */
-/**
- * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
+ * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)
  * All rights reserved.   This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -96,7 +78,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Integer VALUE_EDEFAULT = null;
+	protected static final Long VALUE_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -106,7 +88,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * @generated
 	 * @ordered
 	 */
-	protected Integer value = VALUE_EDEFAULT;
+	protected Long value = VALUE_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getRange() <em>Range</em>}' containment reference.
@@ -143,7 +125,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * @generated
 	 */
 	@Override
-	public Integer getValue() {
+	public Long getValue() {
 		return value;
 	}
 
@@ -153,8 +135,8 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	 * @generated
 	 */
 	@Override
-	public void setValue(Integer newValue) {
-		Integer oldValue = value;
+	public void setValue(Long newValue) {
+		Long oldValue = value;
 		value = newValue;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
@@ -271,7 +253,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 		case FiniteIntRangesPackage.FINITE_INT_RANGE_CONSTANT__VALUE:
-			setValue((Integer) newValue);
+			setValue((Long) newValue);
 			return;
 		case FiniteIntRangesPackage.FINITE_INT_RANGE_CONSTANT__RANGE:
 			setRange((FiniteIntRange) newValue);
@@ -451,7 +433,7 @@ public class FiniteIntRangeConstantImpl extends BuiltInConstantImpl implements F
 
 		if (locRoot.getAttributeValue(new QName("value")) != null) {
 			try {
-				this.setValue(new Integer(locRoot.getAttributeValue(new QName("value"))));
+				this.setValue(new Long(locRoot.getAttributeValue(new QName("value"))));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}

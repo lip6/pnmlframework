@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.terms.hlapi;
 
@@ -76,6 +76,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.Addition;
+import fr.lip6.move.pnml.pthlpng.integers.Division;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThan;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.HLInteger;
+import fr.lip6.move.pnml.pthlpng.integers.HLPNNumber;
+import fr.lip6.move.pnml.pthlpng.integers.LessThan;
+import fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.Modulo;
+import fr.lip6.move.pnml.pthlpng.integers.Multiplication;
+import fr.lip6.move.pnml.pthlpng.integers.Natural;
+import fr.lip6.move.pnml.pthlpng.integers.NumberConstant;
+import fr.lip6.move.pnml.pthlpng.integers.Positive;
+import fr.lip6.move.pnml.pthlpng.integers.Subtraction;
+
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.Add;
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Cardinality;
@@ -88,8 +105,6 @@ import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
 
-import fr.lip6.move.pnml.pthlpng.partitions.GreaterThan;
-import fr.lip6.move.pnml.pthlpng.partitions.LessThan;
 import fr.lip6.move.pnml.pthlpng.partitions.Partition;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf;
@@ -121,6 +136,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -318,6 +334,18 @@ public class NamedSortHLAPITest {
 				elem.setSortdefHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(new DotsFactoryImpl().createDot()));
 				SortHLAPI totest_dots_Dot = elem.getSortdefHLAPI();
 				assert totest_dots_Dot.getContainedItem().equals(elem.getSortdef());
+			
+				elem.setSortdefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(new IntegersFactoryImpl().createNatural()));
+				SortHLAPI totest_integers_Natural = elem.getSortdefHLAPI();
+				assert totest_integers_Natural.getContainedItem().equals(elem.getSortdef());
+			
+				elem.setSortdefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(new IntegersFactoryImpl().createPositive()));
+				SortHLAPI totest_integers_Positive = elem.getSortdefHLAPI();
+				assert totest_integers_Positive.getContainedItem().equals(elem.getSortdef());
+			
+				elem.setSortdefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(new IntegersFactoryImpl().createHLInteger()));
+				SortHLAPI totest_integers_HLInteger = elem.getSortdefHLAPI();
+				assert totest_integers_HLInteger.getContainedItem().equals(elem.getSortdef());
 			
 		}
 	

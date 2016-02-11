@@ -43,6 +43,8 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsFactory;
 import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructurePackageImpl;
+import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersPackageImpl;
 import fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage;
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsPackageImpl;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
@@ -126,6 +128,9 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
+				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
 				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
@@ -140,6 +145,7 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 		theDotsPackage.createPackageContents();
 		theBooleansPackage.createPackageContents();
 		theHlcorestructurePackage.createPackageContents();
+		theIntegersPackage.createPackageContents();
 		theMultisetsPackage.createPackageContents();
 		thePartitionsPackage.createPackageContents();
 		theTermsPackage.createPackageContents();
@@ -148,6 +154,7 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 		theDotsPackage.initializePackageContents();
 		theBooleansPackage.initializePackageContents();
 		theHlcorestructurePackage.initializePackageContents();
+		theIntegersPackage.initializePackageContents();
 		theMultisetsPackage.initializePackageContents();
 		thePartitionsPackage.initializePackageContents();
 		theTermsPackage.initializePackageContents();
@@ -165,6 +172,7 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDot() {
 		return dotEClass;
 	}
@@ -174,6 +182,7 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getDotConstant() {
 		return dotConstantEClass;
 	}
@@ -183,6 +192,7 @@ public class DotsPackageImpl extends EPackageImpl implements DotsPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public DotsFactory getDotsFactory() {
 		return (DotsFactory) getEFactoryInstance();
 	}

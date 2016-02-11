@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 
@@ -76,6 +76,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Empty;
 
@@ -107,6 +109,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -336,6 +339,18 @@ public class TypeHLAPITest {
 				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(new DotsFactoryImpl().createDot()));
 				SortHLAPI totest_dots_Dot = elem.getStructureHLAPI();
 				assert totest_dots_Dot.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(new IntegersFactoryImpl().createNatural()));
+				SortHLAPI totest_integers_Natural = elem.getStructureHLAPI();
+				assert totest_integers_Natural.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(new IntegersFactoryImpl().createPositive()));
+				SortHLAPI totest_integers_Positive = elem.getStructureHLAPI();
+				assert totest_integers_Positive.getContainedItem().equals(elem.getStructure());
+			
+				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(new IntegersFactoryImpl().createHLInteger()));
+				SortHLAPI totest_integers_HLInteger = elem.getStructureHLAPI();
+				assert totest_integers_HLInteger.getContainedItem().equals(elem.getStructure());
 			
 				elem.setStructureHLAPI(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(new TermsFactoryImpl().createMultisetSort()));
 				SortHLAPI totest_terms_MultisetSort = elem.getStructureHLAPI();

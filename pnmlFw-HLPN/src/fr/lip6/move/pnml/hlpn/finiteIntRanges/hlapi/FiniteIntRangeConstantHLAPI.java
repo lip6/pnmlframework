@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:13 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:29:58 CET 2016$
  */
 package fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi;
 
@@ -66,7 +66,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	){//BEGIN CONSTRUCTOR BODY
@@ -106,7 +106,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -153,7 +153,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -200,7 +200,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -247,7 +247,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -294,7 +294,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -341,7 +341,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	
 		, SortHLAPI output
 	
-		, java.lang.Integer value
+		, java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -384,7 +384,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (not container if any)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	){//BEGIN CONSTRUCTOR BODY
@@ -411,7 +411,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -444,7 +444,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -477,7 +477,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -510,7 +510,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -543,7 +543,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -576,7 +576,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
     * This constructor give access to required stuff only (and container)
     */
 	public FiniteIntRangeConstantHLAPI(
-		 java.lang.Integer value
+		 java.lang.Long value
 	
 		, FiniteIntRangeHLAPI range
 	
@@ -695,7 +695,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Integer getValue(){
+	public Long getValue(){
 		return item.getValue();
 	}
 	
@@ -2955,7 +2955,7 @@ public class FiniteIntRangeConstantHLAPI implements HLAPIClass,TermHLAPI,Operato
 	 */
 	public void setValueHLAPI(
 	
-	java.lang.Integer elem){
+	java.lang.Long elem){
 	
 	
 		if(elem!=null){

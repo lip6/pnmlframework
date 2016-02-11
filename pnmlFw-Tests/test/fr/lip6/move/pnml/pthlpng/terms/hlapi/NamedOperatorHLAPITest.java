@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.terms.hlapi;
 
@@ -76,6 +76,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
+import fr.lip6.move.pnml.pthlpng.integers.Addition;
+import fr.lip6.move.pnml.pthlpng.integers.Division;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThan;
+import fr.lip6.move.pnml.pthlpng.integers.GreaterThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.HLInteger;
+import fr.lip6.move.pnml.pthlpng.integers.HLPNNumber;
+import fr.lip6.move.pnml.pthlpng.integers.LessThan;
+import fr.lip6.move.pnml.pthlpng.integers.LessThanOrEqual;
+import fr.lip6.move.pnml.pthlpng.integers.Modulo;
+import fr.lip6.move.pnml.pthlpng.integers.Multiplication;
+import fr.lip6.move.pnml.pthlpng.integers.Natural;
+import fr.lip6.move.pnml.pthlpng.integers.NumberConstant;
+import fr.lip6.move.pnml.pthlpng.integers.Positive;
+import fr.lip6.move.pnml.pthlpng.integers.Subtraction;
+
+import fr.lip6.move.pnml.pthlpng.integers.impl.IntegersFactoryImpl;
+
 import fr.lip6.move.pnml.pthlpng.multisets.Add;
 import fr.lip6.move.pnml.pthlpng.multisets.All;
 import fr.lip6.move.pnml.pthlpng.multisets.Cardinality;
@@ -88,8 +105,6 @@ import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 
 import fr.lip6.move.pnml.pthlpng.multisets.impl.MultisetsFactoryImpl;
 
-import fr.lip6.move.pnml.pthlpng.partitions.GreaterThan;
-import fr.lip6.move.pnml.pthlpng.partitions.LessThan;
 import fr.lip6.move.pnml.pthlpng.partitions.Partition;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf;
@@ -123,6 +138,7 @@ import  fr.lip6.move.pnml.framework.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.booleans.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.dots.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.*;
+import fr.lip6.move.pnml.pthlpng.integers.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.multisets.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.partitions.hlapi.*;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.*;
@@ -344,6 +360,46 @@ public class NamedOperatorHLAPITest {
 				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotConstantHLAPI(new DotsFactoryImpl().createDotConstant()));
 				TermHLAPI totest_dots_DotConstant = elem.getDefHLAPI();
 				assert totest_dots_DotConstant.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI(new IntegersFactoryImpl().createNumberConstant()));
+				TermHLAPI totest_integers_NumberConstant = elem.getDefHLAPI();
+				assert totest_integers_NumberConstant.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI(new IntegersFactoryImpl().createAddition()));
+				TermHLAPI totest_integers_Addition = elem.getDefHLAPI();
+				assert totest_integers_Addition.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI(new IntegersFactoryImpl().createSubtraction()));
+				TermHLAPI totest_integers_Subtraction = elem.getDefHLAPI();
+				assert totest_integers_Subtraction.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI(new IntegersFactoryImpl().createMultiplication()));
+				TermHLAPI totest_integers_Multiplication = elem.getDefHLAPI();
+				assert totest_integers_Multiplication.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI(new IntegersFactoryImpl().createDivision()));
+				TermHLAPI totest_integers_Division = elem.getDefHLAPI();
+				assert totest_integers_Division.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI(new IntegersFactoryImpl().createModulo()));
+				TermHLAPI totest_integers_Modulo = elem.getDefHLAPI();
+				assert totest_integers_Modulo.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI(new IntegersFactoryImpl().createGreaterThan()));
+				TermHLAPI totest_integers_GreaterThan = elem.getDefHLAPI();
+				assert totest_integers_GreaterThan.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI(new IntegersFactoryImpl().createGreaterThanOrEqual()));
+				TermHLAPI totest_integers_GreaterThanOrEqual = elem.getDefHLAPI();
+				assert totest_integers_GreaterThanOrEqual.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI(new IntegersFactoryImpl().createLessThan()));
+				TermHLAPI totest_integers_LessThan = elem.getDefHLAPI();
+				assert totest_integers_LessThan.getContainedItem().equals(elem.getDef());
+			
+				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI(new IntegersFactoryImpl().createLessThanOrEqual()));
+				TermHLAPI totest_integers_LessThanOrEqual = elem.getDefHLAPI();
+				assert totest_integers_LessThanOrEqual.getContainedItem().equals(elem.getDef());
 			
 				elem.setDefHLAPI(new fr.lip6.move.pnml.pthlpng.multisets.hlapi.CardinalityHLAPI(new MultisetsFactoryImpl().createCardinality()));
 				TermHLAPI totest_multisets_Cardinality = elem.getDefHLAPI();

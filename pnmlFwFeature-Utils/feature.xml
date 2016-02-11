@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.utils.feature"
       label="PNML Framework Utils and Runtime"
-      version="2.2.9"
+      version="2.2.10"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.utils">
 
@@ -38,7 +38,7 @@ http://www.eclipse.org/legal/epl-v10.html
       <import plugin="org.eclipse.ocl.ecore"/>
       <import plugin="org.eclipse.emf.codegen.ecore"/>
       <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.9" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.10" match="greaterOrEqual"/>
    </requires>
 
    <plugin

@@ -53,7 +53,7 @@
 		</outtestfolder>
 		<tooling>fr.lip6.move.pnml.hlpn.hlcorestructure</tooling>
 	</generationItem>
-	 
+
 	<generationItem>
 		<genmodel>
 		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/pthlpng/pthlpng.genmodel

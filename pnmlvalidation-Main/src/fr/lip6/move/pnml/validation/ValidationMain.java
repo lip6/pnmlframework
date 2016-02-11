@@ -103,7 +103,7 @@ public class ValidationMain {
 	/**
 	 * Version of this tool.
 	 */
-	private static final String VERSION = "1.2.3";
+	private static final String VERSION = "1.2.4";
 
 	/**
 	 * The command-line parser.

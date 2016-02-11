@@ -100,13 +100,13 @@ public interface NumberConstant extends BuiltInConstant {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(Integer)
+	 * @see #setValue(Long)
 	 * @see fr.lip6.move.pnml.symmetricnet.integers.IntegersPackage#getNumberConstant_Value()
 	 * @model required="true"
 	 *        annotation="http://www.pnml.org/models/ToPNML tag='value' kind='attribute'"
 	 * @generated
 	 */
-	Integer getValue();
+	Long getValue();
 
 	/**
 	 * Sets the value of the '{@link fr.lip6.move.pnml.symmetricnet.integers.NumberConstant#getValue <em>Value</em>}' attribute.
@@ -116,7 +116,7 @@ public interface NumberConstant extends BuiltInConstant {
 	 * @see #getValue()
 	 * @generated
 	 */
-	void setValue(Integer value);
+	void setValue(Long value);
 
 	/**
 	 * Return the string containing the pnml output

@@ -11,7 +11,7 @@
  *    Bastien Bouzerau (UPMC) - Architecture 
  *    Guillaume Giffo (UPMC) - Code generation refactoring, High-level API
  *
- * $Id ggiffo, Wed Feb 10 14:59:15 CET 2016$
+ * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.terms.hlapi;
 
@@ -344,6 +344,76 @@ public interface OperatorHLAPI extends HLAPIClass,TermHLAPI{
 		
 		
 		/**
+		 * This accessor return a list of encapsulated subelement, only of NumberConstantHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NumberConstantHLAPI> getSubterm_integers_NumberConstantHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of AdditionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.AdditionHLAPI> getSubterm_integers_AdditionHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of SubtractionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.SubtractionHLAPI> getSubterm_integers_SubtractionHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of MultiplicationHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.MultiplicationHLAPI> getSubterm_integers_MultiplicationHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of DivisionHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.DivisionHLAPI> getSubterm_integers_DivisionHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of ModuloHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.ModuloHLAPI> getSubterm_integers_ModuloHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of GreaterThanHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanHLAPI> getSubterm_integers_GreaterThanHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of GreaterThanOrEqualHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.GreaterThanOrEqualHLAPI> getSubterm_integers_GreaterThanOrEqualHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of LessThanHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanHLAPI> getSubterm_integers_LessThanHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of LessThanOrEqualHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.LessThanOrEqualHLAPI> getSubterm_integers_LessThanOrEqualHLAPI();
+		
+		
+		/**
 		 * This accessor return a list of encapsulated subelement, only of CardinalityHLAPI kind.
 		 * WARNING : this method can creates a lot of new object in memory.
 		 */
@@ -464,6 +534,27 @@ public interface OperatorHLAPI extends HLAPIClass,TermHLAPI{
 		 * WARNING : this method can creates a lot of new object in memory.
 		 */
 		public java.util.List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> getInput_dots_DotHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of NaturalHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> getInput_integers_NaturalHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of PositiveHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> getInput_integers_PositiveHLAPI();
+		
+		
+		/**
+		 * This accessor return a list of encapsulated subelement, only of HLIntegerHLAPI kind.
+		 * WARNING : this method can creates a lot of new object in memory.
+		 */
+		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> getInput_integers_HLIntegerHLAPI();
 		
 	
 	

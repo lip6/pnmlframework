@@ -71,13 +71,13 @@ public interface FiniteIntRangeConstant extends BuiltInConstant {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(Integer)
+	 * @see #setValue(Long)
 	 * @see fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangesPackage#getFiniteIntRangeConstant_Value()
 	 * @model required="true" ordered="false"
 	 *        annotation="http://www.pnml.org/models/ToPNML tag='value' kind='attribute'"
 	 * @generated
 	 */
-	Integer getValue();
+	Long getValue();
 
 	/**
 	 * Sets the value of the '{@link fr.lip6.move.pnml.hlpn.finiteIntRanges.FiniteIntRangeConstant#getValue <em>Value</em>}' attribute.
@@ -87,7 +87,7 @@ public interface FiniteIntRangeConstant extends BuiltInConstant {
 	 * @see #getValue()
 	 * @generated
 	 */
-	void setValue(Integer value);
+	void setValue(Long value);
 
 	/**
 	 * Returns the value of the '<em><b>Range</b></em>' containment reference.
