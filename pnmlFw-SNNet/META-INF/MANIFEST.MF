@@ -383,7 +383,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,
  fr.lip6.pnml.framework.utils,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.7"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.10"
 Bundle-ActivationPolicy: lazy
 Eclipse-RegisterBuddy: fr.lip6.pnml.framework.utils
 Bundle-Vendor: Sorbonne Universités,
