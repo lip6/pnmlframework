@@ -57,6 +57,17 @@ fi
 
 for file in $1/*.pnml
 do
-	java $JVM_ARGS -jar $JAR_PATH $OPTION $file &> $file.pfwvalidation.txt && sed -e '1,18d' -i .bak $file.pfwvalidation.txt || exit "$E_ERROR"
+	java $JVM_ARGS -jar $JAR_PATH $OPTION $file &> ${file%%.*}.validation.log
 done
+
+for file in $1/*.validation.log
+do
+	grep -q "$ERROR_MSG_PREFIX" "$file"
+	greprc=$?
+	if [[ $greprc -eq 0 ]]
+	then 
+		echo "   !!! ${file%%.*}.pnml validation fails"
+	fi
+done
+
 exit "$E_SUCCESS"
