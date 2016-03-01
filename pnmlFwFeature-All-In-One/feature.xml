@@ -33,7 +33,7 @@ http://www.eclipse.org/legal/epl-v10.html
    </license>
 
    <url>
-      <update url="http://pnml.lip6.fr/pnmlframework/updatesite"/>
+      <update label="PNML Framework Update Site" url="http://pnml.lip6.fr/pnmlframework/updatesite"/>
    </url>
 
    <includes
@@ -86,6 +86,14 @@ http://www.eclipse.org/legal/epl-v10.html
 
    <includes
          id="fr.lip6.pnml.framework.utils.feature.source"
+         version="0.0.0"/>
+
+   <includes
+         id="fr.lip6.pnml.nupn.toolinfo.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="fr.lip6.pnml.nupn.toolinfo.feature.source"
          version="0.0.0"/>
 
 </feature>

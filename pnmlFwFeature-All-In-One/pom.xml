@@ -10,8 +10,6 @@
 	
 	<artifactId>fr.lip6.pnml.framework.sdk</artifactId>
 	
-	<version>2.2.10</version>
-	
 	<packaging>eclipse-feature</packaging>
 	
 	<name>PNML Framework SDK</name>
