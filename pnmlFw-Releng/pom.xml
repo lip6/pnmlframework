@@ -18,12 +18,13 @@
 		<pnml.release>2.2.10</pnml.release>
 		<pnml.release.doc>2.2.10</pnml.release.doc>
 		<pnml.snapshot>2.2.11-SNAPSHOT</pnml.snapshot>
-		<tycho.version>0.22.0</tycho.version>
-		<tycho-extras.version>0.22.0</tycho-extras.version>
+		<tycho.version>0.24.0</tycho.version>
+		<tycho-extras.version>0.24.0</tycho-extras.version>
 		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
+		<miage-repo.url>http://miage11.u-paris10.fr:8081/nexus/content/groups/public/</miage-repo.url>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
 	</properties>
 
@@ -90,8 +91,11 @@
 			<url>${license-p2-repo}</url>
 			<layout>p2</layout>
 		</repository>
+		<repository>
+			<id>miage11</id>
+			<url>${miage-repo.url}</url>
+		</repository>
 	</repositories>
-
 
 	<dependencyManagement>
 		<dependencies>
