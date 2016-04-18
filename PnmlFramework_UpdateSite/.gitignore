@@ -4,3 +4,5 @@ plugins
 target
 web
 .settings
+deployOnWebSite.sh
+/experimental/

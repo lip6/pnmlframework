@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.pnml.framework.utils.feature.source;singleton:=true
-Bundle-Version: 2.2.10
+Bundle-Version: 2.2.11
 Bundle-Vendor: %Bundle-Vendor
