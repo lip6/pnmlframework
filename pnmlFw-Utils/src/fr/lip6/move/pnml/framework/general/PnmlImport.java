@@ -383,15 +383,18 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
                 .getDocumentElement();*/
         
         OMElement document = null;
-        try { 
+        try (
         	InputStream in = new BufferedInputStream(new FileInputStream(path));
+        	) {
         	//create the builder
         	OMXMLParserWrapper builder = OMXMLBuilderFactory.createOMBuilder(in);
         	//get the root element
         	document = builder.getDocumentElement();
         } catch (FileNotFoundException e) {
            throw e;
-        }
+        } catch (IOException e) {
+        	throw new OtherException(e);
+		}
         return document;
     }
 
