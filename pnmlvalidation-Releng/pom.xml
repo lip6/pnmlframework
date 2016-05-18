@@ -4,7 +4,7 @@
 
 	<groupId>fr.lip6.pnml</groupId>
 	<artifactId>validation.releng</artifactId>
-	<version>1.2.4</version>
+	<version>1.2.6</version>
 	<packaging>pom</packaging>
 
 	<name>PNML Document Checker</name>
@@ -20,8 +20,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.11</thirdparty.version>
-		<pnml.version>2.2.11</pnml.version>
+		<thirdparty.version>2.2.12</thirdparty.version>
+		<pnml.version>2.2.12</pnml.version>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
 

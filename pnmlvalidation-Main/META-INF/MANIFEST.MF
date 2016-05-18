@@ -3,7 +3,7 @@ Main-Class: fr.lip6.move.pnml.validation.ValidationMain
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML DoC (PNML Document Checker)
 Bundle-SymbolicName: fr.lip6.pnml.check;singleton:=true
-Bundle-Version: 1.2.4
+Bundle-Version: 1.2.6
 Export-Package: fr.lip6.move.pnml.validation;uses:="fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.validation.stats",
  fr.lip6.move.pnml.validation.exceptions,
  fr.lip6.move.pnml.validation.impl;
@@ -22,10 +22,10 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .
 Eclipse-BuddyPolicy: registered
-Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.11",
- fr.lip6.pnml.framework.coremodel;bundle-version="2.2.11",
- fr.lip6.pnml.framework.hlpn;bundle-version="2.2.11",
- fr.lip6.pnml.framework.pthlpng;bundle-version="2.2.11",
- fr.lip6.pnml.framework.ptnet;bundle-version="2.2.11",
- fr.lip6.pnml.framework.symmetricnet;bundle-version="2.2.11",
- fr.lip6.pnml.framework.utils;bundle-version="2.2.11"
+Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.coremodel;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.hlpn;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.pthlpng;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.ptnet;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.symmetricnet;bundle-version="2.2.12",
+ fr.lip6.pnml.framework.utils;bundle-version="2.2.12"
