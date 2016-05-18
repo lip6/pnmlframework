@@ -1,5 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
+ *  Copyright 2009-2016 Université Paris Ouest and Sorbonne Universités,
  * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
  *
  *  All rights reserved.   This program and the accompanying materials

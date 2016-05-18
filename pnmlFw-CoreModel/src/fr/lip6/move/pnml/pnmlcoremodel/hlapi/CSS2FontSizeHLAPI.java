@@ -1,5 +1,5 @@
 /**
- *  Copyright 2009-2015 Université Paris Ouest and Sorbonne Universités,
+ *  Copyright 2009-2016 Université Paris Ouest and Sorbonne Universités,
  * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
  *
  *  All rights reserved.   This program and the accompanying materials
@@ -16,7 +16,6 @@
  *  Mailing list:
  *    lom-messan.hillah@lip6.fr
  */
-
 /**
  * (C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6/MoVe)
  * All rights reserved.   This program and the accompanying materials
