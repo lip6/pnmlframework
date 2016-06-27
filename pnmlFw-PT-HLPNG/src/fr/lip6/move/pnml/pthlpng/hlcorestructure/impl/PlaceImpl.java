@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -168,7 +167,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PLACE__TYPE, newType, newType));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PLACE__TYPE, newType,
+					newType));
 	}
 
 	/**
@@ -233,13 +233,13 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		switch (featureID) {
 		case HlcorestructurePackage.PLACE__TYPE:
 			if (type != null)
-				msgs = ((InternalEObject) type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PLACE__TYPE, null, msgs);
+				msgs = ((InternalEObject) type).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PLACE__TYPE, null, msgs);
 			return basicSetType((Type) otherEnd, msgs);
 		case HlcorestructurePackage.PLACE__HLINITIAL_MARKING:
 			if (hlinitialMarking != null)
-				msgs = ((InternalEObject) hlinitialMarking).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PLACE__HLINITIAL_MARKING, null, msgs);
+				msgs = ((InternalEObject) hlinitialMarking).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PLACE__HLINITIAL_MARKING, null, msgs);
 			return basicSetHlinitialMarking((HLMarking) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -460,8 +460,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//0
@@ -495,7 +495,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -505,7 +505,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -515,7 +515,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("type")) {
 				Type item;
@@ -525,7 +525,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPlace(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("hlinitialMarking")) {
 				HLMarking item;
@@ -535,7 +535,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPlace(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

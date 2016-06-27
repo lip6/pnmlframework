@@ -110,7 +110,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	@Override
 	public void setContainerNumberConstant(NumberConstant newContainerNumberConstant) {
 		if (newContainerNumberConstant != eInternalContainer()
-				|| (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT && newContainerNumberConstant != null)) {
+				|| (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT
+						&& newContainerNumberConstant != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNumberConstant))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -244,7 +245,7 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 				// we test them if they have been explicitly named.
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
-			}// otherwise, keep the default.
+			} // otherwise, keep the default.
 		}
 		return isEqual;
 

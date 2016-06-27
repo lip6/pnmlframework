@@ -123,7 +123,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 */
 	@Override
 	public void setMulti(MultisetSort newMulti) {
-		if (newMulti != eInternalContainer() || (eContainerFeatureID() != TermsPackage.SORT__MULTI && newMulti != null)) {
+		if (newMulti != eInternalContainer()
+				|| (eContainerFeatureID() != TermsPackage.SORT__MULTI && newMulti != null)) {
 			if (EcoreUtil.isAncestor(this, newMulti))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -170,7 +171,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	@Override
 	public void setContainerNamedSort(NamedSort newContainerNamedSort) {
 		if (newContainerNamedSort != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_NAMED_SORT && newContainerNamedSort != null)) {
+				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_NAMED_SORT
+						&& newContainerNamedSort != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamedSort))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -204,7 +206,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerVariableDecl(VariableDecl newContainerVariableDecl, NotificationChain msgs) {
+	public NotificationChain basicSetContainerVariableDecl(VariableDecl newContainerVariableDecl,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerVariableDecl,
 				TermsPackage.SORT__CONTAINER_VARIABLE_DECL, msgs);
 		return msgs;
@@ -218,7 +221,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	@Override
 	public void setContainerVariableDecl(VariableDecl newContainerVariableDecl) {
 		if (newContainerVariableDecl != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_VARIABLE_DECL && newContainerVariableDecl != null)) {
+				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_VARIABLE_DECL
+						&& newContainerVariableDecl != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerVariableDecl))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -266,7 +270,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	@Override
 	public void setContainerProductSort(ProductSort newContainerProductSort) {
 		if (newContainerProductSort != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PRODUCT_SORT && newContainerProductSort != null)) {
+				|| (eContainerFeatureID() != TermsPackage.SORT__CONTAINER_PRODUCT_SORT
+						&& newContainerProductSort != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerProductSort))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -420,8 +425,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.SORT__CONTAINER_EMPTY,
-					newContainerEmpty, newContainerEmpty));
+			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.SORT__CONTAINER_EMPTY, newContainerEmpty,
+					newContainerEmpty));
 	}
 
 	/**
@@ -442,7 +447,8 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPartition(Partition newContainerPartition, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject) newContainerPartition, TermsPackage.SORT__CONTAINER_PARTITION, msgs);
+		msgs = eBasicSetContainer((InternalEObject) newContainerPartition, TermsPackage.SORT__CONTAINER_PARTITION,
+				msgs);
 		return msgs;
 	}
 
@@ -557,11 +563,11 @@ public abstract class SortImpl extends MinimalEObjectImpl implements Sort {
 		case TermsPackage.SORT__CONTAINER_NAMED_SORT:
 			return eInternalContainer().eInverseRemove(this, TermsPackage.NAMED_SORT__SORTDEF, NamedSort.class, msgs);
 		case TermsPackage.SORT__CONTAINER_VARIABLE_DECL:
-			return eInternalContainer()
-					.eInverseRemove(this, TermsPackage.VARIABLE_DECL__SORT, VariableDecl.class, msgs);
+			return eInternalContainer().eInverseRemove(this, TermsPackage.VARIABLE_DECL__SORT, VariableDecl.class,
+					msgs);
 		case TermsPackage.SORT__CONTAINER_PRODUCT_SORT:
-			return eInternalContainer().eInverseRemove(this, TermsPackage.PRODUCT_SORT__ELEMENT_SORT,
-					ProductSort.class, msgs);
+			return eInternalContainer().eInverseRemove(this, TermsPackage.PRODUCT_SORT__ELEMENT_SORT, ProductSort.class,
+					msgs);
 		case TermsPackage.SORT__CONTAINER_TYPE:
 			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.TYPE__STRUCTURE, Type.class, msgs);
 		case TermsPackage.SORT__CONTAINER_ALL:

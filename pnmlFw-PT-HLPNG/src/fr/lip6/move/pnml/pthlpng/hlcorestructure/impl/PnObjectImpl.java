@@ -249,7 +249,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PN_OBJECT__CONTAINER_PAGE && newContainerPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PN_OBJECT__CONTAINER_PAGE
+						&& newContainerPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -277,8 +278,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 		switch (featureID) {
 		case HlcorestructurePackage.PN_OBJECT__NAME:
 			if (name != null)
-				msgs = ((InternalEObject) name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PN_OBJECT__NAME, null, msgs);
+				msgs = ((InternalEObject) name).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PN_OBJECT__NAME, null, msgs);
 			return basicSetName((Name) otherEnd, msgs);
 		case HlcorestructurePackage.PN_OBJECT__TOOLSPECIFICS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getToolspecifics()).basicAdd(otherEnd, msgs);

@@ -129,8 +129,8 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -248,7 +248,7 @@ public class BoolImpl extends BuiltInSortImpl implements Bool {
 				// we test them if they have been explicitly named.
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
-			}// otherwise, keep the default.
+			} // otherwise, keep the default.
 		}
 		return isEqual;
 

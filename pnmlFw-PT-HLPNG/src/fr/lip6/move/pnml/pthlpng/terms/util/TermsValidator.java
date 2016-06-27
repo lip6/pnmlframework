@@ -131,7 +131,8 @@ public class TermsValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case TermsPackage.DECLARATIONS:
 			return validateDeclarations((Declarations) value, diagnostics, context);
@@ -268,10 +269,10 @@ public class TermsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "sameOperatorNTermSort", getObjectLabel(operator, context) },
-						new Object[] { operator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "sameOperatorNTermSort", getObjectLabel(operator, context) },
+								new Object[] { operator }, context));
 			}
 			return false;
 		}
@@ -302,7 +303,8 @@ public class TermsValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBuiltInSort(BuiltInSort builtInSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateBuiltInSort(BuiltInSort builtInSort, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(builtInSort, diagnostics, context);
 	}
 
@@ -311,7 +313,8 @@ public class TermsValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProductSort(ProductSort productSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProductSort(ProductSort productSort, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(productSort, diagnostics, context);
 	}
 
@@ -481,10 +484,10 @@ public class TermsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "refSortNotMultiset", getObjectLabel(namedSort, context) },
-						new Object[] { namedSort }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "refSortNotMultiset", getObjectLabel(namedSort, context) },
+								new Object[] { namedSort }, context));
 			}
 			return false;
 		}

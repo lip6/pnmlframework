@@ -39,7 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -258,8 +257,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//1
 		//0

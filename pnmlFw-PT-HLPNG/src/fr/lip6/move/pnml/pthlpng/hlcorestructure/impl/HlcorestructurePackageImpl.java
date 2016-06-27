@@ -490,28 +490,31 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		// Obtain or create and register package
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
 				.get(eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new HlcorestructurePackageImpl());
+						: new HlcorestructurePackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
+				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI)
+						: MultisetsPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theHlcorestructurePackage.createPackageContents();
@@ -2283,14 +2286,15 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		// Initialize classes and features; add operations and parameters
 		initEClass(petriNetDocEClass, PetriNetDoc.class, "PetriNetDoc", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPetriNetDoc_Nets(), this.getPetriNet(), this.getPetriNet_ContainerPetriNetDoc(), "nets",
-				null, 1, -1, PetriNetDoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getPetriNetDoc_Nets(), this.getPetriNet(), this.getPetriNet_ContainerPetriNetDoc(), "nets", null,
+				1, -1, PetriNetDoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getPetriNetDoc_Xmlns(), ecorePackage.getEString(), "xmlns",
 				"http://www.pnml.org/version-2009/grammar/pnml", 0, 1, PetriNetDoc.class, !IS_TRANSIENT, !IS_VOLATILE,
 				!IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(petriNetEClass, PetriNet.class, "PetriNet", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(petriNetEClass, PetriNet.class, "PetriNet", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPetriNet_Id(), ecorePackage.getEString(), "id", "", 1, 1, PetriNet.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getPetriNet_Type(), this.getPNType(), "type",
@@ -2336,8 +2340,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEReference(getPnObject_Toolspecifics(), this.getToolInfo(), this.getToolInfo_ContainerPnObject(),
 				"toolspecifics", null, 0, -1, PnObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getPnObject_ContainerPage(), this.getPage(), this.getPage_Objects(), "containerPage", null, 0,
-				1, PnObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getPnObject_ContainerPage(), this.getPage(), this.getPage_Objects(), "containerPage", null, 0, 1,
+				PnObject.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(nameEClass, Name.class, "Name", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2350,11 +2354,13 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 				"containerNamePnObject", null, 0, 1, Name.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(toolInfoEClass, ToolInfo.class, "ToolInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getToolInfo_Tool(), ecorePackage.getEString(), "tool", null, 1, 1, ToolInfo.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEClass(toolInfoEClass, ToolInfo.class, "ToolInfo", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getToolInfo_Tool(), ecorePackage.getEString(), "tool", null, 1, 1, ToolInfo.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getToolInfo_Version(), ecorePackage.getEString(), "version", null, 1, 1, ToolInfo.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getToolInfo_FormattedXMLBuffer(), this.getLongString(), "formattedXMLBuffer", null, 0, 1,
 				ToolInfo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE,
 				!IS_DERIVED, !IS_ORDERED);
@@ -2375,9 +2381,9 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(labelEClass, Label.class, "Label", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getLabel_Toolspecifics(), this.getToolInfo(), this.getToolInfo_ContainerLabel(),
-				"toolspecifics", null, 0, -1, Label.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+		initEReference(getLabel_Toolspecifics(), this.getToolInfo(), this.getToolInfo_ContainerLabel(), "toolspecifics",
+				null, 0, -1, Label.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(nodeGraphicsEClass, NodeGraphics.class, "NodeGraphics", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -2387,11 +2393,11 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEReference(getNodeGraphics_Dimension(), this.getDimension(), this.getDimension_ContainerDNodeGraphics(),
 				"dimension", null, 0, 1, NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getNodeGraphics_Fill(), this.getFill(), this.getFill_ContainerNodeGraphics(), "fill", null, 0,
-				1, NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getNodeGraphics_Fill(), this.getFill(), this.getFill_ContainerNodeGraphics(), "fill", null, 0, 1,
+				NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getNodeGraphics_Line(), this.getLine(), this.getLine_ContainerNodeGraphics(), "line", null, 0,
-				1, NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getNodeGraphics_Line(), this.getLine(), this.getLine_ContainerNodeGraphics(), "line", null, 0, 1,
+				NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getNodeGraphics_ContainerNode(), this.getNode(), this.getNode_Nodegraphics(), "containerNode",
 				null, 0, 1, NodeGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
@@ -2405,11 +2411,14 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEClass(coordinateEClass, Coordinate.class, "Coordinate", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCoordinate_X(), ecorePackage.getEIntegerObject(), "x", null, 1, 1, Coordinate.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getCoordinate_Y(), ecorePackage.getEIntegerObject(), "y", null, 1, 1, Coordinate.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
-		initEClass(positionEClass, Position.class, "Position", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(positionEClass, Position.class, "Position", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPosition_ContainerArcGraphics(), this.getArcGraphics(), this.getArcGraphics_Positions(),
 				"containerArcGraphics", null, 0, 1, Position.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2434,14 +2443,14 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEReference(getAnnotationGraphics_Offset(), this.getOffset(), this.getOffset_ContainerAnnotationGraphics(),
 				"offset", null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAnnotationGraphics_Fill(), this.getFill(), this.getFill_ContainerAnnotationGraphics(),
-				"fill", null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+		initEReference(getAnnotationGraphics_Fill(), this.getFill(), this.getFill_ContainerAnnotationGraphics(), "fill",
+				null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAnnotationGraphics_Line(), this.getLine(), this.getLine_ContainerAnnotationGraphics(),
-				"line", null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+		initEReference(getAnnotationGraphics_Line(), this.getLine(), this.getLine_ContainerAnnotationGraphics(), "line",
+				null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getAnnotationGraphics_Font(), this.getFont(), this.getFont_ContainerAnnotationGraphics(),
-				"font", null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+		initEReference(getAnnotationGraphics_Font(), this.getFont(), this.getFont_ContainerAnnotationGraphics(), "font",
+				null, 0, 1, AnnotationGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getAnnotationGraphics_ContainerAnnotation(), this.getAnnotation(),
 				this.getAnnotation_Annotationgraphics(), "containerAnnotation", null, 0, 1, AnnotationGraphics.class,
@@ -2452,18 +2461,20 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEAttribute(getFill_Color(), this.getCSS2Color(), "color", "BLACK", 0, 1, Fill.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFill_Gradientcolor(), this.getCSS2Color(), "gradientcolor", "BLACK", 0, 1, Fill.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getFill_Gradientrotation(), this.getGradient(), "gradientrotation", null, 0, 1, Fill.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getFill_Image(), this.getURI(), "image", null, 0, 1, Fill.class, !IS_TRANSIENT, !IS_VOLATILE,
 				IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getFill_ContainerNodeGraphics(), this.getNodeGraphics(), this.getNodeGraphics_Fill(),
 				"containerNodeGraphics", null, 0, 1, Fill.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getFill_ContainerAnnotationGraphics(), this.getAnnotationGraphics(),
-				this.getAnnotationGraphics_Fill(), "containerAnnotationGraphics", null, 0, 1, Fill.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				this.getAnnotationGraphics_Fill(), "containerAnnotationGraphics", null, 0, 1, Fill.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(lineEClass, Line.class, "Line", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLine_Color(), this.getCSS2Color(), "color", "BLACK", 0, 1, Line.class, !IS_TRANSIENT,
@@ -2471,7 +2482,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEAttribute(getLine_Shape(), this.getLineShape(), "shape", "line", 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getLine_Width(), ecorePackage.getEIntegerObject(), "width", null, 0, 1, Line.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEReference(getLine_ContainerNodeGraphics(), this.getNodeGraphics(), this.getNodeGraphics_Line(),
 				"containerNodeGraphics", null, 0, 1, Line.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2479,9 +2491,9 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 				"containerArcGraphics", null, 0, 1, Line.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getLine_ContainerAnnotationGraphics(), this.getAnnotationGraphics(),
-				this.getAnnotationGraphics_Line(), "containerAnnotationGraphics", null, 0, 1, Line.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				this.getAnnotationGraphics_Line(), "containerAnnotationGraphics", null, 0, 1, Line.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getLine_Style(), this.getLineStyle(), "style", null, 0, 1, Line.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2493,9 +2505,9 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEReference(getArcGraphics_Line(), this.getLine(), this.getLine_ContainerArcGraphics(), "line", null, 0, 1,
 				ArcGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEReference(getArcGraphics_ContainerArc(), this.getArc(), this.getArc_Arcgraphics(), "containerArc", null,
-				0, 1, ArcGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getArcGraphics_ContainerArc(), this.getArc(), this.getArc_Arcgraphics(), "containerArc", null, 0,
+				1, ArcGraphics.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(arcEClass, Arc.class, "Arc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getArc_Source(), this.getNode(), this.getNode_OutArcs(), "source", null, 1, 1, Arc.class,
@@ -2526,11 +2538,13 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEAttribute(getFont_Align(), this.getFontAlign(), "align", "LEFT", 0, 1, Font.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFont_Decoration(), this.getFontDecoration(), "decoration", "UNDERLINE", 0, 1, Font.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
-		initEAttribute(getFont_Family(), this.getCSS2FontFamily(), "family", "VERDANA", 0, 1, Font.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
+		initEAttribute(getFont_Family(), this.getCSS2FontFamily(), "family", "VERDANA", 0, 1, Font.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFont_Rotation(), ecorePackage.getEBigDecimal(), "rotation", null, 0, 1, Font.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 		initEAttribute(getFont_Size(), this.getCSS2FontSize(), "size", "SMALL", 0, 1, Font.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEAttribute(getFont_Style(), this.getCSS2FontStyle(), "style", "NORMAL", 0, 1, Font.class, !IS_TRANSIENT,
@@ -2538,9 +2552,9 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		initEAttribute(getFont_Weight(), this.getCSS2FontWeight(), "weight", null, 0, 1, Font.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getFont_ContainerAnnotationGraphics(), this.getAnnotationGraphics(),
-				this.getAnnotationGraphics_Font(), "containerAnnotationGraphics", null, 0, 1, Font.class,
-				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+				this.getAnnotationGraphics_Font(), "containerAnnotationGraphics", null, 0, 1, Font.class, !IS_TRANSIENT,
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(placeNodeEClass, PlaceNode.class, "PlaceNode", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -2550,10 +2564,9 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 
 		initEClass(transitionNodeEClass, TransitionNode.class, "TransitionNode", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTransitionNode_ReferencingTransitions(), this.getRefTransition(),
-				this.getRefTransition_Ref(), "referencingTransitions", null, 0, -1, TransitionNode.class,
-				!IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
-				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTransitionNode_ReferencingTransitions(), this.getRefTransition(), this.getRefTransition_Ref(),
+				"referencingTransitions", null, 0, -1, TransitionNode.class, !IS_TRANSIENT, !IS_VOLATILE,
+				!IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(placeEClass, Place.class, "Place", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPlace_Type(), this.getType(), this.getType_ContainerPlace(), "type", null, 0, 1, Place.class,
@@ -2576,9 +2589,10 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 				"condition", null, 0, 1, Transition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(refPlaceEClass, RefPlace.class, "RefPlace", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getRefPlace_Ref(), this.getPlaceNode(), this.getPlaceNode_ReferencingPlaces(), "ref", null, 1,
-				1, RefPlace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+		initEClass(refPlaceEClass, RefPlace.class, "RefPlace", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getRefPlace_Ref(), this.getPlaceNode(), this.getPlaceNode_ReferencingPlaces(), "ref", null, 1, 1,
+				RefPlace.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(attributeEClass, Attribute.class, "Attribute", IS_ABSTRACT, !IS_INTERFACE,
@@ -2637,8 +2651,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 				theTermsPackage.getTerm_ContainerHLAnnotation(), "structure", null, 0, 1, HLAnnotation.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHLAnnotation_ContainerArc(), this.getArc(), this.getArc_Hlinscription(), "containerArc",
-				null, 0, 1, HLAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+		initEReference(getHLAnnotation_ContainerArc(), this.getArc(), this.getArc_Hlinscription(), "containerArc", null,
+				0, 1, HLAnnotation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(declarationEClass, Declaration.class, "Declaration", !IS_ABSTRACT, !IS_INTERFACE,
@@ -2784,8 +2798,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		addAnnotation(lineShapeEEnum, source, new String[] {});
 		addAnnotation(arcGraphicsEClass, source, new String[] {});
 		addAnnotation(arcEClass, source, new String[] {});
-		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL", new String[] { "samePageSourceTarget",
-				"self.source.containerPage = self.target.containerPage" });
+		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL",
+				new String[] { "samePageSourceTarget", "self.source.containerPage = self.target.containerPage" });
 		addAnnotation(nodeEClass, source, new String[] {});
 		addAnnotation(fontEClass, source, new String[] {});
 		addAnnotation(fontAlignEEnum, source, new String[] {});
@@ -2860,8 +2874,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		addAnnotation(fillEClass, source, new String[] { "tag", "fill", "kind", "son" });
 		addAnnotation(getFill_Color(), source, new String[] { "tag", "color", "kind", "attribute" });
 		addAnnotation(getFill_Gradientcolor(), source, new String[] { "tag", "gradient-color", "kind", "attribute" });
-		addAnnotation(getFill_Gradientrotation(), source, new String[] { "tag", "gradient-rotation", "kind",
-				"attribute" });
+		addAnnotation(getFill_Gradientrotation(), source,
+				new String[] { "tag", "gradient-rotation", "kind", "attribute" });
 		addAnnotation(getFill_Image(), source, new String[] { "tag", "image", "kind", "attribute" });
 		addAnnotation(lineEClass, source, new String[] { "tag", "line", "kind", "son" });
 		addAnnotation(getLine_Color(), source, new String[] { "tag", "color", "kind", "attribute" });
@@ -2871,8 +2885,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		addAnnotation(arcGraphicsEClass, source, new String[] { "tag", "graphics", "kind", "son" });
 		addAnnotation(getArcGraphics_Positions(), source, new String[] { "kind", "follow" });
 		addAnnotation(getArcGraphics_Line(), source, new String[] { "kind", "follow" });
-		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL", new String[] { "samePageSourceTarget",
-				"self.source.containerPage = self.target.containerPage" });
+		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL",
+				new String[] { "samePageSourceTarget", "self.source.containerPage = self.target.containerPage" });
 		addAnnotation(arcEClass, source, new String[] { "tag", "arc", "kind", "son" });
 		addAnnotation(getArc_Source(), source, new String[] { "kind", "idref", "tag", "source" });
 		addAnnotation(getArc_Target(), source, new String[] { "kind", "idref", "tag", "target" });
@@ -2899,20 +2913,20 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		addAnnotation(getAnnotation_Annotationgraphics(), source, new String[] { "kind", "follow" });
 		addAnnotation(getHLCoreAnnotation_Text(), source, new String[] { "tag", "text", "kind", "son" });
 		addAnnotation(typeEClass, source, new String[] { "tag", "type", "kind", "son" });
-		addAnnotation(getType_Structure(), source, new String[] { "tag", "structure", "kind", "follow", "toBeFollowed",
-				"yes" });
+		addAnnotation(getType_Structure(), source,
+				new String[] { "tag", "structure", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(hlMarkingEClass, source, new String[] { "tag", "hlinitialMarking", "kind", "son" });
-		addAnnotation(getHLMarking_Structure(), source, new String[] { "tag", "structure", "kind", "follow",
-				"toBeFollowed", "yes" });
+		addAnnotation(getHLMarking_Structure(), source,
+				new String[] { "tag", "structure", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(conditionEClass, source, new String[] { "tag", "condition", "kind", "son" });
-		addAnnotation(getCondition_Structure(), source, new String[] { "tag", "structure", "kind", "follow",
-				"toBeFollowed", "yes" });
+		addAnnotation(getCondition_Structure(), source,
+				new String[] { "tag", "structure", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(hlAnnotationEClass, source, new String[] { "tag", "hlinscription", "kind", "son" });
-		addAnnotation(getHLAnnotation_Structure(), source, new String[] { "tag", "structure", "kind", "follow",
-				"toBeFollowed", "yes" });
+		addAnnotation(getHLAnnotation_Structure(), source,
+				new String[] { "tag", "structure", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(declarationEClass, source, new String[] { "tag", "declaration", "kind", "son" });
-		addAnnotation(getDeclaration_Structure(), source, new String[] { "tag", "structure", "kind", "follow",
-				"toBeFollowed", "yes" });
+		addAnnotation(getDeclaration_Structure(), source,
+				new String[] { "tag", "structure", "kind", "follow", "toBeFollowed", "yes" });
 	}
 
 	/**
@@ -2925,8 +2939,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 		String source = "redefines";
 		addAnnotation(getPetriNet_Name(), source, new String[] {});
 		addAnnotation(getPnObject_Name(), source, new String[] {});
-		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL", new String[] { "samePageSourceTarget",
-				"self.source.containerPage = self.target.containerPage" });
+		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL",
+				new String[] { "samePageSourceTarget", "self.source.containerPage = self.target.containerPage" });
 	}
 
 	/**
@@ -2937,8 +2951,8 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 	 */
 	protected void createEcoreAnnotations() {
 		String source = "http://www.eclipse.org/emf/2002/Ecore";
-		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL", new String[] { "samePageSourceTarget",
-				"self.source.containerPage = self.target.containerPage" });
+		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL",
+				new String[] { "samePageSourceTarget", "self.source.containerPage = self.target.containerPage" });
 		addAnnotation(arcEClass, source, new String[] { "constraints", "samePageSourceTarget differentSourceTarget" });
 	}
 
@@ -2950,16 +2964,11 @@ public class HlcorestructurePackageImpl extends EPackageImpl implements Hlcorest
 	 */
 	protected void createOCLAnnotations() {
 		String source = "http://www.pnml.org/models/OCL";
-		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL", new String[] { "samePageSourceTarget",
-				"self.source.containerPage = self.target.containerPage" });
-		addAnnotation(
-				arcEClass,
-				source,
-				new String[] {
-						"samePageSourceTarget",
-						"self.source.containerPage = self.target.containerPage",
-						"differentSourceTarget",
-						"(self.source.oclIsKindOf(PlaceNode) and self.target.oclIsKindOf(TransitionNode)) or (self.source.oclIsKindOf(TransitionNode) and self.target.oclIsKindOf(PlaceNode))" });
+		addAnnotation(arcEClass, 1, "http://www.pnml.org/models/OCL",
+				new String[] { "samePageSourceTarget", "self.source.containerPage = self.target.containerPage" });
+		addAnnotation(arcEClass, source, new String[] { "samePageSourceTarget",
+				"self.source.containerPage = self.target.containerPage", "differentSourceTarget",
+				"(self.source.oclIsKindOf(PlaceNode) and self.target.oclIsKindOf(TransitionNode)) or (self.source.oclIsKindOf(TransitionNode) and self.target.oclIsKindOf(PlaceNode))" });
 	}
 
 } //HlcorestructurePackageImpl

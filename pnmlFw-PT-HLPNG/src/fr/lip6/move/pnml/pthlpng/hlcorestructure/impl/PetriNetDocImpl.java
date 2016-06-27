@@ -336,8 +336,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//1
@@ -365,7 +365,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 				item.setContainerPetriNetDoc(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

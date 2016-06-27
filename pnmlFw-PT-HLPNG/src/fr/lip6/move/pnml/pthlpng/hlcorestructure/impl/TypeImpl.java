@@ -151,11 +151,11 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, TermsPackage.SORT__CONTAINER_TYPE,
-						Sort.class, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this, TermsPackage.SORT__CONTAINER_TYPE, Sort.class,
+						msgs);
 			if (newStructure != null)
-				msgs = ((InternalEObject) newStructure).eInverseAdd(this, TermsPackage.SORT__CONTAINER_TYPE,
-						Sort.class, msgs);
+				msgs = ((InternalEObject) newStructure).eInverseAdd(this, TermsPackage.SORT__CONTAINER_TYPE, Sort.class,
+						msgs);
 			msgs = basicSetStructure(newStructure, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -195,7 +195,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	@Override
 	public void setContainerPlace(Place newContainerPlace) {
 		if (newContainerPlace != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE && newContainerPlace != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE
+						&& newContainerPlace != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPlace))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -222,8 +223,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		switch (featureID) {
 		case HlcorestructurePackage.TYPE__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TYPE__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TYPE__STRUCTURE, null, msgs);
 			return basicSetStructure((Sort) otherEnd, msgs);
 		case HlcorestructurePackage.TYPE__CONTAINER_PLACE:
 			if (eInternalContainer() != null)
@@ -446,8 +447,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -475,7 +476,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -485,7 +486,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));

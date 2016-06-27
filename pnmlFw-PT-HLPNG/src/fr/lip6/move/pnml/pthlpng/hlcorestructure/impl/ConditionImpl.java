@@ -197,7 +197,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	@Override
 	public void setContainerTransition(Transition newContainerTransition) {
 		if (newContainerTransition != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION && newContainerTransition != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION
+						&& newContainerTransition != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerTransition))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -225,8 +226,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		switch (featureID) {
 		case HlcorestructurePackage.CONDITION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.CONDITION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.CONDITION__STRUCTURE, null, msgs);
 			return basicSetStructure((Term) otherEnd, msgs);
 		case HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION:
 			if (eInternalContainer() != null)
@@ -450,8 +451,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -479,7 +480,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -489,7 +490,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));

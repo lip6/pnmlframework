@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -270,11 +269,11 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (newTarget != target) {
 			NotificationChain msgs = null;
 			if (target != null)
-				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			if (newTarget != null)
-				msgs = ((InternalEObject) newTarget).eInverseAdd(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) newTarget).eInverseAdd(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			msgs = basicSetTarget(newTarget, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -402,18 +401,18 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 			return basicSetSource((Node) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__TARGET:
 			if (target != null)
-				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			return basicSetTarget((Node) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__ARCGRAPHICS:
 			if (arcgraphics != null)
-				msgs = ((InternalEObject) arcgraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC__ARCGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) arcgraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC__ARCGRAPHICS, null, msgs);
 			return basicSetArcgraphics((ArcGraphics) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__HLINSCRIPTION:
 			if (hlinscription != null)
-				msgs = ((InternalEObject) hlinscription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC__HLINSCRIPTION, null, msgs);
+				msgs = ((InternalEObject) hlinscription).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC__HLINSCRIPTION, null, msgs);
 			return basicSetHlinscription((HLAnnotation) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -655,8 +654,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//2
 		//0
@@ -703,7 +702,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -713,7 +712,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				ArcGraphics item;
@@ -723,7 +722,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerArc(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("hlinscription")) {
 				HLAnnotation item;
@@ -733,7 +732,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerArc(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

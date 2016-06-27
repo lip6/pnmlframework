@@ -112,8 +112,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case HlcorestructurePackage.PLACE_NODE__REFERENCING_PLACES:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getReferencingPlaces())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getReferencingPlaces()).basicAdd(otherEnd,
+					msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}

@@ -127,7 +127,8 @@ public class PartitionsValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case PartitionsPackage.PARTITION:
 			return validatePartition((Partition) value, diagnostics, context);
@@ -198,10 +199,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "constantsType", getObjectLabel(partitionElement, context) },
-						new Object[] { partitionElement }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "constantsType", getObjectLabel(partitionElement, context) },
+								new Object[] { partitionElement }, context));
 			}
 			return false;
 		}
@@ -213,7 +214,8 @@ public class PartitionsValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(greaterThan, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(greaterThan, diagnostics, context);
@@ -252,10 +254,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(greaterThan, context) },
-						new Object[] { greaterThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(greaterThan, context) },
+								new Object[] { greaterThan }, context));
 			}
 			return false;
 		}
@@ -307,10 +309,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(partitionElementOf, context) },
-						new Object[] { partitionElementOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(partitionElementOf, context) },
+								new Object[] { partitionElementOf }, context));
 			}
 			return false;
 		}
@@ -390,10 +392,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(lessThan, context) },
-						new Object[] { lessThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(lessThan, context) },
+								new Object[] { lessThan }, context));
 			}
 			return false;
 		}

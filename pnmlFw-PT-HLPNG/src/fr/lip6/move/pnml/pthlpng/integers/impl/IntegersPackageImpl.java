@@ -224,29 +224,34 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 			return (IntegersPackage) EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI);
 
 		// Obtain or create and register package
-		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new IntegersPackageImpl());
+		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new IntegersPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
+				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI)
+						: MultisetsPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theIntegersPackage.createPackageContents();
@@ -577,14 +582,14 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		// Initialize classes and features; add operations and parameters
 		initEClass(hlpnNumberEClass, HLPNNumber.class, "HLPNNumber", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getHLPNNumber_ContainerNumberConstant(), this.getNumberConstant(),
-				this.getNumberConstant_Type(), "containerNumberConstant", null, 0, 1, HLPNNumber.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
+		initEReference(getHLPNNumber_ContainerNumberConstant(), this.getNumberConstant(), this.getNumberConstant_Type(),
+				"containerNumberConstant", null, 0, 1, HLPNNumber.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
+				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(naturalEClass, Natural.class, "Natural", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(positiveEClass, Positive.class, "Positive", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(positiveEClass, Positive.class, "Positive", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(hlIntegerEClass, HLInteger.class, "HLInteger", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -601,7 +606,8 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		initEClass(integerOperatorEClass, IntegerOperator.class, "IntegerOperator", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(additionEClass, Addition.class, "Addition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(additionEClass, Addition.class, "Addition", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(subtractionEClass, Subtraction.class, "Subtraction", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -609,7 +615,8 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		initEClass(multiplicationEClass, Multiplication.class, "Multiplication", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(divisionEClass, Division.class, "Division", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(divisionEClass, Division.class, "Division", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(moduloEClass, Modulo.class, "Modulo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -619,7 +626,8 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		initEClass(greaterThanOrEqualEClass, GreaterThanOrEqual.class, "GreaterThanOrEqual", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(lessThanOrEqualEClass, LessThanOrEqual.class, "LessThanOrEqual", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -672,16 +680,10 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 */
 	protected void createSORTAnnotations() {
 		String source = "http://www.pnml.org/models/methods/SORT";
-		addAnnotation(
-				hlpnNumberEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t    //by default they are the same sort, unless they have been named.\n\t\t  \tisEqual = true;\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}// otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;",
-						"documentation",
-						"/**\n * Returns true if this sort and argument sort are actually \n * semantically the same sort, even in two different objects.\n * Ex: two FiniteEnumerations or two Integers.\n * @return true if so. \n * @param sort the sort to which we compare this one. \n */" });
+		addAnnotation(hlpnNumberEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body",
+				"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t    //by default they are the same sort, unless they have been named.\n\t\t  \tisEqual = true;\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}// otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;",
+				"documentation",
+				"/**\n * Returns true if this sort and argument sort are actually \n * semantically the same sort, even in two different objects.\n * Ex: two FiniteEnumerations or two Integers.\n * @return true if so. \n * @param sort the sort to which we compare this one. \n */" });
 	}
 
 	/**
@@ -717,12 +719,8 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 	 */
 	protected void createOCLAnnotations() {
 		String source = "http://www.pnml.org/models/OCL";
-		addAnnotation(
-				numberConstantEClass,
-				source,
-				new String[] {
-						"typeType",
-						"self.input->size() = 0 and self.type.oclIsTypeOf(Natural) implies self.value >= 0 and self.type.oclIsTypeOf(Positive) implies self.value > 0" });
+		addAnnotation(numberConstantEClass, source, new String[] { "typeType",
+				"self.input->size() = 0 and self.type.oclIsTypeOf(Natural) implies self.value >= 0 and self.type.oclIsTypeOf(Positive) implies self.value > 0" });
 		addAnnotation(integerOperatorEClass, source, new String[] { "inputType",
 				"self.input->size() = 2 and self.input->forAll{c | c.oclIsKindOf(Number)}" });
 		addAnnotation(additionEClass, source, new String[] { "outputType", "self.output.oclIsKindOf(Number)" });
@@ -732,11 +730,11 @@ public class IntegersPackageImpl extends EPackageImpl implements IntegersPackage
 		addAnnotation(moduloEClass, source, new String[] { "outputType", "self.output.oclIsKindOf(Number)" });
 		addAnnotation(greaterThanEClass, source,
 				new String[] { "outputType", "self.output.oclIsTypeOf(booleans::Bool)" });
-		addAnnotation(greaterThanOrEqualEClass, source, new String[] { "outputType",
-				"self.output.oclIsTypeOf(booleans::Bool)" });
+		addAnnotation(greaterThanOrEqualEClass, source,
+				new String[] { "outputType", "self.output.oclIsTypeOf(booleans::Bool)" });
 		addAnnotation(lessThanEClass, source, new String[] { "outputType", "self.output.oclIsTypeOf(booleans::Bool)" });
-		addAnnotation(lessThanOrEqualEClass, source, new String[] { "outputType",
-				"self.output.oclIsTypeOf(booleans::Bool)" });
+		addAnnotation(lessThanOrEqualEClass, source,
+				new String[] { "outputType", "self.output.oclIsTypeOf(booleans::Bool)" });
 	}
 
 	/**

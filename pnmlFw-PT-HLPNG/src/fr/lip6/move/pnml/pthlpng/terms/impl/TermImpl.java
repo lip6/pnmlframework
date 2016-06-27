@@ -220,15 +220,16 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR
+						&& newContainerNamedOperator != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamedOperator))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerNamedOperator != null)
-				msgs = ((InternalEObject) newContainerNamedOperator).eInverseAdd(this,
-						TermsPackage.NAMED_OPERATOR__DEF, NamedOperator.class, msgs);
+				msgs = ((InternalEObject) newContainerNamedOperator).eInverseAdd(this, TermsPackage.NAMED_OPERATOR__DEF,
+						NamedOperator.class, msgs);
 			msgs = basicSetContainerNamedOperator(newContainerNamedOperator, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -268,7 +269,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	@Override
 	public void setContainerHLMarking(HLMarking newContainerHLMarking) {
 		if (newContainerHLMarking != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING && newContainerHLMarking != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING
+						&& newContainerHLMarking != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerHLMarking))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -303,7 +305,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerCondition(Condition newContainerCondition, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject) newContainerCondition, TermsPackage.TERM__CONTAINER_CONDITION, msgs);
+		msgs = eBasicSetContainer((InternalEObject) newContainerCondition, TermsPackage.TERM__CONTAINER_CONDITION,
+				msgs);
 		return msgs;
 	}
 
@@ -349,7 +352,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerHLAnnotation(HLAnnotation newContainerHLAnnotation, NotificationChain msgs) {
+	public NotificationChain basicSetContainerHLAnnotation(HLAnnotation newContainerHLAnnotation,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerHLAnnotation,
 				TermsPackage.TERM__CONTAINER_HL_ANNOTATION, msgs);
 		return msgs;
@@ -363,7 +367,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	@Override
 	public void setContainerHLAnnotation(HLAnnotation newContainerHLAnnotation) {
 		if (newContainerHLAnnotation != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION && newContainerHLAnnotation != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION
+						&& newContainerHLAnnotation != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerHLAnnotation))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -412,7 +417,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	@Override
 	public void setContainerPartitionElement(PartitionElement newContainerPartitionElement) {
 		if (newContainerPartitionElement != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT && newContainerPartitionElement != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT
+						&& newContainerPartitionElement != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPartitionElement))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;

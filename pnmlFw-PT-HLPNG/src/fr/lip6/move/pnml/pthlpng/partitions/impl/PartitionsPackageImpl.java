@@ -151,29 +151,33 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 			return (PartitionsPackage) EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI);
 
 		// Obtain or create and register package
-		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new PartitionsPackageImpl());
+		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new PartitionsPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
+				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI)
+						: MultisetsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		thePartitionsPackage.createPackageContents();
@@ -433,13 +437,14 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 		initEClass(partitionElementOfEClass, PartitionElementOf.class, "PartitionElementOf", !IS_ABSTRACT,
 				!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPartitionElementOf_Refpartition(), this.getPartition(), null, "refpartition", null, 1, 1,
-				PartitionElementOf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				PartitionElementOf.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(partitionOperatorEClass, PartitionOperator.class, "PartitionOperator", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(lessThanEClass, LessThan.class, "LessThan", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -470,8 +475,8 @@ public class PartitionsPackageImpl extends EPackageImpl implements PartitionsPac
 		addAnnotation(getPartitionElement_Partitionelementconstants(), source, new String[] { "kind", "follow" });
 		addAnnotation(greaterThanEClass, source, new String[] { "tag", "gtp", "kind", "son" });
 		addAnnotation(partitionElementOfEClass, source, new String[] { "tag", "partitionelementof", "kind", "son" });
-		addAnnotation(getPartitionElementOf_Refpartition(), source, new String[] { "tag", "refpartition", "kind",
-				"idref" });
+		addAnnotation(getPartitionElementOf_Refpartition(), source,
+				new String[] { "tag", "refpartition", "kind", "idref" });
 		addAnnotation(lessThanEClass, source, new String[] { "tag", "ltp", "kind", "son" });
 	}
 

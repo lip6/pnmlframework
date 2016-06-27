@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -170,8 +169,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		switch (featureID) {
 		case HlcorestructurePackage.TRANSITION__CONDITION:
 			if (condition != null)
-				msgs = ((InternalEObject) condition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TRANSITION__CONDITION, null, msgs);
+				msgs = ((InternalEObject) condition).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TRANSITION__CONDITION, null, msgs);
 			return basicSetCondition((Condition) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -368,8 +367,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//0
@@ -403,7 +402,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -413,7 +412,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -423,7 +422,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("condition")) {
 				Condition item;
@@ -433,7 +432,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerTransition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

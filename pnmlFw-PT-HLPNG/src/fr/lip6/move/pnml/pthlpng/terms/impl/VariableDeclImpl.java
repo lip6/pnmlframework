@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -198,7 +197,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
+				|| (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR
+						&& newContainerNamedOperator != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamedOperator))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -225,8 +225,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		switch (featureID) {
 		case TermsPackage.VARIABLE_DECL__SORT:
 			if (sort != null)
-				msgs = ((InternalEObject) sort).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.VARIABLE_DECL__SORT, null, msgs);
+				msgs = ((InternalEObject) sort).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.VARIABLE_DECL__SORT, null, msgs);
 			return basicSetSort((Sort) otherEnd, msgs);
 		case TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR:
 			if (eInternalContainer() != null)
@@ -415,8 +415,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//1
@@ -458,7 +458,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -468,7 +468,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -478,7 +478,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -488,7 +488,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -498,7 +498,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

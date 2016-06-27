@@ -17,7 +17,7 @@ public class PluginProperties_
   protected final String TEXT_1 = "# ";
   protected final String TEXT_2 = "#";
   protected final String TEXT_3 = NL + NL + "pluginName = ";
-  protected final String TEXT_4 = " Model" + NL + "providerName = www.example.org";
+  protected final String TEXT_4 = NL + "providerName = http://pnml.lip6.fr";
   protected final String TEXT_5 = NL;
   protected final String TEXT_6 = NL + "_UI_";
   protected final String TEXT_7 = "_content_type = ";

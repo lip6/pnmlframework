@@ -130,7 +130,8 @@ public class BooleansValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case BooleansPackage.EQUALITY:
 			return validateEquality((Equality) value, diagnostics, context);
@@ -199,10 +200,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(equality, context) },
-						new Object[] { equality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(equality, context) },
+								new Object[] { equality }, context));
 			}
 			return false;
 		}
@@ -253,10 +254,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(inequality, context) },
-						new Object[] { inequality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(inequality, context) },
+								new Object[] { inequality }, context));
 			}
 			return false;
 		}
@@ -391,10 +392,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(booleanOperator, context) },
-						new Object[] { booleanOperator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(booleanOperator, context) },
+								new Object[] { booleanOperator }, context));
 			}
 			return false;
 		}

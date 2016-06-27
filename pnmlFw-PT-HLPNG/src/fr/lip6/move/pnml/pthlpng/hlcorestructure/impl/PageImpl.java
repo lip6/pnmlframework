@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -188,7 +187,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET
+						&& newContainerPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -289,8 +289,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 			return basicSetContainerPetriNet((PetriNet) otherEnd, msgs);
 		case HlcorestructurePackage.PAGE__NODEGRAPHICS:
 			if (nodegraphics != null)
-				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PAGE__NODEGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PAGE__NODEGRAPHICS, null, msgs);
 			return basicSetNodegraphics((NodeGraphics) otherEnd, msgs);
 		case HlcorestructurePackage.PAGE__DECLARATION:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getDeclaration()).basicAdd(otherEnd, msgs);
@@ -548,8 +548,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//0
@@ -583,7 +583,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -593,7 +593,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("page")) {
 				Page item;
@@ -603,7 +603,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("arc")) {
 				Arc item;
@@ -613,7 +613,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("place")) {
 				Place item;
@@ -623,7 +623,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("referenceTransition")) {
 				RefTransition item;
@@ -633,7 +633,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("transition")) {
 				Transition item;
@@ -643,7 +643,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("referencePlace")) {
 				RefPlace item;
@@ -653,7 +653,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -663,7 +663,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
@@ -673,7 +673,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerDeclarationPage(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

@@ -180,8 +180,8 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 		switch (featureID) {
 		case MultisetsPackage.EMPTY__REFSORT:
 			if (refsort != null)
-				msgs = ((InternalEObject) refsort).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- MultisetsPackage.EMPTY__REFSORT, null, msgs);
+				msgs = ((InternalEObject) refsort).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - MultisetsPackage.EMPTY__REFSORT, null, msgs);
 			return basicSetRefsort((Sort) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -355,8 +355,8 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -603,7 +603,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 				item.setContainerEmpty(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -613,7 +613,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 				item.setContainerEmpty(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
@@ -623,7 +623,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 				item.setContainerEmpty(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -633,7 +633,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 				item.setContainerEmpty(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -643,7 +643,7 @@ public class EmptyImpl extends MultisetOperatorImpl implements Empty {
 				item.setContainerEmpty(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

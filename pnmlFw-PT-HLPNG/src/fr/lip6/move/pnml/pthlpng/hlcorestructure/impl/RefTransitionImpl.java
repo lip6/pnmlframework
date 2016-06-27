@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -384,8 +383,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//1
 		//0
@@ -427,7 +426,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -437,7 +436,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -447,7 +446,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

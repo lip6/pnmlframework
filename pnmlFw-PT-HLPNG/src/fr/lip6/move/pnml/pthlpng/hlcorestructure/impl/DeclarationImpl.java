@@ -196,7 +196,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	@Override
 	public void setContainerDeclarationPetriNet(PetriNet newContainerDeclarationPetriNet) {
 		if (newContainerDeclarationPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET && newContainerDeclarationPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET
+						&& newContainerDeclarationPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarationPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -231,7 +232,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerDeclarationPage(Page newContainerDeclarationPage, NotificationChain msgs) {
+	public NotificationChain basicSetContainerDeclarationPage(Page newContainerDeclarationPage,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerDeclarationPage,
 				HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE, msgs);
 		return msgs;
@@ -245,7 +247,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	@Override
 	public void setContainerDeclarationPage(Page newContainerDeclarationPage) {
 		if (newContainerDeclarationPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE && newContainerDeclarationPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE
+						&& newContainerDeclarationPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarationPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -273,8 +276,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		switch (featureID) {
 		case HlcorestructurePackage.DECLARATION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.DECLARATION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.DECLARATION__STRUCTURE, null, msgs);
 			return basicSetStructure((Declarations) otherEnd, msgs);
 		case HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET:
 			if (eInternalContainer() != null)
@@ -318,8 +321,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.PETRI_NET__DECLARATION,
 					PetriNet.class, msgs);
 		case HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE:
-			return eInternalContainer()
-					.eInverseRemove(this, HlcorestructurePackage.PAGE__DECLARATION, Page.class, msgs);
+			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.PAGE__DECLARATION, Page.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -517,8 +520,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -546,7 +549,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -556,7 +559,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));

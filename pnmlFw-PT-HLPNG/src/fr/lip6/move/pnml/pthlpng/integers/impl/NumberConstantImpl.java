@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -222,8 +221,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		switch (featureID) {
 		case IntegersPackage.NUMBER_CONSTANT__TYPE:
 			if (type != null)
-				msgs = ((InternalEObject) type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- IntegersPackage.NUMBER_CONSTANT__TYPE, null, msgs);
+				msgs = ((InternalEObject) type).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - IntegersPackage.NUMBER_CONSTANT__TYPE, null, msgs);
 			return basicSetType((HLPNNumber) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -431,8 +430,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//1
@@ -777,7 +776,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
@@ -787,7 +786,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
@@ -797,7 +796,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

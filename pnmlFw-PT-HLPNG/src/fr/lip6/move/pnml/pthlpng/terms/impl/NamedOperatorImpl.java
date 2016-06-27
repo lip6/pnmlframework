@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -201,8 +200,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		switch (featureID) {
 		case TermsPackage.NAMED_OPERATOR__DEF:
 			if (def != null)
-				msgs = ((InternalEObject) def).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.NAMED_OPERATOR__DEF, null, msgs);
+				msgs = ((InternalEObject) def).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.NAMED_OPERATOR__DEF, null, msgs);
 			return basicSetDef((Term) otherEnd, msgs);
 		case TermsPackage.NAMED_OPERATOR__PARAMETERS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getParameters()).basicAdd(otherEnd, msgs);
@@ -405,8 +404,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//1

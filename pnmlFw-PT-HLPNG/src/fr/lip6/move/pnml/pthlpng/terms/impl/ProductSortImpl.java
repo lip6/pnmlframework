@@ -281,8 +281,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -310,7 +310,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -320,7 +320,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -330,7 +330,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -340,7 +340,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -350,7 +350,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

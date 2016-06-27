@@ -130,7 +130,8 @@ public class MultisetsValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case MultisetsPackage.CARDINALITY:
 			return validateCardinality((Cardinality) value, diagnostics, context);
@@ -160,7 +161,8 @@ public class MultisetsValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardinality(Cardinality cardinality, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardinality(Cardinality cardinality, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(cardinality, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(cardinality, diagnostics, context);
@@ -199,10 +201,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(cardinality, context) },
-						new Object[] { cardinality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(cardinality, context) },
+								new Object[] { cardinality }, context));
 			}
 			return false;
 		}
@@ -253,10 +255,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(contains, context) },
-						new Object[] { contains }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(contains, context) },
+								new Object[] { contains }, context));
 			}
 			return false;
 		}
@@ -308,10 +310,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(cardinalityOf, context) },
-						new Object[] { cardinalityOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(cardinalityOf, context) },
+								new Object[] { cardinalityOf }, context));
 			}
 			return false;
 		}
@@ -413,10 +415,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(all, context) }, new Object[] { all },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(all, context) }, new Object[] { all },
+								context));
 			}
 			return false;
 		}
@@ -519,10 +521,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(numberOf, context) },
-						new Object[] { numberOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(numberOf, context) },
+								new Object[] { numberOf }, context));
 			}
 			return false;
 		}
@@ -573,10 +575,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputType", getObjectLabel(subtract, context) }, new Object[] { subtract },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputType", getObjectLabel(subtract, context) },
+								new Object[] { subtract }, context));
 			}
 			return false;
 		}
@@ -628,10 +630,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(scalarProduct, context) },
-						new Object[] { scalarProduct }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(scalarProduct, context) },
+								new Object[] { scalarProduct }, context));
 			}
 			return false;
 		}

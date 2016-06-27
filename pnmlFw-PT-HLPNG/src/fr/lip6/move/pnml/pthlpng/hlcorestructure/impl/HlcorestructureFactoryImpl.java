@@ -525,8 +525,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public PNType createPNTypeFromString(EDataType eDataType, String initialValue) {
 		PNType result = PNType.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -547,8 +547,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public CSS2Color createCSS2ColorFromString(EDataType eDataType, String initialValue) {
 		CSS2Color result = CSS2Color.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -569,8 +569,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public Gradient createGradientFromString(EDataType eDataType, String initialValue) {
 		Gradient result = Gradient.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -591,8 +591,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public LineShape createLineShapeFromString(EDataType eDataType, String initialValue) {
 		LineShape result = LineShape.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -613,8 +613,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public FontAlign createFontAlignFromString(EDataType eDataType, String initialValue) {
 		FontAlign result = FontAlign.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -635,8 +635,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public FontDecoration createFontDecorationFromString(EDataType eDataType, String initialValue) {
 		FontDecoration result = FontDecoration.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -657,8 +657,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public CSS2FontFamily createCSS2FontFamilyFromString(EDataType eDataType, String initialValue) {
 		CSS2FontFamily result = CSS2FontFamily.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -679,8 +679,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public CSS2FontSize createCSS2FontSizeFromString(EDataType eDataType, String initialValue) {
 		CSS2FontSize result = CSS2FontSize.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -701,8 +701,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public CSS2FontStyle createCSS2FontStyleFromString(EDataType eDataType, String initialValue) {
 		CSS2FontStyle result = CSS2FontStyle.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -723,8 +723,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public CSS2FontWeight createCSS2FontWeightFromString(EDataType eDataType, String initialValue) {
 		CSS2FontWeight result = CSS2FontWeight.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 
@@ -745,8 +745,8 @@ public class HlcorestructureFactoryImpl extends EFactoryImpl implements Hlcorest
 	public LineStyle createLineStyleFromString(EDataType eDataType, String initialValue) {
 		LineStyle result = LineStyle.get(initialValue);
 		if (result == null)
-			throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '"
-					+ eDataType.getName() + "'");
+			throw new IllegalArgumentException(
+					"The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
 		return result;
 	}
 

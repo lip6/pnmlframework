@@ -163,7 +163,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	@Override
 	public void setContainerDeclaration(Declaration newContainerDeclaration) {
 		if (newContainerDeclaration != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION && newContainerDeclaration != null)) {
+				|| (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION
+						&& newContainerDeclaration != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclaration))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -367,8 +368,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -396,7 +397,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("namedsort")) {
 				NamedSort item;
@@ -406,7 +407,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("namedoperator")) {
 				NamedOperator item;
@@ -416,7 +417,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("partition")) {
 				Partition item;
@@ -426,7 +427,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
@@ -436,7 +437,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

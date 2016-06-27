@@ -136,7 +136,8 @@ public class IntegersValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case IntegersPackage.HLPN_NUMBER:
 			return validateHLPNNumber((HLPNNumber) value, diagnostics, context);
@@ -254,10 +255,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "typeType", getObjectLabel(numberConstant, context) },
-						new Object[] { numberConstant }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "typeType", getObjectLabel(numberConstant, context) },
+								new Object[] { numberConstant }, context));
 			}
 			return false;
 		}
@@ -309,10 +310,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputType", getObjectLabel(integerOperator, context) },
-						new Object[] { integerOperator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputType", getObjectLabel(integerOperator, context) },
+								new Object[] { integerOperator }, context));
 			}
 			return false;
 		}
@@ -365,10 +366,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(addition, context) }, new Object[] { addition },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(addition, context) },
+								new Object[] { addition }, context));
 			}
 			return false;
 		}
@@ -380,7 +381,8 @@ public class IntegersValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSubtraction(Subtraction subtraction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSubtraction(Subtraction subtraction, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(subtraction, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(subtraction, diagnostics, context);
@@ -421,10 +423,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(subtraction, context) },
-						new Object[] { subtraction }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(subtraction, context) },
+								new Object[] { subtraction }, context));
 			}
 			return false;
 		}
@@ -478,10 +480,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(multiplication, context) },
-						new Object[] { multiplication }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(multiplication, context) },
+								new Object[] { multiplication }, context));
 			}
 			return false;
 		}
@@ -534,10 +536,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(division, context) }, new Object[] { division },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(division, context) },
+								new Object[] { division }, context));
 			}
 			return false;
 		}
@@ -589,9 +591,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic", new Object[] { "outputType",
-								getObjectLabel(modulo, context) }, new Object[] { modulo }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(modulo, context) }, new Object[] { modulo },
+								context));
 			}
 			return false;
 		}
@@ -603,7 +606,8 @@ public class IntegersValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(greaterThan, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(greaterThan, diagnostics, context);
@@ -644,10 +648,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(greaterThan, context) },
-						new Object[] { greaterThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(greaterThan, context) },
+								new Object[] { greaterThan }, context));
 			}
 			return false;
 		}
@@ -701,10 +705,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(greaterThanOrEqual, context) },
-						new Object[] { greaterThanOrEqual }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(greaterThanOrEqual, context) },
+								new Object[] { greaterThanOrEqual }, context));
 			}
 			return false;
 		}
@@ -757,10 +761,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(lessThan, context) }, new Object[] { lessThan },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(lessThan, context) },
+								new Object[] { lessThan }, context));
 			}
 			return false;
 		}
@@ -814,10 +818,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(lessThanOrEqual, context) },
-						new Object[] { lessThanOrEqual }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(lessThanOrEqual, context) },
+								new Object[] { lessThanOrEqual }, context));
 			}
 			return false;
 		}

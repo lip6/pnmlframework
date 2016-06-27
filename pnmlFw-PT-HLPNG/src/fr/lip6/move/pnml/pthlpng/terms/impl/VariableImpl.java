@@ -39,7 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -142,8 +141,8 @@ public class VariableImpl extends TermImpl implements Variable {
 		VariableDecl oldVariableDecl = variableDecl;
 		variableDecl = newVariableDecl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.VARIABLE__VARIABLE_DECL,
-					oldVariableDecl, variableDecl));
+			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.VARIABLE__VARIABLE_DECL, oldVariableDecl,
+					variableDecl));
 	}
 
 	/**
@@ -260,8 +259,8 @@ public class VariableImpl extends TermImpl implements Variable {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//1
 		//0

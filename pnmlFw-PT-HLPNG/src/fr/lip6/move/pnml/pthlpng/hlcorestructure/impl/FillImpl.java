@@ -39,7 +39,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -296,7 +295,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics, NotificationChain msgs) {
+	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerNodeGraphics,
 				HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS, msgs);
 		return msgs;
@@ -310,7 +310,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS
+						&& newContainerNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -359,7 +360,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -634,8 +636,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//4

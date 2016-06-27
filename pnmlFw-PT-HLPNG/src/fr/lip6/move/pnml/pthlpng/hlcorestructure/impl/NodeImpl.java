@@ -208,8 +208,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getOutArcs()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.NODE__NODEGRAPHICS:
 			if (nodegraphics != null)
-				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE__NODEGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE__NODEGRAPHICS, null, msgs);
 			return basicSetNodegraphics((NodeGraphics) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);

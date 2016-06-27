@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -218,7 +217,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		String oldTool = tool;
 		tool = newTool;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__TOOL, oldTool, tool));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__TOOL, oldTool,
+					tool));
 	}
 
 	/**
@@ -241,8 +241,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		String oldVersion = version;
 		version = newVersion;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__VERSION,
-					oldVersion, version));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__VERSION, oldVersion,
+					version));
 	}
 
 	/**
@@ -290,7 +290,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		toolInfoGrammarURI = newToolInfoGrammarURI;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI, oldToolInfoGrammarURI, toolInfoGrammarURI));
+					HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI, oldToolInfoGrammarURI,
+					toolInfoGrammarURI));
 	}
 
 	/**
@@ -324,7 +325,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET
+						&& newContainerPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -337,8 +339,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET, newContainerPetriNet, newContainerPetriNet));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET,
+					newContainerPetriNet, newContainerPetriNet));
 	}
 
 	/**
@@ -372,7 +374,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	@Override
 	public void setContainerPnObject(PnObject newContainerPnObject) {
 		if (newContainerPnObject != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT && newContainerPnObject != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT
+						&& newContainerPnObject != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPnObject))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -385,8 +388,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT, newContainerPnObject, newContainerPnObject));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT,
+					newContainerPnObject, newContainerPnObject));
 	}
 
 	/**
@@ -420,7 +423,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	@Override
 	public void setContainerLabel(Label newContainerLabel) {
 		if (newContainerLabel != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_LABEL && newContainerLabel != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_LABEL
+						&& newContainerLabel != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerLabel))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -511,8 +515,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			return basicSetContainerLabel((Label) otherEnd, msgs);
 		case HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL:
 			if (toolInfoModel != null)
-				msgs = ((InternalEObject) toolInfoModel).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL, null, msgs);
+				msgs = ((InternalEObject) toolInfoModel).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL, null, msgs);
 			return basicSetToolInfoModel((AnyObject) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -672,8 +676,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		case HlcorestructurePackage.TOOL_INFO__VERSION:
 			return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
 		case HlcorestructurePackage.TOOL_INFO__FORMATTED_XML_BUFFER:
-			return FORMATTED_XML_BUFFER_EDEFAULT == null ? formattedXMLBuffer != null : !FORMATTED_XML_BUFFER_EDEFAULT
-					.equals(formattedXMLBuffer);
+			return FORMATTED_XML_BUFFER_EDEFAULT == null ? formattedXMLBuffer != null
+					: !FORMATTED_XML_BUFFER_EDEFAULT.equals(formattedXMLBuffer);
 		case HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI:
 			return TOOL_INFO_GRAMMAR_URI_EDEFAULT == null ? toolInfoGrammarURI != null
 					: !TOOL_INFO_GRAMMAR_URI_EDEFAULT.equals(toolInfoGrammarURI);
@@ -794,8 +798,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//2

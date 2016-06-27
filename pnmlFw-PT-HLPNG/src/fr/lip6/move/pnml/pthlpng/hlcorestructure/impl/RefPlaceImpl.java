@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -175,7 +174,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.REF_PLACE__REF, newRef, newRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.REF_PLACE__REF, newRef,
+					newRef));
 	}
 
 	/**
@@ -383,8 +383,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//1
 		//0
@@ -426,7 +426,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -436,7 +436,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -446,7 +446,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

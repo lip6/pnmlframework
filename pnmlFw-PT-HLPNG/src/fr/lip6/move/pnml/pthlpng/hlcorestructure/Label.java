@@ -81,8 +81,8 @@ public interface Label extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

@@ -381,7 +381,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	@Override
 	public void setContainerAnnotation(Annotation newContainerAnnotation) {
 		if (newContainerAnnotation != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION && newContainerAnnotation != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION
+						&& newContainerAnnotation != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotation))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -409,23 +410,23 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		switch (featureID) {
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET:
 			if (offset != null)
-				msgs = ((InternalEObject) offset).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET, null, msgs);
+				msgs = ((InternalEObject) offset).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET, null, msgs);
 			return basicSetOffset((Offset) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL:
 			if (fill != null)
-				msgs = ((InternalEObject) fill).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL, null, msgs);
+				msgs = ((InternalEObject) fill).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL, null, msgs);
 			return basicSetFill((Fill) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT:
 			if (font != null)
-				msgs = ((InternalEObject) font).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT, null, msgs);
+				msgs = ((InternalEObject) font).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT, null, msgs);
 			return basicSetFont((Font) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION:
 			if (eInternalContainer() != null)
@@ -672,8 +673,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -701,7 +702,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
@@ -711,7 +712,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -721,7 +722,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("font")) {
 				Font item;
@@ -731,7 +732,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

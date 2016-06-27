@@ -155,7 +155,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.MULTISET_SORT__BASIS, newBasis, newBasis));
+			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.MULTISET_SORT__BASIS, newBasis,
+					newBasis));
 	}
 
 	/**
@@ -168,8 +169,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		switch (featureID) {
 		case TermsPackage.MULTISET_SORT__BASIS:
 			if (basis != null)
-				msgs = ((InternalEObject) basis).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.MULTISET_SORT__BASIS, null, msgs);
+				msgs = ((InternalEObject) basis).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.MULTISET_SORT__BASIS, null, msgs);
 			return basicSetBasis((Sort) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -313,8 +314,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -342,7 +343,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -352,7 +353,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -362,7 +363,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -372,7 +373,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -382,7 +383,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 
@@ -508,8 +509,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
-				throw new UnsupportedOperationException("Cannot determine if these two multisets are equal."
-						+ "You should override this method.");
+				throw new UnsupportedOperationException(
+						"Cannot determine if these two multisets are equal." + "You should override this method.");
 			}
 		}
 		return isEqual;

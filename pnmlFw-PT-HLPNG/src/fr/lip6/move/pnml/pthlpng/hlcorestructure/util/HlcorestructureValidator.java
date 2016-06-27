@@ -158,7 +158,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case HlcorestructurePackage.PETRI_NET_DOC:
 			return validatePetriNetDoc((PetriNetDoc) value, diagnostics, context);
@@ -266,7 +267,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePetriNetDoc(PetriNetDoc petriNetDoc, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePetriNetDoc(PetriNetDoc petriNetDoc, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(petriNetDoc, diagnostics, context);
 	}
 
@@ -412,7 +414,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArcGraphics(ArcGraphics arcGraphics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateArcGraphics(ArcGraphics arcGraphics, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcGraphics, diagnostics, context);
 	}
 
@@ -459,10 +462,10 @@ public class HlcorestructureValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "samePageSourceTarget", getObjectLabel(arc, context) }, new Object[] { arc },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "samePageSourceTarget", getObjectLabel(arc, context) },
+								new Object[] { arc }, context));
 			}
 			return false;
 		}
@@ -475,17 +478,18 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateArc_differentSourceTarget(Arc arc, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateArc_differentSourceTarget(Arc arc, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		// TODO implement the constraint
 		// -> specify the condition that violates the constraint
 		// -> verify the diagnostic details, including severity, code, and message
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "differentSourceTarget", getObjectLabel(arc, context) }, new Object[] { arc },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "differentSourceTarget", getObjectLabel(arc, context) },
+								new Object[] { arc }, context));
 			}
 			return false;
 		}
@@ -645,7 +649,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDeclaration(Declaration declaration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDeclaration(Declaration declaration, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(declaration, diagnostics, context);
 	}
 
@@ -767,7 +772,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLongString(StringBuffer longString, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLongString(StringBuffer longString, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return true;
 	}
 

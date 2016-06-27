@@ -383,15 +383,16 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	@Override
 	public void setContainerNode(Node newContainerNode) {
 		if (newContainerNode != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE && newContainerNode != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE
+						&& newContainerNode != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNode))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerNode != null)
-				msgs = ((InternalEObject) newContainerNode).eInverseAdd(this,
-						HlcorestructurePackage.NODE__NODEGRAPHICS, Node.class, msgs);
+				msgs = ((InternalEObject) newContainerNode).eInverseAdd(this, HlcorestructurePackage.NODE__NODEGRAPHICS,
+						Node.class, msgs);
 			msgs = basicSetContainerNode(newContainerNode, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -431,15 +432,16 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE && newContainerPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE
+						&& newContainerPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerPage != null)
-				msgs = ((InternalEObject) newContainerPage).eInverseAdd(this,
-						HlcorestructurePackage.PAGE__NODEGRAPHICS, Page.class, msgs);
+				msgs = ((InternalEObject) newContainerPage).eInverseAdd(this, HlcorestructurePackage.PAGE__NODEGRAPHICS,
+						Page.class, msgs);
 			msgs = basicSetContainerPage(newContainerPage, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -458,23 +460,23 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		switch (featureID) {
 		case HlcorestructurePackage.NODE_GRAPHICS__POSITION:
 			if (position != null)
-				msgs = ((InternalEObject) position).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__POSITION, null, msgs);
+				msgs = ((InternalEObject) position).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__POSITION, null, msgs);
 			return basicSetPosition((Position) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__DIMENSION:
 			if (dimension != null)
-				msgs = ((InternalEObject) dimension).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__DIMENSION, null, msgs);
+				msgs = ((InternalEObject) dimension).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__DIMENSION, null, msgs);
 			return basicSetDimension((Dimension) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__FILL:
 			if (fill != null)
-				msgs = ((InternalEObject) fill).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__FILL, null, msgs);
+				msgs = ((InternalEObject) fill).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__FILL, null, msgs);
 			return basicSetFill((Fill) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE:
 			if (eInternalContainer() != null)
@@ -740,8 +742,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -769,7 +771,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerPNodeGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dimension")) {
 				Dimension item;
@@ -779,7 +781,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerDNodeGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
@@ -789,7 +791,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerNodeGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -799,7 +801,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerNodeGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

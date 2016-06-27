@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -174,8 +173,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		switch (featureID) {
 		case TermsPackage.NAMED_SORT__SORTDEF:
 			if (sortdef != null)
-				msgs = ((InternalEObject) sortdef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.NAMED_SORT__SORTDEF, null, msgs);
+				msgs = ((InternalEObject) sortdef).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.NAMED_SORT__SORTDEF, null, msgs);
 			return basicSetSortdef((Sort) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
@@ -333,8 +332,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//1
@@ -376,7 +375,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -386,7 +385,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -396,7 +395,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -406,7 +405,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -416,7 +415,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

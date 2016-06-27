@@ -100,12 +100,14 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotationgraphics(AnnotationGraphics newAnnotationgraphics, NotificationChain msgs) {
+	public NotificationChain basicSetAnnotationgraphics(AnnotationGraphics newAnnotationgraphics,
+			NotificationChain msgs) {
 		AnnotationGraphics oldAnnotationgraphics = annotationgraphics;
 		annotationgraphics = newAnnotationgraphics;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, oldAnnotationgraphics, newAnnotationgraphics);
+					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, oldAnnotationgraphics,
+					newAnnotationgraphics);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -135,8 +137,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, newAnnotationgraphics, newAnnotationgraphics));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS,
+					newAnnotationgraphics, newAnnotationgraphics));
 	}
 
 	/**
@@ -149,8 +151,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 		switch (featureID) {
 		case HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS:
 			if (annotationgraphics != null)
-				msgs = ((InternalEObject) annotationgraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) annotationgraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, null, msgs);
 			return basicSetAnnotationgraphics((AnnotationGraphics) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);

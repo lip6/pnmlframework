@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -207,12 +206,12 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		switch (featureID) {
 		case PartitionsPackage.PARTITION__DEF:
 			if (def != null)
-				msgs = ((InternalEObject) def).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- PartitionsPackage.PARTITION__DEF, null, msgs);
+				msgs = ((InternalEObject) def).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - PartitionsPackage.PARTITION__DEF, null, msgs);
 			return basicSetDef((Sort) otherEnd, msgs);
 		case PartitionsPackage.PARTITION__PARTITIONELEMENTS:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelements())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelements()).basicAdd(otherEnd,
+					msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -396,8 +395,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//1
@@ -439,7 +438,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -449,7 +448,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
@@ -459,7 +458,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -469,7 +468,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -479,7 +478,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
@@ -489,7 +488,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setRefpartition(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

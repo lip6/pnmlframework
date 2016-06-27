@@ -173,7 +173,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	@Override
 	public void setContainerNamePetriNet(PetriNet newContainerNamePetriNet) {
 		if (newContainerNamePetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET && newContainerNamePetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET
+						&& newContainerNamePetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamePetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -186,9 +187,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET, newContainerNamePetriNet,
-					newContainerNamePetriNet));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET,
+					newContainerNamePetriNet, newContainerNamePetriNet));
 	}
 
 	/**
@@ -222,7 +222,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	@Override
 	public void setContainerNamePnObject(PnObject newContainerNamePnObject) {
 		if (newContainerNamePnObject != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT && newContainerNamePnObject != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT
+						&& newContainerNamePnObject != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamePnObject))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -235,9 +236,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT, newContainerNamePnObject,
-					newContainerNamePnObject));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT,
+					newContainerNamePnObject, newContainerNamePnObject));
 	}
 
 	/**
@@ -484,8 +484,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -513,7 +513,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -523,7 +523,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));

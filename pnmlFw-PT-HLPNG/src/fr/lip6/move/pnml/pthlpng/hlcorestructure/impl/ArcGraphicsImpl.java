@@ -207,8 +207,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerArc(Arc newContainerArc, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject) newContainerArc,
-				HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC, msgs);
+		msgs = eBasicSetContainer((InternalEObject) newContainerArc, HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC,
+				msgs);
 		return msgs;
 	}
 
@@ -220,7 +220,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC && newContainerArc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC
+						&& newContainerArc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -250,8 +251,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPositions()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.ARC_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC:
 			if (eInternalContainer() != null)
@@ -452,8 +453,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -481,7 +482,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 				item.setContainerArcGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -491,7 +492,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 				item.setContainerArcGraphics(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

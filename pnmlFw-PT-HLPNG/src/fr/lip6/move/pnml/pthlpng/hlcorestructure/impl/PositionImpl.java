@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -128,7 +127,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS
+						&& newContainerArcGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArcGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -178,7 +178,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	@Override
 	public void setContainerPNodeGraphics(NodeGraphics newContainerPNodeGraphics) {
 		if (newContainerPNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS && newContainerPNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS
+						&& newContainerPNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -376,8 +377,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//2

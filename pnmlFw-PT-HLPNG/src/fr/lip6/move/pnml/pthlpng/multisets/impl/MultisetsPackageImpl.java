@@ -175,29 +175,33 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 			return (MultisetsPackage) EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI);
 
 		// Obtain or create and register package
-		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new MultisetsPackageImpl());
+		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new MultisetsPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theMultisetsPackage.createPackageContents();
@@ -440,7 +444,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		initEClass(cardinalityEClass, Cardinality.class, "Cardinality", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(containsEClass, Contains.class, "Contains", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(containsEClass, Contains.class, "Contains", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(cardinalityOfEClass, CardinalityOf.class, "CardinalityOf", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -457,9 +462,11 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 				"refsort", null, 1, 1, Empty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(numberOfEClass, NumberOf.class, "NumberOf", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(numberOfEClass, NumberOf.class, "NumberOf", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(subtractEClass, Subtract.class, "Subtract", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(subtractEClass, Subtract.class, "Subtract", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(scalarProductEClass, ScalarProduct.class, "ScalarProduct", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -488,32 +495,20 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		String source = "http://www.pnml.org/models/OCL";
 		addAnnotation(cardinalityEClass, source, new String[] { "inputOutputTypes",
 				"self.output.oclIsTypeOf(integers::Natural) and self.input.oclIsKindOf(terms::MultisetSort)" });
-		addAnnotation(
-				containsEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2 and self.input->forAll {c | c.oclIsKindOf(terms::MultisetSort)}" });
+		addAnnotation(containsEClass, source, new String[] { "inputOutputTypes",
+				"self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2 and self.input->forAll {c | c.oclIsKindOf(terms::MultisetSort)}" });
 		addAnnotation(cardinalityOfEClass, source, new String[] { "inputOutputTypes",
 				"self.output.oclIsTypeOf(integers::Natural) and self.input.size() = 2" });
 		addAnnotation(addEClass, source, new String[] { "inputType",
 				"self.input->size() >= 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)} " });
 		addAnnotation(allEClass, source, new String[] { "inputOutputTypes", "self.input->size() = 0" });
 		addAnnotation(emptyEClass, source, new String[] { "InputSize", "self.input->size = 0" });
-		addAnnotation(
-				numberOfEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.input->size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and self.output.oclIsKindOf(terms::MultisetSort)" });
+		addAnnotation(numberOfEClass, source, new String[] { "inputOutputTypes",
+				"self.input->size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and self.output.oclIsKindOf(terms::MultisetSort)" });
 		addAnnotation(subtractEClass, source, new String[] { "inputType",
 				"self.input->size() = 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)}" });
-		addAnnotation(
-				scalarProductEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}" });
+		addAnnotation(scalarProductEClass, source, new String[] { "inputOutputTypes",
+				"self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}" });
 	}
 
 	/**

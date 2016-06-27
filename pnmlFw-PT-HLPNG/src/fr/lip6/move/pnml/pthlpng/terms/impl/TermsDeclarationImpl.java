@@ -182,7 +182,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerDeclarations(Declarations newContainerDeclarations, NotificationChain msgs) {
+	public NotificationChain basicSetContainerDeclarations(Declarations newContainerDeclarations,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerDeclarations,
 				TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS, msgs);
 		return msgs;
@@ -196,7 +197,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	@Override
 	public void setContainerDeclarations(Declarations newContainerDeclarations) {
 		if (newContainerDeclarations != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS && newContainerDeclarations != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS
+						&& newContainerDeclarations != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarations))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -253,8 +255,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 		case TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS:
-			return eInternalContainer().eInverseRemove(this, TermsPackage.DECLARATIONS__DECLARATION,
-					Declarations.class, msgs);
+			return eInternalContainer().eInverseRemove(this, TermsPackage.DECLARATIONS__DECLARATION, Declarations.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}

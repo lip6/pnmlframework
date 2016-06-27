@@ -39,7 +39,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -447,7 +446,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FONT__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FONT__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -760,8 +760,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//7

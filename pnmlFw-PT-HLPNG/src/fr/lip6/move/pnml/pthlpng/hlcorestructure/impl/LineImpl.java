@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -273,7 +272,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics, NotificationChain msgs) {
+	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerNodeGraphics,
 				HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS, msgs);
 		return msgs;
@@ -287,7 +287,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS
+						&& newContainerNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -335,7 +336,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ARC_GRAPHICS
+						&& newContainerArcGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArcGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -384,7 +386,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -701,8 +704,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//4

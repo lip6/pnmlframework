@@ -197,7 +197,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC && newContainerArc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC
+						&& newContainerArc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -224,8 +225,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		switch (featureID) {
 		case HlcorestructurePackage.HL_ANNOTATION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.HL_ANNOTATION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.HL_ANNOTATION__STRUCTURE, null, msgs);
 			return basicSetStructure((Term) otherEnd, msgs);
 		case HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC:
 			if (eInternalContainer() != null)
@@ -260,8 +261,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 		case HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC:
-			return eInternalContainer()
-					.eInverseRemove(this, HlcorestructurePackage.ARC__HLINSCRIPTION, Arc.class, msgs);
+			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.ARC__HLINSCRIPTION, Arc.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
@@ -449,8 +450,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//0
 		//0
 		//0
@@ -478,7 +479,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -488,7 +489,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));

@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -235,7 +234,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		PNType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PETRI_NET__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PETRI_NET__TYPE, oldType,
+					type));
 	}
 
 	/**
@@ -350,7 +350,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	@Override
 	public void setContainerPetriNetDoc(PetriNetDoc newContainerPetriNetDoc) {
 		if (newContainerPetriNetDoc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC && newContainerPetriNetDoc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC
+						&& newContainerPetriNetDoc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNetDoc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -396,8 +397,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPages()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.PETRI_NET__NAME:
 			if (name != null)
-				msgs = ((InternalEObject) name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PETRI_NET__NAME, null, msgs);
+				msgs = ((InternalEObject) name).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PETRI_NET__NAME, null, msgs);
 			return basicSetName((Name) otherEnd, msgs);
 		case HlcorestructurePackage.PETRI_NET__TOOLSPECIFICS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getToolspecifics()).basicAdd(otherEnd, msgs);
@@ -708,8 +709,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
 		//1
 		//0
 		//1
@@ -747,7 +748,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerPetriNet(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
@@ -757,7 +758,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerNamePetriNet(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -767,7 +768,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerPetriNet(this);
 
 				continue;
-			}//end if
+			} //end if
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
@@ -777,7 +778,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerDeclarationPetriNet(this);
 
 				continue;
-			}//end if
+			} //end if
 
 		}
 

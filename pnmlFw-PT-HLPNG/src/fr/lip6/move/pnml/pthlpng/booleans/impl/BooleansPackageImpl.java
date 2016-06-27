@@ -175,29 +175,34 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 			return (BooleansPackage) EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI);
 
 		// Obtain or create and register package
-		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new BooleansPackageImpl());
+		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new BooleansPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
+				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI)
+						: MultisetsPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBooleansPackage.createPackageContents();
@@ -426,7 +431,8 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 		boolEClass.getESuperTypes().add(theTermsPackage.getBuiltInSort());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(equalityEClass, Equality.class, "Equality", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(equalityEClass, Equality.class, "Equality", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(inequalityEClass, Inequality.class, "Inequality", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -474,18 +480,10 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 */
 	protected void createOCLAnnotations() {
 		String source = "http://www.pnml.org/models/OCL";
-		addAnnotation(
-				equalityEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.input.size() >= 2 and self.input->forAll{c, d | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and self.output.oclIsKindOf(Bool)" });
-		addAnnotation(
-				inequalityEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.input.size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and self.output.oclIsKindOf(Bool)" });
+		addAnnotation(equalityEClass, source, new String[] { "inputOutputTypes",
+				"self.input.size() >= 2 and self.input->forAll{c, d | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and self.output.oclIsKindOf(Bool)" });
+		addAnnotation(inequalityEClass, source, new String[] { "inputOutputTypes",
+				"self.input.size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and self.output.oclIsKindOf(Bool)" });
 		addAnnotation(orEClass, source, new String[] { "InputSize", "self.input.size() = 2" });
 		addAnnotation(booleanOperatorEClass, source, new String[] { "inputOutputTypes",
 				"self.output.oclIsKindOf(Bool) and  self.input->forAll{c | c.oclIsKindOf(Bool)}" });
@@ -556,16 +554,10 @@ public class BooleansPackageImpl extends EPackageImpl implements BooleansPackage
 	 */
 	protected void createSORTAnnotations() {
 		String source = "http://www.pnml.org/models/methods/SORT";
-		addAnnotation(
-				boolEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t    //by default they are the same sort, unless they have been named.\n\t\t  \tisEqual = true;\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}// otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;",
-						"documentation",
-						"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r */" });
+		addAnnotation(boolEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body",
+				"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t    //by default they are the same sort, unless they have been named.\n\t\t  \tisEqual = true;\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}// otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;",
+				"documentation",
+				"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r */" });
 	}
 
 } //BooleansPackageImpl
