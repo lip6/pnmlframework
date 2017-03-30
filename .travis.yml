@@ -19,3 +19,16 @@ addons:
     branch_pattern: master
 
 script: "./build.sh"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: PnmlFramework_UpdateSite/target/repository
+  upload_dir: night-updates/
+  on:
+    branch: master
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
