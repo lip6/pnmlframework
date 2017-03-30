@@ -20,7 +20,8 @@ addons:
 
 script: 
   - "./build.sh"
-  - ls -lah PnmlFramework_UpdateSite/target/repository
+  - cd fr.lip6.move.gal.parent && mvn -e -t 4 generate-sources install && cd -
+  - ls -lah PnmlFramework_UpdateSite
 
 deploy:
   provider: pages
