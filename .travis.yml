@@ -5,6 +5,9 @@ env:
    #   via the "travis encrypt" command using the project repo's public key
    - secure: "gsvRBOQLk6TdWbfiNZGuF+40DSdMIFaicO85/TbZT8oMkVeATD0DZoYxPdQ00LBVMXSawSdQlXv/FBx949USqbMEIXAaWcQOIwMaqPfQu9jrC74COgbKpSvJx6lYuwF/i7UzMT968V+0Jzai/oZ7kWd/IEBXLlXTna5GecwYKzE="
 
+before_script:
+ - echo "MAVEN_OPTS='-Xmx3g'" > ~/.mavenrc
+
 addons:
   coverity_scan:
     project:
