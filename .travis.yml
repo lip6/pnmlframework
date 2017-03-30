@@ -20,7 +20,8 @@ addons:
 
 script: 
   - "./build.sh"
-  - cd fr.lip6.move.gal.parent && mvn -e -t 4 generate-sources install && cd -
+  - cd pnmlFw-Releng ; mvn clean package -Pall ; cd -
+  - cd pnmlFw-Releng ; mvn install deploy -Pall ; cd -
   - ls -lah PnmlFramework_UpdateSite
 
 deploy:
