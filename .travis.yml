@@ -18,7 +18,9 @@ addons:
     build_command:   "mvn -f ./pnmlFw-Releng/pom.xml -DskipTests=true -Dmaven.javadoc.skip=true compile"
     branch_pattern: master
 
-script: "./build.sh"
+script: 
+  - "./build.sh"
+  - ls -lah PnmlFramework_UpdateSite/target/repository
 
 deploy:
   provider: pages
