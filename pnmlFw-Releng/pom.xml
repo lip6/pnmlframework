@@ -20,7 +20,7 @@
 		<pnml.snapshot>2.2.12-SNAPSHOT</pnml.snapshot>
 		<tycho.version>0.24.0</tycho.version>
 		<tycho-extras.version>0.24.0</tycho-extras.version>
-		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
+		<eclipse-repo.url>http://download.eclipse.org/releases/neon</eclipse-repo.url>
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
@@ -83,7 +83,7 @@
 	<repositories>
 		<repository>
 			<id>luna</id>
-			<url>${luna-repo.url}</url>
+			<url>${eclipse-repo.url}</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
