@@ -86,7 +86,7 @@
 			<url>${eclipse-repo.url}</url>
 			<layout>p2</layout>
 		</repository>
-		<repository>
+<!-- 		<repository>
 			<id>license</id>
 			<url>${license-p2-repo}</url>
 			<layout>p2</layout>
@@ -94,7 +94,7 @@
 		<repository>
 			<id>miage11</id>
 			<url>${miage-repo.url}</url>
-		</repository>
+		</repository> -->
 	</repositories>
 
 	<dependencyManagement>
