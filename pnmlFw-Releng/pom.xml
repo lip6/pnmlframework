@@ -18,9 +18,9 @@
 		<pnml.release>2.2.12</pnml.release>
 		<pnml.release.doc>2.2.12</pnml.release.doc>
 		<pnml.snapshot>2.2.12-SNAPSHOT</pnml.snapshot>
-		<tycho.version>0.24.0</tycho.version>
-		<tycho-extras.version>0.24.0</tycho-extras.version>
-		<luna-repo.url>http://download.eclipse.org/releases/luna</luna-repo.url>
+		<tycho.version>0.26.0</tycho.version>
+		<tycho-extras.version>0.26.0</tycho-extras.version>
+		<eclipse-repo.url>http://download.eclipse.org/releases/neon</eclipse-repo.url>
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
@@ -83,10 +83,10 @@
 	<repositories>
 		<repository>
 			<id>luna</id>
-			<url>${luna-repo.url}</url>
+			<url>${eclipse-repo.url}</url>
 			<layout>p2</layout>
 		</repository>
-		<repository>
+<!-- 		<repository>
 			<id>license</id>
 			<url>${license-p2-repo}</url>
 			<layout>p2</layout>
@@ -94,7 +94,7 @@
 		<repository>
 			<id>miage11</id>
 			<url>${miage-repo.url}</url>
-		</repository>
+		</repository> -->
 	</repositories>
 
 	<dependencyManagement>
@@ -202,8 +202,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
