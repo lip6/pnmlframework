@@ -9,6 +9,6 @@ This repository hosts the source code of [PNML Framework](http://pnml.lip6.fr/),
 Download PNML Framework 
 =======================
 
-- Latest stable release from its [companion web site](http://pnml.lip6.fr).
-- Latest build is deployed on the [gh-pages of this repository](https://lip6.github.io/pnmlframework/)
+- Latest stable release from its [companion web site](http://pnml.lip6.fr/downloads.html). 
+- Latest build is deployed on the [gh-pages of this repository](https://lip6.github.io/pnmlframework/). The deployed build is structured as an Eclipse update site ([have a look at it](https://github.com/lip6/pnmlframework/tree/gh-pages)).
 
