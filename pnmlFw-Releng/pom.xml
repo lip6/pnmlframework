@@ -18,27 +18,16 @@
 		<pnml.release>2.2.12</pnml.release>
 		<pnml.release.doc>2.2.12</pnml.release.doc>
 		<pnml.snapshot>2.2.12-SNAPSHOT</pnml.snapshot>
-		<tycho.version>0.26.0</tycho.version>
-		<tycho-extras.version>0.26.0</tycho-extras.version>
-		<eclipse-repo.url>http://download.eclipse.org/releases/oxygen</eclipse-repo.url>
+		<tycho.version>1.4.0</tycho.version>
+		<tycho-extras.version>1.4.0</tycho-extras.version>
+		<eclipse-repo.url>http://download.eclipse.org/releases/2019-09</eclipse-repo.url>
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
-		<tycho-repo.url>https://oss.sonatype.org/content/groups/public/</tycho-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
-		<miage-repo.url>http://miage11.u-paris10.fr:8081/nexus/content/groups/public/</miage-repo.url>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
 	</properties>
 
 	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Public Releases</name>
-			<url>http://miage11.u-paris10.fr:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Snapshots</name>
-			<url>http://miage11.u-paris10.fr:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
 
 	<organization>
@@ -86,15 +75,15 @@
 			<url>${eclipse-repo.url}</url>
 			<layout>p2</layout>
 		</repository>
-<!-- 		<repository>
-			<id>license</id>
-			<url>${license-p2-repo}</url>
+		<repository>
+			<id>asm</id>
 			<layout>p2</layout>
+			<url>${orbit-site}</url>
 		</repository>
 		<repository>
-			<id>miage11</id>
-			<url>${miage-repo.url}</url>
-		</repository> -->
+			<id>The central nexus</id>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
 	</repositories>
 
 	<dependencyManagement>
@@ -103,6 +92,11 @@
 				<groupId>${project.groupId}</groupId>
 				<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
 				<version>${thirdparty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.activation</groupId>
+				<artifactId>javax.activation</artifactId>
+				<version>1.2.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.testng</groupId>
@@ -198,9 +192,29 @@
 			</extension>
 		</extensions>
 		<plugins>
+		<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>3.0.0-M2</version>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>3.0.5</version>
+                </requireMavenVersion>
+              </rules>    
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.8.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -276,7 +290,7 @@
 			<plugin>
 				<groupId>com.mycila</groupId>
 				<artifactId>license-maven-plugin</artifactId>
-				<version>2.0</version>
+				<version>3.0</version>
 				<configuration>
 					<basedir>${basedir}</basedir>
 					<header>http://pnml.lip6.fr/resources/License</header>
@@ -326,7 +340,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.3</version>
+				<version>3.1.1</version>
 				<configuration>
 					<additionalJOption>-J-Xmx2048m</additionalJOption>
 					<doctitle>${project.name} ${pnml.release.doc} API</doctitle>
@@ -385,7 +399,7 @@
 			<plugin>
 				<groupId>com.github.ferstl</groupId>
 				<artifactId>depgraph-maven-plugin</artifactId>
-				<version>1.0.3</version>
+				<version>3.2.2</version>
 			</plugin>
 		</plugins>
 
@@ -470,22 +484,22 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.19.1</version>
+					<version>3.0.0-M3</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>wagon-maven-plugin</artifactId>
-					<version>1.0</version>
+					<version>2.0.0</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-site-plugin</artifactId>
-					<version>3.5</version>
+					<version>3.8.2</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>2.8.1</version>
+					<version>3.0.0</version>
 				</plugin>
 				<!--This plugin's configuration is used to store Eclipse m2e settings 
 					only. It has no influence on the Maven build itself. -->
@@ -592,23 +606,13 @@
 				<module>../pnmlFw-HLPN</module>
 				<module>../pnmlFw-PT-HLPNG</module>
 				<module>../fr.lip6.pnml.nupntoolInfo</module>
-			</modules>
-			<distributionManagement>
-				<snapshotRepository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-				</snapshotRepository>
-				<repository>
-					<id>ossrh</id>
-					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-				</repository>
-			</distributionManagement>
+			</modules>			
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.sonatype.plugins</groupId>
 						<artifactId>nexus-staging-maven-plugin</artifactId>
-						<version>1.6.5</version>
+						<version>1.6.8</version>
 						<extensions>true</extensions>
 						<configuration>
 							<serverId>ossrh</serverId>
@@ -619,7 +623,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
-						<version>3.0.0</version>
+						<version>3.1.0</version>
 						<executions>
 							<execution>
 								<id>attach-sources</id>

@@ -1,6 +1,6 @@
 /**
  *  Copyright 2009-2016 Université Paris Ouest and Sorbonne Universités,
- * 							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
+							Univ. Paris 06 - CNRS UMR 7606 (LIP6)
  *
  *  All rights reserved.   This program and the accompanying materials
  *  are made available under the terms of the Eclipse Public License v1.0
@@ -22,8 +22,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Random;
-
-import javax.activation.MimetypesFileTypeMap;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -56,7 +54,6 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public final class PNMLUtils {
 
-	private static final String TEXT_XML_PNML = "text/xml xml pnml XML PNML";
 	private static final String PTHLPNG_PETRINETDOC_HLAPI = "fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi.PetriNetDocHLAPI";
 	private static final String HLPN_PETRINETDOC_HLAPI = "fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.PetriNetDocHLAPI";
 	private static final String SYMMETRICNET_PETRINETDOC_HLAPI = "fr.lip6.move.pnml.symmetricnet.hlcorestructure.hlapi.PetriNetDocHLAPI";
@@ -401,16 +398,7 @@ public final class PNMLUtils {
 			if (!pFile.canRead()) {
 				String message = "Cannot read file " + pFile.getName();
 				throw new InternalException(message, new Throwable(message));
-			}
-			final MimetypesFileTypeMap ftm = new MimetypesFileTypeMap();
-			ftm.addMimeTypes(TEXT_XML_PNML);
-			final String contentType = ftm.getContentType(pFile);
-			if (!contentType.contains("text/xml")) {
-				String message = pFile.getName() + " is not an XML file: "
-						+ contentType;
-				throw new InvalidFileTypeException(message, new Throwable(
-						message));
-			}
+			}			
 		} catch (NullPointerException npe) {// FIXME: Bad practice! update!
 			npe.printStackTrace();
 			throw new InternalException("Null pointer exception",
