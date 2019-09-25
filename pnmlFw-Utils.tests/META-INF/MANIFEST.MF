@@ -4,5 +4,5 @@ Bundle-Name: Tests of the PNML Framework Utils Plugin
 Bundle-SymbolicName: fr.lip6.pnml.framework.utils.tests
 Bundle-Version: 2.2.12
 Fragment-Host: fr.lip6.pnml.framework.utils
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)

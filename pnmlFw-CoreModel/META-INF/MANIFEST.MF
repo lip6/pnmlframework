@@ -6,7 +6,7 @@ Bundle-Version: 2.2.12
 Bundle-ClassPath: .
 Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: fr.lip6.move.pnml.pnmlcoremodel,
  fr.lip6.move.pnml.pnmlcoremodel.hlapi,
  fr.lip6.move.pnml.pnmlcoremodel.impl,
