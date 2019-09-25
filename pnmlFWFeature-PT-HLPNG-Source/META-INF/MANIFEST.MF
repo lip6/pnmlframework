@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.pnml.framework.pthlpng.feature.source;singleton:=true
-Bundle-Version: 2.2.12
+Bundle-Version: 2.2.13
 Bundle-Vendor: %Bundle-Vendor
