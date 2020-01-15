@@ -2,10 +2,10 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework Symmetric Nets
 Bundle-SymbolicName: fr.lip6.pnml.framework.symmetricnet;singleton:=true
-Bundle-Version: 2.2.12
+Bundle-Version: 2.2.13
 Bundle-ClassPath: .
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: fr.lip6.move.pnml.symmetricnet.booleans;
   uses:="org.eclipse.emf.ecore,
    org.apache.axiom.om,
@@ -382,7 +382,7 @@ Export-Package: fr.lip6.move.pnml.symmetricnet.booleans;
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  fr.lip6.pnml.framework.utils,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.12"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.13"
 Bundle-ActivationPolicy: lazy
 Eclipse-RegisterBuddy: fr.lip6.pnml.framework.utils
 Bundle-Vendor: Sorbonne Universités,

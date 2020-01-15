@@ -24,7 +24,7 @@ public class ManifestMF_
   protected final String TEXT_7 = NL + "Bundle-Vendor: %providerName" + NL + "Bundle-Localization: plugin";
   protected final String TEXT_8 = NL + "Bundle-RequiredExecutionEnvironment: J2SE-1.5";
   protected final String TEXT_9 = NL + "Bundle-RequiredExecutionEnvironment: JavaSE-1.6";
-  protected final String TEXT_10 = NL + "Bundle-RequiredExecutionEnvironment: JavaSE-1.7";
+  protected final String TEXT_10 = NL + "Bundle-RequiredExecutionEnvironment: JavaSE-11";
   protected final String TEXT_11 = NL + "Export-Package: ";
   protected final String TEXT_12 = ",";
   protected final String TEXT_13 = NL + " ";

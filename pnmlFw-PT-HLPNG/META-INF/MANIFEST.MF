@@ -2,11 +2,11 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework PT Nets in High-level Notation
 Bundle-SymbolicName: fr.lip6.pnml.framework.pthlpng;singleton:=true
-Bundle-Version: 2.2.12
+Bundle-Version: 2.2.13
 Bundle-ClassPath: .
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: fr.lip6.move.pnml.pthlpng.booleans;
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+xport-Package: fr.lip6.move.pnml.pthlpng.booleans;
   uses:="org.eclipse.emf.ecore,
    org.apache.axiom.om,
    org.eclipse.emf.common.util,
@@ -223,7 +223,7 @@ Export-Package: fr.lip6.move.pnml.pthlpng.booleans;
    org.eclipse.emf.common.notify,
    org.eclipse.emf.common.notify.impl,
    org.eclipse.emf.ecore.util"
-Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.12",
+Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.13",
  org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.ecore;visibility:=reexport,

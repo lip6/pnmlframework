@@ -2,13 +2,13 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework Place/Transition Nets
 Bundle-SymbolicName: fr.lip6.pnml.framework.ptnet;singleton:=true
-Bundle-Version: 2.2.12
+Bundle-Version: 2.2.13
 Bundle-ClassPath: .
 Bundle-Vendor: Sorbonne Universités,
  UPMC Univ Paris 06,
  CNRS UMR 7606 (LIP6)
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: fr.lip6.move.pnml.ptnet;
   uses:="org.eclipse.emf.ecore,
    org.apache.axiom.om,
@@ -37,7 +37,7 @@ Export-Package: fr.lip6.move.pnml.ptnet;
    org.eclipse.emf.common.notify.impl,
    fr.lip6.move.pnml.ptnet,
    org.eclipse.emf.ecore.util"
-Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.12",
+Require-Bundle: fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.13",
  org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  fr.lip6.pnml.framework.utils
