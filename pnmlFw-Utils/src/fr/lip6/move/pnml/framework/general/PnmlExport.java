@@ -61,7 +61,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 	private static final String VALIDATION_AGAINST_GRAMMAR = "Validation against grammar...";
 	private static final String WRITING_TO_PNML_FILE_OK = "Writing to PNML file ok";
 	private static final String TO_PNML = "toPNML";
-	private static final String ISO_8859_1 = "ISO-8859-1";
+	private static final String UTF_8 = "UTF-8";
 	/**
 	 * the file name.
 	 */
@@ -380,7 +380,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 		for (int i = 0; i < iterations; i++) {
 			res.add(src.substring(i * len,
 					Math.min(src.length(), (i + 1) * len)).getBytes(
-					Charset.forName(ISO_8859_1)));
+					Charset.forName(UTF_8)));
 		}
 		return res;
 	}

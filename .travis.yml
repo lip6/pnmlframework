@@ -4,9 +4,7 @@ before_script:
  - echo "MAVEN_OPTS='-Xmx3g'" > ~/.mavenrc
 
 script: 
-  - "./build.sh"
-  - cd pnmlFw-Releng ; mvn clean package -Pall ; cd -
-  - cd pnmlFw-Releng ; mvn install -Pall ; cd -
+  - cd pnmlFw-Releng ; mvn generate-sources install -Pall ; cd -
   - ls -lah PnmlFramework_UpdateSite
 
 deploy:
