@@ -18,10 +18,10 @@
 		<pnml.release>2.2.14</pnml.release>
 		<pnml.release.doc>2.2.14</pnml.release.doc>
 		<pnml.snapshot>2.2.14-SNAPSHOT</pnml.snapshot>
-		<tycho.version>1.4.0</tycho.version>
-		<tycho-extras.version>1.4.0</tycho-extras.version>
-		<eclipse-repo.url>http://download.eclipse.org/releases/2019-09</eclipse-repo.url>
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository/</orbit-site>		
+		<tycho.version>1.6.0</tycho.version>
+		<tycho-extras.version>1.6.0</tycho-extras.version>
+		<eclipse-repo.url>http://download.eclipse.org/releases/2019-12</eclipse-repo.url>
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -251,6 +251,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<configuration>
+				<executionEnvironmentDefault>JavaSE-11</executionEnvironmentDefault>
 					<pomDependencies>consider</pomDependencies>
 					<environments>
 						<environment>
