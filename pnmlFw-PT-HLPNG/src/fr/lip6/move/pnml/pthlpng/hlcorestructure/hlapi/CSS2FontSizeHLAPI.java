@@ -32,14 +32,11 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontSize;
-public enum CSS2FontSizeHLAPI{
-	XXSMALL("XXSMALL"),
-	XSMALL("XSMALL"),
-	SMALL("SMALL"),
-	MEDIUM("MEDIUM"),
-	LARGE("LARGE"),
-	XLARGE("XLARGE"),
+
+public enum CSS2FontSizeHLAPI {
+	XXSMALL("XXSMALL"), XSMALL("XSMALL"), SMALL("SMALL"), MEDIUM("MEDIUM"), LARGE("LARGE"), XLARGE("XLARGE"),
 	XXLARGE("XXLARGE");
 
 	private final CSS2FontSize item;
@@ -47,41 +44,42 @@ public enum CSS2FontSizeHLAPI{
 	private CSS2FontSizeHLAPI(String name) {
 		this.item = CSS2FontSize.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static CSS2FontSizeHLAPI get(int num) {
-	
-      if(num == 0){
-         return XXSMALL;
-      }
-	
-      if(num == 1){
-         return XSMALL;
-      }
-	
-      if(num == 2){
-         return SMALL;
-      }
-	
-      if(num == 3){
-         return MEDIUM;
-      }
-	
-      if(num == 4){
-         return LARGE;
-      }
-	
-      if(num == 5){
-         return XLARGE;
-      }
-	
-      if(num == 6){
-         return XXLARGE;
-      }
-	
+
+		if (num == 0) {
+			return XXSMALL;
+		}
+
+		if (num == 1) {
+			return XSMALL;
+		}
+
+		if (num == 2) {
+			return SMALL;
+		}
+
+		if (num == 3) {
+			return MEDIUM;
+		}
+
+		if (num == 4) {
+			return LARGE;
+		}
+
+		if (num == 5) {
+			return XLARGE;
+		}
+
+		if (num == 6) {
+			return XXLARGE;
+		}
+
 		return null;
 	}
 
@@ -89,5 +87,4 @@ public enum CSS2FontSizeHLAPI{
 		return item;
 	}
 
-	
 }

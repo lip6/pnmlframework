@@ -62,9 +62,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Add</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Add</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -72,8 +71,8 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class AddImpl extends MultisetOperatorImpl implements Add {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected AddImpl() {
@@ -81,8 +80,8 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -90,24 +89,24 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 		return MultisetsPackage.Literals.ADD;
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -125,13 +124,13 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -174,22 +173,22 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 1
 		@SuppressWarnings("unused")
 		MultisetsFactory fact = MultisetsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -412,30 +411,30 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -458,13 +457,13 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -566,4 +565,4 @@ public class AddImpl extends MultisetOperatorImpl implements Add {
 		return retour;
 
 	}
-} //AddImpl
+} // AddImpl

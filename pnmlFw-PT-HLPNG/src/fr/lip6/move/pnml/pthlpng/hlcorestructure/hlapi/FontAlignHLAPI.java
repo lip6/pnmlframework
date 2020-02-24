@@ -32,36 +32,37 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign;
-public enum FontAlignHLAPI{
-	LEFT("LEFT"),
-	CENTER("CENTER"),
-	RIGHT("RIGHT");
+
+public enum FontAlignHLAPI {
+	LEFT("LEFT"), CENTER("CENTER"), RIGHT("RIGHT");
 
 	private final FontAlign item;
 
 	private FontAlignHLAPI(String name) {
 		this.item = FontAlign.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static FontAlignHLAPI get(int num) {
-	
-      if(num == 0){
-         return LEFT;
-      }
-	
-      if(num == 1){
-         return CENTER;
-      }
-	
-      if(num == 2){
-         return RIGHT;
-      }
-	
+
+		if (num == 0) {
+			return LEFT;
+		}
+
+		if (num == 1) {
+			return CENTER;
+		}
+
+		if (num == 2) {
+			return RIGHT;
+		}
+
 		return null;
 	}
 
@@ -69,5 +70,4 @@ public enum FontAlignHLAPI{
 		return item;
 	}
 
-	
 }

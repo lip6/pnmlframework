@@ -43,16 +43,18 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Declaration</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Declaration</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getId <em>Id</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getName <em>Name</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations <em>Container Declarations</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getId
+ * <em>Id</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getName
+ * <em>Name</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations
+ * <em>Container Declarations</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,13 +64,14 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface TermsDeclaration extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Id</b></em>' attribute. <!-- begin-user-doc
+	 * -->
 	 * <p>
-	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTermsDeclaration_Id()
@@ -79,9 +82,10 @@ public interface TermsDeclaration extends EObject {
 	String getId();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getId <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getId <em>Id</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Id</em>' attribute.
 	 * @see #getId()
 	 * @generated
@@ -89,26 +93,29 @@ public interface TermsDeclaration extends EObject {
 	void setId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTermsDeclaration_Name()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='name' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='name'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getName
+	 * <em>Name</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Name</em>' attribute.
 	 * @see #getName()
 	 * @generated
@@ -116,15 +123,18 @@ public interface TermsDeclaration extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Declarations</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getDeclaration <em>Declaration</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Declarations</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getDeclaration
+	 * <em>Declaration</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Declarations</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Declarations</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Declarations</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Declarations</em>' container
+	 *         reference.
 	 * @see #setContainerDeclarations(Declarations)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTermsDeclaration_ContainerDeclarations()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Declarations#getDeclaration
@@ -134,10 +144,13 @@ public interface TermsDeclaration extends EObject {
 	Declarations getContainerDeclarations();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations <em>Container Declarations</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Declarations</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations
+	 * <em>Container Declarations</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Declarations</em>' container
+	 *              reference.
 	 * @see #getContainerDeclarations()
 	 * @generated
 	 */
@@ -145,8 +158,8 @@ public interface TermsDeclaration extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

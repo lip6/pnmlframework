@@ -65,15 +65,17 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Name</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Name</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getText <em>Text</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getContainerNamePetriNet <em>Container Name Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getContainerNamePnObject <em>Container Name Pn Object</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getText
+ * <em>Text</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getContainerNamePetriNet
+ * <em>Container Name Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NameImpl#getContainerNamePnObject
+ * <em>Container Name Pn Object</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,9 +83,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class NameImpl extends AnnotationImpl implements Name {
 	/**
-	 * The default value of the '{@link #getText() <em>Text</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getText() <em>Text</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getText()
 	 * @generated
 	 * @ordered
@@ -91,9 +93,9 @@ public class NameImpl extends AnnotationImpl implements Name {
 	protected static final String TEXT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getText()
 	 * @generated
 	 * @ordered
@@ -101,8 +103,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	protected String text = TEXT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NameImpl() {
@@ -110,8 +112,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -120,8 +122,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -130,8 +132,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -143,8 +145,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -155,8 +157,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNamePetriNet(PetriNet newContainerNamePetriNet, NotificationChain msgs) {
@@ -166,14 +168,15 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNamePetriNet(PetriNet newContainerNamePetriNet) {
 		if (newContainerNamePetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET && newContainerNamePetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET
+						&& newContainerNamePetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamePetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -186,14 +189,13 @@ public class NameImpl extends AnnotationImpl implements Name {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET, newContainerNamePetriNet,
-					newContainerNamePetriNet));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.NAME__CONTAINER_NAME_PETRI_NET,
+					newContainerNamePetriNet, newContainerNamePetriNet));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -204,8 +206,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNamePnObject(PnObject newContainerNamePnObject, NotificationChain msgs) {
@@ -215,14 +217,15 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNamePnObject(PnObject newContainerNamePnObject) {
 		if (newContainerNamePnObject != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT && newContainerNamePnObject != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT
+						&& newContainerNamePnObject != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamePnObject))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -235,14 +238,13 @@ public class NameImpl extends AnnotationImpl implements Name {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT, newContainerNamePnObject,
-					newContainerNamePnObject));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.NAME__CONTAINER_NAME_PN_OBJECT,
+					newContainerNamePnObject, newContainerNamePnObject));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -261,8 +263,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -277,8 +279,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -295,8 +297,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -313,8 +315,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -334,8 +336,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -355,8 +357,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -373,8 +375,8 @@ public class NameImpl extends AnnotationImpl implements Name {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -394,10 +396,10 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 3
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 3
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -415,13 +417,13 @@ public class NameImpl extends AnnotationImpl implements Name {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -484,22 +486,22 @@ public class NameImpl extends AnnotationImpl implements Name {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//3
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 3
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -513,7 +515,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -523,7 +525,7 @@ public class NameImpl extends AnnotationImpl implements Name {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));
@@ -538,10 +540,10 @@ public class NameImpl extends AnnotationImpl implements Name {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 3
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 3
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -564,13 +566,13 @@ public class NameImpl extends AnnotationImpl implements Name {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -688,4 +690,4 @@ public class NameImpl extends AnnotationImpl implements Name {
 		return retour;
 
 	}
-} //NameImpl
+} // NameImpl

@@ -50,16 +50,16 @@ import fr.lip6.move.pnml.pthlpng.multisets.ScalarProduct;
 import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Factory</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static MultisetsFactory init() {
@@ -76,9 +76,9 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public MultisetsFactoryImpl() {
@@ -86,8 +86,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -117,8 +117,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -128,8 +128,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -139,8 +139,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -150,8 +150,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -161,8 +161,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -172,8 +172,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -183,8 +183,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -194,8 +194,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -205,8 +205,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -216,8 +216,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -226,8 +226,8 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @deprecated
 	 * @generated
 	 */
@@ -236,4 +236,4 @@ public class MultisetsFactoryImpl extends EFactoryImpl implements MultisetsFacto
 		return MultisetsPackage.eINSTANCE;
 	}
 
-} //MultisetsFactoryImpl
+} // MultisetsFactoryImpl

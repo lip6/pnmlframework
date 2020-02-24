@@ -42,36 +42,44 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Node Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Node
+ * Graphics</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition <em>Position</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getDimension <em>Dimension</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill <em>Fill</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode <em>Container Node</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage <em>Container Page</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition
+ * <em>Position</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getDimension
+ * <em>Dimension</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill
+ * <em>Fill</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode
+ * <em>Container Node</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage
+ * <em>Container Page</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics'
+ *        kind='son'"
  * @generated
  */
 public interface NodeGraphics extends Graphics {
 	/**
-	 * Returns the value of the '<em><b>Position</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics <em>Container PNode Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Position</b></em>' containment reference. It
+	 * is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics
+	 * <em>Container PNode Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Position</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Position</em>' containment reference.
 	 * @see #setPosition(Position)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_Position()
@@ -83,9 +91,11 @@ public interface NodeGraphics extends Graphics {
 	Position getPosition();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition <em>Position</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition
+	 * <em>Position</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Position</em>' containment reference.
 	 * @see #getPosition()
 	 * @generated
@@ -94,13 +104,15 @@ public interface NodeGraphics extends Graphics {
 
 	/**
 	 * Returns the value of the '<em><b>Dimension</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Dimension#getContainerDNodeGraphics <em>Container DNode Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Dimension#getContainerDNodeGraphics
+	 * <em>Container DNode Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Dimension</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Dimension</em>' containment reference.
 	 * @see #setDimension(Dimension)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_Dimension()
@@ -112,9 +124,11 @@ public interface NodeGraphics extends Graphics {
 	Dimension getDimension();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getDimension <em>Dimension</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getDimension
+	 * <em>Dimension</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Dimension</em>' containment reference.
 	 * @see #getDimension()
 	 * @generated
@@ -122,14 +136,16 @@ public interface NodeGraphics extends Graphics {
 	void setDimension(Dimension value);
 
 	/**
-	 * Returns the value of the '<em><b>Fill</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics <em>Container Node Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Fill</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics
+	 * <em>Container Node Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Fill</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Fill</em>' containment reference.
 	 * @see #setFill(Fill)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_Fill()
@@ -141,9 +157,11 @@ public interface NodeGraphics extends Graphics {
 	Fill getFill();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill <em>Fill</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill
+	 * <em>Fill</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Fill</em>' containment reference.
 	 * @see #getFill()
 	 * @generated
@@ -151,14 +169,16 @@ public interface NodeGraphics extends Graphics {
 	void setFill(Fill value);
 
 	/**
-	 * Returns the value of the '<em><b>Line</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics <em>Container Node Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Line</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics
+	 * <em>Container Node Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Line</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Line</em>' containment reference.
 	 * @see #setLine(Line)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_Line()
@@ -170,9 +190,11 @@ public interface NodeGraphics extends Graphics {
 	Line getLine();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine
+	 * <em>Line</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Line</em>' containment reference.
 	 * @see #getLine()
 	 * @generated
@@ -180,14 +202,16 @@ public interface NodeGraphics extends Graphics {
 	void setLine(Line value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Node</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics <em>Nodegraphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Node</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics
+	 * <em>Nodegraphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Node</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Node</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Node</em>' container reference.
 	 * @see #setContainerNode(Node)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_ContainerNode()
@@ -198,24 +222,29 @@ public interface NodeGraphics extends Graphics {
 	Node getContainerNode();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode <em>Container Node</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Node</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode
+	 * <em>Container Node</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Node</em>' container
+	 *              reference.
 	 * @see #getContainerNode()
 	 * @generated
 	 */
 	void setContainerNode(Node value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Page</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics <em>Nodegraphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Page</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics
+	 * <em>Nodegraphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Page</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Page</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Page</em>' container reference.
 	 * @see #setContainerPage(Page)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNodeGraphics_ContainerPage()
@@ -226,10 +255,13 @@ public interface NodeGraphics extends Graphics {
 	Page getContainerPage();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage <em>Container Page</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Page</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage
+	 * <em>Container Page</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Page</em>' container
+	 *              reference.
 	 * @see #getContainerPage()
 	 * @generated
 	 */
@@ -245,8 +277,8 @@ public interface NodeGraphics extends Graphics {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

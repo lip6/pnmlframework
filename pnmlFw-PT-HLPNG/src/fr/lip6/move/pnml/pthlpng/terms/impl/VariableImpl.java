@@ -62,13 +62,13 @@ import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Variable</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Variable</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableImpl#getVariableDecl <em>Variable Decl</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableImpl#getVariableDecl
+ * <em>Variable Decl</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,9 +76,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class VariableImpl extends TermImpl implements Variable {
 	/**
-	 * The cached value of the '{@link #getVariableDecl() <em>Variable Decl</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getVariableDecl() <em>Variable Decl</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getVariableDecl()
 	 * @generated
 	 * @ordered
@@ -86,8 +86,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	protected VariableDecl variableDecl;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected VariableImpl() {
@@ -95,8 +95,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -105,8 +105,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -124,8 +124,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public VariableDecl basicGetVariableDecl() {
@@ -133,8 +133,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,13 +142,13 @@ public class VariableImpl extends TermImpl implements Variable {
 		VariableDecl oldVariableDecl = variableDecl;
 		variableDecl = newVariableDecl;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.VARIABLE__VARIABLE_DECL,
-					oldVariableDecl, variableDecl));
+			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.VARIABLE__VARIABLE_DECL, oldVariableDecl,
+					variableDecl));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -163,8 +163,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -178,8 +178,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -193,8 +193,8 @@ public class VariableImpl extends TermImpl implements Variable {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -206,18 +206,18 @@ public class VariableImpl extends TermImpl implements Variable {
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -235,7 +235,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getVariableDecl() != null) {
 			sb.append(" refvariable");
@@ -247,7 +247,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -260,18 +260,18 @@ public class VariableImpl extends TermImpl implements Variable {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//1
-		//0
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 1
+		// 0
+		// 0
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -281,9 +281,9 @@ public class VariableImpl extends TermImpl implements Variable {
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -293,18 +293,18 @@ public class VariableImpl extends TermImpl implements Variable {
 
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -327,7 +327,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getVariableDecl() != null) {
 			sb.append(" refvariable");
@@ -339,7 +339,7 @@ public class VariableImpl extends TermImpl implements Variable {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -392,4 +392,4 @@ public class VariableImpl extends TermImpl implements Variable {
 		return retour;
 
 	}
-} //VariableImpl
+} // VariableImpl

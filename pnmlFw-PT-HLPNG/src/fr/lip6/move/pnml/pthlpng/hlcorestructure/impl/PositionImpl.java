@@ -64,14 +64,15 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Position;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Position</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Position</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PositionImpl#getContainerArcGraphics <em>Container Arc Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PositionImpl#getContainerPNodeGraphics <em>Container PNode Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PositionImpl#getContainerArcGraphics
+ * <em>Container Arc Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PositionImpl#getContainerPNodeGraphics
+ * <em>Container PNode Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -79,8 +80,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class PositionImpl extends CoordinateImpl implements Position {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PositionImpl() {
@@ -88,8 +89,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -98,8 +99,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,8 +111,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerArcGraphics(ArcGraphics newContainerArcGraphics, NotificationChain msgs) {
@@ -121,14 +122,15 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_ARC_GRAPHICS
+						&& newContainerArcGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArcGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -147,8 +149,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -159,8 +161,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPNodeGraphics(NodeGraphics newContainerPNodeGraphics,
@@ -171,14 +173,15 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPNodeGraphics(NodeGraphics newContainerPNodeGraphics) {
 		if (newContainerPNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS && newContainerPNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.POSITION__CONTAINER_PNODE_GRAPHICS
+						&& newContainerPNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -197,8 +200,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -217,8 +220,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -233,8 +236,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -251,8 +254,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -267,8 +270,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -285,8 +288,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -303,8 +306,8 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -323,10 +326,10 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -344,7 +347,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -363,7 +366,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -376,20 +379,20 @@ public class PositionImpl extends CoordinateImpl implements Position {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//2
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 2
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("x")) != null) {
 			try {
@@ -407,7 +410,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -416,10 +419,10 @@ public class PositionImpl extends CoordinateImpl implements Position {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -442,7 +445,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -461,7 +464,7 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -514,4 +517,4 @@ public class PositionImpl extends CoordinateImpl implements Position {
 		return retour;
 
 	}
-} //PositionImpl
+} // PositionImpl

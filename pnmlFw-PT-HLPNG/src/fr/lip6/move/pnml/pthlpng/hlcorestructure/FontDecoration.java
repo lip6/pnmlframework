@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Font Decoration</b></em>',
- * and utility methods for working with them.
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>Font Decoration</b></em>', and utility methods for working with them.
  * <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFontDecoration()
  * @model
  * @generated
  */
 public enum FontDecoration implements Enumerator {
 	/**
-	 * The '<em><b>UNDERLINE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>UNDERLINE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #UNDERLINE_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum FontDecoration implements Enumerator {
 	UNDERLINE(0, "UNDERLINE", "UNDERLINE"),
 
 	/**
-	 * The '<em><b>OVERLINE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>OVERLINE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #OVERLINE_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum FontDecoration implements Enumerator {
 	OVERLINE(1, "OVERLINE", "OVERLINE"),
 
 	/**
-	 * The '<em><b>LINETHROUGH</b></em>' literal object.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LINETHROUGH</b></em>' literal object. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LINETHROUGH_VALUE
 	 * @generated
 	 * @ordered
@@ -78,13 +78,13 @@ public enum FontDecoration implements Enumerator {
 	LINETHROUGH(2, "LINETHROUGH", "LINETHROUGH");
 
 	/**
-	 * The '<em><b>UNDERLINE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>UNDERLINE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>UNDERLINE</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #UNDERLINE
 	 * @model
 	 * @generated
@@ -93,13 +93,13 @@ public enum FontDecoration implements Enumerator {
 	public static final int UNDERLINE_VALUE = 0;
 
 	/**
-	 * The '<em><b>OVERLINE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>OVERLINE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>OVERLINE</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #OVERLINE
 	 * @model
 	 * @generated
@@ -108,13 +108,13 @@ public enum FontDecoration implements Enumerator {
 	public static final int OVERLINE_VALUE = 1;
 
 	/**
-	 * The '<em><b>LINETHROUGH</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LINETHROUGH</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>LINETHROUGH</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LINETHROUGH
 	 * @model
 	 * @generated
@@ -123,25 +123,25 @@ public enum FontDecoration implements Enumerator {
 	public static final int LINETHROUGH_VALUE = 2;
 
 	/**
-	 * An array of all the '<em><b>Font Decoration</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>Font Decoration</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final FontDecoration[] VALUES_ARRAY = new FontDecoration[] { UNDERLINE, OVERLINE, LINETHROUGH, };
 
 	/**
-	 * A public read-only list of all the '<em><b>Font Decoration</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>Font Decoration</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<FontDecoration> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontDecoration get(String literal) {
@@ -155,9 +155,9 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified
+	 * name. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontDecoration getByName(String name) {
@@ -171,9 +171,9 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Font Decoration</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontDecoration get(int value) {
@@ -189,30 +189,30 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private FontDecoration(int value, String name, String literal) {
@@ -222,8 +222,8 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -231,8 +231,8 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -240,8 +240,8 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -249,9 +249,9 @@ public enum FontDecoration implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -259,4 +259,4 @@ public enum FontDecoration implements Enumerator {
 		return literal;
 	}
 
-} //FontDecoration
+} // FontDecoration

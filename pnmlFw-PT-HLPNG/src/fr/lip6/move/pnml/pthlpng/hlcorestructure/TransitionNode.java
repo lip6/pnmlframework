@@ -43,14 +43,14 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Transition Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Transition Node</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode#getReferencingTransitions <em>Referencing Transitions</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode#getReferencingTransitions
+ * <em>Referencing Transitions</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,15 +60,18 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface TransitionNode extends Node {
 	/**
-	 * Returns the value of the '<em><b>Referencing Transitions</b></em>' reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef <em>Ref</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Referencing Transitions</b></em>' reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef
+	 * <em>Ref</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Referencing Transitions</em>' reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Referencing Transitions</em>' reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Referencing Transitions</em>' reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getTransitionNode_ReferencingTransitions()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef
@@ -81,8 +84,8 @@ public interface TransitionNode extends Node {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

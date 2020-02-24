@@ -53,16 +53,19 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Pn Object</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Pn
+ * Object</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getName <em>Name</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getToolspecifics <em>Toolspecifics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getContainerPage <em>Container Page</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getName
+ * <em>Name</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getToolspecifics
+ * <em>Toolspecifics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PnObjectImpl#getContainerPage
+ * <em>Container Page</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,9 +73,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
  */
 public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObject {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -80,9 +83,9 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -90,9 +93,9 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -100,9 +103,9 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	protected Name name;
 
 	/**
-	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getToolspecifics()
 	 * @generated
 	 * @ordered
@@ -110,8 +113,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	protected EList<ToolInfo> toolspecifics;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PnObjectImpl() {
@@ -119,8 +122,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -129,8 +132,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -139,8 +142,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -152,8 +155,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -162,8 +165,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetName(Name newName, NotificationChain msgs) {
@@ -181,8 +184,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -204,8 +207,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -219,8 +222,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -231,8 +234,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPage(Page newContainerPage, NotificationChain msgs) {
@@ -242,14 +245,15 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PN_OBJECT__CONTAINER_PAGE && newContainerPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PN_OBJECT__CONTAINER_PAGE
+						&& newContainerPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -267,8 +271,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -277,8 +281,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 		switch (featureID) {
 		case HlcorestructurePackage.PN_OBJECT__NAME:
 			if (name != null)
-				msgs = ((InternalEObject) name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PN_OBJECT__NAME, null, msgs);
+				msgs = ((InternalEObject) name).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PN_OBJECT__NAME, null, msgs);
 			return basicSetName((Name) otherEnd, msgs);
 		case HlcorestructurePackage.PN_OBJECT__TOOLSPECIFICS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getToolspecifics()).basicAdd(otherEnd, msgs);
@@ -291,8 +295,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -309,8 +313,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -323,8 +327,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -343,8 +347,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -369,8 +373,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -393,8 +397,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -413,8 +417,8 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -431,4 +435,4 @@ public abstract class PnObjectImpl extends MinimalEObjectImpl implements PnObjec
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //PnObjectImpl
+} // PnObjectImpl

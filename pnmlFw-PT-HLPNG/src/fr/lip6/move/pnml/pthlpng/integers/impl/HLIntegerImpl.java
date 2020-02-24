@@ -55,9 +55,8 @@ import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>HL Integer</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>HL
+ * Integer</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -65,8 +64,8 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected HLIntegerImpl() {
@@ -74,8 +73,8 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -88,10 +87,10 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -109,12 +108,12 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -127,22 +126,22 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 0
 		@SuppressWarnings("unused")
 		IntegersFactory fact = IntegersFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -151,10 +150,10 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -177,12 +176,12 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -235,4 +234,4 @@ public class HLIntegerImpl extends HLPNNumberImpl implements HLInteger {
 		return retour;
 
 	}
-} //HLIntegerImpl
+} // HLIntegerImpl

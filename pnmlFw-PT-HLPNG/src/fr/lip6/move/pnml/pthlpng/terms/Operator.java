@@ -43,53 +43,60 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Operator</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getSubterm <em>Subterm</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getOutput <em>Output</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getInput <em>Input</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getSubterm
+ * <em>Subterm</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getOutput
+ * <em>Output</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getInput
+ * <em>Input</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getOperator()
- * @model abstract="true"
- *        annotation="http://www.pnml.org/models/OCL sameOperatorNTermSort='self.sort = self.output'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='sameOperatorNTermSort'"
+ * @model abstract="true" annotation="http://www.pnml.org/models/OCL
+ *        sameOperatorNTermSort='self.sort = self.output'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='sameOperatorNTermSort'"
  * @generated
  */
 public interface Operator extends Term {
 	/**
-	 * Returns the value of the '<em><b>Subterm</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.Term}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator <em>Container Operator</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Subterm</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.terms.Term}. It is bidirectional and its
+	 * opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator
+	 * <em>Container Operator</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Subterm</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Subterm</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Subterm</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getOperator_Subterm()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator
 	 * @model opposite="containerOperator" containment="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='subterm' kind='follow' toBeFollowed='yes'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='subterm'
+	 *        kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	List<Term> getSubterm();
 
 	/**
-	 * Returns the value of the '<em><b>Output</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Output</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Output</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Output</em>' reference isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Output</em>' reference.
 	 * @see #setOutput(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getOperator_Output()
@@ -99,9 +106,10 @@ public interface Operator extends Term {
 	Sort getOutput();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getOutput <em>Output</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getOutput <em>Output</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Output</em>' reference.
 	 * @see #getOutput()
 	 * @generated
@@ -109,14 +117,15 @@ public interface Operator extends Term {
 	void setOutput(Sort value);
 
 	/**
-	 * Returns the value of the '<em><b>Input</b></em>' reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.Sort}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Input</b></em>' reference list. The list
+	 * contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.Sort}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Input</em>' reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Input</em>' reference list isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Input</em>' reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getOperator_Input()
 	 * @model derived="true"
@@ -128,8 +137,8 @@ public interface Operator extends Term {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

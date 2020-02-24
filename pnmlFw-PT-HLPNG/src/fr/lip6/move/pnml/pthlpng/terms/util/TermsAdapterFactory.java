@@ -59,26 +59,25 @@ import fr.lip6.move.pnml.pthlpng.terms.Variable;
 import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Adapter Factory</b> for the model.
- * It provides an adapter <code>createXXX</code> method for each class of the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides
+ * an adapter <code>createXXX</code> method for each class of the model. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage
  * @generated
  */
 public class TermsAdapterFactory extends AdapterFactoryImpl {
 	/**
-	 * The cached model package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static TermsPackage modelPackage;
 
 	/**
-	 * Creates an instance of the adapter factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the adapter factory. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public TermsAdapterFactory() {
@@ -88,10 +87,11 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Returns whether this factory is applicable for the type of the object.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns <code>true</code> if the object is either the model's package or is an instance object of the model.
+	 * Returns whether this factory is applicable for the type of the object. <!--
+	 * begin-user-doc --> This implementation returns <code>true</code> if the
+	 * object is either the model's package or is an instance object of the model.
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return whether this factory is applicable for the type of the object.
 	 * @generated
 	 */
@@ -107,9 +107,9 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * The switch that delegates to the <code>createXXX</code> methods.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The switch that delegates to the <code>createXXX</code> methods. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TermsSwitch<Adapter> modelSwitch = new TermsSwitch<Adapter>() {
@@ -220,9 +220,9 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	};
 
 	/**
-	 * Creates an adapter for the <code>target</code>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param target the object to adapt.
 	 * @return the adapter for the <code>target</code>.
 	 * @generated
@@ -233,11 +233,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations <em>Declarations</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations <em>Declarations</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Declarations
 	 * @generated
@@ -247,11 +248,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration <em>Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration
+	 * <em>Declaration</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration
 	 * @generated
@@ -261,11 +263,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Sort <em>Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort <em>Sort</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort
 	 * @generated
@@ -275,11 +278,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort <em>Multiset Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort <em>Multiset
+	 * Sort</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.MultisetSort
 	 * @generated
@@ -289,11 +293,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Term <em>Term</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term <em>Term</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term
 	 * @generated
@@ -303,11 +308,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Operator <em>Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Operator <em>Operator</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Operator
 	 * @generated
@@ -317,11 +323,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl <em>Variable Decl</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl <em>Variable
+	 * Decl</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.VariableDecl
 	 * @generated
@@ -331,11 +338,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Variable <em>Variable</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Variable <em>Variable</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Variable
 	 * @generated
@@ -345,11 +353,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInSort <em>Built In Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInSort <em>Built In Sort</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.BuiltInSort
 	 * @generated
@@ -359,11 +368,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.ProductSort <em>Product Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.ProductSort <em>Product Sort</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.ProductSort
 	 * @generated
@@ -373,11 +383,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant <em>Built In Constant</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant <em>Built In
+	 * Constant</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant
 	 * @generated
@@ -387,11 +398,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetOperator <em>Multiset Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetOperator <em>Multiset
+	 * Operator</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.MultisetOperator
 	 * @generated
@@ -401,11 +413,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.Tuple <em>Tuple</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Tuple <em>Tuple</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Tuple
 	 * @generated
@@ -415,11 +428,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.SortDecl <em>Sort Decl</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.SortDecl <em>Sort Decl</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.SortDecl
 	 * @generated
@@ -429,11 +443,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator <em>Built In Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator <em>Built In
+	 * Operator</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator
 	 * @generated
@@ -443,11 +458,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort <em>Named Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort <em>Named Sort</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.NamedSort
 	 * @generated
@@ -457,11 +473,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.UserSort <em>User Sort</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.UserSort <em>User Sort</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.UserSort
 	 * @generated
@@ -471,11 +488,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.OperatorDecl <em>Operator Decl</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.OperatorDecl <em>Operator
+	 * Decl</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.OperatorDecl
 	 * @generated
@@ -485,11 +503,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator <em>Named Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator <em>Named
+	 * Operator</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.NamedOperator
 	 * @generated
@@ -499,11 +518,12 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator <em>User Operator</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator <em>User
+	 * Operator</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.UserOperator
 	 * @generated
@@ -513,10 +533,9 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for the default case.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for the default case. <!-- begin-user-doc --> This
+	 * default implementation returns null. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @generated
 	 */
@@ -524,4 +543,4 @@ public class TermsAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //TermsAdapterFactory
+} // TermsAdapterFactory

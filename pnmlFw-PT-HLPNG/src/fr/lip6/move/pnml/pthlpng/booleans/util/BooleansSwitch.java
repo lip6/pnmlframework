@@ -53,31 +53,28 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
 import fr.lip6.move.pnml.pthlpng.terms.Term;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Switch</b> for the model's inheritance hierarchy.
- * It supports the call {@link #doSwitch(EObject) doSwitch(object)}
+ * <!-- begin-user-doc --> The <b>Switch</b> for the model's inheritance
+ * hierarchy. It supports the call {@link #doSwitch(EObject) doSwitch(object)}
  * to invoke the <code>caseXXX</code> method for each class of the model,
- * starting with the actual class of the object
- * and proceeding up the inheritance hierarchy
- * until a non-null result is returned,
- * which is the result of the switch.
- * <!-- end-user-doc -->
+ * starting with the actual class of the object and proceeding up the
+ * inheritance hierarchy until a non-null result is returned, which is the
+ * result of the switch. <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage
  * @generated
  */
 public class BooleansSwitch<T> extends Switch<T> {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static BooleansPackage modelPackage;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public BooleansSwitch() {
@@ -87,9 +84,9 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Checks whether this is a switch for the given package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Checks whether this is a switch for the given package. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @parameter ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
@@ -100,9 +97,10 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a
+	 * non null result; it yields that result. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @return the first non-null result returned by a <code>caseXXX</code> call.
 	 * @generated
 	 */
@@ -234,13 +232,14 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Equality</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Equality</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Equality</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Equality</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -249,13 +248,14 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Inequality</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Inequality</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Inequality</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Inequality</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -264,13 +264,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Boolean Constant</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Boolean
+	 * Constant</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Boolean Constant</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Boolean
+	 *         Constant</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -279,13 +279,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Or</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Or</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Or</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Or</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -294,13 +294,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Boolean Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Boolean
+	 * Operator</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Boolean Operator</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Boolean
+	 *         Operator</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -309,13 +309,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>And</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>And</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>And</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>And</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -324,13 +324,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Imply</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Imply</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Imply</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Imply</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -339,13 +339,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Not</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Not</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Not</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Not</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -354,13 +354,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Bool</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Bool</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Bool</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Bool</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -369,13 +369,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Term</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Term</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Term</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Term</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -384,13 +384,14 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Operator</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Operator</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Operator</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -399,13 +400,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Built In Constant</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Built In
+	 * Constant</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Built In Constant</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Built In
+	 *         Constant</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -414,13 +415,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Built In Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Built In
+	 * Operator</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Built In Operator</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Built In
+	 *         Operator</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -429,13 +430,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sort</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Sort</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sort</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Sort</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -444,13 +445,13 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Built In Sort</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Built In
+	 * Sort</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Built In Sort</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Built In
+	 *         Sort</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -459,13 +460,14 @@ public class BooleansSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch, but this is the last case anyway.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>EObject</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch, but this is the last
+	 * case anyway. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>EObject</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
@@ -474,4 +476,4 @@ public class BooleansSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //BooleansSwitch
+} // BooleansSwitch

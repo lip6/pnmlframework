@@ -44,21 +44,28 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Font</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Font</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getAlign <em>Align</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getDecoration <em>Decoration</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getFamily <em>Family</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getRotation <em>Rotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getSize <em>Size</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getStyle <em>Style</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getWeight <em>Weight</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getAlign
+ * <em>Align</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getDecoration
+ * <em>Decoration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getFamily
+ * <em>Family</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getRotation
+ * <em>Rotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getSize
+ * <em>Size</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getStyle
+ * <em>Style</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getWeight
+ * <em>Weight</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -68,29 +75,32 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface Font extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Align</b></em>' attribute.
-	 * The default value is <code>"LEFT"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Align</b></em>' attribute. The default value
+	 * is <code>"LEFT"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Align</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Align</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Align</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign
 	 * @see #setAlign(FontAlign)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Align()
 	 * @model default="LEFT" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='align' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='align'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	FontAlign getAlign();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getAlign <em>Align</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getAlign
+	 * <em>Align</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Align</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.FontAlign
 	 * @see #getAlign()
@@ -99,29 +109,33 @@ public interface Font extends EObject {
 	void setAlign(FontAlign value);
 
 	/**
-	 * Returns the value of the '<em><b>Decoration</b></em>' attribute.
-	 * The default value is <code>"UNDERLINE"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.FontDecoration}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Decoration</b></em>' attribute. The default
+	 * value is <code>"UNDERLINE"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.FontDecoration}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Decoration</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Decoration</em>' attribute isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Decoration</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.FontDecoration
 	 * @see #setDecoration(FontDecoration)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Decoration()
 	 * @model default="UNDERLINE" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='decoration' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='decoration'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	FontDecoration getDecoration();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getDecoration <em>Decoration</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getDecoration
+	 * <em>Decoration</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @param value the new value of the '<em>Decoration</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.FontDecoration
 	 * @see #getDecoration()
@@ -130,29 +144,32 @@ public interface Font extends EObject {
 	void setDecoration(FontDecoration value);
 
 	/**
-	 * Returns the value of the '<em><b>Family</b></em>' attribute.
-	 * The default value is <code>"VERDANA"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontFamily}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Family</b></em>' attribute. The default
+	 * value is <code>"VERDANA"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontFamily}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Family</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Family</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Family</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontFamily
 	 * @see #setFamily(CSS2FontFamily)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Family()
 	 * @model default="VERDANA" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='family' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='family'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2FontFamily getFamily();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getFamily <em>Family</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getFamily
+	 * <em>Family</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Family</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontFamily
 	 * @see #getFamily()
@@ -161,26 +178,28 @@ public interface Font extends EObject {
 	void setFamily(CSS2FontFamily value);
 
 	/**
-	 * Returns the value of the '<em><b>Rotation</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Rotation</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Rotation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Rotation</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Rotation</em>' attribute.
 	 * @see #setRotation(BigDecimal)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Rotation()
-	 * @model ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='rotation' kind='attribute'"
+	 * @model ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='rotation' kind='attribute'"
 	 * @generated
 	 */
 	BigDecimal getRotation();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getRotation <em>Rotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getRotation
+	 * <em>Rotation</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Rotation</em>' attribute.
 	 * @see #getRotation()
 	 * @generated
@@ -188,29 +207,32 @@ public interface Font extends EObject {
 	void setRotation(BigDecimal value);
 
 	/**
-	 * Returns the value of the '<em><b>Size</b></em>' attribute.
-	 * The default value is <code>"SMALL"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontSize}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Size</b></em>' attribute. The default value
+	 * is <code>"SMALL"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontSize}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Size</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Size</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Size</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontSize
 	 * @see #setSize(CSS2FontSize)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Size()
 	 * @model default="SMALL" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='size' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='size'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2FontSize getSize();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getSize <em>Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getSize
+	 * <em>Size</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Size</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontSize
 	 * @see #getSize()
@@ -219,29 +241,32 @@ public interface Font extends EObject {
 	void setSize(CSS2FontSize value);
 
 	/**
-	 * Returns the value of the '<em><b>Style</b></em>' attribute.
-	 * The default value is <code>"NORMAL"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontStyle}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Style</b></em>' attribute. The default value
+	 * is <code>"NORMAL"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontStyle}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Style</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Style</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Style</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontStyle
 	 * @see #setStyle(CSS2FontStyle)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Style()
 	 * @model default="NORMAL" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='style' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='style'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2FontStyle getStyle();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getStyle <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getStyle
+	 * <em>Style</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Style</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontStyle
 	 * @see #getStyle()
@@ -250,28 +275,31 @@ public interface Font extends EObject {
 	void setStyle(CSS2FontStyle value);
 
 	/**
-	 * Returns the value of the '<em><b>Weight</b></em>' attribute.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontWeight}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Weight</b></em>' attribute. The literals are
+	 * from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontWeight}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Weight</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Weight</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Weight</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontWeight
 	 * @see #setWeight(CSS2FontWeight)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_Weight()
-	 * @model ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='weight' kind='attribute'"
+	 * @model ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='weight' kind='attribute'"
 	 * @generated
 	 */
 	CSS2FontWeight getWeight();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getWeight <em>Weight</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getWeight
+	 * <em>Weight</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Weight</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontWeight
 	 * @see #getWeight()
@@ -280,15 +308,18 @@ public interface Font extends EObject {
 	void setWeight(CSS2FontWeight value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>'
+	 * container reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont
+	 * <em>Font</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Annotation Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Annotation Graphics</em>' container
+	 * reference isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Annotation Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerAnnotationGraphics(AnnotationGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont_ContainerAnnotationGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont
@@ -298,10 +329,13 @@ public interface Font extends EObject {
 	AnnotationGraphics getContainerAnnotationGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}' container reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Annotation Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerAnnotationGraphics()
 	 * @generated
 	 */
@@ -315,8 +349,8 @@ public interface Font extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

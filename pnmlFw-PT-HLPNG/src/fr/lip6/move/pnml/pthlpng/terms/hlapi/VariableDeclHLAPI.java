@@ -52,8 +52,7 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsFactory;
 import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
-
-public class VariableDeclHLAPI implements HLAPIClass,TermsDeclarationHLAPI{
+public class VariableDeclHLAPI implements HLAPIClass, TermsDeclarationHLAPI {
 
 	/**
 	 * The contained LLAPI element.
@@ -61,134 +60,112 @@ public class VariableDeclHLAPI implements HLAPIClass,TermsDeclarationHLAPI{
 	private VariableDecl item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public VariableDeclHLAPI(
-		 java.lang.String id
-	
-		, java.lang.String name
-	
-		, SortHLAPI sort
-	) throws InvalidIDException ,VoidRepositoryException {//BEGIN CONSTRUCTOR BODY
+
+	public VariableDeclHLAPI(java.lang.String id
+
+			, java.lang.String name
+
+			, SortHLAPI sort) throws InvalidIDException, VoidRepositoryException {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createVariableDecl();}
-	
- 		
-			if(id!=null){
-			
-				item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
-			}
-		
-	
- 		
-			if(name!=null){
-			
-				item.setName(name);
-			}
-		
-	
- 		
- 		if(sort!=null)
-			item.setSort((Sort)sort.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createVariableDecl();
+		}
+
+		if (id != null) {
+
+			item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
+		}
+
+		if (name != null) {
+
+			item.setName(name);
+		}
+
+		if (sort != null)
+			item.setSort((Sort) sort.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public VariableDeclHLAPI(
-		 java.lang.String id
-	
-		, java.lang.String name
-	
-		, SortHLAPI sort
-	
-		, DeclarationsHLAPI containerDeclarations
-	) throws InvalidIDException ,VoidRepositoryException {//BEGIN CONSTRUCTOR BODY
+
+	public VariableDeclHLAPI(java.lang.String id
+
+			, java.lang.String name
+
+			, SortHLAPI sort
+
+			, DeclarationsHLAPI containerDeclarations) throws InvalidIDException, VoidRepositoryException {// BEGIN
+																											// CONSTRUCTOR
+																											// BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createVariableDecl();}
-	
- 		
-			if(id!=null){
-			
-				item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
-			}
-		
-	
- 		
-			if(name!=null){
-			
-				item.setName(name);
-			}
-		
-	
- 		
- 		if(sort!=null)
-			item.setSort((Sort)sort.getContainedItem());
-		
-	
- 		
- 		if(containerDeclarations!=null)
-			item.setContainerDeclarations((Declarations)containerDeclarations.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createVariableDecl();
+		}
+
+		if (id != null) {
+
+			item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
+		}
+
+		if (name != null) {
+
+			item.setName(name);
+		}
+
+		if (sort != null)
+			item.setSort((Sort) sort.getContainedItem());
+
+		if (containerDeclarations != null)
+			item.setContainerDeclarations((Declarations) containerDeclarations.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public VariableDeclHLAPI(
-		 java.lang.String id
-	
-		, java.lang.String name
-	
-		, SortHLAPI sort
-	
-		, NamedOperatorHLAPI containerNamedOperator
-	) throws InvalidIDException ,VoidRepositoryException {//BEGIN CONSTRUCTOR BODY
+
+	public VariableDeclHLAPI(java.lang.String id
+
+			, java.lang.String name
+
+			, SortHLAPI sort
+
+			, NamedOperatorHLAPI containerNamedOperator) throws InvalidIDException, VoidRepositoryException {// BEGIN
+																												// CONSTRUCTOR
+																												// BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createVariableDecl();}
-	
- 		
-			if(id!=null){
-			
-				item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
-			}
-		
-	
- 		
-			if(name!=null){
-			
-				item.setName(name);
-			}
-		
-	
- 		
- 		if(sort!=null)
-			item.setSort((Sort)sort.getContainedItem());
-		
-	
- 		
- 		if(containerNamedOperator!=null)
-			item.setContainerNamedOperator((NamedOperator)containerNamedOperator.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createVariableDecl();
+		}
+
+		if (id != null) {
+
+			item.setId(ModelRepository.getInstance().getCurrentIdRepository().checkId(id, this));
+		}
+
+		if (name != null) {
+
+			item.setName(name);
+		}
+
+		if (sort != null)
+			item.setSort((Sort) sort.getContainedItem());
+
+		if (containerNamedOperator != null)
+			item.setContainerNamedOperator((NamedOperator) containerNamedOperator.getContainedItem());
+
 	}
-
-
-
-	
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public VariableDeclHLAPI(VariableDecl lowLevelAPI){
+	public VariableDeclHLAPI(VariableDecl lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -196,249 +173,233 @@ public class VariableDeclHLAPI implements HLAPIClass,TermsDeclarationHLAPI{
 	/**
 	 * Return encapsulated object
 	 */
-	public VariableDecl getContainedItem(){
+	public VariableDecl getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public String getId(){
+	public String getId() {
 		return item.getId();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public String getName(){
+	public String getName() {
 		return item.getName();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Declarations getContainerDeclarations(){
+	public Declarations getContainerDeclarations() {
 		return item.getContainerDeclarations();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Sort getSort(){
+	public Sort getSort() {
 		return item.getSort();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public NamedOperator getContainerNamedOperator(){
+	public NamedOperator getContainerNamedOperator() {
 		return item.getContainerNamedOperator();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public DeclarationsHLAPI getContainerDeclarationsHLAPI(){
-			if(item.getContainerDeclarations() == null) return null;
-			return new DeclarationsHLAPI(item.getContainerDeclarations());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		
-		public SortHLAPI getSortHLAPI(){
-			if(item.getSort() == null) return null;
-			Sort object = item.getSort();
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI((fr.lip6.move.pnml.pthlpng.terms.MultisetSort)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI((fr.lip6.move.pnml.pthlpng.terms.ProductSort)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI((fr.lip6.move.pnml.pthlpng.terms.UserSort)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI((fr.lip6.move.pnml.pthlpng.booleans.Bool)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI((fr.lip6.move.pnml.pthlpng.integers.Natural)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI((fr.lip6.move.pnml.pthlpng.integers.Positive)object);
-			}
-			
-			if(object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
-				return new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI((fr.lip6.move.pnml.pthlpng.integers.HLInteger)object);
-			}
-			
+	// getters giving HLAPI object
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public DeclarationsHLAPI getContainerDeclarationsHLAPI() {
+		if (item.getContainerDeclarations() == null)
 			return null;
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public NamedOperatorHLAPI getContainerNamedOperatorHLAPI(){
-			if(item.getContainerNamedOperator() == null) return null;
-			return new NamedOperatorHLAPI(item.getContainerNamedOperator());
-		}
-		
-	
-	
+		return new DeclarationsHLAPI(item.getContainerDeclarations());
+	}
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public SortHLAPI getSortHLAPI() {
+		if (item.getSort() == null)
+			return null;
+		Sort object = item.getSort();
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(
+					(fr.lip6.move.pnml.pthlpng.terms.MultisetSort) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI(
+					(fr.lip6.move.pnml.pthlpng.terms.ProductSort) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI(
+					(fr.lip6.move.pnml.pthlpng.terms.UserSort) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI(
+					(fr.lip6.move.pnml.pthlpng.booleans.Bool) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+					(fr.lip6.move.pnml.pthlpng.integers.Natural) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+					(fr.lip6.move.pnml.pthlpng.integers.Positive) object);
+		}
+
+		if (object.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)) {
+			return new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+					(fr.lip6.move.pnml.pthlpng.integers.HLInteger) object);
+		}
+
+		return null;
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public NamedOperatorHLAPI getContainerNamedOperatorHLAPI() {
+		if (item.getContainerNamedOperator() == null)
+			return null;
+		return new NamedOperatorHLAPI(item.getContainerNamedOperator());
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Id
 	 */
 	public void setIdHLAPI(
-	
-	java.lang.String elem) throws InvalidIDException ,VoidRepositoryException   {
-	
-	
-		if(elem!=null){
-		
-			try{
-			item.setId(ModelRepository.getInstance().getCurrentIdRepository().changeId(this, elem));
-			}catch (OtherException e){
-			ModelRepository.getInstance().getCurrentIdRepository().checkId(elem, this);
+
+			java.lang.String elem) throws InvalidIDException, VoidRepositoryException {
+
+		if (elem != null) {
+
+			try {
+				item.setId(ModelRepository.getInstance().getCurrentIdRepository().changeId(this, elem));
+			} catch (OtherException e) {
+				ModelRepository.getInstance().getCurrentIdRepository().checkId(elem, this);
 			}
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Name
 	 */
 	public void setNameHLAPI(
-	
-	java.lang.String elem){
-	
-	
-		if(elem!=null){
-		
+
+			java.lang.String elem) {
+
+		if (elem != null) {
+
 			item.setName(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Sort
 	 */
 	public void setSortHLAPI(
-	
-	SortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setSort((Sort)elem.getContainedItem());
-	
+
+			SortHLAPI elem) {
+
+		if (elem != null)
+			item.setSort((Sort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerDeclarations
 	 */
 	public void setContainerDeclarationsHLAPI(
-	
-	DeclarationsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerDeclarations((Declarations)elem.getContainedItem());
-	
+
+			DeclarationsHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerDeclarations((Declarations) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerNamedOperator
 	 */
 	public void setContainerNamedOperatorHLAPI(
-	
-	NamedOperatorHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerNamedOperator((NamedOperator)elem.getContainedItem());
-	
+
+			NamedOperatorHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerNamedOperator((NamedOperator) elem.getContainedItem());
+
 	}
-	
 
-	//setters/remover for lists.
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(VariableDeclHLAPI item){
+	// equals method
+	public boolean equals(VariableDeclHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

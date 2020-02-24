@@ -49,25 +49,25 @@ import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage
  * @generated
  */
 public class PartitionsValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final PartitionsValidator INSTANCE = new PartitionsValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -75,33 +75,35 @@ public class PartitionsValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.partitions";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached base package validator. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	protected TermsValidator termsValidator;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public PartitionsValidator() {
@@ -110,9 +112,9 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -122,12 +124,13 @@ public class PartitionsValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case PartitionsPackage.PARTITION:
 			return validatePartition((Partition) value, diagnostics, context);
@@ -147,8 +150,8 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartition(Partition partition, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -156,8 +159,8 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartitionElement(PartitionElement partitionElement, DiagnosticChain diagnostics,
@@ -185,9 +188,9 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the constantsType constraint of '<em>Partition Element</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the constantsType constraint of '<em>Partition Element</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartitionElement_constantsType(PartitionElement partitionElement,
@@ -198,10 +201,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "constantsType", getObjectLabel(partitionElement, context) },
-						new Object[] { partitionElement }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "constantsType", getObjectLabel(partitionElement, context) },
+								new Object[] { partitionElement }, context));
 			}
 			return false;
 		}
@@ -209,11 +212,12 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(greaterThan, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(greaterThan, diagnostics, context);
@@ -239,9 +243,9 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Greater Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Greater Than</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGreaterThan_inputOutputTypes(GreaterThan greaterThan, DiagnosticChain diagnostics,
@@ -252,10 +256,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(greaterThan, context) },
-						new Object[] { greaterThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(greaterThan, context) },
+								new Object[] { greaterThan }, context));
 			}
 			return false;
 		}
@@ -263,8 +267,8 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartitionElementOf(PartitionElementOf partitionElementOf, DiagnosticChain diagnostics,
@@ -295,8 +299,8 @@ public class PartitionsValidator extends EObjectValidator {
 
 	/**
 	 * Validates the inputOutputTypes constraint of '<em>Partition Element Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartitionElementOf_inputOutputTypes(PartitionElementOf partitionElementOf,
@@ -307,10 +311,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(partitionElementOf, context) },
-						new Object[] { partitionElementOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(partitionElementOf, context) },
+								new Object[] { partitionElementOf }, context));
 			}
 			return false;
 		}
@@ -318,8 +322,8 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePartitionOperator(PartitionOperator partitionOperator, DiagnosticChain diagnostics,
@@ -347,8 +351,8 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThan(LessThan lessThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -377,9 +381,9 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Less Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Less Than</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThan_inputOutputTypes(LessThan lessThan, DiagnosticChain diagnostics,
@@ -390,10 +394,10 @@ public class PartitionsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(lessThan, context) },
-						new Object[] { lessThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(lessThan, context) },
+								new Object[] { lessThan }, context));
 			}
 			return false;
 		}
@@ -401,17 +405,18 @@ public class PartitionsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //PartitionsValidator
+} // PartitionsValidator

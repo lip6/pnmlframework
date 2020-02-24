@@ -67,13 +67,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Ref Transition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Ref
+ * Transition</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.RefTransitionImpl#getRef <em>Ref</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.RefTransitionImpl#getRef
+ * <em>Ref</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,9 +81,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class RefTransitionImpl extends TransitionNodeImpl implements RefTransition {
 	/**
-	 * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getRef() <em>Ref</em>}' reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getRef()
 	 * @generated
 	 * @ordered
@@ -91,8 +91,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	protected TransitionNode ref;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected RefTransitionImpl() {
@@ -100,8 +100,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,8 +110,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -129,8 +129,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public TransitionNode basicGetRef() {
@@ -138,8 +138,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetRef(TransitionNode newRef, NotificationChain msgs) {
@@ -157,8 +157,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -180,8 +180,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -197,8 +197,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -211,8 +211,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -227,8 +227,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -242,8 +242,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -257,8 +257,8 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -270,24 +270,25 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingTransitions) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingTransitions) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 1
-		//attributes 0
-		//sons 3
+		// id 1
+		// idref 1
+		// attributes 0
+		// sons 3
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -305,7 +306,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -325,7 +326,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -384,16 +385,16 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//1
-		//0
-		//3
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 1
+		// 0
+		// 3
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -401,7 +402,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -411,9 +412,9 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -427,7 +428,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -437,7 +438,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -447,7 +448,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -459,24 +460,25 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingTransitions) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingTransitions) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 1
-		//attributes 0
-		//sons 3
+		// id 1
+		// idref 1
+		// attributes 0
+		// sons 3
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -499,7 +501,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -519,7 +521,7 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -637,4 +639,4 @@ public class RefTransitionImpl extends TransitionNodeImpl implements RefTransiti
 		return retour;
 
 	}
-} //RefTransitionImpl
+} // RefTransitionImpl

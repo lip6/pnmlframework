@@ -43,16 +43,18 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Node</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getInArcs <em>In Arcs</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getOutArcs <em>Out Arcs</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics <em>Nodegraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getInArcs <em>In
+ * Arcs</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getOutArcs <em>Out
+ * Arcs</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics
+ * <em>Nodegraphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,15 +64,17 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface Node extends PnObject {
 	/**
-	 * Returns the value of the '<em><b>In Arcs</b></em>' reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget <em>Target</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>In Arcs</b></em>' reference list. The list
+	 * contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc}.
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget
+	 * <em>Target</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>In Arcs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>In Arcs</em>' reference list isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>In Arcs</em>' reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNode_InArcs()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget
@@ -80,15 +84,17 @@ public interface Node extends PnObject {
 	List<Arc> getInArcs();
 
 	/**
-	 * Returns the value of the '<em><b>Out Arcs</b></em>' reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource <em>Source</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Out Arcs</b></em>' reference list. The list
+	 * contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc}.
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource
+	 * <em>Source</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Out Arcs</em>' reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Out Arcs</em>' reference list isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Out Arcs</em>' reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNode_OutArcs()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource
@@ -98,14 +104,16 @@ public interface Node extends PnObject {
 	List<Arc> getOutArcs();
 
 	/**
-	 * Returns the value of the '<em><b>Nodegraphics</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode <em>Container Node</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Nodegraphics</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerNode
+	 * <em>Container Node</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Nodegraphics</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Nodegraphics</em>' containment reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Nodegraphics</em>' containment reference.
 	 * @see #setNodegraphics(NodeGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getNode_Nodegraphics()
@@ -117,10 +125,13 @@ public interface Node extends PnObject {
 	NodeGraphics getNodegraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics <em>Nodegraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nodegraphics</em>' containment reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getNodegraphics
+	 * <em>Nodegraphics</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Nodegraphics</em>' containment
+	 *              reference.
 	 * @see #getNodegraphics()
 	 * @generated
 	 */
@@ -130,8 +141,8 @@ public interface Node extends PnObject {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

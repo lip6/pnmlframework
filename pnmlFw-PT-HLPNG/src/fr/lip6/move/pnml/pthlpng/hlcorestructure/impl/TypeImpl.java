@@ -69,14 +69,15 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Type</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Type</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TypeImpl#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TypeImpl#getContainerPlace <em>Container Place</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TypeImpl#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TypeImpl#getContainerPlace
+ * <em>Container Place</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,9 +85,9 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
  */
 public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	/**
-	 * The cached value of the '{@link #getStructure() <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStructure() <em>Structure</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStructure()
 	 * @generated
 	 * @ordered
@@ -94,8 +95,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	protected Sort structure;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TypeImpl() {
@@ -103,8 +104,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -113,8 +114,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -123,8 +124,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetStructure(Sort newStructure, NotificationChain msgs) {
@@ -142,8 +143,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -151,11 +152,11 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		if (newStructure != structure) {
 			NotificationChain msgs = null;
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, TermsPackage.SORT__CONTAINER_TYPE,
-						Sort.class, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this, TermsPackage.SORT__CONTAINER_TYPE, Sort.class,
+						msgs);
 			if (newStructure != null)
-				msgs = ((InternalEObject) newStructure).eInverseAdd(this, TermsPackage.SORT__CONTAINER_TYPE,
-						Sort.class, msgs);
+				msgs = ((InternalEObject) newStructure).eInverseAdd(this, TermsPackage.SORT__CONTAINER_TYPE, Sort.class,
+						msgs);
 			msgs = basicSetStructure(newStructure, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -165,8 +166,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,8 +178,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPlace(Place newContainerPlace, NotificationChain msgs) {
@@ -188,14 +189,15 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPlace(Place newContainerPlace) {
 		if (newContainerPlace != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE && newContainerPlace != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TYPE__CONTAINER_PLACE
+						&& newContainerPlace != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPlace))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -213,8 +215,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -222,8 +224,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		switch (featureID) {
 		case HlcorestructurePackage.TYPE__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TYPE__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TYPE__STRUCTURE, null, msgs);
 			return basicSetStructure((Sort) otherEnd, msgs);
 		case HlcorestructurePackage.TYPE__CONTAINER_PLACE:
 			if (eInternalContainer() != null)
@@ -234,8 +236,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -250,8 +252,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -264,8 +266,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -280,8 +282,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -298,8 +300,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -316,8 +318,8 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -336,10 +338,10 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -357,13 +359,13 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -446,22 +448,22 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -475,7 +477,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -485,7 +487,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));
@@ -546,7 +548,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -557,10 +559,10 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -583,13 +585,13 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -731,4 +733,4 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		return retour;
 
 	}
-} //TypeImpl
+} // TypeImpl

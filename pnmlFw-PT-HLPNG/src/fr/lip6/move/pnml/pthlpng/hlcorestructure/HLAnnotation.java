@@ -43,46 +43,53 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.Term;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>HL Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>HL
+ * Annotation</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc <em>Container Arc</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc
+ * <em>Container Arc</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getHLAnnotation()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='hlinscription' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='hlinscription'
+ *        kind='son'"
  * @generated
  */
 public interface HLAnnotation extends HLCoreAnnotation {
 	/**
 	 * Returns the value of the '<em><b>Structure</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation <em>Container HL Annotation</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation
+	 * <em>Container HL Annotation</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Structure</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Structure</em>' containment reference.
 	 * @see #setStructure(Term)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getHLAnnotation_Structure()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation
 	 * @model opposite="containerHLAnnotation" containment="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure' kind='follow' toBeFollowed='yes'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure'
+	 *        kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	Term getStructure();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure
+	 * <em>Structure</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Structure</em>' containment reference.
 	 * @see #getStructure()
 	 * @generated
@@ -91,13 +98,15 @@ public interface HLAnnotation extends HLCoreAnnotation {
 
 	/**
 	 * Returns the value of the '<em><b>Container Arc</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription <em>Hlinscription</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription
+	 * <em>Hlinscription</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Arc</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Arc</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Arc</em>' container reference.
 	 * @see #setContainerArc(Arc)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getHLAnnotation_ContainerArc()
@@ -108,10 +117,13 @@ public interface HLAnnotation extends HLCoreAnnotation {
 	Arc getContainerArc();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc <em>Container Arc</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Arc</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc
+	 * <em>Container Arc</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Arc</em>' container
+	 *              reference.
 	 * @see #getContainerArc()
 	 * @generated
 	 */
@@ -127,8 +139,8 @@ public interface HLAnnotation extends HLCoreAnnotation {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

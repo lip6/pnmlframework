@@ -43,33 +43,62 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Product Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Product
+ * Sort</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.ProductSort#getElementSort <em>Element Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.ProductSort#getElementSort
+ * <em>Element Sort</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getProductSort()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='productsort' kind='son'"
- *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t// Someone may one day inherit from ProductSort, so we should\n\t\t\t\t// strictly check for ProductSort only. Further sub-classes must \n\t\t\t\t//override this method.\n\t\t\t\tif (\"ProductSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tProductSort mySort = (ProductSort) this;\n\t\t\t\t\tProductSort thatSort = (ProductSort) sort;\n\t\t\t\t\tList<Sort> myElements = mySort.getElementSort();\n\t\t\t\t\tList<Sort> thoseElements = thatSort.getElementSort();\n\t\t\t\t\tint i = 0;\n\t\t\t\t\tint j = 0;\n\t\t\t\t\tfor (; i < myElements.size() && j < thoseElements.size(); i++, j++) {\n\t\t\t\t\t\tif (myElements\n\t\t\t\t\t\t\t\t.get(i)\n\t\t\t\t\t\t\t\t.eClass()\n\t\t\t\t\t\t\t\t.getName()\n\t\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t\tthoseElements.get(j).eClass().getName())) {\n\t\t\t\t\t\t\tisEqual = true;\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tisEqual = false;\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\t\t\n\t\t\t}\n\t\t}\n\t\treturn isEqual;' documentation='/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r \052/'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='productsort'
+ *        kind='son'" annotation="http://www.pnml.org/models/methods/SORT
+ *        signature='boolean equalSorts(Sort sort)' body='boolean isEqual =
+ *        false;\n\t\tif
+ *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
+ *        {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&&
+ *        sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual =
+ *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}
+ *        else {\n\t\t\t\t// Someone may one day inherit from ProductSort, so we
+ *        should\n\t\t\t\t// strictly check for ProductSort only. Further
+ *        sub-classes must \n\t\t\t\t//override this method.\n\t\t\t\tif
+ *        (\"ProductSort\".equalsIgnoreCase(this.eClass().getName()))
+ *        {\n\t\t\t\t\tProductSort mySort = (ProductSort)
+ *        this;\n\t\t\t\t\tProductSort thatSort = (ProductSort)
+ *        sort;\n\t\t\t\t\tList<Sort> myElements =
+ *        mySort.getElementSort();\n\t\t\t\t\tList<Sort> thoseElements =
+ *        thatSort.getElementSort();\n\t\t\t\t\tint i = 0;\n\t\t\t\t\tint j =
+ *        0;\n\t\t\t\t\tfor (; i < myElements.size() && j <
+ *        thoseElements.size(); i++, j++) {\n\t\t\t\t\t\tif
+ *        (myElements\n\t\t\t\t\t\t\t\t.get(i)\n\t\t\t\t\t\t\t\t.eClass()\n\t\t\t\t\t\t\t\t.getName()\n\t\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t\tthoseElements.get(j).eClass().getName()))
+ *        {\n\t\t\t\t\t\t\tisEqual = true;\n\t\t\t\t\t\t} else
+ *        {\n\t\t\t\t\t\t\tisEqual =
+ *        false;\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\t\t\n\t\t\t}\n\t\t}\n\t\treturn
+ *        isEqual;' documentation='/**\r * Returns true if this sort and
+ *        argument sort are actually \r * semantically the same sort, even in
+ *        two different objects.\r * Ex: two FiniteEnumerations or two
+ *        Integers.\r * @return true if so. \r * @param sort the sort to which
+ *        we compare this one. \r \052/'"
  * @generated
  */
 public interface ProductSort extends Sort {
 	/**
-	 * Returns the value of the '<em><b>Element Sort</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.Sort}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerProductSort <em>Container Product Sort</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Element Sort</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.terms.Sort}. It is bidirectional and its
+	 * opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerProductSort
+	 * <em>Container Product Sort</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Element Sort</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Element Sort</em>' containment reference list
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Element Sort</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getProductSort_ElementSort()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerProductSort
@@ -89,8 +118,8 @@ public interface ProductSort extends Sort {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

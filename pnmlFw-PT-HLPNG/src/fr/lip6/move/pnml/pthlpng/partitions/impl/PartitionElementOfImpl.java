@@ -68,13 +68,13 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Partition Element Of</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Partition Element Of</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementOfImpl#getRefpartition <em>Refpartition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementOfImpl#getRefpartition
+ * <em>Refpartition</em>}</li>
  * </ul>
  * </p>
  *
@@ -82,9 +82,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class PartitionElementOfImpl extends PartitionOperatorImpl implements PartitionElementOf {
 	/**
-	 * The cached value of the '{@link #getRefpartition() <em>Refpartition</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getRefpartition() <em>Refpartition</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getRefpartition()
 	 * @generated
 	 * @ordered
@@ -92,8 +92,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	protected Partition refpartition;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PartitionElementOfImpl() {
@@ -101,8 +101,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -111,8 +111,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -130,8 +130,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Partition basicGetRefpartition() {
@@ -139,8 +139,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -153,8 +153,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -169,8 +169,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -184,8 +184,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -199,8 +199,8 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -212,24 +212,24 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -247,7 +247,7 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getRefpartition() != null) {
 			sb.append(" refpartition");
@@ -260,7 +260,7 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -303,18 +303,18 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//1
-		//0
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 1
+		// 0
+		// 1
 		@SuppressWarnings("unused")
 		PartitionsFactory fact = PartitionsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -324,9 +324,9 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -549,7 +549,7 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -561,24 +561,24 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -601,7 +601,7 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getRefpartition() != null) {
 			sb.append(" refpartition");
@@ -614,7 +614,7 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -716,4 +716,4 @@ public class PartitionElementOfImpl extends PartitionOperatorImpl implements Par
 		return retour;
 
 	}
-} //PartitionElementOfImpl
+} // PartitionElementOfImpl

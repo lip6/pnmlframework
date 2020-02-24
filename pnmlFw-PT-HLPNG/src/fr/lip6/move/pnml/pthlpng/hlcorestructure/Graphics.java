@@ -43,9 +43,8 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Graphics</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getGraphics()
@@ -56,8 +55,8 @@ public interface Graphics extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

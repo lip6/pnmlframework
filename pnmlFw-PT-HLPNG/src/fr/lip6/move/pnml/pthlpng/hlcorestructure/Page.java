@@ -43,17 +43,20 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Page</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Page</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getObjects <em>Objects</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getContainerPetriNet <em>Container Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics <em>Nodegraphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getObjects
+ * <em>Objects</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getContainerPetriNet
+ * <em>Container Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics
+ * <em>Nodegraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
@@ -63,15 +66,18 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface Page extends PnObject {
 	/**
-	 * Returns the value of the '<em><b>Objects</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage <em>Container Page</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Objects</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage
+	 * <em>Container Page</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Objects</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Objects</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Objects</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPage_Objects()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage
@@ -82,14 +88,16 @@ public interface Page extends PnObject {
 	List<PnObject> getObjects();
 
 	/**
-	 * Returns the value of the '<em><b>Container Petri Net</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getPages <em>Pages</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Petri Net</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getPages
+	 * <em>Pages</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Petri Net</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Petri Net</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Petri Net</em>' container reference.
 	 * @see #setContainerPetriNet(PetriNet)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPage_ContainerPetriNet()
@@ -100,24 +108,29 @@ public interface Page extends PnObject {
 	PetriNet getContainerPetriNet();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getContainerPetriNet <em>Container Petri Net</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getContainerPetriNet
+	 * <em>Container Petri Net</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Petri Net</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Petri Net</em>' container
+	 *              reference.
 	 * @see #getContainerPetriNet()
 	 * @generated
 	 */
 	void setContainerPetriNet(PetriNet value);
 
 	/**
-	 * Returns the value of the '<em><b>Nodegraphics</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage <em>Container Page</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Nodegraphics</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getContainerPage
+	 * <em>Container Page</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Nodegraphics</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Nodegraphics</em>' containment reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Nodegraphics</em>' containment reference.
 	 * @see #setNodegraphics(NodeGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPage_Nodegraphics()
@@ -129,25 +142,31 @@ public interface Page extends PnObject {
 	NodeGraphics getNodegraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics <em>Nodegraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Nodegraphics</em>' containment reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getNodegraphics
+	 * <em>Nodegraphics</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Nodegraphics</em>' containment
+	 *              reference.
 	 * @see #getNodegraphics()
 	 * @generated
 	 */
 	void setNodegraphics(NodeGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getContainerDeclarationPage <em>Container Declaration Page</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getContainerDeclarationPage
+	 * <em>Container Declaration Page</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Declaration</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Declaration</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Declaration</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPage_Declaration()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getContainerDeclarationPage
@@ -167,8 +186,8 @@ public interface Page extends PnObject {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

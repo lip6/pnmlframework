@@ -45,177 +45,130 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Page;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
-public interface PlaceNodeHLAPI extends HLAPIClass,PnObjectHLAPI,NodeHLAPI{
+public interface PlaceNodeHLAPI extends HLAPIClass, PnObjectHLAPI, NodeHLAPI {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public String getId();
-	
+
 	/**
 	 *
 	 */
 	public Name getName();
-	
+
 	/**
 	 *
 	 */
 	public List<ToolInfo> getToolspecifics();
-	
+
 	/**
 	 *
 	 */
 	public Page getContainerPage();
-	
+
 	/**
 	 *
 	 */
 	public List<Arc> getInArcs();
-	
+
 	/**
 	 *
 	 */
 	public List<Arc> getOutArcs();
-	
+
 	/**
 	 *
 	 */
 	public NodeGraphics getNodegraphics();
-	
+
 	/**
 	 *
 	 */
 	public List<RefPlace> getReferencingPlaces();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public NameHLAPI getNameHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public PageHLAPI getContainerPageHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ArcHLAPI> getInArcsHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ArcHLAPI> getOutArcsHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public NodeGraphicsHLAPI getNodegraphicsHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<RefPlaceHLAPI> getReferencingPlacesHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public NameHLAPI getNameHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public PageHLAPI getContainerPageHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<ArcHLAPI> getInArcsHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<ArcHLAPI> getOutArcsHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public NodeGraphicsHLAPI getNodegraphicsHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<RefPlaceHLAPI> getReferencingPlacesHLAPI();
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Id
 	 */
-	public void setIdHLAPI(
-	java.lang.String elem) throws InvalidIDException ,VoidRepositoryException;
-	
+	public void setIdHLAPI(java.lang.String elem) throws InvalidIDException, VoidRepositoryException;
+
 	/**
 	 * set Name
 	 */
-	public void setNameHLAPI(
-	NameHLAPI elem);
-	
+	public void setNameHLAPI(NameHLAPI elem);
+
 	/**
 	 * set Nodegraphics
 	 */
-	public void setNodegraphicsHLAPI(
-	NodeGraphicsHLAPI elem);
-	
+	public void setNodegraphicsHLAPI(NodeGraphicsHLAPI elem);
+
 	/**
 	 * set ContainerPage
 	 */
-	public void setContainerPageHLAPI(
-	PageHLAPI elem);
-	
+	public void setContainerPageHLAPI(PageHLAPI elem);
 
-	
-	
-	
-	
-	
-	
-	
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
 	public void addToolspecificsHLAPI(ToolInfoHLAPI unit);
-	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
-	
 
-	//equals method
+	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
+
+	// equals method
 	public boolean equals(Object item);
 
 }

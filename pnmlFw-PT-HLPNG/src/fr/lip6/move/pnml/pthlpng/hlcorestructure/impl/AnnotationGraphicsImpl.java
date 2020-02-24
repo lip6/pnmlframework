@@ -66,17 +66,21 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Annotation Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Annotation Graphics</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getOffset <em>Offset</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getFill <em>Fill</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getFont <em>Font</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getContainerAnnotation <em>Container Annotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getOffset
+ * <em>Offset</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getFill
+ * <em>Fill</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getFont
+ * <em>Font</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationGraphicsImpl#getContainerAnnotation
+ * <em>Container Annotation</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,9 +88,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGraphics {
 	/**
-	 * The cached value of the '{@link #getOffset() <em>Offset</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getOffset() <em>Offset</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getOffset()
 	 * @generated
 	 * @ordered
@@ -94,9 +98,9 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	protected Offset offset;
 
 	/**
-	 * The cached value of the '{@link #getFill() <em>Fill</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getFill() <em>Fill</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFill()
 	 * @generated
 	 * @ordered
@@ -104,9 +108,9 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	protected Fill fill;
 
 	/**
-	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getLine()
 	 * @generated
 	 * @ordered
@@ -114,9 +118,9 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	protected Line line;
 
 	/**
-	 * The cached value of the '{@link #getFont() <em>Font</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getFont() <em>Font</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFont()
 	 * @generated
 	 * @ordered
@@ -124,8 +128,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	protected Font font;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected AnnotationGraphicsImpl() {
@@ -133,8 +137,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -143,8 +147,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -153,8 +157,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetOffset(Offset newOffset, NotificationChain msgs) {
@@ -172,8 +176,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -195,8 +199,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -205,8 +209,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetFill(Fill newFill, NotificationChain msgs) {
@@ -224,8 +228,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -247,8 +251,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -257,8 +261,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetLine(Line newLine, NotificationChain msgs) {
@@ -276,8 +280,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -299,8 +303,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -309,8 +313,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetFont(Font newFont, NotificationChain msgs) {
@@ -328,8 +332,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -351,8 +355,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -363,8 +367,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerAnnotation(Annotation newContainerAnnotation, NotificationChain msgs) {
@@ -374,14 +378,15 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerAnnotation(Annotation newContainerAnnotation) {
 		if (newContainerAnnotation != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION && newContainerAnnotation != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION
+						&& newContainerAnnotation != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotation))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -400,8 +405,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -409,23 +414,23 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		switch (featureID) {
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET:
 			if (offset != null)
-				msgs = ((InternalEObject) offset).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET, null, msgs);
+				msgs = ((InternalEObject) offset).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__OFFSET, null, msgs);
 			return basicSetOffset((Offset) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL:
 			if (fill != null)
-				msgs = ((InternalEObject) fill).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL, null, msgs);
+				msgs = ((InternalEObject) fill).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__FILL, null, msgs);
 			return basicSetFill((Fill) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT:
 			if (font != null)
-				msgs = ((InternalEObject) font).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT, null, msgs);
+				msgs = ((InternalEObject) font).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION_GRAPHICS__FONT, null, msgs);
 			return basicSetFont((Font) otherEnd, msgs);
 		case HlcorestructurePackage.ANNOTATION_GRAPHICS__CONTAINER_ANNOTATION:
 			if (eInternalContainer() != null)
@@ -436,8 +441,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -458,8 +463,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -473,8 +478,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -495,8 +500,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -522,8 +527,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -549,8 +554,8 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -575,10 +580,10 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -596,13 +601,13 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getOffset() != null) {
 
@@ -672,22 +677,22 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -701,7 +706,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
@@ -711,7 +716,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -721,7 +726,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("font")) {
 				Font item;
@@ -731,7 +736,7 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 				item.setContainerAnnotationGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -742,10 +747,10 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -768,13 +773,13 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getOffset() != null) {
 
@@ -895,4 +900,4 @@ public class AnnotationGraphicsImpl extends GraphicsImpl implements AnnotationGr
 		return retour;
 
 	}
-} //AnnotationGraphicsImpl
+} // AnnotationGraphicsImpl

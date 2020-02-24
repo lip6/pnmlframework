@@ -45,34 +45,41 @@ import fr.lip6.move.pnml.pthlpng.terms.OperatorDecl;
 import fr.lip6.move.pnml.pthlpng.terms.Term;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Partition Element</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Partition Element</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition <em>Refpartition</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getPartitionelementconstants <em>Partitionelementconstants</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition
+ * <em>Refpartition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getPartitionelementconstants
+ * <em>Partitionelementconstants</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElement()
- * @model annotation="http://www.pnml.org/models/OCL constantsType='self.partitionelementconstants->forAll{p | p.sort = self.refpartition.def}'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='constantsType'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelement' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        constantsType='self.partitionelementconstants->forAll{p | p.sort =
+ *        self.refpartition.def}'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='constantsType'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelement'
+ *        kind='son'"
  * @generated
  */
 public interface PartitionElement extends OperatorDecl {
 	/**
 	 * Returns the value of the '<em><b>Refpartition</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getPartitionelements <em>Partitionelements</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getPartitionelements
+	 * <em>Partitionelements</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Refpartition</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Refpartition</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Refpartition</em>' container reference.
 	 * @see #setRefpartition(Partition)
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElement_Refpartition()
@@ -83,29 +90,38 @@ public interface PartitionElement extends OperatorDecl {
 	Partition getRefpartition();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition <em>Refpartition</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Refpartition</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition
+	 * <em>Refpartition</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Refpartition</em>' container
+	 *              reference.
 	 * @see #getRefpartition()
 	 * @generated
 	 */
 	void setRefpartition(Partition value);
 
 	/**
-	 * Returns the value of the '<em><b>Partitionelementconstants</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.Term}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement <em>Container Partition Element</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Partitionelementconstants</b></em>'
+	 * containment reference list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.terms.Term}. It is bidirectional and its
+	 * opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement
+	 * <em>Container Partition Element</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Partitionelementconstants</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Partitionelementconstants</em>' containment
+	 * reference list isn't clear, there really should be more of a description
+	 * here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Partitionelementconstants</em>' containment reference list.
+	 * 
+	 * @return the value of the '<em>Partitionelementconstants</em>' containment
+	 *         reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElement_Partitionelementconstants()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement
-	 * @model opposite="containerPartitionElement" containment="true" required="true" ordered="false"
+	 * @model opposite="containerPartitionElement" containment="true"
+	 *        required="true" ordered="false"
 	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
 	 * @generated
 	 */
@@ -121,8 +137,8 @@ public interface PartitionElement extends OperatorDecl {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

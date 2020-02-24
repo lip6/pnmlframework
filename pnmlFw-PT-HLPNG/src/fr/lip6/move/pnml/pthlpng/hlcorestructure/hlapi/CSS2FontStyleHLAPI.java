@@ -32,36 +32,37 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontStyle;
-public enum CSS2FontStyleHLAPI{
-	NORMAL("NORMAL"),
-	ITALIC("ITALIC"),
-	OBLIQUE("OBLIQUE");
+
+public enum CSS2FontStyleHLAPI {
+	NORMAL("NORMAL"), ITALIC("ITALIC"), OBLIQUE("OBLIQUE");
 
 	private final CSS2FontStyle item;
 
 	private CSS2FontStyleHLAPI(String name) {
 		this.item = CSS2FontStyle.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static CSS2FontStyleHLAPI get(int num) {
-	
-      if(num == 0){
-         return NORMAL;
-      }
-	
-      if(num == 1){
-         return ITALIC;
-      }
-	
-      if(num == 2){
-         return OBLIQUE;
-      }
-	
+
+		if (num == 0) {
+			return NORMAL;
+		}
+
+		if (num == 1) {
+			return ITALIC;
+		}
+
+		if (num == 2) {
+			return OBLIQUE;
+		}
+
 		return null;
 	}
 
@@ -69,5 +70,4 @@ public enum CSS2FontStyleHLAPI{
 		return item;
 	}
 
-	
 }

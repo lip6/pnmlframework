@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>CSS2 Font Family</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>CSS2 Font Family</b></em>', and utility methods for working with
+ * them. <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2FontFamily()
  * @model
  * @generated
  */
 public enum CSS2FontFamily implements Enumerator {
 	/**
-	 * The '<em><b>VERDANA</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>VERDANA</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #VERDANA_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum CSS2FontFamily implements Enumerator {
 	VERDANA(0, "VERDANA", "VERDANA"),
 
 	/**
-	 * The '<em><b>ARIAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>ARIAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #ARIAL_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum CSS2FontFamily implements Enumerator {
 	ARIAL(1, "ARIAL", "ARIAL"),
 
 	/**
-	 * The '<em><b>TIMES</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>TIMES</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #TIMES_VALUE
 	 * @generated
 	 * @ordered
@@ -78,9 +78,9 @@ public enum CSS2FontFamily implements Enumerator {
 	TIMES(2, "TIMES", "TIMES"),
 
 	/**
-	 * The '<em><b>GEORGIA</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>GEORGIA</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #GEORGIA_VALUE
 	 * @generated
 	 * @ordered
@@ -88,9 +88,9 @@ public enum CSS2FontFamily implements Enumerator {
 	GEORGIA(3, "GEORGIA", "GEORGIA"),
 
 	/**
-	 * The '<em><b>TREBUCHET</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>TREBUCHET</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #TREBUCHET_VALUE
 	 * @generated
 	 * @ordered
@@ -98,13 +98,13 @@ public enum CSS2FontFamily implements Enumerator {
 	TREBUCHET(4, "TREBUCHET", "TREBUCHET");
 
 	/**
-	 * The '<em><b>VERDANA</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>VERDANA</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>VERDANA</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>VERDANA</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #VERDANA
 	 * @model
 	 * @generated
@@ -113,13 +113,13 @@ public enum CSS2FontFamily implements Enumerator {
 	public static final int VERDANA_VALUE = 0;
 
 	/**
-	 * The '<em><b>ARIAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>ARIAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>ARIAL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>ARIAL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #ARIAL
 	 * @model
 	 * @generated
@@ -128,13 +128,13 @@ public enum CSS2FontFamily implements Enumerator {
 	public static final int ARIAL_VALUE = 1;
 
 	/**
-	 * The '<em><b>TIMES</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>TIMES</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>TIMES</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>TIMES</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #TIMES
 	 * @model
 	 * @generated
@@ -143,13 +143,13 @@ public enum CSS2FontFamily implements Enumerator {
 	public static final int TIMES_VALUE = 2;
 
 	/**
-	 * The '<em><b>GEORGIA</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>GEORGIA</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>GEORGIA</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>GEORGIA</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #GEORGIA
 	 * @model
 	 * @generated
@@ -158,13 +158,13 @@ public enum CSS2FontFamily implements Enumerator {
 	public static final int GEORGIA_VALUE = 3;
 
 	/**
-	 * The '<em><b>TREBUCHET</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>TREBUCHET</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>TREBUCHET</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #TREBUCHET
 	 * @model
 	 * @generated
@@ -173,26 +173,26 @@ public enum CSS2FontFamily implements Enumerator {
 	public static final int TREBUCHET_VALUE = 4;
 
 	/**
-	 * An array of all the '<em><b>CSS2 Font Family</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>CSS2 Font Family</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final CSS2FontFamily[] VALUES_ARRAY = new CSS2FontFamily[] { VERDANA, ARIAL, TIMES, GEORGIA,
 			TREBUCHET, };
 
 	/**
-	 * A public read-only list of all the '<em><b>CSS2 Font Family</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>CSS2 Font Family</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<CSS2FontFamily> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontFamily get(String literal) {
@@ -206,9 +206,9 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified
+	 * name. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontFamily getByName(String name) {
@@ -222,9 +222,9 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Family</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontFamily get(int value) {
@@ -244,30 +244,30 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private CSS2FontFamily(int value, String name, String literal) {
@@ -277,8 +277,8 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -286,8 +286,8 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -295,8 +295,8 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -304,9 +304,9 @@ public enum CSS2FontFamily implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -314,4 +314,4 @@ public enum CSS2FontFamily implements Enumerator {
 		return literal;
 	}
 
-} //CSS2FontFamily
+} // CSS2FontFamily

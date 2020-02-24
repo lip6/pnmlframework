@@ -66,13 +66,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Transition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Transition</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TransitionImpl#getCondition <em>Condition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TransitionImpl#getCondition
+ * <em>Condition</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,9 +80,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	/**
-	 * The cached value of the '{@link #getCondition() <em>Condition</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getCondition() <em>Condition</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getCondition()
 	 * @generated
 	 * @ordered
@@ -90,8 +90,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	protected Condition condition;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TransitionImpl() {
@@ -99,8 +99,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -109,8 +109,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -119,8 +119,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetCondition(Condition newCondition, NotificationChain msgs) {
@@ -138,8 +138,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -161,8 +161,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -170,16 +170,16 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		switch (featureID) {
 		case HlcorestructurePackage.TRANSITION__CONDITION:
 			if (condition != null)
-				msgs = ((InternalEObject) condition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TRANSITION__CONDITION, null, msgs);
+				msgs = ((InternalEObject) condition).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TRANSITION__CONDITION, null, msgs);
 			return basicSetCondition((Condition) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -192,8 +192,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -206,8 +206,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -221,8 +221,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -236,8 +236,8 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -249,24 +249,25 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingTransitions) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingTransitions) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -284,7 +285,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -297,7 +298,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -368,16 +369,16 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -385,11 +386,11 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -403,7 +404,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -413,7 +414,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -423,7 +424,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("condition")) {
 				Condition item;
@@ -433,30 +434,31 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 				item.setContainerTransition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingTransitions) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingTransitions) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -479,7 +481,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -492,7 +494,7 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -626,4 +628,4 @@ public class TransitionImpl extends TransitionNodeImpl implements Transition {
 		return retour;
 
 	}
-} //TransitionImpl
+} // TransitionImpl

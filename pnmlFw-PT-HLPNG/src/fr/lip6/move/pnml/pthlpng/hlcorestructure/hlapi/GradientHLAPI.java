@@ -32,36 +32,37 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Gradient;
-public enum GradientHLAPI{
-	HORIZONTAL("HORIZONTAL"),
-	VERTICAL("VERTICAL"),
-	DIAGONAL("DIAGONAL");
+
+public enum GradientHLAPI {
+	HORIZONTAL("HORIZONTAL"), VERTICAL("VERTICAL"), DIAGONAL("DIAGONAL");
 
 	private final Gradient item;
 
 	private GradientHLAPI(String name) {
 		this.item = Gradient.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static GradientHLAPI get(int num) {
-	
-      if(num == 0){
-         return HORIZONTAL;
-      }
-	
-      if(num == 1){
-         return VERTICAL;
-      }
-	
-      if(num == 2){
-         return DIAGONAL;
-      }
-	
+
+		if (num == 0) {
+			return HORIZONTAL;
+		}
+
+		if (num == 1) {
+			return VERTICAL;
+		}
+
+		if (num == 2) {
+			return DIAGONAL;
+		}
+
 		return null;
 	}
 
@@ -69,5 +70,4 @@ public enum GradientHLAPI{
 		return item;
 	}
 
-	
 }

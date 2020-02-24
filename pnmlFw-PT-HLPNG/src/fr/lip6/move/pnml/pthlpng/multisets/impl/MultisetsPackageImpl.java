@@ -63,85 +63,85 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsPackageImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Package</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPackage {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cardinalityEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass containsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass cardinalityOfEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass addEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass allEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass emptyEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass numberOfEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass subtractEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass scalarProductEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
+	 * <p>
+	 * Note: the correct way to create the package is via the static factory method
+	 * {@link #init init()}, which also performs initialization of the package, or
+	 * returns the registered package, if one already exists. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
 	 * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#eNS_URI
 	 * @see #init()
@@ -152,19 +152,22 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and
+	 * for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link MultisetsPackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <p>
+	 * This method is used to initialize {@link MultisetsPackage#eINSTANCE} when
+	 * that field is accessed. Clients should not invoke it directly. Instead, they
+	 * should simply access that field to obtain the package. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see #eNS_URI
 	 * @see #createPackageContents()
 	 * @see #initializePackageContents()
@@ -175,29 +178,37 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 			return (MultisetsPackage) EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI);
 
 		// Obtain or create and register package
-		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new MultisetsPackageImpl());
+		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new MultisetsPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI)
+						: BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI)
+						: DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI)
+						: IntegersPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(TermsPackage.eNS_URI) : TermsPackage.eINSTANCE);
+				.getEPackage(TermsPackage.eNS_URI) instanceof TermsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI)
+						: TermsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theMultisetsPackage.createPackageContents();
@@ -234,8 +245,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -244,8 +255,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -254,8 +265,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -264,8 +275,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -274,8 +285,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -284,8 +295,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -294,8 +305,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -304,8 +315,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -314,8 +325,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -324,8 +335,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -334,8 +345,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -344,8 +355,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -354,17 +365,17 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void createPackageContents() {
@@ -395,17 +406,17 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This method is
+	 * guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void initializePackageContents() {
@@ -440,7 +451,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		initEClass(cardinalityEClass, Cardinality.class, "Cardinality", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(containsEClass, Contains.class, "Contains", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(containsEClass, Contains.class, "Contains", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(cardinalityOfEClass, CardinalityOf.class, "CardinalityOf", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -457,9 +469,11 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 				"refsort", null, 1, 1, Empty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(numberOfEClass, NumberOf.class, "NumberOf", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(numberOfEClass, NumberOf.class, "NumberOf", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(subtractEClass, Subtract.class, "Subtract", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(subtractEClass, Subtract.class, "Subtract", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(scalarProductEClass, ScalarProduct.class, "ScalarProduct", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -479,47 +493,35 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * Initializes the annotations for <b>http://www.pnml.org/models/OCL</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for <b>http://www.pnml.org/models/OCL</b>. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createOCLAnnotations() {
 		String source = "http://www.pnml.org/models/OCL";
 		addAnnotation(cardinalityEClass, source, new String[] { "inputOutputTypes",
 				"self.output.oclIsTypeOf(integers::Natural) and self.input.oclIsKindOf(terms::MultisetSort)" });
-		addAnnotation(
-				containsEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2 and self.input->forAll {c | c.oclIsKindOf(terms::MultisetSort)}" });
+		addAnnotation(containsEClass, source, new String[] { "inputOutputTypes",
+				"self.output.oclIsTypeOf(booleans::Bool) and self.input->size() = 2 and self.input->forAll {c | c.oclIsKindOf(terms::MultisetSort)}" });
 		addAnnotation(cardinalityOfEClass, source, new String[] { "inputOutputTypes",
 				"self.output.oclIsTypeOf(integers::Natural) and self.input.size() = 2" });
 		addAnnotation(addEClass, source, new String[] { "inputType",
 				"self.input->size() >= 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)} " });
 		addAnnotation(allEClass, source, new String[] { "inputOutputTypes", "self.input->size() = 0" });
 		addAnnotation(emptyEClass, source, new String[] { "InputSize", "self.input->size = 0" });
-		addAnnotation(
-				numberOfEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.input->size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and self.output.oclIsKindOf(terms::MultisetSort)" });
+		addAnnotation(numberOfEClass, source, new String[] { "inputOutputTypes",
+				"self.input->size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and self.output.oclIsKindOf(terms::MultisetSort)" });
 		addAnnotation(subtractEClass, source, new String[] { "inputType",
 				"self.input->size() = 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)}" });
-		addAnnotation(
-				scalarProductEClass,
-				source,
-				new String[] {
-						"inputOutputTypes",
-						"self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}" });
+		addAnnotation(scalarProductEClass, source, new String[] { "inputOutputTypes",
+				"self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}" });
 	}
 
 	/**
 	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createEcoreAnnotations() {
@@ -537,8 +539,8 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 
 	/**
 	 * Initializes the annotations for <b>http://www.pnml.org/models/ToPNML</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createToPNMLAnnotations() {
@@ -557,9 +559,9 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 	}
 
 	/**
-	 * Initializes the annotations for <b>http://www.pnml.org/models/HLAPI</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for <b>http://www.pnml.org/models/HLAPI</b>. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createHLAPIAnnotations() {
@@ -575,4 +577,4 @@ public class MultisetsPackageImpl extends EPackageImpl implements MultisetsPacka
 		addAnnotation(scalarProductEClass, source, new String[] {});
 	}
 
-} //MultisetsPackageImpl
+} // MultisetsPackageImpl

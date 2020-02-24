@@ -39,9 +39,8 @@ import fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Boolean
+ * Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -49,8 +48,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
  */
 public abstract class BooleanOperatorImpl extends BuiltInOperatorImpl implements BooleanOperator {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected BooleanOperatorImpl() {
@@ -58,8 +57,8 @@ public abstract class BooleanOperatorImpl extends BuiltInOperatorImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -69,4 +68,4 @@ public abstract class BooleanOperatorImpl extends BuiltInOperatorImpl implements
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //BooleanOperatorImpl
+} // BooleanOperatorImpl

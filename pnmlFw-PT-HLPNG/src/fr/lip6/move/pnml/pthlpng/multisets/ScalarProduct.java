@@ -43,15 +43,19 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.MultisetOperator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Scalar Product</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Scalar
+ * Product</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getScalarProduct()
- * @model annotation="http://www.pnml.org/models/OCL inputOutputTypes='self.output.oclIsKindOf(terms::MultisetSort) and self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and d.oclIsKindOf(terms::MultisetSort)}'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputOutputTypes'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='scalarproduct' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        inputOutputTypes='self.output.oclIsKindOf(terms::MultisetSort) and
+ *        self.input->forAll{c,d | c.oclIsKindOf(integers::Natural) and
+ *        d.oclIsKindOf(terms::MultisetSort)}'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputOutputTypes'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='scalarproduct'
+ *        kind='son'"
  * @generated
  */
 public interface ScalarProduct extends MultisetOperator {
@@ -66,8 +70,8 @@ public interface ScalarProduct extends MultisetOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

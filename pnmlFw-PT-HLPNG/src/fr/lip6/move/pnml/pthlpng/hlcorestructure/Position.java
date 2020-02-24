@@ -42,33 +42,38 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Position</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Position</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics <em>Container Arc Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics <em>Container PNode Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics
+ * <em>Container Arc Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics
+ * <em>Container PNode Graphics</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPosition()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='position' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='position'
+ *        kind='son'"
  * @generated
  */
 public interface Position extends Coordinate {
 	/**
-	 * Returns the value of the '<em><b>Container Arc Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getPositions <em>Positions</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Arc Graphics</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getPositions
+	 * <em>Positions</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Arc Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Arc Graphics</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Arc Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Arc Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerArcGraphics(ArcGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPosition_ContainerArcGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getPositions
@@ -78,25 +83,31 @@ public interface Position extends Coordinate {
 	ArcGraphics getContainerArcGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics <em>Container Arc Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Arc Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics
+	 * <em>Container Arc Graphics</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Arc Graphics</em>' container
+	 *              reference.
 	 * @see #getContainerArcGraphics()
 	 * @generated
 	 */
 	void setContainerArcGraphics(ArcGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Container PNode Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition <em>Position</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container PNode Graphics</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition
+	 * <em>Position</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container PNode Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container PNode Graphics</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container PNode Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container PNode Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerPNodeGraphics(NodeGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPosition_ContainerPNodeGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getPosition
@@ -106,10 +117,13 @@ public interface Position extends Coordinate {
 	NodeGraphics getContainerPNodeGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics <em>Container PNode Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container PNode Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerPNodeGraphics
+	 * <em>Container PNode Graphics</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container PNode Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerPNodeGraphics()
 	 * @generated
 	 */
@@ -125,8 +139,8 @@ public interface Position extends Coordinate {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

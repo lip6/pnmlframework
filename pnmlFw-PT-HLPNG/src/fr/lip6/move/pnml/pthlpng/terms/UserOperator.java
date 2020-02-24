@@ -42,43 +42,48 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>User Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>User
+ * Operator</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getUserOperator()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='useroperator' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='useroperator'
+ *        kind='son'"
  * @generated
  */
 public interface UserOperator extends Operator {
 	/**
-	 * Returns the value of the '<em><b>Declaration</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Declaration</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Declaration</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Declaration</em>' reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Declaration</em>' reference.
 	 * @see #setDeclaration(OperatorDecl)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getUserOperator_Declaration()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='declaration' kind='idref'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='declaration'
+	 *        kind='idref'"
 	 * @generated
 	 */
 	OperatorDecl getDeclaration();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator#getDeclaration <em>Declaration</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.UserOperator#getDeclaration
+	 * <em>Declaration</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @param value the new value of the '<em>Declaration</em>' reference.
 	 * @see #getDeclaration()
 	 * @generated
@@ -95,8 +100,8 @@ public interface UserOperator extends Operator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

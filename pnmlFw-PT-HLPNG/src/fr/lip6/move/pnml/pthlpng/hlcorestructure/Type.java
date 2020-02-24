@@ -43,15 +43,16 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.Sort;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Type</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Type</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace <em>Container Place</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace
+ * <em>Container Place</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,27 +63,32 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
 public interface Type extends HLCoreAnnotation {
 	/**
 	 * Returns the value of the '<em><b>Structure</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerType <em>Container Type</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerType <em>Container
+	 * Type</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Structure</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Structure</em>' containment reference.
 	 * @see #setStructure(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getType_Structure()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerType
 	 * @model opposite="containerType" containment="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure' kind='follow' toBeFollowed='yes'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure'
+	 *        kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	Sort getStructure();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getStructure <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getStructure
+	 * <em>Structure</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Structure</em>' containment reference.
 	 * @see #getStructure()
 	 * @generated
@@ -90,14 +96,16 @@ public interface Type extends HLCoreAnnotation {
 	void setStructure(Sort value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Place</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Place</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType
+	 * <em>Type</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Place</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Place</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Place</em>' container reference.
 	 * @see #setContainerPlace(Place)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getType_ContainerPlace()
@@ -108,10 +116,13 @@ public interface Type extends HLCoreAnnotation {
 	Place getContainerPlace();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace <em>Container Place</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Place</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace
+	 * <em>Container Place</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Place</em>' container
+	 *              reference.
 	 * @see #getContainerPlace()
 	 * @generated
 	 */
@@ -127,8 +138,8 @@ public interface Type extends HLCoreAnnotation {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

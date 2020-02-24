@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Font Align</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>Font Align</b></em>', and utility methods for working with them. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFontAlign()
  * @model
  * @generated
  */
 public enum FontAlign implements Enumerator {
 	/**
-	 * The '<em><b>LEFT</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>LEFT</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #LEFT_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum FontAlign implements Enumerator {
 	LEFT(0, "LEFT", "LEFT"),
 
 	/**
-	 * The '<em><b>CENTER</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>CENTER</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #CENTER_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum FontAlign implements Enumerator {
 	CENTER(1, "CENTER", "CENTER"),
 
 	/**
-	 * The '<em><b>RIGHT</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>RIGHT</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #RIGHT_VALUE
 	 * @generated
 	 * @ordered
@@ -78,13 +78,13 @@ public enum FontAlign implements Enumerator {
 	RIGHT(2, "RIGHT", "RIGHT");
 
 	/**
-	 * The '<em><b>LEFT</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LEFT</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>LEFT</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>LEFT</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LEFT
 	 * @model
 	 * @generated
@@ -93,13 +93,13 @@ public enum FontAlign implements Enumerator {
 	public static final int LEFT_VALUE = 0;
 
 	/**
-	 * The '<em><b>CENTER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>CENTER</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>CENTER</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>CENTER</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #CENTER
 	 * @model
 	 * @generated
@@ -108,13 +108,13 @@ public enum FontAlign implements Enumerator {
 	public static final int CENTER_VALUE = 1;
 
 	/**
-	 * The '<em><b>RIGHT</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>RIGHT</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>RIGHT</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>RIGHT</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #RIGHT
 	 * @model
 	 * @generated
@@ -123,25 +123,25 @@ public enum FontAlign implements Enumerator {
 	public static final int RIGHT_VALUE = 2;
 
 	/**
-	 * An array of all the '<em><b>Font Align</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>Font Align</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final FontAlign[] VALUES_ARRAY = new FontAlign[] { LEFT, CENTER, RIGHT, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Font Align</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<FontAlign> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Font Align</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Font Align</b></em>' literal with the specified literal
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontAlign get(String literal) {
@@ -156,8 +156,8 @@ public enum FontAlign implements Enumerator {
 
 	/**
 	 * Returns the '<em><b>Font Align</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontAlign getByName(String name) {
@@ -171,9 +171,9 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Font Align</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Font Align</b></em>' literal with the specified integer
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static FontAlign get(int value) {
@@ -189,30 +189,30 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private FontAlign(int value, String name, String literal) {
@@ -222,8 +222,8 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -231,8 +231,8 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -240,8 +240,8 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -249,9 +249,9 @@ public enum FontAlign implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -259,4 +259,4 @@ public enum FontAlign implements Enumerator {
 		return literal;
 	}
 
-} //FontAlign
+} // FontAlign

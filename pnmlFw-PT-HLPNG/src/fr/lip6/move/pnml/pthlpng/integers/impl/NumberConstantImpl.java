@@ -73,14 +73,15 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Number Constant</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Number
+ * Constant</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl#getType <em>Type</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl#getValue <em>Value</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl#getType
+ * <em>Type</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.NumberConstantImpl#getValue
+ * <em>Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -88,9 +89,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class NumberConstantImpl extends BuiltInConstantImpl implements NumberConstant {
 	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getType() <em>Type</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getType()
 	 * @generated
 	 * @ordered
@@ -98,9 +99,9 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	protected HLPNNumber type;
 
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -108,9 +109,9 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	protected static final Long VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -118,8 +119,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	protected Long value = VALUE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NumberConstantImpl() {
@@ -127,8 +128,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -137,8 +138,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -147,8 +148,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetType(HLPNNumber newType, NotificationChain msgs) {
@@ -166,8 +167,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -189,8 +190,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -199,8 +200,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -213,8 +214,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -222,16 +223,16 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		switch (featureID) {
 		case IntegersPackage.NUMBER_CONSTANT__TYPE:
 			if (type != null)
-				msgs = ((InternalEObject) type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- IntegersPackage.NUMBER_CONSTANT__TYPE, null, msgs);
+				msgs = ((InternalEObject) type).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - IntegersPackage.NUMBER_CONSTANT__TYPE, null, msgs);
 			return basicSetType((HLPNNumber) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -244,8 +245,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -260,8 +261,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -278,8 +279,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -296,8 +297,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -312,8 +313,8 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -328,24 +329,24 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		return result.toString();
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -363,7 +364,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getValue() != null) {
 			sb.append(" value");
@@ -376,7 +377,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -431,20 +432,20 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//1
-		//2
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 1
+		// 2
 		@SuppressWarnings("unused")
 		IntegersFactory fact = IntegersFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("value")) != null) {
 			try {
@@ -454,7 +455,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -767,7 +768,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 			if (type.getLocalName().equals("natural")) {
 				Natural item;
@@ -777,7 +778,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("positive")) {
 				Positive item;
@@ -787,7 +788,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("integer")) {
 				HLInteger item;
@@ -797,30 +798,30 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 				item.setContainerNumberConstant(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -843,7 +844,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getValue() != null) {
 			sb.append(" value");
@@ -856,7 +857,7 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -974,4 +975,4 @@ public class NumberConstantImpl extends BuiltInConstantImpl implements NumberCon
 		return retour;
 
 	}
-} //NumberConstantImpl
+} // NumberConstantImpl

@@ -89,25 +89,25 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage
  * @generated
  */
 public class HlcorestructureValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final HlcorestructureValidator INSTANCE = new HlcorestructureValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -115,25 +115,27 @@ public class HlcorestructureValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.hlcorestructure";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public HlcorestructureValidator() {
@@ -141,9 +143,9 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -153,12 +155,13 @@ public class HlcorestructureValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case HlcorestructurePackage.PETRI_NET_DOC:
 			return validatePetriNetDoc((PetriNetDoc) value, diagnostics, context);
@@ -262,17 +265,18 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validatePetriNetDoc(PetriNetDoc petriNetDoc, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePetriNetDoc(PetriNetDoc petriNetDoc, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(petriNetDoc, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePetriNet(PetriNet petriNet, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -280,8 +284,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePage(Page page, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -289,8 +293,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePnObject(PnObject pnObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -298,8 +302,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateName(Name name, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -307,8 +311,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateToolInfo(ToolInfo toolInfo, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -316,8 +320,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLabel(Label label, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -325,8 +329,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNodeGraphics(NodeGraphics nodeGraphics, DiagnosticChain diagnostics,
@@ -335,8 +339,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGraphics(Graphics graphics, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -344,8 +348,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCoordinate(Coordinate coordinate, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -353,8 +357,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePosition(Position position, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -362,8 +366,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOffset(Offset offset, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -371,8 +375,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateDimension(Dimension dimension, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -380,8 +384,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAnnotationGraphics(AnnotationGraphics annotationGraphics, DiagnosticChain diagnostics,
@@ -390,8 +394,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateFill(Fill fill, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -399,8 +403,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLine(Line line, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -408,17 +412,18 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateArcGraphics(ArcGraphics arcGraphics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateArcGraphics(ArcGraphics arcGraphics, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(arcGraphics, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateArc(Arc arc, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -447,9 +452,9 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the samePageSourceTarget constraint of '<em>Arc</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the samePageSourceTarget constraint of '<em>Arc</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateArc_samePageSourceTarget(Arc arc, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -459,10 +464,10 @@ public class HlcorestructureValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "samePageSourceTarget", getObjectLabel(arc, context) }, new Object[] { arc },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "samePageSourceTarget", getObjectLabel(arc, context) },
+								new Object[] { arc }, context));
 			}
 			return false;
 		}
@@ -470,22 +475,23 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the differentSourceTarget constraint of '<em>Arc</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the differentSourceTarget constraint of '<em>Arc</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateArc_differentSourceTarget(Arc arc, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateArc_differentSourceTarget(Arc arc, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		// TODO implement the constraint
 		// -> specify the condition that violates the constraint
 		// -> verify the diagnostic details, including severity, code, and message
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "differentSourceTarget", getObjectLabel(arc, context) }, new Object[] { arc },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "differentSourceTarget", getObjectLabel(arc, context) },
+								new Object[] { arc }, context));
 			}
 			return false;
 		}
@@ -493,8 +499,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNode(Node node, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -502,8 +508,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateFont(Font font, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -511,8 +517,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePlaceNode(PlaceNode placeNode, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -520,8 +526,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateTransitionNode(TransitionNode transitionNode, DiagnosticChain diagnostics,
@@ -530,8 +536,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePlace(Place place, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -539,8 +545,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateRefTransition(RefTransition refTransition, DiagnosticChain diagnostics,
@@ -549,8 +555,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateTransition(Transition transition, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -558,8 +564,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateRefPlace(RefPlace refPlace, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -567,8 +573,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAttribute(Attribute attribute, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -576,8 +582,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAnnotation(Annotation annotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -585,8 +591,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAnyObject(AnyObject anyObject, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -594,8 +600,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateHLCoreAnnotation(HLCoreAnnotation hlCoreAnnotation, DiagnosticChain diagnostics,
@@ -604,8 +610,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateType(Type type, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -613,8 +619,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateHLMarking(HLMarking hlMarking, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -622,8 +628,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCondition(Condition condition, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -631,8 +637,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateHLAnnotation(HLAnnotation hlAnnotation, DiagnosticChain diagnostics,
@@ -641,17 +647,18 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateDeclaration(Declaration declaration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDeclaration(Declaration declaration, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(declaration, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePNType(PNType pnType, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -659,8 +666,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCSS2Color(CSS2Color css2Color, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -668,8 +675,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGradient(Gradient gradient, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -677,8 +684,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLineShape(LineShape lineShape, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -686,8 +693,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateFontAlign(FontAlign fontAlign, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -695,8 +702,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateFontDecoration(FontDecoration fontDecoration, DiagnosticChain diagnostics,
@@ -705,8 +712,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCSS2FontFamily(CSS2FontFamily css2FontFamily, DiagnosticChain diagnostics,
@@ -715,8 +722,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCSS2FontSize(CSS2FontSize css2FontSize, DiagnosticChain diagnostics,
@@ -725,8 +732,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCSS2FontStyle(CSS2FontStyle css2FontStyle, DiagnosticChain diagnostics,
@@ -735,8 +742,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCSS2FontWeight(CSS2FontWeight css2FontWeight, DiagnosticChain diagnostics,
@@ -745,8 +752,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLineStyle(LineStyle lineStyle, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -754,8 +761,8 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateURI(URI uri, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -763,26 +770,28 @@ public class HlcorestructureValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateLongString(StringBuffer longString, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLongString(StringBuffer longString, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return true;
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //HlcorestructureValidator
+} // HlcorestructureValidator

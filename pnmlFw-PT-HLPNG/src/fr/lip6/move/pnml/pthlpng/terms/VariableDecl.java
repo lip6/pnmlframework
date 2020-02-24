@@ -42,46 +42,52 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Variable Decl</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Variable
+ * Decl</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getSort <em>Sort</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator <em>Container Named Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getSort
+ * <em>Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator
+ * <em>Container Named Operator</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariableDecl()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='variabledecl' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='variabledecl'
+ *        kind='son'"
  * @generated
  */
 public interface VariableDecl extends TermsDeclaration {
 	/**
-	 * Returns the value of the '<em><b>Sort</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerVariableDecl <em>Container Variable Decl</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Sort</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerVariableDecl
+	 * <em>Container Variable Decl</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Sort</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Sort</em>' containment reference.
 	 * @see #setSort(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariableDecl_Sort()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerVariableDecl
-	 * @model opposite="containerVariableDecl" containment="true" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerVariableDecl" containment="true" required="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Sort getSort();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getSort <em>Sort</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getSort <em>Sort</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Sort</em>' containment reference.
 	 * @see #getSort()
 	 * @generated
@@ -89,15 +95,18 @@ public interface VariableDecl extends TermsDeclaration {
 	void setSort(Sort value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Named Operator</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getParameters <em>Parameters</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Named Operator</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getParameters
+	 * <em>Parameters</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Named Operator</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Named Operator</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Named Operator</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Named Operator</em>' container
+	 *         reference.
 	 * @see #setContainerNamedOperator(NamedOperator)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariableDecl_ContainerNamedOperator()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getParameters
@@ -107,10 +116,13 @@ public interface VariableDecl extends TermsDeclaration {
 	NamedOperator getContainerNamedOperator();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator <em>Container Named Operator</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Named Operator</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator
+	 * <em>Container Named Operator</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Named Operator</em>'
+	 *              container reference.
 	 * @see #getContainerNamedOperator()
 	 * @generated
 	 */
@@ -126,8 +138,8 @@ public interface VariableDecl extends TermsDeclaration {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

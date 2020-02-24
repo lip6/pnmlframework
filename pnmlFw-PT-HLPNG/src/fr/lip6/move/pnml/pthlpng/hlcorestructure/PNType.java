@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>PN Type</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>PN Type</b></em>', and utility methods for working with them. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPNType()
  * @model
  * @generated
  */
 public enum PNType implements Enumerator {
 	/**
-	 * The '<em><b>SYMNET</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>SYMNET</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #SYMNET_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum PNType implements Enumerator {
 	SYMNET(2, "SYMNET", "http://www.pnml.org/version-2009/grammar/symmetricnet"),
 
 	/**
-	 * The '<em><b>COREMODEL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>COREMODEL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #COREMODEL_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum PNType implements Enumerator {
 	COREMODEL(0, "COREMODEL", "http://www.pnml.org/version-2009/grammar/pnmlcoremodel"),
 
 	/**
-	 * The '<em><b>PTNET</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>PTNET</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #PTNET_VALUE
 	 * @generated
 	 * @ordered
@@ -78,9 +78,9 @@ public enum PNType implements Enumerator {
 	PTNET(1, "PTNET", "http://www.pnml.org/version-2009/grammar/ptnet"),
 
 	/**
-	 * The '<em><b>HLPN</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>HLPN</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #HLPN_VALUE
 	 * @generated
 	 * @ordered
@@ -88,9 +88,9 @@ public enum PNType implements Enumerator {
 	HLPN(3, "HLPN", "http://www.pnml.org/version-2009/grammar/highlevelnet"),
 
 	/**
-	 * The '<em><b>PTHLPN</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>PTHLPN</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #PTHLPN_VALUE
 	 * @generated
 	 * @ordered
@@ -98,13 +98,13 @@ public enum PNType implements Enumerator {
 	PTHLPN(4, "PTHLPN", "http://www.pnml.org/version-2009/grammar/pt-hlpng");
 
 	/**
-	 * The '<em><b>SYMNET</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>SYMNET</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>SYMNET</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>SYMNET</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #SYMNET
 	 * @model literal="http://www.pnml.org/version-2009/grammar/symmetricnet"
 	 * @generated
@@ -113,13 +113,13 @@ public enum PNType implements Enumerator {
 	public static final int SYMNET_VALUE = 2;
 
 	/**
-	 * The '<em><b>COREMODEL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>COREMODEL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>COREMODEL</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #COREMODEL
 	 * @model literal="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"
 	 * @generated
@@ -128,13 +128,13 @@ public enum PNType implements Enumerator {
 	public static final int COREMODEL_VALUE = 0;
 
 	/**
-	 * The '<em><b>PTNET</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>PTNET</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PTNET</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>PTNET</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #PTNET
 	 * @model literal="http://www.pnml.org/version-2009/grammar/ptnet"
 	 * @generated
@@ -143,13 +143,13 @@ public enum PNType implements Enumerator {
 	public static final int PTNET_VALUE = 1;
 
 	/**
-	 * The '<em><b>HLPN</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>HLPN</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>HLPN</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>HLPN</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #HLPN
 	 * @model literal="http://www.pnml.org/version-2009/grammar/highlevelnet"
 	 * @generated
@@ -158,13 +158,13 @@ public enum PNType implements Enumerator {
 	public static final int HLPN_VALUE = 3;
 
 	/**
-	 * The '<em><b>PTHLPN</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>PTHLPN</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PTHLPN</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>PTHLPN</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #PTHLPN
 	 * @model literal="http://www.pnml.org/version-2009/grammar/pt-hlpng"
 	 * @generated
@@ -173,25 +173,25 @@ public enum PNType implements Enumerator {
 	public static final int PTHLPN_VALUE = 4;
 
 	/**
-	 * An array of all the '<em><b>PN Type</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>PN Type</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final PNType[] VALUES_ARRAY = new PNType[] { SYMNET, COREMODEL, PTNET, HLPN, PTHLPN, };
 
 	/**
 	 * A public read-only list of all the '<em><b>PN Type</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<PNType> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>PN Type</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>PN Type</b></em>' literal with the specified literal
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static PNType get(String literal) {
@@ -205,9 +205,9 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>PN Type</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>PN Type</b></em>' literal with the specified name. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static PNType getByName(String name) {
@@ -221,9 +221,9 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>PN Type</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>PN Type</b></em>' literal with the specified integer
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static PNType get(int value) {
@@ -243,30 +243,30 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private PNType(int value, String name, String literal) {
@@ -276,8 +276,8 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -285,8 +285,8 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -294,8 +294,8 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -303,9 +303,9 @@ public enum PNType implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -313,4 +313,4 @@ public enum PNType implements Enumerator {
 		return literal;
 	}
 
-} //PNType
+} // PNType

@@ -43,9 +43,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Partition Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Partition Operator</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionOperator()
@@ -58,8 +57,8 @@ public interface PartitionOperator extends BuiltInOperator {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

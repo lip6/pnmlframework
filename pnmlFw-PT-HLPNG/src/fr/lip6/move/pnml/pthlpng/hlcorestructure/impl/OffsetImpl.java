@@ -63,13 +63,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Offset</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Offset</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.OffsetImpl#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.OffsetImpl#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,8 +77,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class OffsetImpl extends CoordinateImpl implements Offset {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected OffsetImpl() {
@@ -86,8 +86,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -96,8 +96,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -108,8 +108,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics,
@@ -120,14 +120,15 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.OFFSET__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -146,8 +147,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -162,8 +163,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -176,8 +177,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -191,8 +192,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -205,8 +206,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -220,8 +221,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -235,8 +236,8 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -253,10 +254,10 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -274,7 +275,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -293,7 +294,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -306,20 +307,20 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//2
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 2
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("x")) != null) {
 			try {
@@ -337,7 +338,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -346,10 +347,10 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -372,7 +373,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -391,7 +392,7 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -444,4 +445,4 @@ public class OffsetImpl extends CoordinateImpl implements Offset {
 		return retour;
 
 	}
-} //OffsetImpl
+} // OffsetImpl

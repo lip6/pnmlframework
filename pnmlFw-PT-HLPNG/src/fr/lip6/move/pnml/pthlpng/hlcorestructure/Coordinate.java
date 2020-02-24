@@ -43,15 +43,16 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Coordinate</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Coordinate</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getX <em>X</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getY <em>Y</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getX
+ * <em>X</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getY
+ * <em>Y</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,26 +62,29 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface Coordinate extends EObject {
 	/**
-	 * Returns the value of the '<em><b>X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>X</b></em>' attribute. <!-- begin-user-doc
+	 * -->
 	 * <p>
-	 * If the meaning of the '<em>X</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>X</em>' attribute isn't clear, there really should
+	 * be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>X</em>' attribute.
 	 * @see #setX(Integer)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCoordinate_X()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='x' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='x'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	Integer getX();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getX <em>X</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getX
+	 * <em>X</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>X</em>' attribute.
 	 * @see #getX()
 	 * @generated
@@ -88,26 +92,29 @@ public interface Coordinate extends EObject {
 	void setX(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Y</b></em>' attribute. <!-- begin-user-doc
+	 * -->
 	 * <p>
-	 * If the meaning of the '<em>Y</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Y</em>' attribute isn't clear, there really should
+	 * be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Y</em>' attribute.
 	 * @see #setY(Integer)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCoordinate_Y()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='y' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='y'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	Integer getY();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getY <em>Y</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate#getY
+	 * <em>Y</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Y</em>' attribute.
 	 * @see #getY()
 	 * @generated
@@ -116,8 +123,8 @@ public interface Coordinate extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

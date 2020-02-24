@@ -72,14 +72,15 @@ import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Named Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Named
+ * Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedOperatorImpl#getDef <em>Def</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedOperatorImpl#getParameters <em>Parameters</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedOperatorImpl#getDef
+ * <em>Def</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedOperatorImpl#getParameters
+ * <em>Parameters</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,9 +88,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator {
 	/**
-	 * The cached value of the '{@link #getDef() <em>Def</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDef() <em>Def</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDef()
 	 * @generated
 	 * @ordered
@@ -97,9 +98,9 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	protected Term def;
 
 	/**
-	 * The cached value of the '{@link #getParameters() <em>Parameters</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getParameters() <em>Parameters</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getParameters()
 	 * @generated
 	 * @ordered
@@ -107,8 +108,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	protected EList<VariableDecl> parameters;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NamedOperatorImpl() {
@@ -116,8 +117,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -126,8 +127,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -136,8 +137,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetDef(Term newDef, NotificationChain msgs) {
@@ -155,8 +156,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,8 +178,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -191,8 +192,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -201,8 +202,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		switch (featureID) {
 		case TermsPackage.NAMED_OPERATOR__DEF:
 			if (def != null)
-				msgs = ((InternalEObject) def).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.NAMED_OPERATOR__DEF, null, msgs);
+				msgs = ((InternalEObject) def).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.NAMED_OPERATOR__DEF, null, msgs);
 			return basicSetDef((Term) otherEnd, msgs);
 		case TermsPackage.NAMED_OPERATOR__PARAMETERS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getParameters()).basicAdd(otherEnd, msgs);
@@ -211,8 +212,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -227,8 +228,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -243,8 +244,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -263,8 +264,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -281,8 +282,8 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -301,10 +302,10 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -322,7 +323,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -342,7 +343,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDef() != null) {
 
@@ -405,16 +406,16 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//2
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 2
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -422,9 +423,9 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
@@ -434,7 +435,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -657,7 +658,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 			if (type.getLocalName().equals("parameter")) {
 
@@ -678,7 +679,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -689,10 +690,10 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -715,7 +716,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -735,7 +736,7 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDef() != null) {
 
@@ -861,4 +862,4 @@ public class NamedOperatorImpl extends OperatorDeclImpl implements NamedOperator
 		return retour;
 
 	}
-} //NamedOperatorImpl
+} // NamedOperatorImpl

@@ -69,19 +69,25 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Line</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Line</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getColor <em>Color</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getShape <em>Shape</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getWidth <em>Width</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerNodeGraphics <em>Container Node Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerArcGraphics <em>Container Arc Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getStyle <em>Style</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getColor
+ * <em>Color</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getShape
+ * <em>Shape</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getWidth
+ * <em>Width</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerNodeGraphics
+ * <em>Container Node Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerArcGraphics
+ * <em>Container Arc Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LineImpl#getStyle
+ * <em>Style</em>}</li>
  * </ul>
  * </p>
  *
@@ -89,9 +95,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class LineImpl extends MinimalEObjectImpl implements Line {
 	/**
-	 * The default value of the '{@link #getColor() <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getColor() <em>Color</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getColor()
 	 * @generated
 	 * @ordered
@@ -99,9 +105,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected static final CSS2Color COLOR_EDEFAULT = CSS2Color.BLACK;
 
 	/**
-	 * The cached value of the '{@link #getColor() <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getColor() <em>Color</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getColor()
 	 * @generated
 	 * @ordered
@@ -109,9 +115,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected CSS2Color color = COLOR_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getShape() <em>Shape</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getShape() <em>Shape</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getShape()
 	 * @generated
 	 * @ordered
@@ -119,9 +125,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected static final LineShape SHAPE_EDEFAULT = LineShape.LINE;
 
 	/**
-	 * The cached value of the '{@link #getShape() <em>Shape</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getShape() <em>Shape</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getShape()
 	 * @generated
 	 * @ordered
@@ -129,9 +135,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected LineShape shape = SHAPE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getWidth()
 	 * @generated
 	 * @ordered
@@ -139,9 +145,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected static final Integer WIDTH_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getWidth()
 	 * @generated
 	 * @ordered
@@ -149,9 +155,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected Integer width = WIDTH_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStyle()
 	 * @generated
 	 * @ordered
@@ -159,9 +165,9 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected static final LineStyle STYLE_EDEFAULT = LineStyle.SOLID;
 
 	/**
-	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStyle()
 	 * @generated
 	 * @ordered
@@ -169,8 +175,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	protected LineStyle style = STYLE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected LineImpl() {
@@ -178,8 +184,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -188,8 +194,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -198,8 +204,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -211,8 +217,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -221,8 +227,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -234,8 +240,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -244,8 +250,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -257,8 +263,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -269,25 +275,27 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics, NotificationChain msgs) {
+	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerNodeGraphics,
 				HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS, msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_NODE_GRAPHICS
+						&& newContainerNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -305,8 +313,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -317,8 +325,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerArcGraphics(ArcGraphics newContainerArcGraphics, NotificationChain msgs) {
@@ -328,14 +336,15 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerArcGraphics(ArcGraphics newContainerArcGraphics) {
 		if (newContainerArcGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ARC_GRAPHICS && newContainerArcGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ARC_GRAPHICS
+						&& newContainerArcGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArcGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -353,8 +362,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -365,8 +374,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics,
@@ -377,14 +386,15 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.LINE__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -403,8 +413,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -413,8 +423,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -426,8 +436,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -450,8 +460,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -468,8 +478,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -489,8 +499,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -515,8 +525,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -548,8 +558,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -581,8 +591,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -607,8 +617,8 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -634,10 +644,10 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 4
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 4
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -655,7 +665,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getColor() != null) {
 			sb.append(" color");
@@ -688,7 +698,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -701,20 +711,20 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//4
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 4
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("color")) != null) {
 			this.setColor(CSS2Color.get(locRoot.getAttributeValue(new QName("color"))));
@@ -736,7 +746,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 			this.setStyle(LineStyle.get(locRoot.getAttributeValue(new QName("style"))));
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -745,10 +755,10 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 4
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 4
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -771,7 +781,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getColor() != null) {
 			sb.append(" color");
@@ -804,7 +814,7 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -857,4 +867,4 @@ public class LineImpl extends MinimalEObjectImpl implements Line {
 		return retour;
 
 	}
-} //LineImpl
+} // LineImpl

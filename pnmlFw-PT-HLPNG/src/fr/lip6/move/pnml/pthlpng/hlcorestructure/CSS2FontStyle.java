@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>CSS2 Font Style</b></em>',
- * and utility methods for working with them.
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>CSS2 Font Style</b></em>', and utility methods for working with them.
  * <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2FontStyle()
  * @model
  * @generated
  */
 public enum CSS2FontStyle implements Enumerator {
 	/**
-	 * The '<em><b>NORMAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>NORMAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #NORMAL_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum CSS2FontStyle implements Enumerator {
 	NORMAL(0, "NORMAL", "NORMAL"),
 
 	/**
-	 * The '<em><b>ITALIC</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>ITALIC</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #ITALIC_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum CSS2FontStyle implements Enumerator {
 	ITALIC(1, "ITALIC", "ITALIC"),
 
 	/**
-	 * The '<em><b>OBLIQUE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>OBLIQUE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #OBLIQUE_VALUE
 	 * @generated
 	 * @ordered
@@ -78,13 +78,13 @@ public enum CSS2FontStyle implements Enumerator {
 	OBLIQUE(2, "OBLIQUE", "OBLIQUE");
 
 	/**
-	 * The '<em><b>NORMAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>NORMAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>NORMAL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>NORMAL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #NORMAL
 	 * @model
 	 * @generated
@@ -93,13 +93,13 @@ public enum CSS2FontStyle implements Enumerator {
 	public static final int NORMAL_VALUE = 0;
 
 	/**
-	 * The '<em><b>ITALIC</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>ITALIC</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>ITALIC</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>ITALIC</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #ITALIC
 	 * @model
 	 * @generated
@@ -108,13 +108,13 @@ public enum CSS2FontStyle implements Enumerator {
 	public static final int ITALIC_VALUE = 1;
 
 	/**
-	 * The '<em><b>OBLIQUE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>OBLIQUE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>OBLIQUE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>OBLIQUE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #OBLIQUE
 	 * @model
 	 * @generated
@@ -123,25 +123,25 @@ public enum CSS2FontStyle implements Enumerator {
 	public static final int OBLIQUE_VALUE = 2;
 
 	/**
-	 * An array of all the '<em><b>CSS2 Font Style</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>CSS2 Font Style</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final CSS2FontStyle[] VALUES_ARRAY = new CSS2FontStyle[] { NORMAL, ITALIC, OBLIQUE, };
 
 	/**
-	 * A public read-only list of all the '<em><b>CSS2 Font Style</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>CSS2 Font Style</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<CSS2FontStyle> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontStyle get(String literal) {
@@ -155,9 +155,9 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified
+	 * name. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontStyle getByName(String name) {
@@ -171,9 +171,9 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Style</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontStyle get(int value) {
@@ -189,30 +189,30 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private CSS2FontStyle(int value, String name, String literal) {
@@ -222,8 +222,8 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -231,8 +231,8 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -240,8 +240,8 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -249,9 +249,9 @@ public enum CSS2FontStyle implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -259,4 +259,4 @@ public enum CSS2FontStyle implements Enumerator {
 		return literal;
 	}
 
-} //CSS2FontStyle
+} // CSS2FontStyle

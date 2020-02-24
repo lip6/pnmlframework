@@ -70,13 +70,13 @@ import fr.lip6.move.pnml.pthlpng.terms.UserSort;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Named Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Named
+ * Sort</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedSortImpl#getSortdef <em>Sortdef</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.NamedSortImpl#getSortdef
+ * <em>Sortdef</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,9 +84,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	/**
-	 * The cached value of the '{@link #getSortdef() <em>Sortdef</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSortdef() <em>Sortdef</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSortdef()
 	 * @generated
 	 * @ordered
@@ -94,8 +94,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	protected Sort sortdef;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NamedSortImpl() {
@@ -103,8 +103,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -113,8 +113,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -123,8 +123,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetSortdef(Sort newSortdef, NotificationChain msgs) {
@@ -142,8 +142,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -165,8 +165,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -174,16 +174,16 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		switch (featureID) {
 		case TermsPackage.NAMED_SORT__SORTDEF:
 			if (sortdef != null)
-				msgs = ((InternalEObject) sortdef).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.NAMED_SORT__SORTDEF, null, msgs);
+				msgs = ((InternalEObject) sortdef).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.NAMED_SORT__SORTDEF, null, msgs);
 			return basicSetSortdef((Sort) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -196,8 +196,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -210,8 +210,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -225,8 +225,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -240,8 +240,8 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -258,10 +258,10 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -279,7 +279,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -299,7 +299,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSortdef() != null) {
 
@@ -333,16 +333,16 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 1
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -350,9 +350,9 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
@@ -362,7 +362,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -376,7 +376,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -386,7 +386,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -396,7 +396,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -406,7 +406,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -416,7 +416,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 				item.setContainerNamedSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -427,10 +427,10 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -453,7 +453,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -473,7 +473,7 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSortdef() != null) {
 
@@ -546,4 +546,4 @@ public class NamedSortImpl extends SortDeclImpl implements NamedSort {
 		return retour;
 
 	}
-} //NamedSortImpl
+} // NamedSortImpl

@@ -42,13 +42,13 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Positive</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Positive</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getPositive()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='positive' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='positive'
+ *        kind='son'"
  * @generated
  */
 public interface Positive extends HLPNNumber {
@@ -63,8 +63,8 @@ public interface Positive extends HLPNNumber {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

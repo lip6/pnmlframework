@@ -53,232 +53,170 @@ import fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.SortHLAPI;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.VariableDeclHLAPI;
 
-public interface HLPNNumberHLAPI extends HLAPIClass,SortHLAPI{
+public interface HLPNNumberHLAPI extends HLAPIClass, SortHLAPI {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public MultisetSort getMulti();
-	
+
 	/**
 	 *
 	 */
 	public NamedSort getContainerNamedSort();
-	
+
 	/**
 	 *
 	 */
 	public VariableDecl getContainerVariableDecl();
-	
+
 	/**
 	 *
 	 */
 	public ProductSort getContainerProductSort();
-	
+
 	/**
 	 *
 	 */
 	public Type getContainerType();
-	
+
 	/**
 	 *
 	 */
 	public All getContainerAll();
-	
+
 	/**
 	 *
 	 */
 	public Empty getContainerEmpty();
-	
+
 	/**
 	 *
 	 */
 	public Partition getContainerPartition();
-	
+
 	/**
 	 *
 	 */
 	public NumberConstant getContainerNumberConstant();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public MultisetSortHLAPI getMultiHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public NamedSortHLAPI getContainerNamedSortHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public VariableDeclHLAPI getContainerVariableDeclHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public ProductSortHLAPI getContainerProductSortHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public TypeHLAPI getContainerTypeHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public AllHLAPI getContainerAllHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public EmptyHLAPI getContainerEmptyHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public PartitionHLAPI getContainerPartitionHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public NumberConstantHLAPI getContainerNumberConstantHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public MultisetSortHLAPI getMultiHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public NamedSortHLAPI getContainerNamedSortHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public VariableDeclHLAPI getContainerVariableDeclHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public ProductSortHLAPI getContainerProductSortHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public TypeHLAPI getContainerTypeHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public AllHLAPI getContainerAllHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public EmptyHLAPI getContainerEmptyHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public PartitionHLAPI getContainerPartitionHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public NumberConstantHLAPI getContainerNumberConstantHLAPI();
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Multi
 	 */
-	public void setMultiHLAPI(
-	MultisetSortHLAPI elem);
-	
+	public void setMultiHLAPI(MultisetSortHLAPI elem);
+
 	/**
 	 * set ContainerNamedSort
 	 */
-	public void setContainerNamedSortHLAPI(
-	NamedSortHLAPI elem);
-	
+	public void setContainerNamedSortHLAPI(NamedSortHLAPI elem);
+
 	/**
 	 * set ContainerVariableDecl
 	 */
-	public void setContainerVariableDeclHLAPI(
-	VariableDeclHLAPI elem);
-	
+	public void setContainerVariableDeclHLAPI(VariableDeclHLAPI elem);
+
 	/**
 	 * set ContainerProductSort
 	 */
-	public void setContainerProductSortHLAPI(
-	ProductSortHLAPI elem);
-	
+	public void setContainerProductSortHLAPI(ProductSortHLAPI elem);
+
 	/**
 	 * set ContainerType
 	 */
-	public void setContainerTypeHLAPI(
-	TypeHLAPI elem);
-	
+	public void setContainerTypeHLAPI(TypeHLAPI elem);
+
 	/**
 	 * set ContainerAll
 	 */
-	public void setContainerAllHLAPI(
-	AllHLAPI elem);
-	
+	public void setContainerAllHLAPI(AllHLAPI elem);
+
 	/**
 	 * set ContainerEmpty
 	 */
-	public void setContainerEmptyHLAPI(
-	EmptyHLAPI elem);
-	
+	public void setContainerEmptyHLAPI(EmptyHLAPI elem);
+
 	/**
 	 * set ContainerPartition
 	 */
-	public void setContainerPartitionHLAPI(
-	PartitionHLAPI elem);
-	
+	public void setContainerPartitionHLAPI(PartitionHLAPI elem);
+
 	/**
 	 * set ContainerNumberConstant
 	 */
-	public void setContainerNumberConstantHLAPI(
-	NumberConstantHLAPI elem);
-	
+	public void setContainerNumberConstantHLAPI(NumberConstantHLAPI elem);
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
-
-	//equals method
+	// equals method
 	public boolean equals(Object item);
 
 }

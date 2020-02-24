@@ -43,46 +43,53 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.Term;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Condition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Condition</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getContainerTransition <em>Container Transition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getContainerTransition
+ * <em>Container Transition</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCondition()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='condition' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='condition'
+ *        kind='son'"
  * @generated
  */
 public interface Condition extends HLCoreAnnotation {
 	/**
 	 * Returns the value of the '<em><b>Structure</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition <em>Container Condition</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition
+	 * <em>Container Condition</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Structure</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Structure</em>' containment reference.
 	 * @see #setStructure(Term)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCondition_Structure()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition
 	 * @model opposite="containerCondition" containment="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure' kind='follow' toBeFollowed='yes'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='structure'
+	 *        kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	Term getStructure();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure
+	 * <em>Structure</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Structure</em>' containment reference.
 	 * @see #getStructure()
 	 * @generated
@@ -90,14 +97,16 @@ public interface Condition extends HLCoreAnnotation {
 	void setStructure(Term value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Transition</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition#getCondition <em>Condition</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Transition</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition#getCondition
+	 * <em>Condition</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Transition</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Transition</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Transition</em>' container reference.
 	 * @see #setContainerTransition(Transition)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCondition_ContainerTransition()
@@ -108,10 +117,13 @@ public interface Condition extends HLCoreAnnotation {
 	Transition getContainerTransition();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getContainerTransition <em>Container Transition</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getContainerTransition
+	 * <em>Container Transition</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Transition</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Transition</em>' container
+	 *              reference.
 	 * @see #getContainerTransition()
 	 * @generated
 	 */
@@ -127,8 +139,8 @@ public interface Condition extends HLCoreAnnotation {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

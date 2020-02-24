@@ -72,14 +72,15 @@ import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Variable Decl</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Variable Decl</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableDeclImpl#getSort <em>Sort</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableDeclImpl#getContainerNamedOperator <em>Container Named Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableDeclImpl#getSort
+ * <em>Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.VariableDeclImpl#getContainerNamedOperator
+ * <em>Container Named Operator</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,9 +88,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDecl {
 	/**
-	 * The cached value of the '{@link #getSort() <em>Sort</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSort() <em>Sort</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSort()
 	 * @generated
 	 * @ordered
@@ -97,8 +98,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	protected Sort sort;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected VariableDeclImpl() {
@@ -106,8 +107,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -116,8 +117,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -126,8 +127,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetSort(Sort newSort, NotificationChain msgs) {
@@ -145,8 +146,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -167,8 +168,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -179,8 +180,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNamedOperator(NamedOperator newContainerNamedOperator,
@@ -191,14 +192,15 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
+				|| (eContainerFeatureID() != TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR
+						&& newContainerNamedOperator != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamedOperator))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -216,8 +218,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -225,8 +227,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		switch (featureID) {
 		case TermsPackage.VARIABLE_DECL__SORT:
 			if (sort != null)
-				msgs = ((InternalEObject) sort).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.VARIABLE_DECL__SORT, null, msgs);
+				msgs = ((InternalEObject) sort).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.VARIABLE_DECL__SORT, null, msgs);
 			return basicSetSort((Sort) otherEnd, msgs);
 		case TermsPackage.VARIABLE_DECL__CONTAINER_NAMED_OPERATOR:
 			if (eInternalContainer() != null)
@@ -237,8 +239,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -253,8 +255,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -268,8 +270,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -284,8 +286,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -302,8 +304,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -320,8 +322,8 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -340,10 +342,10 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -361,7 +363,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -381,7 +383,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSort() != null) {
 
@@ -415,16 +417,16 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 1
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -432,9 +434,9 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
@@ -444,7 +446,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -458,7 +460,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -468,7 +470,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -478,7 +480,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -488,7 +490,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -498,7 +500,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 				item.setContainerVariableDecl(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -509,10 +511,10 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -535,7 +537,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -555,7 +557,7 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSort() != null) {
 
@@ -628,4 +630,4 @@ public class VariableDeclImpl extends TermsDeclarationImpl implements VariableDe
 		return retour;
 
 	}
-} //VariableDeclImpl
+} // VariableDeclImpl

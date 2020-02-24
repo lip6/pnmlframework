@@ -75,162 +75,162 @@ import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Package</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass declarationsEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass termsDeclarationEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass sortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass multisetSortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass termEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass operatorEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass variableDeclEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass variableEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass builtInSortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass productSortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass builtInConstantEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass multisetOperatorEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass tupleEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass sortDeclEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass builtInOperatorEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass namedSortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userSortEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass operatorDeclEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass namedOperatorEClass = null;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private EClass userOperatorEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
-	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
-	 * package URI value.
-	 * <p>Note: the correct way to create the package is via the static
-	 * factory method {@link #init init()}, which also performs
-	 * initialization of the package, or returns the registered package,
-	 * if one already exists.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the
+	 * package package URI value.
+	 * <p>
+	 * Note: the correct way to create the package is via the static factory method
+	 * {@link #init init()}, which also performs initialization of the package, or
+	 * returns the registered package, if one already exists. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#eNS_URI
 	 * @see #init()
@@ -241,19 +241,22 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static boolean isInited = false;
 
 	/**
-	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and
+	 * for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link TermsPackage#eINSTANCE} when that field is accessed.
-	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <p>
+	 * This method is used to initialize {@link TermsPackage#eINSTANCE} when that
+	 * field is accessed. Clients should not invoke it directly. Instead, they
+	 * should simply access that field to obtain the package. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see #eNS_URI
 	 * @see #createPackageContents()
 	 * @see #initializePackageContents()
@@ -264,29 +267,37 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 			return (TermsPackage) EPackage.Registry.INSTANCE.getEPackage(TermsPackage.eNS_URI);
 
 		// Obtain or create and register package
-		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE
-				.get(eNS_URI) : new TermsPackageImpl());
+		TermsPackageImpl theTermsPackage = (TermsPackageImpl) (EPackage.Registry.INSTANCE
+				.get(eNS_URI) instanceof TermsPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI)
+						: new TermsPackageImpl());
 
 		isInited = true;
 
 		// Obtain or create and register interdependencies
 		BooleansPackageImpl theBooleansPackage = (BooleansPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(BooleansPackage.eNS_URI) : BooleansPackage.eINSTANCE);
-		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(DotsPackage.eNS_URI) : DotsPackage.eINSTANCE);
+				.getEPackage(BooleansPackage.eNS_URI) instanceof BooleansPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(BooleansPackage.eNS_URI)
+						: BooleansPackage.eINSTANCE);
+		DotsPackageImpl theDotsPackage = (DotsPackageImpl) (EPackage.Registry.INSTANCE
+				.getEPackage(DotsPackage.eNS_URI) instanceof DotsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(DotsPackage.eNS_URI)
+						: DotsPackage.eINSTANCE);
 		HlcorestructurePackageImpl theHlcorestructurePackage = (HlcorestructurePackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(HlcorestructurePackage.eNS_URI) : HlcorestructurePackage.eINSTANCE);
+				.getEPackage(HlcorestructurePackage.eNS_URI) instanceof HlcorestructurePackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(HlcorestructurePackage.eNS_URI)
+						: HlcorestructurePackage.eINSTANCE);
 		IntegersPackageImpl theIntegersPackage = (IntegersPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(IntegersPackage.eNS_URI) : IntegersPackage.eINSTANCE);
+				.getEPackage(IntegersPackage.eNS_URI) instanceof IntegersPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(IntegersPackage.eNS_URI)
+						: IntegersPackage.eINSTANCE);
 		MultisetsPackageImpl theMultisetsPackage = (MultisetsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(MultisetsPackage.eNS_URI) : MultisetsPackage.eINSTANCE);
+				.getEPackage(MultisetsPackage.eNS_URI) instanceof MultisetsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(MultisetsPackage.eNS_URI)
+						: MultisetsPackage.eINSTANCE);
 		PartitionsPackageImpl thePartitionsPackage = (PartitionsPackageImpl) (EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl ? EPackage.Registry.INSTANCE
-				.getEPackage(PartitionsPackage.eNS_URI) : PartitionsPackage.eINSTANCE);
+				.getEPackage(PartitionsPackage.eNS_URI) instanceof PartitionsPackageImpl
+						? EPackage.Registry.INSTANCE.getEPackage(PartitionsPackage.eNS_URI)
+						: PartitionsPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theTermsPackage.createPackageContents();
@@ -323,8 +334,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -333,8 +344,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -343,8 +354,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -353,8 +364,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -363,8 +374,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -373,8 +384,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -383,8 +394,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -393,8 +404,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -403,8 +414,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -413,8 +424,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -423,8 +434,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -433,8 +444,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -443,8 +454,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -453,8 +464,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -463,8 +474,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -473,8 +484,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -483,8 +494,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -493,8 +504,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -503,8 +514,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -513,8 +524,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -523,8 +534,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -533,8 +544,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -543,8 +554,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -553,8 +564,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -563,8 +574,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -573,8 +584,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -583,8 +594,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -593,8 +604,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -603,8 +614,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -613,8 +624,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -623,8 +634,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -633,8 +644,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -643,8 +654,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -653,8 +664,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -663,8 +674,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -673,8 +684,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -683,8 +694,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -693,8 +704,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -703,8 +714,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -713,8 +724,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -723,8 +734,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -733,8 +744,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -743,8 +754,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -753,8 +764,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -763,8 +774,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -773,8 +784,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -783,8 +794,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -793,8 +804,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -803,8 +814,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -813,8 +824,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -823,8 +834,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -833,8 +844,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -843,8 +854,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -853,8 +864,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -863,17 +874,17 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isCreated = false;
 
 	/**
-	 * Creates the meta-model objects for the package.  This method is
-	 * guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the meta-model objects for the package. This method is guarded to
+	 * have no affect on any invocation but its first. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void createPackageContents() {
@@ -957,17 +968,17 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private boolean isInitialized = false;
 
 	/**
-	 * Complete the initialization of the package and its meta-model.  This
-	 * method is guarded to have no affect on any invocation but its first.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Complete the initialization of the package and its meta-model. This method is
+	 * guarded to have no affect on any invocation but its first. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public void initializePackageContents() {
@@ -1039,8 +1050,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 				Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getSort_ContainerNamedSort(), this.getNamedSort(), this.getNamedSort_Sortdef(),
-				"containerNamedSort", null, 0, 1, Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+				"containerNamedSort", null, 0, 1, Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSort_ContainerVariableDecl(), this.getVariableDecl(), this.getVariableDecl_Sort(),
 				"containerVariableDecl", null, 0, 1, Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1049,19 +1060,18 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSort_ContainerType(), theHlcorestructurePackage.getType(),
 				theHlcorestructurePackage.getType_Structure(), "containerType", null, 0, 1, Sort.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				IS_ORDERED);
 		initEReference(getSort_ContainerAll(), theMultisetsPackage.getAll(), theMultisetsPackage.getAll_Refsort(),
 				"containerAll", null, 0, 1, Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
 				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSort_ContainerEmpty(), theMultisetsPackage.getEmpty(),
-				theMultisetsPackage.getEmpty_Refsort(), "containerEmpty", null, 0, 1, Sort.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, IS_ORDERED);
+		initEReference(getSort_ContainerEmpty(), theMultisetsPackage.getEmpty(), theMultisetsPackage.getEmpty_Refsort(),
+				"containerEmpty", null, 0, 1, Sort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSort_ContainerPartition(), thePartitionsPackage.getPartition(),
 				thePartitionsPackage.getPartition_Def(), "containerPartition", null, 0, 1, Sort.class, !IS_TRANSIENT,
-				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE,
-				!IS_DERIVED, !IS_ORDERED);
+				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED,
+				!IS_ORDERED);
 
 		initEClass(multisetSortEClass, MultisetSort.class, "MultisetSort", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1073,9 +1083,9 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		initEReference(getTerm_Sort(), this.getSort(), null, "sort", null, 0, 1, Term.class, !IS_TRANSIENT,
 				!IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED,
 				!IS_ORDERED);
-		initEReference(getTerm_ContainerOperator(), this.getOperator(), this.getOperator_Subterm(),
-				"containerOperator", null, 0, 1, Term.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE,
-				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTerm_ContainerOperator(), this.getOperator(), this.getOperator_Subterm(), "containerOperator",
+				null, 0, 1, Term.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTerm_ContainerNamedOperator(), this.getNamedOperator(), this.getNamedOperator_Def(),
 				"containerNamedOperator", null, 0, 1, Term.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
 				!IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1092,8 +1102,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTerm_ContainerPartitionElement(), thePartitionsPackage.getPartitionElement(),
-				thePartitionsPackage.getPartitionElement_Partitionelementconstants(), "containerPartitionElement",
-				null, 0, 1, Term.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+				thePartitionsPackage.getPartitionElement_Partitionelementconstants(), "containerPartitionElement", null,
+				0, 1, Term.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(operatorEClass, Operator.class, "Operator", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1109,15 +1119,16 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 
 		initEClass(variableDeclEClass, VariableDecl.class, "VariableDecl", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getVariableDecl_Sort(), this.getSort(), this.getSort_ContainerVariableDecl(), "sort", null, 1,
-				1, VariableDecl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getVariableDecl_Sort(), this.getSort(), this.getSort_ContainerVariableDecl(), "sort", null, 1, 1,
+				VariableDecl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getVariableDecl_ContainerNamedOperator(), this.getNamedOperator(),
 				this.getNamedOperator_Parameters(), "containerNamedOperator", null, 0, 1, VariableDecl.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(variableEClass, Variable.class, "Variable", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(variableEClass, Variable.class, "Variable", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getVariable_VariableDecl(), this.getVariableDecl(), null, "variableDecl", null, 1, 1,
 				Variable.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1127,9 +1138,9 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 
 		initEClass(productSortEClass, ProductSort.class, "ProductSort", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getProductSort_ElementSort(), this.getSort(), this.getSort_ContainerProductSort(),
-				"elementSort", null, 0, -1, ProductSort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE,
-				IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductSort_ElementSort(), this.getSort(), this.getSort_ContainerProductSort(), "elementSort",
+				null, 0, -1, ProductSort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE,
+				!IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(builtInConstantEClass, BuiltInConstant.class, "BuiltInConstant", IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
@@ -1146,11 +1157,12 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 
 		initEClass(namedSortEClass, NamedSort.class, "NamedSort", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getNamedSort_Sortdef(), this.getSort(), this.getSort_ContainerNamedSort(), "sortdef", null, 1,
-				1, NamedSort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getNamedSort_Sortdef(), this.getSort(), this.getSort_ContainerNamedSort(), "sortdef", null, 1, 1,
+				NamedSort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(userSortEClass, UserSort.class, "UserSort", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(userSortEClass, UserSort.class, "UserSort", !IS_ABSTRACT, !IS_INTERFACE,
+				IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getUserSort_Declaration(), this.getSortDecl(), null, "declaration", null, 1, 1, UserSort.class,
 				!IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE,
 				IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -1160,8 +1172,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 
 		initEClass(namedOperatorEClass, NamedOperator.class, "NamedOperator", !IS_ABSTRACT, !IS_INTERFACE,
 				IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getNamedOperator_Def(), this.getTerm(), this.getTerm_ContainerNamedOperator(), "def", null, 1,
-				1, NamedOperator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
+		initEReference(getNamedOperator_Def(), this.getTerm(), this.getTerm_ContainerNamedOperator(), "def", null, 1, 1,
+				NamedOperator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES,
 				!IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getNamedOperator_Parameters(), this.getVariableDecl(),
 				this.getVariableDecl_ContainerNamedOperator(), "parameters", null, 0, -1, NamedOperator.class,
@@ -1192,8 +1204,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 
 	/**
 	 * Initializes the annotations for <b>http://www.pnml.org/models/ToPNML</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createToPNMLAnnotations() {
@@ -1204,8 +1216,8 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		addAnnotation(getTermsDeclaration_Name(), source, new String[] { "tag", "name", "kind", "attribute" });
 		addAnnotation(multisetSortEClass, source, new String[] { "tag", "multisetsort", "kind", "son" });
 		addAnnotation(getMultisetSort_Basis(), source, new String[] { "kind", "follow" });
-		addAnnotation(getOperator_Subterm(), source, new String[] { "tag", "subterm", "kind", "follow", "toBeFollowed",
-				"yes" });
+		addAnnotation(getOperator_Subterm(), source,
+				new String[] { "tag", "subterm", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(variableDeclEClass, source, new String[] { "tag", "variabledecl", "kind", "son" });
 		addAnnotation(getVariableDecl_Sort(), source, new String[] { "kind", "follow" });
 		addAnnotation(variableEClass, source, new String[] { "tag", "variable", "kind", "son" });
@@ -1218,18 +1230,18 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		addAnnotation(userSortEClass, source, new String[] { "tag", "usersort", "kind", "son" });
 		addAnnotation(getUserSort_Declaration(), source, new String[] { "tag", "declaration", "kind", "idref" });
 		addAnnotation(namedOperatorEClass, source, new String[] { "tag", "namedoperator", "kind", "son" });
-		addAnnotation(getNamedOperator_Def(), source, new String[] { "tag", "def", "kind", "follow", "toBeFollowed",
-				"yes" });
-		addAnnotation(getNamedOperator_Parameters(), source, new String[] { "tag", "parameter", "kind", "follow",
-				"toBeFollowed", "yes" });
+		addAnnotation(getNamedOperator_Def(), source,
+				new String[] { "tag", "def", "kind", "follow", "toBeFollowed", "yes" });
+		addAnnotation(getNamedOperator_Parameters(), source,
+				new String[] { "tag", "parameter", "kind", "follow", "toBeFollowed", "yes" });
 		addAnnotation(userOperatorEClass, source, new String[] { "tag", "useroperator", "kind", "son" });
 		addAnnotation(getUserOperator_Declaration(), source, new String[] { "tag", "declaration", "kind", "idref" });
 	}
 
 	/**
-	 * Initializes the annotations for <b>http://www.pnml.org/models/HLAPI</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for <b>http://www.pnml.org/models/HLAPI</b>. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createHLAPIAnnotations() {
@@ -1253,72 +1265,48 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 	}
 
 	/**
-	 * Initializes the annotations for <b>http://www.pnml.org/models/methods/SORT</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for
+	 * <b>http://www.pnml.org/models/methods/SORT</b>. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createSORTAnnotations() {
 		String source = "http://www.pnml.org/models/methods/SORT";
-		addAnnotation(
-				sortEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"",
-						"documentation",
-						"/**\n  * Returns true if this sort and argument sort are actually semantically the\n  * same sort, even in two different objects. \n  * <p>Ex: two FiniteEnumerations F1 = {1,4,6} and F2 = {1,4,6} or\n  * two Integers I1 and I2.</p> \n  * <p><strong>Note</strong> : the implementation available for\n  * MultisetSort is not complete. In particular, we just test equality\n  * of the references or of the enclosing NamedSorts (if any). \n  * You should consider overriding it in that case.\n  * \n  * @return true if so.\n  * @param sort\n  *            the sort to which we compare this one.\n  */" });
-		addAnnotation(
-				multisetSortEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t throw new UnsupportedOperationException(\"Cannot determine if these two multisets are equal.\"\n\t\t\t + \"You should override this method.\");\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
-						"documentation",
-						"/**\r * Note : there is no implementation available for MultisetSort yet.\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r */" });
-		addAnnotation(
-				productSortEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t// Someone may one day inherit from ProductSort, so we should\n\t\t\t\t// strictly check for ProductSort only. Further sub-classes must \n\t\t\t\t//override this method.\n\t\t\t\tif (\"ProductSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tProductSort mySort = (ProductSort) this;\n\t\t\t\t\tProductSort thatSort = (ProductSort) sort;\n\t\t\t\t\tList<Sort> myElements = mySort.getElementSort();\n\t\t\t\t\tList<Sort> thoseElements = thatSort.getElementSort();\n\t\t\t\t\tint i = 0;\n\t\t\t\t\tint j = 0;\n\t\t\t\t\tfor (; i < myElements.size() && j < thoseElements.size(); i++, j++) {\n\t\t\t\t\t\tif (myElements\n\t\t\t\t\t\t\t\t.get(i)\n\t\t\t\t\t\t\t\t.eClass()\n\t\t\t\t\t\t\t\t.getName()\n\t\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t\tthoseElements.get(j).eClass().getName())) {\n\t\t\t\t\t\t\tisEqual = true;\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tisEqual = false;\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\t\t\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
-						"documentation",
-						"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r */" });
-		addAnnotation(
-				userSortEClass,
-				source,
-				new String[] {
-						"signature",
-						"boolean equalSorts(Sort sort)",
-						"body",
-						"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t//further sub-classes must override this method.\n\t\t\t\tif (\"UserSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tisEqual = ((UserSort) this).getDeclaration().getName()\n\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t((UserSort) sort).getDeclaration()\n\t\t\t\t\t\t\t\t\t\t\t.getName());\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
-						"documentation",
-						"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r */" });
+		addAnnotation(sortEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body", "",
+				"documentation",
+				"/**\n  * Returns true if this sort and argument sort are actually semantically the\n  * same sort, even in two different objects. \n  * <p>Ex: two FiniteEnumerations F1 = {1,4,6} and F2 = {1,4,6} or\n  * two Integers I1 and I2.</p> \n  * <p><strong>Note</strong> : the implementation available for\n  * MultisetSort is not complete. In particular, we just test equality\n  * of the references or of the enclosing NamedSorts (if any). \n  * You should consider overriding it in that case.\n  * \n  * @return true if so.\n  * @param sort\n  *            the sort to which we compare this one.\n  */" });
+		addAnnotation(multisetSortEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body",
+				"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t throw new UnsupportedOperationException(\"Cannot determine if these two multisets are equal.\"\n\t\t\t + \"You should override this method.\");\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
+				"documentation",
+				"/**\r * Note : there is no implementation available for MultisetSort yet.\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r */" });
+		addAnnotation(productSortEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body",
+				"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t// Someone may one day inherit from ProductSort, so we should\n\t\t\t\t// strictly check for ProductSort only. Further sub-classes must \n\t\t\t\t//override this method.\n\t\t\t\tif (\"ProductSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tProductSort mySort = (ProductSort) this;\n\t\t\t\t\tProductSort thatSort = (ProductSort) sort;\n\t\t\t\t\tList<Sort> myElements = mySort.getElementSort();\n\t\t\t\t\tList<Sort> thoseElements = thatSort.getElementSort();\n\t\t\t\t\tint i = 0;\n\t\t\t\t\tint j = 0;\n\t\t\t\t\tfor (; i < myElements.size() && j < thoseElements.size(); i++, j++) {\n\t\t\t\t\t\tif (myElements\n\t\t\t\t\t\t\t\t.get(i)\n\t\t\t\t\t\t\t\t.eClass()\n\t\t\t\t\t\t\t\t.getName()\n\t\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t\tthoseElements.get(j).eClass().getName())) {\n\t\t\t\t\t\t\tisEqual = true;\n\t\t\t\t\t\t} else {\n\t\t\t\t\t\t\tisEqual = false;\n\t\t\t\t\t\t\tbreak;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\t\t\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
+				"documentation",
+				"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r */" });
+		addAnnotation(userSortEClass, source, new String[] { "signature", "boolean equalSorts(Sort sort)", "body",
+				"boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t//further sub-classes must override this method.\n\t\t\t\tif (\"UserSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tisEqual = ((UserSort) this).getDeclaration().getName()\n\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t((UserSort) sort).getDeclaration()\n\t\t\t\t\t\t\t\t\t\t\t.getName());\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn isEqual;",
+				"documentation",
+				"/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r */" });
 	}
 
 	/**
-	 * Initializes the annotations for <b>http://www.pnml.org/models/OCL</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for <b>http://www.pnml.org/models/OCL</b>. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createOCLAnnotations() {
 		String source = "http://www.pnml.org/models/OCL";
 		addAnnotation(operatorEClass, source, new String[] { "sameOperatorNTermSort", "self.sort = self.output" });
-		addAnnotation(namedSortEClass, source, new String[] { "refSortNotMultiset",
-				"not(self.sortdef.oclIsTypeOf(MultisetSort))" });
+		addAnnotation(namedSortEClass, source,
+				new String[] { "refSortNotMultiset", "not(self.sortdef.oclIsTypeOf(MultisetSort))" });
 	}
 
 	/**
 	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected void createEcoreAnnotations() {
@@ -1327,4 +1315,4 @@ public class TermsPackageImpl extends EPackageImpl implements TermsPackage {
 		addAnnotation(namedSortEClass, source, new String[] { "constraints", "refSortNotMultiset" });
 	}
 
-} //TermsPackageImpl
+} // TermsPackageImpl

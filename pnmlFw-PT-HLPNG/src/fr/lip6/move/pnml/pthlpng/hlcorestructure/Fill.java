@@ -44,19 +44,24 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Fill</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Fill</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getColor <em>Color</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientcolor <em>Gradientcolor</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientrotation <em>Gradientrotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getImage <em>Image</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics <em>Container Node Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getColor
+ * <em>Color</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientcolor
+ * <em>Gradientcolor</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientrotation
+ * <em>Gradientrotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getImage
+ * <em>Image</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics
+ * <em>Container Node Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -66,29 +71,32 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface Fill extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Color</b></em>' attribute.
-	 * The default value is <code>"BLACK"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Color</b></em>' attribute. The default value
+	 * is <code>"BLACK"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Color</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Color</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Color</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #setColor(CSS2Color)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_Color()
 	 * @model default="BLACK" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='color' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='color'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2Color getColor();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getColor <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getColor
+	 * <em>Color</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Color</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #getColor()
@@ -97,29 +105,33 @@ public interface Fill extends EObject {
 	void setColor(CSS2Color value);
 
 	/**
-	 * Returns the value of the '<em><b>Gradientcolor</b></em>' attribute.
-	 * The default value is <code>"BLACK"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Gradientcolor</b></em>' attribute. The
+	 * default value is <code>"BLACK"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Gradientcolor</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Gradientcolor</em>' attribute isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Gradientcolor</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #setGradientcolor(CSS2Color)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_Gradientcolor()
 	 * @model default="BLACK" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='gradient-color' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='gradient-color'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2Color getGradientcolor();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientcolor <em>Gradientcolor</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientcolor
+	 * <em>Gradientcolor</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @param value the new value of the '<em>Gradientcolor</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #getGradientcolor()
@@ -128,28 +140,32 @@ public interface Fill extends EObject {
 	void setGradientcolor(CSS2Color value);
 
 	/**
-	 * Returns the value of the '<em><b>Gradientrotation</b></em>' attribute.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Gradient}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Gradientrotation</b></em>' attribute. The
+	 * literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Gradient}. <!--
+	 * begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Gradientrotation</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Gradientrotation</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Gradient
 	 * @see #setGradientrotation(Gradient)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_Gradientrotation()
-	 * @model ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='gradient-rotation' kind='attribute'"
+	 * @model ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='gradient-rotation' kind='attribute'"
 	 * @generated
 	 */
 	Gradient getGradientrotation();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientrotation <em>Gradientrotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getGradientrotation
+	 * <em>Gradientrotation</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Gradientrotation</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Gradient
 	 * @see #getGradientrotation()
@@ -158,26 +174,29 @@ public interface Fill extends EObject {
 	void setGradientrotation(Gradient value);
 
 	/**
-	 * Returns the value of the '<em><b>Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Image</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Image</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Image</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Image</em>' attribute.
 	 * @see #setImage(URI)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_Image()
-	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.URI" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='image' kind='attribute'"
+	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.URI"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='image' kind='attribute'"
 	 * @generated
 	 */
 	URI getImage();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getImage <em>Image</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getImage
+	 * <em>Image</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Image</em>' attribute.
 	 * @see #getImage()
 	 * @generated
@@ -185,15 +204,18 @@ public interface Fill extends EObject {
 	void setImage(URI value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Node Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill <em>Fill</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Node Graphics</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill
+	 * <em>Fill</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Node Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Node Graphics</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Node Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Node Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerNodeGraphics(NodeGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_ContainerNodeGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getFill
@@ -203,25 +225,31 @@ public interface Fill extends EObject {
 	NodeGraphics getContainerNodeGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics <em>Container Node Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Node Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerNodeGraphics
+	 * <em>Container Node Graphics</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Node Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerNodeGraphics()
 	 * @generated
 	 */
 	void setContainerNodeGraphics(NodeGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill <em>Fill</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>'
+	 * container reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill
+	 * <em>Fill</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Annotation Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Annotation Graphics</em>' container
+	 * reference isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Annotation Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerAnnotationGraphics(AnnotationGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFill_ContainerAnnotationGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill
@@ -231,10 +259,13 @@ public interface Fill extends EObject {
 	AnnotationGraphics getContainerAnnotationGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}' container reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Annotation Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerAnnotationGraphics()
 	 * @generated
 	 */
@@ -248,8 +279,8 @@ public interface Fill extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

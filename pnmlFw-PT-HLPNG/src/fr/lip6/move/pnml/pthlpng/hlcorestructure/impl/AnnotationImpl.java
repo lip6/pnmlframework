@@ -43,13 +43,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Annotation</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationImpl#getAnnotationgraphics <em>Annotationgraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnnotationImpl#getAnnotationgraphics
+ * <em>Annotationgraphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -57,9 +57,10 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
  */
 public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	/**
-	 * The cached value of the '{@link #getAnnotationgraphics() <em>Annotationgraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getAnnotationgraphics()
+	 * <em>Annotationgraphics</em>}' containment reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #getAnnotationgraphics()
 	 * @generated
 	 * @ordered
@@ -67,8 +68,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	protected AnnotationGraphics annotationgraphics;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected AnnotationImpl() {
@@ -76,8 +77,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -86,8 +87,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -96,16 +97,18 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetAnnotationgraphics(AnnotationGraphics newAnnotationgraphics, NotificationChain msgs) {
+	public NotificationChain basicSetAnnotationgraphics(AnnotationGraphics newAnnotationgraphics,
+			NotificationChain msgs) {
 		AnnotationGraphics oldAnnotationgraphics = annotationgraphics;
 		annotationgraphics = newAnnotationgraphics;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, oldAnnotationgraphics, newAnnotationgraphics);
+					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, oldAnnotationgraphics,
+					newAnnotationgraphics);
 			if (msgs == null)
 				msgs = notification;
 			else
@@ -115,8 +118,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -135,13 +138,13 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, newAnnotationgraphics, newAnnotationgraphics));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS,
+					newAnnotationgraphics, newAnnotationgraphics));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -149,16 +152,16 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 		switch (featureID) {
 		case HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS:
 			if (annotationgraphics != null)
-				msgs = ((InternalEObject) annotationgraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) annotationgraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ANNOTATION__ANNOTATIONGRAPHICS, null, msgs);
 			return basicSetAnnotationgraphics((AnnotationGraphics) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -171,8 +174,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -185,8 +188,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -200,8 +203,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -215,8 +218,8 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -230,4 +233,4 @@ public abstract class AnnotationImpl extends LabelImpl implements Annotation {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //AnnotationImpl
+} // AnnotationImpl

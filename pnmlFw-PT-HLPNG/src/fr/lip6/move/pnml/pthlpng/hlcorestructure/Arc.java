@@ -42,50 +42,64 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Arc</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Arc</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource <em>Source</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget <em>Target</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics <em>Arcgraphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription <em>Hlinscription</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource
+ * <em>Source</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget
+ * <em>Target</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics
+ * <em>Arcgraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription
+ * <em>Hlinscription</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='arc' kind='son'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='samePageSourceTarget differentSourceTarget'"
- *        annotation="http://www.pnml.org/models/OCL samePageSourceTarget='self.source.containerPage = self.target.containerPage' differentSourceTarget='(self.source.oclIsKindOf(PlaceNode) and self.target.oclIsKindOf(TransitionNode)) or (self.source.oclIsKindOf(TransitionNode) and self.target.oclIsKindOf(PlaceNode))'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='samePageSourceTarget differentSourceTarget'"
+ *        annotation="http://www.pnml.org/models/OCL
+ *        samePageSourceTarget='self.source.containerPage =
+ *        self.target.containerPage'
+ *        differentSourceTarget='(self.source.oclIsKindOf(PlaceNode) and
+ *        self.target.oclIsKindOf(TransitionNode)) or
+ *        (self.source.oclIsKindOf(TransitionNode) and
+ *        self.target.oclIsKindOf(PlaceNode))'"
  * @generated
  */
 public interface Arc extends PnObject {
 	/**
-	 * Returns the value of the '<em><b>Source</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getOutArcs <em>Out Arcs</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Source</b></em>' reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getOutArcs <em>Out
+	 * Arcs</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Source</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Source</em>' reference isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Source</em>' reference.
 	 * @see #setSource(Node)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc_Source()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getOutArcs
 	 * @model opposite="OutArcs" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='idref' tag='source'"
+	 *        annotation="http://www.pnml.org/models/ToPNML kind='idref'
+	 *        tag='source'"
 	 * @generated
 	 */
 	Node getSource();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource <em>Source</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getSource
+	 * <em>Source</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Source</em>' reference.
 	 * @see #getSource()
 	 * @generated
@@ -93,28 +107,32 @@ public interface Arc extends PnObject {
 	void setSource(Node value);
 
 	/**
-	 * Returns the value of the '<em><b>Target</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getInArcs <em>In Arcs</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Target</b></em>' reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getInArcs <em>In
+	 * Arcs</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Target</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Target</em>' reference isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Target</em>' reference.
 	 * @see #setTarget(Node)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc_Target()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Node#getInArcs
 	 * @model opposite="InArcs" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='idref' tag='target'"
+	 *        annotation="http://www.pnml.org/models/ToPNML kind='idref'
+	 *        tag='target'"
 	 * @generated
 	 */
 	Node getTarget();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget <em>Target</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getTarget
+	 * <em>Target</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Target</em>' reference.
 	 * @see #getTarget()
 	 * @generated
@@ -123,13 +141,15 @@ public interface Arc extends PnObject {
 
 	/**
 	 * Returns the value of the '<em><b>Arcgraphics</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc <em>Container Arc</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc
+	 * <em>Container Arc</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Arcgraphics</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Arcgraphics</em>' containment reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Arcgraphics</em>' containment reference.
 	 * @see #setArcgraphics(ArcGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc_Arcgraphics()
@@ -141,24 +161,29 @@ public interface Arc extends PnObject {
 	ArcGraphics getArcgraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics <em>Arcgraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Arcgraphics</em>' containment reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics
+	 * <em>Arcgraphics</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Arcgraphics</em>' containment
+	 *              reference.
 	 * @see #getArcgraphics()
 	 * @generated
 	 */
 	void setArcgraphics(ArcGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Hlinscription</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc <em>Container Arc</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Hlinscription</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getContainerArc
+	 * <em>Container Arc</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Hlinscription</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Hlinscription</em>' containment reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Hlinscription</em>' containment reference.
 	 * @see #setHlinscription(HLAnnotation)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc_Hlinscription()
@@ -170,10 +195,13 @@ public interface Arc extends PnObject {
 	HLAnnotation getHlinscription();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription <em>Hlinscription</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Hlinscription</em>' containment reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getHlinscription
+	 * <em>Hlinscription</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Hlinscription</em>' containment
+	 *              reference.
 	 * @see #getHlinscription()
 	 * @generated
 	 */
@@ -189,8 +217,8 @@ public interface Arc extends PnObject {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

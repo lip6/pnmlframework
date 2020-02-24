@@ -46,16 +46,16 @@ import fr.lip6.move.pnml.pthlpng.partitions.PartitionsFactory;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Factory</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static PartitionsFactory init() {
@@ -72,9 +72,9 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public PartitionsFactoryImpl() {
@@ -82,8 +82,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -105,8 +105,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -116,8 +116,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -127,8 +127,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -138,8 +138,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -149,8 +149,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -160,8 +160,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -170,8 +170,8 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @deprecated
 	 * @generated
 	 */
@@ -180,4 +180,4 @@ public class PartitionsFactoryImpl extends EFactoryImpl implements PartitionsFac
 		return PartitionsPackage.eINSTANCE;
 	}
 
-} //PartitionsFactoryImpl
+} // PartitionsFactoryImpl

@@ -73,31 +73,28 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Switch</b> for the model's inheritance hierarchy.
- * It supports the call {@link #doSwitch(EObject) doSwitch(object)}
+ * <!-- begin-user-doc --> The <b>Switch</b> for the model's inheritance
+ * hierarchy. It supports the call {@link #doSwitch(EObject) doSwitch(object)}
  * to invoke the <code>caseXXX</code> method for each class of the model,
- * starting with the actual class of the object
- * and proceeding up the inheritance hierarchy
- * until a non-null result is returned,
- * which is the result of the switch.
- * <!-- end-user-doc -->
+ * starting with the actual class of the object and proceeding up the
+ * inheritance hierarchy until a non-null result is returned, which is the
+ * result of the switch. <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage
  * @generated
  */
 public class HlcorestructureSwitch<T> extends Switch<T> {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static HlcorestructurePackage modelPackage;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public HlcorestructureSwitch() {
@@ -107,9 +104,9 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Checks whether this is a switch for the given package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Checks whether this is a switch for the given package. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @parameter ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
@@ -120,9 +117,10 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a
+	 * non null result; it yields that result. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @return the first non-null result returned by a <code>caseXXX</code> call.
 	 * @generated
 	 */
@@ -472,13 +470,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Petri Net Doc</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Petri
+	 * Net Doc</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Petri Net Doc</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Petri
+	 *         Net Doc</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -487,13 +485,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Petri Net</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Petri
+	 * Net</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Petri Net</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Petri
+	 *         Net</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -502,13 +500,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Page</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Page</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Page</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Page</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -517,13 +515,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Pn Object</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Pn
+	 * Object</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Pn Object</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Pn
+	 *         Object</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -532,13 +530,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Name</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Name</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Name</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Name</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -547,13 +545,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Tool Info</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Tool
+	 * Info</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Tool Info</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Tool
+	 *         Info</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -562,13 +560,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Label</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Label</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Label</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Label</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -577,13 +575,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Node Graphics</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Node
+	 * Graphics</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Node Graphics</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Node
+	 *         Graphics</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -592,13 +590,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Graphics</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Graphics</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Graphics</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Graphics</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -607,13 +606,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Coordinate</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Coordinate</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Coordinate</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Coordinate</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -622,13 +622,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Position</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Position</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Position</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Position</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -637,13 +638,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Offset</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Offset</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Offset</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Offset</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -652,13 +653,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Dimension</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Dimension</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Dimension</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Dimension</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -667,13 +669,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Annotation Graphics</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Annotation Graphics</em>'. <!-- begin-user-doc --> This implementation
+	 * returns null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Annotation Graphics</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Annotation Graphics</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -682,13 +685,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Fill</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Fill</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Fill</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Fill</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -697,13 +700,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Line</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Line</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Line</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Line</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -712,13 +715,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Arc Graphics</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Arc
+	 * Graphics</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Arc Graphics</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Arc
+	 *         Graphics</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -727,13 +730,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Arc</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Arc</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Arc</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Arc</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -742,13 +745,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Node</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Node</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -757,13 +760,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Font</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Font</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Font</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Font</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -772,13 +775,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Place Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Place
+	 * Node</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Place Node</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Place
+	 *         Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -787,13 +790,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Transition Node</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Transition Node</em>'. <!-- begin-user-doc --> This implementation
+	 * returns null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Transition Node</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Transition Node</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -802,13 +806,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Place</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Place</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -817,13 +821,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ref Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Ref
+	 * Transition</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ref Transition</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Ref
+	 *         Transition</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -832,13 +836,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Transition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Transition</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Transition</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Transition</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -847,13 +852,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Ref Place</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Ref
+	 * Place</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Ref Place</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Ref
+	 *         Place</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -862,13 +867,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Attribute</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Attribute</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Attribute</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Attribute</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -877,13 +883,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Annotation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Annotation</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Annotation</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Annotation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -892,13 +899,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Any Object</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Any
+	 * Object</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Any Object</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Any
+	 *         Object</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -907,13 +914,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>HL Core Annotation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>HL Core
+	 * Annotation</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>HL Core Annotation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>HL Core
+	 *         Annotation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -922,13 +929,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Type</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Type</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Type</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Type</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -937,13 +944,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>HL Marking</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>HL
+	 * Marking</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>HL Marking</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>HL
+	 *         Marking</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -952,13 +959,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Condition</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Condition</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Condition</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Condition</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -967,13 +975,13 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>HL Annotation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>HL
+	 * Annotation</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>HL Annotation</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>HL
+	 *         Annotation</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -982,13 +990,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Declaration</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>Declaration</em>'. <!-- begin-user-doc --> This implementation returns
+	 * null; returning a non-null result will terminate the switch. <!--
+	 * end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Declaration</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>Declaration</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
@@ -997,13 +1006,14 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch, but this is the last case anyway.
-	 * <!-- end-user-doc -->
+	 * Returns the result of interpreting the object as an instance of
+	 * '<em>EObject</em>'. <!-- begin-user-doc --> This implementation returns null;
+	 * returning a non-null result will terminate the switch, but this is the last
+	 * case anyway. <!-- end-user-doc -->
+	 * 
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @return the result of interpreting the object as an instance of
+	 *         '<em>EObject</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
 	 * @generated
 	 */
@@ -1012,4 +1022,4 @@ public class HlcorestructureSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //HlcorestructureSwitch
+} // HlcorestructureSwitch

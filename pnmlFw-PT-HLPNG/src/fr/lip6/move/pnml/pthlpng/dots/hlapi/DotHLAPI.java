@@ -64,8 +64,7 @@ import fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.SortHLAPI;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.VariableDeclHLAPI;
 
-
-public class DotHLAPI implements HLAPIClass,SortHLAPI{
+public class DotHLAPI implements HLAPIClass, SortHLAPI {
 
 	/**
 	 * The contained LLAPI element.
@@ -73,167 +72,149 @@ public class DotHLAPI implements HLAPIClass,SortHLAPI{
 	private Dot item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public DotHLAPI(){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI() {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 MultisetSortHLAPI multi
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(MultisetSortHLAPI multi) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(multi!=null)
-			item.setMulti((MultisetSort)multi.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (multi != null)
+			item.setMulti((MultisetSort) multi.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 NamedSortHLAPI containerNamedSort
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(NamedSortHLAPI containerNamedSort) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerNamedSort!=null)
-			item.setContainerNamedSort((NamedSort)containerNamedSort.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerNamedSort != null)
+			item.setContainerNamedSort((NamedSort) containerNamedSort.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 VariableDeclHLAPI containerVariableDecl
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(VariableDeclHLAPI containerVariableDecl) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerVariableDecl!=null)
-			item.setContainerVariableDecl((VariableDecl)containerVariableDecl.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerVariableDecl != null)
+			item.setContainerVariableDecl((VariableDecl) containerVariableDecl.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 ProductSortHLAPI containerProductSort
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(ProductSortHLAPI containerProductSort) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerProductSort!=null)
-			item.setContainerProductSort((ProductSort)containerProductSort.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerProductSort != null)
+			item.setContainerProductSort((ProductSort) containerProductSort.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 TypeHLAPI containerType
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(TypeHLAPI containerType) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerType!=null)
-			item.setContainerType((Type)containerType.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerType != null)
+			item.setContainerType((Type) containerType.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 AllHLAPI containerAll
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(AllHLAPI containerAll) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerAll!=null)
-			item.setContainerAll((All)containerAll.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerAll != null)
+			item.setContainerAll((All) containerAll.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 EmptyHLAPI containerEmpty
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(EmptyHLAPI containerEmpty) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerEmpty!=null)
-			item.setContainerEmpty((Empty)containerEmpty.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerEmpty != null)
+			item.setContainerEmpty((Empty) containerEmpty.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DotHLAPI(
-		 PartitionHLAPI containerPartition
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DotHLAPI(PartitionHLAPI containerPartition) {// BEGIN CONSTRUCTOR BODY
 		DotsFactory fact = DotsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDot();}
-	
- 		
- 		if(containerPartition!=null)
-			item.setContainerPartition((Partition)containerPartition.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDot();
+		}
+
+		if (containerPartition != null)
+			item.setContainerPartition((Partition) containerPartition.getContainedItem());
+
 	}
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public DotHLAPI(Dot lowLevelAPI){
+	public DotHLAPI(Dot lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -241,344 +222,306 @@ public class DotHLAPI implements HLAPIClass,SortHLAPI{
 	/**
 	 * Return encapsulated object
 	 */
-	public Dot getContainedItem(){
+	public Dot getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public MultisetSort getMulti(){
+	public MultisetSort getMulti() {
 		return item.getMulti();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public NamedSort getContainerNamedSort(){
+	public NamedSort getContainerNamedSort() {
 		return item.getContainerNamedSort();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public VariableDecl getContainerVariableDecl(){
+	public VariableDecl getContainerVariableDecl() {
 		return item.getContainerVariableDecl();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public ProductSort getContainerProductSort(){
+	public ProductSort getContainerProductSort() {
 		return item.getContainerProductSort();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Type getContainerType(){
+	public Type getContainerType() {
 		return item.getContainerType();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public All getContainerAll(){
+	public All getContainerAll() {
 		return item.getContainerAll();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Empty getContainerEmpty(){
+	public Empty getContainerEmpty() {
 		return item.getContainerEmpty();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Partition getContainerPartition(){
+	public Partition getContainerPartition() {
 		return item.getContainerPartition();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public MultisetSortHLAPI getMultiHLAPI(){
-			if(item.getMulti() == null) return null;
-			return new MultisetSortHLAPI(item.getMulti());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public NamedSortHLAPI getContainerNamedSortHLAPI(){
-			if(item.getContainerNamedSort() == null) return null;
-			return new NamedSortHLAPI(item.getContainerNamedSort());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public VariableDeclHLAPI getContainerVariableDeclHLAPI(){
-			if(item.getContainerVariableDecl() == null) return null;
-			return new VariableDeclHLAPI(item.getContainerVariableDecl());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public ProductSortHLAPI getContainerProductSortHLAPI(){
-			if(item.getContainerProductSort() == null) return null;
-			return new ProductSortHLAPI(item.getContainerProductSort());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public TypeHLAPI getContainerTypeHLAPI(){
-			if(item.getContainerType() == null) return null;
-			return new TypeHLAPI(item.getContainerType());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public AllHLAPI getContainerAllHLAPI(){
-			if(item.getContainerAll() == null) return null;
-			return new AllHLAPI(item.getContainerAll());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public EmptyHLAPI getContainerEmptyHLAPI(){
-			if(item.getContainerEmpty() == null) return null;
-			return new EmptyHLAPI(item.getContainerEmpty());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public PartitionHLAPI getContainerPartitionHLAPI(){
-			if(item.getContainerPartition() == null) return null;
-			return new PartitionHLAPI(item.getContainerPartition());
-		}
-		
-	
-	
+	// getters giving HLAPI object
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public MultisetSortHLAPI getMultiHLAPI() {
+		if (item.getMulti() == null)
+			return null;
+		return new MultisetSortHLAPI(item.getMulti());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public NamedSortHLAPI getContainerNamedSortHLAPI() {
+		if (item.getContainerNamedSort() == null)
+			return null;
+		return new NamedSortHLAPI(item.getContainerNamedSort());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public VariableDeclHLAPI getContainerVariableDeclHLAPI() {
+		if (item.getContainerVariableDecl() == null)
+			return null;
+		return new VariableDeclHLAPI(item.getContainerVariableDecl());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public ProductSortHLAPI getContainerProductSortHLAPI() {
+		if (item.getContainerProductSort() == null)
+			return null;
+		return new ProductSortHLAPI(item.getContainerProductSort());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public TypeHLAPI getContainerTypeHLAPI() {
+		if (item.getContainerType() == null)
+			return null;
+		return new TypeHLAPI(item.getContainerType());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public AllHLAPI getContainerAllHLAPI() {
+		if (item.getContainerAll() == null)
+			return null;
+		return new AllHLAPI(item.getContainerAll());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public EmptyHLAPI getContainerEmptyHLAPI() {
+		if (item.getContainerEmpty() == null)
+			return null;
+		return new EmptyHLAPI(item.getContainerEmpty());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public PartitionHLAPI getContainerPartitionHLAPI() {
+		if (item.getContainerPartition() == null)
+			return null;
+		return new PartitionHLAPI(item.getContainerPartition());
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Multi
 	 */
 	public void setMultiHLAPI(
-	
-	MultisetSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setMulti((MultisetSort)elem.getContainedItem());
-	
+
+			MultisetSortHLAPI elem) {
+
+		if (elem != null)
+			item.setMulti((MultisetSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerNamedSort
 	 */
 	public void setContainerNamedSortHLAPI(
-	
-	NamedSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerNamedSort((NamedSort)elem.getContainedItem());
-	
+
+			NamedSortHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerNamedSort((NamedSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerVariableDecl
 	 */
 	public void setContainerVariableDeclHLAPI(
-	
-	VariableDeclHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerVariableDecl((VariableDecl)elem.getContainedItem());
-	
+
+			VariableDeclHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerVariableDecl((VariableDecl) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerProductSort
 	 */
 	public void setContainerProductSortHLAPI(
-	
-	ProductSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerProductSort((ProductSort)elem.getContainedItem());
-	
+
+			ProductSortHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerProductSort((ProductSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerType
 	 */
 	public void setContainerTypeHLAPI(
-	
-	TypeHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerType((Type)elem.getContainedItem());
-	
+
+			TypeHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerType((Type) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerAll
 	 */
 	public void setContainerAllHLAPI(
-	
-	AllHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerAll((All)elem.getContainedItem());
-	
+
+			AllHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerAll((All) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerEmpty
 	 */
 	public void setContainerEmptyHLAPI(
-	
-	EmptyHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerEmpty((Empty)elem.getContainedItem());
-	
+
+			EmptyHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerEmpty((Empty) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerPartition
 	 */
 	public void setContainerPartitionHLAPI(
-	
-	PartitionHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerPartition((Partition)elem.getContainedItem());
-	
+
+			PartitionHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerPartition((Partition) elem.getContainedItem());
+
 	}
-	
 
-	//setters/remover for lists.
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(DotHLAPI item){
+	// equals method
+	public boolean equals(DotHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

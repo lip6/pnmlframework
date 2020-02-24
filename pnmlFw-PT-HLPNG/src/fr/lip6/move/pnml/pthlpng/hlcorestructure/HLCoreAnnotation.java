@@ -42,14 +42,14 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>HL Core Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>HL Core
+ * Annotation</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation#getText <em>Text</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation#getText
+ * <em>Text</em>}</li>
  * </ul>
  * </p>
  *
@@ -59,13 +59,14 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  */
 public interface HLCoreAnnotation extends Annotation {
 	/**
-	 * Returns the value of the '<em><b>Text</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Text</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Text</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Text</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Text</em>' attribute.
 	 * @see #setText(String)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getHLCoreAnnotation_Text()
@@ -75,9 +76,10 @@ public interface HLCoreAnnotation extends Annotation {
 	String getText();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation#getText <em>Text</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation#getText
+	 * <em>Text</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Text</em>' attribute.
 	 * @see #getText()
 	 * @generated
@@ -88,8 +90,8 @@ public interface HLCoreAnnotation extends Annotation {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>CSS2 Font Size</b></em>',
- * and utility methods for working with them.
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>CSS2 Font Size</b></em>', and utility methods for working with them.
  * <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2FontSize()
  * @model
  * @generated
  */
 public enum CSS2FontSize implements Enumerator {
 	/**
-	 * The '<em><b>XXSMALL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>XXSMALL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #XXSMALL_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum CSS2FontSize implements Enumerator {
 	XXSMALL(0, "XXSMALL", "XXSMALL"),
 
 	/**
-	 * The '<em><b>XSMALL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>XSMALL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #XSMALL_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum CSS2FontSize implements Enumerator {
 	XSMALL(1, "XSMALL", "XSMALL"),
 
 	/**
-	 * The '<em><b>SMALL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>SMALL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #SMALL_VALUE
 	 * @generated
 	 * @ordered
@@ -78,9 +78,9 @@ public enum CSS2FontSize implements Enumerator {
 	SMALL(2, "SMALL", "SMALL"),
 
 	/**
-	 * The '<em><b>MEDIUM</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>MEDIUM</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #MEDIUM_VALUE
 	 * @generated
 	 * @ordered
@@ -88,9 +88,9 @@ public enum CSS2FontSize implements Enumerator {
 	MEDIUM(3, "MEDIUM", "MEDIUM"),
 
 	/**
-	 * The '<em><b>LARGE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>LARGE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #LARGE_VALUE
 	 * @generated
 	 * @ordered
@@ -98,9 +98,9 @@ public enum CSS2FontSize implements Enumerator {
 	LARGE(4, "LARGE", "LARGE"),
 
 	/**
-	 * The '<em><b>XLARGE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>XLARGE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #XLARGE_VALUE
 	 * @generated
 	 * @ordered
@@ -108,9 +108,9 @@ public enum CSS2FontSize implements Enumerator {
 	XLARGE(5, "XLARGE", "XLARGE"),
 
 	/**
-	 * The '<em><b>XXLARGE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>XXLARGE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #XXLARGE_VALUE
 	 * @generated
 	 * @ordered
@@ -118,13 +118,13 @@ public enum CSS2FontSize implements Enumerator {
 	XXLARGE(6, "XXLARGE", "XXLARGE");
 
 	/**
-	 * The '<em><b>XXSMALL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>XXSMALL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>XXSMALL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>XXSMALL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #XXSMALL
 	 * @model
 	 * @generated
@@ -133,13 +133,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int XXSMALL_VALUE = 0;
 
 	/**
-	 * The '<em><b>XSMALL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>XSMALL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>XSMALL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>XSMALL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #XSMALL
 	 * @model
 	 * @generated
@@ -148,13 +148,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int XSMALL_VALUE = 1;
 
 	/**
-	 * The '<em><b>SMALL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>SMALL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>SMALL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>SMALL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #SMALL
 	 * @model
 	 * @generated
@@ -163,13 +163,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int SMALL_VALUE = 2;
 
 	/**
-	 * The '<em><b>MEDIUM</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>MEDIUM</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>MEDIUM</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>MEDIUM</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #MEDIUM
 	 * @model
 	 * @generated
@@ -178,13 +178,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int MEDIUM_VALUE = 3;
 
 	/**
-	 * The '<em><b>LARGE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LARGE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>LARGE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>LARGE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LARGE
 	 * @model
 	 * @generated
@@ -193,13 +193,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int LARGE_VALUE = 4;
 
 	/**
-	 * The '<em><b>XLARGE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>XLARGE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>XLARGE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>XLARGE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #XLARGE
 	 * @model
 	 * @generated
@@ -208,13 +208,13 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int XLARGE_VALUE = 5;
 
 	/**
-	 * The '<em><b>XXLARGE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>XXLARGE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>XXLARGE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>XXLARGE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #XXLARGE
 	 * @model
 	 * @generated
@@ -223,26 +223,26 @@ public enum CSS2FontSize implements Enumerator {
 	public static final int XXLARGE_VALUE = 6;
 
 	/**
-	 * An array of all the '<em><b>CSS2 Font Size</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>CSS2 Font Size</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final CSS2FontSize[] VALUES_ARRAY = new CSS2FontSize[] { XXSMALL, XSMALL, SMALL, MEDIUM, LARGE,
 			XLARGE, XXLARGE, };
 
 	/**
-	 * A public read-only list of all the '<em><b>CSS2 Font Size</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>CSS2 Font Size</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<CSS2FontSize> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Size</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Size</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontSize get(String literal) {
@@ -257,8 +257,8 @@ public enum CSS2FontSize implements Enumerator {
 
 	/**
 	 * Returns the '<em><b>CSS2 Font Size</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontSize getByName(String name) {
@@ -272,9 +272,9 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Size</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Size</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontSize get(int value) {
@@ -298,30 +298,30 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private CSS2FontSize(int value, String name, String literal) {
@@ -331,8 +331,8 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public int getValue() {
@@ -340,8 +340,8 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getName() {
@@ -349,8 +349,8 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public String getLiteral() {
@@ -358,9 +358,9 @@ public enum CSS2FontSize implements Enumerator {
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -368,4 +368,4 @@ public enum CSS2FontSize implements Enumerator {
 		return literal;
 	}
 
-} //CSS2FontSize
+} // CSS2FontSize

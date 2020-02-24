@@ -45,15 +45,17 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration;
 import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Declaration</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Declaration</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getName <em>Name</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getContainerDeclarations <em>Container Declarations</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getName
+ * <em>Name</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermsDeclarationImpl#getContainerDeclarations
+ * <em>Container Declarations</em>}</li>
  * </ul>
  * </p>
  *
@@ -61,9 +63,9 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
  */
 public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements TermsDeclaration {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -71,9 +73,9 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	protected static final String ID_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -81,9 +83,9 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -91,9 +93,9 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -101,8 +103,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TermsDeclarationImpl() {
@@ -110,8 +112,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -120,8 +122,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -130,8 +132,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -143,8 +145,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -153,8 +155,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -166,8 +168,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -178,25 +180,27 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerDeclarations(Declarations newContainerDeclarations, NotificationChain msgs) {
+	public NotificationChain basicSetContainerDeclarations(Declarations newContainerDeclarations,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerDeclarations,
 				TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS, msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerDeclarations(Declarations newContainerDeclarations) {
 		if (newContainerDeclarations != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS && newContainerDeclarations != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS
+						&& newContainerDeclarations != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarations))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -215,8 +219,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -231,8 +235,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -245,23 +249,23 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 		case TermsPackage.TERMS_DECLARATION__CONTAINER_DECLARATIONS:
-			return eInternalContainer().eInverseRemove(this, TermsPackage.DECLARATIONS__DECLARATION,
-					Declarations.class, msgs);
+			return eInternalContainer().eInverseRemove(this, TermsPackage.DECLARATIONS__DECLARATION, Declarations.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -278,8 +282,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -299,8 +303,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -320,8 +324,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -338,8 +342,8 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -358,4 +362,4 @@ public abstract class TermsDeclarationImpl extends MinimalEObjectImpl implements
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //TermsDeclarationImpl
+} // TermsDeclarationImpl

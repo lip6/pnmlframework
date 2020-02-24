@@ -74,26 +74,25 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Adapter Factory</b> for the model.
- * It provides an adapter <code>createXXX</code> method for each class of the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides
+ * an adapter <code>createXXX</code> method for each class of the model. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage
  * @generated
  */
 public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	/**
-	 * The cached model package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static HlcorestructurePackage modelPackage;
 
 	/**
-	 * Creates an instance of the adapter factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the adapter factory. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public HlcorestructureAdapterFactory() {
@@ -103,10 +102,11 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Returns whether this factory is applicable for the type of the object.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns <code>true</code> if the object is either the model's package or is an instance object of the model.
+	 * Returns whether this factory is applicable for the type of the object. <!--
+	 * begin-user-doc --> This implementation returns <code>true</code> if the
+	 * object is either the model's package or is an instance object of the model.
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return whether this factory is applicable for the type of the object.
 	 * @generated
 	 */
@@ -122,9 +122,9 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * The switch that delegates to the <code>createXXX</code> methods.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The switch that delegates to the <code>createXXX</code> methods. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected HlcorestructureSwitch<Adapter> modelSwitch = new HlcorestructureSwitch<Adapter>() {
@@ -310,9 +310,9 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	};
 
 	/**
-	 * Creates an adapter for the <code>target</code>.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an adapter for the <code>target</code>. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param target the object to adapt.
 	 * @return the adapter for the <code>target</code>.
 	 * @generated
@@ -323,11 +323,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc <em>Petri Net Doc</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc <em>Petri Net
+	 * Doc</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc
 	 * @generated
@@ -337,11 +338,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet <em>Petri Net</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet <em>Petri
+	 * Net</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet
 	 * @generated
@@ -351,11 +353,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page <em>Page</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page <em>Page</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Page
 	 * @generated
@@ -365,11 +368,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject <em>Pn Object</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject <em>Pn
+	 * Object</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject
 	 * @generated
@@ -379,11 +383,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Name <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Name <em>Name</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Name
 	 * @generated
@@ -393,11 +398,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo <em>Tool Info</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo <em>Tool
+	 * Info</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo
 	 * @generated
@@ -407,11 +413,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Label <em>Label</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Label <em>Label</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Label
 	 * @generated
@@ -421,11 +428,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics <em>Node Graphics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics <em>Node
+	 * Graphics</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics
 	 * @generated
@@ -435,11 +443,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Graphics <em>Graphics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Graphics
+	 * <em>Graphics</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Graphics
 	 * @generated
@@ -449,11 +458,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate <em>Coordinate</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate
+	 * <em>Coordinate</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate
 	 * @generated
@@ -463,11 +473,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position <em>Position</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position
+	 * <em>Position</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Position
 	 * @generated
@@ -477,11 +488,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset <em>Offset</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset <em>Offset</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset
 	 * @generated
@@ -491,11 +503,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Dimension <em>Dimension</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Dimension
+	 * <em>Dimension</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Dimension
 	 * @generated
@@ -505,11 +518,13 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics <em>Annotation Graphics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics
+	 * <em>Annotation Graphics</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics
 	 * @generated
@@ -519,11 +534,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill <em>Fill</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill <em>Fill</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill
 	 * @generated
@@ -533,11 +549,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line <em>Line</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line <em>Line</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Line
 	 * @generated
@@ -547,11 +564,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics <em>Arc Graphics</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics <em>Arc
+	 * Graphics</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics
 	 * @generated
@@ -561,11 +579,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc <em>Arc</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc <em>Arc</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc
 	 * @generated
@@ -575,11 +594,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node <em>Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Node <em>Node</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Node
 	 * @generated
@@ -589,11 +609,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font <em>Font</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font <em>Font</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Font
 	 * @generated
@@ -603,11 +624,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode <em>Place Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode <em>Place
+	 * Node</em>}'. <!-- begin-user-doc --> This default implementation returns null
+	 * so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode
 	 * @generated
@@ -617,11 +639,13 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode <em>Transition Node</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode
+	 * <em>Transition Node</em>}'. <!-- begin-user-doc --> This default
+	 * implementation returns null so that we can easily ignore cases; it's useful
+	 * to ignore a case when inheritance will catch all the cases anyway. <!--
+	 * end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode
 	 * @generated
@@ -631,11 +655,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place <em>Place</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place <em>Place</em>}'.
+	 * <!-- begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance will
+	 * catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Place
 	 * @generated
@@ -645,11 +670,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition <em>Ref Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition <em>Ref
+	 * Transition</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition
 	 * @generated
@@ -659,11 +685,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition <em>Transition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition
+	 * <em>Transition</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition
 	 * @generated
@@ -673,11 +700,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace <em>Ref Place</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace <em>Ref
+	 * Place</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace
 	 * @generated
@@ -687,11 +715,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Attribute <em>Attribute</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Attribute
+	 * <em>Attribute</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Attribute
 	 * @generated
@@ -701,11 +730,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation <em>Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation
+	 * <em>Annotation</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation
 	 * @generated
@@ -715,11 +745,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject <em>Any Object</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject <em>Any
+	 * Object</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject
 	 * @generated
@@ -729,11 +760,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation <em>HL Core Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation <em>HL
+	 * Core Annotation</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation
 	 * @generated
@@ -743,11 +775,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type <em>Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type <em>Type</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we can
+	 * easily ignore cases; it's useful to ignore a case when inheritance will catch
+	 * all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Type
 	 * @generated
@@ -757,11 +790,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking <em>HL Marking</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking <em>HL
+	 * Marking</em>}'. <!-- begin-user-doc --> This default implementation returns
+	 * null so that we can easily ignore cases; it's useful to ignore a case when
+	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking
 	 * @generated
@@ -771,11 +805,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition <em>Condition</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition
+	 * <em>Condition</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition
 	 * @generated
@@ -785,11 +820,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation <em>HL Annotation</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation <em>HL
+	 * Annotation</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation
 	 * @generated
@@ -799,11 +835,12 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration <em>Declaration</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for an object of class
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration
+	 * <em>Declaration</em>}'. <!-- begin-user-doc --> This default implementation
+	 * returns null so that we can easily ignore cases; it's useful to ignore a case
+	 * when inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration
 	 * @generated
@@ -813,10 +850,9 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for the default case.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null.
-	 * <!-- end-user-doc -->
+	 * Creates a new adapter for the default case. <!-- begin-user-doc --> This
+	 * default implementation returns null. <!-- end-user-doc -->
+	 * 
 	 * @return the new adapter.
 	 * @generated
 	 */
@@ -824,4 +860,4 @@ public class HlcorestructureAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //HlcorestructureAdapterFactory
+} // HlcorestructureAdapterFactory

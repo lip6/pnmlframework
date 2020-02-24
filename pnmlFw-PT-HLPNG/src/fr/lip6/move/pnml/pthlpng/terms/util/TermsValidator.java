@@ -62,25 +62,25 @@ import fr.lip6.move.pnml.pthlpng.terms.Variable;
 import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage
  * @generated
  */
 public class TermsValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final TermsValidator INSTANCE = new TermsValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -88,25 +88,27 @@ public class TermsValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.terms";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public TermsValidator() {
@@ -114,9 +116,9 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -126,12 +128,13 @@ public class TermsValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case TermsPackage.DECLARATIONS:
 			return validateDeclarations((Declarations) value, diagnostics, context);
@@ -179,8 +182,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateDeclarations(Declarations declarations, DiagnosticChain diagnostics,
@@ -189,8 +192,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateTermsDeclaration(TermsDeclaration termsDeclaration, DiagnosticChain diagnostics,
@@ -199,8 +202,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateSort(Sort sort, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -208,8 +211,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateMultisetSort(MultisetSort multisetSort, DiagnosticChain diagnostics,
@@ -218,8 +221,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateTerm(Term term, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -227,8 +230,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOperator(Operator operator, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -255,9 +258,9 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the sameOperatorNTermSort constraint of '<em>Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the sameOperatorNTermSort constraint of '<em>Operator</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOperator_sameOperatorNTermSort(Operator operator, DiagnosticChain diagnostics,
@@ -268,10 +271,10 @@ public class TermsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "sameOperatorNTermSort", getObjectLabel(operator, context) },
-						new Object[] { operator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "sameOperatorNTermSort", getObjectLabel(operator, context) },
+								new Object[] { operator }, context));
 			}
 			return false;
 		}
@@ -279,8 +282,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateVariableDecl(VariableDecl variableDecl, DiagnosticChain diagnostics,
@@ -289,8 +292,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateVariable(Variable variable, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -298,26 +301,28 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateBuiltInSort(BuiltInSort builtInSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateBuiltInSort(BuiltInSort builtInSort, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(builtInSort, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateProductSort(ProductSort productSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProductSort(ProductSort productSort, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return validate_EveryDefaultConstraint(productSort, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBuiltInConstant(BuiltInConstant builtInConstant, DiagnosticChain diagnostics,
@@ -345,8 +350,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateMultisetOperator(MultisetOperator multisetOperator, DiagnosticChain diagnostics,
@@ -374,8 +379,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateTuple(Tuple tuple, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -402,8 +407,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateSortDecl(SortDecl sortDecl, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -411,8 +416,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBuiltInOperator(BuiltInOperator builtInOperator, DiagnosticChain diagnostics,
@@ -440,8 +445,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNamedSort(NamedSort namedSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -468,9 +473,9 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the refSortNotMultiset constraint of '<em>Named Sort</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the refSortNotMultiset constraint of '<em>Named Sort</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNamedSort_refSortNotMultiset(NamedSort namedSort, DiagnosticChain diagnostics,
@@ -481,10 +486,10 @@ public class TermsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "refSortNotMultiset", getObjectLabel(namedSort, context) },
-						new Object[] { namedSort }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "refSortNotMultiset", getObjectLabel(namedSort, context) },
+								new Object[] { namedSort }, context));
 			}
 			return false;
 		}
@@ -492,8 +497,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateUserSort(UserSort userSort, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -501,8 +506,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOperatorDecl(OperatorDecl operatorDecl, DiagnosticChain diagnostics,
@@ -511,8 +516,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNamedOperator(NamedOperator namedOperator, DiagnosticChain diagnostics,
@@ -521,8 +526,8 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateUserOperator(UserOperator userOperator, DiagnosticChain diagnostics,
@@ -550,17 +555,18 @@ public class TermsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //TermsValidator
+} // TermsValidator

@@ -68,16 +68,19 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Arc</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Arc</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getSource <em>Source</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getTarget <em>Target</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getArcgraphics <em>Arcgraphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getHlinscription <em>Hlinscription</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getSource
+ * <em>Source</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getTarget
+ * <em>Target</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getArcgraphics
+ * <em>Arcgraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcImpl#getHlinscription
+ * <em>Hlinscription</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,8 +89,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 public class ArcImpl extends PnObjectImpl implements Arc {
 	/**
 	 * The cached value of the '{@link #getSource() <em>Source</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSource()
 	 * @generated
 	 * @ordered
@@ -96,8 +99,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 	/**
 	 * The cached value of the '{@link #getTarget() <em>Target</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getTarget()
 	 * @generated
 	 * @ordered
@@ -105,9 +108,9 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	protected Node target;
 
 	/**
-	 * The cached value of the '{@link #getArcgraphics() <em>Arcgraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getArcgraphics() <em>Arcgraphics</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getArcgraphics()
 	 * @generated
 	 * @ordered
@@ -115,9 +118,9 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	protected ArcGraphics arcgraphics;
 
 	/**
-	 * The cached value of the '{@link #getHlinscription() <em>Hlinscription</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getHlinscription() <em>Hlinscription</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getHlinscription()
 	 * @generated
 	 * @ordered
@@ -125,8 +128,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	protected HLAnnotation hlinscription;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ArcImpl() {
@@ -134,8 +137,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -144,8 +147,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -163,8 +166,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Node basicGetSource() {
@@ -172,8 +175,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetSource(Node newSource, NotificationChain msgs) {
@@ -191,8 +194,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -214,8 +217,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -233,8 +236,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Node basicGetTarget() {
@@ -242,8 +245,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetTarget(Node newTarget, NotificationChain msgs) {
@@ -261,8 +264,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -270,11 +273,11 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (newTarget != target) {
 			NotificationChain msgs = null;
 			if (target != null)
-				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			if (newTarget != null)
-				msgs = ((InternalEObject) newTarget).eInverseAdd(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) newTarget).eInverseAdd(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			msgs = basicSetTarget(newTarget, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -284,8 +287,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -294,8 +297,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetArcgraphics(ArcGraphics newArcgraphics, NotificationChain msgs) {
@@ -313,8 +316,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -336,8 +339,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -346,8 +349,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetHlinscription(HLAnnotation newHlinscription, NotificationChain msgs) {
@@ -365,8 +368,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -388,8 +391,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -402,26 +405,26 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 			return basicSetSource((Node) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__TARGET:
 			if (target != null)
-				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS,
-						Node.class, msgs);
+				msgs = ((InternalEObject) target).eInverseRemove(this, HlcorestructurePackage.NODE__IN_ARCS, Node.class,
+						msgs);
 			return basicSetTarget((Node) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__ARCGRAPHICS:
 			if (arcgraphics != null)
-				msgs = ((InternalEObject) arcgraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC__ARCGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) arcgraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC__ARCGRAPHICS, null, msgs);
 			return basicSetArcgraphics((ArcGraphics) otherEnd, msgs);
 		case HlcorestructurePackage.ARC__HLINSCRIPTION:
 			if (hlinscription != null)
-				msgs = ((InternalEObject) hlinscription).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC__HLINSCRIPTION, null, msgs);
+				msgs = ((InternalEObject) hlinscription).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC__HLINSCRIPTION, null, msgs);
 			return basicSetHlinscription((HLAnnotation) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -440,8 +443,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -464,8 +467,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -488,8 +491,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -512,8 +515,8 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -536,10 +539,10 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 2
-		//attributes 0
-		//sons 4
+		// id 1
+		// idref 2
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -557,7 +560,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -584,7 +587,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -655,16 +658,16 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//2
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 2
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -672,7 +675,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -687,9 +690,9 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -703,7 +706,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -713,7 +716,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				ArcGraphics item;
@@ -723,7 +726,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerArc(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("hlinscription")) {
 				HLAnnotation item;
@@ -733,7 +736,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 				item.setContainerArc(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -752,10 +755,10 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 2
-		//attributes 0
-		//sons 4
+		// id 1
+		// idref 2
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -778,7 +781,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -805,7 +808,7 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -939,4 +942,4 @@ public class ArcImpl extends PnObjectImpl implements Arc {
 		return retour;
 
 	}
-} //ArcImpl
+} // ArcImpl

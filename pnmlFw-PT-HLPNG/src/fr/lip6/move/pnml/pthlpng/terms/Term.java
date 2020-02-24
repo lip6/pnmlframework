@@ -47,20 +47,25 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking;
 import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Term</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Term</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getSort <em>Sort</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator <em>Container Operator</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator <em>Container Named Operator</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLMarking <em>Container HL Marking</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition <em>Container Condition</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation <em>Container HL Annotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement <em>Container Partition Element</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getSort <em>Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator
+ * <em>Container Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator
+ * <em>Container Named Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLMarking
+ * <em>Container HL Marking</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition
+ * <em>Container Condition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation
+ * <em>Container HL Annotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement
+ * <em>Container Partition Element</em>}</li>
  * </ul>
  * </p>
  *
@@ -70,13 +75,14 @@ import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
  */
 public interface Term extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Sort</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Sort</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Sort</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Sort</em>' reference isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Sort</em>' reference.
 	 * @see #setSort(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_Sort()
@@ -86,9 +92,9 @@ public interface Term extends EObject {
 	Sort getSort();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getSort <em>Sort</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getSort
+	 * <em>Sort</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Sort</em>' reference.
 	 * @see #getSort()
 	 * @generated
@@ -96,14 +102,16 @@ public interface Term extends EObject {
 	void setSort(Sort value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Operator</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getSubterm <em>Subterm</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Operator</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Operator#getSubterm
+	 * <em>Subterm</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Operator</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Operator</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Operator</em>' container reference.
 	 * @see #setContainerOperator(Operator)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerOperator()
@@ -114,25 +122,31 @@ public interface Term extends EObject {
 	Operator getContainerOperator();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator <em>Container Operator</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerOperator
+	 * <em>Container Operator</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Operator</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Operator</em>' container
+	 *              reference.
 	 * @see #getContainerOperator()
 	 * @generated
 	 */
 	void setContainerOperator(Operator value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Named Operator</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef <em>Def</em>}'.
+	 * Returns the value of the '<em><b>Container Named Operator</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef <em>Def</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Named Operator</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Named Operator</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Named Operator</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Named Operator</em>' container
+	 *         reference.
 	 * @see #setContainerNamedOperator(NamedOperator)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerNamedOperator()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef
@@ -142,24 +156,29 @@ public interface Term extends EObject {
 	NamedOperator getContainerNamedOperator();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator <em>Container Named Operator</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Named Operator</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator
+	 * <em>Container Named Operator</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Named Operator</em>'
+	 *              container reference.
 	 * @see #getContainerNamedOperator()
 	 * @generated
 	 */
 	void setContainerNamedOperator(NamedOperator value);
 
 	/**
-	 * Returns the value of the '<em><b>Container HL Marking</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking#getStructure <em>Structure</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container HL Marking</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking#getStructure
+	 * <em>Structure</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container HL Marking</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container HL Marking</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container HL Marking</em>' container reference.
 	 * @see #setContainerHLMarking(HLMarking)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerHLMarking()
@@ -170,24 +189,29 @@ public interface Term extends EObject {
 	HLMarking getContainerHLMarking();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLMarking <em>Container HL Marking</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLMarking
+	 * <em>Container HL Marking</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container HL Marking</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container HL Marking</em>' container
+	 *              reference.
 	 * @see #getContainerHLMarking()
 	 * @generated
 	 */
 	void setContainerHLMarking(HLMarking value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Condition</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure <em>Structure</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Condition</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Condition#getStructure
+	 * <em>Structure</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Condition</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Condition</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Condition</em>' container reference.
 	 * @see #setContainerCondition(Condition)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerCondition()
@@ -198,25 +222,31 @@ public interface Term extends EObject {
 	Condition getContainerCondition();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition <em>Container Condition</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerCondition
+	 * <em>Container Condition</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Condition</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Condition</em>' container
+	 *              reference.
 	 * @see #getContainerCondition()
 	 * @generated
 	 */
 	void setContainerCondition(Condition value);
 
 	/**
-	 * Returns the value of the '<em><b>Container HL Annotation</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure <em>Structure</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container HL Annotation</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure
+	 * <em>Structure</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container HL Annotation</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container HL Annotation</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container HL Annotation</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container HL Annotation</em>' container
+	 *         reference.
 	 * @see #setContainerHLAnnotation(HLAnnotation)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerHLAnnotation()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HLAnnotation#getStructure
@@ -226,25 +256,31 @@ public interface Term extends EObject {
 	HLAnnotation getContainerHLAnnotation();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation <em>Container HL Annotation</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container HL Annotation</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerHLAnnotation
+	 * <em>Container HL Annotation</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container HL Annotation</em>'
+	 *              container reference.
 	 * @see #getContainerHLAnnotation()
 	 * @generated
 	 */
 	void setContainerHLAnnotation(HLAnnotation value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Partition Element</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getPartitionelementconstants <em>Partitionelementconstants</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Partition Element</b></em>'
+	 * container reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getPartitionelementconstants
+	 * <em>Partitionelementconstants</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Partition Element</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Partition Element</em>' container
+	 * reference isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Partition Element</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Partition Element</em>' container
+	 *         reference.
 	 * @see #setContainerPartitionElement(PartitionElement)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm_ContainerPartitionElement()
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getPartitionelementconstants
@@ -254,10 +290,13 @@ public interface Term extends EObject {
 	PartitionElement getContainerPartitionElement();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement <em>Container Partition Element</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Partition Element</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerPartitionElement
+	 * <em>Container Partition Element</em>}' container reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Partition Element</em>'
+	 *              container reference.
 	 * @see #getContainerPartitionElement()
 	 * @generated
 	 */
@@ -265,8 +304,8 @@ public interface Term extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

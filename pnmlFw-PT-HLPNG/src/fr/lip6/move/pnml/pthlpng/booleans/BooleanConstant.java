@@ -43,43 +43,47 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Boolean Constant</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Boolean
+ * Constant</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.booleans.BooleanConstant#getValue <em>Value</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.booleans.BooleanConstant#getValue
+ * <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBooleanConstant()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='booleanconstantt' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='booleanconstantt'
+ *        kind='son'"
  * @generated
  */
 public interface BooleanConstant extends BuiltInConstant {
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Value</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Value</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(Boolean)
 	 * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBooleanConstant_Value()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='value' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='value'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	Boolean getValue();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.booleans.BooleanConstant#getValue <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.booleans.BooleanConstant#getValue
+	 * <em>Value</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Value</em>' attribute.
 	 * @see #getValue()
 	 * @generated
@@ -96,8 +100,8 @@ public interface BooleanConstant extends BuiltInConstant {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

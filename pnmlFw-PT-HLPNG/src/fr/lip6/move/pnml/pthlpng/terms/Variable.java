@@ -42,43 +42,47 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Variable</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Variable</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Variable#getVariableDecl <em>Variable Decl</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Variable#getVariableDecl
+ * <em>Variable Decl</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariable()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='variable' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='variable'
+ *        kind='son'"
  * @generated
  */
 public interface Variable extends Term {
 	/**
-	 * Returns the value of the '<em><b>Variable Decl</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Variable Decl</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Variable Decl</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Variable Decl</em>' reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Variable Decl</em>' reference.
 	 * @see #setVariableDecl(VariableDecl)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariable_VariableDecl()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='refvariable' kind='idref'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='refvariable'
+	 *        kind='idref'"
 	 * @generated
 	 */
 	VariableDecl getVariableDecl();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Variable#getVariableDecl <em>Variable Decl</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Variable#getVariableDecl <em>Variable
+	 * Decl</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Variable Decl</em>' reference.
 	 * @see #getVariableDecl()
 	 * @generated
@@ -95,8 +99,8 @@ public interface Variable extends Term {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

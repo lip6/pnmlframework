@@ -67,13 +67,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Ref Place</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Ref
+ * Place</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.RefPlaceImpl#getRef <em>Ref</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.RefPlaceImpl#getRef
+ * <em>Ref</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,9 +81,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	/**
-	 * The cached value of the '{@link #getRef() <em>Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getRef() <em>Ref</em>}' reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getRef()
 	 * @generated
 	 * @ordered
@@ -91,8 +91,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	protected PlaceNode ref;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected RefPlaceImpl() {
@@ -100,8 +100,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,8 +110,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -129,8 +129,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public PlaceNode basicGetRef() {
@@ -138,8 +138,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetRef(PlaceNode newRef, NotificationChain msgs) {
@@ -157,8 +157,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -175,12 +175,13 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.REF_PLACE__REF, newRef, newRef));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.REF_PLACE__REF, newRef,
+					newRef));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -196,8 +197,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -210,8 +211,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -226,8 +227,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -241,8 +242,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -256,8 +257,8 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -269,24 +270,25 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingPlaces) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingPlaces) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 1
-		//attributes 0
-		//sons 3
+		// id 1
+		// idref 1
+		// attributes 0
+		// sons 3
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -304,7 +306,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -324,7 +326,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -383,16 +385,16 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//1
-		//0
-		//3
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 1
+		// 0
+		// 3
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -400,7 +402,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -410,9 +412,9 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -426,7 +428,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -436,7 +438,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -446,7 +448,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -458,24 +460,25 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingPlaces) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingPlaces) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 1
-		//attributes 0
-		//sons 3
+		// id 1
+		// idref 1
+		// attributes 0
+		// sons 3
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -498,7 +501,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -518,7 +521,7 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -636,4 +639,4 @@ public class RefPlaceImpl extends PlaceNodeImpl implements RefPlace {
 		return retour;
 
 	}
-} //RefPlaceImpl
+} // RefPlaceImpl

@@ -39,9 +39,8 @@ import fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Partition Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Partition Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -49,8 +48,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
  */
 public abstract class PartitionOperatorImpl extends BuiltInOperatorImpl implements PartitionOperator {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PartitionOperatorImpl() {
@@ -58,8 +57,8 @@ public abstract class PartitionOperatorImpl extends BuiltInOperatorImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -69,4 +68,4 @@ public abstract class PartitionOperatorImpl extends BuiltInOperatorImpl implemen
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //PartitionOperatorImpl
+} // PartitionOperatorImpl

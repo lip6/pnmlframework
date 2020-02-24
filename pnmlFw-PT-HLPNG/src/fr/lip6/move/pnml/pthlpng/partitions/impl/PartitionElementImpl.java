@@ -98,14 +98,15 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.OperatorDeclImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Partition Element</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Partition Element</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementImpl#getRefpartition <em>Refpartition</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementImpl#getPartitionelementconstants <em>Partitionelementconstants</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementImpl#getRefpartition
+ * <em>Refpartition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionElementImpl#getPartitionelementconstants
+ * <em>Partitionelementconstants</em>}</li>
  * </ul>
  * </p>
  *
@@ -113,9 +114,10 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class PartitionElementImpl extends OperatorDeclImpl implements PartitionElement {
 	/**
-	 * The cached value of the '{@link #getPartitionelementconstants() <em>Partitionelementconstants</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPartitionelementconstants()
+	 * <em>Partitionelementconstants</em>}' containment reference list. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getPartitionelementconstants()
 	 * @generated
 	 * @ordered
@@ -123,8 +125,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	protected EList<Term> partitionelementconstants;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PartitionElementImpl() {
@@ -132,8 +134,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,8 +144,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -154,8 +156,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetRefpartition(Partition newRefpartition, NotificationChain msgs) {
@@ -165,14 +167,15 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setRefpartition(Partition newRefpartition) {
 		if (newRefpartition != eInternalContainer()
-				|| (eContainerFeatureID() != PartitionsPackage.PARTITION_ELEMENT__REFPARTITION && newRefpartition != null)) {
+				|| (eContainerFeatureID() != PartitionsPackage.PARTITION_ELEMENT__REFPARTITION
+						&& newRefpartition != null)) {
 			if (EcoreUtil.isAncestor(this, newRefpartition))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -190,8 +193,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -205,8 +208,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -218,15 +221,15 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				msgs = eBasicRemoveFromContainer(msgs);
 			return basicSetRefpartition((Partition) otherEnd, msgs);
 		case PartitionsPackage.PARTITION_ELEMENT__PARTITIONELEMENTCONSTANTS:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelementconstants()).basicAdd(
-					otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelementconstants())
+					.basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -241,8 +244,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -256,8 +259,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -272,8 +275,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -292,8 +295,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -310,8 +313,8 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -330,10 +333,10 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -351,7 +354,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -371,7 +374,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPartitionelementconstants() != null) {
 
@@ -406,16 +409,16 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 1
 		@SuppressWarnings("unused")
 		PartitionsFactory fact = PartitionsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -423,9 +426,9 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
@@ -435,7 +438,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -449,7 +452,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("partitionelementof")) {
 				PartitionElementOf item;
@@ -459,7 +462,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("ltp")) {
 				LessThan item;
@@ -469,7 +472,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("equality")) {
 				Equality item;
@@ -479,7 +482,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("inequality")) {
 				Inequality item;
@@ -489,7 +492,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("booleanconstantt")) {
 				BooleanConstant item;
@@ -499,7 +502,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("or")) {
 				Or item;
@@ -509,7 +512,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("and")) {
 				And item;
@@ -519,7 +522,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("imply")) {
 				Imply item;
@@ -529,7 +532,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("not")) {
 				Not item;
@@ -539,7 +542,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dotconstant")) {
 				DotConstant item;
@@ -549,7 +552,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("cardinality")) {
 				Cardinality item;
@@ -559,7 +562,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("contains")) {
 				Contains item;
@@ -569,7 +572,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("cardinalityof")) {
 				CardinalityOf item;
@@ -579,7 +582,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("add")) {
 				Add item;
@@ -589,7 +592,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("all")) {
 				All item;
@@ -599,7 +602,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("empty")) {
 				Empty item;
@@ -609,7 +612,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("numberof")) {
 				NumberOf item;
@@ -619,7 +622,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("subtract")) {
 				Subtract item;
@@ -629,7 +632,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("scalarproduct")) {
 				ScalarProduct item;
@@ -639,7 +642,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("variable")) {
 				Variable item;
@@ -649,7 +652,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("tuple")) {
 				Tuple item;
@@ -659,7 +662,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("useroperator")) {
 				UserOperator item;
@@ -669,7 +672,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 				item.setContainerPartitionElement(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -680,10 +683,10 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -706,7 +709,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -726,7 +729,7 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPartitionelementconstants() != null) {
 
@@ -812,4 +815,4 @@ public class PartitionElementImpl extends OperatorDeclImpl implements PartitionE
 		return retour;
 
 	}
-} //PartitionElementImpl
+} // PartitionElementImpl

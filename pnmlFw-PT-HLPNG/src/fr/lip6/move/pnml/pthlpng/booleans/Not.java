@@ -42,15 +42,16 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Not</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Not</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getNot()
- * @model annotation="http://www.pnml.org/models/OCL InputSize='self.input.size() = 1'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='InputSize'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='not' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        InputSize='self.input.size() = 1'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
+ *        tag='not' kind='son'"
  * @generated
  */
 public interface Not extends BooleanOperator {
@@ -65,8 +66,8 @@ public interface Not extends BooleanOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

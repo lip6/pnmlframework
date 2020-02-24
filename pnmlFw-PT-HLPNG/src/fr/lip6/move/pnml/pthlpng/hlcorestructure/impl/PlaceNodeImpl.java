@@ -46,13 +46,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Place Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Place
+ * Node</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceNodeImpl#getReferencingPlaces <em>Referencing Places</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceNodeImpl#getReferencingPlaces
+ * <em>Referencing Places</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,9 +60,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace;
  */
 public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	/**
-	 * The cached value of the '{@link #getReferencingPlaces() <em>Referencing Places</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getReferencingPlaces() <em>Referencing
+	 * Places</em>}' reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getReferencingPlaces()
 	 * @generated
 	 * @ordered
@@ -70,8 +70,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	protected EList<RefPlace> referencingPlaces;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PlaceNodeImpl() {
@@ -79,8 +79,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -89,8 +89,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -103,8 +103,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -112,15 +112,15 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 		case HlcorestructurePackage.PLACE_NODE__REFERENCING_PLACES:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getReferencingPlaces())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getReferencingPlaces()).basicAdd(otherEnd,
+					msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -133,8 +133,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -147,8 +147,8 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -162,4 +162,4 @@ public abstract class PlaceNodeImpl extends NodeImpl implements PlaceNode {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //PlaceNodeImpl
+} // PlaceNodeImpl

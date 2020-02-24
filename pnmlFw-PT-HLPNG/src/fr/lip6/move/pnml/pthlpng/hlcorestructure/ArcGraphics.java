@@ -43,34 +43,40 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Arc Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Arc
+ * Graphics</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getPositions <em>Positions</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc <em>Container Arc</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getPositions
+ * <em>Positions</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc
+ * <em>Container Arc</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArcGraphics()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics'
+ *        kind='son'"
  * @generated
  */
 public interface ArcGraphics extends Graphics {
 	/**
-	 * Returns the value of the '<em><b>Positions</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics <em>Container Arc Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Positions</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics
+	 * <em>Container Arc Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Positions</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Positions</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Positions</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArcGraphics_Positions()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Position#getContainerArcGraphics
@@ -81,14 +87,16 @@ public interface ArcGraphics extends Graphics {
 	List<Position> getPositions();
 
 	/**
-	 * Returns the value of the '<em><b>Line</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics <em>Container Arc Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Line</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics
+	 * <em>Container Arc Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Line</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Line</em>' containment reference.
 	 * @see #setLine(Line)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArcGraphics_Line()
@@ -100,9 +108,11 @@ public interface ArcGraphics extends Graphics {
 	Line getLine();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine
+	 * <em>Line</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Line</em>' containment reference.
 	 * @see #getLine()
 	 * @generated
@@ -111,13 +121,15 @@ public interface ArcGraphics extends Graphics {
 
 	/**
 	 * Returns the value of the '<em><b>Container Arc</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics <em>Arcgraphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Arc#getArcgraphics
+	 * <em>Arcgraphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Arc</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Arc</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Arc</em>' container reference.
 	 * @see #setContainerArc(Arc)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArcGraphics_ContainerArc()
@@ -128,10 +140,13 @@ public interface ArcGraphics extends Graphics {
 	Arc getContainerArc();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc <em>Container Arc</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Arc</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getContainerArc
+	 * <em>Container Arc</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Arc</em>' container
+	 *              reference.
 	 * @see #getContainerArc()
 	 * @generated
 	 */
@@ -147,8 +162,8 @@ public interface ArcGraphics extends Graphics {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

@@ -44,50 +44,61 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Tool Info</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Tool
+ * Info</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getTool <em>Tool</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getVersion <em>Version</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getFormattedXMLBuffer <em>Formatted XML Buffer</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoGrammarURI <em>Tool Info Grammar URI</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPetriNet <em>Container Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject <em>Container Pn Object</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerLabel <em>Container Label</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel <em>Tool Info Model</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getTool
+ * <em>Tool</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getVersion
+ * <em>Version</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getFormattedXMLBuffer
+ * <em>Formatted XML Buffer</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoGrammarURI
+ * <em>Tool Info Grammar URI</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPetriNet
+ * <em>Container Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject
+ * <em>Container Pn Object</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerLabel
+ * <em>Container Label</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel
+ * <em>Tool Info Model</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='toolspecific' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='toolspecific'
+ *        kind='son'"
  * @generated
  */
 public interface ToolInfo extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Tool</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Tool</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Tool</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Tool</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Tool</em>' attribute.
 	 * @see #setTool(String)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_Tool()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='tool' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='tool'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	String getTool();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getTool <em>Tool</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getTool
+	 * <em>Tool</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Tool</em>' attribute.
 	 * @see #getTool()
 	 * @generated
@@ -95,26 +106,29 @@ public interface ToolInfo extends EObject {
 	void setTool(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Version</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Version</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Version</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Version</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Version</em>' attribute.
 	 * @see #setVersion(String)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_Version()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='version' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='version'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	String getVersion();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getVersion <em>Version</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getVersion
+	 * <em>Version</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Version</em>' attribute.
 	 * @see #getVersion()
 	 * @generated
@@ -129,19 +143,23 @@ public interface ToolInfo extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Formatted XML Buffer</em>' attribute.
 	 * @see #setFormattedXMLBuffer(StringBuffer)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_FormattedXMLBuffer()
-	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.LongString" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='son' tag=''"
+	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.LongString"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='son' tag=''"
 	 * @generated
 	 */
 	StringBuffer getFormattedXMLBuffer();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getFormattedXMLBuffer <em>Formatted XML Buffer</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getFormattedXMLBuffer
+	 * <em>Formatted XML Buffer</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Formatted XML Buffer</em>' attribute.
 	 * @see #getFormattedXMLBuffer()
 	 * @generated
@@ -156,18 +174,22 @@ public interface ToolInfo extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Tool Info Grammar URI</em>' attribute.
 	 * @see #setToolInfoGrammarURI(URI)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_ToolInfoGrammarURI()
-	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.URI" ordered="false"
+	 * @model dataType="fr.lip6.move.pnml.pthlpng.hlcorestructure.URI"
+	 *        ordered="false"
 	 * @generated
 	 */
 	URI getToolInfoGrammarURI();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoGrammarURI <em>Tool Info Grammar URI</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoGrammarURI
+	 * <em>Tool Info Grammar URI</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Tool Info Grammar URI</em>' attribute.
 	 * @see #getToolInfoGrammarURI()
 	 * @generated
@@ -175,14 +197,16 @@ public interface ToolInfo extends EObject {
 	void setToolInfoGrammarURI(URI value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Petri Net</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getToolspecifics <em>Toolspecifics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Petri Net</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getToolspecifics
+	 * <em>Toolspecifics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Petri Net</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Petri Net</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Petri Net</em>' container reference.
 	 * @see #setContainerPetriNet(PetriNet)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_ContainerPetriNet()
@@ -193,24 +217,29 @@ public interface ToolInfo extends EObject {
 	PetriNet getContainerPetriNet();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPetriNet <em>Container Petri Net</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPetriNet
+	 * <em>Container Petri Net</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Petri Net</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Petri Net</em>' container
+	 *              reference.
 	 * @see #getContainerPetriNet()
 	 * @generated
 	 */
 	void setContainerPetriNet(PetriNet value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Pn Object</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getToolspecifics <em>Toolspecifics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Pn Object</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getToolspecifics
+	 * <em>Toolspecifics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Pn Object</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Pn Object</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Pn Object</em>' container reference.
 	 * @see #setContainerPnObject(PnObject)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_ContainerPnObject()
@@ -221,24 +250,29 @@ public interface ToolInfo extends EObject {
 	PnObject getContainerPnObject();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject <em>Container Pn Object</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject
+	 * <em>Container Pn Object</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Pn Object</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Pn Object</em>' container
+	 *              reference.
 	 * @see #getContainerPnObject()
 	 * @generated
 	 */
 	void setContainerPnObject(PnObject value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Label</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Label#getToolspecifics <em>Toolspecifics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Label</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Label#getToolspecifics
+	 * <em>Toolspecifics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Label</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Label</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Label</em>' container reference.
 	 * @see #setContainerLabel(Label)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_ContainerLabel()
@@ -249,24 +283,29 @@ public interface ToolInfo extends EObject {
 	Label getContainerLabel();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerLabel <em>Container Label</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Label</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerLabel
+	 * <em>Container Label</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Label</em>' container
+	 *              reference.
 	 * @see #getContainerLabel()
 	 * @generated
 	 */
 	void setContainerLabel(Label value);
 
 	/**
-	 * Returns the value of the '<em><b>Tool Info Model</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject#getContainerToolInfo <em>Container Tool Info</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Tool Info Model</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject#getContainerToolInfo
+	 * <em>Container Tool Info</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Tool Info Model</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Tool Info Model</em>' containment reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Tool Info Model</em>' containment reference.
 	 * @see #setToolInfoModel(AnyObject)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getToolInfo_ToolInfoModel()
@@ -277,10 +316,13 @@ public interface ToolInfo extends EObject {
 	AnyObject getToolInfoModel();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel <em>Tool Info Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel
+	 * <em>Tool Info Model</em>}' containment reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Tool Info Model</em>' containment reference.
+	 * 
+	 * @param value the new value of the '<em>Tool Info Model</em>' containment
+	 *              reference.
 	 * @see #getToolInfoModel()
 	 * @generated
 	 */
@@ -294,8 +336,8 @@ public interface ToolInfo extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file
