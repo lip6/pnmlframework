@@ -50,12 +50,12 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getContains()
  * @model annotation="http://www.pnml.org/models/OCL
  *        inputOutputTypes='self.output.oclIsTypeOf(booleans::Bool) and
- *        self.input->size() = 2 and self.input->forAll {c |
+ *        self.input-&gt;size() = 2 and self.input-&gt;forAll {c |
  *        c.oclIsKindOf(terms::MultisetSort)}'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='contains'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Contains extends BuiltInOperator {

@@ -58,7 +58,7 @@ import fr.lip6.move.pnml.pthlpng.terms.Term;
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getHLAnnotation()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='hlinscription'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface HLAnnotation extends HLCoreAnnotation {

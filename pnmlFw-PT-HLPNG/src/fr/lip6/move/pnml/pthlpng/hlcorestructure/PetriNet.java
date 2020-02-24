@@ -68,7 +68,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNet()
- * @model annotation="http://www.pnml.org/models/ToPNML kind='son' tag='net'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML kind='son' tag='net'"
  * @generated
  */
 public interface PetriNet extends EObject {
@@ -176,7 +177,8 @@ public interface PetriNet extends EObject {
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNet_Name()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Name#getContainerNamePetriNet
 	 * @model opposite="containerNamePetriNet" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 *        annotation="redefines" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Name getName();

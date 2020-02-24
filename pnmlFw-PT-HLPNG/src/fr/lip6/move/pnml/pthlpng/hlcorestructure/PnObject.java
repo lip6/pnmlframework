@@ -62,7 +62,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PnObject extends EObject {
@@ -111,7 +111,8 @@ public interface PnObject extends EObject {
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject_Name()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Name#getContainerNamePnObject
 	 * @model opposite="containerNamePnObject" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 *        annotation="redefines" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Name getName();

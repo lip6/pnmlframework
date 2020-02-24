@@ -70,7 +70,7 @@ import fr.lip6.move.pnml.pthlpng.partitions.PartitionElement;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTerm()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Term extends EObject {

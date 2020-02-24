@@ -43,7 +43,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * them. <!-- end-user-doc -->
  * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2FontFamily()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum CSS2FontFamily implements Enumerator {
@@ -281,6 +281,7 @@ public enum CSS2FontFamily implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
@@ -290,6 +291,7 @@ public enum CSS2FontFamily implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -299,6 +301,7 @@ public enum CSS2FontFamily implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}

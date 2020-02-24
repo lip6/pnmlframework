@@ -56,7 +56,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlace()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='place' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='place' kind='son'"
  * @generated
  */
 public interface Place extends PlaceNode {

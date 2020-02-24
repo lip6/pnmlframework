@@ -62,7 +62,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics'
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='graphics'
  *        kind='son'"
  * @generated
  */

@@ -70,7 +70,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getFont()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='font' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='font' kind='son'"
  * @generated
  */
 public interface Font extends EObject {

@@ -57,10 +57,11 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getAll()
  * @model annotation="http://www.pnml.org/models/OCL
- *        inputOutputTypes='self.input->size() = 0'"
+ *        inputOutputTypes='self.input-&gt;size() = 0'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='all' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface All extends MultisetOperator {

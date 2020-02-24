@@ -49,12 +49,13 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInSort;
  *
  * @see fr.lip6.move.pnml.pthlpng.dots.DotsPackage#getDot()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='dot' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
  *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
  *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
  *        {\n\t\t //by default they are the same sort, unless they have been
  *        named.\n\t\t \tisEqual = true;\n\t\t \tif
- *        (this.getContainerNamedSort() != null\n\t\t\t\t\t&&
+ *        (this.getContainerNamedSort() != null\n\t\t\t\t\t&amp;&amp;
  *        sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if
  *        they have been explicitly named.\n\t\t\t\tisEqual =
  *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}//

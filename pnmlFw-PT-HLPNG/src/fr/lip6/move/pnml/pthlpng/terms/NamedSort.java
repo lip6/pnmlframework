@@ -59,7 +59,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='refSortNotMultiset'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='namedsort'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NamedSort extends SortDecl {

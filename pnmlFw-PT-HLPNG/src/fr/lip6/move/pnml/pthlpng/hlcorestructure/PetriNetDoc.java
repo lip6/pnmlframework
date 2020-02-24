@@ -58,7 +58,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNetDoc()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='pnml' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='pnml' kind='son'"
  * @generated
  */
 public interface PetriNetDoc extends EObject {

@@ -58,7 +58,7 @@ import fr.lip6.move.pnml.pthlpng.terms.Term;
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCondition()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='condition'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Condition extends HLCoreAnnotation {

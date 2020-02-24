@@ -43,7 +43,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * end-user-doc -->
  * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPNType()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum PNType implements Enumerator {
@@ -280,6 +280,7 @@ public enum PNType implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
@@ -289,6 +290,7 @@ public enum PNType implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -298,6 +300,7 @@ public enum PNType implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}

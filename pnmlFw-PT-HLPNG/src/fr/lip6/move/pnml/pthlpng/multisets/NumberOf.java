@@ -49,13 +49,14 @@ import fr.lip6.move.pnml.pthlpng.terms.MultisetOperator;
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getNumberOf()
  * @model annotation="http://www.pnml.org/models/OCL
- *        inputOutputTypes='self.input->size() = 2 and self.input->forAll{c, d |
- *        c.oclIsTypeOf(integers::Natural) and d.oclIsKindOf(terms::Sort)} and
+ *        inputOutputTypes='self.input-&gt;size() = 2 and
+ *        self.input-&gt;forAll{c, d | c.oclIsTypeOf(integers::Natural) and
+ *        d.oclIsKindOf(terms::Sort)} and
  *        self.output.oclIsKindOf(terms::MultisetSort)'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='numberof'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NumberOf extends MultisetOperator {

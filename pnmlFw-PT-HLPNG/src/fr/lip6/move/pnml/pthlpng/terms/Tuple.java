@@ -48,6 +48,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getTuple()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='tuple' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Tuple extends Operator {

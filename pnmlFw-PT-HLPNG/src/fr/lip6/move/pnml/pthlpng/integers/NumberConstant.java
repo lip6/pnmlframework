@@ -58,11 +58,12 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getNumberConstant()
  * @model annotation="http://www.pnml.org/models/OCL
- *        typeType='self.input->size() = 0 and self.type.oclIsTypeOf(Natural)
- *        implies self.value >= 0 and self.type.oclIsTypeOf(Positive) implies
- *        self.value > 0'" annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        typeType='self.input-&gt;size() = 0 and self.type.oclIsTypeOf(Natural)
+ *        implies self.value &gt;= 0 and self.type.oclIsTypeOf(Positive) implies
+ *        self.value &gt; 0'" annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='typeType'" annotation="http://www.pnml.org/models/ToPNML
  *        tag='numberconstant' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NumberConstant extends BuiltInConstant {

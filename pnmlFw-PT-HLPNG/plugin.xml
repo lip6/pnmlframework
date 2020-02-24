@@ -40,7 +40,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated pthlpng -->
       <package
-            uri="http:///hlpn.integers.ecore"
+            uri="http:///pthlpng.integers.ecore"
             class="fr.lip6.move.pnml.pthlpng.integers.IntegersPackage"/>
    </extension>
 

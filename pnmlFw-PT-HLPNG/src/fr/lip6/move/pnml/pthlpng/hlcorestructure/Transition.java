@@ -54,7 +54,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getTransition()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='transition'
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='transition'
  *        kind='son'"
  * @generated
  */

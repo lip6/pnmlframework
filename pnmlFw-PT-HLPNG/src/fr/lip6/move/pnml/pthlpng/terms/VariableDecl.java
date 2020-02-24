@@ -56,7 +56,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getVariableDecl()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='variabledecl'
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='variabledecl'
  *        kind='son'"
  * @generated
  */

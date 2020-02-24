@@ -56,10 +56,11 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getEmpty()
- * @model annotation="http://www.pnml.org/models/OCL InputSize='self.input->size
- *        = 0'" annotation="http://www.eclipse.org/emf/2002/Ecore
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        InputSize='self.input-&gt;size = 0'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
- *        tag='empty' kind='son'"
+ *        tag='empty' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Empty extends MultisetOperator {

@@ -54,7 +54,7 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='cardinality'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Cardinality extends BuiltInOperator {

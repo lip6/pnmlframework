@@ -47,7 +47,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getSortDecl()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface SortDecl extends TermsDeclaration {

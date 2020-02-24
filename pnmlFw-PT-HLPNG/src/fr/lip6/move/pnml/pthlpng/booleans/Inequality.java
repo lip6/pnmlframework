@@ -49,13 +49,13 @@ import fr.lip6.move.pnml.pthlpng.terms.Operator;
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getInequality()
  * @model annotation="http://www.pnml.org/models/OCL
- *        inputOutputTypes='self.input.size() = 2 and self.input->forAll{c, d |
- *        c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and
+ *        inputOutputTypes='self.input.size() = 2 and self.input-&gt;forAll{c, d
+ *        | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and
  *        self.output.oclIsKindOf(Bool)'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='inequality'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Inequality extends Operator {

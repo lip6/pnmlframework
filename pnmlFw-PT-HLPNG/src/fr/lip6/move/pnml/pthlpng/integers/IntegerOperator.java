@@ -49,7 +49,7 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getIntegerOperator()
  * @model abstract="true" annotation="http://www.pnml.org/models/OCL
- *        inputType='self.input->size() = 2 and self.input->forAll{c |
+ *        inputType='self.input-&gt;size() = 2 and self.input-&gt;forAll{c |
  *        c.oclIsKindOf(Number)}'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputType'"

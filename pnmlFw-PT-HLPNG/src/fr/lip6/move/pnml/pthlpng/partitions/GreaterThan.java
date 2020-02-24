@@ -49,10 +49,11 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getGreaterThan()
  * @model annotation="http://www.pnml.org/models/OCL
  *        inputOutputTypes='self.output.oclIsTypeOf(booleans::Bool) and
- *        self.input->size() = 2'"
+ *        self.input-&gt;size() = 2'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='gtp' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface GreaterThan extends PartitionOperator {

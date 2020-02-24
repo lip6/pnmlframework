@@ -72,22 +72,18 @@ import fr.lip6.move.pnml.pthlpng.partitions.Partition;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getSort()
- * @model abstract="true" annotation="http://www.pnml.org/models/methods/SORT
- *        signature='boolean equalSorts(Sort sort)' body='' documentation='/**\n
- *        * Returns true if this sort and argument sort are actually
- *        semantically the\n * same sort, even in two different objects. \n *
- *        <p>
- *        Ex: two FiniteEnumerations F1 = {1,4,6} and F2 = {1,4,6} or\n * two
- *        Integers I1 and I2.
- *        </p>
- *        \n *
- *        <p>
- *        <strong>Note</strong> : the implementation available for\n *
- *        MultisetSort is not complete. In particular, we just test equality\n *
- *        of the references or of the enclosing NamedSorts (if any). \n * You
- *        should consider overriding it in that case.\n * \n * @return true if
- *        so.\n * @param sort\n * the sort to which we compare this one.\n
- *        \052/'"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='' documentation='/**\n * Returns true if
+ *        this sort and argument sort are actually semantically the\n * same
+ *        sort, even in two different objects. \n * &lt;p&gt;Ex: two
+ *        FiniteEnumerations F1 = {1,4,6} and F2 = {1,4,6} or\n * two Integers
+ *        I1 and I2.&lt;/p&gt; \n * &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; :
+ *        the implementation available for\n * MultisetSort is not complete. In
+ *        particular, we just test equality\n * of the references or of the
+ *        enclosing NamedSorts (if any). \n * You should consider overriding it
+ *        in that case.\n * \n * @return true if so.\n * @param sort\n * the
+ *        sort to which we compare this one.\n \052/'"
  * @generated
  */
 public interface Sort extends EObject {

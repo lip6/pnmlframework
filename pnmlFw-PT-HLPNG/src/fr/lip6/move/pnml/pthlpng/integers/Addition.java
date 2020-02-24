@@ -52,7 +52,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='outputType'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='addition'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Addition extends IntegerOperator {

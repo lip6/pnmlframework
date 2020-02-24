@@ -43,7 +43,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * end-user-doc -->
  * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getGradient()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum Gradient implements Enumerator {
@@ -226,6 +226,7 @@ public enum Gradient implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
@@ -235,6 +236,7 @@ public enum Gradient implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -244,6 +246,7 @@ public enum Gradient implements Enumerator {
 	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}

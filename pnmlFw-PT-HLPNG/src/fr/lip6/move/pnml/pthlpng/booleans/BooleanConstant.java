@@ -56,7 +56,7 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBooleanConstant()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='booleanconstantt'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface BooleanConstant extends BuiltInConstant {

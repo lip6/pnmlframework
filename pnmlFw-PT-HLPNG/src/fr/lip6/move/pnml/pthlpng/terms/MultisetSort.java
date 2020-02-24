@@ -55,13 +55,14 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getMultisetSort()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='multisetsort'
- *        kind='son'" annotation="http://www.pnml.org/models/methods/SORT
- *        signature='boolean equalSorts(Sort sort)' body='boolean isEqual =
- *        false;\n\t\tif
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
  *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
- *        {\n\t\t \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&&
- *        sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if
- *        they have been explicitly named.\n\t\t\t\tisEqual =
+ *        {\n\t\t \tif (this.getContainerNamedSort() !=
+ *        null\n\t\t\t\t\t&amp;&amp; sort.getContainerNamedSort() != null)
+ *        {\n\t\t\t\t// we test them if they have been explicitly
+ *        named.\n\t\t\t\tisEqual =
  *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}
  *        else {\n\t\t\t throw new UnsupportedOperationException(\"Cannot
  *        determine if these two multisets are equal.\"\n\t\t\t + \"You should

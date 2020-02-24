@@ -49,7 +49,7 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
  *
  * @see fr.lip6.move.pnml.pthlpng.dots.DotsPackage#getDotConstant()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='dotconstant'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface DotConstant extends BuiltInConstant {

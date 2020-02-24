@@ -48,7 +48,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getNatural()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='natural'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Natural extends HLPNNumber {

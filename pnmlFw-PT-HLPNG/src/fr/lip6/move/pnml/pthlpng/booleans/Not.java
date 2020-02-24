@@ -51,7 +51,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *        InputSize='self.input.size() = 1'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
- *        tag='not' kind='son'"
+ *        tag='not' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Not extends BooleanOperator {

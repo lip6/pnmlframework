@@ -56,6 +56,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getRefTransition()
  * @model annotation="http://www.pnml.org/models/ToPNML
  *        tag='referenceTransition' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface RefTransition extends TransitionNode {

@@ -50,7 +50,7 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBooleanOperator()
  * @model abstract="true" annotation="http://www.pnml.org/models/OCL
  *        inputOutputTypes='self.output.oclIsKindOf(Bool) and
- *        self.input->forAll{c | c.oclIsKindOf(Bool)}'"
+ *        self.input-&gt;forAll{c | c.oclIsKindOf(Bool)}'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  * @generated

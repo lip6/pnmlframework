@@ -60,7 +60,7 @@ import fr.lip6.move.pnml.pthlpng.terms.SortDecl;
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartition()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='partition'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Partition extends SortDecl {

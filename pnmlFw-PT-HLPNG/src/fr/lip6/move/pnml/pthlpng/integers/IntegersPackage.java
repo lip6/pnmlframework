@@ -66,7 +66,7 @@ public interface IntegersPackage extends EPackage {
 	 * 
 	 * @generated
 	 */
-	String eNS_URI = "http:///hlpn.integers.ecore";
+	String eNS_URI = "http:///pthlpng.integers.ecore";
 
 	/**
 	 * The package namespace name. <!-- begin-user-doc --> <!-- end-user-doc -->

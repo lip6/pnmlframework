@@ -51,7 +51,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *        InputSize='self.input.size() = 2'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
- *        tag='imply' kind='son'"
+ *        tag='imply' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Imply extends BooleanOperator {

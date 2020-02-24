@@ -60,12 +60,12 @@ import fr.lip6.move.pnml.pthlpng.terms.Term;
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElement()
  * @model annotation="http://www.pnml.org/models/OCL
- *        constantsType='self.partitionelementconstants->forAll{p | p.sort =
+ *        constantsType='self.partitionelementconstants-&gt;forAll{p | p.sort =
  *        self.refpartition.def}'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='constantsType'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelement'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PartitionElement extends OperatorDecl {

@@ -60,7 +60,8 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getArc()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='arc' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='arc' kind='son'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='samePageSourceTarget differentSourceTarget'"
  *        annotation="http://www.pnml.org/models/OCL

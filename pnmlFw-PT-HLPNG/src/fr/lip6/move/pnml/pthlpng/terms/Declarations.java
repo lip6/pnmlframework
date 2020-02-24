@@ -60,7 +60,7 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration;
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getDeclarations()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='declarations'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Declarations extends EObject {

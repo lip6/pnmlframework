@@ -55,11 +55,11 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElementOf()
  * @model annotation="http://www.pnml.org/models/OCL
- *        inputOutputTypes='self.input->size() = 1'"
+ *        inputOutputTypes='self.input-&gt;size() = 1'"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputOutputTypes'"
  *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelementof'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PartitionElementOf extends PartitionOperator {

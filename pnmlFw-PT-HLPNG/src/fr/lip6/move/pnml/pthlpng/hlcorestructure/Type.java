@@ -58,6 +58,7 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getType()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='type' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Type extends HLCoreAnnotation {

@@ -49,11 +49,11 @@ import fr.lip6.move.pnml.pthlpng.terms.MultisetOperator;
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getAdd()
  * @model annotation="http://www.pnml.org/models/OCL
- *        inputType='self.input->size() >= 2 and self.input->forAll{c |
+ *        inputType='self.input-&gt;size() &gt;= 2 and self.input-&gt;forAll{c |
  *        c.oclIsKindOf(terms::MultisetSort)} '"
  *        annotation="http://www.eclipse.org/emf/2002/Ecore
  *        constraints='inputType'" annotation="http://www.pnml.org/models/ToPNML
- *        tag='add' kind='son'"
+ *        tag='add' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Add extends MultisetOperator {

@@ -55,7 +55,7 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getDimension()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='dimension'
- *        kind='son'"
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Dimension extends Coordinate {

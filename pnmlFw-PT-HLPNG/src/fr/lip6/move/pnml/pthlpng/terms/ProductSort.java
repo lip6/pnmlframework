@@ -56,12 +56,13 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getProductSort()
  * @model annotation="http://www.pnml.org/models/ToPNML tag='productsort'
- *        kind='son'" annotation="http://www.pnml.org/models/methods/SORT
- *        signature='boolean equalSorts(Sort sort)' body='boolean isEqual =
- *        false;\n\t\tif
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
  *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
- *        {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&&
- *        sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual =
+ *        {\n\t\t\tif (this.getContainerNamedSort() !=
+ *        null\n\t\t\t\t\t&amp;&amp; sort.getContainerNamedSort() != null)
+ *        {\n\t\t\t\tisEqual =
  *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}
  *        else {\n\t\t\t\t// Someone may one day inherit from ProductSort, so we
  *        should\n\t\t\t\t// strictly check for ProductSort only. Further
@@ -69,10 +70,10 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
  *        (\"ProductSort\".equalsIgnoreCase(this.eClass().getName()))
  *        {\n\t\t\t\t\tProductSort mySort = (ProductSort)
  *        this;\n\t\t\t\t\tProductSort thatSort = (ProductSort)
- *        sort;\n\t\t\t\t\tList<Sort> myElements =
- *        mySort.getElementSort();\n\t\t\t\t\tList<Sort> thoseElements =
+ *        sort;\n\t\t\t\t\tList&lt;Sort&gt; myElements =
+ *        mySort.getElementSort();\n\t\t\t\t\tList&lt;Sort&gt; thoseElements =
  *        thatSort.getElementSort();\n\t\t\t\t\tint i = 0;\n\t\t\t\t\tint j =
- *        0;\n\t\t\t\t\tfor (; i < myElements.size() && j <
+ *        0;\n\t\t\t\t\tfor (; i &lt; myElements.size() &amp;&amp; j &lt;
  *        thoseElements.size(); i++, j++) {\n\t\t\t\t\t\tif
  *        (myElements\n\t\t\t\t\t\t\t\t.get(i)\n\t\t\t\t\t\t\t\t.eClass()\n\t\t\t\t\t\t\t\t.getName()\n\t\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t\tthoseElements.get(j).eClass().getName()))
  *        {\n\t\t\t\t\t\t\tisEqual = true;\n\t\t\t\t\t\t} else
