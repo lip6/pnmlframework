@@ -623,7 +623,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
 		final ByteBuffer bytebuf = ByteBuffer.allocateDirect(bufferSize);
-		final String charsetEncoding = PNMLEncoding.ISO_8859_1.getName();
+		final String charsetEncoding = PNMLEncoding.UTF_8.getName();
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
