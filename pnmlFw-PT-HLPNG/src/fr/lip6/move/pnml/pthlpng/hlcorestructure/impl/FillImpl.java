@@ -39,7 +39,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -68,18 +67,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Fill</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Fill</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getColor <em>Color</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getGradientcolor <em>Gradientcolor</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getGradientrotation <em>Gradientrotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getImage <em>Image</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getContainerNodeGraphics <em>Container Node Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getColor
+ * <em>Color</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getGradientcolor
+ * <em>Gradientcolor</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getGradientrotation
+ * <em>Gradientrotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getImage
+ * <em>Image</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getContainerNodeGraphics
+ * <em>Container Node Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FillImpl#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,9 +91,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class FillImpl extends MinimalEObjectImpl implements Fill {
 	/**
-	 * The default value of the '{@link #getColor() <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getColor() <em>Color</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getColor()
 	 * @generated
 	 * @ordered
@@ -97,9 +101,9 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected static final CSS2Color COLOR_EDEFAULT = CSS2Color.BLACK;
 
 	/**
-	 * The cached value of the '{@link #getColor() <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getColor() <em>Color</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getColor()
 	 * @generated
 	 * @ordered
@@ -107,9 +111,9 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected CSS2Color color = COLOR_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getGradientcolor() <em>Gradientcolor</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getGradientcolor() <em>Gradientcolor</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getGradientcolor()
 	 * @generated
 	 * @ordered
@@ -117,9 +121,9 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected static final CSS2Color GRADIENTCOLOR_EDEFAULT = CSS2Color.BLACK;
 
 	/**
-	 * The cached value of the '{@link #getGradientcolor() <em>Gradientcolor</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getGradientcolor() <em>Gradientcolor</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getGradientcolor()
 	 * @generated
 	 * @ordered
@@ -127,9 +131,10 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected CSS2Color gradientcolor = GRADIENTCOLOR_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getGradientrotation() <em>Gradientrotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getGradientrotation()
+	 * <em>Gradientrotation</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #getGradientrotation()
 	 * @generated
 	 * @ordered
@@ -137,9 +142,10 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected static final Gradient GRADIENTROTATION_EDEFAULT = Gradient.HORIZONTAL;
 
 	/**
-	 * The cached value of the '{@link #getGradientrotation() <em>Gradientrotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getGradientrotation()
+	 * <em>Gradientrotation</em>}' attribute. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #getGradientrotation()
 	 * @generated
 	 * @ordered
@@ -147,9 +153,9 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected Gradient gradientrotation = GRADIENTROTATION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getImage() <em>Image</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getImage() <em>Image</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getImage()
 	 * @generated
 	 * @ordered
@@ -157,9 +163,9 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected static final URI IMAGE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getImage() <em>Image</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getImage() <em>Image</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getImage()
 	 * @generated
 	 * @ordered
@@ -167,8 +173,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	protected URI image = IMAGE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected FillImpl() {
@@ -176,8 +182,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -186,8 +192,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -196,8 +202,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -209,8 +215,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -219,8 +225,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -233,8 +239,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -243,8 +249,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -257,8 +263,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -267,8 +273,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -280,8 +286,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -292,25 +298,27 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics, NotificationChain msgs) {
+	public NotificationChain basicSetContainerNodeGraphics(NodeGraphics newContainerNodeGraphics,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerNodeGraphics,
 				HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS, msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNodeGraphics(NodeGraphics newContainerNodeGraphics) {
 		if (newContainerNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS && newContainerNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_NODE_GRAPHICS
+						&& newContainerNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -328,8 +336,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -340,8 +348,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics,
@@ -352,14 +360,15 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FILL__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -378,8 +387,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -398,8 +407,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -414,8 +423,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -432,8 +441,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -456,8 +465,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -486,8 +495,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -516,8 +525,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -540,8 +549,8 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -567,10 +576,10 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 4
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 4
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -588,7 +597,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getColor() != null) {
 			sb.append(" color");
@@ -621,7 +630,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -634,20 +643,20 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//4
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 4
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("color")) != null) {
 			this.setColor(CSS2Color.get(locRoot.getAttributeValue(new QName("color"))));
@@ -669,7 +678,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -678,10 +687,10 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 4
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 4
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -704,7 +713,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getColor() != null) {
 			sb.append(" color");
@@ -737,7 +746,7 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -790,4 +799,4 @@ public class FillImpl extends MinimalEObjectImpl implements Fill {
 		return retour;
 
 	}
-} //FillImpl
+} // FillImpl

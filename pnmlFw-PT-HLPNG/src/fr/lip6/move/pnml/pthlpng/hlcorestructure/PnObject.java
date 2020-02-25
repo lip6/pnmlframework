@@ -44,33 +44,37 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Pn Object</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Pn
+ * Object</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getId <em>Id</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getName <em>Name</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getToolspecifics <em>Toolspecifics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage <em>Container Page</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getId
+ * <em>Id</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getName
+ * <em>Name</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getToolspecifics
+ * <em>Toolspecifics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage
+ * <em>Container Page</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PnObject extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Id</b></em>' attribute. <!-- begin-user-doc
+	 * -->
 	 * <p>
-	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject_Id()
@@ -81,9 +85,10 @@ public interface PnObject extends EObject {
 	String getId();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getId <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getId
+	 * <em>Id</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Id</em>' attribute.
 	 * @see #getId()
 	 * @generated
@@ -91,28 +96,33 @@ public interface PnObject extends EObject {
 	void setId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Name#getContainerNamePnObject <em>Container Name Pn Object</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Name#getContainerNamePnObject
+	 * <em>Container Name Pn Object</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Name</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Name</em>' containment reference.
 	 * @see #setName(Name)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject_Name()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Name#getContainerNamePnObject
 	 * @model opposite="containerNamePnObject" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 *        annotation="redefines" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Name getName();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getName <em>Name</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getName
+	 * <em>Name</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Name</em>' containment reference.
 	 * @see #getName()
 	 * @generated
@@ -120,15 +130,18 @@ public interface PnObject extends EObject {
 	void setName(Name value);
 
 	/**
-	 * Returns the value of the '<em><b>Toolspecifics</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject <em>Container Pn Object</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Toolspecifics</b></em>' containment
+	 * reference list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject
+	 * <em>Container Pn Object</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Toolspecifics</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Toolspecifics</em>' containment reference list
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Toolspecifics</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject_Toolspecifics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getContainerPnObject
@@ -139,14 +152,16 @@ public interface PnObject extends EObject {
 	List<ToolInfo> getToolspecifics();
 
 	/**
-	 * Returns the value of the '<em><b>Container Page</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getObjects <em>Objects</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Page</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Page#getObjects
+	 * <em>Objects</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Page</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Page</em>' container reference isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Page</em>' container reference.
 	 * @see #setContainerPage(Page)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPnObject_ContainerPage()
@@ -157,10 +172,13 @@ public interface PnObject extends EObject {
 	Page getContainerPage();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage <em>Container Page</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Page</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PnObject#getContainerPage
+	 * <em>Container Page</em>}' container reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Page</em>' container
+	 *              reference.
 	 * @see #getContainerPage()
 	 * @generated
 	 */
@@ -168,8 +186,8 @@ public interface PnObject extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

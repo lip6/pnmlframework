@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>CSS2 Color</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>CSS2 Color</b></em>', and utility methods for working with them. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2Color()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum CSS2Color implements Enumerator {
 	/**
-	 * The '<em><b>AQUA</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>AQUA</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #AQUA_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum CSS2Color implements Enumerator {
 	AQUA(0, "AQUA", "AQUA"),
 
 	/**
-	 * The '<em><b>BLACK</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>BLACK</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #BLACK_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum CSS2Color implements Enumerator {
 	BLACK(1, "BLACK", "BLACK"),
 
 	/**
-	 * The '<em><b>BLUE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>BLUE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #BLUE_VALUE
 	 * @generated
 	 * @ordered
@@ -78,9 +78,9 @@ public enum CSS2Color implements Enumerator {
 	BLUE(2, "BLUE", "BLUE"),
 
 	/**
-	 * The '<em><b>FUCHSIA</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>FUCHSIA</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #FUCHSIA_VALUE
 	 * @generated
 	 * @ordered
@@ -88,9 +88,9 @@ public enum CSS2Color implements Enumerator {
 	FUCHSIA(3, "FUCHSIA", "FUCHSIA"),
 
 	/**
-	 * The '<em><b>GRAY</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>GRAY</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #GRAY_VALUE
 	 * @generated
 	 * @ordered
@@ -98,9 +98,9 @@ public enum CSS2Color implements Enumerator {
 	GRAY(4, "GRAY", "GRAY"),
 
 	/**
-	 * The '<em><b>GREEN</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>GREEN</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #GREEN_VALUE
 	 * @generated
 	 * @ordered
@@ -108,9 +108,9 @@ public enum CSS2Color implements Enumerator {
 	GREEN(5, "GREEN", "GREEN"),
 
 	/**
-	 * The '<em><b>LIME</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>LIME</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #LIME_VALUE
 	 * @generated
 	 * @ordered
@@ -118,9 +118,9 @@ public enum CSS2Color implements Enumerator {
 	LIME(6, "LIME", "LIME"),
 
 	/**
-	 * The '<em><b>MAROON</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>MAROON</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #MAROON_VALUE
 	 * @generated
 	 * @ordered
@@ -128,9 +128,9 @@ public enum CSS2Color implements Enumerator {
 	MAROON(7, "MAROON", "MAROON"),
 
 	/**
-	 * The '<em><b>NAVY</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>NAVY</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #NAVY_VALUE
 	 * @generated
 	 * @ordered
@@ -138,9 +138,9 @@ public enum CSS2Color implements Enumerator {
 	NAVY(8, "NAVY", "NAVY"),
 
 	/**
-	 * The '<em><b>OLIVE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>OLIVE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #OLIVE_VALUE
 	 * @generated
 	 * @ordered
@@ -148,9 +148,9 @@ public enum CSS2Color implements Enumerator {
 	OLIVE(9, "OLIVE", "OLIVE"),
 
 	/**
-	 * The '<em><b>ORANGE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>ORANGE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #ORANGE_VALUE
 	 * @generated
 	 * @ordered
@@ -158,9 +158,9 @@ public enum CSS2Color implements Enumerator {
 	ORANGE(10, "ORANGE", "ORANGE"),
 
 	/**
-	 * The '<em><b>PURPLE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>PURPLE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #PURPLE_VALUE
 	 * @generated
 	 * @ordered
@@ -168,9 +168,9 @@ public enum CSS2Color implements Enumerator {
 	PURPLE(11, "PURPLE", "PURPLE"),
 
 	/**
-	 * The '<em><b>RED</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>RED</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #RED_VALUE
 	 * @generated
 	 * @ordered
@@ -178,9 +178,9 @@ public enum CSS2Color implements Enumerator {
 	RED(12, "RED", "RED"),
 
 	/**
-	 * The '<em><b>SILVER</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>SILVER</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #SILVER_VALUE
 	 * @generated
 	 * @ordered
@@ -188,9 +188,9 @@ public enum CSS2Color implements Enumerator {
 	SILVER(13, "SILVER", "SILVER"),
 
 	/**
-	 * The '<em><b>TEAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>TEAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #TEAL_VALUE
 	 * @generated
 	 * @ordered
@@ -198,9 +198,9 @@ public enum CSS2Color implements Enumerator {
 	TEAL(14, "TEAL", "TEAL"),
 
 	/**
-	 * The '<em><b>WHITE</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>WHITE</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #WHITE_VALUE
 	 * @generated
 	 * @ordered
@@ -208,9 +208,9 @@ public enum CSS2Color implements Enumerator {
 	WHITE(15, "WHITE", "WHITE"),
 
 	/**
-	 * The '<em><b>YELLOW</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>YELLOW</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #YELLOW_VALUE
 	 * @generated
 	 * @ordered
@@ -218,13 +218,13 @@ public enum CSS2Color implements Enumerator {
 	YELLOW(16, "YELLOW", "YELLOW");
 
 	/**
-	 * The '<em><b>AQUA</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>AQUA</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>AQUA</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>AQUA</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #AQUA
 	 * @model
 	 * @generated
@@ -233,13 +233,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int AQUA_VALUE = 0;
 
 	/**
-	 * The '<em><b>BLACK</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>BLACK</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>BLACK</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>BLACK</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #BLACK
 	 * @model
 	 * @generated
@@ -248,13 +248,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int BLACK_VALUE = 1;
 
 	/**
-	 * The '<em><b>BLUE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>BLUE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>BLUE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>BLUE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #BLUE
 	 * @model
 	 * @generated
@@ -263,13 +263,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int BLUE_VALUE = 2;
 
 	/**
-	 * The '<em><b>FUCHSIA</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>FUCHSIA</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>FUCHSIA</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>FUCHSIA</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #FUCHSIA
 	 * @model
 	 * @generated
@@ -278,13 +278,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int FUCHSIA_VALUE = 3;
 
 	/**
-	 * The '<em><b>GRAY</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>GRAY</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>GRAY</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>GRAY</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #GRAY
 	 * @model
 	 * @generated
@@ -293,13 +293,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int GRAY_VALUE = 4;
 
 	/**
-	 * The '<em><b>GREEN</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>GREEN</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>GREEN</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>GREEN</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #GREEN
 	 * @model
 	 * @generated
@@ -308,13 +308,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int GREEN_VALUE = 5;
 
 	/**
-	 * The '<em><b>LIME</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LIME</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>LIME</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>LIME</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LIME
 	 * @model
 	 * @generated
@@ -323,13 +323,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int LIME_VALUE = 6;
 
 	/**
-	 * The '<em><b>MAROON</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>MAROON</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>MAROON</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>MAROON</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #MAROON
 	 * @model
 	 * @generated
@@ -338,13 +338,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int MAROON_VALUE = 7;
 
 	/**
-	 * The '<em><b>NAVY</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>NAVY</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>NAVY</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>NAVY</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #NAVY
 	 * @model
 	 * @generated
@@ -353,13 +353,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int NAVY_VALUE = 8;
 
 	/**
-	 * The '<em><b>OLIVE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>OLIVE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>OLIVE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>OLIVE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #OLIVE
 	 * @model
 	 * @generated
@@ -368,13 +368,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int OLIVE_VALUE = 9;
 
 	/**
-	 * The '<em><b>ORANGE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>ORANGE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>ORANGE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>ORANGE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #ORANGE
 	 * @model
 	 * @generated
@@ -383,13 +383,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int ORANGE_VALUE = 10;
 
 	/**
-	 * The '<em><b>PURPLE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>PURPLE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>PURPLE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>PURPLE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #PURPLE
 	 * @model
 	 * @generated
@@ -398,13 +398,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int PURPLE_VALUE = 11;
 
 	/**
-	 * The '<em><b>RED</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>RED</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>RED</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>RED</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #RED
 	 * @model
 	 * @generated
@@ -413,13 +413,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int RED_VALUE = 12;
 
 	/**
-	 * The '<em><b>SILVER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>SILVER</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>SILVER</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>SILVER</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #SILVER
 	 * @model
 	 * @generated
@@ -428,13 +428,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int SILVER_VALUE = 13;
 
 	/**
-	 * The '<em><b>TEAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>TEAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>TEAL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>TEAL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #TEAL
 	 * @model
 	 * @generated
@@ -443,13 +443,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int TEAL_VALUE = 14;
 
 	/**
-	 * The '<em><b>WHITE</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>WHITE</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>WHITE</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>WHITE</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #WHITE
 	 * @model
 	 * @generated
@@ -458,13 +458,13 @@ public enum CSS2Color implements Enumerator {
 	public static final int WHITE_VALUE = 15;
 
 	/**
-	 * The '<em><b>YELLOW</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>YELLOW</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>YELLOW</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>YELLOW</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #YELLOW
 	 * @model
 	 * @generated
@@ -473,9 +473,9 @@ public enum CSS2Color implements Enumerator {
 	public static final int YELLOW_VALUE = 16;
 
 	/**
-	 * An array of all the '<em><b>CSS2 Color</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>CSS2 Color</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final CSS2Color[] VALUES_ARRAY = new CSS2Color[] { AQUA, BLACK, BLUE, FUCHSIA, GRAY, GREEN, LIME,
@@ -483,16 +483,16 @@ public enum CSS2Color implements Enumerator {
 
 	/**
 	 * A public read-only list of all the '<em><b>CSS2 Color</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<CSS2Color> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>CSS2 Color</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Color</b></em>' literal with the specified literal
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2Color get(String literal) {
@@ -507,8 +507,8 @@ public enum CSS2Color implements Enumerator {
 
 	/**
 	 * Returns the '<em><b>CSS2 Color</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2Color getByName(String name) {
@@ -522,9 +522,9 @@ public enum CSS2Color implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Color</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Color</b></em>' literal with the specified integer
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2Color get(int value) {
@@ -568,30 +568,30 @@ public enum CSS2Color implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private CSS2Color(int value, String name, String literal) {
@@ -601,36 +601,39 @@ public enum CSS2Color implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -638,4 +641,4 @@ public enum CSS2Color implements Enumerator {
 		return literal;
 	}
 
-} //CSS2Color
+} // CSS2Color

@@ -42,49 +42,60 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Annotation Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Annotation Graphics</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getOffset <em>Offset</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill <em>Fill</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont <em>Font</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation <em>Container Annotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getOffset
+ * <em>Offset</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill
+ * <em>Fill</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont
+ * <em>Font</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation
+ * <em>Container Annotation</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='graphics' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='graphics'
+ *        kind='son'"
  * @generated
  */
 public interface AnnotationGraphics extends Graphics {
 	/**
-	 * Returns the value of the '<em><b>Offset</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Offset</b></em>' containment reference. It
+	 * is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Offset</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Offset</em>' containment reference.
 	 * @see #setOffset(Offset)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics_Offset()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Offset#getContainerAnnotationGraphics
-	 * @model opposite="containerAnnotationGraphics" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerAnnotationGraphics" containment="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Offset getOffset();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getOffset <em>Offset</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getOffset
+	 * <em>Offset</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Offset</em>' containment reference.
 	 * @see #getOffset()
 	 * @generated
@@ -92,28 +103,33 @@ public interface AnnotationGraphics extends Graphics {
 	void setOffset(Offset value);
 
 	/**
-	 * Returns the value of the '<em><b>Fill</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Fill</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Fill</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Fill</em>' containment reference.
 	 * @see #setFill(Fill)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics_Fill()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Fill#getContainerAnnotationGraphics
-	 * @model opposite="containerAnnotationGraphics" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerAnnotationGraphics" containment="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Fill getFill();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill <em>Fill</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFill
+	 * <em>Fill</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Fill</em>' containment reference.
 	 * @see #getFill()
 	 * @generated
@@ -121,28 +137,33 @@ public interface AnnotationGraphics extends Graphics {
 	void setFill(Fill value);
 
 	/**
-	 * Returns the value of the '<em><b>Line</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Line</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Line</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Line</em>' containment reference.
 	 * @see #setLine(Line)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics_Line()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics
-	 * @model opposite="containerAnnotationGraphics" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerAnnotationGraphics" containment="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Line getLine();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine
+	 * <em>Line</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Line</em>' containment reference.
 	 * @see #getLine()
 	 * @generated
@@ -150,28 +171,33 @@ public interface AnnotationGraphics extends Graphics {
 	void setLine(Line value);
 
 	/**
-	 * Returns the value of the '<em><b>Font</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Font</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Font</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Font</em>' containment reference.
 	 * @see #setFont(Font)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics_Font()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Font#getContainerAnnotationGraphics
-	 * @model opposite="containerAnnotationGraphics" containment="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerAnnotationGraphics" containment="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Font getFont();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont <em>Font</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getFont
+	 * <em>Font</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Font</em>' containment reference.
 	 * @see #getFont()
 	 * @generated
@@ -179,14 +205,16 @@ public interface AnnotationGraphics extends Graphics {
 	void setFont(Font value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Annotation</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics <em>Annotationgraphics</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Annotation</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics
+	 * <em>Annotationgraphics</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Annotation</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Annotation</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Annotation</em>' container reference.
 	 * @see #setContainerAnnotation(Annotation)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotationGraphics_ContainerAnnotation()
@@ -197,10 +225,13 @@ public interface AnnotationGraphics extends Graphics {
 	Annotation getContainerAnnotation();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation <em>Container Annotation</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation
+	 * <em>Container Annotation</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Annotation</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Annotation</em>' container
+	 *              reference.
 	 * @see #getContainerAnnotation()
 	 * @generated
 	 */
@@ -216,8 +247,8 @@ public interface AnnotationGraphics extends Graphics {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

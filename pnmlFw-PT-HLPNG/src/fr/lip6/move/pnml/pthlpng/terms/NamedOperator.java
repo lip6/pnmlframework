@@ -43,46 +43,52 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Named Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Named
+ * Operator</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef <em>Def</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getParameters <em>Parameters</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef
+ * <em>Def</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getParameters
+ * <em>Parameters</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getNamedOperator()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='namedoperator' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='namedoperator'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NamedOperator extends OperatorDecl {
 	/**
-	 * Returns the value of the '<em><b>Def</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator <em>Container Named Operator</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Def</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator
+	 * <em>Container Named Operator</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Def</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Def</em>' containment reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Def</em>' containment reference.
 	 * @see #setDef(Term)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getNamedOperator_Def()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Term#getContainerNamedOperator
-	 * @model opposite="containerNamedOperator" containment="true" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='def' kind='follow' toBeFollowed='yes'"
+	 * @model opposite="containerNamedOperator" containment="true" required="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='def' kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	Term getDef();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef <em>Def</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedOperator#getDef <em>Def</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Def</em>' containment reference.
 	 * @see #getDef()
 	 * @generated
@@ -90,20 +96,24 @@ public interface NamedOperator extends OperatorDecl {
 	void setDef(Term value);
 
 	/**
-	 * Returns the value of the '<em><b>Parameters</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator <em>Container Named Operator</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Parameters</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl}. It is bidirectional and
+	 * its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator
+	 * <em>Container Named Operator</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Parameters</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Parameters</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Parameters</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getNamedOperator_Parameters()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.VariableDecl#getContainerNamedOperator
 	 * @model opposite="containerNamedOperator" containment="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='parameter' kind='follow' toBeFollowed='yes'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='parameter'
+	 *        kind='follow' toBeFollowed='yes'"
 	 * @generated
 	 */
 	List<VariableDecl> getParameters();
@@ -118,8 +128,8 @@ public interface NamedOperator extends OperatorDecl {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

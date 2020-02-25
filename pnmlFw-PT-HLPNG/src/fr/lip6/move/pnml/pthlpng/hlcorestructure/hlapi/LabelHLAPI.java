@@ -38,45 +38,33 @@ import java.util.List;
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
-public interface LabelHLAPI extends HLAPIClass{
+public interface LabelHLAPI extends HLAPIClass {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public List<ToolInfo> getToolspecifics();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
 
-	
-	
+	public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
 
+	// setters (including container setter if aviable)
 
-	//setters/remover for lists.
-	
+	// setters/remover for lists.
+
 	public void addToolspecificsHLAPI(ToolInfoHLAPI unit);
-	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
-	
 
-	//equals method
+	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
+
+	// equals method
 	public boolean equals(Object item);
 
 }

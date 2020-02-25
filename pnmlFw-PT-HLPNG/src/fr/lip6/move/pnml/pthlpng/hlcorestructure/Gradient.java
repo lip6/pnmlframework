@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>Gradient</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>Gradient</b></em>', and utility methods for working with them. <!--
+ * end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getGradient()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum Gradient implements Enumerator {
 	/**
-	 * The '<em><b>HORIZONTAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>HORIZONTAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #HORIZONTAL_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum Gradient implements Enumerator {
 	HORIZONTAL(0, "HORIZONTAL", "HORIZONTAL"),
 
 	/**
-	 * The '<em><b>VERTICAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>VERTICAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #VERTICAL_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum Gradient implements Enumerator {
 	VERTICAL(1, "VERTICAL", "VERTICAL"),
 
 	/**
-	 * The '<em><b>DIAGONAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>DIAGONAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #DIAGONAL_VALUE
 	 * @generated
 	 * @ordered
@@ -78,13 +78,13 @@ public enum Gradient implements Enumerator {
 	DIAGONAL(2, "DIAGONAL", "DIAGONAL");
 
 	/**
-	 * The '<em><b>HORIZONTAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>HORIZONTAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>HORIZONTAL</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #HORIZONTAL
 	 * @model
 	 * @generated
@@ -93,13 +93,13 @@ public enum Gradient implements Enumerator {
 	public static final int HORIZONTAL_VALUE = 0;
 
 	/**
-	 * The '<em><b>VERTICAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>VERTICAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>VERTICAL</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #VERTICAL
 	 * @model
 	 * @generated
@@ -108,13 +108,13 @@ public enum Gradient implements Enumerator {
 	public static final int VERTICAL_VALUE = 1;
 
 	/**
-	 * The '<em><b>DIAGONAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>DIAGONAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>DIAGONAL</b></em>' literal object isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #DIAGONAL
 	 * @model
 	 * @generated
@@ -123,25 +123,25 @@ public enum Gradient implements Enumerator {
 	public static final int DIAGONAL_VALUE = 2;
 
 	/**
-	 * An array of all the '<em><b>Gradient</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>Gradient</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final Gradient[] VALUES_ARRAY = new Gradient[] { HORIZONTAL, VERTICAL, DIAGONAL, };
 
 	/**
 	 * A public read-only list of all the '<em><b>Gradient</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<Gradient> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>Gradient</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Gradient</b></em>' literal with the specified literal
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static Gradient get(String literal) {
@@ -155,9 +155,9 @@ public enum Gradient implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Gradient</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Gradient</b></em>' literal with the specified name. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static Gradient getByName(String name) {
@@ -171,9 +171,9 @@ public enum Gradient implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>Gradient</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>Gradient</b></em>' literal with the specified integer
+	 * value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static Gradient get(int value) {
@@ -189,30 +189,30 @@ public enum Gradient implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private Gradient(int value, String name, String literal) {
@@ -222,36 +222,39 @@ public enum Gradient implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -259,4 +262,4 @@ public enum Gradient implements Enumerator {
 		return literal;
 	}
 
-} //Gradient
+} // Gradient

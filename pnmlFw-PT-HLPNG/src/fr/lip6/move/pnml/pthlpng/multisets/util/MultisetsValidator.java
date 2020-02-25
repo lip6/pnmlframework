@@ -52,25 +52,25 @@ import fr.lip6.move.pnml.pthlpng.multisets.Subtract;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage
  * @generated
  */
 public class MultisetsValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final MultisetsValidator INSTANCE = new MultisetsValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -78,33 +78,35 @@ public class MultisetsValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.multisets";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached base package validator. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	protected TermsValidator termsValidator;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public MultisetsValidator() {
@@ -113,9 +115,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,12 +127,13 @@ public class MultisetsValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case MultisetsPackage.CARDINALITY:
 			return validateCardinality((Cardinality) value, diagnostics, context);
@@ -156,11 +159,12 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateCardinality(Cardinality cardinality, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCardinality(Cardinality cardinality, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(cardinality, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(cardinality, diagnostics, context);
@@ -186,9 +190,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Cardinality</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Cardinality</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCardinality_inputOutputTypes(Cardinality cardinality, DiagnosticChain diagnostics,
@@ -199,10 +203,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(cardinality, context) },
-						new Object[] { cardinality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(cardinality, context) },
+								new Object[] { cardinality }, context));
 			}
 			return false;
 		}
@@ -210,8 +214,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateContains(Contains contains, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -240,9 +244,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Contains</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Contains</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateContains_inputOutputTypes(Contains contains, DiagnosticChain diagnostics,
@@ -253,10 +257,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(contains, context) },
-						new Object[] { contains }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(contains, context) },
+								new Object[] { contains }, context));
 			}
 			return false;
 		}
@@ -264,8 +268,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCardinalityOf(CardinalityOf cardinalityOf, DiagnosticChain diagnostics,
@@ -295,9 +299,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Cardinality Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Cardinality Of</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateCardinalityOf_inputOutputTypes(CardinalityOf cardinalityOf, DiagnosticChain diagnostics,
@@ -308,10 +312,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(cardinalityOf, context) },
-						new Object[] { cardinalityOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(cardinalityOf, context) },
+								new Object[] { cardinalityOf }, context));
 			}
 			return false;
 		}
@@ -319,8 +323,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAdd(Add add, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -349,9 +353,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputType constraint of '<em>Add</em>'.
-	 * <!-- begin-user-doc -->
+	 * Validates the inputType constraint of '<em>Add</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAdd_inputType(Add add, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -371,8 +375,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAll(All all, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -401,9 +405,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>All</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>All</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAll_inputOutputTypes(All all, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -413,10 +417,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(all, context) }, new Object[] { all },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(all, context) }, new Object[] { all },
+								context));
 			}
 			return false;
 		}
@@ -424,8 +428,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateEmpty(Empty empty, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -454,9 +458,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the InputSize constraint of '<em>Empty</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the InputSize constraint of '<em>Empty</em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateEmpty_InputSize(Empty empty, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -476,8 +480,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNumberOf(NumberOf numberOf, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -506,9 +510,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Number Of</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Number Of</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNumberOf_inputOutputTypes(NumberOf numberOf, DiagnosticChain diagnostics,
@@ -519,10 +523,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(numberOf, context) },
-						new Object[] { numberOf }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(numberOf, context) },
+								new Object[] { numberOf }, context));
 			}
 			return false;
 		}
@@ -530,8 +534,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateSubtract(Subtract subtract, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -560,9 +564,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputType constraint of '<em>Subtract</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputType constraint of '<em>Subtract</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateSubtract_inputType(Subtract subtract, DiagnosticChain diagnostics,
@@ -573,10 +577,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputType", getObjectLabel(subtract, context) }, new Object[] { subtract },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputType", getObjectLabel(subtract, context) },
+								new Object[] { subtract }, context));
 			}
 			return false;
 		}
@@ -584,8 +588,8 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateScalarProduct(ScalarProduct scalarProduct, DiagnosticChain diagnostics,
@@ -615,9 +619,9 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Scalar Product</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Scalar Product</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateScalarProduct_inputOutputTypes(ScalarProduct scalarProduct, DiagnosticChain diagnostics,
@@ -628,10 +632,10 @@ public class MultisetsValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(scalarProduct, context) },
-						new Object[] { scalarProduct }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(scalarProduct, context) },
+								new Object[] { scalarProduct }, context));
 			}
 			return false;
 		}
@@ -639,17 +643,18 @@ public class MultisetsValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //MultisetsValidator
+} // MultisetsValidator

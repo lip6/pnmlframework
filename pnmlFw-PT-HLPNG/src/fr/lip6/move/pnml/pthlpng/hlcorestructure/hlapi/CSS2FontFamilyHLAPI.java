@@ -32,46 +32,45 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2FontFamily;
-public enum CSS2FontFamilyHLAPI{
-	VERDANA("VERDANA"),
-	ARIAL("ARIAL"),
-	TIMES("TIMES"),
-	GEORGIA("GEORGIA"),
-	TREBUCHET("TREBUCHET");
+
+public enum CSS2FontFamilyHLAPI {
+	VERDANA("VERDANA"), ARIAL("ARIAL"), TIMES("TIMES"), GEORGIA("GEORGIA"), TREBUCHET("TREBUCHET");
 
 	private final CSS2FontFamily item;
 
 	private CSS2FontFamilyHLAPI(String name) {
 		this.item = CSS2FontFamily.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static CSS2FontFamilyHLAPI get(int num) {
-	
-      if(num == 0){
-         return VERDANA;
-      }
-	
-      if(num == 1){
-         return ARIAL;
-      }
-	
-      if(num == 2){
-         return TIMES;
-      }
-	
-      if(num == 3){
-         return GEORGIA;
-      }
-	
-      if(num == 4){
-         return TREBUCHET;
-      }
-	
+
+		if (num == 0) {
+			return VERDANA;
+		}
+
+		if (num == 1) {
+			return ARIAL;
+		}
+
+		if (num == 2) {
+			return TIMES;
+		}
+
+		if (num == 3) {
+			return GEORGIA;
+		}
+
+		if (num == 4) {
+			return TREBUCHET;
+		}
+
 		return null;
 	}
 
@@ -79,5 +78,4 @@ public enum CSS2FontFamilyHLAPI{
 		return item;
 	}
 
-	
 }

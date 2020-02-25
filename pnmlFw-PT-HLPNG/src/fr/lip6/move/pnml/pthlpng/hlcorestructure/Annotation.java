@@ -42,31 +42,33 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Annotation</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics <em>Annotationgraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics
+ * <em>Annotationgraphics</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotation()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Annotation extends Label {
 	/**
-	 * Returns the value of the '<em><b>Annotationgraphics</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation <em>Container Annotation</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Annotationgraphics</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getContainerAnnotation
+	 * <em>Container Annotation</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Annotationgraphics</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Annotationgraphics</em>' containment reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Annotationgraphics</em>' containment reference.
 	 * @see #setAnnotationgraphics(AnnotationGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnnotation_Annotationgraphics()
@@ -78,10 +80,13 @@ public interface Annotation extends Label {
 	AnnotationGraphics getAnnotationgraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics <em>Annotationgraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Annotation#getAnnotationgraphics
+	 * <em>Annotationgraphics</em>}' containment reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Annotationgraphics</em>' containment reference.
+	 * 
+	 * @param value the new value of the '<em>Annotationgraphics</em>' containment
+	 *              reference.
 	 * @see #getAnnotationgraphics()
 	 * @generated
 	 */
@@ -91,8 +96,8 @@ public interface Annotation extends Label {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

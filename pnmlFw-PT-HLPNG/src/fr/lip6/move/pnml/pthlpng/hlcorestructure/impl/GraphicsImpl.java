@@ -39,9 +39,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Graphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Graphics</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -49,8 +48,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
  */
 public abstract class GraphicsImpl extends MinimalEObjectImpl implements Graphics {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected GraphicsImpl() {
@@ -58,8 +57,8 @@ public abstract class GraphicsImpl extends MinimalEObjectImpl implements Graphic
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -69,4 +68,4 @@ public abstract class GraphicsImpl extends MinimalEObjectImpl implements Graphic
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //GraphicsImpl
+} // GraphicsImpl

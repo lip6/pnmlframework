@@ -52,8 +52,7 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Line;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Position;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
-
-public class ArcGraphicsHLAPI implements HLAPIClass,GraphicsHLAPI{
+public class ArcGraphicsHLAPI implements HLAPIClass, GraphicsHLAPI {
 
 	/**
 	 * The contained LLAPI element.
@@ -61,71 +60,59 @@ public class ArcGraphicsHLAPI implements HLAPIClass,GraphicsHLAPI{
 	private ArcGraphics item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public ArcGraphicsHLAPI(
-		 LineHLAPI line
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ArcGraphicsHLAPI(LineHLAPI line) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createArcGraphics();}
-	
- 		
- 		if(line!=null)
-			item.setLine((Line)line.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createArcGraphics();
+		}
+
+		if (line != null)
+			item.setLine((Line) line.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ArcGraphicsHLAPI(
-		 LineHLAPI line
-	
-		, ArcHLAPI containerArc
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ArcGraphicsHLAPI(LineHLAPI line
+
+			, ArcHLAPI containerArc) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createArcGraphics();}
-	
- 		
- 		if(line!=null)
-			item.setLine((Line)line.getContainedItem());
-		
-	
- 		
- 		if(containerArc!=null)
-			item.setContainerArc((Arc)containerArc.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createArcGraphics();
+		}
+
+		if (line != null)
+			item.setLine((Line) line.getContainedItem());
+
+		if (containerArc != null)
+			item.setContainerArc((Arc) containerArc.getContainedItem());
+
 	}
 
-
-
-	
 	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public ArcGraphicsHLAPI(
-		 ArcHLAPI containerArc
-	){//BEGIN CONSTRUCTOR BODY
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public ArcGraphicsHLAPI(ArcHLAPI containerArc) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createArcGraphics();}
-	
- 		
- 		if(containerArc!=null)
-			item.setContainerArc((Arc)containerArc.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createArcGraphics();
+		}
+
+		if (containerArc != null)
+			item.setContainerArc((Arc) containerArc.getContainedItem());
+
 	}
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public ArcGraphicsHLAPI(ArcGraphics lowLevelAPI){
+	public ArcGraphicsHLAPI(ArcGraphics lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -133,163 +120,143 @@ public class ArcGraphicsHLAPI implements HLAPIClass,GraphicsHLAPI{
 	/**
 	 * Return encapsulated object
 	 */
-	public ArcGraphics getContainedItem(){
+	public ArcGraphics getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public List<Position> getPositions(){
+	public List<Position> getPositions() {
 		return item.getPositions();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Line getLine(){
+	public Line getLine() {
 		return item.getLine();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Arc getContainerArc(){
+	public Arc getContainerArc() {
 		return item.getContainerArc();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<PositionHLAPI> getPositionsHLAPI(){
-			java.util.List<PositionHLAPI> retour = new ArrayList<PositionHLAPI>();
-			for (Position elemnt : getPositions()) {
-				retour.add(new PositionHLAPI(elemnt));
-			}
-			return retour;
-		}
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public LineHLAPI getLineHLAPI(){
-			if(item.getLine() == null) return null;
-			return new LineHLAPI(item.getLine());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public ArcHLAPI getContainerArcHLAPI(){
-			if(item.getContainerArc() == null) return null;
-			return new ArcHLAPI(item.getContainerArc());
-		}
-		
-	
-	
+	// getters giving HLAPI object
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
+	/**
+	 * This accessor automatically encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public java.util.List<PositionHLAPI> getPositionsHLAPI() {
+		java.util.List<PositionHLAPI> retour = new ArrayList<PositionHLAPI>();
+		for (Position elemnt : getPositions()) {
+			retour.add(new PositionHLAPI(elemnt));
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public LineHLAPI getLineHLAPI() {
+		if (item.getLine() == null)
+			return null;
+		return new LineHLAPI(item.getLine());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public ArcHLAPI getContainerArcHLAPI() {
+		if (item.getContainerArc() == null)
+			return null;
+		return new ArcHLAPI(item.getContainerArc());
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Line
 	 */
 	public void setLineHLAPI(
-	
-	LineHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setLine((Line)elem.getContainedItem());
-	
+
+			LineHLAPI elem) {
+
+		if (elem != null)
+			item.setLine((Line) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerArc
 	 */
 	public void setContainerArcHLAPI(
-	
-	ArcHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerArc((Arc)elem.getContainedItem());
-	
-	}
-	
 
-	//setters/remover for lists.
-	
-	
-	public void addPositionsHLAPI(PositionHLAPI unit){
-	
-		item.getPositions().add((Position)unit.getContainedItem());
+			ArcHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerArc((Arc) elem.getContainedItem());
+
 	}
 
-	public void removePositionsHLAPI(PositionHLAPI unit){
-		item.getPositions().remove((Position)unit.getContainedItem());
-	}
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(ArcGraphicsHLAPI item){
+	public void addPositionsHLAPI(PositionHLAPI unit) {
+
+		item.getPositions().add((Position) unit.getContainedItem());
+	}
+
+	public void removePositionsHLAPI(PositionHLAPI unit) {
+		item.getPositions().remove((Position) unit.getContainedItem());
+	}
+
+	// equals method
+	public boolean equals(ArcGraphicsHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

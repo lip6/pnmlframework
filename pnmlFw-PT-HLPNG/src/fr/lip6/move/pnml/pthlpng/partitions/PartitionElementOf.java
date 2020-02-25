@@ -42,45 +42,51 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Partition Element Of</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Partition Element Of</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf#getRefpartition <em>Refpartition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf#getRefpartition
+ * <em>Refpartition</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElementOf()
- * @model annotation="http://www.pnml.org/models/OCL inputOutputTypes='self.input->size() = 1'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputOutputTypes'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelementof' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        inputOutputTypes='self.input-&gt;size() = 1'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputOutputTypes'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='partitionelementof'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PartitionElementOf extends PartitionOperator {
 	/**
-	 * Returns the value of the '<em><b>Refpartition</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Refpartition</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Refpartition</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Refpartition</em>' reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Refpartition</em>' reference.
 	 * @see #setRefpartition(Partition)
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartitionElementOf_Refpartition()
-	 * @model required="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='refpartition' kind='idref'"
+	 * @model required="true" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='refpartition' kind='idref'"
 	 * @generated
 	 */
 	Partition getRefpartition();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf#getRefpartition <em>Refpartition</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElementOf#getRefpartition
+	 * <em>Refpartition</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @param value the new value of the '<em>Refpartition</em>' reference.
 	 * @see #getRefpartition()
 	 * @generated
@@ -97,8 +103,8 @@ public interface PartitionElementOf extends PartitionOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

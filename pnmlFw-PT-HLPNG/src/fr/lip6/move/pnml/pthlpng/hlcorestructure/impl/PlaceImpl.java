@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -67,14 +66,15 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Type;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Place</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Place</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceImpl#getType <em>Type</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceImpl#getHlinitialMarking <em>Hlinitial Marking</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceImpl#getType
+ * <em>Type</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PlaceImpl#getHlinitialMarking
+ * <em>Hlinitial Marking</em>}</li>
  * </ul>
  * </p>
  *
@@ -82,9 +82,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class PlaceImpl extends PlaceNodeImpl implements Place {
 	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getType() <em>Type</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getType()
 	 * @generated
 	 * @ordered
@@ -92,9 +92,10 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	protected Type type;
 
 	/**
-	 * The cached value of the '{@link #getHlinitialMarking() <em>Hlinitial Marking</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getHlinitialMarking() <em>Hlinitial
+	 * Marking</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #getHlinitialMarking()
 	 * @generated
 	 * @ordered
@@ -102,8 +103,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	protected HLMarking hlinitialMarking;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PlaceImpl() {
@@ -111,8 +112,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -121,8 +122,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -131,8 +132,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetType(Type newType, NotificationChain msgs) {
@@ -150,8 +151,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -168,12 +169,13 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PLACE__TYPE, newType, newType));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PLACE__TYPE, newType,
+					newType));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -182,8 +184,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetHlinitialMarking(HLMarking newHlinitialMarking, NotificationChain msgs) {
@@ -201,8 +203,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -224,8 +226,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -233,21 +235,21 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		switch (featureID) {
 		case HlcorestructurePackage.PLACE__TYPE:
 			if (type != null)
-				msgs = ((InternalEObject) type).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PLACE__TYPE, null, msgs);
+				msgs = ((InternalEObject) type).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PLACE__TYPE, null, msgs);
 			return basicSetType((Type) otherEnd, msgs);
 		case HlcorestructurePackage.PLACE__HLINITIAL_MARKING:
 			if (hlinitialMarking != null)
-				msgs = ((InternalEObject) hlinitialMarking).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PLACE__HLINITIAL_MARKING, null, msgs);
+				msgs = ((InternalEObject) hlinitialMarking).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PLACE__HLINITIAL_MARKING, null, msgs);
 			return basicSetHlinitialMarking((HLMarking) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -262,8 +264,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -278,8 +280,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -296,8 +298,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -314,8 +316,8 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -329,24 +331,25 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		return super.eIsSet(featureID);
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingPlaces) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingPlaces) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 5
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 5
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -364,7 +367,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -377,7 +380,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -460,16 +463,16 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//0
-		//5
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 0
+		// 5
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -477,11 +480,11 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -495,7 +498,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -505,7 +508,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -515,7 +518,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerNode(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("type")) {
 				Type item;
@@ -525,7 +528,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPlace(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("hlinitialMarking")) {
 				HLMarking item;
@@ -535,30 +538,31 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 				item.setContainerPlace(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
 	}
 
-	//TODO this element (InArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (InArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (OutArcs) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (OutArcs) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (referencingPlaces) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (referencingPlaces) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 5
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 5
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -581,7 +585,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -594,7 +598,7 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -744,4 +748,4 @@ public class PlaceImpl extends PlaceNodeImpl implements Place {
 		return retour;
 
 	}
-} //PlaceImpl
+} // PlaceImpl

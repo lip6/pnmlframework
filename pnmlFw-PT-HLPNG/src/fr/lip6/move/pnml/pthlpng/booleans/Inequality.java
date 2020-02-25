@@ -43,15 +43,19 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.Operator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Inequality</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Inequality</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getInequality()
- * @model annotation="http://www.pnml.org/models/OCL inputOutputTypes='self.input.size() = 2 and self.input->forAll{c, d | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and self.output.oclIsKindOf(Bool)'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputOutputTypes'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='inequality' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        inputOutputTypes='self.input.size() = 2 and self.input-&gt;forAll{c, d
+ *        | c.oclIsTypeOf(d) or d.oclIsTypeOf(c)} and
+ *        self.output.oclIsKindOf(Bool)'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputOutputTypes'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='inequality'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Inequality extends Operator {
@@ -66,8 +70,8 @@ public interface Inequality extends Operator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

@@ -69,13 +69,13 @@ import fr.lip6.move.pnml.pthlpng.terms.UserSort;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Product Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Product
+ * Sort</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl#getElementSort <em>Element Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl#getElementSort
+ * <em>Element Sort</em>}</li>
  * </ul>
  * </p>
  *
@@ -83,9 +83,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class ProductSortImpl extends SortImpl implements ProductSort {
 	/**
-	 * The cached value of the '{@link #getElementSort() <em>Element Sort</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getElementSort() <em>Element Sort</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getElementSort()
 	 * @generated
 	 * @ordered
@@ -93,8 +93,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	protected EList<Sort> elementSort;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ProductSortImpl() {
@@ -102,8 +102,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -112,8 +112,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -126,8 +126,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -141,8 +141,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -155,8 +155,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -169,8 +169,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -186,8 +186,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -201,8 +201,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -219,10 +219,10 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -240,13 +240,13 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getElementSort() != null) {
 
@@ -281,22 +281,22 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 1
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -310,7 +310,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -320,7 +320,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -330,7 +330,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -340,7 +340,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -350,7 +350,7 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 				item.setContainerProductSort(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -361,10 +361,10 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -387,13 +387,13 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getElementSort() != null) {
 
@@ -489,8 +489,8 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
 				// Someone may one day inherit from ProductSort, so we should
-				// strictly check for ProductSort only. Further sub-classes must 
-				//override this method.
+				// strictly check for ProductSort only. Further sub-classes must
+				// override this method.
 				if ("ProductSort".equalsIgnoreCase(this.eClass().getName())) {
 					ProductSort mySort = this;
 					ProductSort thatSort = (ProductSort) sort;
@@ -514,4 +514,4 @@ public class ProductSortImpl extends SortImpl implements ProductSort {
 
 	}
 
-} //ProductSortImpl
+} // ProductSortImpl

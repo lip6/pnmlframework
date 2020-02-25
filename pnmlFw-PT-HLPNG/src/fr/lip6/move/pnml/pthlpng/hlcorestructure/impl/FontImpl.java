@@ -39,7 +39,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -71,20 +70,27 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Font</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Font</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getAlign <em>Align</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getDecoration <em>Decoration</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getFamily <em>Family</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getRotation <em>Rotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getSize <em>Size</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getStyle <em>Style</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getWeight <em>Weight</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getAlign
+ * <em>Align</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getDecoration
+ * <em>Decoration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getFamily
+ * <em>Family</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getRotation
+ * <em>Rotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getSize
+ * <em>Size</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getStyle
+ * <em>Style</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getWeight
+ * <em>Weight</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.FontImpl#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -92,9 +98,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class FontImpl extends MinimalEObjectImpl implements Font {
 	/**
-	 * The default value of the '{@link #getAlign() <em>Align</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getAlign() <em>Align</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getAlign()
 	 * @generated
 	 * @ordered
@@ -102,9 +108,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected static final FontAlign ALIGN_EDEFAULT = FontAlign.LEFT;
 
 	/**
-	 * The cached value of the '{@link #getAlign() <em>Align</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getAlign() <em>Align</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getAlign()
 	 * @generated
 	 * @ordered
@@ -112,9 +118,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected FontAlign align = ALIGN_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getDecoration() <em>Decoration</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getDecoration() <em>Decoration</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDecoration()
 	 * @generated
 	 * @ordered
@@ -122,9 +128,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected static final FontDecoration DECORATION_EDEFAULT = FontDecoration.UNDERLINE;
 
 	/**
-	 * The cached value of the '{@link #getDecoration() <em>Decoration</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDecoration() <em>Decoration</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDecoration()
 	 * @generated
 	 * @ordered
@@ -133,8 +139,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	/**
 	 * The default value of the '{@link #getFamily() <em>Family</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFamily()
 	 * @generated
 	 * @ordered
@@ -143,8 +149,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	/**
 	 * The cached value of the '{@link #getFamily() <em>Family</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFamily()
 	 * @generated
 	 * @ordered
@@ -152,9 +158,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected CSS2FontFamily family = FAMILY_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getRotation() <em>Rotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getRotation() <em>Rotation</em>}'
+	 * attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getRotation()
 	 * @generated
 	 * @ordered
@@ -163,8 +169,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	/**
 	 * The cached value of the '{@link #getRotation() <em>Rotation</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getRotation()
 	 * @generated
 	 * @ordered
@@ -172,9 +178,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected BigDecimal rotation = ROTATION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getSize() <em>Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getSize() <em>Size</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSize()
 	 * @generated
 	 * @ordered
@@ -182,9 +188,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected static final CSS2FontSize SIZE_EDEFAULT = CSS2FontSize.SMALL;
 
 	/**
-	 * The cached value of the '{@link #getSize() <em>Size</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSize() <em>Size</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSize()
 	 * @generated
 	 * @ordered
@@ -192,9 +198,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected CSS2FontSize size = SIZE_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStyle()
 	 * @generated
 	 * @ordered
@@ -202,9 +208,9 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected static final CSS2FontStyle STYLE_EDEFAULT = CSS2FontStyle.NORMAL;
 
 	/**
-	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStyle()
 	 * @generated
 	 * @ordered
@@ -213,8 +219,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	/**
 	 * The default value of the '{@link #getWeight() <em>Weight</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getWeight()
 	 * @generated
 	 * @ordered
@@ -223,8 +229,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	/**
 	 * The cached value of the '{@link #getWeight() <em>Weight</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getWeight()
 	 * @generated
 	 * @ordered
@@ -232,8 +238,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	protected CSS2FontWeight weight = WEIGHT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected FontImpl() {
@@ -241,8 +247,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -251,8 +257,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -261,8 +267,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -274,8 +280,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -284,8 +290,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -298,8 +304,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -308,8 +314,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -322,8 +328,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -332,8 +338,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -346,8 +352,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -356,8 +362,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -369,8 +375,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -379,8 +385,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -392,8 +398,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -402,8 +408,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -416,8 +422,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -428,8 +434,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics,
@@ -440,14 +446,15 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerAnnotationGraphics(AnnotationGraphics newContainerAnnotationGraphics) {
 		if (newContainerAnnotationGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.FONT__CONTAINER_ANNOTATION_GRAPHICS && newContainerAnnotationGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.FONT__CONTAINER_ANNOTATION_GRAPHICS
+						&& newContainerAnnotationGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerAnnotationGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -466,8 +473,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -482,8 +489,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -496,8 +503,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -511,8 +518,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -539,8 +546,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -575,8 +582,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -611,8 +618,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -639,8 +646,8 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -672,10 +679,10 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 7
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 7
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -693,7 +700,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getAlign() != null) {
 			sb.append(" align");
@@ -747,7 +754,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -760,20 +767,20 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//7
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 7
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("align")) != null) {
 			this.setAlign(FontAlign.get(locRoot.getAttributeValue(new QName("align"))));
@@ -807,7 +814,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 			this.setWeight(CSS2FontWeight.get(locRoot.getAttributeValue(new QName("weight"))));
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -816,10 +823,10 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 7
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 7
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -842,7 +849,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getAlign() != null) {
 			sb.append(" align");
@@ -896,7 +903,7 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -949,4 +956,4 @@ public class FontImpl extends MinimalEObjectImpl implements Font {
 		return retour;
 
 	}
-} //FontImpl
+} // FontImpl

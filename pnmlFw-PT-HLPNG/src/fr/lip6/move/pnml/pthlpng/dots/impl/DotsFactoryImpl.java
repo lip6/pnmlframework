@@ -43,16 +43,16 @@ import fr.lip6.move.pnml.pthlpng.dots.DotsFactory;
 import fr.lip6.move.pnml.pthlpng.dots.DotsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model <b>Factory</b>.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model <b>Factory</b>. <!--
+ * end-user-doc -->
+ * 
  * @generated
  */
 public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	/**
-	 * Creates the default factory implementation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates the default factory implementation. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static DotsFactory init() {
@@ -68,9 +68,9 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * Creates an instance of the factory.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the factory. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public DotsFactoryImpl() {
@@ -78,8 +78,8 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -95,8 +95,8 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -106,8 +106,8 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -117,8 +117,8 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -127,8 +127,8 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @deprecated
 	 * @generated
 	 */
@@ -137,4 +137,4 @@ public class DotsFactoryImpl extends EFactoryImpl implements DotsFactory {
 		return DotsPackage.eINSTANCE;
 	}
 
-} //DotsFactoryImpl
+} // DotsFactoryImpl

@@ -42,31 +42,35 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Ref Transition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Ref
+ * Transition</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef <em>Ref</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef
+ * <em>Ref</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getRefTransition()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='referenceTransition' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML
+ *        tag='referenceTransition' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface RefTransition extends TransitionNode {
 	/**
-	 * Returns the value of the '<em><b>Ref</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode#getReferencingTransitions <em>Referencing Transitions</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Ref</b></em>' reference. It is bidirectional
+	 * and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode#getReferencingTransitions
+	 * <em>Referencing Transitions</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Ref</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Ref</em>' reference isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Ref</em>' reference.
 	 * @see #setRef(TransitionNode)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getRefTransition_Ref()
@@ -78,9 +82,10 @@ public interface RefTransition extends TransitionNode {
 	TransitionNode getRef();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef <em>Ref</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition#getRef
+	 * <em>Ref</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Ref</em>' reference.
 	 * @see #getRef()
 	 * @generated
@@ -97,8 +102,8 @@ public interface RefTransition extends TransitionNode {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

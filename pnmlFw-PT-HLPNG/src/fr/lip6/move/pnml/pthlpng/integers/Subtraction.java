@@ -42,15 +42,17 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Subtraction</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Subtraction</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getSubtraction()
- * @model annotation="http://www.pnml.org/models/OCL outputType='self.output.oclIsKindOf(Number)'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='outputType'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='subtraction' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        outputType='self.output.oclIsKindOf(Number)'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='outputType'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='subtraction'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Subtraction extends IntegerOperator {
@@ -65,8 +67,8 @@ public interface Subtraction extends IntegerOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

@@ -40,13 +40,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HLCoreAnnotation;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>HL Core Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>HL Core
+ * Annotation</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLCoreAnnotationImpl#getText <em>Text</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLCoreAnnotationImpl#getText
+ * <em>Text</em>}</li>
  * </ul>
  * </p>
  *
@@ -54,9 +54,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
  */
 public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLCoreAnnotation {
 	/**
-	 * The default value of the '{@link #getText() <em>Text</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getText() <em>Text</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getText()
 	 * @generated
 	 * @ordered
@@ -64,9 +64,9 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	protected static final String TEXT_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getText() <em>Text</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getText()
 	 * @generated
 	 * @ordered
@@ -74,8 +74,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	protected String text = TEXT_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected HLCoreAnnotationImpl() {
@@ -83,8 +83,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -93,8 +93,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -103,8 +103,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -117,8 +117,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -131,8 +131,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -146,8 +146,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -161,8 +161,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -175,8 +175,8 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -193,4 +193,4 @@ public abstract class HLCoreAnnotationImpl extends AnnotationImpl implements HLC
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //HLCoreAnnotationImpl
+} // HLCoreAnnotationImpl

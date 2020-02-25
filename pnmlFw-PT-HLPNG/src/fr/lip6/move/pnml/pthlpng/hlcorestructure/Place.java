@@ -42,32 +42,36 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Place</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Place</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType <em>Type</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getHlinitialMarking <em>Hlinitial Marking</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType
+ * <em>Type</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getHlinitialMarking
+ * <em>Hlinitial Marking</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlace()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='place' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='place' kind='son'"
  * @generated
  */
 public interface Place extends PlaceNode {
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace <em>Container Place</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Type</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Type#getContainerPlace
+	 * <em>Container Place</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Type</em>' containment reference.
 	 * @see #setType(Type)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlace_Type()
@@ -79,9 +83,11 @@ public interface Place extends PlaceNode {
 	Type getType();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType <em>Type</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getType
+	 * <em>Type</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Type</em>' containment reference.
 	 * @see #getType()
 	 * @generated
@@ -89,14 +95,16 @@ public interface Place extends PlaceNode {
 	void setType(Type value);
 
 	/**
-	 * Returns the value of the '<em><b>Hlinitial Marking</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking#getContainerPlace <em>Container Place</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Hlinitial Marking</b></em>' containment
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.HLMarking#getContainerPlace
+	 * <em>Container Place</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Hlinitial Marking</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Hlinitial Marking</em>' containment reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Hlinitial Marking</em>' containment reference.
 	 * @see #setHlinitialMarking(HLMarking)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlace_HlinitialMarking()
@@ -108,10 +116,13 @@ public interface Place extends PlaceNode {
 	HLMarking getHlinitialMarking();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getHlinitialMarking <em>Hlinitial Marking</em>}' containment reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Place#getHlinitialMarking
+	 * <em>Hlinitial Marking</em>}' containment reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Hlinitial Marking</em>' containment reference.
+	 * 
+	 * @param value the new value of the '<em>Hlinitial Marking</em>' containment
+	 *              reference.
 	 * @see #getHlinitialMarking()
 	 * @generated
 	 */
@@ -127,8 +138,8 @@ public interface Place extends PlaceNode {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

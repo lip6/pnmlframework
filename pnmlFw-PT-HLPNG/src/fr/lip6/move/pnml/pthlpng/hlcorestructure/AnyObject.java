@@ -43,31 +43,33 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Any Object</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Any
+ * Object</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject#getContainerToolInfo <em>Container Tool Info</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnyObject#getContainerToolInfo
+ * <em>Container Tool Info</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnyObject()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface AnyObject extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Container Tool Info</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel <em>Tool Info Model</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Tool Info</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel
+	 * <em>Tool Info Model</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Tool Info</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Tool Info</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Container Tool Info</em>' container reference.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getAnyObject_ContainerToolInfo()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo#getToolInfoModel
@@ -78,8 +80,8 @@ public interface AnyObject extends EObject {
 
 	public abstract String toPNML();
 
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	public abstract void toPNML(FileChannel fc);
 

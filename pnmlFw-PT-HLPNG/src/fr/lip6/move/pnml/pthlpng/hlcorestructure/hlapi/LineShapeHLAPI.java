@@ -32,31 +32,33 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape;
-public enum LineShapeHLAPI{
-	LINE("line"),
-	CURVE("curve");
+
+public enum LineShapeHLAPI {
+	LINE("line"), CURVE("curve");
 
 	private final LineShape item;
 
 	private LineShapeHLAPI(String name) {
 		this.item = LineShape.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static LineShapeHLAPI get(int num) {
-	
-      if(num == 0){
-         return LINE;
-      }
-	
-      if(num == 1){
-         return CURVE;
-      }
-	
+
+		if (num == 0) {
+			return LINE;
+		}
+
+		if (num == 1) {
+			return CURVE;
+		}
+
 		return null;
 	}
 
@@ -64,5 +66,4 @@ public enum LineShapeHLAPI{
 		return item;
 	}
 
-	
 }

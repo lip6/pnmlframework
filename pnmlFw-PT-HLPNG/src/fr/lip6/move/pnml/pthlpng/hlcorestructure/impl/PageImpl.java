@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -78,16 +77,19 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Transition;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Page</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Page</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getObjects <em>Objects</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getContainerPetriNet <em>Container Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getNodegraphics <em>Nodegraphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getObjects
+ * <em>Objects</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getContainerPetriNet
+ * <em>Container Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getNodegraphics
+ * <em>Nodegraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PageImpl#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
@@ -95,9 +97,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class PageImpl extends PnObjectImpl implements Page {
 	/**
-	 * The cached value of the '{@link #getObjects() <em>Objects</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getObjects() <em>Objects</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getObjects()
 	 * @generated
 	 * @ordered
@@ -105,9 +107,9 @@ public class PageImpl extends PnObjectImpl implements Page {
 	protected EList<PnObject> objects;
 
 	/**
-	 * The cached value of the '{@link #getNodegraphics() <em>Nodegraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getNodegraphics() <em>Nodegraphics</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getNodegraphics()
 	 * @generated
 	 * @ordered
@@ -115,9 +117,9 @@ public class PageImpl extends PnObjectImpl implements Page {
 	protected NodeGraphics nodegraphics;
 
 	/**
-	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDeclaration()
 	 * @generated
 	 * @ordered
@@ -125,8 +127,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	protected EList<Declaration> declaration;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PageImpl() {
@@ -134,8 +136,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -144,8 +146,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -158,8 +160,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -170,8 +172,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPetriNet(PetriNet newContainerPetriNet, NotificationChain msgs) {
@@ -181,14 +183,15 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PAGE__CONTAINER_PETRI_NET
+						&& newContainerPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -206,8 +209,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -216,8 +219,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetNodegraphics(NodeGraphics newNodegraphics, NotificationChain msgs) {
@@ -235,8 +238,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -258,8 +261,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -273,8 +276,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -289,8 +292,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 			return basicSetContainerPetriNet((PetriNet) otherEnd, msgs);
 		case HlcorestructurePackage.PAGE__NODEGRAPHICS:
 			if (nodegraphics != null)
-				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PAGE__NODEGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PAGE__NODEGRAPHICS, null, msgs);
 			return basicSetNodegraphics((NodeGraphics) otherEnd, msgs);
 		case HlcorestructurePackage.PAGE__DECLARATION:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getDeclaration()).basicAdd(otherEnd, msgs);
@@ -299,8 +302,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -319,8 +322,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -334,8 +337,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -354,8 +357,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -381,8 +384,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -405,8 +408,8 @@ public class PageImpl extends PnObjectImpl implements Page {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -429,10 +432,10 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 5
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 5
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -450,7 +453,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -463,7 +466,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -548,16 +551,16 @@ public class PageImpl extends PnObjectImpl implements Page {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//0
-		//5
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 0
+		// 5
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -565,11 +568,11 @@ public class PageImpl extends PnObjectImpl implements Page {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -583,7 +586,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerNamePnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -593,7 +596,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPnObject(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("page")) {
 				Page item;
@@ -603,7 +606,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("arc")) {
 				Arc item;
@@ -613,7 +616,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("place")) {
 				Place item;
@@ -623,7 +626,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("referenceTransition")) {
 				RefTransition item;
@@ -633,7 +636,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("transition")) {
 				Transition item;
@@ -643,7 +646,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("referencePlace")) {
 				RefPlace item;
@@ -653,7 +656,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				NodeGraphics item;
@@ -663,7 +666,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
@@ -673,7 +676,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 				item.setContainerDeclarationPage(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -684,10 +687,10 @@ public class PageImpl extends PnObjectImpl implements Page {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 0
-		//sons 5
+		// id 1
+		// idref 0
+		// attributes 0
+		// sons 5
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -710,7 +713,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -723,7 +726,7 @@ public class PageImpl extends PnObjectImpl implements Page {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getName() != null) {
 
@@ -899,4 +902,4 @@ public class PageImpl extends PnObjectImpl implements Page {
 		return retour;
 
 	}
-} //PageImpl
+} // PageImpl

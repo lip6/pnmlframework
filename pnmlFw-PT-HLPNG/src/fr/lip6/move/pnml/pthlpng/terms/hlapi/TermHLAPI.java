@@ -46,188 +46,136 @@ import fr.lip6.move.pnml.pthlpng.terms.NamedOperator;
 import fr.lip6.move.pnml.pthlpng.terms.Operator;
 import fr.lip6.move.pnml.pthlpng.terms.Sort;
 
-public interface TermHLAPI extends HLAPIClass{
+public interface TermHLAPI extends HLAPIClass {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public Sort getSort();
-	
+
 	/**
 	 *
 	 */
 	public Operator getContainerOperator();
-	
+
 	/**
 	 *
 	 */
 	public NamedOperator getContainerNamedOperator();
-	
+
 	/**
 	 *
 	 */
 	public HLMarking getContainerHLMarking();
-	
+
 	/**
 	 *
 	 */
 	public Condition getContainerCondition();
-	
+
 	/**
 	 *
 	 */
 	public HLAnnotation getContainerHLAnnotation();
-	
+
 	/**
 	 *
 	 */
 	public PartitionElement getContainerPartitionElement();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		
-		public SortHLAPI getSortHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		
-		public OperatorHLAPI getContainerOperatorHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public NamedOperatorHLAPI getContainerNamedOperatorHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public HLMarkingHLAPI getContainerHLMarkingHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public ConditionHLAPI getContainerConditionHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public HLAnnotationHLAPI getContainerHLAnnotationHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public PartitionElementHLAPI getContainerPartitionElementHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public SortHLAPI getSortHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public OperatorHLAPI getContainerOperatorHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public NamedOperatorHLAPI getContainerNamedOperatorHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public HLMarkingHLAPI getContainerHLMarkingHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public ConditionHLAPI getContainerConditionHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public HLAnnotationHLAPI getContainerHLAnnotationHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public PartitionElementHLAPI getContainerPartitionElementHLAPI();
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Sort
 	 */
-	public void setSortHLAPI(
-	SortHLAPI elem);
-	
+	public void setSortHLAPI(SortHLAPI elem);
+
 	/**
 	 * set ContainerOperator
 	 */
-	public void setContainerOperatorHLAPI(
-	OperatorHLAPI elem);
-	
+	public void setContainerOperatorHLAPI(OperatorHLAPI elem);
+
 	/**
 	 * set ContainerNamedOperator
 	 */
-	public void setContainerNamedOperatorHLAPI(
-	NamedOperatorHLAPI elem);
-	
+	public void setContainerNamedOperatorHLAPI(NamedOperatorHLAPI elem);
+
 	/**
 	 * set ContainerHLMarking
 	 */
-	public void setContainerHLMarkingHLAPI(
-	HLMarkingHLAPI elem);
-	
+	public void setContainerHLMarkingHLAPI(HLMarkingHLAPI elem);
+
 	/**
 	 * set ContainerCondition
 	 */
-	public void setContainerConditionHLAPI(
-	ConditionHLAPI elem);
-	
+	public void setContainerConditionHLAPI(ConditionHLAPI elem);
+
 	/**
 	 * set ContainerHLAnnotation
 	 */
-	public void setContainerHLAnnotationHLAPI(
-	HLAnnotationHLAPI elem);
-	
+	public void setContainerHLAnnotationHLAPI(HLAnnotationHLAPI elem);
+
 	/**
 	 * set ContainerPartitionElement
 	 */
-	public void setContainerPartitionElementHLAPI(
-	PartitionElementHLAPI elem);
-	
+	public void setContainerPartitionElementHLAPI(PartitionElementHLAPI elem);
 
-	
-	
-	
-	
-	
-	
-	
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
-
-	//equals method
+	// equals method
 	public boolean equals(Object item);
 
 }

@@ -32,106 +32,95 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color;
-public enum CSS2ColorHLAPI{
-	AQUA("AQUA"),
-	BLACK("BLACK"),
-	BLUE("BLUE"),
-	FUCHSIA("FUCHSIA"),
-	GRAY("GRAY"),
-	GREEN("GREEN"),
-	LIME("LIME"),
-	MAROON("MAROON"),
-	NAVY("NAVY"),
-	OLIVE("OLIVE"),
-	ORANGE("ORANGE"),
-	PURPLE("PURPLE"),
-	RED("RED"),
-	SILVER("SILVER"),
-	TEAL("TEAL"),
-	WHITE("WHITE"),
-	YELLOW("YELLOW");
+
+public enum CSS2ColorHLAPI {
+	AQUA("AQUA"), BLACK("BLACK"), BLUE("BLUE"), FUCHSIA("FUCHSIA"), GRAY("GRAY"), GREEN("GREEN"), LIME("LIME"),
+	MAROON("MAROON"), NAVY("NAVY"), OLIVE("OLIVE"), ORANGE("ORANGE"), PURPLE("PURPLE"), RED("RED"), SILVER("SILVER"),
+	TEAL("TEAL"), WHITE("WHITE"), YELLOW("YELLOW");
 
 	private final CSS2Color item;
 
 	private CSS2ColorHLAPI(String name) {
 		this.item = CSS2Color.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static CSS2ColorHLAPI get(int num) {
-	
-      if(num == 0){
-         return AQUA;
-      }
-	
-      if(num == 1){
-         return BLACK;
-      }
-	
-      if(num == 2){
-         return BLUE;
-      }
-	
-      if(num == 3){
-         return FUCHSIA;
-      }
-	
-      if(num == 4){
-         return GRAY;
-      }
-	
-      if(num == 5){
-         return GREEN;
-      }
-	
-      if(num == 6){
-         return LIME;
-      }
-	
-      if(num == 7){
-         return MAROON;
-      }
-	
-      if(num == 8){
-         return NAVY;
-      }
-	
-      if(num == 9){
-         return OLIVE;
-      }
-	
-      if(num == 10){
-         return ORANGE;
-      }
-	
-      if(num == 11){
-         return PURPLE;
-      }
-	
-      if(num == 12){
-         return RED;
-      }
-	
-      if(num == 13){
-         return SILVER;
-      }
-	
-      if(num == 14){
-         return TEAL;
-      }
-	
-      if(num == 15){
-         return WHITE;
-      }
-	
-      if(num == 16){
-         return YELLOW;
-      }
-	
+
+		if (num == 0) {
+			return AQUA;
+		}
+
+		if (num == 1) {
+			return BLACK;
+		}
+
+		if (num == 2) {
+			return BLUE;
+		}
+
+		if (num == 3) {
+			return FUCHSIA;
+		}
+
+		if (num == 4) {
+			return GRAY;
+		}
+
+		if (num == 5) {
+			return GREEN;
+		}
+
+		if (num == 6) {
+			return LIME;
+		}
+
+		if (num == 7) {
+			return MAROON;
+		}
+
+		if (num == 8) {
+			return NAVY;
+		}
+
+		if (num == 9) {
+			return OLIVE;
+		}
+
+		if (num == 10) {
+			return ORANGE;
+		}
+
+		if (num == 11) {
+			return PURPLE;
+		}
+
+		if (num == 12) {
+			return RED;
+		}
+
+		if (num == 13) {
+			return SILVER;
+		}
+
+		if (num == 14) {
+			return TEAL;
+		}
+
+		if (num == 15) {
+			return WHITE;
+		}
+
+		if (num == 16) {
+			return YELLOW;
+		}
+
 		return null;
 	}
 
@@ -139,5 +128,4 @@ public enum CSS2ColorHLAPI{
 		return item;
 	}
 
-	
 }

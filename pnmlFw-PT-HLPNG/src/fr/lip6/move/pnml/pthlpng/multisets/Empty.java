@@ -44,33 +44,37 @@ import fr.lip6.move.pnml.pthlpng.terms.MultisetOperator;
 import fr.lip6.move.pnml.pthlpng.terms.Sort;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Empty</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Empty</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.multisets.Empty#getRefsort <em>Refsort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.multisets.Empty#getRefsort
+ * <em>Refsort</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getEmpty()
- * @model annotation="http://www.pnml.org/models/OCL InputSize='self.input->size = 0'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='InputSize'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='empty' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        InputSize='self.input-&gt;size = 0'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
+ *        tag='empty' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Empty extends MultisetOperator {
 	/**
-	 * Returns the value of the '<em><b>Refsort</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerEmpty <em>Container Empty</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Refsort</b></em>' containment reference. It
+	 * is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerEmpty <em>Container
+	 * Empty</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Refsort</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Refsort</em>' containment reference.
 	 * @see #setRefsort(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getEmpty_Refsort()
@@ -82,9 +86,11 @@ public interface Empty extends MultisetOperator {
 	Sort getRefsort();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.multisets.Empty#getRefsort <em>Refsort</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.multisets.Empty#getRefsort
+	 * <em>Refsort</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Refsort</em>' containment reference.
 	 * @see #getRefsort()
 	 * @generated
@@ -101,8 +107,8 @@ public interface Empty extends MultisetOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

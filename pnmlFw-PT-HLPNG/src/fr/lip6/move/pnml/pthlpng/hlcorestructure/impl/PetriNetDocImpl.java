@@ -64,14 +64,15 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Petri Net Doc</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Petri
+ * Net Doc</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetDocImpl#getNets <em>Nets</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetDocImpl#getXmlns <em>Xmlns</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetDocImpl#getNets
+ * <em>Nets</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetDocImpl#getXmlns
+ * <em>Xmlns</em>}</li>
  * </ul>
  * </p>
  *
@@ -79,9 +80,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	/**
-	 * The cached value of the '{@link #getNets() <em>Nets</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getNets() <em>Nets</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getNets()
 	 * @generated
 	 * @ordered
@@ -89,9 +90,9 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	protected EList<PetriNet> nets;
 
 	/**
-	 * The default value of the '{@link #getXmlns() <em>Xmlns</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getXmlns() <em>Xmlns</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getXmlns()
 	 * @generated
 	 * @ordered
@@ -99,9 +100,9 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	protected static final String XMLNS_EDEFAULT = "http://www.pnml.org/version-2009/grammar/pnml";
 
 	/**
-	 * The cached value of the '{@link #getXmlns() <em>Xmlns</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getXmlns() <em>Xmlns</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getXmlns()
 	 * @generated
 	 * @ordered
@@ -109,8 +110,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	protected String xmlns = XMLNS_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PetriNetDocImpl() {
@@ -118,8 +119,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -128,8 +129,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -143,8 +144,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -153,8 +154,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -168,8 +169,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -182,8 +183,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -198,8 +199,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -215,8 +216,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -230,8 +231,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -246,8 +247,8 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -267,10 +268,10 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -288,7 +289,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getXmlns() != null) {
 			sb.append(" xmlns");
@@ -301,7 +302,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getNets() != null) {
 
@@ -336,22 +337,22 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//1
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 1
+		// 1
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -365,7 +366,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 				item.setContainerPetriNetDoc(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -376,10 +377,10 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -402,7 +403,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getXmlns() != null) {
 			sb.append(" xmlns");
@@ -415,7 +416,7 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getNets() != null) {
 
@@ -501,4 +502,4 @@ public class PetriNetDocImpl extends MinimalEObjectImpl implements PetriNetDoc {
 		return retour;
 
 	}
-} //PetriNetDocImpl
+} // PetriNetDocImpl

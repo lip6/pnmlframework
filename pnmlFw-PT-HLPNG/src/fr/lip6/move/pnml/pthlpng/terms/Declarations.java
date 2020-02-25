@@ -45,33 +45,38 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Declarations</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Declarations</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getDeclaration <em>Declaration</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getContainerDeclaration <em>Container Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getDeclaration
+ * <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getContainerDeclaration
+ * <em>Container Declaration</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getDeclarations()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='declarations' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='declarations'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Declarations extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations <em>Container Declarations</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Declaration</b></em>' containment reference
+	 * list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration}. It is bidirectional
+	 * and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations
+	 * <em>Container Declarations</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Declaration</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Declaration</em>' containment reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Declaration</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getDeclarations_Declaration()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsDeclaration#getContainerDeclarations
@@ -82,15 +87,18 @@ public interface Declarations extends EObject {
 	List<TermsDeclaration> getDeclaration();
 
 	/**
-	 * Returns the value of the '<em><b>Container Declaration</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getStructure <em>Structure</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Declaration</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getStructure
+	 * <em>Structure</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Declaration</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Declaration</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Declaration</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Declaration</em>' container
+	 *         reference.
 	 * @see #setContainerDeclaration(Declaration)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getDeclarations_ContainerDeclaration()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.Declaration#getStructure
@@ -100,10 +108,13 @@ public interface Declarations extends EObject {
 	Declaration getContainerDeclaration();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getContainerDeclaration <em>Container Declaration</em>}' container reference.
-	 * <!-- begin-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Declarations#getContainerDeclaration
+	 * <em>Container Declaration</em>}' container reference. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Declaration</em>' container reference.
+	 * 
+	 * @param value the new value of the '<em>Container Declaration</em>' container
+	 *              reference.
 	 * @see #getContainerDeclaration()
 	 * @generated
 	 */
@@ -117,8 +128,8 @@ public interface Declarations extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

@@ -46,13 +46,13 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
 import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInSortImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>HLPN Number</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>HLPN
+ * Number</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.HLPNNumberImpl#getContainerNumberConstant <em>Container Number Constant</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.integers.impl.HLPNNumberImpl#getContainerNumberConstant
+ * <em>Container Number Constant</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,8 +60,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInSortImpl;
  */
 public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumber {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected HLPNNumberImpl() {
@@ -69,8 +69,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -79,8 +79,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -91,8 +91,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNumberConstant(NumberConstant newContainerNumberConstant,
@@ -103,14 +103,15 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNumberConstant(NumberConstant newContainerNumberConstant) {
 		if (newContainerNumberConstant != eInternalContainer()
-				|| (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT && newContainerNumberConstant != null)) {
+				|| (eContainerFeatureID() != IntegersPackage.HLPN_NUMBER__CONTAINER_NUMBER_CONSTANT
+						&& newContainerNumberConstant != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNumberConstant))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -129,8 +130,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -145,8 +146,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -159,8 +160,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -174,8 +175,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -188,8 +189,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -203,8 +204,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -218,8 +219,8 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -238,16 +239,16 @@ public abstract class HLPNNumberImpl extends BuiltInSortImpl implements HLPNNumb
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
-			//by default they are the same sort, unless they have been named.
+			// by default they are the same sort, unless they have been named.
 			isEqual = true;
 			if (this.getContainerNamedSort() != null && sort.getContainerNamedSort() != null) {
 				// we test them if they have been explicitly named.
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
-			}// otherwise, keep the default.
+			} // otherwise, keep the default.
 		}
 		return isEqual;
 
 	}
 
-} //HLPNNumberImpl
+} // HLPNNumberImpl

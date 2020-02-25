@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -78,14 +77,15 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.SortDeclImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Partition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Partition</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionImpl#getDef <em>Def</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionImpl#getPartitionelements <em>Partitionelements</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionImpl#getDef
+ * <em>Def</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.impl.PartitionImpl#getPartitionelements
+ * <em>Partitionelements</em>}</li>
  * </ul>
  * </p>
  *
@@ -93,9 +93,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class PartitionImpl extends SortDeclImpl implements Partition {
 	/**
-	 * The cached value of the '{@link #getDef() <em>Def</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDef() <em>Def</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDef()
 	 * @generated
 	 * @ordered
@@ -103,9 +103,10 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	protected Sort def;
 
 	/**
-	 * The cached value of the '{@link #getPartitionelements() <em>Partitionelements</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPartitionelements()
+	 * <em>Partitionelements</em>}' containment reference list. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @see #getPartitionelements()
 	 * @generated
 	 * @ordered
@@ -113,8 +114,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	protected EList<PartitionElement> partitionelements;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PartitionImpl() {
@@ -122,8 +123,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -132,8 +133,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,8 +143,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetDef(Sort newDef, NotificationChain msgs) {
@@ -161,8 +162,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -183,8 +184,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -197,8 +198,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -207,19 +208,19 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		switch (featureID) {
 		case PartitionsPackage.PARTITION__DEF:
 			if (def != null)
-				msgs = ((InternalEObject) def).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- PartitionsPackage.PARTITION__DEF, null, msgs);
+				msgs = ((InternalEObject) def).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - PartitionsPackage.PARTITION__DEF, null, msgs);
 			return basicSetDef((Sort) otherEnd, msgs);
 		case PartitionsPackage.PARTITION__PARTITIONELEMENTS:
-			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelements())
-					.basicAdd(otherEnd, msgs);
+			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPartitionelements()).basicAdd(otherEnd,
+					msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -234,8 +235,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -250,8 +251,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -270,8 +271,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -288,8 +289,8 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -308,10 +309,10 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -329,7 +330,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -349,7 +350,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDef() != null) {
 
@@ -396,16 +397,16 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//2
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 2
 		@SuppressWarnings("unused")
 		PartitionsFactory fact = PartitionsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -413,9 +414,9 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
@@ -425,7 +426,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -439,7 +440,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -449,7 +450,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("multisetsort")) {
 				MultisetSort item;
@@ -459,7 +460,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -469,7 +470,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -479,7 +480,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setContainerPartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
@@ -489,7 +490,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 				item.setRefpartition(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -500,10 +501,10 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 2
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 2
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -526,7 +527,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -546,7 +547,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDef() != null) {
 
@@ -648,4 +649,4 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 		return retour;
 
 	}
-} //PartitionImpl
+} // PartitionImpl

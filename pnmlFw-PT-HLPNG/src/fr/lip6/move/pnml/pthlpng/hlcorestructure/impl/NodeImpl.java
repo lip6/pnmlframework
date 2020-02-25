@@ -49,15 +49,17 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Node;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Node</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getInArcs <em>In Arcs</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getOutArcs <em>Out Arcs</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getNodegraphics <em>Nodegraphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getInArcs
+ * <em>In Arcs</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getOutArcs
+ * <em>Out Arcs</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeImpl#getNodegraphics
+ * <em>Nodegraphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -65,9 +67,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
  */
 public abstract class NodeImpl extends PnObjectImpl implements Node {
 	/**
-	 * The cached value of the '{@link #getInArcs() <em>In Arcs</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getInArcs() <em>In Arcs</em>}' reference
+	 * list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getInArcs()
 	 * @generated
 	 * @ordered
@@ -75,9 +77,9 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	protected EList<Arc> inArcs;
 
 	/**
-	 * The cached value of the '{@link #getOutArcs() <em>Out Arcs</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getOutArcs() <em>Out Arcs</em>}' reference
+	 * list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getOutArcs()
 	 * @generated
 	 * @ordered
@@ -85,9 +87,9 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	protected EList<Arc> outArcs;
 
 	/**
-	 * The cached value of the '{@link #getNodegraphics() <em>Nodegraphics</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getNodegraphics() <em>Nodegraphics</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getNodegraphics()
 	 * @generated
 	 * @ordered
@@ -95,8 +97,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	protected NodeGraphics nodegraphics;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NodeImpl() {
@@ -104,8 +106,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -114,8 +116,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -128,8 +130,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,8 +144,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -152,8 +154,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetNodegraphics(NodeGraphics newNodegraphics, NotificationChain msgs) {
@@ -171,8 +173,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -194,8 +196,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -208,16 +210,16 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getOutArcs()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.NODE__NODEGRAPHICS:
 			if (nodegraphics != null)
-				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE__NODEGRAPHICS, null, msgs);
+				msgs = ((InternalEObject) nodegraphics).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE__NODEGRAPHICS, null, msgs);
 			return basicSetNodegraphics((NodeGraphics) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -234,8 +236,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -252,8 +254,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -267,8 +269,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -282,8 +284,8 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -301,4 +303,4 @@ public abstract class NodeImpl extends PnObjectImpl implements Node {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //NodeImpl
+} // NodeImpl

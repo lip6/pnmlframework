@@ -50,8 +50,7 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
-
-public class PetriNetDocHLAPI implements HLAPIRootClass{
+public class PetriNetDocHLAPI implements HLAPIRootClass {
 
 	/**
 	 * The contained LLAPI element.
@@ -59,23 +58,21 @@ public class PetriNetDocHLAPI implements HLAPIRootClass{
 	private PetriNetDoc item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public PetriNetDocHLAPI(){//BEGIN CONSTRUCTOR BODY
+
+	public PetriNetDocHLAPI() {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createPetriNetDoc();}
-	
+		synchronized (fact) {
+			item = fact.createPetriNetDoc();
+		}
+
 	}
-
-
-
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public PetriNetDocHLAPI(PetriNetDoc lowLevelAPI){
+	public PetriNetDocHLAPI(PetriNetDoc lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -83,99 +80,86 @@ public class PetriNetDocHLAPI implements HLAPIRootClass{
 	/**
 	 * Return encapsulated object
 	 */
-	public PetriNetDoc getContainedItem(){
+	public PetriNetDoc getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public List<PetriNet> getNets(){
+	public List<PetriNet> getNets() {
 		return item.getNets();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public String getXmlns(){
+	public String getXmlns() {
 		return item.getXmlns();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<PetriNetHLAPI> getNetsHLAPI(){
-			java.util.List<PetriNetHLAPI> retour = new ArrayList<PetriNetHLAPI>();
-			for (PetriNet elemnt : getNets()) {
-				retour.add(new PetriNetHLAPI(elemnt));
-			}
-			return retour;
+	// getters giving HLAPI object
+
+	/**
+	 * This accessor automatically encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<PetriNetHLAPI> getNetsHLAPI() {
+		java.util.List<PetriNetHLAPI> retour = new ArrayList<PetriNetHLAPI>();
+		for (PetriNet elemnt : getNets()) {
+			retour.add(new PetriNetHLAPI(elemnt));
 		}
-	
-	
-	
-	
-
-	//Special getter for list of generics object, return only one object type.
-	
-	
-
-	//setters (including container setter if aviable)
-	
-	
-
-	//setters/remover for lists.
-	
-	
-	public void addNetsHLAPI(PetriNetHLAPI unit){
-	
-		item.getNets().add((PetriNet)unit.getContainedItem());
+		return retour;
 	}
 
-	public void removeNetsHLAPI(PetriNetHLAPI unit){
-		item.getNets().remove((PetriNet)unit.getContainedItem());
-	}
-	
+	// Special getter for list of generics object, return only one object type.
 
-	//equals method
-	public boolean equals(PetriNetDocHLAPI item){
+	// setters (including container setter if aviable)
+
+	// setters/remover for lists.
+
+	public void addNetsHLAPI(PetriNetHLAPI unit) {
+
+		item.getNets().add((PetriNet) unit.getContainedItem());
+	}
+
+	public void removeNetsHLAPI(PetriNetHLAPI unit) {
+		item.getNets().remove((PetriNet) unit.getContainedItem());
+	}
+
+	// equals method
+	public boolean equals(PetriNetDocHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

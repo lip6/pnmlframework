@@ -39,7 +39,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -66,13 +65,13 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Boolean Constant</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Boolean
+ * Constant</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.booleans.impl.BooleanConstantImpl#getValue <em>Value</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.booleans.impl.BooleanConstantImpl#getValue
+ * <em>Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -80,9 +79,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanConstant {
 	/**
-	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getValue() <em>Value</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -90,9 +89,9 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	protected static final Boolean VALUE_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getValue() <em>Value</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getValue()
 	 * @generated
 	 * @ordered
@@ -100,8 +99,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	protected Boolean value = VALUE_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected BooleanConstantImpl() {
@@ -109,8 +108,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -119,8 +118,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -129,8 +128,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -143,8 +142,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -157,8 +156,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -172,8 +171,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -187,8 +186,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -201,8 +200,8 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -217,24 +216,24 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		return result.toString();
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -252,7 +251,7 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getValue() != null) {
 			sb.append(" value");
@@ -265,7 +264,7 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -308,20 +307,20 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//1
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 1
+		// 1
 		@SuppressWarnings("unused")
 		BooleansFactory fact = BooleansFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("value")) != null) {
 			try {
@@ -331,7 +330,7 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -554,30 +553,30 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
 	}
 
-	//TODO this element (sort) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (sort) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (output) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (output) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (input) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (input) seems not to have any ToPNML associated tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 1
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 1
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -600,7 +599,7 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getValue() != null) {
 			sb.append(" value");
@@ -613,7 +612,7 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getSubterm() != null) {
 
@@ -715,4 +714,4 @@ public class BooleanConstantImpl extends BuiltInConstantImpl implements BooleanC
 		return retour;
 
 	}
-} //BooleanConstantImpl
+} // BooleanConstantImpl

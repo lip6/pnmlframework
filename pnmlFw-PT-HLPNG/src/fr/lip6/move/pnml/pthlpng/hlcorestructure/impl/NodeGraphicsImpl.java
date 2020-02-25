@@ -67,18 +67,23 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Position;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Node Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Node
+ * Graphics</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getPosition <em>Position</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getDimension <em>Dimension</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getFill <em>Fill</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getContainerNode <em>Container Node</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getContainerPage <em>Container Page</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getPosition
+ * <em>Position</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getDimension
+ * <em>Dimension</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getFill
+ * <em>Fill</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getContainerNode
+ * <em>Container Node</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.NodeGraphicsImpl#getContainerPage
+ * <em>Container Page</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,9 +91,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	/**
-	 * The cached value of the '{@link #getPosition() <em>Position</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPosition() <em>Position</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getPosition()
 	 * @generated
 	 * @ordered
@@ -96,9 +101,9 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	protected Position position;
 
 	/**
-	 * The cached value of the '{@link #getDimension() <em>Dimension</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDimension() <em>Dimension</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDimension()
 	 * @generated
 	 * @ordered
@@ -106,9 +111,9 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	protected Dimension dimension;
 
 	/**
-	 * The cached value of the '{@link #getFill() <em>Fill</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getFill() <em>Fill</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFill()
 	 * @generated
 	 * @ordered
@@ -116,9 +121,9 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	protected Fill fill;
 
 	/**
-	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getLine()
 	 * @generated
 	 * @ordered
@@ -126,8 +131,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	protected Line line;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected NodeGraphicsImpl() {
@@ -135,8 +140,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -145,8 +150,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -155,8 +160,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetPosition(Position newPosition, NotificationChain msgs) {
@@ -174,8 +179,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -197,8 +202,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -207,8 +212,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetDimension(Dimension newDimension, NotificationChain msgs) {
@@ -226,8 +231,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -249,8 +254,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -259,8 +264,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetFill(Fill newFill, NotificationChain msgs) {
@@ -278,8 +283,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -301,8 +306,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -311,8 +316,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetLine(Line newLine, NotificationChain msgs) {
@@ -330,8 +335,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -353,8 +358,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -365,8 +370,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNode(Node newContainerNode, NotificationChain msgs) {
@@ -376,22 +381,23 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNode(Node newContainerNode) {
 		if (newContainerNode != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE && newContainerNode != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE
+						&& newContainerNode != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNode))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerNode != null)
-				msgs = ((InternalEObject) newContainerNode).eInverseAdd(this,
-						HlcorestructurePackage.NODE__NODEGRAPHICS, Node.class, msgs);
+				msgs = ((InternalEObject) newContainerNode).eInverseAdd(this, HlcorestructurePackage.NODE__NODEGRAPHICS,
+						Node.class, msgs);
 			msgs = basicSetContainerNode(newContainerNode, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -401,8 +407,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -413,8 +419,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPage(Page newContainerPage, NotificationChain msgs) {
@@ -424,22 +430,23 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPage(Page newContainerPage) {
 		if (newContainerPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE && newContainerPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_PAGE
+						&& newContainerPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerPage != null)
-				msgs = ((InternalEObject) newContainerPage).eInverseAdd(this,
-						HlcorestructurePackage.PAGE__NODEGRAPHICS, Page.class, msgs);
+				msgs = ((InternalEObject) newContainerPage).eInverseAdd(this, HlcorestructurePackage.PAGE__NODEGRAPHICS,
+						Page.class, msgs);
 			msgs = basicSetContainerPage(newContainerPage, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -449,8 +456,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -458,23 +465,23 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		switch (featureID) {
 		case HlcorestructurePackage.NODE_GRAPHICS__POSITION:
 			if (position != null)
-				msgs = ((InternalEObject) position).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__POSITION, null, msgs);
+				msgs = ((InternalEObject) position).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__POSITION, null, msgs);
 			return basicSetPosition((Position) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__DIMENSION:
 			if (dimension != null)
-				msgs = ((InternalEObject) dimension).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__DIMENSION, null, msgs);
+				msgs = ((InternalEObject) dimension).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__DIMENSION, null, msgs);
 			return basicSetDimension((Dimension) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__FILL:
 			if (fill != null)
-				msgs = ((InternalEObject) fill).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__FILL, null, msgs);
+				msgs = ((InternalEObject) fill).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__FILL, null, msgs);
 			return basicSetFill((Fill) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.NODE_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.NODE_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.NODE_GRAPHICS__CONTAINER_NODE:
 			if (eInternalContainer() != null)
@@ -489,8 +496,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -513,8 +520,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -531,8 +538,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -555,8 +562,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -585,8 +592,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -615,8 +622,8 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -643,10 +650,10 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -664,13 +671,13 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPosition() != null) {
 
@@ -740,22 +747,22 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -769,7 +776,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerPNodeGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dimension")) {
 				Dimension item;
@@ -779,7 +786,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerDNodeGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("fill")) {
 				Fill item;
@@ -789,7 +796,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerNodeGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -799,7 +806,7 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 				item.setContainerNodeGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -810,10 +817,10 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -836,13 +843,13 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPosition() != null) {
 
@@ -963,4 +970,4 @@ public class NodeGraphicsImpl extends GraphicsImpl implements NodeGraphics {
 		return retour;
 
 	}
-} //NodeGraphicsImpl
+} // NodeGraphicsImpl

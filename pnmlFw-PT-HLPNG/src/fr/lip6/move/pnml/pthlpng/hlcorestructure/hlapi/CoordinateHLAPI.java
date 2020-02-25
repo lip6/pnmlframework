@@ -35,49 +35,37 @@ package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 
-public interface CoordinateHLAPI extends HLAPIClass{
+public interface CoordinateHLAPI extends HLAPIClass {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public Integer getX();
-	
+
 	/**
 	 *
 	 */
 	public Integer getY();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	// setters (including container setter if aviable)
+
 	/**
 	 * set X
 	 */
-	public void setXHLAPI(
-	java.lang.Integer elem);
-	
+	public void setXHLAPI(java.lang.Integer elem);
+
 	/**
 	 * set Y
 	 */
-	public void setYHLAPI(
-	java.lang.Integer elem);
-	
+	public void setYHLAPI(java.lang.Integer elem);
 
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
-
-	//equals method
+	// equals method
 	public boolean equals(Object item);
 
 }

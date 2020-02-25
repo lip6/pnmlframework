@@ -42,15 +42,16 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Imply</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Imply</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getImply()
- * @model annotation="http://www.pnml.org/models/OCL InputSize='self.input.size() = 2'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='InputSize'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='imply' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        InputSize='self.input.size() = 2'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='InputSize'" annotation="http://www.pnml.org/models/ToPNML
+ *        tag='imply' kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Imply extends BooleanOperator {
@@ -65,8 +66,8 @@ public interface Imply extends BooleanOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

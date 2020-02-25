@@ -43,13 +43,13 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Dot Constant</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Dot
+ * Constant</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.dots.DotsPackage#getDotConstant()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='dotconstant' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='dotconstant'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface DotConstant extends BuiltInConstant {
@@ -64,8 +64,8 @@ public interface DotConstant extends BuiltInConstant {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file
