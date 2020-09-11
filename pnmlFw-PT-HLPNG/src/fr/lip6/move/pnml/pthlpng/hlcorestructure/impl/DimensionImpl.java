@@ -38,7 +38,6 @@ import java.nio.charset.Charset;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -63,13 +62,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Dimension</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Dimension</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DimensionImpl#getContainerDNodeGraphics <em>Container DNode Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DimensionImpl#getContainerDNodeGraphics
+ * <em>Container DNode Graphics</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,8 +76,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class DimensionImpl extends CoordinateImpl implements Dimension {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected DimensionImpl() {
@@ -86,8 +85,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -96,8 +95,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -108,8 +107,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerDNodeGraphics(NodeGraphics newContainerDNodeGraphics,
@@ -120,14 +119,15 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerDNodeGraphics(NodeGraphics newContainerDNodeGraphics) {
 		if (newContainerDNodeGraphics != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.DIMENSION__CONTAINER_DNODE_GRAPHICS && newContainerDNodeGraphics != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.DIMENSION__CONTAINER_DNODE_GRAPHICS
+						&& newContainerDNodeGraphics != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDNodeGraphics))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -146,8 +146,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -162,8 +162,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -176,8 +176,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -191,8 +191,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -205,8 +205,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -220,8 +220,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -235,8 +235,8 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -253,10 +253,10 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -274,7 +274,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -293,7 +293,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -306,20 +306,20 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//2
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 2
+		// 0
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("x")) != null) {
 			try {
@@ -337,7 +337,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -346,10 +346,10 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -372,7 +372,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getX() != null) {
 			sb.append(" x");
@@ -391,7 +391,7 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -444,4 +444,4 @@ public class DimensionImpl extends CoordinateImpl implements Dimension {
 		return retour;
 
 	}
-} //DimensionImpl
+} // DimensionImpl

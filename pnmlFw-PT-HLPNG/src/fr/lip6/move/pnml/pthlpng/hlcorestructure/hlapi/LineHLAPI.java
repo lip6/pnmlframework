@@ -53,8 +53,7 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl;
 
-
-public class LineHLAPI implements HLAPIClass{
+public class LineHLAPI implements HLAPIClass {
 
 	/**
 	 * The contained LLAPI element.
@@ -62,245 +61,197 @@ public class LineHLAPI implements HLAPIClass{
 	private Line item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public LineHLAPI(
-		 CSS2ColorHLAPI color
-	
-		, LineShapeHLAPI shape
-	
-		, java.lang.Integer width
-	
-		, LineStyleHLAPI style
-	){//BEGIN CONSTRUCTOR BODY
+
+	public LineHLAPI(CSS2ColorHLAPI color
+
+			, LineShapeHLAPI shape
+
+			, java.lang.Integer width
+
+			, LineStyleHLAPI style) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(color!=null)
-			item.setColor((CSS2Color)color.getContainedItem());
-		
-	
- 		
- 		if(shape!=null)
-			item.setShape((LineShape)shape.getContainedItem());
-		
-	
- 		
-			if(width!=null){
-			
-				item.setWidth(width);
-			}
-		
-	
- 		
- 		if(style!=null)
-			item.setStyle((LineStyle)style.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (color != null)
+			item.setColor((CSS2Color) color.getContainedItem());
+
+		if (shape != null)
+			item.setShape((LineShape) shape.getContainedItem());
+
+		if (width != null) {
+
+			item.setWidth(width);
+		}
+
+		if (style != null)
+			item.setStyle((LineStyle) style.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public LineHLAPI(
-		 CSS2ColorHLAPI color
-	
-		, LineShapeHLAPI shape
-	
-		, java.lang.Integer width
-	
-		, LineStyleHLAPI style
-	
-		, NodeGraphicsHLAPI containerNodeGraphics
-	){//BEGIN CONSTRUCTOR BODY
+
+	public LineHLAPI(CSS2ColorHLAPI color
+
+			, LineShapeHLAPI shape
+
+			, java.lang.Integer width
+
+			, LineStyleHLAPI style
+
+			, NodeGraphicsHLAPI containerNodeGraphics) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(color!=null)
-			item.setColor((CSS2Color)color.getContainedItem());
-		
-	
- 		
- 		if(shape!=null)
-			item.setShape((LineShape)shape.getContainedItem());
-		
-	
- 		
-			if(width!=null){
-			
-				item.setWidth(width);
-			}
-		
-	
- 		
- 		if(style!=null)
-			item.setStyle((LineStyle)style.getContainedItem());
-		
-	
- 		
- 		if(containerNodeGraphics!=null)
-			item.setContainerNodeGraphics((NodeGraphics)containerNodeGraphics.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (color != null)
+			item.setColor((CSS2Color) color.getContainedItem());
+
+		if (shape != null)
+			item.setShape((LineShape) shape.getContainedItem());
+
+		if (width != null) {
+
+			item.setWidth(width);
+		}
+
+		if (style != null)
+			item.setStyle((LineStyle) style.getContainedItem());
+
+		if (containerNodeGraphics != null)
+			item.setContainerNodeGraphics((NodeGraphics) containerNodeGraphics.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public LineHLAPI(
-		 CSS2ColorHLAPI color
-	
-		, LineShapeHLAPI shape
-	
-		, java.lang.Integer width
-	
-		, LineStyleHLAPI style
-	
-		, ArcGraphicsHLAPI containerArcGraphics
-	){//BEGIN CONSTRUCTOR BODY
+
+	public LineHLAPI(CSS2ColorHLAPI color
+
+			, LineShapeHLAPI shape
+
+			, java.lang.Integer width
+
+			, LineStyleHLAPI style
+
+			, ArcGraphicsHLAPI containerArcGraphics) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(color!=null)
-			item.setColor((CSS2Color)color.getContainedItem());
-		
-	
- 		
- 		if(shape!=null)
-			item.setShape((LineShape)shape.getContainedItem());
-		
-	
- 		
-			if(width!=null){
-			
-				item.setWidth(width);
-			}
-		
-	
- 		
- 		if(style!=null)
-			item.setStyle((LineStyle)style.getContainedItem());
-		
-	
- 		
- 		if(containerArcGraphics!=null)
-			item.setContainerArcGraphics((ArcGraphics)containerArcGraphics.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (color != null)
+			item.setColor((CSS2Color) color.getContainedItem());
+
+		if (shape != null)
+			item.setShape((LineShape) shape.getContainedItem());
+
+		if (width != null) {
+
+			item.setWidth(width);
+		}
+
+		if (style != null)
+			item.setStyle((LineStyle) style.getContainedItem());
+
+		if (containerArcGraphics != null)
+			item.setContainerArcGraphics((ArcGraphics) containerArcGraphics.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public LineHLAPI(
-		 CSS2ColorHLAPI color
-	
-		, LineShapeHLAPI shape
-	
-		, java.lang.Integer width
-	
-		, LineStyleHLAPI style
-	
-		, AnnotationGraphicsHLAPI containerAnnotationGraphics
-	){//BEGIN CONSTRUCTOR BODY
+
+	public LineHLAPI(CSS2ColorHLAPI color
+
+			, LineShapeHLAPI shape
+
+			, java.lang.Integer width
+
+			, LineStyleHLAPI style
+
+			, AnnotationGraphicsHLAPI containerAnnotationGraphics) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(color!=null)
-			item.setColor((CSS2Color)color.getContainedItem());
-		
-	
- 		
- 		if(shape!=null)
-			item.setShape((LineShape)shape.getContainedItem());
-		
-	
- 		
-			if(width!=null){
-			
-				item.setWidth(width);
-			}
-		
-	
- 		
- 		if(style!=null)
-			item.setStyle((LineStyle)style.getContainedItem());
-		
-	
- 		
- 		if(containerAnnotationGraphics!=null)
-			item.setContainerAnnotationGraphics((AnnotationGraphics)containerAnnotationGraphics.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (color != null)
+			item.setColor((CSS2Color) color.getContainedItem());
+
+		if (shape != null)
+			item.setShape((LineShape) shape.getContainedItem());
+
+		if (width != null) {
+
+			item.setWidth(width);
+		}
+
+		if (style != null)
+			item.setStyle((LineStyle) style.getContainedItem());
+
+		if (containerAnnotationGraphics != null)
+			item.setContainerAnnotationGraphics((AnnotationGraphics) containerAnnotationGraphics.getContainedItem());
+
 	}
 
+	/**
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public LineHLAPI(NodeGraphicsHLAPI containerNodeGraphics) {// BEGIN CONSTRUCTOR BODY
+		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
+		synchronized (fact) {
+			item = fact.createLine();
+		}
 
+		if (containerNodeGraphics != null)
+			item.setContainerNodeGraphics((NodeGraphics) containerNodeGraphics.getContainedItem());
 
-	
-	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public LineHLAPI(
-		 NodeGraphicsHLAPI containerNodeGraphics
-	){//BEGIN CONSTRUCTOR BODY
-		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(containerNodeGraphics!=null)
-			item.setContainerNodeGraphics((NodeGraphics)containerNodeGraphics.getContainedItem());
-		
-	
 	}
-	
-	
+
 	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public LineHLAPI(
-		 ArcGraphicsHLAPI containerArcGraphics
-	){//BEGIN CONSTRUCTOR BODY
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public LineHLAPI(ArcGraphicsHLAPI containerArcGraphics) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(containerArcGraphics!=null)
-			item.setContainerArcGraphics((ArcGraphics)containerArcGraphics.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (containerArcGraphics != null)
+			item.setContainerArcGraphics((ArcGraphics) containerArcGraphics.getContainedItem());
+
 	}
-	
-	
+
 	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public LineHLAPI(
-		 AnnotationGraphicsHLAPI containerAnnotationGraphics
-	){//BEGIN CONSTRUCTOR BODY
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public LineHLAPI(AnnotationGraphicsHLAPI containerAnnotationGraphics) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createLine();}
-	
- 		
- 		if(containerAnnotationGraphics!=null)
-			item.setContainerAnnotationGraphics((AnnotationGraphics)containerAnnotationGraphics.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createLine();
+		}
+
+		if (containerAnnotationGraphics != null)
+			item.setContainerAnnotationGraphics((AnnotationGraphics) containerAnnotationGraphics.getContainedItem());
+
 	}
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public LineHLAPI(Line lowLevelAPI){
+	public LineHLAPI(Line lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -308,256 +259,230 @@ public class LineHLAPI implements HLAPIClass{
 	/**
 	 * Return encapsulated object
 	 */
-	public Line getContainedItem(){
+	public Line getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public CSS2Color getColor(){
+	public CSS2Color getColor() {
 		return item.getColor();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public LineShape getShape(){
+	public LineShape getShape() {
 		return item.getShape();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Integer getWidth(){
+	public Integer getWidth() {
 		return item.getWidth();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public NodeGraphics getContainerNodeGraphics(){
+	public NodeGraphics getContainerNodeGraphics() {
 		return item.getContainerNodeGraphics();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public ArcGraphics getContainerArcGraphics(){
+	public ArcGraphics getContainerArcGraphics() {
 		return item.getContainerArcGraphics();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public AnnotationGraphics getContainerAnnotationGraphics(){
+	public AnnotationGraphics getContainerAnnotationGraphics() {
 		return item.getContainerAnnotationGraphics();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public LineStyle getStyle(){
+	public LineStyle getStyle() {
 		return item.getStyle();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public NodeGraphicsHLAPI getContainerNodeGraphicsHLAPI(){
-			if(item.getContainerNodeGraphics() == null) return null;
-			return new NodeGraphicsHLAPI(item.getContainerNodeGraphics());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public ArcGraphicsHLAPI getContainerArcGraphicsHLAPI(){
-			if(item.getContainerArcGraphics() == null) return null;
-			return new ArcGraphicsHLAPI(item.getContainerArcGraphics());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public AnnotationGraphicsHLAPI getContainerAnnotationGraphicsHLAPI(){
-			if(item.getContainerAnnotationGraphics() == null) return null;
-			return new AnnotationGraphicsHLAPI(item.getContainerAnnotationGraphics());
-		}
-		
-	
-	
-	
+	// getters giving HLAPI object
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public NodeGraphicsHLAPI getContainerNodeGraphicsHLAPI() {
+		if (item.getContainerNodeGraphics() == null)
+			return null;
+		return new NodeGraphicsHLAPI(item.getContainerNodeGraphics());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public ArcGraphicsHLAPI getContainerArcGraphicsHLAPI() {
+		if (item.getContainerArcGraphics() == null)
+			return null;
+		return new ArcGraphicsHLAPI(item.getContainerArcGraphics());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public AnnotationGraphicsHLAPI getContainerAnnotationGraphicsHLAPI() {
+		if (item.getContainerAnnotationGraphics() == null)
+			return null;
+		return new AnnotationGraphicsHLAPI(item.getContainerAnnotationGraphics());
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Color
 	 */
 	public void setColorHLAPI(
-	
-	fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color elem){
-	
-	
-		if(elem!=null){
-		
+
+			fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color elem) {
+
+		if (elem != null) {
+
 			item.setColor(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Shape
 	 */
 	public void setShapeHLAPI(
-	
-	fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape elem){
-	
-	
-		if(elem!=null){
-		
+
+			fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape elem) {
+
+		if (elem != null) {
+
 			item.setShape(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Width
 	 */
 	public void setWidthHLAPI(
-	
-	java.lang.Integer elem){
-	
-	
-		if(elem!=null){
-		
+
+			java.lang.Integer elem) {
+
+		if (elem != null) {
+
 			item.setWidth(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Style
 	 */
 	public void setStyleHLAPI(
-	
-	fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle elem){
-	
-	
-		if(elem!=null){
-		
+
+			fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle elem) {
+
+		if (elem != null) {
+
 			item.setStyle(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set ContainerNodeGraphics
 	 */
 	public void setContainerNodeGraphicsHLAPI(
-	
-	NodeGraphicsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerNodeGraphics((NodeGraphics)elem.getContainedItem());
-	
+
+			NodeGraphicsHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerNodeGraphics((NodeGraphics) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerArcGraphics
 	 */
 	public void setContainerArcGraphicsHLAPI(
-	
-	ArcGraphicsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerArcGraphics((ArcGraphics)elem.getContainedItem());
-	
+
+			ArcGraphicsHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerArcGraphics((ArcGraphics) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerAnnotationGraphics
 	 */
 	public void setContainerAnnotationGraphicsHLAPI(
-	
-	AnnotationGraphicsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerAnnotationGraphics((AnnotationGraphics)elem.getContainedItem());
-	
+
+			AnnotationGraphicsHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerAnnotationGraphics((AnnotationGraphics) elem.getContainedItem());
+
 	}
-	
 
-	//setters/remover for lists.
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(LineHLAPI item){
+	// equals method
+	public boolean equals(LineHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

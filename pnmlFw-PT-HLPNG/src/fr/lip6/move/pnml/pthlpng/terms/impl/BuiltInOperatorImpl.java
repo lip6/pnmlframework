@@ -38,9 +38,8 @@ import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
 import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Built In Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Built
+ * In Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -48,8 +47,8 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
  */
 public abstract class BuiltInOperatorImpl extends OperatorImpl implements BuiltInOperator {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected BuiltInOperatorImpl() {
@@ -57,8 +56,8 @@ public abstract class BuiltInOperatorImpl extends OperatorImpl implements BuiltI
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -68,4 +67,4 @@ public abstract class BuiltInOperatorImpl extends OperatorImpl implements BuiltI
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //BuiltInOperatorImpl
+} // BuiltInOperatorImpl

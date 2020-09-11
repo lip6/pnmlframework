@@ -53,19 +53,25 @@ import fr.lip6.move.pnml.pthlpng.terms.Term;
 import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Term</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Term</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getSort <em>Sort</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerOperator <em>Container Operator</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerNamedOperator <em>Container Named Operator</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerHLMarking <em>Container HL Marking</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerCondition <em>Container Condition</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerHLAnnotation <em>Container HL Annotation</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerPartitionElement <em>Container Partition Element</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getSort
+ * <em>Sort</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerOperator
+ * <em>Container Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerNamedOperator
+ * <em>Container Named Operator</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerHLMarking
+ * <em>Container HL Marking</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerCondition
+ * <em>Container Condition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerHLAnnotation
+ * <em>Container HL Annotation</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.TermImpl#getContainerPartitionElement
+ * <em>Container Partition Element</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,9 +79,9 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
  */
 public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	/**
-	 * The cached value of the '{@link #getSort() <em>Sort</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSort() <em>Sort</em>}' reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSort()
 	 * @generated
 	 * @ordered
@@ -83,8 +89,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	protected Sort sort;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TermImpl() {
@@ -92,8 +98,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -102,8 +108,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -120,8 +126,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Sort basicGetSort() {
@@ -129,8 +135,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -142,8 +148,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -154,8 +160,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerOperator(Operator newContainerOperator, NotificationChain msgs) {
@@ -164,8 +170,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -189,8 +195,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -201,8 +207,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerNamedOperator(NamedOperator newContainerNamedOperator,
@@ -213,22 +219,23 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerNamedOperator(NamedOperator newContainerNamedOperator) {
 		if (newContainerNamedOperator != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR && newContainerNamedOperator != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_NAMED_OPERATOR
+						&& newContainerNamedOperator != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerNamedOperator))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
 			if (eInternalContainer() != null)
 				msgs = eBasicRemoveFromContainer(msgs);
 			if (newContainerNamedOperator != null)
-				msgs = ((InternalEObject) newContainerNamedOperator).eInverseAdd(this,
-						TermsPackage.NAMED_OPERATOR__DEF, NamedOperator.class, msgs);
+				msgs = ((InternalEObject) newContainerNamedOperator).eInverseAdd(this, TermsPackage.NAMED_OPERATOR__DEF,
+						NamedOperator.class, msgs);
 			msgs = basicSetContainerNamedOperator(newContainerNamedOperator, msgs);
 			if (msgs != null)
 				msgs.dispatch();
@@ -238,8 +245,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -250,8 +257,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerHLMarking(HLMarking newContainerHLMarking, NotificationChain msgs) {
@@ -261,14 +268,15 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerHLMarking(HLMarking newContainerHLMarking) {
 		if (newContainerHLMarking != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING && newContainerHLMarking != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_MARKING
+						&& newContainerHLMarking != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerHLMarking))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -286,8 +294,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -298,18 +306,19 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerCondition(Condition newContainerCondition, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject) newContainerCondition, TermsPackage.TERM__CONTAINER_CONDITION, msgs);
+		msgs = eBasicSetContainer((InternalEObject) newContainerCondition, TermsPackage.TERM__CONTAINER_CONDITION,
+				msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -333,8 +342,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -345,25 +354,27 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerHLAnnotation(HLAnnotation newContainerHLAnnotation, NotificationChain msgs) {
+	public NotificationChain basicSetContainerHLAnnotation(HLAnnotation newContainerHLAnnotation,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerHLAnnotation,
 				TermsPackage.TERM__CONTAINER_HL_ANNOTATION, msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerHLAnnotation(HLAnnotation newContainerHLAnnotation) {
 		if (newContainerHLAnnotation != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION && newContainerHLAnnotation != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_HL_ANNOTATION
+						&& newContainerHLAnnotation != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerHLAnnotation))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -381,8 +392,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -393,8 +404,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPartitionElement(PartitionElement newContainerPartitionElement,
@@ -405,14 +416,15 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPartitionElement(PartitionElement newContainerPartitionElement) {
 		if (newContainerPartitionElement != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT && newContainerPartitionElement != null)) {
+				|| (eContainerFeatureID() != TermsPackage.TERM__CONTAINER_PARTITION_ELEMENT
+						&& newContainerPartitionElement != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPartitionElement))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -430,8 +442,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -466,8 +478,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -490,8 +502,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -519,8 +531,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -547,8 +559,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -580,8 +592,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -613,8 +625,8 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -640,4 +652,4 @@ public abstract class TermImpl extends MinimalEObjectImpl implements Term {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //TermImpl
+} // TermImpl

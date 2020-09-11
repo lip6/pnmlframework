@@ -32,36 +32,37 @@
  * $Id ggiffo, Thu Feb 11 16:30:27 CET 2016$
  */
 package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
+
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.FontDecoration;
-public enum FontDecorationHLAPI{
-	UNDERLINE("UNDERLINE"),
-	OVERLINE("OVERLINE"),
-	LINETHROUGH("LINETHROUGH");
+
+public enum FontDecorationHLAPI {
+	UNDERLINE("UNDERLINE"), OVERLINE("OVERLINE"), LINETHROUGH("LINETHROUGH");
 
 	private final FontDecoration item;
 
 	private FontDecorationHLAPI(String name) {
 		this.item = FontDecoration.get(name);
 	}
-	
+
 	/**
 	 * Return one HLAPI enum (used for tests).
+	 * 
 	 * @return one of the enum, null if the int is "out of bounds"
 	 */
 	public static FontDecorationHLAPI get(int num) {
-	
-      if(num == 0){
-         return UNDERLINE;
-      }
-	
-      if(num == 1){
-         return OVERLINE;
-      }
-	
-      if(num == 2){
-         return LINETHROUGH;
-      }
-	
+
+		if (num == 0) {
+			return UNDERLINE;
+		}
+
+		if (num == 1) {
+			return OVERLINE;
+		}
+
+		if (num == 2) {
+			return LINETHROUGH;
+		}
+
 		return null;
 	}
 
@@ -69,5 +70,4 @@ public enum FontDecorationHLAPI{
 		return item;
 	}
 
-	
 }

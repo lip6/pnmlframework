@@ -61,8 +61,7 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsFactory;
 import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
-
-public class ProductSortHLAPI implements HLAPIClass,SortHLAPI{
+public class ProductSortHLAPI implements HLAPIClass, SortHLAPI {
 
 	/**
 	 * The contained LLAPI element.
@@ -70,150 +69,133 @@ public class ProductSortHLAPI implements HLAPIClass,SortHLAPI{
 	private ProductSort item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public ProductSortHLAPI(){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI() {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 MultisetSortHLAPI multi
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(MultisetSortHLAPI multi) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(multi!=null)
-			item.setMulti((MultisetSort)multi.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (multi != null)
+			item.setMulti((MultisetSort) multi.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 NamedSortHLAPI containerNamedSort
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(NamedSortHLAPI containerNamedSort) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerNamedSort!=null)
-			item.setContainerNamedSort((NamedSort)containerNamedSort.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerNamedSort != null)
+			item.setContainerNamedSort((NamedSort) containerNamedSort.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 VariableDeclHLAPI containerVariableDecl
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(VariableDeclHLAPI containerVariableDecl) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerVariableDecl!=null)
-			item.setContainerVariableDecl((VariableDecl)containerVariableDecl.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerVariableDecl != null)
+			item.setContainerVariableDecl((VariableDecl) containerVariableDecl.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 TypeHLAPI containerType
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(TypeHLAPI containerType) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerType!=null)
-			item.setContainerType((Type)containerType.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerType != null)
+			item.setContainerType((Type) containerType.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 AllHLAPI containerAll
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(AllHLAPI containerAll) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerAll!=null)
-			item.setContainerAll((All)containerAll.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerAll != null)
+			item.setContainerAll((All) containerAll.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 EmptyHLAPI containerEmpty
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(EmptyHLAPI containerEmpty) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerEmpty!=null)
-			item.setContainerEmpty((Empty)containerEmpty.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerEmpty != null)
+			item.setContainerEmpty((Empty) containerEmpty.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public ProductSortHLAPI(
-		 PartitionHLAPI containerPartition
-	){//BEGIN CONSTRUCTOR BODY
+
+	public ProductSortHLAPI(PartitionHLAPI containerPartition) {// BEGIN CONSTRUCTOR BODY
 		TermsFactory fact = TermsFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createProductSort();}
-	
- 		
- 		if(containerPartition!=null)
-			item.setContainerPartition((Partition)containerPartition.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createProductSort();
+		}
+
+		if (containerPartition != null)
+			item.setContainerPartition((Partition) containerPartition.getContainedItem());
+
 	}
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public ProductSortHLAPI(ProductSort lowLevelAPI){
+	public ProductSortHLAPI(ProductSort lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -221,574 +203,506 @@ public class ProductSortHLAPI implements HLAPIClass,SortHLAPI{
 	/**
 	 * Return encapsulated object
 	 */
-	public ProductSort getContainedItem(){
+	public ProductSort getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public MultisetSort getMulti(){
+	public MultisetSort getMulti() {
 		return item.getMulti();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public NamedSort getContainerNamedSort(){
+	public NamedSort getContainerNamedSort() {
 		return item.getContainerNamedSort();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public VariableDecl getContainerVariableDecl(){
+	public VariableDecl getContainerVariableDecl() {
 		return item.getContainerVariableDecl();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public ProductSort getContainerProductSort(){
+	public ProductSort getContainerProductSort() {
 		return item.getContainerProductSort();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Type getContainerType(){
+	public Type getContainerType() {
 		return item.getContainerType();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public All getContainerAll(){
+	public All getContainerAll() {
 		return item.getContainerAll();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Empty getContainerEmpty(){
+	public Empty getContainerEmpty() {
 		return item.getContainerEmpty();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Partition getContainerPartition(){
+	public Partition getContainerPartition() {
 		return item.getContainerPartition();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public List<Sort> getElementSort(){
+	public List<Sort> getElementSort() {
 		return item.getElementSort();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public MultisetSortHLAPI getMultiHLAPI(){
-			if(item.getMulti() == null) return null;
-			return new MultisetSortHLAPI(item.getMulti());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public NamedSortHLAPI getContainerNamedSortHLAPI(){
-			if(item.getContainerNamedSort() == null) return null;
-			return new NamedSortHLAPI(item.getContainerNamedSort());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public VariableDeclHLAPI getContainerVariableDeclHLAPI(){
-			if(item.getContainerVariableDecl() == null) return null;
-			return new VariableDeclHLAPI(item.getContainerVariableDecl());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public ProductSortHLAPI getContainerProductSortHLAPI(){
-			if(item.getContainerProductSort() == null) return null;
-			return new ProductSortHLAPI(item.getContainerProductSort());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public TypeHLAPI getContainerTypeHLAPI(){
-			if(item.getContainerType() == null) return null;
-			return new TypeHLAPI(item.getContainerType());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public AllHLAPI getContainerAllHLAPI(){
-			if(item.getContainerAll() == null) return null;
-			return new AllHLAPI(item.getContainerAll());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public EmptyHLAPI getContainerEmptyHLAPI(){
-			if(item.getContainerEmpty() == null) return null;
-			return new EmptyHLAPI(item.getContainerEmpty());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public PartitionHLAPI getContainerPartitionHLAPI(){
-			if(item.getContainerPartition() == null) return null;
-			return new PartitionHLAPI(item.getContainerPartition());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-			
-		public java.util.List<SortHLAPI> getElementSortHLAPI(){
-			java.util.List<SortHLAPI> retour = new ArrayList<SortHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.MultisetSort)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.ProductSort)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.UserSort)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI(
-						(fr.lip6.move.pnml.pthlpng.booleans.Bool)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(
-						(fr.lip6.move.pnml.pthlpng.dots.Dot)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
-						));
-					continue;
-				}
-				
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
-						));
-					continue;
-				}
-				
-			}
-			return retour;
-		}
-		
-	
-	
+	// getters giving HLAPI object
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of MultisetSortHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> getElementSort_terms_MultisetSortHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.MultisetSort)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of ProductSortHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> getElementSort_terms_ProductSortHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.ProductSort)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of UserSortHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> getElementSort_terms_UserSortHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI(
-						(fr.lip6.move.pnml.pthlpng.terms.UserSort)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of BoolHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> getElementSort_booleans_BoolHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI(
-						(fr.lip6.move.pnml.pthlpng.booleans.Bool)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of DotHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> getElementSort_dots_DotHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI(
-						(fr.lip6.move.pnml.pthlpng.dots.Dot)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of NaturalHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> getElementSort_integers_NaturalHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.Natural)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of PositiveHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> getElementSort_integers_PositiveHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.Positive)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-		
-		/**
-		 * This accessor return a list of encapsulated subelement, only of HLIntegerHLAPI kind.
-		 * WARNING : this method can creates a lot of new object in memory.
-		 */
-		public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> getElementSort_integers_HLIntegerHLAPI(){
-			java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI>();
-			for (Sort elemnt : getElementSort()) {
-				if(elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)){
-					retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
-						(fr.lip6.move.pnml.pthlpng.integers.HLInteger)elemnt
-						));
-				}
-			}
-			return retour;
-		}
-		
-	
-	
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public MultisetSortHLAPI getMultiHLAPI() {
+		if (item.getMulti() == null)
+			return null;
+		return new MultisetSortHLAPI(item.getMulti());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public NamedSortHLAPI getContainerNamedSortHLAPI() {
+		if (item.getContainerNamedSort() == null)
+			return null;
+		return new NamedSortHLAPI(item.getContainerNamedSort());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public VariableDeclHLAPI getContainerVariableDeclHLAPI() {
+		if (item.getContainerVariableDecl() == null)
+			return null;
+		return new VariableDeclHLAPI(item.getContainerVariableDecl());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public ProductSortHLAPI getContainerProductSortHLAPI() {
+		if (item.getContainerProductSort() == null)
+			return null;
+		return new ProductSortHLAPI(item.getContainerProductSort());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public TypeHLAPI getContainerTypeHLAPI() {
+		if (item.getContainerType() == null)
+			return null;
+		return new TypeHLAPI(item.getContainerType());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public AllHLAPI getContainerAllHLAPI() {
+		if (item.getContainerAll() == null)
+			return null;
+		return new AllHLAPI(item.getContainerAll());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public EmptyHLAPI getContainerEmptyHLAPI() {
+		if (item.getContainerEmpty() == null)
+			return null;
+		return new EmptyHLAPI(item.getContainerEmpty());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public PartitionHLAPI getContainerPartitionHLAPI() {
+		if (item.getContainerPartition() == null)
+			return null;
+		return new PartitionHLAPI(item.getContainerPartition());
+	}
+
+	/**
+	 * This accessor automatically encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<SortHLAPI> getElementSortHLAPI() {
+		java.util.List<SortHLAPI> retour = new ArrayList<SortHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.MultisetSort) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.ProductSort) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.UserSort) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI(
+						(fr.lip6.move.pnml.pthlpng.booleans.Bool) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)) {
+				retour.add(
+						new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive) elemnt));
+				continue;
+			}
+
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger) elemnt));
+				continue;
+			}
+
+		}
+		return retour;
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of
+	 * MultisetSortHLAPI kind. WARNING : this method can creates a lot of new object
+	 * in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> getElementSort_terms_MultisetSortHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.MultisetSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.MultisetSort) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of
+	 * ProductSortHLAPI kind. WARNING : this method can creates a lot of new object
+	 * in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> getElementSort_terms_ProductSortHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.ProductSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.ProductSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.ProductSort) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of UserSortHLAPI
+	 * kind. WARNING : this method can creates a lot of new object in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> getElementSort_terms_UserSortHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.terms.hlapi.UserSortHLAPI(
+						(fr.lip6.move.pnml.pthlpng.terms.UserSort) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of BoolHLAPI
+	 * kind. WARNING : this method can creates a lot of new object in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> getElementSort_booleans_BoolHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.booleans.impl.BoolImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.booleans.hlapi.BoolHLAPI(
+						(fr.lip6.move.pnml.pthlpng.booleans.Bool) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of DotHLAPI
+	 * kind. WARNING : this method can creates a lot of new object in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> getElementSort_dots_DotHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.dots.impl.DotImpl.class)) {
+				retour.add(
+						new fr.lip6.move.pnml.pthlpng.dots.hlapi.DotHLAPI((fr.lip6.move.pnml.pthlpng.dots.Dot) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of NaturalHLAPI
+	 * kind. WARNING : this method can creates a lot of new object in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> getElementSort_integers_NaturalHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.NaturalImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.NaturalHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Natural) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of PositiveHLAPI
+	 * kind. WARNING : this method can creates a lot of new object in memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> getElementSort_integers_PositiveHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.PositiveImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.PositiveHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.Positive) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor return a list of encapsulated subelement, only of
+	 * HLIntegerHLAPI kind. WARNING : this method can creates a lot of new object in
+	 * memory.
+	 */
+	public java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> getElementSort_integers_HLIntegerHLAPI() {
+		java.util.List<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI> retour = new ArrayList<fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI>();
+		for (Sort elemnt : getElementSort()) {
+			if (elemnt.getClass().equals(fr.lip6.move.pnml.pthlpng.integers.impl.HLIntegerImpl.class)) {
+				retour.add(new fr.lip6.move.pnml.pthlpng.integers.hlapi.HLIntegerHLAPI(
+						(fr.lip6.move.pnml.pthlpng.integers.HLInteger) elemnt));
+			}
+		}
+		return retour;
+	}
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Multi
 	 */
 	public void setMultiHLAPI(
-	
-	MultisetSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setMulti((MultisetSort)elem.getContainedItem());
-	
+
+			MultisetSortHLAPI elem) {
+
+		if (elem != null)
+			item.setMulti((MultisetSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerNamedSort
 	 */
 	public void setContainerNamedSortHLAPI(
-	
-	NamedSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerNamedSort((NamedSort)elem.getContainedItem());
-	
+
+			NamedSortHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerNamedSort((NamedSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerVariableDecl
 	 */
 	public void setContainerVariableDeclHLAPI(
-	
-	VariableDeclHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerVariableDecl((VariableDecl)elem.getContainedItem());
-	
+
+			VariableDeclHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerVariableDecl((VariableDecl) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerProductSort
 	 */
 	public void setContainerProductSortHLAPI(
-	
-	ProductSortHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerProductSort((ProductSort)elem.getContainedItem());
-	
+
+			ProductSortHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerProductSort((ProductSort) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerType
 	 */
 	public void setContainerTypeHLAPI(
-	
-	TypeHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerType((Type)elem.getContainedItem());
-	
+
+			TypeHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerType((Type) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerAll
 	 */
 	public void setContainerAllHLAPI(
-	
-	AllHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerAll((All)elem.getContainedItem());
-	
+
+			AllHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerAll((All) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerEmpty
 	 */
 	public void setContainerEmptyHLAPI(
-	
-	EmptyHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerEmpty((Empty)elem.getContainedItem());
-	
+
+			EmptyHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerEmpty((Empty) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerPartition
 	 */
 	public void setContainerPartitionHLAPI(
-	
-	PartitionHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerPartition((Partition)elem.getContainedItem());
-	
-	}
-	
 
-	//setters/remover for lists.
-	
-	
-	public void addElementSortHLAPI(SortHLAPI unit){
-	
-		item.getElementSort().add((Sort)unit.getContainedItem());
+			PartitionHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerPartition((Partition) elem.getContainedItem());
+
 	}
 
-	public void removeElementSortHLAPI(SortHLAPI unit){
-		item.getElementSort().remove((Sort)unit.getContainedItem());
-	}
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(ProductSortHLAPI item){
+	public void addElementSortHLAPI(SortHLAPI unit) {
+
+		item.getElementSort().add((Sort) unit.getContainedItem());
+	}
+
+	public void removeElementSortHLAPI(SortHLAPI unit) {
+		item.getElementSort().remove((Sort) unit.getContainedItem());
+	}
+
+	// equals method
+	public boolean equals(ProductSortHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

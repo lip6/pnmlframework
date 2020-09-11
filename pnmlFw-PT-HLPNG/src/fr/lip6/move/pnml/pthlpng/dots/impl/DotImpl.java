@@ -56,9 +56,8 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
 import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInSortImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Dot</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Dot</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -66,8 +65,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInSortImpl;
  */
 public class DotImpl extends BuiltInSortImpl implements Dot {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected DotImpl() {
@@ -75,8 +74,8 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -89,10 +88,10 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -110,12 +109,12 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -128,22 +127,22 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 0
 		@SuppressWarnings("unused")
 		DotsFactory fact = DotsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -152,10 +151,10 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -178,12 +177,12 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -229,7 +228,7 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 	@Override
 	public boolean validateOCL(DiagnosticChain diagnostics) {
 
-		//this package has no validator class
+		// this package has no validator class
 		return true;
 
 	}
@@ -238,16 +237,16 @@ public class DotImpl extends BuiltInSortImpl implements Dot {
 	public boolean equalSorts(Sort sort) {
 		boolean isEqual = false;
 		if (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {
-			//by default they are the same sort, unless they have been named.
+			// by default they are the same sort, unless they have been named.
 			isEqual = true;
 			if (this.getContainerNamedSort() != null && sort.getContainerNamedSort() != null) {
 				// we test them if they have been explicitly named.
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
-			}// otherwise, keep the default.
+			} // otherwise, keep the default.
 		}
 		return isEqual;
 
 	}
 
-} //DotImpl
+} // DotImpl

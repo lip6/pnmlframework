@@ -43,15 +43,18 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.MultisetOperator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Subtract</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Subtract</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getSubtract()
- * @model annotation="http://www.pnml.org/models/OCL inputType='self.input->size() = 2 and self.input->forAll{c | c.oclIsKindOf(terms::MultisetSort)}'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputType'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='subtract' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        inputType='self.input-&gt;size() = 2 and self.input-&gt;forAll{c |
+ *        c.oclIsKindOf(terms::MultisetSort)}'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputType'" annotation="http://www.pnml.org/models/ToPNML
+ *        tag='subtract' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Subtract extends MultisetOperator {
@@ -66,8 +69,8 @@ public interface Subtract extends MultisetOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

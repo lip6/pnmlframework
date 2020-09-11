@@ -42,47 +42,55 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Named Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Named
+ * Sort</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort#getSortdef <em>Sortdef</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort#getSortdef
+ * <em>Sortdef</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getNamedSort()
- * @model annotation="http://www.pnml.org/models/OCL refSortNotMultiset='not(self.sortdef.oclIsTypeOf(MultisetSort))'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='refSortNotMultiset'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='namedsort' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        refSortNotMultiset='not(self.sortdef.oclIsTypeOf(MultisetSort))'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='refSortNotMultiset'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='namedsort'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NamedSort extends SortDecl {
 	/**
-	 * Returns the value of the '<em><b>Sortdef</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerNamedSort <em>Container Named Sort</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Sortdef</b></em>' containment reference. It
+	 * is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerNamedSort
+	 * <em>Container Named Sort</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Sortdef</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Sortdef</em>' containment reference.
 	 * @see #setSortdef(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getNamedSort_Sortdef()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerNamedSort
-	 * @model opposite="containerNamedSort" containment="true" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerNamedSort" containment="true" required="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Sort getSortdef();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort#getSortdef <em>Sortdef</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.NamedSort#getSortdef
+	 * <em>Sortdef</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Sortdef</em>' containment reference.
 	 * @see #getSortdef()
 	 * @generated
@@ -99,8 +107,8 @@ public interface NamedSort extends SortDecl {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

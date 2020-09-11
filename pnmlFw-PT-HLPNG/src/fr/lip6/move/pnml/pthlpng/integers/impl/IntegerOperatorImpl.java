@@ -39,9 +39,8 @@ import fr.lip6.move.pnml.pthlpng.integers.IntegersPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Integer Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Integer
+ * Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -49,8 +48,8 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.BuiltInOperatorImpl;
  */
 public abstract class IntegerOperatorImpl extends BuiltInOperatorImpl implements IntegerOperator {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected IntegerOperatorImpl() {
@@ -58,8 +57,8 @@ public abstract class IntegerOperatorImpl extends BuiltInOperatorImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -69,4 +68,4 @@ public abstract class IntegerOperatorImpl extends BuiltInOperatorImpl implements
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //IntegerOperatorImpl
+} // IntegerOperatorImpl

@@ -46,13 +46,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.RefTransition;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Transition Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Transition Node</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TransitionNodeImpl#getReferencingTransitions <em>Referencing Transitions</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.TransitionNodeImpl#getReferencingTransitions
+ * <em>Referencing Transitions</em>}</li>
  * </ul>
  * </p>
  *
@@ -60,9 +60,10 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.TransitionNode;
  */
 public abstract class TransitionNodeImpl extends NodeImpl implements TransitionNode {
 	/**
-	 * The cached value of the '{@link #getReferencingTransitions() <em>Referencing Transitions</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getReferencingTransitions() <em>Referencing
+	 * Transitions</em>}' reference list. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @see #getReferencingTransitions()
 	 * @generated
 	 * @ordered
@@ -70,8 +71,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	protected EList<RefTransition> referencingTransitions;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected TransitionNodeImpl() {
@@ -79,8 +80,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -89,8 +90,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -104,8 +105,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -120,8 +121,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -134,8 +135,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -148,8 +149,8 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -163,4 +164,4 @@ public abstract class TransitionNodeImpl extends NodeImpl implements TransitionN
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //TransitionNodeImpl
+} // TransitionNodeImpl

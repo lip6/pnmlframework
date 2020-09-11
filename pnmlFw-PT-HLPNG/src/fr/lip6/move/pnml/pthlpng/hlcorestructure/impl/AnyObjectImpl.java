@@ -42,13 +42,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Any Object</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Any
+ * Object</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnyObjectImpl#getContainerToolInfo <em>Container Tool Info</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.AnyObjectImpl#getContainerToolInfo
+ * <em>Container Tool Info</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,8 +56,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
  */
 public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObject {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected AnyObjectImpl() {
@@ -65,8 +65,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -75,8 +75,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -87,8 +87,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -103,8 +103,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -117,8 +117,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -132,8 +132,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -146,8 +146,8 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -161,4 +161,4 @@ public abstract class AnyObjectImpl extends MinimalEObjectImpl implements AnyObj
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //AnyObjectImpl
+} // AnyObjectImpl

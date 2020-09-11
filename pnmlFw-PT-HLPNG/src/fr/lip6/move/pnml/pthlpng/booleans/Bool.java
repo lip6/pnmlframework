@@ -43,14 +43,29 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInSort;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Bool</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Bool</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBool()
- * @model annotation="http://www.pnml.org/models/ToPNML bool='not' kind='son'"
- *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t    //by default they are the same sort, unless they have been named.\n\t\t  \tisEqual = true;\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}// otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;' documentation='/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r \052/'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML bool='not' kind='son'"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
+ *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
+ *        {\n\t\t //by default they are the same sort, unless they have been
+ *        named.\n\t\t \tisEqual = true;\n\t\t \tif
+ *        (this.getContainerNamedSort() != null\n\t\t\t\t\t&amp;&amp;
+ *        sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if
+ *        they have been explicitly named.\n\t\t\t\tisEqual =
+ *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}//
+ *        otherwise, keep the default.\n\t\t}\n\t\treturn isEqual;'
+ *        documentation='/**\r * Returns true if this sort and argument sort are
+ *        actually \r * semantically the same sort, even in two different
+ *        objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return
+ *        true if so. \r * @param sort the sort to which we compare this one. \r
+ *        * @throws NullPointerException if according to the model, some\r *
+ *        required reference attributes have not been set.\r \052/'"
  * @generated
  */
 public interface Bool extends BuiltInSort {
@@ -65,8 +80,8 @@ public interface Bool extends BuiltInSort {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

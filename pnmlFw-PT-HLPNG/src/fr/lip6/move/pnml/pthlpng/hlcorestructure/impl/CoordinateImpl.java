@@ -41,14 +41,15 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Coordinate;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Coordinate</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Coordinate</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.CoordinateImpl#getX <em>X</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.CoordinateImpl#getY <em>Y</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.CoordinateImpl#getX
+ * <em>X</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.CoordinateImpl#getY
+ * <em>Y</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,9 +57,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
  */
 public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coordinate {
 	/**
-	 * The default value of the '{@link #getX() <em>X</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getX() <em>X</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getX()
 	 * @generated
 	 * @ordered
@@ -66,9 +67,9 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	protected static final Integer X_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getX() <em>X</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getX() <em>X</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getX()
 	 * @generated
 	 * @ordered
@@ -76,9 +77,9 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	protected Integer x = X_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getY() <em>Y</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getY() <em>Y</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getY()
 	 * @generated
 	 * @ordered
@@ -86,9 +87,9 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	protected static final Integer Y_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getY() <em>Y</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getY() <em>Y</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getY()
 	 * @generated
 	 * @ordered
@@ -96,8 +97,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	protected Integer y = Y_EDEFAULT;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CoordinateImpl() {
@@ -105,8 +106,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -115,8 +116,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,8 +126,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -138,8 +139,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -148,8 +149,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -161,8 +162,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,8 +178,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -195,8 +196,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -213,8 +214,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -229,8 +230,8 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -249,4 +250,4 @@ public abstract class CoordinateImpl extends MinimalEObjectImpl implements Coord
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //CoordinateImpl
+} // CoordinateImpl

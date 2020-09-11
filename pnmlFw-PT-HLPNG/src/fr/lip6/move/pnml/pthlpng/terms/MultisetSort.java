@@ -42,32 +42,52 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Multiset Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Multiset
+ * Sort</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort#getBasis <em>Basis</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort#getBasis
+ * <em>Basis</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getMultisetSort()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='multisetsort' kind='son'"
- *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t  \tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\t// we test them if they have been explicitly named.\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t throw new UnsupportedOperationException(\"Cannot determine if these two multisets are equal.\"\n\t\t\t + \"You should override this method.\");\n\t\t\t}\n\t\t}\n\t\treturn isEqual;' documentation='/**\r * Note : there is no implementation available for MultisetSort yet.\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r * @throws NullPointerException if according to the model, some\r * required reference attributes have not been set.\r \052/'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='multisetsort'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
+ *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
+ *        {\n\t\t \tif (this.getContainerNamedSort() !=
+ *        null\n\t\t\t\t\t&amp;&amp; sort.getContainerNamedSort() != null)
+ *        {\n\t\t\t\t// we test them if they have been explicitly
+ *        named.\n\t\t\t\tisEqual =
+ *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}
+ *        else {\n\t\t\t throw new UnsupportedOperationException(\"Cannot
+ *        determine if these two multisets are equal.\"\n\t\t\t + \"You should
+ *        override this method.\");\n\t\t\t}\n\t\t}\n\t\treturn isEqual;'
+ *        documentation='/**\r * Note : there is no implementation available for
+ *        MultisetSort yet.\r * Returns true if this sort and argument sort are
+ *        actually \r * semantically the same sort, even in two different
+ *        objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return
+ *        true if so. \r * @param sort the sort to which we compare this one. \r
+ *        * @throws NullPointerException if according to the model, some\r *
+ *        required reference attributes have not been set.\r \052/'"
  * @generated
  */
 public interface MultisetSort extends Sort {
 	/**
-	 * Returns the value of the '<em><b>Basis</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getMulti <em>Multi</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Basis</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getMulti <em>Multi</em>}'. <!--
+	 * begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Basis</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Basis</em>' containment reference.
 	 * @see #setBasis(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getMultisetSort_Basis()
@@ -79,9 +99,11 @@ public interface MultisetSort extends Sort {
 	Sort getBasis();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort#getBasis <em>Basis</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.MultisetSort#getBasis
+	 * <em>Basis</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Basis</em>' containment reference.
 	 * @see #getBasis()
 	 * @generated
@@ -98,8 +120,8 @@ public interface MultisetSort extends Sort {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

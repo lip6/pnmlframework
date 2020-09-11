@@ -43,32 +43,35 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Place Node</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Place
+ * Node</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode#getReferencingPlaces <em>Referencing Places</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PlaceNode#getReferencingPlaces
+ * <em>Referencing Places</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlaceNode()
- * @model abstract="true"
+ * @model abstract="true" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface PlaceNode extends Node {
 	/**
 	 * Returns the value of the '<em><b>Referencing Places</b></em>' reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace#getRef <em>Ref</em>}'.
-	 * <!-- begin-user-doc -->
+	 * The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace#getRef
+	 * <em>Ref</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Referencing Places</em>' reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Referencing Places</em>' reference list isn't
+	 * clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Referencing Places</em>' reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPlaceNode_ReferencingPlaces()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.RefPlace#getRef
@@ -81,8 +84,8 @@ public interface PlaceNode extends Node {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

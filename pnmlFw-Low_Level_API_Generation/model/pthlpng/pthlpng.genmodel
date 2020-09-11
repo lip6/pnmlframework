@@ -8,7 +8,7 @@
     editPluginClass="fr.lip6.move.pnml.framework.pthlpng.provider.PthlpngEditPlugin"
     editorPluginClass="fr.lip6.move.pnml.framework.pthlpng.presentation.PthlpngEditorPlugin"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl" suppressEMFTypes="true"
-    codeFormatting="true" testSuiteClass="fr.lip6.move.pnml.framework.pthlpng.tests.PthlpngAllTests"
+    codeFormatting="true" commentFormatting="true" testSuiteClass="fr.lip6.move.pnml.framework.pthlpng.tests.PthlpngAllTests"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
     cleanup="true">
   <foreignModel>booleans.ecore</foreignModel>

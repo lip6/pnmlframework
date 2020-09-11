@@ -6,7 +6,7 @@ Bundle-Version: 2.2.14
 Bundle-ClassPath: .
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-xport-Package: fr.lip6.move.pnml.pthlpng.booleans;
+Export-Package: fr.lip6.move.pnml.pthlpng.booleans;
   uses:="org.eclipse.emf.ecore,
    org.apache.axiom.om,
    org.eclipse.emf.common.util,

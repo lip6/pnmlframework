@@ -38,72 +38,54 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.Declarations;
 
-public interface TermsDeclarationHLAPI extends HLAPIClass{
+public interface TermsDeclarationHLAPI extends HLAPIClass {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public String getId();
-	
+
 	/**
 	 *
 	 */
 	public String getName();
-	
+
 	/**
 	 *
 	 */
 	public Declarations getContainerDeclarations();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public DeclarationsHLAPI getContainerDeclarationsHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public DeclarationsHLAPI getContainerDeclarationsHLAPI();
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Id
 	 */
-	public void setIdHLAPI(
-	java.lang.String elem) throws InvalidIDException ,VoidRepositoryException;
-	
+	public void setIdHLAPI(java.lang.String elem) throws InvalidIDException, VoidRepositoryException;
+
 	/**
 	 * set Name
 	 */
-	public void setNameHLAPI(
-	java.lang.String elem);
-	
+	public void setNameHLAPI(java.lang.String elem);
+
 	/**
 	 * set ContainerDeclarations
 	 */
-	public void setContainerDeclarationsHLAPI(
-	DeclarationsHLAPI elem);
-	
+	public void setContainerDeclarationsHLAPI(DeclarationsHLAPI elem);
 
-	
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
-
-	//equals method
+	// equals method
 	public boolean equals(Object item);
 
 }

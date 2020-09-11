@@ -45,46 +45,52 @@ import fr.lip6.move.pnml.pthlpng.terms.Sort;
 import fr.lip6.move.pnml.pthlpng.terms.SortDecl;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Partition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Partition</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getDef <em>Def</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getPartitionelements <em>Partitionelements</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getDef
+ * <em>Def</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getPartitionelements
+ * <em>Partitionelements</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartition()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='partition' kind='son'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='partition'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface Partition extends SortDecl {
 	/**
-	 * Returns the value of the '<em><b>Def</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerPartition <em>Container Partition</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Def</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerPartition
+	 * <em>Container Partition</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Def</em>' containment reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Def</em>' containment reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Def</em>' containment reference.
 	 * @see #setDef(Sort)
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartition_Def()
 	 * @see fr.lip6.move.pnml.pthlpng.terms.Sort#getContainerPartition
-	 * @model opposite="containerPartition" containment="true" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerPartition" containment="true" required="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	Sort getDef();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getDef <em>Def</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.Partition#getDef <em>Def</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Def</em>' containment reference.
 	 * @see #getDef()
 	 * @generated
@@ -92,16 +98,20 @@ public interface Partition extends SortDecl {
 	void setDef(Sort value);
 
 	/**
-	 * Returns the value of the '<em><b>Partitionelements</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition <em>Refpartition</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Partitionelements</b></em>' containment
+	 * reference list. The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition
+	 * <em>Refpartition</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Partitionelements</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Partitionelements</em>' containment reference list
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Partitionelements</em>' containment reference list.
+	 * 
+	 * @return the value of the '<em>Partitionelements</em>' containment reference
+	 *         list.
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionsPackage#getPartition_Partitionelements()
 	 * @see fr.lip6.move.pnml.pthlpng.partitions.PartitionElement#getRefpartition
 	 * @model opposite="refpartition" containment="true" required="true"
@@ -120,8 +130,8 @@ public interface Partition extends SortDecl {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

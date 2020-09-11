@@ -68,15 +68,17 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Position;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Arc Graphics</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Arc
+ * Graphics</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getPositions <em>Positions</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getLine <em>Line</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getContainerArc <em>Container Arc</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getPositions
+ * <em>Positions</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getLine
+ * <em>Line</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ArcGraphicsImpl#getContainerArc
+ * <em>Container Arc</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,9 +86,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	/**
-	 * The cached value of the '{@link #getPositions() <em>Positions</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPositions() <em>Positions</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getPositions()
 	 * @generated
 	 * @ordered
@@ -94,9 +96,9 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	protected EList<Position> positions;
 
 	/**
-	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getLine() <em>Line</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getLine()
 	 * @generated
 	 * @ordered
@@ -104,8 +106,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	protected Line line;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ArcGraphicsImpl() {
@@ -113,8 +115,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -123,8 +125,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -138,8 +140,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -148,8 +150,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetLine(Line newLine, NotificationChain msgs) {
@@ -167,8 +169,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -190,8 +192,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -202,25 +204,26 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerArc(Arc newContainerArc, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject) newContainerArc,
-				HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC, msgs);
+		msgs = eBasicSetContainer((InternalEObject) newContainerArc, HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC,
+				msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC && newContainerArc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC
+						&& newContainerArc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -238,8 +241,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -250,8 +253,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPositions()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.ARC_GRAPHICS__LINE:
 			if (line != null)
-				msgs = ((InternalEObject) line).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.ARC_GRAPHICS__LINE, null, msgs);
+				msgs = ((InternalEObject) line).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.ARC_GRAPHICS__LINE, null, msgs);
 			return basicSetLine((Line) otherEnd, msgs);
 		case HlcorestructurePackage.ARC_GRAPHICS__CONTAINER_ARC:
 			if (eInternalContainer() != null)
@@ -262,8 +265,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -280,8 +283,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -294,8 +297,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -312,8 +315,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -335,8 +338,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -356,8 +359,8 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -378,10 +381,10 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 2
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 2
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -399,13 +402,13 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPositions() != null) {
 
@@ -452,22 +455,22 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//2
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 2
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -481,7 +484,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 				item.setContainerArcGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("line")) {
 				Line item;
@@ -491,7 +494,7 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 				item.setContainerArcGraphics(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -502,10 +505,10 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 2
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 2
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -528,13 +531,13 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPositions() != null) {
 
@@ -636,4 +639,4 @@ public class ArcGraphicsImpl extends GraphicsImpl implements ArcGraphics {
 		return retour;
 
 	}
-} //ArcGraphicsImpl
+} // ArcGraphicsImpl

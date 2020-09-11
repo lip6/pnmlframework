@@ -67,13 +67,13 @@ import fr.lip6.move.pnml.pthlpng.terms.UserSort;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Multiset Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Multiset Sort</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl#getBasis <em>Basis</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.MultisetSortImpl#getBasis
+ * <em>Basis</em>}</li>
  * </ul>
  * </p>
  *
@@ -81,9 +81,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	/**
-	 * The cached value of the '{@link #getBasis() <em>Basis</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getBasis() <em>Basis</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getBasis()
 	 * @generated
 	 * @ordered
@@ -91,8 +91,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	protected Sort basis;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected MultisetSortImpl() {
@@ -100,8 +100,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,8 +110,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -120,8 +120,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetBasis(Sort newBasis, NotificationChain msgs) {
@@ -139,8 +139,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -155,12 +155,13 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.MULTISET_SORT__BASIS, newBasis, newBasis));
+			eNotify(new ENotificationImpl(this, Notification.SET, TermsPackage.MULTISET_SORT__BASIS, newBasis,
+					newBasis));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -168,16 +169,16 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		switch (featureID) {
 		case TermsPackage.MULTISET_SORT__BASIS:
 			if (basis != null)
-				msgs = ((InternalEObject) basis).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- TermsPackage.MULTISET_SORT__BASIS, null, msgs);
+				msgs = ((InternalEObject) basis).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - TermsPackage.MULTISET_SORT__BASIS, null, msgs);
 			return basicSetBasis((Sort) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -190,8 +191,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -204,8 +205,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -219,8 +220,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -234,8 +235,8 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -252,10 +253,10 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -273,13 +274,13 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getBasis() != null) {
 
@@ -313,22 +314,22 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 1
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -342,7 +343,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("productsort")) {
 				ProductSort item;
@@ -352,7 +353,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("usersort")) {
 				UserSort item;
@@ -362,7 +363,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("null")) {
 				Bool item;
@@ -372,7 +373,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("dot")) {
 				Dot item;
@@ -382,7 +383,7 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				item.setMulti(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -393,10 +394,10 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -419,13 +420,13 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getBasis() != null) {
 
@@ -508,12 +509,12 @@ public class MultisetSortImpl extends SortImpl implements MultisetSort {
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
-				throw new UnsupportedOperationException("Cannot determine if these two multisets are equal."
-						+ "You should override this method.");
+				throw new UnsupportedOperationException(
+						"Cannot determine if these two multisets are equal." + "You should override this method.");
 			}
 		}
 		return isEqual;
 
 	}
 
-} //MultisetSortImpl
+} // MultisetSortImpl

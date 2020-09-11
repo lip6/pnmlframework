@@ -36,42 +36,29 @@ package fr.lip6.move.pnml.pthlpng.hlcorestructure.hlapi;
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
-public interface AnyObjectHLAPI extends HLAPIClass{
+public interface AnyObjectHLAPI extends HLAPIClass {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public ToolInfo getContainerToolInfo();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public ToolInfoHLAPI getContainerToolInfoHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
 
-	
-	
+	public ToolInfoHLAPI getContainerToolInfoHLAPI();
 
+	// setters (including container setter if aviable)
 
-	//setters/remover for lists.
-	
+	// setters/remover for lists.
 
-	//equals method
+	// equals method
 	public boolean equals(Object item);
 
 }

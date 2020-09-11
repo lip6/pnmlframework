@@ -38,9 +38,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Attribute;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Attribute</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Attribute</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -48,8 +47,8 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage;
  */
 public abstract class AttributeImpl extends LabelImpl implements Attribute {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected AttributeImpl() {
@@ -57,8 +56,8 @@ public abstract class AttributeImpl extends LabelImpl implements Attribute {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -68,4 +67,4 @@ public abstract class AttributeImpl extends LabelImpl implements Attribute {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //AttributeImpl
+} // AttributeImpl

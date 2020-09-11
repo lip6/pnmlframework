@@ -38,19 +38,19 @@ import java.util.List;
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the literals of the enumeration '<em><b>CSS2 Font Weight</b></em>',
- * and utility methods for working with them.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the literals of the enumeration
+ * '<em><b>CSS2 Font Weight</b></em>', and utility methods for working with
+ * them. <!-- end-user-doc -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getCSS2FontWeight()
- * @model
+ * @model annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public enum CSS2FontWeight implements Enumerator {
 	/**
-	 * The '<em><b>NORMAL</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>NORMAL</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #NORMAL_VALUE
 	 * @generated
 	 * @ordered
@@ -58,9 +58,9 @@ public enum CSS2FontWeight implements Enumerator {
 	NORMAL(0, "NORMAL", "NORMAL"),
 
 	/**
-	 * The '<em><b>BOLD</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>BOLD</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #BOLD_VALUE
 	 * @generated
 	 * @ordered
@@ -68,9 +68,9 @@ public enum CSS2FontWeight implements Enumerator {
 	BOLD(1, "BOLD", "BOLD"),
 
 	/**
-	 * The '<em><b>BOLDER</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>BOLDER</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #BOLDER_VALUE
 	 * @generated
 	 * @ordered
@@ -78,9 +78,9 @@ public enum CSS2FontWeight implements Enumerator {
 	BOLDER(2, "BOLDER", "BOLDER"),
 
 	/**
-	 * The '<em><b>LIGHTER</b></em>' literal object.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The '<em><b>LIGHTER</b></em>' literal object. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @see #LIGHTER_VALUE
 	 * @generated
 	 * @ordered
@@ -88,13 +88,13 @@ public enum CSS2FontWeight implements Enumerator {
 	LIGHTER(3, "LIGHTER", "LIGHTER");
 
 	/**
-	 * The '<em><b>NORMAL</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>NORMAL</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>NORMAL</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>NORMAL</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #NORMAL
 	 * @model
 	 * @generated
@@ -103,13 +103,13 @@ public enum CSS2FontWeight implements Enumerator {
 	public static final int NORMAL_VALUE = 0;
 
 	/**
-	 * The '<em><b>BOLD</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>BOLD</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>BOLD</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>BOLD</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #BOLD
 	 * @model
 	 * @generated
@@ -118,13 +118,13 @@ public enum CSS2FontWeight implements Enumerator {
 	public static final int BOLD_VALUE = 1;
 
 	/**
-	 * The '<em><b>BOLDER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>BOLDER</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>BOLDER</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>BOLDER</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #BOLDER
 	 * @model
 	 * @generated
@@ -133,13 +133,13 @@ public enum CSS2FontWeight implements Enumerator {
 	public static final int BOLDER_VALUE = 2;
 
 	/**
-	 * The '<em><b>LIGHTER</b></em>' literal value.
-	 * <!-- begin-user-doc -->
+	 * The '<em><b>LIGHTER</b></em>' literal value. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of '<em><b>LIGHTER</b></em>' literal object isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of '<em><b>LIGHTER</b></em>' literal object isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @see #LIGHTER
 	 * @model
 	 * @generated
@@ -148,25 +148,25 @@ public enum CSS2FontWeight implements Enumerator {
 	public static final int LIGHTER_VALUE = 3;
 
 	/**
-	 * An array of all the '<em><b>CSS2 Font Weight</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * An array of all the '<em><b>CSS2 Font Weight</b></em>' enumerators. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private static final CSS2FontWeight[] VALUES_ARRAY = new CSS2FontWeight[] { NORMAL, BOLD, BOLDER, LIGHTER, };
 
 	/**
-	 * A public read-only list of all the '<em><b>CSS2 Font Weight</b></em>' enumerators.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A public read-only list of all the '<em><b>CSS2 Font Weight</b></em>'
+	 * enumerators. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final List<CSS2FontWeight> VALUES = Collections.unmodifiableList(Arrays.asList(VALUES_ARRAY));
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified literal value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified
+	 * literal value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontWeight get(String literal) {
@@ -180,9 +180,9 @@ public enum CSS2FontWeight implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified name.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified
+	 * name. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontWeight getByName(String name) {
@@ -196,9 +196,9 @@ public enum CSS2FontWeight implements Enumerator {
 	}
 
 	/**
-	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified integer value.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the '<em><b>CSS2 Font Weight</b></em>' literal with the specified
+	 * integer value. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static CSS2FontWeight get(int value) {
@@ -216,30 +216,30 @@ public enum CSS2FontWeight implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final int value;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String name;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private final String literal;
 
 	/**
-	 * Only this class can construct instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Only this class can construct instances. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	private CSS2FontWeight(int value, String name, String literal) {
@@ -249,36 +249,39 @@ public enum CSS2FontWeight implements Enumerator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public int getValue() {
 		return value;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public String getLiteral() {
 		return literal;
 	}
 
 	/**
-	 * Returns the literal value of the enumerator, which is its string representation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the literal value of the enumerator, which is its string
+	 * representation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -286,4 +289,4 @@ public enum CSS2FontWeight implements Enumerator {
 		return literal;
 	}
 
-} //CSS2FontWeight
+} // CSS2FontWeight

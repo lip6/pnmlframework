@@ -58,25 +58,25 @@ import fr.lip6.move.pnml.pthlpng.integers.Subtraction;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage
  * @generated
  */
 public class IntegersValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final IntegersValidator INSTANCE = new IntegersValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -84,33 +84,35 @@ public class IntegersValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.integers";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached base package validator. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	protected TermsValidator termsValidator;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public IntegersValidator() {
@@ -119,9 +121,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -131,12 +133,13 @@ public class IntegersValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case IntegersPackage.HLPN_NUMBER:
 			return validateHLPNNumber((HLPNNumber) value, diagnostics, context);
@@ -174,8 +177,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateHLPNNumber(HLPNNumber hlpnNumber, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -183,8 +186,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNatural(Natural natural, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -192,8 +195,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validatePositive(Positive positive, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -201,8 +204,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateHLInteger(HLInteger hlInteger, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -210,8 +213,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNumberConstant(NumberConstant numberConstant, DiagnosticChain diagnostics,
@@ -241,9 +244,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the typeType constraint of '<em>Number Constant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the typeType constraint of '<em>Number Constant</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNumberConstant_typeType(NumberConstant numberConstant, DiagnosticChain diagnostics,
@@ -254,10 +257,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "typeType", getObjectLabel(numberConstant, context) },
-						new Object[] { numberConstant }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "typeType", getObjectLabel(numberConstant, context) },
+								new Object[] { numberConstant }, context));
 			}
 			return false;
 		}
@@ -265,8 +268,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateIntegerOperator(IntegerOperator integerOperator, DiagnosticChain diagnostics,
@@ -296,9 +299,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputType constraint of '<em>Integer Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputType constraint of '<em>Integer Operator</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateIntegerOperator_inputType(IntegerOperator integerOperator, DiagnosticChain diagnostics,
@@ -309,10 +312,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputType", getObjectLabel(integerOperator, context) },
-						new Object[] { integerOperator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputType", getObjectLabel(integerOperator, context) },
+								new Object[] { integerOperator }, context));
 			}
 			return false;
 		}
@@ -320,8 +323,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAddition(Addition addition, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -352,9 +355,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Addition</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Addition</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAddition_outputType(Addition addition, DiagnosticChain diagnostics,
@@ -365,10 +368,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(addition, context) }, new Object[] { addition },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(addition, context) },
+								new Object[] { addition }, context));
 			}
 			return false;
 		}
@@ -376,11 +379,12 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateSubtraction(Subtraction subtraction, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSubtraction(Subtraction subtraction, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(subtraction, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(subtraction, diagnostics, context);
@@ -408,9 +412,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Subtraction</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Subtraction</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateSubtraction_outputType(Subtraction subtraction, DiagnosticChain diagnostics,
@@ -421,10 +425,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(subtraction, context) },
-						new Object[] { subtraction }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(subtraction, context) },
+								new Object[] { subtraction }, context));
 			}
 			return false;
 		}
@@ -432,8 +436,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateMultiplication(Multiplication multiplication, DiagnosticChain diagnostics,
@@ -465,9 +469,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Multiplication</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Multiplication</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateMultiplication_outputType(Multiplication multiplication, DiagnosticChain diagnostics,
@@ -478,10 +482,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(multiplication, context) },
-						new Object[] { multiplication }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(multiplication, context) },
+								new Object[] { multiplication }, context));
 			}
 			return false;
 		}
@@ -489,8 +493,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateDivision(Division division, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -521,9 +525,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Division</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Division</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateDivision_outputType(Division division, DiagnosticChain diagnostics,
@@ -534,10 +538,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(division, context) }, new Object[] { division },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(division, context) },
+								new Object[] { division }, context));
 			}
 			return false;
 		}
@@ -545,8 +549,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateModulo(Modulo modulo, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -577,9 +581,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Modulo</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Modulo</em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateModulo_outputType(Modulo modulo, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -589,9 +593,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic", new Object[] { "outputType",
-								getObjectLabel(modulo, context) }, new Object[] { modulo }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(modulo, context) }, new Object[] { modulo },
+								context));
 			}
 			return false;
 		}
@@ -599,11 +604,12 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGreaterThan(GreaterThan greaterThan, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(greaterThan, diagnostics, context))
 			return false;
 		boolean result = validate_EveryMultiplicityConforms(greaterThan, diagnostics, context);
@@ -631,9 +637,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Greater Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Greater Than</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGreaterThan_outputType(GreaterThan greaterThan, DiagnosticChain diagnostics,
@@ -644,10 +650,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(greaterThan, context) },
-						new Object[] { greaterThan }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(greaterThan, context) },
+								new Object[] { greaterThan }, context));
 			}
 			return false;
 		}
@@ -655,8 +661,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGreaterThanOrEqual(GreaterThanOrEqual greaterThanOrEqual, DiagnosticChain diagnostics,
@@ -688,9 +694,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Greater Than Or Equal</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Greater Than Or Equal</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateGreaterThanOrEqual_outputType(GreaterThanOrEqual greaterThanOrEqual,
@@ -701,10 +707,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(greaterThanOrEqual, context) },
-						new Object[] { greaterThanOrEqual }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(greaterThanOrEqual, context) },
+								new Object[] { greaterThanOrEqual }, context));
 			}
 			return false;
 		}
@@ -712,8 +718,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThan(LessThan lessThan, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -744,9 +750,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Less Than</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Less Than</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThan_outputType(LessThan lessThan, DiagnosticChain diagnostics,
@@ -757,10 +763,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(lessThan, context) }, new Object[] { lessThan },
-						context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(lessThan, context) },
+								new Object[] { lessThan }, context));
 			}
 			return false;
 		}
@@ -768,8 +774,8 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThanOrEqual(LessThanOrEqual lessThanOrEqual, DiagnosticChain diagnostics,
@@ -801,9 +807,9 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the outputType constraint of '<em>Less Than Or Equal</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the outputType constraint of '<em>Less Than Or Equal</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateLessThanOrEqual_outputType(LessThanOrEqual lessThanOrEqual, DiagnosticChain diagnostics,
@@ -814,10 +820,10 @@ public class IntegersValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "outputType", getObjectLabel(lessThanOrEqual, context) },
-						new Object[] { lessThanOrEqual }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "outputType", getObjectLabel(lessThanOrEqual, context) },
+								new Object[] { lessThanOrEqual }, context));
 			}
 			return false;
 		}
@@ -825,17 +831,18 @@ public class IntegersValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //IntegersValidator
+} // IntegersValidator

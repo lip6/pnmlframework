@@ -51,15 +51,17 @@ import fr.lip6.move.pnml.pthlpng.terms.Term;
 import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Operator</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getSubterm <em>Subterm</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getOutput <em>Output</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getInput <em>Input</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getSubterm
+ * <em>Subterm</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getOutput
+ * <em>Output</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.OperatorImpl#getInput
+ * <em>Input</em>}</li>
  * </ul>
  * </p>
  *
@@ -67,9 +69,9 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
  */
 public abstract class OperatorImpl extends TermImpl implements Operator {
 	/**
-	 * The cached value of the '{@link #getSubterm() <em>Subterm</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getSubterm() <em>Subterm</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getSubterm()
 	 * @generated
 	 * @ordered
@@ -78,8 +80,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 
 	/**
 	 * The cached value of the '{@link #getOutput() <em>Output</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getOutput()
 	 * @generated
 	 * @ordered
@@ -88,8 +90,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 
 	/**
 	 * The cached value of the '{@link #getInput() <em>Input</em>}' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getInput()
 	 * @generated
 	 * @ordered
@@ -97,8 +99,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	protected EList<Sort> input;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected OperatorImpl() {
@@ -106,8 +108,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -116,8 +118,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -130,8 +132,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -149,8 +151,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public Sort basicGetOutput() {
@@ -158,8 +160,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -171,8 +173,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -184,8 +186,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -199,8 +201,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -213,8 +215,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -233,8 +235,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -257,8 +259,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -278,8 +280,8 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -297,4 +299,4 @@ public abstract class OperatorImpl extends TermImpl implements Operator {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //OperatorImpl
+} // OperatorImpl

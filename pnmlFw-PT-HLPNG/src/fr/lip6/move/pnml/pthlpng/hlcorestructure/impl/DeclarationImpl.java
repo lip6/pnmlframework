@@ -68,15 +68,17 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Declaration</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Declaration</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getContainerDeclarationPetriNet <em>Container Declaration Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getContainerDeclarationPage <em>Container Declaration Page</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getContainerDeclarationPetriNet
+ * <em>Container Declaration Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.DeclarationImpl#getContainerDeclarationPage
+ * <em>Container Declaration Page</em>}</li>
  * </ul>
  * </p>
  *
@@ -84,9 +86,9 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
  */
 public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration {
 	/**
-	 * The cached value of the '{@link #getStructure() <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStructure() <em>Structure</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStructure()
 	 * @generated
 	 * @ordered
@@ -94,8 +96,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	protected Declarations structure;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected DeclarationImpl() {
@@ -103,8 +105,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -113,8 +115,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -123,8 +125,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetStructure(Declarations newStructure, NotificationChain msgs) {
@@ -142,8 +144,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -165,8 +167,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,8 +179,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerDeclarationPetriNet(PetriNet newContainerDeclarationPetriNet,
@@ -189,14 +191,15 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerDeclarationPetriNet(PetriNet newContainerDeclarationPetriNet) {
 		if (newContainerDeclarationPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET && newContainerDeclarationPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET
+						&& newContainerDeclarationPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarationPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -215,8 +218,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -227,25 +230,27 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public NotificationChain basicSetContainerDeclarationPage(Page newContainerDeclarationPage, NotificationChain msgs) {
+	public NotificationChain basicSetContainerDeclarationPage(Page newContainerDeclarationPage,
+			NotificationChain msgs) {
 		msgs = eBasicSetContainer((InternalEObject) newContainerDeclarationPage,
 				HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE, msgs);
 		return msgs;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerDeclarationPage(Page newContainerDeclarationPage) {
 		if (newContainerDeclarationPage != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE && newContainerDeclarationPage != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE
+						&& newContainerDeclarationPage != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclarationPage))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -264,8 +269,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -273,8 +278,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		switch (featureID) {
 		case HlcorestructurePackage.DECLARATION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.DECLARATION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.DECLARATION__STRUCTURE, null, msgs);
 			return basicSetStructure((Declarations) otherEnd, msgs);
 		case HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PETRI_NET:
 			if (eInternalContainer() != null)
@@ -289,8 +294,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -307,8 +312,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -318,15 +323,15 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.PETRI_NET__DECLARATION,
 					PetriNet.class, msgs);
 		case HlcorestructurePackage.DECLARATION__CONTAINER_DECLARATION_PAGE:
-			return eInternalContainer()
-					.eInverseRemove(this, HlcorestructurePackage.PAGE__DECLARATION, Page.class, msgs);
+			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.PAGE__DECLARATION, Page.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -343,8 +348,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -364,8 +369,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -385,8 +390,8 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -407,10 +412,10 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -428,13 +433,13 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -517,22 +522,22 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -546,7 +551,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -556,7 +561,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));
@@ -581,7 +586,7 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -592,10 +597,10 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -618,13 +623,13 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -766,4 +771,4 @@ public class DeclarationImpl extends HLCoreAnnotationImpl implements Declaration
 		return retour;
 
 	}
-} //DeclarationImpl
+} // DeclarationImpl

@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -74,19 +73,25 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Petri Net</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Petri
+ * Net</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getType <em>Type</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getPages <em>Pages</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getName <em>Name</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getToolspecifics <em>Toolspecifics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getContainerPetriNetDoc <em>Container Petri Net Doc</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getId
+ * <em>Id</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getType
+ * <em>Type</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getPages
+ * <em>Pages</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getName
+ * <em>Name</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getToolspecifics
+ * <em>Toolspecifics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getContainerPetriNetDoc
+ * <em>Container Petri Net Doc</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.PetriNetImpl#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
@@ -94,9 +99,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	/**
-	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -104,9 +109,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected static final String ID_EDEFAULT = "";
 
 	/**
-	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getId()
 	 * @generated
 	 * @ordered
@@ -114,9 +119,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected String id = ID_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getType() <em>Type</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getType()
 	 * @generated
 	 * @ordered
@@ -124,9 +129,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected static final PNType TYPE_EDEFAULT = PNType.PTHLPN;
 
 	/**
-	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getType()
 	 * @generated
 	 * @ordered
@@ -134,9 +139,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected PNType type = TYPE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPages() <em>Pages</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getPages() <em>Pages</em>}' containment
+	 * reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getPages()
 	 * @generated
 	 * @ordered
@@ -144,9 +149,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected EList<Page> pages;
 
 	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' containment
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getName()
 	 * @generated
 	 * @ordered
@@ -154,9 +159,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected Name name;
 
 	/**
-	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getToolspecifics()
 	 * @generated
 	 * @ordered
@@ -164,9 +169,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected EList<ToolInfo> toolspecifics;
 
 	/**
-	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDeclaration()
 	 * @generated
 	 * @ordered
@@ -174,8 +179,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	protected EList<Declaration> declaration;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected PetriNetImpl() {
@@ -183,8 +188,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -193,8 +198,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -203,8 +208,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -216,8 +221,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -226,8 +231,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -235,12 +240,13 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		PNType oldType = type;
 		type = newType == null ? TYPE_EDEFAULT : newType;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PETRI_NET__TYPE, oldType, type));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.PETRI_NET__TYPE, oldType,
+					type));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -253,8 +259,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -263,8 +269,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetName(Name newName, NotificationChain msgs) {
@@ -282,8 +288,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -305,8 +311,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -320,8 +326,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -332,8 +338,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPetriNetDoc(PetriNetDoc newContainerPetriNetDoc, NotificationChain msgs) {
@@ -343,14 +349,15 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPetriNetDoc(PetriNetDoc newContainerPetriNetDoc) {
 		if (newContainerPetriNetDoc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC && newContainerPetriNetDoc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.PETRI_NET__CONTAINER_PETRI_NET_DOC
+						&& newContainerPetriNetDoc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNetDoc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -369,8 +376,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -384,8 +391,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -396,8 +403,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getPages()).basicAdd(otherEnd, msgs);
 		case HlcorestructurePackage.PETRI_NET__NAME:
 			if (name != null)
-				msgs = ((InternalEObject) name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.PETRI_NET__NAME, null, msgs);
+				msgs = ((InternalEObject) name).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.PETRI_NET__NAME, null, msgs);
 			return basicSetName((Name) otherEnd, msgs);
 		case HlcorestructurePackage.PETRI_NET__TOOLSPECIFICS:
 			return ((InternalEList<InternalEObject>) (InternalEList<?>) getToolspecifics()).basicAdd(otherEnd, msgs);
@@ -412,8 +419,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -434,8 +441,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -449,8 +456,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -475,8 +482,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -512,8 +519,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -545,8 +552,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -571,8 +578,8 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -594,10 +601,10 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 */
 	@Override
 	public String toPNML() {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 4
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -615,7 +622,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -635,7 +642,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPages() != null) {
 
@@ -708,16 +715,16 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//1
-		//0
-		//1
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 1
+		// 0
+		// 1
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
 			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
@@ -725,15 +732,15 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
 		}
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("type")) != null) {
 			this.setType(PNType.get(locRoot.getAttributeValue(new QName("type"))));
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -747,7 +754,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerPetriNet(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("name")) {
 				Name item;
@@ -757,7 +764,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerNamePetriNet(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("toolspecific")) {
 				ToolInfo item;
@@ -767,7 +774,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerPetriNet(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("declaration")) {
 				Declaration item;
@@ -777,7 +784,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 				item.setContainerDeclarationPetriNet(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -788,10 +795,10 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 1
-		//idref 0
-		//attributes 1
-		//sons 4
+		// id 1
+		// idref 0
+		// attributes 1
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -814,7 +821,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getId() != null) {
 			sb.append(" id");
@@ -834,7 +841,7 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getPages() != null) {
 
@@ -994,4 +1001,4 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		return retour;
 
 	}
-} //PetriNetImpl
+} // PetriNetImpl

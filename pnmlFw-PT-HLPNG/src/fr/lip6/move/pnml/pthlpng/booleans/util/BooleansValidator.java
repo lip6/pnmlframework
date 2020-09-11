@@ -52,25 +52,25 @@ import fr.lip6.move.pnml.pthlpng.booleans.Or;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * The <b>Validator</b> for the model.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
+ * -->
+ * 
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage
  * @generated
  */
 public class BooleansValidator extends EObjectValidator {
 	/**
-	 * The cached model package
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public static final BooleansValidator INSTANCE = new BooleansValidator();
 
 	/**
-	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes} from this package.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant for the {@link org.eclipse.emf.common.util.Diagnostic#getSource()
+	 * source} of diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode()
+	 * codes} from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -78,33 +78,35 @@ public class BooleansValidator extends EObjectValidator {
 	public static final String DIAGNOSTIC_SOURCE = "fr.lip6.move.pnml.pthlpng.booleans";
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 0;
 
 	/**
-	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
-	 * <!-- begin-user-doc -->
+	 * A constant with a fixed name that can be used as the base value for
+	 * additional hand written constants in a derived class. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
 
 	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached base package validator. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	protected TermsValidator termsValidator;
 
 	/**
-	 * Creates an instance of the switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Creates an instance of the switch. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @generated
 	 */
 	public BooleansValidator() {
@@ -113,9 +115,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the package of this validator switch.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the package of this validator switch. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,12 +127,13 @@ public class BooleansValidator extends EObjectValidator {
 
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the model.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case BooleansPackage.EQUALITY:
 			return validateEquality((Equality) value, diagnostics, context);
@@ -156,8 +159,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateEquality(Equality equality, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -186,9 +189,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Equality</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Equality</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateEquality_inputOutputTypes(Equality equality, DiagnosticChain diagnostics,
@@ -199,10 +202,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(equality, context) },
-						new Object[] { equality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(equality, context) },
+								new Object[] { equality }, context));
 			}
 			return false;
 		}
@@ -210,8 +213,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateInequality(Inequality inequality, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -240,9 +243,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the inputOutputTypes constraint of '<em>Inequality</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the inputOutputTypes constraint of '<em>Inequality</em>'. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateInequality_inputOutputTypes(Inequality inequality, DiagnosticChain diagnostics,
@@ -253,10 +256,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(inequality, context) },
-						new Object[] { inequality }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(inequality, context) },
+								new Object[] { inequality }, context));
 			}
 			return false;
 		}
@@ -264,8 +267,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBooleanConstant(BooleanConstant booleanConstant, DiagnosticChain diagnostics,
@@ -293,8 +296,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOr(Or or, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -325,9 +328,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the InputSize constraint of '<em>Or</em>'.
-	 * <!-- begin-user-doc -->
+	 * Validates the InputSize constraint of '<em>Or</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateOr_InputSize(Or or, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -347,8 +350,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBooleanOperator(BooleanOperator booleanOperator, DiagnosticChain diagnostics,
@@ -379,8 +382,8 @@ public class BooleansValidator extends EObjectValidator {
 
 	/**
 	 * Validates the inputOutputTypes constraint of '<em>Boolean Operator</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBooleanOperator_inputOutputTypes(BooleanOperator booleanOperator,
@@ -391,10 +394,10 @@ public class BooleansValidator extends EObjectValidator {
 		// Ensure that you remove @generated or mark it @generated NOT
 		if (false) {
 			if (diagnostics != null) {
-				diagnostics.add(createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0,
-						"_UI_GenericConstraint_diagnostic",
-						new Object[] { "inputOutputTypes", getObjectLabel(booleanOperator, context) },
-						new Object[] { booleanOperator }, context));
+				diagnostics.add(
+						createDiagnostic(Diagnostic.ERROR, DIAGNOSTIC_SOURCE, 0, "_UI_GenericConstraint_diagnostic",
+								new Object[] { "inputOutputTypes", getObjectLabel(booleanOperator, context) },
+								new Object[] { booleanOperator }, context));
 			}
 			return false;
 		}
@@ -402,8 +405,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAnd(And and, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -434,9 +437,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the InputSize constraint of '<em>And</em>'.
-	 * <!-- begin-user-doc -->
+	 * Validates the InputSize constraint of '<em>And</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateAnd_InputSize(And and, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -456,8 +459,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateImply(Imply imply, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -488,9 +491,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the InputSize constraint of '<em>Imply</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Validates the InputSize constraint of '<em>Imply</em>'. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateImply_InputSize(Imply imply, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -510,8 +513,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNot(Not not, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -542,9 +545,9 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the InputSize constraint of '<em>Not</em>'.
-	 * <!-- begin-user-doc -->
+	 * Validates the InputSize constraint of '<em>Not</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateNot_InputSize(Not not, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -564,8 +567,8 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public boolean validateBool(Bool bool, DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -573,17 +576,18 @@ public class BooleansValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Returns the resource locator that will be used to fetch messages for this validator's diagnostics.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Returns the resource locator that will be used to fetch messages for this
+	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public ResourceLocator getResourceLocator() {
 		// TODO
-		// Specialize this to return a resource locator for messages specific to this validator.
+		// Specialize this to return a resource locator for messages specific to this
+		// validator.
 		// Ensure that you remove @generated or mark it @generated NOT
 		return super.getResourceLocator();
 	}
 
-} //BooleansValidator
+} // BooleansValidator

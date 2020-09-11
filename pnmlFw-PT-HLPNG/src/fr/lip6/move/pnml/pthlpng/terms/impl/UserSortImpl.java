@@ -39,7 +39,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -63,13 +62,13 @@ import fr.lip6.move.pnml.pthlpng.terms.UserSort;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>User Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>User
+ * Sort</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.UserSortImpl#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,9 +76,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class UserSortImpl extends SortImpl implements UserSort {
 	/**
-	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}'
+	 * reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDeclaration()
 	 * @generated
 	 * @ordered
@@ -87,8 +86,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	protected SortDecl declaration;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected UserSortImpl() {
@@ -96,8 +95,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -106,8 +105,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,8 +124,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public SortDecl basicGetDeclaration() {
@@ -134,8 +133,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -148,8 +147,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -164,8 +163,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -179,8 +178,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -194,8 +193,8 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -212,10 +211,10 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 0
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -233,7 +232,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getDeclaration() != null) {
 			sb.append(" declaration");
@@ -245,7 +244,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -258,18 +257,18 @@ public class UserSortImpl extends SortImpl implements UserSort {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//1
-		//0
-		//0
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 1
+		// 0
+		// 0
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
 		List<String> ids = new ArrayList<String>();
 		String[] tmp = {};
@@ -279,9 +278,9 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		}
 		idr.addIdRef(this, ids.toArray(tmp));
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 	}
 
@@ -296,10 +295,10 @@ public class UserSortImpl extends SortImpl implements UserSort {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 1
-		//attributes 0
-		//sons 0
+		// id 0
+		// idref 1
+		// attributes 0
+		// sons 0
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -322,7 +321,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getDeclaration() != null) {
 			sb.append(" declaration");
@@ -334,7 +333,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 		sb.append("/>");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		/****/
 
@@ -396,7 +395,7 @@ public class UserSortImpl extends SortImpl implements UserSort {
 				isEqual = this.getContainerNamedSort().getName()
 						.equalsIgnoreCase(sort.getContainerNamedSort().getName());
 			} else {
-				//further sub-classes must override this method.
+				// further sub-classes must override this method.
 				if ("UserSort".equalsIgnoreCase(this.eClass().getName())) {
 					isEqual = ((UserSort) this).getDeclaration().getName()
 							.equalsIgnoreCase(((UserSort) sort).getDeclaration().getName());
@@ -407,4 +406,4 @@ public class UserSortImpl extends SortImpl implements UserSort {
 
 	}
 
-} //UserSortImpl
+} // UserSortImpl

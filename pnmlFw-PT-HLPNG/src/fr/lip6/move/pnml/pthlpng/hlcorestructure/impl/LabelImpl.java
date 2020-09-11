@@ -48,13 +48,13 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.Label;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Label</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Label</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LabelImpl#getToolspecifics <em>Toolspecifics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.LabelImpl#getToolspecifics
+ * <em>Toolspecifics</em>}</li>
  * </ul>
  * </p>
  *
@@ -62,9 +62,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
  */
 public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	/**
-	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getToolspecifics() <em>Toolspecifics</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getToolspecifics()
 	 * @generated
 	 * @ordered
@@ -72,8 +72,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	protected EList<ToolInfo> toolspecifics;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected LabelImpl() {
@@ -81,8 +81,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -91,8 +91,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -105,8 +105,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -120,8 +120,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -134,8 +134,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -148,8 +148,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -165,8 +165,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -180,8 +180,8 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -195,4 +195,4 @@ public abstract class LabelImpl extends MinimalEObjectImpl implements Label {
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //LabelImpl
+} // LabelImpl

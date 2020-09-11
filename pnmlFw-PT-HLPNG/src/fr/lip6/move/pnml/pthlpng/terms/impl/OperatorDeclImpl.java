@@ -38,9 +38,8 @@ import fr.lip6.move.pnml.pthlpng.terms.OperatorDecl;
 import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Operator Decl</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Operator Decl</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
  *
@@ -48,8 +47,8 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
  */
 public abstract class OperatorDeclImpl extends TermsDeclarationImpl implements OperatorDecl {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected OperatorDeclImpl() {
@@ -57,8 +56,8 @@ public abstract class OperatorDeclImpl extends TermsDeclarationImpl implements O
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -68,4 +67,4 @@ public abstract class OperatorDeclImpl extends TermsDeclarationImpl implements O
 
 	@Override
 	public abstract boolean validateOCL(DiagnosticChain diagnostics);
-} //OperatorDeclImpl
+} // OperatorDeclImpl

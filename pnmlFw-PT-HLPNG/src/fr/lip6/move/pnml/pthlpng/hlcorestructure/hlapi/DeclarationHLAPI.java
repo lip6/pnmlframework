@@ -55,8 +55,7 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HlcorestructureFactoryImpl
 import fr.lip6.move.pnml.pthlpng.terms.Declarations;
 import fr.lip6.move.pnml.pthlpng.terms.hlapi.DeclarationsHLAPI;
 
-
-public class DeclarationHLAPI implements HLAPIClass,LabelHLAPI,AnnotationHLAPI{
+public class DeclarationHLAPI implements HLAPIClass, LabelHLAPI, AnnotationHLAPI {
 
 	/**
 	 * The contained LLAPI element.
@@ -64,160 +63,130 @@ public class DeclarationHLAPI implements HLAPIClass,LabelHLAPI,AnnotationHLAPI{
 	private Declaration item;
 
 	/**
-	 * this constructor allows you to set all 'settable' values
-	 * excepted container.
+	 * this constructor allows you to set all 'settable' values excepted container.
 	 */
-	
-	public DeclarationHLAPI(
-		 AnnotationGraphicsHLAPI annotationgraphics
-	
-		, java.lang.String text
-	
-		, DeclarationsHLAPI structure
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DeclarationHLAPI(AnnotationGraphicsHLAPI annotationgraphics
+
+			, java.lang.String text
+
+			, DeclarationsHLAPI structure) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDeclaration();}
-	
- 		
- 		if(annotationgraphics!=null)
-			item.setAnnotationgraphics((AnnotationGraphics)annotationgraphics.getContainedItem());
-		
-	
- 		
-			if(text!=null){
-			
-				item.setText(text);
-			}
-		
-	
- 		
- 		if(structure!=null)
-			item.setStructure((Declarations)structure.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDeclaration();
+		}
+
+		if (annotationgraphics != null)
+			item.setAnnotationgraphics((AnnotationGraphics) annotationgraphics.getContainedItem());
+
+		if (text != null) {
+
+			item.setText(text);
+		}
+
+		if (structure != null)
+			item.setStructure((Declarations) structure.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DeclarationHLAPI(
-		 AnnotationGraphicsHLAPI annotationgraphics
-	
-		, java.lang.String text
-	
-		, DeclarationsHLAPI structure
-	
-		, PetriNetHLAPI containerDeclarationPetriNet
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DeclarationHLAPI(AnnotationGraphicsHLAPI annotationgraphics
+
+			, java.lang.String text
+
+			, DeclarationsHLAPI structure
+
+			, PetriNetHLAPI containerDeclarationPetriNet) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDeclaration();}
-	
- 		
- 		if(annotationgraphics!=null)
-			item.setAnnotationgraphics((AnnotationGraphics)annotationgraphics.getContainedItem());
-		
-	
- 		
-			if(text!=null){
-			
-				item.setText(text);
-			}
-		
-	
- 		
- 		if(structure!=null)
-			item.setStructure((Declarations)structure.getContainedItem());
-		
-	
- 		
- 		if(containerDeclarationPetriNet!=null)
-			item.setContainerDeclarationPetriNet((PetriNet)containerDeclarationPetriNet.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDeclaration();
+		}
+
+		if (annotationgraphics != null)
+			item.setAnnotationgraphics((AnnotationGraphics) annotationgraphics.getContainedItem());
+
+		if (text != null) {
+
+			item.setText(text);
+		}
+
+		if (structure != null)
+			item.setStructure((Declarations) structure.getContainedItem());
+
+		if (containerDeclarationPetriNet != null)
+			item.setContainerDeclarationPetriNet((PetriNet) containerDeclarationPetriNet.getContainedItem());
+
 	}
 
 	/**
-	 * this constructor allows you to set all 'settable' values, including container if any.
+	 * this constructor allows you to set all 'settable' values, including container
+	 * if any.
 	 */
-	
-	public DeclarationHLAPI(
-		 AnnotationGraphicsHLAPI annotationgraphics
-	
-		, java.lang.String text
-	
-		, DeclarationsHLAPI structure
-	
-		, PageHLAPI containerDeclarationPage
-	){//BEGIN CONSTRUCTOR BODY
+
+	public DeclarationHLAPI(AnnotationGraphicsHLAPI annotationgraphics
+
+			, java.lang.String text
+
+			, DeclarationsHLAPI structure
+
+			, PageHLAPI containerDeclarationPage) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDeclaration();}
-	
- 		
- 		if(annotationgraphics!=null)
-			item.setAnnotationgraphics((AnnotationGraphics)annotationgraphics.getContainedItem());
-		
-	
- 		
-			if(text!=null){
-			
-				item.setText(text);
-			}
-		
-	
- 		
- 		if(structure!=null)
-			item.setStructure((Declarations)structure.getContainedItem());
-		
-	
- 		
- 		if(containerDeclarationPage!=null)
-			item.setContainerDeclarationPage((Page)containerDeclarationPage.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDeclaration();
+		}
+
+		if (annotationgraphics != null)
+			item.setAnnotationgraphics((AnnotationGraphics) annotationgraphics.getContainedItem());
+
+		if (text != null) {
+
+			item.setText(text);
+		}
+
+		if (structure != null)
+			item.setStructure((Declarations) structure.getContainedItem());
+
+		if (containerDeclarationPage != null)
+			item.setContainerDeclarationPage((Page) containerDeclarationPage.getContainedItem());
+
 	}
 
-
-
-	
 	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public DeclarationHLAPI(
-		 PetriNetHLAPI containerDeclarationPetriNet
-	){//BEGIN CONSTRUCTOR BODY
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public DeclarationHLAPI(PetriNetHLAPI containerDeclarationPetriNet) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDeclaration();}
-	
- 		
- 		if(containerDeclarationPetriNet!=null)
-			item.setContainerDeclarationPetriNet((PetriNet)containerDeclarationPetriNet.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDeclaration();
+		}
+
+		if (containerDeclarationPetriNet != null)
+			item.setContainerDeclarationPetriNet((PetriNet) containerDeclarationPetriNet.getContainedItem());
+
 	}
-	
-	
+
 	/**
-    * This constructor give access to required stuff only (and container)
-    */
-	public DeclarationHLAPI(
-		 PageHLAPI containerDeclarationPage
-	){//BEGIN CONSTRUCTOR BODY
+	 * This constructor give access to required stuff only (and container)
+	 */
+	public DeclarationHLAPI(PageHLAPI containerDeclarationPage) {// BEGIN CONSTRUCTOR BODY
 		HlcorestructureFactory fact = HlcorestructureFactoryImpl.eINSTANCE;
-		synchronized(fact){item = fact.createDeclaration();}
-	
- 		
- 		if(containerDeclarationPage!=null)
-			item.setContainerDeclarationPage((Page)containerDeclarationPage.getContainedItem());
-		
-	
+		synchronized (fact) {
+			item = fact.createDeclaration();
+		}
+
+		if (containerDeclarationPage != null)
+			item.setContainerDeclarationPage((Page) containerDeclarationPage.getContainedItem());
+
 	}
-	
 
 	/**
 	 * This constructor encapsulate a low level API object in HLAPI.
 	 */
-	public DeclarationHLAPI(Declaration lowLevelAPI){
+	public DeclarationHLAPI(Declaration lowLevelAPI) {
 		item = lowLevelAPI;
 	}
 
@@ -225,258 +194,228 @@ public class DeclarationHLAPI implements HLAPIClass,LabelHLAPI,AnnotationHLAPI{
 	/**
 	 * Return encapsulated object
 	 */
-	public Declaration getContainedItem(){
+	public Declaration getContainedItem() {
 		return item;
 	}
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public List<ToolInfo> getToolspecifics(){
+	public List<ToolInfo> getToolspecifics() {
 		return item.getToolspecifics();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public AnnotationGraphics getAnnotationgraphics(){
+	public AnnotationGraphics getAnnotationgraphics() {
 		return item.getAnnotationgraphics();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public String getText(){
+	public String getText() {
 		return item.getText();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Declarations getStructure(){
+	public Declarations getStructure() {
 		return item.getStructure();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public PetriNet getContainerDeclarationPetriNet(){
+	public PetriNet getContainerDeclarationPetriNet() {
 		return item.getContainerDeclarationPetriNet();
 	}
-	
+
 	/**
 	 * Return the encapsulate Low Level API object.
 	 */
-	public Page getContainerDeclarationPage(){
+	public Page getContainerDeclarationPage() {
 		return item.getContainerDeclarationPage();
 	}
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI(){
-			java.util.List<ToolInfoHLAPI> retour = new ArrayList<ToolInfoHLAPI>();
-			for (ToolInfo elemnt : getToolspecifics()) {
-				retour.add(new ToolInfoHLAPI(elemnt));
-			}
-			return retour;
-		}
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public AnnotationGraphicsHLAPI getAnnotationgraphicsHLAPI(){
-			if(item.getAnnotationgraphics() == null) return null;
-			return new AnnotationGraphicsHLAPI(item.getAnnotationgraphics());
-		}
-		
-	
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public DeclarationsHLAPI getStructureHLAPI(){
-			if(item.getStructure() == null) return null;
-			return new DeclarationsHLAPI(item.getStructure());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public PetriNetHLAPI getContainerDeclarationPetriNetHLAPI(){
-			if(item.getContainerDeclarationPetriNet() == null) return null;
-			return new PetriNetHLAPI(item.getContainerDeclarationPetriNet());
-		}
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automatically encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 * @return : null if the element is null
-		 */
-		
-		public PageHLAPI getContainerDeclarationPageHLAPI(){
-			if(item.getContainerDeclarationPage() == null) return null;
-			return new PageHLAPI(item.getContainerDeclarationPage());
-		}
-		
-	
-	
+	// getters giving HLAPI object
 
-	//Special getter for list of generics object, return only one object type.
-	
-	
-	
-	
-	
-	
+	/**
+	 * This accessor automatically encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
 
-	//setters (including container setter if aviable)
-	
-	
+	public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI() {
+		java.util.List<ToolInfoHLAPI> retour = new ArrayList<ToolInfoHLAPI>();
+		for (ToolInfo elemnt : getToolspecifics()) {
+			retour.add(new ToolInfoHLAPI(elemnt));
+		}
+		return retour;
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public AnnotationGraphicsHLAPI getAnnotationgraphicsHLAPI() {
+		if (item.getAnnotationgraphics() == null)
+			return null;
+		return new AnnotationGraphicsHLAPI(item.getAnnotationgraphics());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public DeclarationsHLAPI getStructureHLAPI() {
+		if (item.getStructure() == null)
+			return null;
+		return new DeclarationsHLAPI(item.getStructure());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public PetriNetHLAPI getContainerDeclarationPetriNetHLAPI() {
+		if (item.getContainerDeclarationPetriNet() == null)
+			return null;
+		return new PetriNetHLAPI(item.getContainerDeclarationPetriNet());
+	}
+
+	/**
+	 * This accessor automatically encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 * 
+	 * @return : null if the element is null
+	 */
+
+	public PageHLAPI getContainerDeclarationPageHLAPI() {
+		if (item.getContainerDeclarationPage() == null)
+			return null;
+		return new PageHLAPI(item.getContainerDeclarationPage());
+	}
+
+	// Special getter for list of generics object, return only one object type.
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Annotationgraphics
 	 */
 	public void setAnnotationgraphicsHLAPI(
-	
-	AnnotationGraphicsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setAnnotationgraphics((AnnotationGraphics)elem.getContainedItem());
-	
+
+			AnnotationGraphicsHLAPI elem) {
+
+		if (elem != null)
+			item.setAnnotationgraphics((AnnotationGraphics) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set Text
 	 */
 	public void setTextHLAPI(
-	
-	java.lang.String elem){
-	
-	
-		if(elem!=null){
-		
+
+			java.lang.String elem) {
+
+		if (elem != null) {
+
 			item.setText(elem);
 		}
-	
+
 	}
-	
+
 	/**
 	 * set Structure
 	 */
 	public void setStructureHLAPI(
-	
-	DeclarationsHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setStructure((Declarations)elem.getContainedItem());
-	
+
+			DeclarationsHLAPI elem) {
+
+		if (elem != null)
+			item.setStructure((Declarations) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerDeclarationPetriNet
 	 */
 	public void setContainerDeclarationPetriNetHLAPI(
-	
-	PetriNetHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerDeclarationPetriNet((PetriNet)elem.getContainedItem());
-	
+
+			PetriNetHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerDeclarationPetriNet((PetriNet) elem.getContainedItem());
+
 	}
-	
+
 	/**
 	 * set ContainerDeclarationPage
 	 */
 	public void setContainerDeclarationPageHLAPI(
-	
-	PageHLAPI elem){
-	
-	
- 		if(elem!=null)
-			item.setContainerDeclarationPage((Page)elem.getContainedItem());
-	
-	}
-	
 
-	//setters/remover for lists.
-	
-	
-	public void addToolspecificsHLAPI(ToolInfoHLAPI unit){
-	
-		item.getToolspecifics().add((ToolInfo)unit.getContainedItem());
+			PageHLAPI elem) {
+
+		if (elem != null)
+			item.setContainerDeclarationPage((Page) elem.getContainedItem());
+
 	}
 
-	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit){
-		item.getToolspecifics().remove((ToolInfo)unit.getContainedItem());
-	}
-	
+	// setters/remover for lists.
 
-	//equals method
-	public boolean equals(DeclarationHLAPI item){
+	public void addToolspecificsHLAPI(ToolInfoHLAPI unit) {
+
+		item.getToolspecifics().add((ToolInfo) unit.getContainedItem());
+	}
+
+	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit) {
+		item.getToolspecifics().remove((ToolInfo) unit.getContainedItem());
+	}
+
+	// equals method
+	public boolean equals(DeclarationHLAPI item) {
 		return item.getContainedItem().equals(getContainedItem());
 	}
 
-	//PNML
-	
+	// PNML
+
 	/**
 	 * Returns the PNML xml tree for this object.
 	 */
-	public String toPNML(){
+	public String toPNML() {
 		return item.toPNML();
 	}
-	
+
 	/**
 	 * Writes the PNML XML tree of this object into file channel.
 	 */
-	public void toPNML(FileChannel fc){
-		 item.toPNML(fc);
+	public void toPNML(FileChannel fc) {
+		item.toPNML(fc);
 	}
 
 	/**
 	 * creates an object from the xml nodes.(symetric work of toPNML)
 	 */
-	public void fromPNML(OMElement subRoot,IdRefLinker idr) throws InnerBuildException, InvalidIDException, VoidRepositoryException{
-		item.fromPNML(subRoot,idr);
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		item.fromPNML(subRoot, idr);
 	}
-	
 
-	public boolean validateOCL(DiagnosticChain diagnostics){
+	public boolean validateOCL(DiagnosticChain diagnostics) {
 		return item.validateOCL(diagnostics);
 	}
 

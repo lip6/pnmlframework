@@ -42,44 +42,66 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>User Sort</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>User
+ * Sort</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.UserSort#getDeclaration <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.UserSort#getDeclaration
+ * <em>Declaration</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getUserSort()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='usersort' kind='son'"
- *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName())) {\n\t\t\tif (this.getContainerNamedSort() != null\n\t\t\t\t\t&& sort.getContainerNamedSort() != null) {\n\t\t\t\tisEqual = this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t} else {\n\t\t\t\t//further sub-classes must override this method.\n\t\t\t\tif (\"UserSort\".equalsIgnoreCase(this.eClass().getName())) {\n\t\t\t\t\tisEqual = ((UserSort) this).getDeclaration().getName()\n\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t((UserSort) sort).getDeclaration()\n\t\t\t\t\t\t\t\t\t\t\t.getName());\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn isEqual;' documentation='/**\r * Returns true if this sort and argument sort are actually \r * semantically the same sort, even in two different objects.\r * Ex: two FiniteEnumerations or two Integers.\r * @return true if so. \r * @param sort the sort to which we compare this one. \r \052/'"
+ * @model annotation="http://www.pnml.org/models/ToPNML tag='usersort'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/methods/SORT signature='boolean
+ *        equalSorts(Sort sort)' body='boolean isEqual = false;\n\t\tif
+ *        (this.eClass().getName().equalsIgnoreCase(sort.eClass().getName()))
+ *        {\n\t\t\tif (this.getContainerNamedSort() !=
+ *        null\n\t\t\t\t\t&amp;&amp; sort.getContainerNamedSort() != null)
+ *        {\n\t\t\t\tisEqual =
+ *        this.getContainerNamedSort().getName()\n\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\tsort.getContainerNamedSort().getName());\n\t\t\t}
+ *        else {\n\t\t\t\t//further sub-classes must override this
+ *        method.\n\t\t\t\tif
+ *        (\"UserSort\".equalsIgnoreCase(this.eClass().getName()))
+ *        {\n\t\t\t\t\tisEqual = ((UserSort)
+ *        this).getDeclaration().getName()\n\t\t\t\t\t\t\t.equalsIgnoreCase(\n\t\t\t\t\t\t\t\t\t((UserSort)
+ *        sort).getDeclaration()\n\t\t\t\t\t\t\t\t\t\t\t.getName());\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\treturn
+ *        isEqual;' documentation='/**\r * Returns true if this sort and
+ *        argument sort are actually \r * semantically the same sort, even in
+ *        two different objects.\r * Ex: two FiniteEnumerations or two
+ *        Integers.\r * @return true if so. \r * @param sort the sort to which
+ *        we compare this one. \r \052/'"
  * @generated
  */
 public interface UserSort extends Sort {
 	/**
-	 * Returns the value of the '<em><b>Declaration</b></em>' reference.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Declaration</b></em>' reference. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Declaration</em>' reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Declaration</em>' reference isn't clear, there
+	 * really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Declaration</em>' reference.
 	 * @see #setDeclaration(SortDecl)
 	 * @see fr.lip6.move.pnml.pthlpng.terms.TermsPackage#getUserSort_Declaration()
 	 * @model required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='declaration' kind='idref'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='declaration'
+	 *        kind='idref'"
 	 * @generated
 	 */
 	SortDecl getDeclaration();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.terms.UserSort#getDeclaration <em>Declaration</em>}' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.terms.UserSort#getDeclaration
+	 * <em>Declaration</em>}' reference. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @param value the new value of the '<em>Declaration</em>' reference.
 	 * @see #getDeclaration()
 	 * @generated
@@ -96,8 +118,8 @@ public interface UserSort extends Sort {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

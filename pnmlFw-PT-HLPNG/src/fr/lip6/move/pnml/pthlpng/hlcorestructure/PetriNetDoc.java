@@ -44,55 +44,64 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Petri Net Doc</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Petri
+ * Net Doc</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc#getNets <em>Nets</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc#getXmlns <em>Xmlns</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc#getNets
+ * <em>Nets</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNetDoc#getXmlns
+ * <em>Xmlns</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNetDoc()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='pnml' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='pnml' kind='son'"
  * @generated
  */
 public interface PetriNetDoc extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Nets</b></em>' containment reference list.
-	 * The list contents are of type {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet}.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getContainerPetriNetDoc <em>Container Petri Net Doc</em>}'.
-	 * <!-- begin-user-doc -->
+	 * The list contents are of type
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet}. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getContainerPetriNetDoc
+	 * <em>Container Petri Net Doc</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Nets</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Nets</em>' containment reference list.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNetDoc_Nets()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.PetriNet#getContainerPetriNetDoc
-	 * @model opposite="containerPetriNetDoc" containment="true" required="true" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML kind='follow'"
+	 * @model opposite="containerPetriNetDoc" containment="true" required="true"
+	 *        ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        kind='follow'"
 	 * @generated
 	 */
 	List<PetriNet> getNets();
 
 	/**
-	 * Returns the value of the '<em><b>Xmlns</b></em>' attribute.
-	 * The default value is <code>"http://www.pnml.org/version-2009/grammar/pnml"</code>.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Xmlns</b></em>' attribute. The default value
+	 * is <code>"http://www.pnml.org/version-2009/grammar/pnml"</code>. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Xmlns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Xmlns</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Xmlns</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getPetriNetDoc_Xmlns()
-	 * @model default="http://www.pnml.org/version-2009/grammar/pnml" changeable="false" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='xmlns' kind='attribute'"
+	 * @model default="http://www.pnml.org/version-2009/grammar/pnml"
+	 *        changeable="false" ordered="false"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='xmlns'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	String getXmlns();
@@ -105,8 +114,8 @@ public interface PetriNetDoc extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

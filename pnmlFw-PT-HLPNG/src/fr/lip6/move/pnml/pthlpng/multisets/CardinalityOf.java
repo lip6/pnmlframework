@@ -43,15 +43,18 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Cardinality Of</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Cardinality Of</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.multisets.MultisetsPackage#getCardinalityOf()
- * @model annotation="http://www.pnml.org/models/OCL inputOutputTypes='self.output.oclIsTypeOf(integers::Natural) and self.input.size() = 2'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputOutputTypes'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='cardinalityof' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        inputOutputTypes='self.output.oclIsTypeOf(integers::Natural) and
+ *        self.input.size() = 2'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputOutputTypes'"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='cardinalityof'
+ *        kind='son'" annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface CardinalityOf extends BuiltInOperator {
@@ -66,8 +69,8 @@ public interface CardinalityOf extends BuiltInOperator {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

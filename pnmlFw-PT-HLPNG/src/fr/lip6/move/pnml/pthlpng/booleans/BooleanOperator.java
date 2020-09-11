@@ -43,15 +43,16 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInOperator;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Boolean Operator</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Boolean
+ * Operator</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see fr.lip6.move.pnml.pthlpng.booleans.BooleansPackage#getBooleanOperator()
- * @model abstract="true"
- *        annotation="http://www.pnml.org/models/OCL inputOutputTypes='self.output.oclIsKindOf(Bool) and  self.input->forAll{c | c.oclIsKindOf(Bool)}'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='inputOutputTypes'"
+ * @model abstract="true" annotation="http://www.pnml.org/models/OCL
+ *        inputOutputTypes='self.output.oclIsKindOf(Bool) and
+ *        self.input-&gt;forAll{c | c.oclIsKindOf(Bool)}'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='inputOutputTypes'"
  * @generated
  */
 public interface BooleanOperator extends BuiltInOperator {
@@ -60,8 +61,8 @@ public interface BooleanOperator extends BuiltInOperator {
 	public abstract String toPNML();
 
 	@Override
-	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public abstract void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	@Override
 	public abstract void toPNML(FileChannel fc);

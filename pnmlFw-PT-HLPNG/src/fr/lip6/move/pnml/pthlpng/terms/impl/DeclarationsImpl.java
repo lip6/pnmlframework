@@ -75,14 +75,15 @@ import fr.lip6.move.pnml.pthlpng.terms.VariableDecl;
 import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Declarations</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Declarations</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.DeclarationsImpl#getDeclaration <em>Declaration</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.DeclarationsImpl#getContainerDeclaration <em>Container Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.DeclarationsImpl#getDeclaration
+ * <em>Declaration</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.terms.impl.DeclarationsImpl#getContainerDeclaration
+ * <em>Container Declaration</em>}</li>
  * </ul>
  * </p>
  *
@@ -90,9 +91,9 @@ import fr.lip6.move.pnml.pthlpng.terms.util.TermsValidator;
  */
 public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations {
 	/**
-	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}'
+	 * containment reference list. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getDeclaration()
 	 * @generated
 	 * @ordered
@@ -100,8 +101,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	protected EList<TermsDeclaration> declaration;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected DeclarationsImpl() {
@@ -109,8 +110,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -119,8 +120,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -133,8 +134,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -145,8 +146,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerDeclaration(Declaration newContainerDeclaration, NotificationChain msgs) {
@@ -156,14 +157,15 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerDeclaration(Declaration newContainerDeclaration) {
 		if (newContainerDeclaration != eInternalContainer()
-				|| (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION && newContainerDeclaration != null)) {
+				|| (eContainerFeatureID() != TermsPackage.DECLARATIONS__CONTAINER_DECLARATION
+						&& newContainerDeclaration != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerDeclaration))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -181,8 +183,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -200,8 +202,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -216,8 +218,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -231,8 +233,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -247,8 +249,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -267,8 +269,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -285,8 +287,8 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -305,10 +307,10 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -326,13 +328,13 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDeclaration() != null) {
 
@@ -367,22 +369,22 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 1
 		@SuppressWarnings("unused")
 		TermsFactory fact = TermsFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -396,7 +398,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("namedsort")) {
 				NamedSort item;
@@ -406,7 +408,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("namedoperator")) {
 				NamedOperator item;
@@ -416,7 +418,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("partition")) {
 				Partition item;
@@ -426,7 +428,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("partitionelement")) {
 				PartitionElement item;
@@ -436,7 +438,7 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 				item.setContainerDeclarations(this);
 
 				continue;
-			}//end if
+			} // end if
 
 		}
 
@@ -447,10 +449,10 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -473,13 +475,13 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getDeclaration() != null) {
 
@@ -565,4 +567,4 @@ public class DeclarationsImpl extends MinimalEObjectImpl implements Declarations
 		return retour;
 
 	}
-} //DeclarationsImpl
+} // DeclarationsImpl

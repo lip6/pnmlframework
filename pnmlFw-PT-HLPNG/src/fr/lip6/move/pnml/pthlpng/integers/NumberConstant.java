@@ -43,34 +43,41 @@ import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pthlpng.terms.BuiltInConstant;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Number Constant</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Number
+ * Constant</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getType <em>Type</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getValue <em>Value</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getType
+ * <em>Type</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getValue
+ * <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getNumberConstant()
- * @model annotation="http://www.pnml.org/models/OCL typeType='self.input->size() = 0 and self.type.oclIsTypeOf(Natural) implies self.value >= 0 and self.type.oclIsTypeOf(Positive) implies self.value > 0'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='typeType'"
- *        annotation="http://www.pnml.org/models/ToPNML tag='numberconstant' kind='son'"
+ * @model annotation="http://www.pnml.org/models/OCL
+ *        typeType='self.input-&gt;size() = 0 and self.type.oclIsTypeOf(Natural)
+ *        implies self.value &gt;= 0 and self.type.oclIsTypeOf(Positive) implies
+ *        self.value &gt; 0'" annotation="http://www.eclipse.org/emf/2002/Ecore
+ *        constraints='typeType'" annotation="http://www.pnml.org/models/ToPNML
+ *        tag='numberconstant' kind='son'"
+ *        annotation="http://www.pnml.org/models/HLAPI"
  * @generated
  */
 public interface NumberConstant extends BuiltInConstant {
 	/**
-	 * Returns the value of the '<em><b>Type</b></em>' containment reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.integers.HLPNNumber#getContainerNumberConstant <em>Container Number Constant</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Type</b></em>' containment reference. It is
+	 * bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.integers.HLPNNumber#getContainerNumberConstant
+	 * <em>Container Number Constant</em>}'. <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Type</em>' containment reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Type</em>' containment reference.
 	 * @see #setType(HLPNNumber)
 	 * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getNumberConstant_Type()
@@ -82,9 +89,11 @@ public interface NumberConstant extends BuiltInConstant {
 	HLPNNumber getType();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getType <em>Type</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getType
+	 * <em>Type</em>}' containment reference. <!-- begin-user-doc --> <!--
+	 * end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Type</em>' containment reference.
 	 * @see #getType()
 	 * @generated
@@ -92,26 +101,28 @@ public interface NumberConstant extends BuiltInConstant {
 	void setType(HLPNNumber value);
 
 	/**
-	 * Returns the value of the '<em><b>Value</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Value</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Value</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(Long)
 	 * @see fr.lip6.move.pnml.pthlpng.integers.IntegersPackage#getNumberConstant_Value()
-	 * @model required="true"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='value' kind='attribute'"
+	 * @model required="true" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='value' kind='attribute'"
 	 * @generated
 	 */
 	Long getValue();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getValue <em>Value</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.integers.NumberConstant#getValue
+	 * <em>Value</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Value</em>' attribute.
 	 * @see #getValue()
 	 * @generated
@@ -128,8 +139,8 @@ public interface NumberConstant extends BuiltInConstant {
 	 * set values to conform PNML document
 	 */
 	@Override
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

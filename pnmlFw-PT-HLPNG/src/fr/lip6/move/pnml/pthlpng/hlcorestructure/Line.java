@@ -43,52 +43,62 @@ import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Line</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object
+ * '<em><b>Line</b></em>'. <!-- end-user-doc -->
  *
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getColor <em>Color</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getShape <em>Shape</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getWidth <em>Width</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics <em>Container Node Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics <em>Container Arc Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getStyle <em>Style</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getColor
+ * <em>Color</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getShape
+ * <em>Shape</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getWidth
+ * <em>Width</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics
+ * <em>Container Node Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics
+ * <em>Container Arc Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics
+ * <em>Container Annotation Graphics</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getStyle
+ * <em>Style</em>}</li>
  * </ul>
  * </p>
  *
  * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine()
- * @model annotation="http://www.pnml.org/models/ToPNML tag='line' kind='son'"
+ * @model annotation="http://www.pnml.org/models/HLAPI"
+ *        annotation="http://www.pnml.org/models/ToPNML tag='line' kind='son'"
  * @generated
  */
 public interface Line extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Color</b></em>' attribute.
-	 * The default value is <code>"BLACK"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Color</b></em>' attribute. The default value
+	 * is <code>"BLACK"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Color</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Color</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Color</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #setColor(CSS2Color)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_Color()
 	 * @model default="BLACK" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='color' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='color'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	CSS2Color getColor();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getColor <em>Color</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getColor
+	 * <em>Color</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Color</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.CSS2Color
 	 * @see #getColor()
@@ -97,29 +107,32 @@ public interface Line extends EObject {
 	void setColor(CSS2Color value);
 
 	/**
-	 * Returns the value of the '<em><b>Shape</b></em>' attribute.
-	 * The default value is <code>"line"</code>.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Shape</b></em>' attribute. The default value
+	 * is <code>"line"</code>. The literals are from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Shape</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Shape</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Shape</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape
 	 * @see #setShape(LineShape)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_Shape()
 	 * @model default="line" ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='shape' kind='attribute'"
+	 *        annotation="http://www.pnml.org/models/ToPNML tag='shape'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	LineShape getShape();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getShape <em>Shape</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getShape
+	 * <em>Shape</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Shape</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.LineShape
 	 * @see #getShape()
@@ -128,26 +141,28 @@ public interface Line extends EObject {
 	void setShape(LineShape value);
 
 	/**
-	 * Returns the value of the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Width</b></em>' attribute. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Width</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Width</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Width</em>' attribute.
 	 * @see #setWidth(Integer)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_Width()
-	 * @model ordered="false"
-	 *        annotation="http://www.pnml.org/models/ToPNML tag='width' kind='attribute'"
+	 * @model ordered="false" annotation="http://www.pnml.org/models/ToPNML
+	 *        tag='width' kind='attribute'"
 	 * @generated
 	 */
 	Integer getWidth();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getWidth <em>Width</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getWidth
+	 * <em>Width</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Width</em>' attribute.
 	 * @see #getWidth()
 	 * @generated
@@ -155,15 +170,18 @@ public interface Line extends EObject {
 	void setWidth(Integer value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Node Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine <em>Line</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Node Graphics</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine
+	 * <em>Line</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Node Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Node Graphics</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Node Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Node Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerNodeGraphics(NodeGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_ContainerNodeGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.NodeGraphics#getLine
@@ -173,25 +191,31 @@ public interface Line extends EObject {
 	NodeGraphics getContainerNodeGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics <em>Container Node Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Node Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerNodeGraphics
+	 * <em>Container Node Graphics</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Node Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerNodeGraphics()
 	 * @generated
 	 */
 	void setContainerNodeGraphics(NodeGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Arc Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine <em>Line</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Arc Graphics</b></em>' container
+	 * reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine
+	 * <em>Line</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Arc Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Arc Graphics</em>' container reference
+	 * isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Arc Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Arc Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerArcGraphics(ArcGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_ContainerArcGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.ArcGraphics#getLine
@@ -201,25 +225,31 @@ public interface Line extends EObject {
 	ArcGraphics getContainerArcGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics <em>Container Arc Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Arc Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerArcGraphics
+	 * <em>Container Arc Graphics</em>}' container reference. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Arc Graphics</em>' container
+	 *              reference.
 	 * @see #getContainerArcGraphics()
 	 * @generated
 	 */
 	void setContainerArcGraphics(ArcGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine <em>Line</em>}'.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Container Annotation Graphics</b></em>'
+	 * container reference. It is bidirectional and its opposite is
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine
+	 * <em>Line</em>}'. <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Container Annotation Graphics</em>' container reference isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Container Annotation Graphics</em>' container
+	 * reference isn't clear, there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * 
+	 * @return the value of the '<em>Container Annotation Graphics</em>' container
+	 *         reference.
 	 * @see #setContainerAnnotationGraphics(AnnotationGraphics)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_ContainerAnnotationGraphics()
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics#getLine
@@ -229,37 +259,44 @@ public interface Line extends EObject {
 	AnnotationGraphics getContainerAnnotationGraphics();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics <em>Container Annotation Graphics</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Container Annotation Graphics</em>' container reference.
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getContainerAnnotationGraphics
+	 * <em>Container Annotation Graphics</em>}' container reference. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @param value the new value of the '<em>Container Annotation Graphics</em>'
+	 *              container reference.
 	 * @see #getContainerAnnotationGraphics()
 	 * @generated
 	 */
 	void setContainerAnnotationGraphics(AnnotationGraphics value);
 
 	/**
-	 * Returns the value of the '<em><b>Style</b></em>' attribute.
-	 * The literals are from the enumeration {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle}.
-	 * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Style</b></em>' attribute. The literals are
+	 * from the enumeration
+	 * {@link fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle}. <!--
+	 * begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Style</em>' attribute isn't clear,
-	 * there really should be more of a description here...
+	 * If the meaning of the '<em>Style</em>' attribute isn't clear, there really
+	 * should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
+	 * 
 	 * @return the value of the '<em>Style</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle
 	 * @see #setStyle(LineStyle)
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.HlcorestructurePackage#getLine_Style()
-	 * @model annotation="http://www.pnml.org/models/ToPNML tag='style' kind='attribute'"
+	 * @model annotation="http://www.pnml.org/models/ToPNML tag='style'
+	 *        kind='attribute'"
 	 * @generated
 	 */
 	LineStyle getStyle();
 
 	/**
-	 * Sets the value of the '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getStyle <em>Style</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Sets the value of the
+	 * '{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.Line#getStyle
+	 * <em>Style</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @param value the new value of the '<em>Style</em>' attribute.
 	 * @see fr.lip6.move.pnml.pthlpng.hlcorestructure.LineStyle
 	 * @see #getStyle()
@@ -275,8 +312,8 @@ public interface Line extends EObject {
 	/**
 	 * set values to conform PNML document
 	 */
-	public void fromPNML(OMElement subRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException;
+	public void fromPNML(OMElement subRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException;
 
 	/**
 	 * Write the PNML xml tree of this object into file

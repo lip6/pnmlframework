@@ -39,68 +39,50 @@ import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.AnnotationGraphics;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 
-public interface AnnotationHLAPI extends HLAPIClass,LabelHLAPI{
+public interface AnnotationHLAPI extends HLAPIClass, LabelHLAPI {
 
-	//getters giving LLAPI object
-	
+	// getters giving LLAPI object
+
 	/**
 	 *
 	 */
 	public List<ToolInfo> getToolspecifics();
-	
+
 	/**
 	 *
 	 */
 	public AnnotationGraphics getAnnotationgraphics();
-	
 
-	//getters giving HLAPI object
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate all elements of the selected sublist.
-		 * WARNING : this can creates a lot of new object in memory.
-		 */
-		
-		public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
-		
-	
-	
-	
-	
-		/**
-		 * This accessor automaticaly encapsulate an element of the current object.
-		 * WARNING : this creates a new object in memory.
-		 */
-		
-		public AnnotationGraphicsHLAPI getAnnotationgraphicsHLAPI();
-		
-	
-	
+	// getters giving HLAPI object
 
-	//setters (including container setter if aviable)
-	
-	
+	/**
+	 * This accessor automaticaly encapsulate all elements of the selected sublist.
+	 * WARNING : this can creates a lot of new object in memory.
+	 */
+
+	public java.util.List<ToolInfoHLAPI> getToolspecificsHLAPI();
+
+	/**
+	 * This accessor automaticaly encapsulate an element of the current object.
+	 * WARNING : this creates a new object in memory.
+	 */
+
+	public AnnotationGraphicsHLAPI getAnnotationgraphicsHLAPI();
+
+	// setters (including container setter if aviable)
+
 	/**
 	 * set Annotationgraphics
 	 */
-	public void setAnnotationgraphicsHLAPI(
-	AnnotationGraphicsHLAPI elem);
-	
+	public void setAnnotationgraphicsHLAPI(AnnotationGraphicsHLAPI elem);
 
-	
-	
-	
+	// setters/remover for lists.
 
-
-	//setters/remover for lists.
-	
 	public void addToolspecificsHLAPI(ToolInfoHLAPI unit);
-	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
-	
 
-	//equals method
+	public void removeToolspecificsHLAPI(ToolInfoHLAPI unit);
+
+	// equals method
 	public boolean equals(Object item);
 
 }

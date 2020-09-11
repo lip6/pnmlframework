@@ -40,7 +40,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.namespace.QName;
-
 import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -69,20 +68,27 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.ToolInfo;
 import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Tool Info</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Tool
+ * Info</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getTool <em>Tool</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getVersion <em>Version</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getFormattedXMLBuffer <em>Formatted XML Buffer</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getToolInfoGrammarURI <em>Tool Info Grammar URI</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerPetriNet <em>Container Petri Net</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerPnObject <em>Container Pn Object</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerLabel <em>Container Label</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getToolInfoModel <em>Tool Info Model</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getTool
+ * <em>Tool</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getVersion
+ * <em>Version</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getFormattedXMLBuffer
+ * <em>Formatted XML Buffer</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getToolInfoGrammarURI
+ * <em>Tool Info Grammar URI</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerPetriNet
+ * <em>Container Petri Net</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerPnObject
+ * <em>Container Pn Object</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getContainerLabel
+ * <em>Container Label</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ToolInfoImpl#getToolInfoModel
+ * <em>Tool Info Model</em>}</li>
  * </ul>
  * </p>
  *
@@ -90,9 +96,9 @@ import fr.lip6.move.pnml.pthlpng.hlcorestructure.util.HlcorestructureValidator;
  */
 public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	/**
-	 * The default value of the '{@link #getTool() <em>Tool</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getTool() <em>Tool</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getTool()
 	 * @generated
 	 * @ordered
@@ -100,9 +106,9 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected static final String TOOL_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getTool() <em>Tool</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getTool() <em>Tool</em>}' attribute. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getTool()
 	 * @generated
 	 * @ordered
@@ -111,8 +117,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 	/**
 	 * The default value of the '{@link #getVersion() <em>Version</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getVersion()
 	 * @generated
 	 * @ordered
@@ -121,8 +127,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 	/**
 	 * The cached value of the '{@link #getVersion() <em>Version</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getVersion()
 	 * @generated
 	 * @ordered
@@ -130,9 +136,9 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected String version = VERSION_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getFormattedXMLBuffer() <em>Formatted XML Buffer</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getFormattedXMLBuffer() <em>Formatted XML
+	 * Buffer</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFormattedXMLBuffer()
 	 * @generated
 	 * @ordered
@@ -140,9 +146,9 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected static final StringBuffer FORMATTED_XML_BUFFER_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getFormattedXMLBuffer() <em>Formatted XML Buffer</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getFormattedXMLBuffer() <em>Formatted XML
+	 * Buffer</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getFormattedXMLBuffer()
 	 * @generated
 	 * @ordered
@@ -150,9 +156,9 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected StringBuffer formattedXMLBuffer = FORMATTED_XML_BUFFER_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getToolInfoGrammarURI() <em>Tool Info Grammar URI</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The default value of the '{@link #getToolInfoGrammarURI() <em>Tool Info
+	 * Grammar URI</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getToolInfoGrammarURI()
 	 * @generated
 	 * @ordered
@@ -160,9 +166,9 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected static final URI TOOL_INFO_GRAMMAR_URI_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getToolInfoGrammarURI() <em>Tool Info Grammar URI</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getToolInfoGrammarURI() <em>Tool Info
+	 * Grammar URI</em>}' attribute. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getToolInfoGrammarURI()
 	 * @generated
 	 * @ordered
@@ -170,9 +176,10 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected URI toolInfoGrammarURI = TOOL_INFO_GRAMMAR_URI_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getToolInfoModel() <em>Tool Info Model</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getToolInfoModel() <em>Tool Info
+	 * Model</em>}' containment reference. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 * 
 	 * @see #getToolInfoModel()
 	 * @generated
 	 * @ordered
@@ -180,8 +187,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	protected AnyObject toolInfoModel;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ToolInfoImpl() {
@@ -189,8 +196,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -199,8 +206,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -209,8 +216,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -218,12 +225,13 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		String oldTool = tool;
 		tool = newTool;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__TOOL, oldTool, tool));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__TOOL, oldTool,
+					tool));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -232,8 +240,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -241,13 +249,13 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		String oldVersion = version;
 		version = newVersion;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__VERSION,
-					oldVersion, version));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__VERSION, oldVersion,
+					version));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -256,8 +264,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -270,8 +278,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -280,8 +288,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -290,12 +298,13 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		toolInfoGrammarURI = newToolInfoGrammarURI;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI, oldToolInfoGrammarURI, toolInfoGrammarURI));
+					HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI, oldToolInfoGrammarURI,
+					toolInfoGrammarURI));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -306,8 +315,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPetriNet(PetriNet newContainerPetriNet, NotificationChain msgs) {
@@ -317,14 +326,15 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPetriNet(PetriNet newContainerPetriNet) {
 		if (newContainerPetriNet != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET && newContainerPetriNet != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET
+						&& newContainerPetriNet != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPetriNet))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -337,13 +347,13 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET, newContainerPetriNet, newContainerPetriNet));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__CONTAINER_PETRI_NET,
+					newContainerPetriNet, newContainerPetriNet));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -354,8 +364,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerPnObject(PnObject newContainerPnObject, NotificationChain msgs) {
@@ -365,14 +375,15 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerPnObject(PnObject newContainerPnObject) {
 		if (newContainerPnObject != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT && newContainerPnObject != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT
+						&& newContainerPnObject != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerPnObject))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -385,13 +396,13 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			if (msgs != null)
 				msgs.dispatch();
 		} else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET,
-					HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT, newContainerPnObject, newContainerPnObject));
+			eNotify(new ENotificationImpl(this, Notification.SET, HlcorestructurePackage.TOOL_INFO__CONTAINER_PN_OBJECT,
+					newContainerPnObject, newContainerPnObject));
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -402,8 +413,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerLabel(Label newContainerLabel, NotificationChain msgs) {
@@ -413,14 +424,15 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerLabel(Label newContainerLabel) {
 		if (newContainerLabel != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_LABEL && newContainerLabel != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.TOOL_INFO__CONTAINER_LABEL
+						&& newContainerLabel != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerLabel))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -438,8 +450,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -448,8 +460,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetToolInfoModel(AnyObject newToolInfoModel, NotificationChain msgs) {
@@ -467,8 +479,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -490,8 +502,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -511,16 +523,16 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			return basicSetContainerLabel((Label) otherEnd, msgs);
 		case HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL:
 			if (toolInfoModel != null)
-				msgs = ((InternalEObject) toolInfoModel).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL, null, msgs);
+				msgs = ((InternalEObject) toolInfoModel).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.TOOL_INFO__TOOL_INFO_MODEL, null, msgs);
 			return basicSetToolInfoModel((AnyObject) otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -539,8 +551,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -560,8 +572,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -588,8 +600,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -624,8 +636,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -660,8 +672,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -672,8 +684,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		case HlcorestructurePackage.TOOL_INFO__VERSION:
 			return VERSION_EDEFAULT == null ? version != null : !VERSION_EDEFAULT.equals(version);
 		case HlcorestructurePackage.TOOL_INFO__FORMATTED_XML_BUFFER:
-			return FORMATTED_XML_BUFFER_EDEFAULT == null ? formattedXMLBuffer != null : !FORMATTED_XML_BUFFER_EDEFAULT
-					.equals(formattedXMLBuffer);
+			return FORMATTED_XML_BUFFER_EDEFAULT == null ? formattedXMLBuffer != null
+					: !FORMATTED_XML_BUFFER_EDEFAULT.equals(formattedXMLBuffer);
 		case HlcorestructurePackage.TOOL_INFO__TOOL_INFO_GRAMMAR_URI:
 			return TOOL_INFO_GRAMMAR_URI_EDEFAULT == null ? toolInfoGrammarURI != null
 					: !TOOL_INFO_GRAMMAR_URI_EDEFAULT.equals(toolInfoGrammarURI);
@@ -690,8 +702,8 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -712,21 +724,23 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		return result.toString();
 	}
 
-	//TODO this element (toolInfoGrammarURI) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (toolInfoGrammarURI) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (toolInfoModel) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (toolInfoModel) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 1
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -744,7 +758,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getTool() != null) {
 			sb.append(" tool");
@@ -764,7 +778,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getFormattedXMLBuffer() != null) {
 
@@ -794,20 +808,20 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//2
-		//1
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 2
+		// 1
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
 		if (locRoot.getAttributeValue(new QName("tool")) != null) {
 			try {
@@ -825,14 +839,15 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 			}
 		}
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
 			OMElement type = (OMElement) iterator.next();
 
-			//Any Elements
-			//all sub element of <toolspecific> will be serialized in a java.lang.StringBuffer
+			// Any Elements
+			// all sub element of <toolspecific> will be serialized in a
+			// java.lang.StringBuffer
 			StringBuffer sb = new StringBuffer();
 			sb.append(locRoot.toString());
 			this.setFormattedXMLBuffer(new java.lang.StringBuffer(sb.toString()));
@@ -841,21 +856,23 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 	}
 
-	//TODO this element (toolInfoGrammarURI) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (toolInfoGrammarURI) seems not to have any ToPNML
+	// associated tag.
+	// This is maybe a mistake ?
 
-	//TODO this element (toolInfoModel) seems not to have any ToPNML associated tag.
-	//This is maybe a mistake ?
+	// TODO this element (toolInfoModel) seems not to have any ToPNML associated
+	// tag.
+	// This is maybe a mistake ?
 
 	/**
 	 * Return the string containing the pnml output
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 2
-		//sons 1
+		// id 0
+		// idref 0
+		// attributes 2
+		// sons 1
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -878,7 +895,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		if (getTool() != null) {
 			sb.append(" tool");
@@ -898,7 +915,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getFormattedXMLBuffer() != null) {
 
@@ -967,4 +984,4 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 		return retour;
 
 	}
-} //ToolInfoImpl
+} // ToolInfoImpl

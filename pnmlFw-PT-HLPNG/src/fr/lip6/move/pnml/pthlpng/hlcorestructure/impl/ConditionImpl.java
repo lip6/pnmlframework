@@ -71,14 +71,15 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Condition</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Condition</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ConditionImpl#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ConditionImpl#getContainerTransition <em>Container Transition</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ConditionImpl#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.ConditionImpl#getContainerTransition
+ * <em>Container Transition</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,9 +87,9 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
  */
 public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	/**
-	 * The cached value of the '{@link #getStructure() <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStructure() <em>Structure</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStructure()
 	 * @generated
 	 * @ordered
@@ -96,8 +97,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	protected Term structure;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ConditionImpl() {
@@ -105,8 +106,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -115,8 +116,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,8 +126,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetStructure(Term newStructure, NotificationChain msgs) {
@@ -144,8 +145,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -167,8 +168,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -179,8 +180,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerTransition(Transition newContainerTransition, NotificationChain msgs) {
@@ -190,14 +191,15 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerTransition(Transition newContainerTransition) {
 		if (newContainerTransition != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION && newContainerTransition != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION
+						&& newContainerTransition != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerTransition))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -216,8 +218,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -225,8 +227,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		switch (featureID) {
 		case HlcorestructurePackage.CONDITION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.CONDITION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.CONDITION__STRUCTURE, null, msgs);
 			return basicSetStructure((Term) otherEnd, msgs);
 		case HlcorestructurePackage.CONDITION__CONTAINER_TRANSITION:
 			if (eInternalContainer() != null)
@@ -237,8 +239,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -253,8 +255,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -268,8 +270,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -284,8 +286,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -302,8 +304,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -320,8 +322,8 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -340,10 +342,10 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -361,13 +363,13 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -450,22 +452,22 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -479,7 +481,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -489,7 +491,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));
@@ -712,7 +714,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -723,10 +725,10 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -749,13 +751,13 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -897,4 +899,4 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 		return retour;
 
 	}
-} //ConditionImpl
+} // ConditionImpl

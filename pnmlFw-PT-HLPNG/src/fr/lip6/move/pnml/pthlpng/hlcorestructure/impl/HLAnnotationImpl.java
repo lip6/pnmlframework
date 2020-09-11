@@ -71,14 +71,15 @@ import fr.lip6.move.pnml.pthlpng.terms.TermsPackage;
 import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>HL Annotation</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>HL
+ * Annotation</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLAnnotationImpl#getStructure <em>Structure</em>}</li>
- *   <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLAnnotationImpl#getContainerArc <em>Container Arc</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLAnnotationImpl#getStructure
+ * <em>Structure</em>}</li>
+ * <li>{@link fr.lip6.move.pnml.pthlpng.hlcorestructure.impl.HLAnnotationImpl#getContainerArc
+ * <em>Container Arc</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,9 +87,9 @@ import fr.lip6.move.pnml.pthlpng.terms.impl.TermsFactoryImpl;
  */
 public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotation {
 	/**
-	 * The cached value of the '{@link #getStructure() <em>Structure</em>}' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached value of the '{@link #getStructure() <em>Structure</em>}'
+	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @see #getStructure()
 	 * @generated
 	 * @ordered
@@ -96,8 +97,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	protected Term structure;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected HLAnnotationImpl() {
@@ -105,8 +106,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -115,8 +116,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -125,8 +126,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetStructure(Term newStructure, NotificationChain msgs) {
@@ -144,8 +145,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -167,8 +168,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -179,8 +180,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetContainerArc(Arc newContainerArc, NotificationChain msgs) {
@@ -190,14 +191,15 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public void setContainerArc(Arc newContainerArc) {
 		if (newContainerArc != eInternalContainer()
-				|| (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC && newContainerArc != null)) {
+				|| (eContainerFeatureID() != HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC
+						&& newContainerArc != null)) {
 			if (EcoreUtil.isAncestor(this, newContainerArc))
 				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
 			NotificationChain msgs = null;
@@ -215,8 +217,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -224,8 +226,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		switch (featureID) {
 		case HlcorestructurePackage.HL_ANNOTATION__STRUCTURE:
 			if (structure != null)
-				msgs = ((InternalEObject) structure).eInverseRemove(this, EOPPOSITE_FEATURE_BASE
-						- HlcorestructurePackage.HL_ANNOTATION__STRUCTURE, null, msgs);
+				msgs = ((InternalEObject) structure).eInverseRemove(this,
+						EOPPOSITE_FEATURE_BASE - HlcorestructurePackage.HL_ANNOTATION__STRUCTURE, null, msgs);
 			return basicSetStructure((Term) otherEnd, msgs);
 		case HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC:
 			if (eInternalContainer() != null)
@@ -236,8 +238,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -252,23 +254,23 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
 		switch (eContainerFeatureID()) {
 		case HlcorestructurePackage.HL_ANNOTATION__CONTAINER_ARC:
-			return eInternalContainer()
-					.eInverseRemove(this, HlcorestructurePackage.ARC__HLINSCRIPTION, Arc.class, msgs);
+			return eInternalContainer().eInverseRemove(this, HlcorestructurePackage.ARC__HLINSCRIPTION, Arc.class,
+					msgs);
 		}
 		return super.eBasicRemoveFromContainerFeature(msgs);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -283,8 +285,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -301,8 +303,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -319,8 +321,8 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -339,10 +341,10 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 */
 	@Override
 	public String toPNML() {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		Boolean prettyPrintStatus = ModelRepository.getInstance().isPrettyPrintActive();
 		String retline = "";
@@ -360,13 +362,13 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -449,22 +451,22 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 
 	@Override
 	@SuppressWarnings("unchecked")
-	public void fromPNML(OMElement locRoot, IdRefLinker idr) throws InnerBuildException, InvalidIDException,
-			VoidRepositoryException {
-		//0
-		//0
-		//0
-		//4
+	public void fromPNML(OMElement locRoot, IdRefLinker idr)
+			throws InnerBuildException, InvalidIDException, VoidRepositoryException {
+		// 0
+		// 0
+		// 0
+		// 4
 		@SuppressWarnings("unused")
 		HlcorestructureFactory fact = HlcorestructureFactory.eINSTANCE;
 
-		//processing id
+		// processing id
 
-		//processing idref
+		// processing idref
 
-		//processing attributes
+		// processing attributes
 
-		//processing sons
+		// processing sons
 
 		for (Iterator iterator = locRoot.getChildElements(); iterator.hasNext();) {
 			@SuppressWarnings("unused")
@@ -478,7 +480,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 				item.setContainerLabel(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("graphics")) {
 				AnnotationGraphics item;
@@ -488,7 +490,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 				item.setContainerAnnotation(this);
 
 				continue;
-			}//end if
+			} // end if
 
 			if (type.getLocalName().equals("text")) {
 				this.setText(new java.lang.String(type.getText()));
@@ -711,7 +713,7 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 				}
 			}
 
-			//tag!=null
+			// tag!=null
 
 		}
 
@@ -722,10 +724,10 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 	 */
 	@Override
 	public void toPNML(FileChannel fc) {
-		//id 0
-		//idref 0
-		//attributes 0
-		//sons 4
+		// id 0
+		// idref 0
+		// attributes 0
+		// sons 4
 
 		final int bufferSizeKB = 8;
 		final int bufferSize = bufferSizeKB * 1024;
@@ -748,13 +750,13 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		if (prettyPrintStatus) {
 			headline = prpd.increaseLineHeaderLevel();
 		}
-		//begin attributes, id and id ref processing
+		// begin attributes, id and id ref processing
 
 		boolean haveSons = false;
 		sb.append(">");
 		sb.append(retline);
 
-		//sons, follow processing
+		// sons, follow processing
 
 		if (getToolspecifics() != null) {
 
@@ -896,4 +898,4 @@ public class HLAnnotationImpl extends HLCoreAnnotationImpl implements HLAnnotati
 		return retour;
 
 	}
-} //HLAnnotationImpl
+} // HLAnnotationImpl
