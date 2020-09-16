@@ -190,7 +190,7 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
         HLAPIRootClass retour;
         try {
             retour = doWork(pnmltype.getClassName(), document, ValidationDriver
-                    .uriOrFileInputSource(path), pnmltype.getRngUrl(), false);
+                    .uriOrFileInputSource(path), pnmltype.getRngUrl(), isFallUse());
         } catch (AssociatedPluginNotFound apnf) {
             // fallback section
             if (fallbackmode && pnmltype.getFallBackClassName() != null) {
