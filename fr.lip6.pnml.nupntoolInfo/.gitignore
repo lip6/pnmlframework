@@ -1,6 +1,2 @@
-bin
-Copy-of-Nupn.ecore
-target
-.settings
-.project
-.classpath
+bin/
+target/
