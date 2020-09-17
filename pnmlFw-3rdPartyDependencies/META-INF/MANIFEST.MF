@@ -6983,7 +6983,7 @@ Export-Package: com.ctc.wstx.api;
    fr.lip6.pnml.check,
    fr.lip6.pnml2scribe,
    fr.lip6.pnml.cami2pnml";uses:="org.relaxng.datatype"
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Eclipse-BuddyPolicy: registered
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ActivationPolicy: lazy
