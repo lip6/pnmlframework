@@ -18,13 +18,15 @@
 		<pnml.release>2.2.14</pnml.release>
 		<pnml.release.doc>2.2.14</pnml.release.doc>
 		<pnml.snapshot>2.2.14-SNAPSHOT</pnml.snapshot>
-		<tycho.version>1.6.0</tycho.version>
-		<tycho-extras.version>1.6.0</tycho-extras.version>
-		<eclipse-repo.url>http://download.eclipse.org/releases/2019-12</eclipse-repo.url>
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository/</orbit-site>		
+		<tycho.version>1.7.0</tycho.version>
+		<tycho-extras.version>1.7.0</tycho-extras.version>
+		<eclipse-repo.url>http://download.eclipse.org/releases/2020-06</eclipse-repo.url>
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20200529191137/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>		
 	</properties>
 
 	<distributionManagement>
