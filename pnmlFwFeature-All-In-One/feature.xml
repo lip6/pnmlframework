@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.sdk"
       label="PNML Framework SDK"
-      version="2.2.14"
+      version="2.2.15"
       provider-name="Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)">
 
    <description url="http://www.lip6.fr/pnml">

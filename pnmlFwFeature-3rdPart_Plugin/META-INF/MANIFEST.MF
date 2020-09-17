@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework 3rd Party Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.3rdPart.feature;singleton:=true
-Bundle-Version: 2.2.14
+Bundle-Version: 2.2.15
 Bundle-Vendor: Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)
