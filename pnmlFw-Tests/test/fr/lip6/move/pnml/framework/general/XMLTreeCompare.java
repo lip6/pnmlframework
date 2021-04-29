@@ -5,23 +5,20 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.apache.axiom.om.OMAttribute;
 import org.apache.axiom.om.OMElement;
-import org.slf4j.Logger;
-
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 public class XMLTreeCompare {
 
-    private Logger logos;
+    private static final Logger logos = Logger.getLogger("fr.lip6.pnml.framework.test");;
 
     // used to avoid case when two pairs of values give the same results when
     // concatenated : like 123 456 and 12 3456 which give
     public static String separator = "<>";
 
     public XMLTreeCompare() {
-        logos = LogMaster.getLogger("XML tree Comparison");
     }
 
     @SuppressWarnings("rawtypes")
@@ -70,8 +67,7 @@ public class XMLTreeCompare {
             sb.append(separator);
         }
 
-        if (logos.isDebugEnabled())
-            logos.debug(sb.toString());
+        logos.fine(sb.toString());
 
         return sb.toString().hashCode();
     }

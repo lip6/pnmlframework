@@ -23,12 +23,10 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.slf4j.Logger;
+import java.util.logging.Logger;
 
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**
  * This class is used at pnml file import for linking object through idRef.
@@ -47,13 +45,12 @@ public class IdRefLinker {
     /**
      * 
      */
-    private final Logger log; // NOPMD by ggiffo on 6/12/08 4:18 PM
+    private static final Logger log = Logger.getLogger("fr.lip6.pnml.framework.reflink"); // NOPMD by ggiffo on 6/12/08 4:18 PM
 
     /**
      * the default constructor.
      */
     public IdRefLinker() {
-        log = LogMaster.getLogger("IdrefLinker");
         idRefElements = new HashMap<Object, String[]>();
     }
 
@@ -91,8 +88,8 @@ public class IdRefLinker {
      */
     public final void linkAll() throws VoidRepositoryException,
             InvalidIDException {
-        log.debug(String.valueOf(idRefElements.keySet().size()));
-        log.debug(ModelRepository.getInstance().getCurrentIdRepository().getAllId().toString());
+        log.fine(String.valueOf(idRefElements.keySet().size()));
+        log.fine(ModelRepository.getInstance().getCurrentIdRepository().getAllId().toString());
         for (Object object : idRefElements.keySet()) {
             final Object type = (Object) object;
             final ArrayList<Object> lobj = new ArrayList<Object>(); // NOPMD by
@@ -124,13 +121,13 @@ public class IdRefLinker {
                 // PM
                 method.invoke(type, lobj);
             } catch (NoSuchMethodException e) {
-                log.error("no idRefHang on :" + type.getClass().toString(), e);
+                log.severe("no idRefHang on :" + type.getClass().toString()); e.printStackTrace();
             } catch (IllegalArgumentException e) {
-                log.error("Error: ", e);
+                log.severe("Error: " +e.getLocalizedMessage());
             } catch (IllegalAccessException e) {
-                log.error("Error: ", e);
+                log.severe("Error: " +e.getLocalizedMessage());
             } catch (InvocationTargetException e) {
-                log.error("Error: ", e);
+                log.severe("Error: " +e.getLocalizedMessage());
             }
 
         }

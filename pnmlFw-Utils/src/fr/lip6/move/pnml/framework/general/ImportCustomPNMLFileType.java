@@ -28,6 +28,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.FactoryConfigurationError;
@@ -37,11 +38,9 @@ import javax.xml.stream.XMLStreamReader;
 
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.impl.builder.StAXOMBuilder;
-import org.slf4j.Logger;
 
 import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**
  * This repository is designed to contain imported custom file types from an
@@ -66,7 +65,7 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
     /**
      * The logger.
      */
-    private final Logger log; // NOPMD by ggiffo on 6/27/08 4:46 PM
+    private static final Logger log = Logger.getLogger("fr.lip6.pnml.framework.custom"); // NOPMD by ggiffo on 6/27/08 4:46 PM
 
     /**
      * The array with all found officialPNMLfiles.
@@ -92,7 +91,6 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
             // 3:07
             // PM
             BadFileFormatException, OtherException {
-        log = LogMaster.getLogger("customTypes");
         oPNML = new ArrayList<CustomPNMLFileType>();
 
         String typeName;
@@ -212,7 +210,7 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
             parser = XMLInputFactory.newInstance().createXMLStreamReader(
                     new FileReader(imported));
         } catch (XMLStreamException e) {
-            log.error("this file is not a well formated PNML file", e);
+            log.severe("this file is not a well formated PNML file"+e.getLocalizedMessage());
             throw new BadFileFormatException(
                     "this file is not a well formated PNML file", e);
         } catch (FactoryConfigurationError e) {

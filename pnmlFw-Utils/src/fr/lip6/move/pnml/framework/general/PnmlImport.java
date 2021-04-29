@@ -179,11 +179,9 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
 
         // if not error
         if (pnmltype == null) {
-            if (log.isErrorEnabled()) {
-                log.error("the net type " + namespace + " is unknown");
-            }
-            throw new UnhandledNetType("the net type " + namespace
-                    + " is unknown");
+        	log.severe("the net type " + namespace + " is unknown");
+        	throw new UnhandledNetType("the net type " + namespace
+        			+ " is unknown");
         }
 
         // heart of import.
@@ -194,7 +192,7 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
         } catch (AssociatedPluginNotFound apnf) {
             // fallback section
             if (fallbackmode && pnmltype.getFallBackClassName() != null) {
-                log.warn("The plugin as not been found, trying fallback with "
+                log.severe("The plugin as not been found, trying fallback with "
                         + pnmltype.getFallBackClassName());
                 retour = doWork(pnmltype.getFallBackClassName(), document,
                         null, null, true);
@@ -314,9 +312,7 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
 
         // if not in fallback mode, check for Validity of imported file
         if (usingFallBack) {
-            if (log.isWarnEnabled()) {
-                log.warn("Using fallBack plugin, rng conformance not checked");
-            }
+        	log.warning("Using fallBack plugin, rng conformance not checked");
         } else {
             rngGrammarValidation(schemafile, pnmldocStream);
         }
@@ -331,11 +327,11 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
             document.close(false);
             idr.linkAll();
         } catch (InnerBuildException e) {
-            log.error("An error occur in object internal building", e);
+            log.severe("An error occur in object internal building"+ e.getLocalizedMessage());
             throw new InnerBuildException(
                     "A problem occur during objects creation", e);
         } catch (VoidRepositoryException e) {
-            log.error("An error occur in idref processing", e);
+            log.severe("An error occur in idref processing"+ e.getLocalizedMessage());
             throw new InnerBuildException(
                     "A problem occur during idref solving : " + e.getMessage(),
                     e);
@@ -414,14 +410,14 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
         if (!(document.getLocalName().equals("pnml") && document
                 .getFirstElement().getLocalName().equals("net"))) {
             log
-                    .error("this file is not a well formated PNML file, <pnml> or <net> are missing");
+                    .severe("this file is not a well formated PNML file, <pnml> or <net> are missing");
             throw new BadFileFormatException(
                     "this file is not a well formated PNML file");
         }
         final OMAttribute doctype = document.getFirstElement().getAttribute(
                 new QName("type"));
         if (doctype == null) {
-            log.error("the type of this PNML file is not given");
+            log.severe("the type of this PNML file is not given");
             throw new BadFileFormatException(
                     "the type of this PNML file is not given");
         }

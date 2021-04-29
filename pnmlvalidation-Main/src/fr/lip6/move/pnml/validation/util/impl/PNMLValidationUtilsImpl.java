@@ -19,10 +19,10 @@
  */
 package fr.lip6.move.pnml.validation.util.impl;
 
-import org.slf4j.Logger;
+
+import java.util.logging.Logger;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.ptnet.PnObject;
 import fr.lip6.move.pnml.ptnet.hlapi.PageHLAPI;
 import fr.lip6.move.pnml.ptnet.hlapi.PetriNetDocHLAPI;
@@ -33,11 +33,10 @@ import fr.lip6.move.pnml.validation.PNMLValidationUtils;
 public final class PNMLValidationUtilsImpl implements PNMLValidationUtils {
 	private CheckPnmlFile pchecker;
 
-	private Logger log;
+	private static final Logger log=Logger.getLogger("fr.lip6.pnml.framework.validation");
 
 	public PNMLValidationUtilsImpl(CheckPnmlFile checker) {
 		this.pchecker = checker;
-		this.log = LogMaster.getLogger(PNMLValidationUtilsImpl.class.getCanonicalName());
 	}
 
 	@Override
@@ -46,14 +45,14 @@ public final class PNMLValidationUtilsImpl implements PNMLValidationUtils {
 		boolean res = false;
 		HLAPIRootClass pdoc = checker.getPnmlDocHLAPIRootClass();
 		if (pdoc == null) {
-			log.error("You have not loaded any PNML Document through the PNML Checker."
+			log.severe("You have not loaded any PNML Document through the PNML Checker."
 					+ " Please load first a PNML Document through the PNML Checker");
 		} else {
 			res = removeGraphicsFromPNML(pdoc);
 			if (res) {
 				log.info("All graphical information was purged from the submitted PNML Document.");
 			} else {
-				log.warn("No graphical information was found in the submitted PNML Document.");
+				log.warning("No graphical information was found in the submitted PNML Document.");
 			}
 		}
 
@@ -116,14 +115,14 @@ public final class PNMLValidationUtilsImpl implements PNMLValidationUtils {
 								res = true;
 							}
 						} else {
-							log.error("The graphical information removal feature currently supports Nodes (types of Place and Transitions), Arcs, and their subtypes only. "
+							log.severe("The graphical information removal feature currently supports Nodes (types of Place and Transitions), Arcs, and their subtypes only. "
 									+ "Contact the developer if you want to have other types of net object included.");
 						}
 					}
 				}
 			}
 		} else {
-			log.error("The graphical information removal feature currently supports P/T nets only, where it is the most useful. "
+			log.severe("The graphical information removal feature currently supports P/T nets only, where it is the most useful. "
 					+ "Even with graphical information, High-level Petri nets usually has a small file size (a few KB).");
 		}
 		return res;

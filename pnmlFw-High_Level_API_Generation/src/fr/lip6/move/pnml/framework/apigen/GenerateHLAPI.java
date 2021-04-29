@@ -6,8 +6,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
+import java.util.logging.Logger;
 
-import org.apache.commons.logging.Log;
 import org.eclipse.emf.codegen.ecore.genmodel.GenClass;
 import org.eclipse.emf.codegen.ecore.genmodel.GenEnum;
 import org.eclipse.emf.codegen.ecore.genmodel.GenModel;
@@ -20,10 +20,6 @@ import org.eclipse.emf.pnml.codegen.templates.model.HLAPIEnum;
 import org.eclipse.emf.pnml.codegen.templates.model.HLAPITests;
 import org.eclipse.emf.pnml.codegen.templates.model.Tools;
 import org.eclipse.emf.pnml.codegen.templates.model.ToolsTest;
-import org.slf4j.LoggerFactory;
-
-import ch.qos.logback.classic.LoggerContext;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**
  *
@@ -59,7 +55,7 @@ public class GenerateHLAPI {
     /**
      *
      */
-    private Log log; // NOPMD by ggiffo on 7/4/08 11:02 AM
+    private Logger log; // NOPMD by ggiffo on 7/4/08 11:02 AM
     /**
      *
      */
@@ -80,7 +76,7 @@ public class GenerateHLAPI {
     public final void generate(GenModel genmod, String outputPath,
             String testPath, String isTooling) {
 
-        log = LogMaster.giveLogger("HLAPI");
+        log = Logger.getLogger("fr.lip6.pnml.framework.HLAPI");
         log
                 .info("---------------------------------------------------------------------------------");
         log.info("Begining High-Level API generation");
@@ -106,8 +102,6 @@ public class GenerateHLAPI {
             }
         }
         log.info("End of Hight-Level API generation");
-        LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
-		loggerContext.stop();
     }
 
     /**
@@ -199,10 +193,8 @@ public class GenerateHLAPI {
             output.write(code);
             output.close();
         } catch (IOException e) {
-            log
-                    .error(
-                            "The java file cannot be write, have you check if the folder tree exists?",
-                            e);
+            log.severe("The java file cannot be written, have you checked if the folder tree exists?");
+            e.printStackTrace();
         }
 
     }
@@ -234,10 +226,8 @@ public class GenerateHLAPI {
             output.write(code);
             output.close();
         } catch (IOException e) {
-            log
-                    .error(
-                            "The java file cannot be write, have you check if the folder tree exists?",
-                            e);
+            log.severe("The java file cannot be written, have you checked if the folder tree exists?");
+            e.printStackTrace();
         }
     }
 
@@ -269,10 +259,8 @@ public class GenerateHLAPI {
             output.write(code);
             output.close();
         } catch (IOException e) {
-            log
-                    .error(
-                            "The java file cannot be write, have you check if the folder tree exists?",
-                            e);
+            log.severe("The java file cannot be written, have you checked if the folder tree exists?");
+            e.printStackTrace();
         }
 
     }
@@ -301,10 +289,8 @@ public class GenerateHLAPI {
             output.write(code);
             output.close();
         } catch (IOException e) {
-            log
-                    .error(
-                            "The java file cannot be write, have you check if the folder tree exists?",
-                            e);
+            log.severe("The java file cannot be written, have you checked if the folder tree exists?");
+            e.printStackTrace();
         }
     }
 
@@ -331,10 +317,8 @@ public class GenerateHLAPI {
             output.write(code);
             output.close();
         } catch (IOException e) {
-            log
-                    .error(
-                            "The java file cannot be write, have you check if the folder tree exists?",
-                            e);
+            log.severe("The java file cannot be written, have you checked if the folder tree exists?");
+            e.printStackTrace();
         }
     }
 

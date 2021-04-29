@@ -122,7 +122,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 
 		// If not find in custom type...
 		if (otype == null) {
-			log.error("type "
+			log.severe("type "
 					+ object.getClass().getName()
 					+ " is unknown, we are expecting a HLAPIRootClass (like PetriNetDocHLAPI) object of a known package.");
 			throw new UnhandledNetType("type " + object.getClass().getName()
@@ -199,7 +199,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 
 		// If not find in custom type...
 		if (otype == null) {
-			log.error("type "
+			log.severe("type "
 					+ object.getClass().getCanonicalName()
 					+ " is unknown, we are expecting a PN root class (like PetriNetDoc) object of a known package.");
 			throw new UnhandledNetType("type "
@@ -255,7 +255,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 			throws OCLValidationFailed, IOException, ValidationFailedException {
 
 		oclChecking(pndoc);
-		log.trace("OCL ok, writting temporary file");
+		log.fine("OCL ok, writting temporary file");
 
 		// Original code: final String output = pndoc.toPNML();
 		/*
@@ -267,11 +267,11 @@ public class PnmlExport extends AbstractPnmlImportExport {
 		final FileChannel fc = fos.getChannel();
 		pndoc.toPNML(fc);
 
-		log.trace(WRITING_TO_PNML_FILE_OK);
+		log.fine(WRITING_TO_PNML_FILE_OK);
 		fc.close();
 		fos.close();
 
-		log.trace(VALIDATION_AGAINST_GRAMMAR);
+		log.fine(VALIDATION_AGAINST_GRAMMAR);
 		rngGrammarValidation(schemafile,
 				ValidationDriver.uriOrFileInputSource(out.getAbsolutePath()));
 	}
@@ -285,7 +285,7 @@ public class PnmlExport extends AbstractPnmlImportExport {
 	private void doWork(EObject eObject, String classname, String schemafile)
 			throws InvocationFailedException, IOException,
 			ValidationFailedException {
-		log.trace("OCL check disabled in this case.");
+		log.fine("OCL check disabled in this case.");
 		Class<?> c;
 		try {
 			c = Class.forName(classname);
@@ -317,8 +317,8 @@ public class PnmlExport extends AbstractPnmlImportExport {
 				fc.close();
 				fos.close();
 			}
-			log.trace(WRITING_TO_PNML_FILE_OK);
-			log.trace(VALIDATION_AGAINST_GRAMMAR);
+			log.fine(WRITING_TO_PNML_FILE_OK);
+			log.fine(VALIDATION_AGAINST_GRAMMAR);
 			rngGrammarValidation(
 					schemafile,
 					ValidationDriver.uriOrFileInputSource(out.getAbsolutePath()));

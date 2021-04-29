@@ -21,17 +21,17 @@
  */
 package fr.lip6.move.pnml.framework.general;
 
+import java.util.logging.Logger;
+
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.slf4j.Logger;
 import org.xml.sax.InputSource;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 import fr.lip6.move.pnml.framework.utils.exception.OCLValidationFailed;
 import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
 import fr.lip6.move.pnml.framework.utils.exception.ValidationProcessException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.framework.utils.validation.PnmlRngValidation;
 
 /**
@@ -46,7 +46,7 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
     /**
      * Logging system.
      */
-    protected final Logger log; // NOPMD by ggiffo on 8/1/08 2:58 PM
+    protected static final Logger log = Logger.getLogger("fr.lip6.pnml.framework.io"); // NOPMD by ggiffo on 8/1/08 2:58 PM
 
     /**
      * the extensions filetype file.
@@ -72,7 +72,6 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
      *            the path to the custom plug in registration file
      */
     protected AbstractPnmlImportExport(String loggername, String filePath) {
-        log = LogMaster.getLogger(loggername);
         newTypeFilePath = filePath;
     }
 
@@ -89,18 +88,16 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
         if (checkOcl) {
             final DiagnosticChain diagnostics = new BasicDiagnostic();
             if (!rootclass.validateOCL(diagnostics)) {
-                log.trace(diagnostics.toString());
+                log.info(diagnostics.toString());
                 for (Diagnostic diag : ((BasicDiagnostic) diagnostics)
                         .getChildren()) {
-                    log.error(diag.getMessage());
+                    log.severe(diag.getMessage());
                 }
                 throw new OCLValidationFailed(((BasicDiagnostic) diagnostics)
                         .getException());
             }
         } else {
-            if (log.isWarnEnabled()) {
-                log.warn("OCL checking disabled");
-            }
+        	log.warning("OCL checking disabled");
         }
     }
 
@@ -125,20 +122,15 @@ public abstract class AbstractPnmlImportExport { // NOPMD by ggiffo on 8/1/08
                                     + " specifications");
                 }
             } catch (ValidationProcessException e) {
-                if (log.isErrorEnabled()) {
-                    log
-                            .error("Grammar file errors have been raised, the validation can't be done,"
+            	log.severe("Grammar file errors have been raised, the validation can't be done,"
                                     + " process will continue without Grammar validation");
-                }
             }
         } else {
-            if (log.isWarnEnabled()) {
-                if (validateFile) {
-                    log.warn("no XML grammar associated to this library");
-                } else {
-                    log.warn("XML validation disabled");
-                }
-            }
+        	if (validateFile) {
+        		log.warning("no XML grammar associated to this library");
+        	} else {
+        		log.warning("XML validation disabled");
+        	}
         }
     }
 

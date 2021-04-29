@@ -21,13 +21,11 @@ package fr.lip6.move.pnml.validation;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Logger;
 
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import ch.qos.logback.classic.LoggerContext;
 import fr.lip6.move.pnml.framework.general.PnmlExport;
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
 import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
@@ -35,7 +33,6 @@ import fr.lip6.move.pnml.framework.utils.exception.OCLValidationFailed;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
 import fr.lip6.move.pnml.framework.utils.exception.UnhandledNetType;
 import fr.lip6.move.pnml.framework.utils.exception.ValidationFailedException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.validation.exceptions.ExitException;
 import fr.lip6.move.pnml.validation.exceptions.InternalException;
 import fr.lip6.move.pnml.validation.exceptions.InvalidFileException;
@@ -99,7 +96,7 @@ public class ValidationMain {
 	/**
 	 * Logger
 	 */
-	private static final Logger JOURNAL = LogMaster.getLogger(ValidationMain.class.getCanonicalName());
+	private static final Logger JOURNAL = Logger.getLogger("fr.lip6.pnml.framework.validation");
 	/**
 	 * Version of this tool.
 	 */
@@ -138,8 +135,6 @@ public class ValidationMain {
 			printHelp(e1.getCause().getMessage());
 			printStackTrace(e1);
 		}
-		LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
-		loggerContext.stop();
 	}
 
 	/**
@@ -291,29 +286,29 @@ public class ValidationMain {
 					}
 				} catch (UnhandledNetType | OCLValidationFailed | IOException | ValidationFailedException
 						| BadFileFormatException | OtherException e) {
-					JOURNAL.error(e.getMessage());
+					JOURNAL.severe(e.getMessage());
 					e.printStackTrace();
 				}
 			}
 		} catch (ValidationException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.BAD_REQUEST,
 					MessageUtility.getExceptionMessage(e)));
-			JOURNAL.error(e.getMessage());
+			JOURNAL.severe(e.getMessage());
 			printStackTrace(e);
 		} catch (InvalidFileException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
-			JOURNAL.error(e.getMessage());
+			JOURNAL.severe(e.getMessage());
 			printStackTrace(e);
 		} catch (InvalidFileTypeException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.UNSUPPORTED,
 					MessageUtility.getExceptionMessage(e)));
-			JOURNAL.error(e.getMessage());
+			JOURNAL.severe(e.getMessage());
 			printStackTrace(e);
 		} catch (InternalException e) {
 			System.out.println(MessageUtility.buildMessage(HTTPStatusCodes.INTERNAL_SERROR,
 					MessageUtility.getExceptionMessage(e)));
-			JOURNAL.error(e.getMessage());
+			JOURNAL.severe(e.getMessage());
 			printStackTrace(e);
 		}
 	}
@@ -395,7 +390,7 @@ public class ValidationMain {
 					"Debug mode not set. If you want to activate the debug mode (print stacktraces in case of errors), then set the ")
 					.append(PNMLVAL_DEBUG).append(" environment variable like so: export ").append(PNMLVAL_DEBUG)
 					.append("=true.");
-			JOURNAL.warn(msg.toString());
+			JOURNAL.warning(msg.toString());
 		}
 	}
 	

@@ -6987,7 +6987,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Eclipse-BuddyPolicy: registered
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.slf4j.api;visibility:=reexport,
- ch.qos.logback.classic;visibility:=reexport,
- org.apache.commons.logging;visibility:=reexport,
- javax.activation;visibility:=reexport
+Require-Bundle: javax.activation;visibility:=reexport

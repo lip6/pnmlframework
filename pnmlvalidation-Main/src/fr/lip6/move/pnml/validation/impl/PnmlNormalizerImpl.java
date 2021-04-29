@@ -22,11 +22,9 @@ package fr.lip6.move.pnml.validation.impl;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import org.slf4j.Logger;
+import java.util.logging.Logger;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 import fr.lip6.move.pnml.ptnet.PTArcAnnotation;
 import fr.lip6.move.pnml.ptnet.Page;
 import fr.lip6.move.pnml.ptnet.PtnetFactory;
@@ -57,7 +55,7 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 
 	public PnmlNormalizerImpl(CheckPnmlFile checker) {
 		this.pchecker = checker;
-		this.log = LogMaster.getLogger(PnmlNormalizerImpl.class.getCanonicalName());
+		this.log = Logger.getLogger("fr.lip6.pnml.framework.normalize");
 	}
 
 	@Override
@@ -66,7 +64,7 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 		assignCheckerToThis(checker);
 		HLAPIRootClass pdoc = checker.getPnmlDocHLAPIRootClass();
 		if (pdoc == null) {
-			log.error("You have not loaded any PNML Document through the PNML Checker."
+			log.severe("You have not loaded any PNML Document through the PNML Checker."
 					+ " Please load first a PNML Document through the PNML Checker");
 
 		} else {
@@ -211,10 +209,10 @@ public final class PnmlNormalizerImpl implements PnmlNormalizer {
 				System.out.println(sb.toString());
 				log.info("For each merge, the first arc in the set was kept as the resulting arc.");
 			} else {
-				log.warn("There are no parallel arcs to merge in this net.");
+				log.warning("There are no parallel arcs to merge in this net.");
 			}
 		} else {
-			log.error("Only P/T Nets are currently supported in merging parallel arcs.");
+			log.severe("Only P/T Nets are currently supported in merging parallel arcs.");
 		}
 		return this.pchecker.getPnmlDocHLAPIRootClass();
 	}

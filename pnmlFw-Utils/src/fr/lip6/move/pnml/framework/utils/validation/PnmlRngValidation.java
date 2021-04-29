@@ -19,15 +19,14 @@
 package fr.lip6.move.pnml.framework.utils.validation;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
-import org.slf4j.Logger;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import com.thaiopensource.validate.ValidationDriver;
 
 import fr.lip6.move.pnml.framework.utils.exception.ValidationProcessException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**
  * This class is used to validate a file through RNG grammar.
@@ -40,13 +39,12 @@ public class PnmlRngValidation {
     /**
      * the logger.
      */
-    private final Logger log;
+    private static final Logger log = Logger.getLogger("fr.lip6.pnml.framework.validation");;
 
     /**
      * Default constructor.
      */
     public PnmlRngValidation() {
-        log = LogMaster.getLogger("PNML validation");
     }
 
     /**
@@ -93,11 +91,11 @@ public class PnmlRngValidation {
         try {
             loadedShema = valdrive.loadSchema(schematIs);
         } catch (SAXException e1) {
-            log.error("The rng grammar file is not valid : "
+            log.severe("The rng grammar file is not valid : "
                     + e1.getLocalizedMessage());
             throw new ValidationProcessException(e1);
         } catch (IOException e1) {
-            log.error("The rng grammar file can't be accessed : "
+            log.severe("The rng grammar file can't be accessed : "
                     + e1.getLocalizedMessage());
             throw new ValidationProcessException(e1);
         }
@@ -105,10 +103,10 @@ public class PnmlRngValidation {
         try {
             isValid = valdrive.validate(pnmldocStream);
         } catch (SAXException e) {
-            log.error("The file to validate is not valid :"
+            log.severe("The file to validate is not valid :"
                     + e.getLocalizedMessage());
         } catch (IOException e) {
-            log.error("The file to validate cannot be correctly loaded :"
+            log.severe("The file to validate cannot be correctly loaded :"
                     + e.getLocalizedMessage());
         }
 

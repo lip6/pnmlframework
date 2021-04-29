@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Logger;
 
 import javax.xml.stream.FactoryConfigurationError;
 import javax.xml.stream.XMLInputFactory;
@@ -15,11 +16,9 @@ import javax.xml.stream.XMLStreamReader;
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.OMNode;
 import org.apache.axiom.om.impl.builder.StAXOMBuilder;
-import org.apache.commons.logging.Log;
 
 import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.logging.LogMaster;
 
 /**
  *
@@ -36,7 +35,7 @@ public class ParseConfFile {
     /**
      * The logger.
      */
-    private final Log log; // NOPMD by ggiffo on 7/4/08 11:03 AM
+    private final Logger log; // NOPMD by ggiffo on 7/4/08 11:03 AM
 
     /**
      *
@@ -44,7 +43,7 @@ public class ParseConfFile {
      *            the path to the config file
      */
     public ParseConfFile(final String myConfFilePath) {
-        log = LogMaster.giveLogger("file parse");
+        log = Logger.getLogger("fr.lip6.pnml.framework.parse");
         confFile = myConfFilePath;
     }
 
@@ -131,7 +130,8 @@ public class ParseConfFile {
             parser = XMLInputFactory.newInstance().createXMLStreamReader(
                     new FileReader(imported));
         } catch (XMLStreamException e) {
-            log.error("this file is not a well formated PNML file", e);
+            log.severe("this file is not a well formated PNML file");
+            e.printStackTrace();
             throw new BadFileFormatException(
                     "this file is not a well formated PNML file", e);
         } catch (FactoryConfigurationError e) {
