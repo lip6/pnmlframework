@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework 3rd Party Library
 Bundle-SymbolicName: fr.lip6.pnml.framework.3rdpartimports;singleton:=true
-Bundle-Version: 2.2.15
+Bundle-Version: 2.2.16
 Bundle-ClassPath: .
 Export-Package: com.ctc.wstx.api;
   x-friends:="fr.lip6.pnml.framework.coremodel,

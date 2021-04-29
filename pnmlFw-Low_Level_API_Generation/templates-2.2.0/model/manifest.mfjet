@@ -16,7 +16,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: <%=genModel.getModelName()%>
 Bundle-SymbolicName: <%=genModel.getModelPluginID()%>;singleton:=true
-Bundle-Version: 2.2.15
+Bundle-Version: 2.2.16
 Bundle-ClassPath: <%if (genModel.isRuntimeJar()) {%><%=genModel.getModelPluginID()%>.jar<%}else{%>.<%}%>
 <%if (genModel.hasModelPluginClass()) {%>
 Bundle-Activator: <%=genModel.getQualifiedModelPluginClassName()%>$Implementation
@@ -39,7 +39,7 @@ Require-Bundle: <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtim
  <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtime")){%>;visibility:=reexport<%}}%>,
 <%}%>
  fr.lip6.pnml.framework.utils,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.15"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.16"
 <%if (genModel.getRuntimeVersion() == GenRuntimeVersion.EMF22 || genModel.getRuntimeVersion() == GenRuntimeVersion.EMF23) {%>
 Eclipse-LazyStart: true
 <%}%>

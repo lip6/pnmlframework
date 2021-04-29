@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PNML Framework NUPN Toolinfo Helper
 Bundle-SymbolicName: fr.lip6.pnml.nupn.toolinfo;singleton:=true
-Bundle-Version: 2.2.15
+Bundle-Version: 2.2.16
 Bundle-ClassPath: .
 Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06,CNRS UMR 7606 (LIP6)
 Bundle-Localization: plugin

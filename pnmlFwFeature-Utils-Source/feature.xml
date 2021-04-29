@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.utils.feature.source"
       label="PNML Framework Utils and Runtime Source"
-      version="2.2.15"
+      version="2.2.16"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.utils.source">
 
@@ -37,7 +37,7 @@ This feature brands the runtime API.
       <import plugin="org.eclipse.ocl.ecore"/>
       <import plugin="org.eclipse.emf.codegen.ecore"/>
       <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.15" match="greaterOrEqual"/>
+      <import plugin="fr.lip6.pnml.framework.3rdpartimports" version="2.2.16" match="greaterOrEqual"/>
    </requires>
 
    <plugin

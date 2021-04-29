@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.move.pnml.framework.symmetricnet.feature; singleton:=true
-Bundle-Version: 2.2.15
+Bundle-Version: 2.2.16
 Bundle-Vendor: %Bundle-Vendor
