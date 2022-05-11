@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.framework.pthlpng.feature"
       label="PNML Framework Place/Transition Nets as High-Level Petri Nets Graph"
-      version="2.2.16"
+      version="2.2.17.qualifier"
       provider-name="Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.framework.pthlpng">
 
