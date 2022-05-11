@@ -20,8 +20,8 @@
 		<pnml.snapshot>2.2.16-SNAPSHOT</pnml.snapshot>
 		<tycho.version>1.7.0</tycho.version>
 		<tycho-extras.version>1.7.0</tycho-extras.version>
-		<eclipse-repo.url>http://download.eclipse.org/releases/2021-03</eclipse-repo.url>
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20210223232630/repository/</orbit-site>		
+		<eclipse-repo.url>http://download.eclipse.org/releases/2022-03</eclipse-repo.url>
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20220302172233/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -119,7 +119,7 @@
 			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
-				<version>6.8.13</version>
+				<version>7.5</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
