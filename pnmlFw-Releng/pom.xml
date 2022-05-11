@@ -18,7 +18,7 @@
 		<pnml.release>2.2.17-SNAPSHOT</pnml.release>
 		<pnml.release.doc>2.2.17-SNAPSHOT</pnml.release.doc>
 		<pnml.snapshot>2.2.17-SNAPSHOT</pnml.snapshot>
-		<tycho.version>1.7.0</tycho.version>
+		<tycho.version>2.7.3</tycho.version>
 		<tycho-extras.version>1.7.0</tycho-extras.version>
 		<eclipse-repo.url>http://download.eclipse.org/releases/2022-03</eclipse-repo.url>
 		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20220302172233/repository/</orbit-site>		
@@ -173,6 +173,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<configuration>
+				<executionEnvironment>JavaSE-11</executionEnvironment>
 				<executionEnvironmentDefault>JavaSE-11</executionEnvironmentDefault>
 					<pomDependencies>consider</pomDependencies>
 					<environments>
