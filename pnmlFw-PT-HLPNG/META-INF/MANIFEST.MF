@@ -5,7 +5,7 @@ Bundle-SymbolicName: fr.lip6.pnml.framework.pthlpng;singleton:=true
 Bundle-Version: 2.2.16
 Bundle-ClassPath: .
 Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: fr.lip6.move.pnml.pthlpng.booleans;
   uses:="org.eclipse.emf.ecore,
    org.apache.axiom.om,

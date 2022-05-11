@@ -12,5 +12,5 @@ Require-Bundle: org.eclipse.emf,
  fr.lip6.pnml.framework.utils,
  fr.lip6.pnml.framework.3rdpartimports
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)

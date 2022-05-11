@@ -25,8 +25,8 @@
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>		
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>		
 	</properties>
 
 	<distributionManagement>
@@ -159,8 +159,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.1</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>11</source>
+					<target>11</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -173,7 +173,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<configuration>
-				<executionEnvironmentDefault>JavaSE-1.8</executionEnvironmentDefault>
+				<executionEnvironmentDefault>JavaSE-11</executionEnvironmentDefault>
 					<pomDependencies>consider</pomDependencies>
 					<environments>
 						<environment>
