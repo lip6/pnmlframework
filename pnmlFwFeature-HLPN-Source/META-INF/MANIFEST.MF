@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: fr.lip6.pnml.framework.hlpn.feature.source;singleton:=true
-Bundle-Version: 2.2.16
+Bundle-Version: 2.2.17.qualifier
 Bundle-Vendor: %Bundle-Vendor
