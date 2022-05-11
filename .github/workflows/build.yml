@@ -27,7 +27,7 @@ jobs:
     - name: Build with Maven
       run: cd pnmlFw-Releng ; mvn generate-sources install -Pall ; cd -
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@4.3.3
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
       with:
           branch: gh-pages # The branch the action should deploy to.
           folder: PnmlFramework_UpdateSite/target/repository # The folder the action should deploy.
