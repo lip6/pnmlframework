@@ -19,7 +19,7 @@ jobs:
       with:
         java-version: 11
     - name: Cache Maven packages
-      uses: actions/cache@v2
+      uses: actions/cache@v3.0.2
       with:
          path: ~/.m2
          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
@@ -27,10 +27,9 @@ jobs:
     - name: Build with Maven
       run: cd pnmlFw-Releng ; mvn generate-sources install -Pall ; cd -
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@4.3.3
       with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: PnmlFramework_UpdateSite/target/repository # The folder the action should deploy.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
-          SINGLE_COMMIT: true 
+          branch: gh-pages # The branch the action should deploy to.
+          folder: PnmlFramework_UpdateSite/target/repository # The folder the action should deploy.
+          clean: true # Automatically remove deleted files from the deploy branch
+          single-commit: true 
