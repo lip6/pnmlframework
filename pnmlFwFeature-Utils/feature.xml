@@ -35,10 +35,9 @@ http://www.eclipse.org/legal/epl-v10.html
    </license>
 
    <requires>
-      <import plugin="org.eclipse.ocl.ecore"/>
-      <import plugin="org.eclipse.emf.codegen.ecore"/>
-      <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.apache.ws.commons.axiom.axiom-api"/>
+      <import plugin="wrapped.com.thaiopensource.jing" version="20091111.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

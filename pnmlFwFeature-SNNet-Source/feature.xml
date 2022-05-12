@@ -33,10 +33,6 @@
   - other third-party licenses of librairies used in our 3rdPart library.
    </license>
 
-   <requires>
-      <import plugin="fr.lip6.pnml.framework.utils.source"/>
-   </requires>
-
    <plugin
          id="fr.lip6.pnml.framework.symmetricnet.source"
          download-size="0"

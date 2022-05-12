@@ -33,12 +33,6 @@
   - other third-party licenses of librairies used in our 3rdPart library.
    </license>
 
-   <requires>
-      <import plugin="org.eclipse.ocl.ecore"/>
-      <import plugin="fr.lip6.pnml.framework.utils.source"/>
-      <import plugin="fr.lip6.pnml.framework.3rdpartimports"/>
-   </requires>
-
    <plugin
          id="fr.lip6.pnml.framework.coremodel.source"
          download-size="0"

@@ -26,6 +26,10 @@ http://www.eclipse.org/legal/epl-v10.html
 - Eclipse Foundation Software User Agreement
    </license>
 
+   <requires>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+   </requires>
+
    <plugin
          id="fr.lip6.pnml.nupn.toolinfo"
          download-size="0"
