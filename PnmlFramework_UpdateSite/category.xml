@@ -39,9 +39,6 @@
    <feature url="features/fr.lip6.pnml.framework.sdk_2.2.17.qualifier.jar" id="fr.lip6.pnml.framework.sdk" version="2.2.17.qualifier">
       <category name="PNML Framework SDK"/>
    </feature>
-   <feature url="features/fr.lip6.pnml.framework.3rdPart.feature_2.2.17.qualifier.jar" id="fr.lip6.pnml.framework.3rdPart.feature" version="2.2.17.qualifier">
-      <category name="Utilities and 3rd party libraries"/>
-   </feature>
    <feature url="features/fr.lip6.pnml.nupn.toolinfo.feature.source_2.2.17.qualifier.jar" id="fr.lip6.pnml.nupn.toolinfo.feature.source" version="2.2.17.qualifier">
       <category name="Sources"/>
    </feature>
@@ -74,4 +71,6 @@
          Some helpers, in particular to handle NUPN tool specific info (Caesar.bdd).
       </description>
    </category-def>
+   <repository-reference location="http://download.eclipse.org/tools/orbit/downloads/drops/R20220302172233/repository/" enabled="true" />
+   <repository-reference location="http://download.eclipse.org/releases/latest/" enabled="true" />
 </site>

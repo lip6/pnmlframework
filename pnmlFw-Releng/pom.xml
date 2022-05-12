@@ -523,7 +523,6 @@
 				<module>../pnmlFw-PT-HLPNG</module>
 				<module>../fr.lip6.pnml.nupntoolInfo</module>
 
-				<module>../pnmlFwFeature-3rdPart_Plugin</module>
 				<module>../pnmlFwFeature-Utils</module>
 				<module>../pnmlFwFeature-Utils-Source</module>
 				<module>../pnmlFwFeature-CoreModel</module>
@@ -547,7 +546,6 @@
 		<profile>
 			<id>ossrh-release</id>
 			<modules>
-				<!-- <module>../pnmlFw-3rdPartyDependencies</module> -->
 				<module>../pnmlFw-Utils</module>
 				<module>../pnmlFw-CoreModel</module>
 				<module>../pnmlFw-PTNet</module>
