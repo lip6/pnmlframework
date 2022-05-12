@@ -36,8 +36,6 @@ http://www.eclipse.org/legal/epl-v10.html
 
    <requires>
       <import plugin="org.eclipse.emf.ecore"/>
-      <import plugin="org.apache.ws.commons.axiom.axiom-api"/>
-      <import plugin="wrapped.com.thaiopensource.jing" version="20091111.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin
@@ -46,6 +44,7 @@ http://www.eclipse.org/legal/epl-v10.html
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
    <plugin
          id="org.apache.ws.commons.axiom.axiom-api"
          download-size="0"
@@ -73,4 +72,5 @@ http://www.eclipse.org/legal/epl-v10.html
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
 </feature>
