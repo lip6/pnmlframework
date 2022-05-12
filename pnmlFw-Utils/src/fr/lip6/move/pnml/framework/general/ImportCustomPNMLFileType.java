@@ -37,7 +37,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import org.apache.axiom.om.OMElement;
-import org.apache.axiom.om.impl.builder.StAXOMBuilder;
+import org.apache.axiom.om.OMXMLBuilderFactory;
+import org.apache.axiom.om.OMXMLParserWrapper;
 
 import fr.lip6.move.pnml.framework.utils.exception.BadFileFormatException;
 import fr.lip6.move.pnml.framework.utils.exception.OtherException;
@@ -217,8 +218,10 @@ public class ImportCustomPNMLFileType implements PNMLFileRepository { // NOPMD
             throw new OtherException(e);
         }
 
-        final OMElement document = new StAXOMBuilder(parser)
-                .getDocumentElement();
+        //create the builder
+    	OMXMLParserWrapper builder = OMXMLBuilderFactory.createStAXOMBuilder(parser);
+    	//get the root element
+    	OMElement document = builder.getDocumentElement();
         return document;
     }
 }

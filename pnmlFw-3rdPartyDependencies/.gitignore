@@ -1,15 +1,2 @@
 target
-version*
-META-INF
-.settings
-ch
-com
-java_cup
-javax
-jp
-lpg
-net
-nu
-org
-about_files
 /bin/

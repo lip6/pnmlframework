@@ -18,10 +18,6 @@
 	</description>
 
 	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
-		</dependency>
 	</dependencies>
 
 </project>

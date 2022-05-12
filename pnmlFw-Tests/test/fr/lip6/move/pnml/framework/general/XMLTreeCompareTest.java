@@ -1,9 +1,10 @@
 package fr.lip6.move.pnml.framework.general;
 
+import org.apache.axiom.om.OMAbstractFactory;
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.OMFactory;
+import org.apache.axiom.om.OMMetaFactory;
 import org.apache.axiom.om.OMText;
-import org.apache.axiom.om.impl.dom.factory.OMDOMFactory;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -14,7 +15,8 @@ public class XMLTreeCompareTest {
 
     @BeforeMethod(groups = { "XMLTreeCompare" })
     protected void setUp() throws Exception {
-        omf = new OMDOMFactory();
+    	OMMetaFactory fac = OMAbstractFactory.getMetaFactory();
+        omf =  fac.getOMFactory();
     }
 
     @AfterMethod

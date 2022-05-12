@@ -14,12 +14,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<thirdparty.version>2.2.17-SNAPSHOT</thirdparty.version>
 		<pnml.release>2.2.17-SNAPSHOT</pnml.release>
 		<pnml.release.doc>2.2.17-SNAPSHOT</pnml.release.doc>
 		<pnml.snapshot>2.2.17-SNAPSHOT</pnml.snapshot>
-		<tycho.version>2.7.3</tycho.version>
-		<tycho-extras.version>1.7.0</tycho-extras.version>
+		<tycho.version>2.7.1</tycho.version>
+		<tycho-extras.version>2.7.1</tycho-extras.version>
 		<eclipse-repo.url>http://download.eclipse.org/releases/2022-03</eclipse-repo.url>
 		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20220302172233/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
@@ -110,12 +109,7 @@
 	</repositories>
 
 	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>${project.groupId}</groupId>
-				<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-				<version>${thirdparty.version}</version>
-			</dependency>
+		<dependencies>			
 			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
@@ -176,6 +170,15 @@
 				<executionEnvironment>JavaSE-11</executionEnvironment>
 				<executionEnvironmentDefault>JavaSE-11</executionEnvironmentDefault>
 					<pomDependencies>consider</pomDependencies>
+ 					<pomDependencies>wrapAsBundle</pomDependencies>
+ 					<target>
+         				<artifact>
+				            <groupId>fr.lip6.pnml</groupId>
+            				<artifactId>fr.lip6.pnml.target</artifactId>
+            				<version>${pnml.release}</version>
+         				</artifact>
+      				</target>
+					
 					<environments>
 						<environment>
 							<os>linux</os>
@@ -509,7 +512,7 @@
 		<profile>
 			<id>all</id>
 			<modules>
-				<module>../pnmlFw-3rdPartyDependencies</module>
+				<module>../fr.lip6.pnml.target</module>
 				<module>../pnmlFw-Utils</module>
 				<module>../pnmlFw-Utils.tests</module>
 

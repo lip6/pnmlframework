@@ -20,48 +20,6 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-			<version>${thirdparty.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.coremodel</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-			<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.ptnet</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.symmetricnet</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.hlpn</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.pthlpng</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
-			<version>${pnml.release}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 		</dependency>

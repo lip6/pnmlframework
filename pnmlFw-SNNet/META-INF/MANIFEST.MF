@@ -382,7 +382,7 @@ Export-Package: fr.lip6.move.pnml.symmetricnet.booleans;
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  fr.lip6.pnml.framework.utils,
- fr.lip6.pnml.framework.3rdpartimports
+ org.apache.ws.commons.axiom.axiom-api;bundle-version="1.3.0"
 Bundle-ActivationPolicy: lazy
 Eclipse-RegisterBuddy: fr.lip6.pnml.framework.utils
 Bundle-Vendor: Sorbonne Universités,

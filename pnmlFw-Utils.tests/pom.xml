@@ -25,11 +25,6 @@
 			<artifactId>testng</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 
 	<build>

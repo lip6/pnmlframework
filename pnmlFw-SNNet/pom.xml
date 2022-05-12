@@ -21,17 +21,6 @@
 	</description>
 
 	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
-			<version>${project.version}</version>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 	
 </project>

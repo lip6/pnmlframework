@@ -18,10 +18,6 @@
 	</description>
 
 	<dependencies>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-		</dependency>
 	</dependencies>
 
 </project>

@@ -38,8 +38,11 @@ import javax.xml.namespace.QName;
 
 import org.apache.axiom.om.OMAttribute;
 import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.OMFactory;
+import org.apache.axiom.om.OMMetaFactory;
 import org.apache.axiom.om.OMXMLBuilderFactory;
 import org.apache.axiom.om.OMXMLParserWrapper;
+import org.apache.axiom.om.util.StAXParserConfiguration;
 import org.xml.sax.InputSource;
 
 import com.thaiopensource.validate.ValidationDriver;
@@ -382,7 +385,7 @@ public class PnmlImport extends AbstractPnmlImportExport { // NOPMD by ggiffo
         try (
         	InputStream in = new BufferedInputStream(new FileInputStream(path));
         	) {
-        	//create the builder
+			//create the builder
         	OMXMLParserWrapper builder = OMXMLBuilderFactory.createOMBuilder(in);
         	//get the root element
         	document = builder.getDocumentElement();

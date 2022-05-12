@@ -20,23 +20,25 @@
 
 
 	<build>
-		<resources>
-			<resource>
-				<directory>${basedir}</directory>
-				<targetPath>.</targetPath>
-				<includes>
-					<include>**/*.txt</include>
-					<include>**/*.html</include>
-					<include>**/*.properties</include>
-					<include>**/*.xml</include>
-					<include>**/*.map</include>
-					<include>**/*.inf</include>
-					<include>**/*.default</include>
-					<include>**/mailcap</include>
-					<include>**/services</include>
-				</includes>
-			</resource>
-		</resources>
+	<plugins>
+<!--         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.3.0</version>
+            <executions>
+                <execution>
+                    <id>copy-dependencies</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>copy-dependencies</goal>
+                    </goals>
+                    <configuration>
+                        <includeScope>runtime</includeScope>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>-->
+    </plugins>
 	
 	</build>
 

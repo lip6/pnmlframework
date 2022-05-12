@@ -23,7 +23,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
-import javax.activation.MimetypesFileTypeMap;
 
 import fr.lip6.move.pnml.framework.general.PNType;
 import fr.lip6.move.pnml.framework.general.PnmlImport;
@@ -192,13 +191,7 @@ public class CheckPnmlFileImpl implements CheckPnmlFile {
 				throw new InvalidFileException("Cannot read file " + pFile.getName(), new Throwable("Cannot read file "
 						+ pFile.getName()));
 			}
-			final MimetypesFileTypeMap ftm = new MimetypesFileTypeMap();
-			ftm.addMimeTypes("text/xml xml pnml XML PNML");
-			final String contentType = ftm.getContentType(pFile);
-			if (!contentType.contains("text/xml")) {
-				throw new InvalidFileTypeException(pFile.getName() + " is not an XML file: " + contentType,
-						new Throwable(pFile.getName() + " is not an XML file: " + contentType));
-			}
+
 			importPnmlFile(pFile);
 			setUpStats();
 			if (ptDocStat != null) {

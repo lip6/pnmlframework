@@ -12,9 +12,9 @@ Export-Package: fr.lip6.move.pnml.framework.general;
  fr.lip6.move.pnml.framework.utils;uses:="org.eclipse.emf.ecore,fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.framework.general",
  fr.lip6.move.pnml.framework.utils.exception,
  fr.lip6.move.pnml.framework.utils.validation;uses:="org.xml.sax"
-Require-Bundle: fr.lip6.pnml.framework.3rdpartimports,
- org.eclipse.emf.ecore, 
- javax.activation;bundle-version="1.2.2"
+Require-Bundle: org.eclipse.emf.ecore,
+ org.apache.ws.commons.axiom.axiom-api,
+ wrapped.com.thaiopensource.jing;bundle-version="20091111.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Eclipse-BuddyPolicy: registered

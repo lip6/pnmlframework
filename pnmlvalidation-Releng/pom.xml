@@ -20,7 +20,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.17-SNAPSHOT</thirdparty.version>
 		<pnml.version>2.2.17-SNAPSHOT</pnml.version>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
@@ -158,11 +157,6 @@
 				<groupId>fr.lip6.pnml</groupId>
 				<artifactId>fr.lip6.pnml.framework.pthlpng</artifactId>
 				<version>${pnml.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>fr.lip6.pnml</groupId>
-				<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-				<version>${thirdparty.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>args4j</groupId>
