@@ -12,7 +12,7 @@
 	<name>PNML Framework Models for Low Level API Generation</name>
 
 	<properties>
-		<coremodel.plugin.dir>../pnmlFw-CoreModel</coremodel.plugin.dir>
+		<coremodel.plugin.dir>../fr.lip6.pnml.framework.coremodel</coremodel.plugin.dir>
 	</properties>
 
 	<build>

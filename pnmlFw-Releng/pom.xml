@@ -513,14 +513,14 @@
 			<id>all</id>
 			<modules>
 				<module>../fr.lip6.pnml.target</module>
-				<module>../pnmlFw-Utils</module>
-				<module>../pnmlFw-Utils.tests</module>
+				<module>../fr.lip6.pnml.framework.utils</module>
+				<module>../fr.lip6.pnml.framework.utils.tests</module>
 
-				<module>../pnmlFw-CoreModel</module>
-				<module>../pnmlFw-PTNet</module>
-				<module>../pnmlFw-SNNet</module>
-				<module>../pnmlFw-HLPN</module>
-				<module>../pnmlFw-PT-HLPNG</module>
+				<module>../fr.lip6.pnml.framework.coremodel</module>
+				<module>../fr.lip6.pnml.framework.ptnet</module>
+				<module>../fr.lip6.pnml.framework.symmetricnet</module>
+				<module>../fr.lip6.pnml.framework.hlpn</module>
+				<module>../fr.lip6.pnml.framework.pthlpng</module>
 				<module>../fr.lip6.pnml.nupntoolInfo</module>
 
 				<module>../pnmlFwFeature-Utils</module>
@@ -538,12 +538,12 @@
 		<profile>
 			<id>ossrh-release</id>
 			<modules>
-				<module>../pnmlFw-Utils</module>
-				<module>../pnmlFw-CoreModel</module>
-				<module>../pnmlFw-PTNet</module>
-				<module>../pnmlFw-SNNet</module>
-				<module>../pnmlFw-HLPN</module>
-				<module>../pnmlFw-PT-HLPNG</module>
+				<module>../fr.lip6.pnml.framework.utils</module>
+				<module>../fr.lip6.pnml.framework.coremodel</module>
+				<module>../fr.lip6.pnml.framework.ptnet</module>
+				<module>../fr.lip6.pnml.framework.symmetricnet</module>
+				<module>../fr.lip6.pnml.framework.hlpn</module>
+				<module>../fr.lip6.pnml.framework.pthlpng</module>
 				<module>../fr.lip6.pnml.nupntoolInfo</module>
 			</modules>			
 			<build>
