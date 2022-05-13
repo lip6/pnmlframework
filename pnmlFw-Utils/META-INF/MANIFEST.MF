@@ -14,7 +14,8 @@ Export-Package: fr.lip6.move.pnml.framework.general;
  fr.lip6.move.pnml.framework.utils.validation;uses:="org.xml.sax"
 Require-Bundle: org.eclipse.emf.ecore,
  org.apache.ws.commons.axiom.axiom-api,
- wrapped.com.thaiopensource.jing;bundle-version="20091111.0.0"
+ wrapped.com.thaiopensource.jing;bundle-version="20091111.0.0",
+ org.apache.ws.commons.axiom.axiom-impl
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Eclipse-BuddyPolicy: registered
