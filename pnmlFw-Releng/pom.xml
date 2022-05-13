@@ -524,23 +524,15 @@
 				<module>../fr.lip6.pnml.nupntoolInfo</module>
 
 				<module>../pnmlFwFeature-Utils</module>
-				<module>../pnmlFwFeature-Utils-Source</module>
 				<module>../pnmlFwFeature-CoreModel</module>
-				<module>../pnmlFwFeature-CoreModel-Source</module>
 				<module>../pnmlFwFeature-PTNet</module>
-				<module>../pnmlFwFeature-PTNet-Source</module>
 				<module>../pnmlFwFeature-SNNet</module>
-				<module>../pnmlFwFeature-SNNet-Source</module>
 				<module>../pnmlFwFeature-HLPN</module>
-				<module>../pnmlFwFeature-HLPN-Source</module>
 				<module>../pnmlFWFeature-PT-HLPNG</module>
-				<module>../pnmlFWFeature-PT-HLPNG-Source</module>
 				<module>../pnmlFwFeature-NUPN-ToolInfo</module>
-				<module>../pnmlFwFeature-NUPN-ToolInfo-Source</module>
 
 				<module>../pnmlFwFeature-All-In-One</module>
 				<module>../PnmlFramework_UpdateSite</module>
-				<!-- <module>../PnmlFramework_UpdateSite-Dev</module> -->
 			</modules>
 		</profile>
 		<profile>
