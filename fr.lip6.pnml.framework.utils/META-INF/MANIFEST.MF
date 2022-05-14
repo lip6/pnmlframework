@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PNML Framework Utils Library
+Bundle-SymbolicName: fr.lip6.pnml.framework.utils;singleton:=true
+Bundle-Version: 2.2.17.qualifier
+Export-Package: fr.lip6.move.pnml.framework.general;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.common.util,
+   org.xml.sax,
+   fr.lip6.move.pnml.framework.hlapi",
+ fr.lip6.move.pnml.framework.hlapi;uses:="org.apache.axiom.om,org.eclipse.emf.common.util,fr.lip6.move.pnml.framework.utils",
+ fr.lip6.move.pnml.framework.utils;uses:="org.eclipse.emf.ecore,fr.lip6.move.pnml.framework.hlapi,fr.lip6.move.pnml.framework.general",
+ fr.lip6.move.pnml.framework.utils.exception,
+ fr.lip6.move.pnml.framework.utils.validation;uses:="org.xml.sax"
+Require-Bundle: org.eclipse.emf.ecore,
+ org.apache.ws.commons.axiom.axiom-api,
+ wrapped.com.thaiopensource.jing;bundle-version="20091111.0.0",
+ org.apache.ws.commons.axiom.axiom-impl
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
+Bundle-ClassPath: .

@@ -39,7 +39,7 @@ Require-Bundle: <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtim
  <%=pluginID%><%if (!pluginID.startsWith("org.eclipse.core.runtime")){%>;visibility:=reexport<%}}%>,
 <%}%>
  fr.lip6.pnml.framework.utils,
- fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.16"
+ fr.lip6.pnml.framework.3rdpartimports;bundle-version="2.2.17.qualifier"
 <%if (genModel.getRuntimeVersion() == GenRuntimeVersion.EMF22 || genModel.getRuntimeVersion() == GenRuntimeVersion.EMF23) {%>
 Eclipse-LazyStart: true
 <%}%>

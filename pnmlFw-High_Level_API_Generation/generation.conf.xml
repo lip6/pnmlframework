@@ -5,7 +5,7 @@
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/Core/pnmlcoremodel.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-CoreModel/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/fr.lip6.pnml.framework.coremodel/src
 		</outsrcfolder>
 		<outtestfolder>
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
@@ -18,7 +18,7 @@
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/place-transition/placeTransition.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-PTNet/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/fr.lip6.pnml.framework.ptnet/src
 		</outsrcfolder>
 		<outtestfolder>
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
@@ -31,7 +31,7 @@
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/symmetric-net/symmetricnet.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-SNNet/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/fr.lip6.pnml.framework.symmetricnet/src
 		</outsrcfolder>
 		<outtestfolder>
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
@@ -46,7 +46,7 @@
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/high-level-net/hlpn.genmodel
 		</genmodel>
 		<outsrcfolder>
-			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-HLPN/src
+			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/fr.lip6.pnml.framework.hlpn/src
 		</outsrcfolder>
 		<outtestfolder>
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test
@@ -59,7 +59,7 @@
 		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Low_Level_API_Generation/model/pthlpng/pthlpng.genmodel
 		</genmodel>
 		<outsrcfolder>
-		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-PT-HLPNG/src
+		/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/fr.lip6.pnml.framework.pthlpng/src
 		</outsrcfolder>
 		<outtestfolder>
 			/Users/lom/Eclipses/eclipse-projets/workspace/pnmlframework/pnmlFw-Tests/test

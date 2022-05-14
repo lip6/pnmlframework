@@ -2,7 +2,7 @@
 <feature
       id="fr.lip6.pnml.nupn.toolinfo.feature"
       label="PNML Framework NUPN ToolInfo Helper"
-      version="2.2.16"
+      version="2.2.17.qualifier"
       provider-name="Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)"
       plugin="fr.lip6.pnml.nupn.toolinfo">
 
@@ -25,6 +25,10 @@ http://www.eclipse.org/legal/epl-v10.html
       The following licenses and user agreement apply :
 - Eclipse Foundation Software User Agreement
    </license>
+
+   <requires>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+   </requires>
 
    <plugin
          id="fr.lip6.pnml.nupn.toolinfo"

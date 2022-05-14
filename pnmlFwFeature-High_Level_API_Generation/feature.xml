@@ -16,14 +16,6 @@
       [Enter License Description here.]
    </license>
 
-   <requires>
-      <import plugin="org.eclipse.emf"/>
-      <import plugin="org.eclipse.emf.codegen"/>
-      <import plugin="org.eclipse.emf.codegen.ecore"/>
-      <import plugin="org.eclipse.emf.ecore.xmi"/>
-      <import plugin="fr.lip6.pnml.framework.utils"/>
-   </requires>
-
    <plugin
          id="fr.lip6.pnml.framework.apigen"
          download-size="0"

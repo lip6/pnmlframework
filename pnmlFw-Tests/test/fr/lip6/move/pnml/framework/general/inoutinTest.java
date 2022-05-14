@@ -14,7 +14,8 @@ import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
 import org.apache.axiom.om.OMElement;
-import org.apache.axiom.om.impl.builder.StAXOMBuilder;
+import org.apache.axiom.om.OMXMLBuilderFactory;
+import org.apache.axiom.om.OMXMLParserWrapper;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -176,7 +177,11 @@ public class inoutinTest {
         FileReader fr = new FileReader(imported);
         XMLStreamReader parser = null;
         parser = XMLInputFactory.newInstance().createXMLStreamReader(fr);
-        return new StAXOMBuilder(parser).getDocumentElement();
+        //create the builder
+    	OMXMLParserWrapper builder = OMXMLBuilderFactory.createStAXOMBuilder(parser);
+    	//get the root element
+    	OMElement document = builder.getDocumentElement();
+    	return document;
     }
 
     @SuppressWarnings("unchecked")

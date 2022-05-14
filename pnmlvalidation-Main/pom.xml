@@ -24,48 +24,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.emf</groupId>
-			<artifactId>org.eclipse.emf.ecore</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.emf</groupId>
-			<artifactId>org.eclipse.emf.common</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.utils</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.coremodel</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.ptnet</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.symmetricnet</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.hlpn</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.pthlpng</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>fr.lip6.pnml</groupId>
-			<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>args4j</groupId>
 			<artifactId>args4j</artifactId>
 		</dependency>
-		<!-- <dependency> <groupId>com.phloc</groupId> <artifactId>phloc-schematron</artifactId> 
-			</dependency> <dependency> <groupId>com.ximpleware</groupId> <artifactId>vtd-xml</artifactId> 
-			</dependency> -->
 	</dependencies>
 
 	<build>

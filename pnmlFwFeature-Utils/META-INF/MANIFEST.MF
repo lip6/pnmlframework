@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: PNML Framework Utils
-Bundle-SymbolicName: fr.lip6.move.pnml.framework.utils.feature; singleton:=true
-Bundle-Version: 2.2.16
-Bundle-Vendor: Sorbonne Universités, Univ. Paris 06, CNRS UMR 7606 (LIP6)

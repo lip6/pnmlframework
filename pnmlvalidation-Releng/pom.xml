@@ -20,8 +20,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<thirdparty.version>2.2.16</thirdparty.version>
-		<pnml.version>2.2.16</pnml.version>
+		<pnml.version>2.2.17-SNAPSHOT</pnml.version>
 		<manifestdir>META-INF</manifestdir>
 	</properties>
 
@@ -160,11 +159,6 @@
 				<version>${pnml.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>fr.lip6.pnml</groupId>
-				<artifactId>fr.lip6.pnml.framework.3rdpartimports</artifactId>
-				<version>${thirdparty.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
 				<version>2.0.29</version>
@@ -187,8 +181,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>11</source>
+					<target>11</target>
 				</configuration>
 			</plugin>
 			<plugin>

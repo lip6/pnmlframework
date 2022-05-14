@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="(C) Sorbonne Universités, UPMC Univ Paris 06, UMR CNRS 7606 (LIP6)&#xD;All rights reserved.   This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html&#xA; &#xA; Contributors: &#xA;   Lom HILLAH (LIP6) - Initial models and implementation&#xD;   Rachid Alahyane (UPMC) - Infrastructure and continuous integration&#xD;   Bastien Bouzerau (UPMC) - Architecture &#xD;   Guillaume Giffo (UPMC) - Code generation refactoring, High-level API"
-    modelDirectory="/pnmlFw-PT-HLPNG/src" editDirectory="/pnmlFw-PT-HLPNG.edit/src"
-    editorDirectory="/pnmlFw-PT-HLPNG.editor/src" modelPluginID="fr.lip6.pnml.framework.pthlpng"
+    modelDirectory="/fr.lip6.pnml.framework.pthlpng/src" editDirectory="/fr.lip6.pnml.framework.pthlpng.edit/src"
+    editorDirectory="/fr.lip6.pnml.framework.pthlpng.editor/src" modelPluginID="fr.lip6.pnml.framework.pthlpng"
     templateDirectory="/pnmlFw-Low_Level_API_Generation/templates-2.2.0" dynamicTemplates="true"
     redirection="" forceOverwrite="true" modelName="PNML Framework PT Nets in High-level Notation"
     editPluginClass="fr.lip6.move.pnml.framework.pthlpng.provider.PthlpngEditPlugin"
