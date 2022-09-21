@@ -20,17 +20,15 @@
  */
 package fr.lip6.nupn.impl;
 
-import fr.lip6.nupn.NupnPackage;
-import fr.lip6.nupn.SizeType;
-
 import java.math.BigInteger;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import fr.lip6.nupn.NupnPackage;
+import fr.lip6.nupn.SizeType;
 
 /**
  * <!-- begin-user-doc -->

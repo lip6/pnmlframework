@@ -38,11 +38,8 @@ import javax.xml.namespace.QName;
 
 import org.apache.axiom.om.OMAttribute;
 import org.apache.axiom.om.OMElement;
-import org.apache.axiom.om.OMFactory;
-import org.apache.axiom.om.OMMetaFactory;
 import org.apache.axiom.om.OMXMLBuilderFactory;
 import org.apache.axiom.om.OMXMLParserWrapper;
-import org.apache.axiom.om.util.StAXParserConfiguration;
 import org.xml.sax.InputSource;
 
 import com.thaiopensource.validate.ValidationDriver;

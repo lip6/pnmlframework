@@ -33,43 +33,7 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.hlapi;
 
-import fr.lip6.move.pnml.pnmlcoremodel.AnnotationGraphics;
-import fr.lip6.move.pnml.pnmlcoremodel.AnyObject;
-import fr.lip6.move.pnml.pnmlcoremodel.Label;
-import fr.lip6.move.pnml.pnmlcoremodel.Name;
-import fr.lip6.move.pnml.pnmlcoremodel.NodeGraphics;
-import fr.lip6.move.pnml.pnmlcoremodel.PNType;
-import fr.lip6.move.pnml.pnmlcoremodel.Page;
-import fr.lip6.move.pnml.pnmlcoremodel.PetriNet;
-import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
-import fr.lip6.move.pnml.pnmlcoremodel.PnObject;
-import fr.lip6.move.pnml.pnmlcoremodel.ToolInfo;
-
-import fr.lip6.move.pnml.pnmlcoremodel.impl.PnmlcoremodelFactoryImpl;
-
-import java.net.URI;
-
-import java.util.List;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.pnmlcoremodel.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.pnmlcoremodel.*;
-import fr.lip6.move.pnml.pnmlcoremodel.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
 
 public interface GraphicsHLAPI extends HLAPIClass{
 

@@ -23,7 +23,6 @@ package fr.lip6.nupn;
 import java.math.BigInteger;
 
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**

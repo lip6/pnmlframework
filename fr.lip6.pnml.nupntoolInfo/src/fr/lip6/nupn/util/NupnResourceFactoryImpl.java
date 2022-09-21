@@ -20,22 +20,16 @@
  */
 package fr.lip6.nupn.util;
 
-import fr.lip6.nupn.NupnPackage;
-
 import org.eclipse.emf.common.util.URI;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
-
 import org.eclipse.emf.ecore.resource.Resource;
-
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
-
 import org.eclipse.emf.ecore.util.BasicExtendedMetaData;
 import org.eclipse.emf.ecore.util.ExtendedMetaData;
-
 import org.eclipse.emf.ecore.xmi.XMLResource;
+
+import fr.lip6.nupn.NupnPackage;
 
 /**
  * <!-- begin-user-doc -->

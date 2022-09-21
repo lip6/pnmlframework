@@ -32,7 +32,7 @@
  * $Id ggiffo, Wed Feb 10 14:59:10 CET 2016$
  */
 package fr.lip6.move.pnml.pnmlcoremodel.hlapi;
-import  fr.lip6.move.pnml.pnmlcoremodel.*;
+import fr.lip6.move.pnml.pnmlcoremodel.CSS2FontFamily;
 public enum CSS2FontFamilyHLAPI{
 	VERDANA("verdana"),
 	ARIAL("arial"),

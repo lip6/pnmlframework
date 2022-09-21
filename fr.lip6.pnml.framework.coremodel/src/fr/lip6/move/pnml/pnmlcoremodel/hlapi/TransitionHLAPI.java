@@ -33,70 +33,29 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.hlapi;
 
-import fr.lip6.move.pnml.pnmlcoremodel.Annotation;
-import fr.lip6.move.pnml.pnmlcoremodel.AnnotationGraphics;
-import fr.lip6.move.pnml.pnmlcoremodel.AnyObject;
+import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.axiom.om.*;
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
+import fr.lip6.move.pnml.framework.utils.IdRefLinker;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
 import fr.lip6.move.pnml.pnmlcoremodel.Arc;
-import fr.lip6.move.pnml.pnmlcoremodel.ArcGraphics;
-import fr.lip6.move.pnml.pnmlcoremodel.CSS2Color;
-import fr.lip6.move.pnml.pnmlcoremodel.CSS2FontFamily;
-import fr.lip6.move.pnml.pnmlcoremodel.CSS2FontSize;
-import fr.lip6.move.pnml.pnmlcoremodel.CSS2FontStyle;
-import fr.lip6.move.pnml.pnmlcoremodel.CSS2FontWeight;
-import fr.lip6.move.pnml.pnmlcoremodel.Dimension;
-import fr.lip6.move.pnml.pnmlcoremodel.Fill;
-import fr.lip6.move.pnml.pnmlcoremodel.Font;
-import fr.lip6.move.pnml.pnmlcoremodel.FontAlign;
-import fr.lip6.move.pnml.pnmlcoremodel.FontDecoration;
-import fr.lip6.move.pnml.pnmlcoremodel.Gradient;
-import fr.lip6.move.pnml.pnmlcoremodel.Label;
-import fr.lip6.move.pnml.pnmlcoremodel.Line;
-import fr.lip6.move.pnml.pnmlcoremodel.LineShape;
-import fr.lip6.move.pnml.pnmlcoremodel.LineStyle;
 import fr.lip6.move.pnml.pnmlcoremodel.Name;
-import fr.lip6.move.pnml.pnmlcoremodel.Node;
 import fr.lip6.move.pnml.pnmlcoremodel.NodeGraphics;
-import fr.lip6.move.pnml.pnmlcoremodel.Offset;
-import fr.lip6.move.pnml.pnmlcoremodel.PNType;
 import fr.lip6.move.pnml.pnmlcoremodel.Page;
-import fr.lip6.move.pnml.pnmlcoremodel.PetriNet;
-import fr.lip6.move.pnml.pnmlcoremodel.PetriNetDoc;
-import fr.lip6.move.pnml.pnmlcoremodel.Place;
-import fr.lip6.move.pnml.pnmlcoremodel.PnObject;
-import fr.lip6.move.pnml.pnmlcoremodel.Position;
-import fr.lip6.move.pnml.pnmlcoremodel.RefPlace;
+import fr.lip6.move.pnml.pnmlcoremodel.PnmlcoremodelFactory;
 import fr.lip6.move.pnml.pnmlcoremodel.RefTransition;
 import fr.lip6.move.pnml.pnmlcoremodel.ToolInfo;
 import fr.lip6.move.pnml.pnmlcoremodel.Transition;
-import fr.lip6.move.pnml.pnmlcoremodel.TransitionNode;
-
 import fr.lip6.move.pnml.pnmlcoremodel.impl.PnmlcoremodelFactoryImpl;
-
-import java.math.BigDecimal;
-
-import java.net.URI;
-
-import java.util.List;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.pnmlcoremodel.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-import java.nio.charset.Charset;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.pnmlcoremodel.*;
-import fr.lip6.move.pnml.pnmlcoremodel.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.exception.OtherException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
 
 
 public class TransitionHLAPI implements HLAPIClass,PnObjectHLAPI,NodeHLAPI,TransitionNodeHLAPI{

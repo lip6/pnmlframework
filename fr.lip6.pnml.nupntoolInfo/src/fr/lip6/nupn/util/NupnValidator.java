@@ -20,22 +20,22 @@
  */
 package fr.lip6.nupn.util;
 
-import fr.lip6.nupn.*;
-
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
-
 import org.eclipse.emf.ecore.xml.type.util.XMLTypeValidator;
+
+import fr.lip6.nupn.NUPNToolspecificType;
+import fr.lip6.nupn.NupnPackage;
+import fr.lip6.nupn.SizeType;
+import fr.lip6.nupn.StructureType;
+import fr.lip6.nupn.UnitType;
 
 /**
  * <!-- begin-user-doc -->

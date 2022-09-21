@@ -20,17 +20,14 @@
  */
 package fr.lip6.nupn.util;
 
-import fr.lip6.nupn.NupnPackage;
-
 import java.util.Map;
 
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EPackageRegistryImpl;
-
 import org.eclipse.emf.ecore.resource.Resource;
-
 import org.eclipse.emf.ecore.xmi.util.XMLProcessor;
+
+import fr.lip6.nupn.NupnPackage;
 
 /**
  * This class contains helper methods to serialize and deserialize XML documents

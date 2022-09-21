@@ -20,8 +20,6 @@
  */
 package fr.lip6.nupn.impl;
 
-import fr.lip6.nupn.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,13 +27,17 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.eclipse.emf.ecore.xml.type.XMLTypeFactory;
 import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
+
+import fr.lip6.nupn.NUPNToolspecificType;
+import fr.lip6.nupn.NupnFactory;
+import fr.lip6.nupn.NupnPackage;
+import fr.lip6.nupn.SizeType;
+import fr.lip6.nupn.StructureType;
+import fr.lip6.nupn.UnitType;
 
 /**
  * <!-- begin-user-doc -->

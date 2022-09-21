@@ -20,31 +20,27 @@
  */
 package fr.lip6.nupn.impl;
 
-import fr.lip6.nupn.NUPNToolspecificType;
-import fr.lip6.nupn.NupnPackage;
-import fr.lip6.nupn.SizeType;
-import fr.lip6.nupn.StructureType;
-
 import java.math.BigDecimal;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EMap;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.InternalEObject;
-
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
 import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.EcoreEMap;
 import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
+
+import fr.lip6.nupn.NUPNToolspecificType;
+import fr.lip6.nupn.NupnPackage;
+import fr.lip6.nupn.SizeType;
+import fr.lip6.nupn.StructureType;
 
 /**
  * <!-- begin-user-doc -->

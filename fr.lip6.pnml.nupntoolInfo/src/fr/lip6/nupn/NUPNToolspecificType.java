@@ -23,9 +23,7 @@ package fr.lip6.nupn;
 import java.math.BigDecimal;
 
 import org.eclipse.emf.common.util.EMap;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.emf.ecore.util.FeatureMap;
 
 /**

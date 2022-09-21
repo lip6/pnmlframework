@@ -24,9 +24,19 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.tools;
 
-import fr.lip6.move.pnml.pnmlcoremodel.hlapi.*;
-import fr.lip6.move.pnml.framework.utils.*;
-import fr.lip6.move.pnml.framework.utils.exception.*;
+import fr.lip6.move.pnml.framework.utils.IdRepository;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceNodeHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.RefPlaceHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.RefTransitionHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionNodeHLAPI;
 
 public class Tools {
 	 /**

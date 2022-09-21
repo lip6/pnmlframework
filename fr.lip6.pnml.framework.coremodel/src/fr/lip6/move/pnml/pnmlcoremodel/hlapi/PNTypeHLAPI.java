@@ -32,7 +32,7 @@
  * $Id ggiffo, Wed Feb 10 14:59:10 CET 2016$
  */
 package fr.lip6.move.pnml.pnmlcoremodel.hlapi;
-import  fr.lip6.move.pnml.pnmlcoremodel.*;
+import fr.lip6.move.pnml.pnmlcoremodel.PNType;
 public enum PNTypeHLAPI{
 	COREMODEL("http://www.pnml.org/version-2009/grammar/pnmlcoremodel"),
 	PTNET("http://www.pnml.org/version-2009/grammar/ptnet"),
