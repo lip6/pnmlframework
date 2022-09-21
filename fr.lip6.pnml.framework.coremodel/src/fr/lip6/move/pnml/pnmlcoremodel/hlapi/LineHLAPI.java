@@ -35,7 +35,7 @@ package fr.lip6.move.pnml.pnmlcoremodel.hlapi;
 
 import java.nio.channels.FileChannel;
 
-import org.apache.axiom.om.*;
+import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;

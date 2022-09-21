@@ -23,7 +23,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
-
 import fr.lip6.move.pnml.framework.general.PNType;
 import fr.lip6.move.pnml.framework.general.PnmlImport;
 import fr.lip6.move.pnml.framework.hlapi.HLAPIRootClass;

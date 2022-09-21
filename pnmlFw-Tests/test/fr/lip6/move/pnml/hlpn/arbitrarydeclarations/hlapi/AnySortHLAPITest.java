@@ -15,71 +15,30 @@
  */
 package fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi;
 
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitraryOperator;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.Unparsed;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.hlcorestructure.AnyObject;
-import fr.lip6.move.pnml.hlpn.hlcorestructure.Type;
-
-import fr.lip6.move.pnml.hlpn.hlcorestructure.impl.HlcorestructureFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.lists.EmptyList;
-import fr.lip6.move.pnml.hlpn.lists.HLPNList;
-import fr.lip6.move.pnml.hlpn.lists.MakeList;
-
-import fr.lip6.move.pnml.hlpn.lists.impl.ListsFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.multisets.All;
-import fr.lip6.move.pnml.hlpn.multisets.Empty;
-
-import fr.lip6.move.pnml.hlpn.multisets.impl.MultisetsFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.partitions.Partition;
-
-import fr.lip6.move.pnml.hlpn.partitions.impl.PartitionsFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.terms.Declarations;
-import fr.lip6.move.pnml.hlpn.terms.MultisetSort;
-import fr.lip6.move.pnml.hlpn.terms.NamedSort;
-import fr.lip6.move.pnml.hlpn.terms.ProductSort;
-import fr.lip6.move.pnml.hlpn.terms.VariableDecl;
-
-import fr.lip6.move.pnml.hlpn.terms.impl.TermsFactoryImpl;
-
-import java.util.List;
-
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.booleans.hlapi.*;
-import fr.lip6.move.pnml.hlpn.cyclicEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.dots.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi.*;
-import fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.hlpn.integers.hlapi.*;
-import fr.lip6.move.pnml.hlpn.lists.hlapi.*;
-import fr.lip6.move.pnml.hlpn.multisets.hlapi.*;
-import fr.lip6.move.pnml.hlpn.partitions.hlapi.*;
-import fr.lip6.move.pnml.hlpn.strings.hlapi.*;
-import fr.lip6.move.pnml.hlpn.terms.hlapi.*;
-
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
-import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
-import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.AnyObjectHLAPI;
+import fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.TypeHLAPI;
+import fr.lip6.move.pnml.hlpn.hlcorestructure.impl.HlcorestructureFactoryImpl;
+import fr.lip6.move.pnml.hlpn.lists.hlapi.EmptyListHLAPI;
+import fr.lip6.move.pnml.hlpn.lists.hlapi.HLPNListHLAPI;
+import fr.lip6.move.pnml.hlpn.lists.hlapi.MakeListHLAPI;
+import fr.lip6.move.pnml.hlpn.lists.impl.ListsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.multisets.hlapi.AllHLAPI;
+import fr.lip6.move.pnml.hlpn.multisets.hlapi.EmptyHLAPI;
+import fr.lip6.move.pnml.hlpn.multisets.impl.MultisetsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.partitions.hlapi.PartitionHLAPI;
+import fr.lip6.move.pnml.hlpn.partitions.impl.PartitionsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.MultisetSortHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.NamedSortHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.ProductSortHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.VariableDeclHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.impl.TermsFactoryImpl;
 public class AnySortHLAPITest {
 
 	

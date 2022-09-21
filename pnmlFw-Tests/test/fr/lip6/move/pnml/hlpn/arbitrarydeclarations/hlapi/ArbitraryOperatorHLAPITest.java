@@ -15,46 +15,19 @@
  */
 package fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi;
 
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.AnySort;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitraryOperator;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitrarySort;
-
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
-
-import fr.lip6.move.pnml.hlpn.terms.Declarations;
-
-import fr.lip6.move.pnml.hlpn.terms.impl.TermsFactoryImpl;
-
 import java.util.List;
 
-import  fr.lip6.move.pnml.framework.hlapi.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.booleans.hlapi.*;
-import fr.lip6.move.pnml.hlpn.cyclicEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.dots.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteEnumerations.hlapi.*;
-import fr.lip6.move.pnml.hlpn.finiteIntRanges.hlapi.*;
-import fr.lip6.move.pnml.hlpn.hlcorestructure.hlapi.*;
-import fr.lip6.move.pnml.hlpn.integers.hlapi.*;
-import fr.lip6.move.pnml.hlpn.lists.hlapi.*;
-import fr.lip6.move.pnml.hlpn.multisets.hlapi.*;
-import fr.lip6.move.pnml.hlpn.partitions.hlapi.*;
-import fr.lip6.move.pnml.hlpn.strings.hlapi.*;
-import fr.lip6.move.pnml.hlpn.terms.hlapi.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.axiom.om.*;
-import fr.lip6.move.pnml.framework.utils.IdRefLinker;
-import org.eclipse.emf.common.util.DiagnosticChain;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.*;
-import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.*;
-import fr.lip6.move.pnml.framework.utils.exception.InnerBuildException;
+import fr.lip6.move.pnml.framework.utils.ModelRepository;
 import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
 import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
-import fr.lip6.move.pnml.framework.utils.IdRepository;
-import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.ArbitraryOperator;
+import fr.lip6.move.pnml.hlpn.arbitrarydeclarations.impl.ArbitrarydeclarationsFactoryImpl;
+import fr.lip6.move.pnml.hlpn.terms.hlapi.DeclarationsHLAPI;
+import fr.lip6.move.pnml.hlpn.terms.impl.TermsFactoryImpl;
 public class ArbitraryOperatorHLAPITest {
 
 	

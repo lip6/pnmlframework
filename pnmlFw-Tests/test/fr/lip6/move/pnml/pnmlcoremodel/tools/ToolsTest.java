@@ -7,11 +7,20 @@
  */
 package fr.lip6.move.pnml.pnmlcoremodel.tools;
 
-import fr.lip6.move.pnml.pnmlcoremodel.hlapi.*;
-import fr.lip6.move.pnml.pnmlcoremodel.tools.*;
-import fr.lip6.move.pnml.framework.utils.exception.*;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 import fr.lip6.move.pnml.framework.utils.ModelRepository;
-import org.testng.annotations.*;
+import fr.lip6.move.pnml.framework.utils.exception.InvalidIDException;
+import fr.lip6.move.pnml.framework.utils.exception.OtherException;
+import fr.lip6.move.pnml.framework.utils.exception.VoidRepositoryException;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PageHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetDocHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PetriNetHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.PlaceHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.RefPlaceHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.RefTransitionHLAPI;
+import fr.lip6.move.pnml.pnmlcoremodel.hlapi.TransitionHLAPI;
 
 public class ToolsTest {
 

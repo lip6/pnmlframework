@@ -37,7 +37,7 @@ import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.axiom.om.*;
+import org.apache.axiom.om.OMElement;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
 import fr.lip6.move.pnml.framework.hlapi.HLAPIClass;
