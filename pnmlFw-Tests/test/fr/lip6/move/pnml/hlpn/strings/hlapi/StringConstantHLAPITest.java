@@ -248,7 +248,7 @@ public class StringConstantHLAPITest {
 				
 			
 		
-			itemvalue = new String("unid");
+			itemvalue = "unid";
 			
 
 	

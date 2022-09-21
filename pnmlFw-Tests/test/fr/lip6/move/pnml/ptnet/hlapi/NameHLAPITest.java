@@ -80,7 +80,7 @@ public class NameHLAPITest {
 			itemannotationgraphics = new AnnotationGraphicsHLAPI(new PtnetFactoryImpl().createAnnotationGraphics());
 			
 		
-			itemtext = new String("unid");
+			itemtext = "unid";
 			
 
 	

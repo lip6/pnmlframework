@@ -429,7 +429,7 @@ public class PartitionImpl extends SortDeclImpl implements Partition {
 
 		if (locRoot.getAttributeValue(new QName("name")) != null) {
 			try {
-				this.setName(new String(locRoot.getAttributeValue(new QName("name"))));
+				this.setName(locRoot.getAttributeValue(new QName("name")));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}

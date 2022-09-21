@@ -158,7 +158,7 @@ public class HLAnnotationHLAPITest {
 			itemannotationgraphics = new AnnotationGraphicsHLAPI(new HlcorestructureFactoryImpl().createAnnotationGraphics());
 			
 		
-			itemtext = new String("unid");
+			itemtext = "unid";
 			
 			
 				

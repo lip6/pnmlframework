@@ -76,7 +76,7 @@ public class NameHLAPITest {
 			itemannotationgraphics = new AnnotationGraphicsHLAPI(new PnmlcoremodelFactoryImpl().createAnnotationGraphics());
 			
 		
-			itemtext = new String("unid");
+			itemtext = "unid";
 			
 
 	

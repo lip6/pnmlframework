@@ -182,7 +182,7 @@ public class ConditionHLAPITest {
 			itemannotationgraphics = new AnnotationGraphicsHLAPI(new HlcorestructureFactoryImpl().createAnnotationGraphics());
 			
 		
-			itemtext = new String("unid");
+			itemtext = "unid";
 			
 			
 				

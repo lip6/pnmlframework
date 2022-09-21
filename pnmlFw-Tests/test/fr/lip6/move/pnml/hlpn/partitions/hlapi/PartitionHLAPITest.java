@@ -218,9 +218,9 @@ public class PartitionHLAPITest {
 	ModelRepository mr = ModelRepository.getInstance();
 	mr.createDocumentWorkspace("void");
 	
-			itemid = new String("unid");
+			itemid = "unid";
 			
-			itemname = new String("unid");
+			itemname = "unid";
 			
 			
 				

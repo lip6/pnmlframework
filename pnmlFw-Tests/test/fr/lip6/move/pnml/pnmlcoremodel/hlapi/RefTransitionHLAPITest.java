@@ -103,7 +103,7 @@ public class RefTransitionHLAPITest {
 	ModelRepository mr = ModelRepository.getInstance();
 	mr.createDocumentWorkspace("void");
 	
-			itemid = new String("unid");
+			itemid = "unid";
 			
 			
 			//PnmlcoremodelFactoryImpl

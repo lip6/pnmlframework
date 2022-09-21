@@ -133,9 +133,9 @@ public class ToolInfoHLAPITest {
 	ModelRepository mr = ModelRepository.getInstance();
 	mr.createDocumentWorkspace("void");
 	
-			itemtool = new String("unid");
+			itemtool = "unid";
 			
-			itemversion = new String("unid");
+			itemversion = "unid";
 			
 			itemformattedXMLBuffer = new StringBuffer("0");
 			

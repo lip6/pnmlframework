@@ -811,7 +811,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 		if (locRoot.getAttributeValue(new QName("tool")) != null) {
 			try {
-				this.setTool(new String(locRoot.getAttributeValue(new QName("tool"))));
+				this.setTool(locRoot.getAttributeValue(new QName("tool")));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}
@@ -819,7 +819,7 @@ public class ToolInfoImpl extends MinimalEObjectImpl implements ToolInfo {
 
 		if (locRoot.getAttributeValue(new QName("version")) != null) {
 			try {
-				this.setVersion(new String(locRoot.getAttributeValue(new QName("version"))));
+				this.setVersion(locRoot.getAttributeValue(new QName("version")));
 			} catch (Exception e) {
 				throw new fr.lip6.move.pnml.framework.utils.exception.InnerBuildException(e);
 			}
