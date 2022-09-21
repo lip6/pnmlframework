@@ -403,7 +403,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");
@@ -718,7 +718,7 @@ public class TypeImpl extends HLCoreAnnotationImpl implements Type {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");

@@ -661,9 +661,9 @@ public class PetriNetImpl extends MinimalEObjectImpl implements PetriNet {
 		//processing id
 
 		if (locRoot.getAttributeValue(new QName("id")) != null) {
-			this.setId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))));
+			this.setId(locRoot.getAttributeValue(new QName("id")));
 			ModelRepository.getInstance().getCurrentIdRepository()
-					.checkId(new java.lang.String(locRoot.getAttributeValue(new QName("id"))).toString(), this);
+					.checkId(locRoot.getAttributeValue(new QName("id")).toString(), this);
 		}
 
 		//processing idref

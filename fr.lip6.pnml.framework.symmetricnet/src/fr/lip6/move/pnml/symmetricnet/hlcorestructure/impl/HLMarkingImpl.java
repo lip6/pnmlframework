@@ -402,7 +402,7 @@ public class HLMarkingImpl extends HLCoreAnnotationImpl implements HLMarking {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");
@@ -951,7 +951,7 @@ public class HLMarkingImpl extends HLCoreAnnotationImpl implements HLMarking {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");

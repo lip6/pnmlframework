@@ -405,7 +405,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");
@@ -497,7 +497,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			}//end if
 
 			if (type.getLocalName().equals("text")) {
-				this.setText(new java.lang.String(type.getText()));
+				this.setText(type.getText());
 			}
 
 			if (type.getLocalName().equals("structure")) {
@@ -1098,7 +1098,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");

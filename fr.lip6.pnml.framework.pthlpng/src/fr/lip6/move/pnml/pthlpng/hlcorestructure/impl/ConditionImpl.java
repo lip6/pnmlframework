@@ -402,7 +402,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");
@@ -798,7 +798,7 @@ public class ConditionImpl extends HLCoreAnnotationImpl implements Condition {
 			sb.append("<");
 			sb.append("text");
 			sb.append(">");
-			sb.append(getText().toString());
+			sb.append(getText());
 			sb.append("</");
 			sb.append("text");
 			sb.append(">");
