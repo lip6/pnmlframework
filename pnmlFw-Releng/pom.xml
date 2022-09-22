@@ -17,10 +17,10 @@
 		<pnml.release>2.2.17-SNAPSHOT</pnml.release>
 		<pnml.release.doc>2.2.17-SNAPSHOT</pnml.release.doc>
 		<pnml.snapshot>2.2.17-SNAPSHOT</pnml.snapshot>
-		<tycho.version>2.7.1</tycho.version>
-		<tycho-extras.version>2.7.1</tycho-extras.version>
-		<eclipse-repo.url>http://download.eclipse.org/releases/2022-03</eclipse-repo.url>
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20220302172233/repository/</orbit-site>		
+		<tycho.version>2.7.5</tycho.version>
+		<tycho-extras.version>2.7.5</tycho-extras.version>
+		<eclipse-repo.url>http://download.eclipse.org/releases/2022-09</eclipse-repo.url>
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20220830213456/repository/</orbit-site>		
 		<testng-repo.url>http://beust.com/eclipse</testng-repo.url>
 		<license-p2-repo>http://download.eclipse.org/cbi/updates/license/</license-p2-repo>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
