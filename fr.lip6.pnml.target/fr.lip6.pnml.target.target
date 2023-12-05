@@ -94,6 +94,16 @@
 				</dependency>
 			</dependencies>
 		</location>
+		<location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
+			<dependencies>
+				<dependency>
+					<groupId>org.apache.ws.commons.axiom</groupId>
+					<artifactId>axiom-dom</artifactId>
+					<version>1.3.0</version>
+					<type>jar</type>
+				</dependency>
+			</dependencies>
+		</location>
 		<location includeDependencyDepth="none" includeSource="true" missingManifest="generate" type="Maven">
 			<dependencies>
 				<dependency>
