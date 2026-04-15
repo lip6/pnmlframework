@@ -12,5 +12,5 @@ Require-Bundle: org.eclipse.emf,
  fr.lip6.pnml.framework.utils,
  org.apache.ws.commons.axiom.axiom-api;bundle-version="1.3.0"
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Bundle-Vendor: Sorbonne Universités, UPMC Univ. Paris 06, CNRS UMR 7606 (LIP6)

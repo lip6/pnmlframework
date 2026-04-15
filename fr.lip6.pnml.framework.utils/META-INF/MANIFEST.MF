@@ -19,7 +19,7 @@ Require-Bundle: org.eclipse.emf.ecore,
  org.apache.ws.commons.axiom.axiom-dom,
  org.apache.commons.logging
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Eclipse-BuddyPolicy: registered
 Bundle-Vendor: Sorbonne Universités, UPMC Univ Paris 06, CNRS UMR 7606 (LIP6)
 Bundle-ClassPath: .
