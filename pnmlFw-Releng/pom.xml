@@ -172,17 +172,8 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
-				<executionEnvironment>JavaSE-11</executionEnvironment>
+					<executionEnvironment>JavaSE-11</executionEnvironment>
 					<pomDependencies>consider</pomDependencies>
- 					<pomDependencies>wrapAsBundle</pomDependencies>
- 					<target>
-         				<artifact>
-				            <groupId>fr.lip6.pnml</groupId>
-            				<artifactId>fr.lip6.pnml.target</artifactId>
-            				<version>${pnml.release}</version>
-         				</artifact>
-      				</target>
-					
 					<environments>
 						<environment>
 							<os>linux</os>
@@ -513,7 +504,6 @@
 		<profile>
 			<id>all</id>
 			<modules>
-				<module>../fr.lip6.pnml.target</module>
 				<module>../fr.lip6.pnml.framework.utils</module>
 				<module>../fr.lip6.pnml.framework.utils.tests</module>
 
