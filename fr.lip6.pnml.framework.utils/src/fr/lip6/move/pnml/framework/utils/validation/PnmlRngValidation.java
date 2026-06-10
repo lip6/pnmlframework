@@ -19,6 +19,11 @@
 package fr.lip6.move.pnml.framework.utils.validation;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.util.logging.Logger;
 
 import org.xml.sax.InputSource;
@@ -35,6 +40,18 @@ import fr.lip6.move.pnml.framework.utils.exception.ValidationProcessException;
  *
  */
 public class PnmlRngValidation {
+
+    private static final String PNML_GRAMMAR_HTTP_PREFIX = "http://www.pnml.org/version-2009/grammar/";
+    private static final String PNML_GRAMMAR_HTTPS_PREFIX = "https://www.pnml.org/version-2009/grammar/";
+    private static final String LOCAL_GRAMMAR_RESOURCE_DIR = "/fr/lip6/move/pnml/framework/utils/validation/grammar/version-2009/grammar/";
+        private static final String[] LOCAL_GRAMMAR_FILES = {
+            "anyElement.rng", "arbitrarydeclarations.rng", "booleans.rng", "conventions.rng",
+            "cyclicenumerations.rng", "dots.rng", "finiteenumerations.rng", "finiteintranges.rng",
+            "highlevelnet.pntd", "hlcorestructure.rng", "integers.rng", "lists.rng", "multisets.rng",
+            "partitions.rng", "pnmlcoremodel.rng", "pnmlextensions.rng", "pt-hlpng.pntd", "ptnet.pntd",
+            "strings.rng", "symmetricnet.pntd", "terms.rng" };
+
+        private static Path extractedGrammarDir;
 
     /**
      * the logger.
@@ -85,8 +102,7 @@ public class PnmlRngValidation {
         boolean isValid = false;
 
         final ValidationDriver valdrive = new ValidationDriver();
-        InputSource schematIs = null;
-        schematIs = ValidationDriver.uriOrFileInputSource(schemafile);
+        InputSource schematIs = ValidationDriver.uriOrFileInputSource(resolveSchemaLocation(schemafile));
         boolean loadedShema;
         try {
             loadedShema = valdrive.loadSchema(schematIs);
@@ -112,6 +128,50 @@ public class PnmlRngValidation {
 
         return isValid && loadedShema;
 
+    }
+
+    private String resolveSchemaLocation(String schemafile) {
+        if (schemafile == null) {
+            return null;
+        }
+
+        if (schemafile.startsWith(PNML_GRAMMAR_HTTP_PREFIX)
+                || schemafile.startsWith(PNML_GRAMMAR_HTTPS_PREFIX)) {
+            final int slash = schemafile.lastIndexOf('/');
+            final String schemaName = slash >= 0 ? schemafile.substring(slash + 1) : schemafile;
+            final Path extractedSchema = extractLocalSchema(schemaName);
+            if (extractedSchema != null) {
+                return extractedSchema.toAbsolutePath().toString();
+            }
+            log.warning("Local schema resource not found for " + schemafile + ", fallback to remote HTTPS location.");
+            return schemafile.replace(PNML_GRAMMAR_HTTP_PREFIX, PNML_GRAMMAR_HTTPS_PREFIX);
+        }
+        return schemafile;
+    }
+
+    private synchronized Path extractLocalSchema(String schemaName) {
+        try {
+            if (extractedGrammarDir == null) {
+                extractedGrammarDir = Files.createTempDirectory("pnml-grammar-");
+                extractedGrammarDir.toFile().deleteOnExit();
+                for (String fileName : LOCAL_GRAMMAR_FILES) {
+                    final URL resource = getClass().getResource(LOCAL_GRAMMAR_RESOURCE_DIR + fileName);
+                    if (resource == null) {
+                        continue;
+                    }
+                    try (InputStream in = resource.openStream()) {
+                        final Path out = extractedGrammarDir.resolve(fileName);
+                        Files.copy(in, out, StandardCopyOption.REPLACE_EXISTING);
+                        out.toFile().deleteOnExit();
+                    }
+                }
+            }
+            final Path candidate = extractedGrammarDir.resolve(schemaName);
+            return Files.exists(candidate) ? candidate : null;
+        } catch (IOException e) {
+            log.warning("Unable to extract local grammar resources: " + e.getMessage());
+            return null;
+        }
     }
 
 }
