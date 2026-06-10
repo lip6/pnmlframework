@@ -10,6 +10,7 @@
 	</parent>
 
 	<artifactId>fr.lip6.pnml.check</artifactId>
+	<packaging>eclipse-plugin</packaging>
 
 	<name>PNML Document Checker</name>
 	
@@ -45,133 +46,6 @@
 				</excludes>
 			</resource>
 		</resources>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<archive>
-						<manifestFile>${manifestdir}/MANIFEST.MF</manifestFile>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.3</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<!-- <createSourcesJar>true</createSourcesJar> -->
-							<filters>
-								<filter>
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-									</excludes>
-								</filter>
-							</filters>
-							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.DontIncludeResourceTransformer">
-									<resources>
-										<resource>TestValidationWithHamcrest.java</resource>
-										<resource>ValidateWithSchematron.java</resource>
-										<resource>ValidateWithVTDXML.java</resource>
-									</resources>
-								</transformer>
-							</transformers>
-						</configuration>
-					</execution>
-				</executions>
-				<configuration>
-					<finalName>${project.groupId}.check-${project.version}</finalName>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.10.1</version>
-				<configuration>
-					<failOnError>false</failOnError>
-					<finalName>${project.groupId}.check-${project.version}</finalName>
-				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.7</version>
-				<configuration>
-					<target>
-						<copy file="target/${project.groupId}.check-${project.version}.jar"
-							tofile="../pnmlvalidation-Releng/src/site/resources/download/${project.groupId}.check-${project.version}.jar" />
-					</target>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<!-- <plugin> <groupId>com.phloc.maven</groupId> <artifactId>schematron2xslt-maven-plugin</artifactId> 
-				<version>2.6.1</version> <executions> <execution> <goals> <goal>convert</goal> 
-				</goals> </execution> </executions> <configuration> <schematronDirectory>${basedir}/src/main/schematron</schematronDirectory> 
-				<xsltDirectory>${basedir}/src/main/xslt</xsltDirectory> <xsltExtension>.xsl</xsltExtension> 
-				</configuration> </plugin> -->
-		</plugins>
-		<pluginManagement>
-			<plugins>
-				<!--This plugin's configuration is used to store Eclipse m2e settings 
-					only. It has no influence on the Maven build itself. -->
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>
-											com.phloc.maven
-										</groupId>
-										<artifactId>
-											schematron2xslt-maven-plugin
-										</artifactId>
-										<versionRange>
-											[2.6.1,)
-										</versionRange>
-										<goals>
-											<goal>convert</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<ignore></ignore>
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 
 	<profiles>
