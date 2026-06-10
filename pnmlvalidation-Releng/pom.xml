@@ -15,14 +15,54 @@
 	<url>http://pnml.lip6.fr/pnmlvalidation</url>
 
 	<modules>
+		<module>../fr.lip6.pnml.framework.utils</module>
+		<module>../fr.lip6.pnml.framework.coremodel</module>
+		<module>../fr.lip6.pnml.framework.ptnet</module>
+		<module>../fr.lip6.pnml.framework.symmetricnet</module>
+		<module>../fr.lip6.pnml.framework.hlpn</module>
+		<module>../fr.lip6.pnml.framework.pthlpng</module>
 		<module>../pnmlvalidation-Main</module>
+		<module>../pnmlvalidation-fatjar</module>
 	</modules>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<pnml.version>2.2.17-SNAPSHOT</pnml.version>
+		<java.version>21</java.version>
+		<axiom.version>1.3.0</axiom.version>
+		<jing.version>20091111</jing.version>
+		<jakarta.activation.version>2.1.0</jakarta.activation.version>
+		<javax.activation.version>1.2.2.v20221203-1659</javax.activation.version>
+		<emf.common.p2.version>2.44.0.v20251025-0946</emf.common.p2.version>
+		<emf.ecore.p2.version>2.41.0.v20251025-0946</emf.ecore.p2.version>
+		<ocl.p2.version>3.22.0.v20240902-1518</ocl.p2.version>
 		<manifestdir>META-INF</manifestdir>
+		<tycho.version>5.0.2</tycho.version>
+		<platform-version-name>2025-12</platform-version-name>
+		<eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>pnmlframework-update-site</id>
+			<layout>p2</layout>
+			<url>https://lip6.github.io/pnmlframework/</url>
+		</repository>
+		<repository>
+			<id>Orbit</id>
+			<layout>p2</layout>
+			<url>https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/${platform-version-name}</url>
+		</repository>
+		<repository>
+			<id>Eclipse current release</id>
+			<layout>p2</layout>
+			<url>${eclipse-site}</url>
+		</repository>
+		<repository>
+			<id>The central nexus</id>
+			<url>https://repo1.maven.org/maven2</url>
+		</repository>
+	</repositories>
 
 	<distributionManagement>
 		<repository>
@@ -108,6 +148,11 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>fr.lip6.pnml</groupId>
+				<artifactId>fr.lip6.pnml.check</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.testng</groupId>
 				<artifactId>testng</artifactId>
 				<version>7.7.0</version>
@@ -163,6 +208,51 @@
 				<artifactId>args4j</artifactId>
 				<version>2.0.29</version>
 			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-api</artifactId>
+				<version>${axiom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-impl</artifactId>
+				<version>${axiom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-dom</artifactId>
+				<version>${axiom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.thaiopensource</groupId>
+				<artifactId>jing</artifactId>
+				<version>${jing.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.activation</groupId>
+				<artifactId>jakarta.activation-api</artifactId>
+				<version>${jakarta.activation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>p2.osgi.bundle</groupId>
+				<artifactId>javax.activation</artifactId>
+				<version>${javax.activation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>p2.osgi.bundle</groupId>
+				<artifactId>org.eclipse.emf.common</artifactId>
+				<version>${emf.common.p2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>p2.osgi.bundle</groupId>
+				<artifactId>org.eclipse.emf.ecore</artifactId>
+				<version>${emf.ecore.p2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>p2.osgi.bundle</groupId>
+				<artifactId>org.eclipse.ocl</artifactId>
+				<version>${ocl.p2.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -178,11 +268,26 @@
 		</extensions>
 		<plugins>
 			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho.version}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<executionEnvironment>JavaSE-21</executionEnvironment>
+					<pomDependencies>consider</pomDependencies>
+				</configuration>
+			</plugin>
+			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>11</source>
-					<target>11</target>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -222,21 +327,6 @@
 					</properties>
 					<encoding>UTF-8</encoding>
 				</configuration>
-				<executions>
-					<execution>
-						<id>sources-header</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>format</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>check-headers</id>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

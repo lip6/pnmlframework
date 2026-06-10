@@ -25,6 +25,15 @@ jobs:
         maven-version: 3.9.9
     - name: Build with Maven
       run: cd pnmlFw-Releng ; mvn generate-sources install -Pall ; cd -
+    - name: Build pnmlvalidation and publish fat jar in website
+      run: |
+        cd pnmlvalidation-Releng
+        bash scripts/sync-fatjar-p2-versions.sh
+        mvn -DskipTests package
+        cd ..
+        mkdir -p PnmlFramework_UpdateSite/target/repository/pnmlvalidation
+        cp pnmlvalidation-fatjar/target/fr.lip6.pnml.check-fat-*.jar \
+          PnmlFramework_UpdateSite/target/repository/pnmlvalidation/fr.lip6.pnml.check-fat.jar
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.3
       with:
