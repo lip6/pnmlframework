@@ -35,7 +35,7 @@ jobs:
         cp pnmlvalidation-fatjar/target/fr.lip6.pnml.check-fat-*.jar \
           PnmlFramework_UpdateSite/target/repository/pnmlvalidation/fr.lip6.pnml.check-fat.jar
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.3
+      uses: JamesIves/github-pages-deploy-action@v4.6.1
       with:
           branch: gh-pages # The branch the action should deploy to.
           folder: PnmlFramework_UpdateSite/target/repository # The folder the action should deploy.
